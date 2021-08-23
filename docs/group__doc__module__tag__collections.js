@@ -1,5 +1,7 @@
 var group__doc__module__tag__collections =
 [
+    [ "oc_resource_free_instance_t", "group__doc__module__tag__collections.html#gab130607248507d452563e8521f6b34ab", null ],
+    [ "oc_resource_get_instance_t", "group__doc__module__tag__collections.html#gabd4df858d188b26542c6bfc7a8759084", null ],
     [ "oc_add_collection", "group__doc__module__tag__collections.html#ga80b00ed34f2fe3db8f580136c124fcda", null ],
     [ "oc_collection_add_link", "group__doc__module__tag__collections.html#ga6a9ecdee57240345da72c313816d1222", null ],
     [ "oc_collection_add_mandatory_rt", "group__doc__module__tag__collections.html#ga7bb4d71ec25a70bb5589d4e0779ed10d", null ],
@@ -7,6 +9,7 @@ var group__doc__module__tag__collections =
     [ "oc_collection_get_collections", "group__doc__module__tag__collections.html#gaec556c907f4579bc98b77a389e11c8b2", null ],
     [ "oc_collection_get_links", "group__doc__module__tag__collections.html#gaa42bc380835480c2f8c0bbb36afe3d5b", null ],
     [ "oc_collection_remove_link", "group__doc__module__tag__collections.html#ga8e7bf04fbe26dd511433fccaec808ba5", null ],
+    [ "oc_collections_add_rt_factory", "group__doc__module__tag__collections.html#ga93ee63ad8ffe46aac86fdb0d2c29517d", null ],
     [ "oc_delete_collection", "group__doc__module__tag__collections.html#gad71cbab4922733b98c278e942ef9f749", null ],
     [ "oc_delete_link", "group__doc__module__tag__collections.html#ga0fde42ca7451b515a445c3247acccbb5", null ],
     [ "oc_link_add_link_param", "group__doc__module__tag__collections.html#gaa5eac589eff762c4010554ebe0570b78", null ],

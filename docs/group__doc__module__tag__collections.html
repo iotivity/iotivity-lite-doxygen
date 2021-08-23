@@ -94,11 +94,11 @@ $(document).ready(function(){initNavTree('group__doc__module__tag__collections.h
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:gab130607248507d452563e8521f6b34ab"><td class="memItemLeft" align="right" valign="top"><a id="gab130607248507d452563e8521f6b34ab"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>oc_resource_free_instance_t</b>) (oc_resource_t *)</td></tr>
+<tr class="memitem:gab130607248507d452563e8521f6b34ab"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__collections.html#gab130607248507d452563e8521f6b34ab">oc_resource_free_instance_t</a>) (oc_resource_t *)</td></tr>
+<tr class="memdesc:gab130607248507d452563e8521f6b34ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback invoked to delete an resource.  <a href="group__doc__module__tag__collections.html#gab130607248507d452563e8521f6b34ab">More...</a><br /></td></tr>
 <tr class="separator:gab130607248507d452563e8521f6b34ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabd4df858d188b26542c6bfc7a8759084"><td class="memItemLeft" align="right" valign="top"><a id="gabd4df858d188b26542c6bfc7a8759084"></a>
-typedef oc_resource_t *(*&#160;</td><td class="memItemRight" valign="bottom"><b>oc_resource_get_instance_t</b>) (const char *, oc_string_array_t *, oc_resource_properties_t, oc_interface_mask_t, size_t)</td></tr>
+<tr class="memitem:gabd4df858d188b26542c6bfc7a8759084"><td class="memItemLeft" align="right" valign="top">typedef oc_resource_t *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__collections.html#gabd4df858d188b26542c6bfc7a8759084">oc_resource_get_instance_t</a>) (const char *, oc_string_array_t *, oc_resource_properties_t, oc_interface_mask_t, size_t)</td></tr>
+<tr class="memdesc:gabd4df858d188b26542c6bfc7a8759084"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback invoked to retrieve an resource.  <a href="group__doc__module__tag__collections.html#gabd4df858d188b26542c6bfc7a8759084">More...</a><br /></td></tr>
 <tr class="separator:gabd4df858d188b26542c6bfc7a8759084"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -124,8 +124,8 @@ Functions</h2></td></tr>
 <tr class="memitem:ga8e7bf04fbe26dd511433fccaec808ba5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__collections.html#ga8e7bf04fbe26dd511433fccaec808ba5">oc_collection_remove_link</a> (oc_resource_t *collection, oc_link_t *link)</td></tr>
 <tr class="memdesc:ga8e7bf04fbe26dd511433fccaec808ba5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a link from the collection.  <a href="group__doc__module__tag__collections.html#ga8e7bf04fbe26dd511433fccaec808ba5">More...</a><br /></td></tr>
 <tr class="separator:ga8e7bf04fbe26dd511433fccaec808ba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga93ee63ad8ffe46aac86fdb0d2c29517d"><td class="memItemLeft" align="right" valign="top"><a id="ga93ee63ad8ffe46aac86fdb0d2c29517d"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>oc_collections_add_rt_factory</b> (const char *rt, oc_resource_get_instance_t get_instance, oc_resource_free_instance_t free_instance)</td></tr>
+<tr class="memitem:ga93ee63ad8ffe46aac86fdb0d2c29517d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__collections.html#ga93ee63ad8ffe46aac86fdb0d2c29517d">oc_collections_add_rt_factory</a> (const char *rt, <a class="el" href="group__doc__module__tag__collections.html#gabd4df858d188b26542c6bfc7a8759084">oc_resource_get_instance_t</a> get_instance, <a class="el" href="group__doc__module__tag__collections.html#gab130607248507d452563e8521f6b34ab">oc_resource_free_instance_t</a> free_instance)</td></tr>
+<tr class="memdesc:ga93ee63ad8ffe46aac86fdb0d2c29517d"><td class="mdescLeft">&#160;</td><td class="mdescRight">adds the resource type factory  <a href="group__doc__module__tag__collections.html#ga93ee63ad8ffe46aac86fdb0d2c29517d">More...</a><br /></td></tr>
 <tr class="separator:ga93ee63ad8ffe46aac86fdb0d2c29517d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad71cbab4922733b98c278e942ef9f749"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__collections.html#gad71cbab4922733b98c278e942ef9f749">oc_delete_collection</a> (oc_resource_t *collection)</td></tr>
 <tr class="memdesc:gad71cbab4922733b98c278e942ef9f749"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes the specified collection.  <a href="group__doc__module__tag__collections.html#gad71cbab4922733b98c278e942ef9f749">More...</a><br /></td></tr>
@@ -148,6 +148,39 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>oc_collections_add_rt
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Optional group of functions to support OCF compliant collections. </p>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="gab130607248507d452563e8521f6b34ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab130607248507d452563e8521f6b34ab">&#9670;&nbsp;</a></span>oc_resource_free_instance_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* oc_resource_free_instance_t) (oc_resource_t *)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback invoked to delete an resource. </p>
+
+</div>
+</div>
+<a id="gabd4df858d188b26542c6bfc7a8759084"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabd4df858d188b26542c6bfc7a8759084">&#9670;&nbsp;</a></span>oc_resource_get_instance_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef oc_resource_t*(* oc_resource_get_instance_t) (const char *, oc_string_array_t *, oc_resource_properties_t, oc_interface_mask_t, size_t)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback invoked to retrieve an resource. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga80b00ed34f2fe3db8f580136c124fcda"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga80b00ed34f2fe3db8f580136c124fcda">&#9670;&nbsp;</a></span>oc_add_collection()</h2>
@@ -380,6 +413,53 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>oc_collections_add_rt
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ga93ee63ad8ffe46aac86fdb0d2c29517d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga93ee63ad8ffe46aac86fdb0d2c29517d">&#9670;&nbsp;</a></span>oc_collections_add_rt_factory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool oc_collections_add_rt_factory </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>rt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__doc__module__tag__collections.html#gabd4df858d188b26542c6bfc7a8759084">oc_resource_get_instance_t</a>&#160;</td>
+          <td class="paramname"><em>get_instance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__doc__module__tag__collections.html#gab130607248507d452563e8521f6b34ab">oc_resource_free_instance_t</a>&#160;</td>
+          <td class="paramname"><em>free_instance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>adds the resource type factory </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rt</td><td>the resource type </td></tr>
+    <tr><td class="paramname">get_instance</td><td>creates the instance of the resource type </td></tr>
+    <tr><td class="paramname">free_instance</td><td>sets callback to free the created instance of the resource tupe </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true </dd>
+<dd>
+false </dd></dl>
 
 </div>
 </div>
@@ -616,7 +696,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>oc_collections_add_rt
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Aug 23 2021 13:27:52 for IoTivity-Lite by
+    <li class="footer">Generated on Mon Aug 23 2021 16:25:45 for IoTivity-Lite by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
