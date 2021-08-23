@@ -100,27 +100,181 @@ typedef struct oc_role_t&#160;</td><td class="memItemRight" valign="bottom"><b>o
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gab2aa6ddffdac2389095809721be158ef"><td class="memItemLeft" align="right" valign="top"><a id="gab2aa6ddffdac2389095809721be158ef"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_assert_all_roles</b> (oc_endpoint_t *endpoint, oc_response_handler_t handler, void *user_data)</td></tr>
+<tr class="memitem:gab2aa6ddffdac2389095809721be158ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__asserting__roles.html#gab2aa6ddffdac2389095809721be158ef">oc_assert_all_roles</a> (oc_endpoint_t *endpoint, oc_response_handler_t handler, void *user_data)</td></tr>
+<tr class="memdesc:gab2aa6ddffdac2389095809721be158ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">assert all the roles for a specific endpoint  <a href="group__doc__module__tag__asserting__roles.html#gab2aa6ddffdac2389095809721be158ef">More...</a><br /></td></tr>
 <tr class="separator:gab2aa6ddffdac2389095809721be158ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga409728faa69a335eefd565f54642a65b"><td class="memItemLeft" align="right" valign="top"><a id="ga409728faa69a335eefd565f54642a65b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>oc_assert_role</b> (const char *role, const char *authority, oc_endpoint_t *endpoint, oc_response_handler_t handler, void *user_data)</td></tr>
+<tr class="memitem:ga409728faa69a335eefd565f54642a65b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__asserting__roles.html#ga409728faa69a335eefd565f54642a65b">oc_assert_role</a> (const char *role, const char *authority, oc_endpoint_t *endpoint, oc_response_handler_t handler, void *user_data)</td></tr>
+<tr class="memdesc:ga409728faa69a335eefd565f54642a65b"><td class="mdescLeft">&#160;</td><td class="mdescRight">assert the specific role  <a href="group__doc__module__tag__asserting__roles.html#ga409728faa69a335eefd565f54642a65b">More...</a><br /></td></tr>
 <tr class="separator:ga409728faa69a335eefd565f54642a65b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga21a9228f276dc740e83116aa26b5e3b9"><td class="memItemLeft" align="right" valign="top"><a id="ga21a9228f276dc740e83116aa26b5e3b9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_auto_assert_roles</b> (bool auto_assert)</td></tr>
+<tr class="memitem:ga21a9228f276dc740e83116aa26b5e3b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__asserting__roles.html#ga21a9228f276dc740e83116aa26b5e3b9">oc_auto_assert_roles</a> (bool auto_assert)</td></tr>
+<tr class="memdesc:ga21a9228f276dc740e83116aa26b5e3b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">set automatic role assertion (e.g.  <a href="group__doc__module__tag__asserting__roles.html#ga21a9228f276dc740e83116aa26b5e3b9">More...</a><br /></td></tr>
 <tr class="separator:ga21a9228f276dc740e83116aa26b5e3b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0b96f1666dc2425e99c0ff62ecf6271a"><td class="memItemLeft" align="right" valign="top"><a id="ga0b96f1666dc2425e99c0ff62ecf6271a"></a>
-oc_role_t *&#160;</td><td class="memItemRight" valign="bottom"><b>oc_get_all_roles</b> (void)</td></tr>
+<tr class="memitem:ga0b96f1666dc2425e99c0ff62ecf6271a"><td class="memItemLeft" align="right" valign="top">oc_role_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__asserting__roles.html#ga0b96f1666dc2425e99c0ff62ecf6271a">oc_get_all_roles</a> (void)</td></tr>
+<tr class="memdesc:ga0b96f1666dc2425e99c0ff62ecf6271a"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve all roles  <a href="group__doc__module__tag__asserting__roles.html#ga0b96f1666dc2425e99c0ff62ecf6271a">More...</a><br /></td></tr>
 <tr class="separator:ga0b96f1666dc2425e99c0ff62ecf6271a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Asserting roles support functions. </p>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="gab2aa6ddffdac2389095809721be158ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab2aa6ddffdac2389095809721be158ef">&#9670;&nbsp;</a></span>oc_assert_all_roles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oc_assert_all_roles </td>
+          <td>(</td>
+          <td class="paramtype">oc_endpoint_t *&#160;</td>
+          <td class="paramname"><em>endpoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">oc_response_handler_t&#160;</td>
+          <td class="paramname"><em>handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>assert all the roles for a specific endpoint </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endpoint</td><td>identifying the connection </td></tr>
+    <tr><td class="paramname">handler</td><td>the response handler </td></tr>
+    <tr><td class="paramname">user_data</td><td>the user data to be conveyed to the response handler </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga409728faa69a335eefd565f54642a65b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga409728faa69a335eefd565f54642a65b">&#9670;&nbsp;</a></span>oc_assert_role()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool oc_assert_role </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>role</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>authority</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">oc_endpoint_t *&#160;</td>
+          <td class="paramname"><em>endpoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">oc_response_handler_t&#160;</td>
+          <td class="paramname"><em>handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>assert the specific role </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">role</td><td>the role </td></tr>
+    <tr><td class="paramname">authority</td><td>the authority </td></tr>
+    <tr><td class="paramname">endpoint</td><td>endpoint identifying the connection </td></tr>
+    <tr><td class="paramname">handler</td><td>the response handler </td></tr>
+    <tr><td class="paramname">user_data</td><td>the user data to be conveyed to the response handler </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true </dd>
+<dd>
+false </dd></dl>
+
+</div>
+</div>
+<a id="ga21a9228f276dc740e83116aa26b5e3b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga21a9228f276dc740e83116aa26b5e3b9">&#9670;&nbsp;</a></span>oc_auto_assert_roles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oc_auto_assert_roles </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>auto_assert</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>set automatic role assertion (e.g. </p>
+<p>for all endpoints with a connection)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">auto_assert</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga0b96f1666dc2425e99c0ff62ecf6271a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0b96f1666dc2425e99c0ff62ecf6271a">&#9670;&nbsp;</a></span>oc_get_all_roles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">oc_role_t* oc_get_all_roles </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>retrieve all roles </p>
+<dl class="section return"><dt>Returns</dt><dd>oc_role_t* </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Aug 23 2021 13:09:42 for IoTivity-Lite by
+    <li class="footer">Generated on Mon Aug 23 2021 13:27:52 for IoTivity-Lite by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

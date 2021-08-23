@@ -90,7 +90,7 @@ var oc__api_8h =
     [ "oc_resource_set_discoverable", "group__doc__module__tag__server__side.html#ga4c3f04fa5089c82be3e9eb7339ae8f58", null ],
     [ "oc_resource_set_observable", "group__doc__module__tag__server__side.html#gad20b61d7925c4ca727476987d8e2fe3d", null ],
     [ "oc_resource_set_periodic_observable", "group__doc__module__tag__server__side.html#gac8cdb7e511c08982d790c323d8db7c6e", null ],
-    [ "oc_resource_set_properties_cbs", "group__doc__module__tag__server__side.html#ga6ce03b07a2c8bb9418c318b7a8ad1e5b", null ],
+    [ "oc_resource_set_properties_cbs", "group__doc__module__tag__server__side.html#gaf9028094981175854c699f6da4a34131", null ],
     [ "oc_resource_set_request_handler", "group__doc__module__tag__server__side.html#gaf8ac0f8a7d9fc45bab26b132cc9346e6", null ],
     [ "oc_resource_set_secure_mcast", "group__doc__module__tag__server__side.html#gad8d0f3f531d72f5d5cce12c1fbad92fe", null ],
     [ "oc_resource_tag_func_desc", "group__doc__module__tag__server__side.html#ga1f9849f29f1230a59608b9ced28d2ca3", null ],
