@@ -93,45 +93,284 @@ $(document).ready(function(){initNavTree('oc__swupdate_8h.html',''); initResizab
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a8148bdcecd49211d73ad6fe2d6eb2c39"><td class="memItemLeft" align="right" valign="top"><a id="a8148bdcecd49211d73ad6fe2d6eb2c39"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>oc_swupdate_result_t</b> { <br />
-&#160;&#160;<b>OC_SWUPDATE_RESULT_IDLE</b> = 0, 
-<b>OC_SWUPDATE_RESULT_SUCCESS</b>, 
-<b>OC_SWUPDATE_RESULT_LESS_RAM</b>, 
-<b>OC_SWUPDATE_RESULT_LESS_FLASH</b>, 
+<tr class="memitem:a8148bdcecd49211d73ad6fe2d6eb2c39"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__swupdate_8h.html#a8148bdcecd49211d73ad6fe2d6eb2c39">oc_swupdate_result_t</a> { <br />
+&#160;&#160;<a class="el" href="oc__swupdate_8h.html#a8148bdcecd49211d73ad6fe2d6eb2c39af782ee1c84a99824ac637d94a1237744">OC_SWUPDATE_RESULT_IDLE</a> = 0, 
+<a class="el" href="oc__swupdate_8h.html#a8148bdcecd49211d73ad6fe2d6eb2c39a27b40fd22055b0020e55d67a7d0889b6">OC_SWUPDATE_RESULT_SUCCESS</a>, 
+<a class="el" href="oc__swupdate_8h.html#a8148bdcecd49211d73ad6fe2d6eb2c39a7c38bb839e781940df7c1ce174b85f3b">OC_SWUPDATE_RESULT_LESS_RAM</a>, 
+<a class="el" href="oc__swupdate_8h.html#a8148bdcecd49211d73ad6fe2d6eb2c39a6d402a81caa46c6a1e642a6c0beeb544">OC_SWUPDATE_RESULT_LESS_FLASH</a>, 
 <br />
-&#160;&#160;<b>OC_SWUPDATE_RESULT_CONN_FAIL</b>, 
-<b>OC_SWUPDATE_RESULT_SVV_FAIL</b>, 
-<b>OC_SWUPDATE_RESULT_INVALID_URL</b>, 
-<b>OC_SWUPDATE_RESULT_UPGRADE_FAIL</b>
+&#160;&#160;<a class="el" href="oc__swupdate_8h.html#a8148bdcecd49211d73ad6fe2d6eb2c39afcc0d7617187edf767473b6eb32abde2">OC_SWUPDATE_RESULT_CONN_FAIL</a>, 
+<a class="el" href="oc__swupdate_8h.html#a8148bdcecd49211d73ad6fe2d6eb2c39a3747daf386659055125554d18492022b">OC_SWUPDATE_RESULT_SVV_FAIL</a>, 
+<a class="el" href="oc__swupdate_8h.html#a8148bdcecd49211d73ad6fe2d6eb2c39ac6fa1e2aaa4e71b58cbfd5006358ada7">OC_SWUPDATE_RESULT_INVALID_URL</a>, 
+<a class="el" href="oc__swupdate_8h.html#a8148bdcecd49211d73ad6fe2d6eb2c39a1227723c2e0025c54b2fb07bb3036856">OC_SWUPDATE_RESULT_UPGRADE_FAIL</a>
 <br />
  }</td></tr>
+<tr class="memdesc:a8148bdcecd49211d73ad6fe2d6eb2c39"><td class="mdescLeft">&#160;</td><td class="mdescRight">OCF defined software update results.  <a href="oc__swupdate_8h.html#a8148bdcecd49211d73ad6fe2d6eb2c39">More...</a><br /></td></tr>
 <tr class="separator:a8148bdcecd49211d73ad6fe2d6eb2c39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3fb6e4a2c3b0f1858efbbe290131789b"><td class="memItemLeft" align="right" valign="top"><a id="a3fb6e4a2c3b0f1858efbbe290131789b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_swupdate_notify_done</b> (size_t device, oc_swupdate_result_t result)</td></tr>
+<tr class="memitem:a3fb6e4a2c3b0f1858efbbe290131789b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__swupdate_8h.html#a3fb6e4a2c3b0f1858efbbe290131789b">oc_swupdate_notify_done</a> (size_t device, <a class="el" href="oc__swupdate_8h.html#a8148bdcecd49211d73ad6fe2d6eb2c39">oc_swupdate_result_t</a> result)</td></tr>
+<tr class="memdesc:a3fb6e4a2c3b0f1858efbbe290131789b"><td class="mdescLeft">&#160;</td><td class="mdescRight">callback to notify if a new software version is complete  <a href="oc__swupdate_8h.html#a3fb6e4a2c3b0f1858efbbe290131789b">More...</a><br /></td></tr>
 <tr class="separator:a3fb6e4a2c3b0f1858efbbe290131789b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a317514a7a002a1c2f3e96975d8b0e0"><td class="memItemLeft" align="right" valign="top"><a id="a0a317514a7a002a1c2f3e96975d8b0e0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_swupdate_notify_downloaded</b> (size_t device, const char *version, oc_swupdate_result_t result)</td></tr>
+<tr class="memitem:a0a317514a7a002a1c2f3e96975d8b0e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__swupdate_8h.html#a0a317514a7a002a1c2f3e96975d8b0e0">oc_swupdate_notify_downloaded</a> (size_t device, const char *version, <a class="el" href="oc__swupdate_8h.html#a8148bdcecd49211d73ad6fe2d6eb2c39">oc_swupdate_result_t</a> result)</td></tr>
+<tr class="memdesc:a0a317514a7a002a1c2f3e96975d8b0e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">callback to notify if a new software version is downloaded  <a href="oc__swupdate_8h.html#a0a317514a7a002a1c2f3e96975d8b0e0">More...</a><br /></td></tr>
 <tr class="separator:a0a317514a7a002a1c2f3e96975d8b0e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38b6ea006c4815cda2bdbd015b5a08ef"><td class="memItemLeft" align="right" valign="top"><a id="a38b6ea006c4815cda2bdbd015b5a08ef"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_swupdate_notify_new_version_available</b> (size_t device, const char *version, oc_swupdate_result_t result)</td></tr>
+<tr class="memitem:a38b6ea006c4815cda2bdbd015b5a08ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__swupdate_8h.html#a38b6ea006c4815cda2bdbd015b5a08ef">oc_swupdate_notify_new_version_available</a> (size_t device, const char *version, <a class="el" href="oc__swupdate_8h.html#a8148bdcecd49211d73ad6fe2d6eb2c39">oc_swupdate_result_t</a> result)</td></tr>
+<tr class="memdesc:a38b6ea006c4815cda2bdbd015b5a08ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">callback to notify if a new software version is available  <a href="oc__swupdate_8h.html#a38b6ea006c4815cda2bdbd015b5a08ef">More...</a><br /></td></tr>
 <tr class="separator:a38b6ea006c4815cda2bdbd015b5a08ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae97d4ea5eadaac56bd5c99a96497bbd5"><td class="memItemLeft" align="right" valign="top"><a id="ae97d4ea5eadaac56bd5c99a96497bbd5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_swupdate_notify_upgrading</b> (size_t device, const char *version, oc_clock_time_t timestamp, oc_swupdate_result_t result)</td></tr>
+<tr class="memitem:ae97d4ea5eadaac56bd5c99a96497bbd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__swupdate_8h.html#ae97d4ea5eadaac56bd5c99a96497bbd5">oc_swupdate_notify_upgrading</a> (size_t device, const char *version, oc_clock_time_t timestamp, <a class="el" href="oc__swupdate_8h.html#a8148bdcecd49211d73ad6fe2d6eb2c39">oc_swupdate_result_t</a> result)</td></tr>
+<tr class="memdesc:ae97d4ea5eadaac56bd5c99a96497bbd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">callback to notify if a new software version is upgrading  <a href="oc__swupdate_8h.html#ae97d4ea5eadaac56bd5c99a96497bbd5">More...</a><br /></td></tr>
 <tr class="separator:ae97d4ea5eadaac56bd5c99a96497bbd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46e55765e915217b11f63652773a6288"><td class="memItemLeft" align="right" valign="top"><a id="a46e55765e915217b11f63652773a6288"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_swupdate_set_impl</b> (const oc_swupdate_cb_t *swupdate_impl)</td></tr>
+<tr class="memitem:a46e55765e915217b11f63652773a6288"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__swupdate_8h.html#a46e55765e915217b11f63652773a6288">oc_swupdate_set_impl</a> (const oc_swupdate_cb_t *swupdate_impl)</td></tr>
+<tr class="memdesc:a46e55765e915217b11f63652773a6288"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the callbacks for software upgrade  <a href="oc__swupdate_8h.html#a46e55765e915217b11f63652773a6288">More...</a><br /></td></tr>
 <tr class="separator:a46e55765e915217b11f63652773a6288"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a8148bdcecd49211d73ad6fe2d6eb2c39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8148bdcecd49211d73ad6fe2d6eb2c39">&#9670;&nbsp;</a></span>oc_swupdate_result_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="oc__swupdate_8h.html#a8148bdcecd49211d73ad6fe2d6eb2c39">oc_swupdate_result_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>OCF defined software update results. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a8148bdcecd49211d73ad6fe2d6eb2c39af782ee1c84a99824ac637d94a1237744"></a>OC_SWUPDATE_RESULT_IDLE&#160;</td><td class="fielddoc"><p>Idle. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8148bdcecd49211d73ad6fe2d6eb2c39a27b40fd22055b0020e55d67a7d0889b6"></a>OC_SWUPDATE_RESULT_SUCCESS&#160;</td><td class="fielddoc"><p>software update successfull </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8148bdcecd49211d73ad6fe2d6eb2c39a7c38bb839e781940df7c1ce174b85f3b"></a>OC_SWUPDATE_RESULT_LESS_RAM&#160;</td><td class="fielddoc"><p>not enough RAM </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8148bdcecd49211d73ad6fe2d6eb2c39a6d402a81caa46c6a1e642a6c0beeb544"></a>OC_SWUPDATE_RESULT_LESS_FLASH&#160;</td><td class="fielddoc"><p>not enough FLASH </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8148bdcecd49211d73ad6fe2d6eb2c39afcc0d7617187edf767473b6eb32abde2"></a>OC_SWUPDATE_RESULT_CONN_FAIL&#160;</td><td class="fielddoc"><p>connection failure </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8148bdcecd49211d73ad6fe2d6eb2c39a3747daf386659055125554d18492022b"></a>OC_SWUPDATE_RESULT_SVV_FAIL&#160;</td><td class="fielddoc"><p>version failure </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8148bdcecd49211d73ad6fe2d6eb2c39ac6fa1e2aaa4e71b58cbfd5006358ada7"></a>OC_SWUPDATE_RESULT_INVALID_URL&#160;</td><td class="fielddoc"><p>invalid URL </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8148bdcecd49211d73ad6fe2d6eb2c39a1227723c2e0025c54b2fb07bb3036856"></a>OC_SWUPDATE_RESULT_UPGRADE_FAIL&#160;</td><td class="fielddoc"><p>upgrade failure </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a3fb6e4a2c3b0f1858efbbe290131789b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fb6e4a2c3b0f1858efbbe290131789b">&#9670;&nbsp;</a></span>oc_swupdate_notify_done()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oc_swupdate_notify_done </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="oc__swupdate_8h.html#a8148bdcecd49211d73ad6fe2d6eb2c39">oc_swupdate_result_t</a>&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>callback to notify if a new software version is complete </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>the device identifier </td></tr>
+    <tr><td class="paramname">result</td><td>status </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0a317514a7a002a1c2f3e96975d8b0e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a317514a7a002a1c2f3e96975d8b0e0">&#9670;&nbsp;</a></span>oc_swupdate_notify_downloaded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oc_swupdate_notify_downloaded </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>version</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="oc__swupdate_8h.html#a8148bdcecd49211d73ad6fe2d6eb2c39">oc_swupdate_result_t</a>&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>callback to notify if a new software version is downloaded </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>the device identifier </td></tr>
+    <tr><td class="paramname">version</td><td>version of the software </td></tr>
+    <tr><td class="paramname">result</td><td>status </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a38b6ea006c4815cda2bdbd015b5a08ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38b6ea006c4815cda2bdbd015b5a08ef">&#9670;&nbsp;</a></span>oc_swupdate_notify_new_version_available()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oc_swupdate_notify_new_version_available </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>version</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="oc__swupdate_8h.html#a8148bdcecd49211d73ad6fe2d6eb2c39">oc_swupdate_result_t</a>&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>callback to notify if a new software version is available </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>the device identifier </td></tr>
+    <tr><td class="paramname">version</td><td>version of the software </td></tr>
+    <tr><td class="paramname">result</td><td>status </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae97d4ea5eadaac56bd5c99a96497bbd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae97d4ea5eadaac56bd5c99a96497bbd5">&#9670;&nbsp;</a></span>oc_swupdate_notify_upgrading()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oc_swupdate_notify_upgrading </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>version</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">oc_clock_time_t&#160;</td>
+          <td class="paramname"><em>timestamp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="oc__swupdate_8h.html#a8148bdcecd49211d73ad6fe2d6eb2c39">oc_swupdate_result_t</a>&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>callback to notify if a new software version is upgrading </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>the device identifier </td></tr>
+    <tr><td class="paramname">version</td><td>version of the software </td></tr>
+    <tr><td class="paramname">timestamp</td><td>timestamp when the upgrade starts </td></tr>
+    <tr><td class="paramname">result</td><td>status </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a46e55765e915217b11f63652773a6288"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46e55765e915217b11f63652773a6288">&#9670;&nbsp;</a></span>oc_swupdate_set_impl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oc_swupdate_set_impl </td>
+          <td>(</td>
+          <td class="paramtype">const oc_swupdate_cb_t *&#160;</td>
+          <td class="paramname"><em>swupdate_impl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>sets the callbacks for software upgrade </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">swupdate_impl</td><td>the structure with the software update callbacks </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__swupdate_8h.html">oc_swupdate.h</a></li>
-    <li class="footer">Generated on Mon Aug 23 2021 16:35:43 for IoTivity-Lite by
+    <li class="footer">Generated on Mon Aug 23 2021 16:44:50 for IoTivity-Lite by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
