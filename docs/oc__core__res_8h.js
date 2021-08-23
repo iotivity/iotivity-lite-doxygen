@@ -1,0 +1,26 @@
+var oc__core__res_8h =
+[
+    [ "oc_core_add_device_cb_t", "oc__core__res_8h.html#aaef8fad58f22d24cd42a6e6b07d22e37", null ],
+    [ "oc_core_init_platform_cb_t", "oc__core__res_8h.html#a598ef30def45a7b6d1a961604e9b28cc", null ],
+    [ "oc_device_info_t", "oc__core__res_8h.html#adbcab293f69f9abf2f518d12d43184f4", null ],
+    [ "oc_platform_info_t", "oc__core__res_8h.html#a7b8a0731c685aac21e221e0ddeba75c0", null ],
+    [ "oc_core_add_new_device", "oc__core__res_8h.html#a6ae1cf0f4111e7af57394b8cd9a3c51b", null ],
+    [ "oc_core_encode_interfaces_mask", "oc__core__res_8h.html#ae05775044d062a575fc789756f776d27", null ],
+    [ "oc_core_get_device_id", "oc__core__res_8h.html#a3d69c4b7ffa0fd988862fa0426cd8329", null ],
+    [ "oc_core_get_device_info", "oc__core__res_8h.html#abce7a2d1e8d98a3f4c0b8585121e2771", null ],
+    [ "oc_core_get_latency", "oc__core__res_8h.html#ab73d2ae0cf4a7d6563d51527f0442ef7", null ],
+    [ "oc_core_get_num_devices", "oc__core__res_8h.html#aa7dc2c2f7072ae6c305e404ddd8b204f", null ],
+    [ "oc_core_get_platform_info", "oc__core__res_8h.html#adaf7f631c7ddea5e0e6e8bd50495a160", null ],
+    [ "oc_core_get_resource_by_index", "oc__core__res_8h.html#afdf03e702cf42d39a4cf97fe0139a073", null ],
+    [ "oc_core_get_resource_by_uri", "oc__core__res_8h.html#a0f16b93c49240e6e11224b6a92a29fb5", null ],
+    [ "oc_core_init", "oc__core__res_8h.html#ae047207ba3bd0e6109eb5516e2557412", null ],
+    [ "oc_core_init_platform", "oc__core__res_8h.html#a20fecb30aeba81ace5a974de61d40c1d", null ],
+    [ "oc_core_is_DCR", "oc__core__res_8h.html#a2fade990cfc7a6fb1f24f8c3832808a5", null ],
+    [ "oc_core_is_SVR", "oc__core__res_8h.html#ae3cd5e15ed65a998a6ff9534defb4b90", null ],
+    [ "oc_core_is_vertical_resource", "oc__core__res_8h.html#ab7fdfcd8dd120c3079bdc1ea919ad8e3", null ],
+    [ "oc_core_populate_resource", "oc__core__res_8h.html#afc0d5303c9ed898e5a3e83e76b941336", null ],
+    [ "oc_core_set_latency", "oc__core__res_8h.html#a08b9a53cb2b71fe4ea7794c87da5ce0b", null ],
+    [ "oc_core_shutdown", "oc__core__res_8h.html#a4f83145f9b94c3e531f7008959dec07b", null ],
+    [ "oc_filter_resource_by_rt", "oc__core__res_8h.html#ac90407354ec43f8e8603d86e3dd22698", null ],
+    [ "oc_store_uri", "oc__core__res_8h.html#afd7bb7ba0fc48f2cf65610f28db19b18", null ]
+];
