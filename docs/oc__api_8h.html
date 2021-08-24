@@ -759,7 +759,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">void</span>) {</div>
 <div class="line">  ...</div>
 <div class="line">#ifdef OC_SECURITY</div>
-<div class="line">  oc_storage_config(<span class="stringliteral">&quot;./server_creds&quot;</span>);</div>
+<div class="line">  <a class="code" href="oc__storage_8h.html#ae529493bca3a501922f23e3d7701ff05">oc_storage_config</a>(<span class="stringliteral">&quot;./server_creds&quot;</span>);</div>
 <div class="line">  <a class="code" href="oc__api_8h.html#a5f6ce300fbf84e2181b1ee0040567756">oc_set_random_pin_callback</a>(random_pin_cb, NULL);</div>
 <div class="line"><span class="preprocessor">#endif // OC_SECURITY</span></div>
 <div class="line">  <span class="comment">// handler code omitted from example code see oc_main_init</span></div>
@@ -1043,7 +1043,7 @@ Functions</h2></td></tr>
 <li><a class="el" href="oc__api_8h.html#a5fabaaadaf2e0dccbb1d906f73f9d953" title="Set the factory presets callback.">oc_set_factory_presets_cb()</a></li>
 <li>oc_set_max_app_data_size()</li>
 <li><a class="el" href="oc__api_8h.html#a5f6ce300fbf84e2181b1ee0040567756" title="Set the random pin callback for Random PIN Ownership Transfer Method (OTM)">oc_set_random_pin_callback()</a></li>
-<li>oc_storage_config()</li>
+<li><a class="el" href="oc__storage_8h.html#ae529493bca3a501922f23e3d7701ff05" title="open the storage">oc_storage_config()</a></li>
 </ul>
 <p>Not all of the listed functions must be called before calling oc_main_init.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -1065,7 +1065,7 @@ oc_set_max_app_data_size </dd>
 <dd>
 <a class="el" href="oc__api_8h.html#a5f6ce300fbf84e2181b1ee0040567756" title="Set the random pin callback for Random PIN Ownership Transfer Method (OTM)">oc_set_random_pin_callback</a> </dd>
 <dd>
-oc_storage_config </dd></dl>
+<a class="el" href="oc__storage_8h.html#ae529493bca3a501922f23e3d7701ff05" title="open the storage">oc_storage_config</a> </dd></dl>
 
 </div>
 </div>
@@ -1316,6 +1316,7 @@ Use of this function requires building the stack with OC_SECURITY defined.</dd><
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aoc__storage_8h_html_ae529493bca3a501922f23e3d7701ff05"><div class="ttname"><a href="oc__storage_8h.html#ae529493bca3a501922f23e3d7701ff05">oc_storage_config</a></div><div class="ttdeci">int oc_storage_config(const char *store)</div><div class="ttdoc">open the storage</div></div>
 <div class="ttc" id="aoc__pki_8h_html_ab429d36577356b5b821e919d43320110"><div class="ttname"><a href="oc__pki_8h.html#ab429d36577356b5b821e919d43320110">oc_pki_add_mfg_trust_anchor</a></div><div class="ttdeci">int oc_pki_add_mfg_trust_anchor(size_t device, const unsigned char *cert, size_t cert_size)</div><div class="ttdoc">Add manufacture trust anchor CA.</div></div>
 <div class="ttc" id="aoc__api_8h_html_a5aa72dd8d7d03ff826801b1d7d67ec68"><div class="ttname"><a href="oc__api_8h.html#a5aa72dd8d7d03ff826801b1d7d67ec68">oc_add_device</a></div><div class="ttdeci">int oc_add_device(const char *uri, const char *rt, const char *name, const char *spec_version, const char *data_model_version, oc_add_device_cb_t add_device_cb, void *data)</div><div class="ttdoc">Add an ocf device to the the stack.</div></div>
 <div class="ttc" id="aoc__pki_8h_html_ac433de092d318760639c905791c2a5d0"><div class="ttname"><a href="oc__pki_8h.html#ac433de092d318760639c905791c2a5d0">oc_pki_add_mfg_intermediate_cert</a></div><div class="ttdeci">int oc_pki_add_mfg_intermediate_cert(size_t device, int credid, const unsigned char *cert, size_t cert_size)</div><div class="ttdoc">Add an intermediate manufacture CA certificate.</div></div>
@@ -1331,7 +1332,7 @@ Use of this function requires building the stack with OC_SECURITY defined.</dd><
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__api_8h.html">oc_api.h</a></li>
-    <li class="footer">Generated on Tue Aug 24 2021 08:05:05 for IoTivity-Lite by
+    <li class="footer">Generated on Tue Aug 24 2021 08:18:39 for IoTivity-Lite by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

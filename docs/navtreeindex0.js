@@ -11,6 +11,7 @@ var NAVTREEINDEX0 =
 "globals_enum.html":[3,1,3],
 "globals_eval.html":[3,1,4],
 "globals_func.html":[3,1,1],
+"globals_func.html":[3,1,1,0],
 "globals_i.html":[3,1,0,1],
 "globals_o.html":[3,1,0,2],
 "globals_s.html":[3,1,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "oc__api_8h.html#ae6522fdfeed62a92193214ee99dfc47c":[3,0,1,71],
 "oc__api_8h.html#af0b944acc98a497365efbc1d1c9aa32e":[3,0,1,8],
 "oc__assert_8h.html":[3,0,2],
-"oc__assert_8h.html#a1bce540d44065a67fd8136c1033bee82":[3,0,2,2],
-"oc__assert_8h.html#a7e2346d59d7240c309157eb00ad4a543":[3,0,2,1]
+"oc__assert_8h.html#a1bce540d44065a67fd8136c1033bee82":[3,0,2,2]
 };
