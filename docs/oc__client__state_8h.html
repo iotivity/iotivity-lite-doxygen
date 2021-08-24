@@ -126,41 +126,366 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab24c579b8008ded958bc0322ca506cff"><td class="memItemLeft" align="right" valign="top"><a id="ab24c579b8008ded958bc0322ca506cff"></a>
-oc_client_cb_t *&#160;</td><td class="memItemRight" valign="bottom"><b>oc_ri_alloc_client_cb</b> (const char *uri, oc_endpoint_t *endpoint, oc_method_t method, const char *query, oc_client_handler_t handler, oc_qos_t qos, void *user_data)</td></tr>
+<tr class="memitem:ab24c579b8008ded958bc0322ca506cff"><td class="memItemLeft" align="right" valign="top">oc_client_cb_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__client__state_8h.html#ab24c579b8008ded958bc0322ca506cff">oc_ri_alloc_client_cb</a> (const char *uri, oc_endpoint_t *endpoint, oc_method_t method, const char *query, oc_client_handler_t handler, oc_qos_t qos, void *user_data)</td></tr>
+<tr class="memdesc:ab24c579b8008ded958bc0322ca506cff"><td class="mdescLeft">&#160;</td><td class="mdescRight">allocate the client callback information  <a href="oc__client__state_8h.html#ab24c579b8008ded958bc0322ca506cff">More...</a><br /></td></tr>
 <tr class="separator:ab24c579b8008ded958bc0322ca506cff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37581fc662e5c9cecf258875b4429ca2"><td class="memItemLeft" align="right" valign="top"><a id="a37581fc662e5c9cecf258875b4429ca2"></a>
-oc_client_cb_t *&#160;</td><td class="memItemRight" valign="bottom"><b>oc_ri_find_client_cb_by_mid</b> (uint16_t mid)</td></tr>
+<tr class="memitem:a37581fc662e5c9cecf258875b4429ca2"><td class="memItemLeft" align="right" valign="top">oc_client_cb_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__client__state_8h.html#a37581fc662e5c9cecf258875b4429ca2">oc_ri_find_client_cb_by_mid</a> (uint16_t mid)</td></tr>
+<tr class="memdesc:a37581fc662e5c9cecf258875b4429ca2"><td class="mdescLeft">&#160;</td><td class="mdescRight">find the client callback info by message id (mid)  <a href="oc__client__state_8h.html#a37581fc662e5c9cecf258875b4429ca2">More...</a><br /></td></tr>
 <tr class="separator:a37581fc662e5c9cecf258875b4429ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ce3325140b542af10486e5d0298481e"><td class="memItemLeft" align="right" valign="top"><a id="a7ce3325140b542af10486e5d0298481e"></a>
-oc_client_cb_t *&#160;</td><td class="memItemRight" valign="bottom"><b>oc_ri_find_client_cb_by_token</b> (uint8_t *token, uint8_t token_len)</td></tr>
+<tr class="memitem:a7ce3325140b542af10486e5d0298481e"><td class="memItemLeft" align="right" valign="top">oc_client_cb_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__client__state_8h.html#a7ce3325140b542af10486e5d0298481e">oc_ri_find_client_cb_by_token</a> (uint8_t *token, uint8_t token_len)</td></tr>
+<tr class="memdesc:a7ce3325140b542af10486e5d0298481e"><td class="mdescLeft">&#160;</td><td class="mdescRight">find the client callback info by token  <a href="oc__client__state_8h.html#a7ce3325140b542af10486e5d0298481e">More...</a><br /></td></tr>
 <tr class="separator:a7ce3325140b542af10486e5d0298481e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a0915083eefca7d16238eff6a6db704"><td class="memItemLeft" align="right" valign="top"><a id="a5a0915083eefca7d16238eff6a6db704"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_ri_free_client_cbs_by_endpoint</b> (oc_endpoint_t *endpoint)</td></tr>
+<tr class="memitem:a5a0915083eefca7d16238eff6a6db704"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__client__state_8h.html#a5a0915083eefca7d16238eff6a6db704">oc_ri_free_client_cbs_by_endpoint</a> (oc_endpoint_t *endpoint)</td></tr>
+<tr class="memdesc:a5a0915083eefca7d16238eff6a6db704"><td class="mdescLeft">&#160;</td><td class="mdescRight">free the client callback informatin by endpoint  <a href="oc__client__state_8h.html#a5a0915083eefca7d16238eff6a6db704">More...</a><br /></td></tr>
 <tr class="separator:a5a0915083eefca7d16238eff6a6db704"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd4c28572243f8b7343fdc826f6a22a4"><td class="memItemLeft" align="right" valign="top"><a id="abd4c28572243f8b7343fdc826f6a22a4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_ri_free_client_cbs_by_mid</b> (uint16_t mid)</td></tr>
+<tr class="memitem:abd4c28572243f8b7343fdc826f6a22a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__client__state_8h.html#abd4c28572243f8b7343fdc826f6a22a4">oc_ri_free_client_cbs_by_mid</a> (uint16_t mid)</td></tr>
+<tr class="memdesc:abd4c28572243f8b7343fdc826f6a22a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">free the client callback infomation by message id (mid)  <a href="oc__client__state_8h.html#abd4c28572243f8b7343fdc826f6a22a4">More...</a><br /></td></tr>
 <tr class="separator:abd4c28572243f8b7343fdc826f6a22a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad769e0d91b1758a254dfb4449fbbd102"><td class="memItemLeft" align="right" valign="top"><a id="ad769e0d91b1758a254dfb4449fbbd102"></a>
-oc_client_cb_t *&#160;</td><td class="memItemRight" valign="bottom"><b>oc_ri_get_client_cb</b> (const char *uri, oc_endpoint_t *endpoint, oc_method_t method)</td></tr>
+<tr class="memitem:ad769e0d91b1758a254dfb4449fbbd102"><td class="memItemLeft" align="right" valign="top">oc_client_cb_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__client__state_8h.html#ad769e0d91b1758a254dfb4449fbbd102">oc_ri_get_client_cb</a> (const char *uri, oc_endpoint_t *endpoint, oc_method_t method)</td></tr>
+<tr class="memdesc:ad769e0d91b1758a254dfb4449fbbd102"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the client callback information  <a href="oc__client__state_8h.html#ad769e0d91b1758a254dfb4449fbbd102">More...</a><br /></td></tr>
 <tr class="separator:ad769e0d91b1758a254dfb4449fbbd102"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72b5c4671ceac7ba12d1966ab8ab0482"><td class="memItemLeft" align="right" valign="top"><a id="a72b5c4671ceac7ba12d1966ab8ab0482"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>oc_ri_invoke_client_cb</b> (void *response, oc_blockwise_state_t **response_state, oc_client_cb_t *cb, oc_endpoint_t *endpoint)</td></tr>
 <tr class="separator:a72b5c4671ceac7ba12d1966ab8ab0482"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47f318c6ad81d4fd19414e7767e81567"><td class="memItemLeft" align="right" valign="top"><a id="a47f318c6ad81d4fd19414e7767e81567"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>oc_ri_is_client_cb_valid</b> (oc_client_cb_t *client_cb)</td></tr>
+<tr class="memitem:a47f318c6ad81d4fd19414e7767e81567"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__client__state_8h.html#a47f318c6ad81d4fd19414e7767e81567">oc_ri_is_client_cb_valid</a> (oc_client_cb_t *client_cb)</td></tr>
+<tr class="memdesc:a47f318c6ad81d4fd19414e7767e81567"><td class="mdescLeft">&#160;</td><td class="mdescRight">is the client callback information valid  <a href="oc__client__state_8h.html#a47f318c6ad81d4fd19414e7767e81567">More...</a><br /></td></tr>
 <tr class="separator:a47f318c6ad81d4fd19414e7767e81567"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67016f802fe0302bc611945ebdfd8bbb"><td class="memItemLeft" align="right" valign="top"><a id="a67016f802fe0302bc611945ebdfd8bbb"></a>
-oc_discovery_flags_t&#160;</td><td class="memItemRight" valign="bottom"><b>oc_ri_process_discovery_payload</b> (uint8_t *payload, int len, oc_client_handler_t handler, oc_endpoint_t *endpoint, void *user_data)</td></tr>
+<tr class="memitem:a67016f802fe0302bc611945ebdfd8bbb"><td class="memItemLeft" align="right" valign="top">oc_discovery_flags_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__client__state_8h.html#a67016f802fe0302bc611945ebdfd8bbb">oc_ri_process_discovery_payload</a> (uint8_t *payload, int len, oc_client_handler_t handler, oc_endpoint_t *endpoint, void *user_data)</td></tr>
+<tr class="memdesc:a67016f802fe0302bc611945ebdfd8bbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">handle the discovery payload (e.g.  <a href="oc__client__state_8h.html#a67016f802fe0302bc611945ebdfd8bbb">More...</a><br /></td></tr>
 <tr class="separator:a67016f802fe0302bc611945ebdfd8bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ab24c579b8008ded958bc0322ca506cff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab24c579b8008ded958bc0322ca506cff">&#9670;&nbsp;</a></span>oc_ri_alloc_client_cb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">oc_client_cb_t* oc_ri_alloc_client_cb </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>uri</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">oc_endpoint_t *&#160;</td>
+          <td class="paramname"><em>endpoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">oc_method_t&#160;</td>
+          <td class="paramname"><em>method</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>query</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">oc_client_handler_t&#160;</td>
+          <td class="paramname"><em>handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">oc_qos_t&#160;</td>
+          <td class="paramname"><em>qos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>allocate the client callback information </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uri</td><td>the uri to be called </td></tr>
+    <tr><td class="paramname">endpoint</td><td>the endpoint of the device </td></tr>
+    <tr><td class="paramname">method</td><td>method to be used </td></tr>
+    <tr><td class="paramname">query</td><td>the query params to be used </td></tr>
+    <tr><td class="paramname">handler</td><td>the callback when data arrives </td></tr>
+    <tr><td class="paramname">qos</td><td>quality of service level </td></tr>
+    <tr><td class="paramname">user_data</td><td>user data to be provided with the invocation of the callback </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>oc_client_cb_t* the client callback info </dd></dl>
+
+</div>
+</div>
+<a id="a37581fc662e5c9cecf258875b4429ca2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37581fc662e5c9cecf258875b4429ca2">&#9670;&nbsp;</a></span>oc_ri_find_client_cb_by_mid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">oc_client_cb_t* oc_ri_find_client_cb_by_mid </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>mid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>find the client callback info by message id (mid) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mid</td><td>the message id </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>oc_client_cb_t* the client callback info </dd></dl>
+
+</div>
+</div>
+<a id="a7ce3325140b542af10486e5d0298481e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ce3325140b542af10486e5d0298481e">&#9670;&nbsp;</a></span>oc_ri_find_client_cb_by_token()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">oc_client_cb_t* oc_ri_find_client_cb_by_token </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>token</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>token_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>find the client callback info by token </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">token</td><td>the token </td></tr>
+    <tr><td class="paramname">token_len</td><td>the token lenght </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>oc_client_cb_t* the client callback info </dd></dl>
+
+</div>
+</div>
+<a id="a5a0915083eefca7d16238eff6a6db704"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a0915083eefca7d16238eff6a6db704">&#9670;&nbsp;</a></span>oc_ri_free_client_cbs_by_endpoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oc_ri_free_client_cbs_by_endpoint </td>
+          <td>(</td>
+          <td class="paramtype">oc_endpoint_t *&#160;</td>
+          <td class="paramname"><em>endpoint</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>free the client callback informatin by endpoint </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endpoint</td><td>the endpoint </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abd4c28572243f8b7343fdc826f6a22a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd4c28572243f8b7343fdc826f6a22a4">&#9670;&nbsp;</a></span>oc_ri_free_client_cbs_by_mid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oc_ri_free_client_cbs_by_mid </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>mid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>free the client callback infomation by message id (mid) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mid</td><td>the message id </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad769e0d91b1758a254dfb4449fbbd102"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad769e0d91b1758a254dfb4449fbbd102">&#9670;&nbsp;</a></span>oc_ri_get_client_cb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">oc_client_cb_t* oc_ri_get_client_cb </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>uri</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">oc_endpoint_t *&#160;</td>
+          <td class="paramname"><em>endpoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">oc_method_t&#160;</td>
+          <td class="paramname"><em>method</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>retrieve the client callback information </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uri</td><td>the uri for the callback </td></tr>
+    <tr><td class="paramname">endpoint</td><td>the endpoint for the callback </td></tr>
+    <tr><td class="paramname">method</td><td>the used method </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>oc_client_cb_t* the client callback info </dd></dl>
+
+</div>
+</div>
+<a id="a47f318c6ad81d4fd19414e7767e81567"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47f318c6ad81d4fd19414e7767e81567">&#9670;&nbsp;</a></span>oc_ri_is_client_cb_valid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool oc_ri_is_client_cb_valid </td>
+          <td>(</td>
+          <td class="paramtype">oc_client_cb_t *&#160;</td>
+          <td class="paramname"><em>client_cb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>is the client callback information valid </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">client_cb</td><td>the client callback information </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true is correct </dd>
+<dd>
+false is incomplete </dd></dl>
+
+</div>
+</div>
+<a id="a67016f802fe0302bc611945ebdfd8bbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67016f802fe0302bc611945ebdfd8bbb">&#9670;&nbsp;</a></span>oc_ri_process_discovery_payload()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">oc_discovery_flags_t oc_ri_process_discovery_payload </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>payload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">oc_client_handler_t&#160;</td>
+          <td class="paramname"><em>handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">oc_endpoint_t *&#160;</td>
+          <td class="paramname"><em>endpoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>handle the discovery payload (e.g. </p>
+<p>parse the oic/res response and do the callbacks)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">payload</td><td>the recieved discovery response </td></tr>
+    <tr><td class="paramname">len</td><td>lenght of the payload </td></tr>
+    <tr><td class="paramname">handler</td><td>handler of the discovery </td></tr>
+    <tr><td class="paramname">endpoint</td><td>endpoint </td></tr>
+    <tr><td class="paramname">user_data</td><td>the user data to be supplied to the handler </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>oc_discovery_flags_t the discovery flags (e.g. more to come) </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__client__state_8h.html">oc_client_state.h</a></li>
-    <li class="footer">Generated on Tue Aug 24 2021 11:37:56 for IoTivity-Lite by
+    <li class="footer">Generated on Tue Aug 24 2021 13:13:34 for IoTivity-Lite by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

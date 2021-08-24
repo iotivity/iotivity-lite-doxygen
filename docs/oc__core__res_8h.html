@@ -121,8 +121,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a6ae1cf0f4111e7af57394b8cd9a3c51b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoc__device__info__t.html">oc_device_info_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a6ae1cf0f4111e7af57394b8cd9a3c51b">oc_core_add_new_device</a> (const char *uri, const char *rt, const char *name, const char *spec_version, const char *data_model_version, <a class="el" href="oc__core__res_8h.html#aaef8fad58f22d24cd42a6e6b07d22e37">oc_core_add_device_cb_t</a> add_device_cb, void *data)</td></tr>
 <tr class="memdesc:a6ae1cf0f4111e7af57394b8cd9a3c51b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add new devide to the platform.  <a href="oc__core__res_8h.html#a6ae1cf0f4111e7af57394b8cd9a3c51b">More...</a><br /></td></tr>
 <tr class="separator:a6ae1cf0f4111e7af57394b8cd9a3c51b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae05775044d062a575fc789756f776d27"><td class="memItemLeft" align="right" valign="top"><a id="ae05775044d062a575fc789756f776d27"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_core_encode_interfaces_mask</b> (CborEncoder *parent, oc_interface_mask_t iface_mask)</td></tr>
+<tr class="memitem:ae05775044d062a575fc789756f776d27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#ae05775044d062a575fc789756f776d27">oc_core_encode_interfaces_mask</a> (CborEncoder *parent, oc_interface_mask_t iface_mask)</td></tr>
+<tr class="memdesc:ae05775044d062a575fc789756f776d27"><td class="mdescLeft">&#160;</td><td class="mdescRight">encode the interfaces with the cbor (payload) encoder  <a href="oc__core__res_8h.html#ae05775044d062a575fc789756f776d27">More...</a><br /></td></tr>
 <tr class="separator:ae05775044d062a575fc789756f776d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d69c4b7ffa0fd988862fa0426cd8329"><td class="memItemLeft" align="right" valign="top">oc_uuid_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a3d69c4b7ffa0fd988862fa0426cd8329">oc_core_get_device_id</a> (size_t device)</td></tr>
 <tr class="memdesc:a3d69c4b7ffa0fd988862fa0426cd8329"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the id (uuid) of the device  <a href="oc__core__res_8h.html#a3d69c4b7ffa0fd988862fa0426cd8329">More...</a><br /></td></tr>
@@ -312,6 +312,43 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_core_encode_interf
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>oc_device_info_t* the device information </dd></dl>
+
+</div>
+</div>
+<a id="ae05775044d062a575fc789756f776d27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae05775044d062a575fc789756f776d27">&#9670;&nbsp;</a></span>oc_core_encode_interfaces_mask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oc_core_encode_interfaces_mask </td>
+          <td>(</td>
+          <td class="paramtype">CborEncoder *&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">oc_interface_mask_t&#160;</td>
+          <td class="paramname"><em>iface_mask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>encode the interfaces with the cbor (payload) encoder </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>the cbor encoder </td></tr>
+    <tr><td class="paramname">iface_mask</td><td>the interfaces (as bit mask) </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -933,7 +970,7 @@ false resource is not in the request </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__core__res_8h.html">oc_core_res.h</a></li>
-    <li class="footer">Generated on Tue Aug 24 2021 11:37:56 for IoTivity-Lite by
+    <li class="footer">Generated on Tue Aug 24 2021 13:13:34 for IoTivity-Lite by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
