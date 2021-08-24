@@ -33,12 +33,16 @@ var menudata={children:[
 {text:"File List",url:"files.html"},
 {text:"Globals",url:"globals.html",children:[
 {text:"All",url:"globals.html",children:[
-{text:"d",url:"globals.html#index_d"},
+{text:"a",url:"globals.html#index_a"},
+{text:"d",url:"globals_d.html#index_d"},
+{text:"e",url:"globals_e.html#index_e"},
 {text:"i",url:"globals_i.html#index_i"},
 {text:"o",url:"globals_o.html#index_o"},
 {text:"s",url:"globals_s.html#index_s"}]},
 {text:"Functions",url:"globals_func.html",children:[
-{text:"o",url:"globals_func.html#index_o"}]},
+{text:"a",url:"globals_func.html#index_a"},
+{text:"e",url:"globals_func_e.html#index_e"},
+{text:"o",url:"globals_func_o.html#index_o"}]},
 {text:"Typedefs",url:"globals_type.html"},
 {text:"Enumerations",url:"globals_enum.html"},
 {text:"Enumerator",url:"globals_eval.html"},
