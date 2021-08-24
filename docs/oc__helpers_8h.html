@@ -98,8 +98,8 @@ $(document).ready(function(){initNavTree('oc__helpers_8h.html',''); initResizabl
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:aa5ab461e92a3e8f7ea5c8bec61a00776"><td class="memItemLeft" align="right" valign="top"><a id="aa5ab461e92a3e8f7ea5c8bec61a00776"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_alloc_string</b>(ocstring,  size)&#160;&#160;&#160;_oc_alloc_string((ocstring), (size))</td></tr>
+<tr class="memitem:aa5ab461e92a3e8f7ea5c8bec61a00776"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#aa5ab461e92a3e8f7ea5c8bec61a00776">oc_alloc_string</a>(ocstring,  size)&#160;&#160;&#160;_oc_alloc_string((ocstring), (size))</td></tr>
+<tr class="memdesc:aa5ab461e92a3e8f7ea5c8bec61a00776"><td class="mdescLeft">&#160;</td><td class="mdescRight">allocate oc_string  <a href="oc__helpers_8h.html#aa5ab461e92a3e8f7ea5c8bec61a00776">More...</a><br /></td></tr>
 <tr class="separator:aa5ab461e92a3e8f7ea5c8bec61a00776"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd29169560ba0d10d5ab527ff6fe50e3"><td class="memItemLeft" align="right" valign="top"><a id="afd29169560ba0d10d5ab527ff6fe50e3"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_bool_array</b>(ocboolarray)&#160;&#160;&#160;(oc_cast(ocboolarray, bool))</td></tr>
@@ -114,10 +114,10 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_byte_string_array_get_allocated_size</b>(ocstringarray)&#160;&#160;&#160;((ocstringarray).size / STRING_ARRAY_ITEM_MAX_LEN)</td></tr>
 <tr class="separator:aaf03f4fb5f6f370b7b3d9b919eb22321"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3c74955eb2906689a12e2554597d949"><td class="memItemLeft" align="right" valign="top"><a id="aa3c74955eb2906689a12e2554597d949"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_byte_string_array_get_item</b>(ocstringarray,  index)&#160;&#160;&#160;(oc_string(ocstringarray) + index * STRING_ARRAY_ITEM_MAX_LEN + 1)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_byte_string_array_get_item</b>(ocstringarray,  index)&#160;&#160;&#160;(<a class="el" href="oc__helpers_8h.html#a5bd70ca9b1f0250da0e76740ce99f7b4">oc_string</a>(ocstringarray) + index * STRING_ARRAY_ITEM_MAX_LEN + 1)</td></tr>
 <tr class="separator:aa3c74955eb2906689a12e2554597d949"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23c2fcbec21e74ec2253bf58e21390ad"><td class="memItemLeft" align="right" valign="top"><a id="a23c2fcbec21e74ec2253bf58e21390ad"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_byte_string_array_get_item_size</b>(ocstringarray,  index)&#160;&#160;&#160;(*(oc_string(ocstringarray) + index * STRING_ARRAY_ITEM_MAX_LEN))</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_byte_string_array_get_item_size</b>(ocstringarray,  index)&#160;&#160;&#160;(*(<a class="el" href="oc__helpers_8h.html#a5bd70ca9b1f0250da0e76740ce99f7b4">oc_string</a>(ocstringarray) + index * STRING_ARRAY_ITEM_MAX_LEN))</td></tr>
 <tr class="separator:a23c2fcbec21e74ec2253bf58e21390ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34785f17900d0b88e30c5fdf496dd7bf"><td class="memItemLeft" align="right" valign="top"><a id="a34785f17900d0b88e30c5fdf496dd7bf"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_byte_string_array_set_item</b>(ocstringarray,  str,  str_len,  index)&#160;&#160;&#160;(_oc_copy_byte_string_to_array(&amp;(ocstringarray), str, str_len, index))</td></tr>
@@ -131,23 +131,23 @@ Macros</h2></td></tr>
 <tr class="memitem:a877004310f723b439d13e3c3d1b4c901"><td class="memItemLeft" align="right" valign="top"><a id="a877004310f723b439d13e3c3d1b4c901"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_double_array_size</b>(ocdoublearray)&#160;&#160;&#160;((ocdoublearray).size)</td></tr>
 <tr class="separator:a877004310f723b439d13e3c3d1b4c901"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6f18caeccb6d1d823f637bf43254889"><td class="memItemLeft" align="right" valign="top"><a id="ae6f18caeccb6d1d823f637bf43254889"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_free_bool_array</b>(ocarray)&#160;&#160;&#160;(_oc_free_array(ocarray, BYTE_POOL))</td></tr>
+<tr class="memitem:ae6f18caeccb6d1d823f637bf43254889"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#ae6f18caeccb6d1d823f637bf43254889">oc_free_bool_array</a>(ocarray)&#160;&#160;&#160;(_oc_free_array(ocarray, BYTE_POOL))</td></tr>
+<tr class="memdesc:ae6f18caeccb6d1d823f637bf43254889"><td class="mdescLeft">&#160;</td><td class="mdescRight">free array of booleans  <a href="oc__helpers_8h.html#ae6f18caeccb6d1d823f637bf43254889">More...</a><br /></td></tr>
 <tr class="separator:ae6f18caeccb6d1d823f637bf43254889"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a487e945d066f1b556f6ee1213593f151"><td class="memItemLeft" align="right" valign="top"><a id="a487e945d066f1b556f6ee1213593f151"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_free_byte_string_array</b>(ocstringarray)&#160;&#160;&#160;(_oc_free_string(ocstringarray))</td></tr>
 <tr class="separator:a487e945d066f1b556f6ee1213593f151"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c22b4de420e3f649835616d377788ad"><td class="memItemLeft" align="right" valign="top"><a id="a4c22b4de420e3f649835616d377788ad"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_free_double_array</b>(ocarray)&#160;&#160;&#160;(_oc_free_array(ocarray, DOUBLE_POOL))</td></tr>
+<tr class="memitem:a4c22b4de420e3f649835616d377788ad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a4c22b4de420e3f649835616d377788ad">oc_free_double_array</a>(ocarray)&#160;&#160;&#160;(_oc_free_array(ocarray, DOUBLE_POOL))</td></tr>
+<tr class="memdesc:a4c22b4de420e3f649835616d377788ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">free array of doubles  <a href="oc__helpers_8h.html#a4c22b4de420e3f649835616d377788ad">More...</a><br /></td></tr>
 <tr class="separator:a4c22b4de420e3f649835616d377788ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4345508db708829ef62c6ee792654d94"><td class="memItemLeft" align="right" valign="top"><a id="a4345508db708829ef62c6ee792654d94"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_free_int_array</b>(ocarray)&#160;&#160;&#160;(_oc_free_array(ocarray, INT_POOL))</td></tr>
+<tr class="memitem:a4345508db708829ef62c6ee792654d94"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a4345508db708829ef62c6ee792654d94">oc_free_int_array</a>(ocarray)&#160;&#160;&#160;(_oc_free_array(ocarray, INT_POOL))</td></tr>
+<tr class="memdesc:a4345508db708829ef62c6ee792654d94"><td class="mdescLeft">&#160;</td><td class="mdescRight">free array of integers  <a href="oc__helpers_8h.html#a4345508db708829ef62c6ee792654d94">More...</a><br /></td></tr>
 <tr class="separator:a4345508db708829ef62c6ee792654d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6e6f27d7859486d5cfc936dd14f4d3a"><td class="memItemLeft" align="right" valign="top"><a id="ae6e6f27d7859486d5cfc936dd14f4d3a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_free_string</b>(ocstring)&#160;&#160;&#160;_oc_free_string(ocstring)</td></tr>
+<tr class="memitem:ae6e6f27d7859486d5cfc936dd14f4d3a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#ae6e6f27d7859486d5cfc936dd14f4d3a">oc_free_string</a>(ocstring)&#160;&#160;&#160;_oc_free_string(ocstring)</td></tr>
+<tr class="memdesc:ae6e6f27d7859486d5cfc936dd14f4d3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">free ocstring  <a href="oc__helpers_8h.html#ae6e6f27d7859486d5cfc936dd14f4d3a">More...</a><br /></td></tr>
 <tr class="separator:ae6e6f27d7859486d5cfc936dd14f4d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a162fe587ca8222204ab2d140c54b87f2"><td class="memItemLeft" align="right" valign="top"><a id="a162fe587ca8222204ab2d140c54b87f2"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_free_string_array</b>(ocstringarray)&#160;&#160;&#160;(_oc_free_string(ocstringarray))</td></tr>
+<tr class="memitem:a162fe587ca8222204ab2d140c54b87f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a162fe587ca8222204ab2d140c54b87f2">oc_free_string_array</a>(ocstringarray)&#160;&#160;&#160;(_oc_free_string(ocstringarray))</td></tr>
+<tr class="memdesc:a162fe587ca8222204ab2d140c54b87f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">free oc string array  <a href="oc__helpers_8h.html#a162fe587ca8222204ab2d140c54b87f2">More...</a><br /></td></tr>
 <tr class="separator:a162fe587ca8222204ab2d140c54b87f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0e25fdd7b74ead4b9d330f30cf98da8"><td class="memItemLeft" align="right" valign="top"><a id="af0e25fdd7b74ead4b9d330f30cf98da8"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_int_array</b>(ocintarray)&#160;&#160;&#160;(oc_cast(ocintarray, int64_t))</td></tr>
@@ -155,26 +155,26 @@ Macros</h2></td></tr>
 <tr class="memitem:a727102f5d5715caa4b830333fd736550"><td class="memItemLeft" align="right" valign="top"><a id="a727102f5d5715caa4b830333fd736550"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_int_array_size</b>(ocintarray)&#160;&#160;&#160;((ocintarray).size)</td></tr>
 <tr class="separator:a727102f5d5715caa4b830333fd736550"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a885d05a580d7abcae59cee72cbd06a63"><td class="memItemLeft" align="right" valign="top"><a id="a885d05a580d7abcae59cee72cbd06a63"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_new_bool_array</b>(ocarray,  size)&#160;&#160;&#160;(_oc_new_array(ocarray, size, BYTE_POOL))</td></tr>
+<tr class="memitem:a885d05a580d7abcae59cee72cbd06a63"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a885d05a580d7abcae59cee72cbd06a63">oc_new_bool_array</a>(ocarray,  size)&#160;&#160;&#160;(<a class="el" href="oc__helpers_8h.html#a0943d88282589224213101261fc12025">_oc_new_array</a>(ocarray, size, BYTE_POOL))</td></tr>
+<tr class="memdesc:a885d05a580d7abcae59cee72cbd06a63"><td class="mdescLeft">&#160;</td><td class="mdescRight">new boolean array  <a href="oc__helpers_8h.html#a885d05a580d7abcae59cee72cbd06a63">More...</a><br /></td></tr>
 <tr class="separator:a885d05a580d7abcae59cee72cbd06a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9eb2f809ba6162eaed18fffbab0b6b2"><td class="memItemLeft" align="right" valign="top"><a id="ab9eb2f809ba6162eaed18fffbab0b6b2"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_new_byte_string_array</b>(ocstringarray,  size)&#160;&#160;&#160;(_oc_alloc_string_array(ocstringarray, size))</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_new_byte_string_array</b>(ocstringarray,  size)&#160;&#160;&#160;(<a class="el" href="oc__helpers_8h.html#a79bd60028e1af917dc8f05239e2f23bc">_oc_alloc_string_array</a>(ocstringarray, size))</td></tr>
 <tr class="separator:ab9eb2f809ba6162eaed18fffbab0b6b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6b20c7490aad4e32d1d2c8aaf2946ac"><td class="memItemLeft" align="right" valign="top"><a id="ab6b20c7490aad4e32d1d2c8aaf2946ac"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_new_double_array</b>(ocarray,  size)&#160;&#160;&#160;(_oc_new_array(ocarray, size, DOUBLE_POOL))</td></tr>
+<tr class="memitem:ab6b20c7490aad4e32d1d2c8aaf2946ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#ab6b20c7490aad4e32d1d2c8aaf2946ac">oc_new_double_array</a>(ocarray,  size)&#160;&#160;&#160;(<a class="el" href="oc__helpers_8h.html#a0943d88282589224213101261fc12025">_oc_new_array</a>(ocarray, size, DOUBLE_POOL))</td></tr>
+<tr class="memdesc:ab6b20c7490aad4e32d1d2c8aaf2946ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">new double array  <a href="oc__helpers_8h.html#ab6b20c7490aad4e32d1d2c8aaf2946ac">More...</a><br /></td></tr>
 <tr class="separator:ab6b20c7490aad4e32d1d2c8aaf2946ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af264a8cc459240766e47fd1062f71184"><td class="memItemLeft" align="right" valign="top"><a id="af264a8cc459240766e47fd1062f71184"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_new_int_array</b>(ocarray,  size)&#160;&#160;&#160;(_oc_new_array(ocarray, size, INT_POOL))</td></tr>
+<tr class="memitem:af264a8cc459240766e47fd1062f71184"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#af264a8cc459240766e47fd1062f71184">oc_new_int_array</a>(ocarray,  size)&#160;&#160;&#160;(<a class="el" href="oc__helpers_8h.html#a0943d88282589224213101261fc12025">_oc_new_array</a>(ocarray, size, INT_POOL))</td></tr>
+<tr class="memdesc:af264a8cc459240766e47fd1062f71184"><td class="mdescLeft">&#160;</td><td class="mdescRight">new integer array  <a href="oc__helpers_8h.html#af264a8cc459240766e47fd1062f71184">More...</a><br /></td></tr>
 <tr class="separator:af264a8cc459240766e47fd1062f71184"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a687f4e969156f2ee1348e03c3afe6a27"><td class="memItemLeft" align="right" valign="top"><a id="a687f4e969156f2ee1348e03c3afe6a27"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_new_string</b>(ocstring,  str,  str_len)&#160;&#160;&#160;_oc_new_string(ocstring, str, str_len)</td></tr>
+<tr class="memitem:a687f4e969156f2ee1348e03c3afe6a27"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a687f4e969156f2ee1348e03c3afe6a27">oc_new_string</a>(ocstring,  str,  str_len)&#160;&#160;&#160;_oc_new_string(ocstring, str, str_len)</td></tr>
+<tr class="memdesc:a687f4e969156f2ee1348e03c3afe6a27"><td class="mdescLeft">&#160;</td><td class="mdescRight">create new string from string (not null terminated)  <a href="oc__helpers_8h.html#a687f4e969156f2ee1348e03c3afe6a27">More...</a><br /></td></tr>
 <tr class="separator:a687f4e969156f2ee1348e03c3afe6a27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41251afd98b8794639301a9ef99e67be"><td class="memItemLeft" align="right" valign="top"><a id="a41251afd98b8794639301a9ef99e67be"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_new_string_array</b>(ocstringarray,  size)&#160;&#160;&#160;(_oc_alloc_string_array(ocstringarray, size))</td></tr>
+<tr class="memitem:a41251afd98b8794639301a9ef99e67be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a41251afd98b8794639301a9ef99e67be">oc_new_string_array</a>(ocstringarray,  size)&#160;&#160;&#160;(<a class="el" href="oc__helpers_8h.html#a79bd60028e1af917dc8f05239e2f23bc">_oc_alloc_string_array</a>(ocstringarray, size))</td></tr>
+<tr class="memdesc:a41251afd98b8794639301a9ef99e67be"><td class="mdescLeft">&#160;</td><td class="mdescRight">new oc string array  <a href="oc__helpers_8h.html#a41251afd98b8794639301a9ef99e67be">More...</a><br /></td></tr>
 <tr class="separator:a41251afd98b8794639301a9ef99e67be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bd70ca9b1f0250da0e76740ce99f7b4"><td class="memItemLeft" align="right" valign="top"><a id="a5bd70ca9b1f0250da0e76740ce99f7b4"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_string</b>(ocstring)&#160;&#160;&#160;(oc_cast(ocstring, char))</td></tr>
+<tr class="memitem:a5bd70ca9b1f0250da0e76740ce99f7b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a5bd70ca9b1f0250da0e76740ce99f7b4">oc_string</a>(ocstring)&#160;&#160;&#160;(oc_cast(ocstring, char))</td></tr>
+<tr class="memdesc:a5bd70ca9b1f0250da0e76740ce99f7b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">cast oc_string to string  <a href="oc__helpers_8h.html#a5bd70ca9b1f0250da0e76740ce99f7b4">More...</a><br /></td></tr>
 <tr class="separator:a5bd70ca9b1f0250da0e76740ce99f7b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69d33d24dca94f49cf13d757c9934402"><td class="memItemLeft" align="right" valign="top"><a id="a69d33d24dca94f49cf13d757c9934402"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_string_array_add_item</b>(ocstringarray,  str)&#160;&#160;&#160;(_oc_string_array_add_item(&amp;(ocstringarray), str))</td></tr>
@@ -183,7 +183,7 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_string_array_get_allocated_size</b>(ocstringarray)&#160;&#160;&#160;((ocstringarray).size / STRING_ARRAY_ITEM_MAX_LEN)</td></tr>
 <tr class="separator:a8d4225a6ded52a4fa9b85445a1f2cc38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a491f6b77c244590a80b23e8fbd2306b6"><td class="memItemLeft" align="right" valign="top"><a id="a491f6b77c244590a80b23e8fbd2306b6"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_string_array_get_item</b>(ocstringarray,  index)&#160;&#160;&#160;(oc_string(ocstringarray) + index * STRING_ARRAY_ITEM_MAX_LEN)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_string_array_get_item</b>(ocstringarray,  index)&#160;&#160;&#160;(<a class="el" href="oc__helpers_8h.html#a5bd70ca9b1f0250da0e76740ce99f7b4">oc_string</a>(ocstringarray) + index * STRING_ARRAY_ITEM_MAX_LEN)</td></tr>
 <tr class="separator:a491f6b77c244590a80b23e8fbd2306b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b16d54e001ad10f5394c88a80a5a5cf"><td class="memItemLeft" align="right" valign="top"><a id="a3b16d54e001ad10f5394c88a80a5a5cf"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_string_array_get_item_size</b>(ocstringarray,  index)&#160;&#160;&#160;(strlen((const char *)oc_string_array_get_item(ocstringarray, index)))</td></tr>
@@ -221,8 +221,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a9d4cd17d4100263b9f2be309d0bee2a3"><td class="memItemLeft" align="right" valign="top"><a id="a9d4cd17d4100263b9f2be309d0bee2a3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>_oc_alloc_string</b> (oc_string_t *ocstring, size_t size)</td></tr>
 <tr class="separator:a9d4cd17d4100263b9f2be309d0bee2a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79bd60028e1af917dc8f05239e2f23bc"><td class="memItemLeft" align="right" valign="top"><a id="a79bd60028e1af917dc8f05239e2f23bc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>_oc_alloc_string_array</b> (oc_string_array_t *ocstringarray, size_t size)</td></tr>
+<tr class="memitem:a79bd60028e1af917dc8f05239e2f23bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a79bd60028e1af917dc8f05239e2f23bc">_oc_alloc_string_array</a> (oc_string_array_t *ocstringarray, size_t size)</td></tr>
+<tr class="memdesc:a79bd60028e1af917dc8f05239e2f23bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">allocate string array  <a href="oc__helpers_8h.html#a79bd60028e1af917dc8f05239e2f23bc">More...</a><br /></td></tr>
 <tr class="separator:a79bd60028e1af917dc8f05239e2f23bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa15ea3db215d65184761382dddcf7ed"><td class="memItemLeft" align="right" valign="top"><a id="afa15ea3db215d65184761382dddcf7ed"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>_oc_byte_string_array_add_item</b> (oc_string_array_t *ocstringarray, const char str[], size_t str_len)</td></tr>
@@ -239,8 +239,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>_oc_free_array</b> (o
 <tr class="memitem:a089691c822cae9f863733023a40f497b"><td class="memItemLeft" align="right" valign="top"><a id="a089691c822cae9f863733023a40f497b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>_oc_free_string</b> (oc_string_t *ocstring)</td></tr>
 <tr class="separator:a089691c822cae9f863733023a40f497b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0943d88282589224213101261fc12025"><td class="memItemLeft" align="right" valign="top"><a id="a0943d88282589224213101261fc12025"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>_oc_new_array</b> (oc_array_t *ocarray, size_t size, pool type)</td></tr>
+<tr class="memitem:a0943d88282589224213101261fc12025"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a0943d88282589224213101261fc12025">_oc_new_array</a> (oc_array_t *ocarray, size_t size, pool type)</td></tr>
+<tr class="memdesc:a0943d88282589224213101261fc12025"><td class="mdescLeft">&#160;</td><td class="mdescRight">new array  <a href="oc__helpers_8h.html#a0943d88282589224213101261fc12025">More...</a><br /></td></tr>
 <tr class="separator:a0943d88282589224213101261fc12025"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6f4842dfa2cf7629690abff5054f3a9"><td class="memItemLeft" align="right" valign="top"><a id="ad6f4842dfa2cf7629690abff5054f3a9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>_oc_new_string</b> (oc_string_t *ocstring, const char *str, size_t str_len)</td></tr>
@@ -251,23 +251,509 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_oc_string_array_add_
 <tr class="memitem:abea070fa12fb10b3d8ad0f15405413bc"><td class="memItemLeft" align="right" valign="top"><a id="abea070fa12fb10b3d8ad0f15405413bc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_concat_strings</b> (oc_string_t *concat, const char *str1, const char *str2)</td></tr>
 <tr class="separator:abea070fa12fb10b3d8ad0f15405413bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af96ddf66b54df49a985fdb6c52d9bf31"><td class="memItemLeft" align="right" valign="top"><a id="af96ddf66b54df49a985fdb6c52d9bf31"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_conv_byte_array_to_hex_string</b> (const uint8_t *array, size_t array_len, char *hex_str, size_t *hex_str_len)</td></tr>
+<tr class="memitem:af96ddf66b54df49a985fdb6c52d9bf31"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#af96ddf66b54df49a985fdb6c52d9bf31">oc_conv_byte_array_to_hex_string</a> (const uint8_t *array, size_t array_len, char *hex_str, size_t *hex_str_len)</td></tr>
+<tr class="memdesc:af96ddf66b54df49a985fdb6c52d9bf31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conversions between hex encoded strings and byte arrays.  <a href="oc__helpers_8h.html#af96ddf66b54df49a985fdb6c52d9bf31">More...</a><br /></td></tr>
 <tr class="separator:af96ddf66b54df49a985fdb6c52d9bf31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16bbf1dbd390650087470ff8efb79638"><td class="memItemLeft" align="right" valign="top"><a id="a16bbf1dbd390650087470ff8efb79638"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_conv_hex_string_to_byte_array</b> (const char *hex_str, size_t hex_str_len, uint8_t *array, size_t *array_len)</td></tr>
+<tr class="memitem:a16bbf1dbd390650087470ff8efb79638"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a16bbf1dbd390650087470ff8efb79638">oc_conv_hex_string_to_byte_array</a> (const char *hex_str, size_t hex_str_len, uint8_t *array, size_t *array_len)</td></tr>
+<tr class="memdesc:a16bbf1dbd390650087470ff8efb79638"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert hex string to byte array  <a href="oc__helpers_8h.html#a16bbf1dbd390650087470ff8efb79638">More...</a><br /></td></tr>
 <tr class="separator:a16bbf1dbd390650087470ff8efb79638"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9170160c3afc735c8adf574d00d20c8c"><td class="memItemLeft" align="right" valign="top"><a id="a9170160c3afc735c8adf574d00d20c8c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array</b> (oc_string_array_t *ocstringarray, oc_string_t *ocstring)</td></tr>
 <tr class="separator:a9170160c3afc735c8adf574d00d20c8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="aa5ab461e92a3e8f7ea5c8bec61a00776"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5ab461e92a3e8f7ea5c8bec61a00776">&#9670;&nbsp;</a></span>oc_alloc_string</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define oc_alloc_string</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ocstring, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">size&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;_oc_alloc_string((ocstring), (size))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>allocate oc_string </p>
+
+</div>
+</div>
+<a id="ae6f18caeccb6d1d823f637bf43254889"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6f18caeccb6d1d823f637bf43254889">&#9670;&nbsp;</a></span>oc_free_bool_array</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define oc_free_bool_array</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ocarray</td><td>)</td>
+          <td>&#160;&#160;&#160;(_oc_free_array(ocarray, BYTE_POOL))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>free array of booleans </p>
+
+</div>
+</div>
+<a id="a4c22b4de420e3f649835616d377788ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c22b4de420e3f649835616d377788ad">&#9670;&nbsp;</a></span>oc_free_double_array</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define oc_free_double_array</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ocarray</td><td>)</td>
+          <td>&#160;&#160;&#160;(_oc_free_array(ocarray, DOUBLE_POOL))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>free array of doubles </p>
+
+</div>
+</div>
+<a id="a4345508db708829ef62c6ee792654d94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4345508db708829ef62c6ee792654d94">&#9670;&nbsp;</a></span>oc_free_int_array</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define oc_free_int_array</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ocarray</td><td>)</td>
+          <td>&#160;&#160;&#160;(_oc_free_array(ocarray, INT_POOL))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>free array of integers </p>
+
+</div>
+</div>
+<a id="ae6e6f27d7859486d5cfc936dd14f4d3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6e6f27d7859486d5cfc936dd14f4d3a">&#9670;&nbsp;</a></span>oc_free_string</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define oc_free_string</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ocstring</td><td>)</td>
+          <td>&#160;&#160;&#160;_oc_free_string(ocstring)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>free ocstring </p>
+
+</div>
+</div>
+<a id="a162fe587ca8222204ab2d140c54b87f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a162fe587ca8222204ab2d140c54b87f2">&#9670;&nbsp;</a></span>oc_free_string_array</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define oc_free_string_array</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ocstringarray</td><td>)</td>
+          <td>&#160;&#160;&#160;(_oc_free_string(ocstringarray))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>free oc string array </p>
+
+</div>
+</div>
+<a id="a885d05a580d7abcae59cee72cbd06a63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a885d05a580d7abcae59cee72cbd06a63">&#9670;&nbsp;</a></span>oc_new_bool_array</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define oc_new_bool_array</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ocarray, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">size&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(<a class="el" href="oc__helpers_8h.html#a0943d88282589224213101261fc12025">_oc_new_array</a>(ocarray, size, BYTE_POOL))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>new boolean array </p>
+
+</div>
+</div>
+<a id="ab6b20c7490aad4e32d1d2c8aaf2946ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6b20c7490aad4e32d1d2c8aaf2946ac">&#9670;&nbsp;</a></span>oc_new_double_array</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define oc_new_double_array</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ocarray, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">size&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(<a class="el" href="oc__helpers_8h.html#a0943d88282589224213101261fc12025">_oc_new_array</a>(ocarray, size, DOUBLE_POOL))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>new double array </p>
+
+</div>
+</div>
+<a id="af264a8cc459240766e47fd1062f71184"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af264a8cc459240766e47fd1062f71184">&#9670;&nbsp;</a></span>oc_new_int_array</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define oc_new_int_array</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ocarray, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">size&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(<a class="el" href="oc__helpers_8h.html#a0943d88282589224213101261fc12025">_oc_new_array</a>(ocarray, size, INT_POOL))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>new integer array </p>
+
+</div>
+</div>
+<a id="a687f4e969156f2ee1348e03c3afe6a27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a687f4e969156f2ee1348e03c3afe6a27">&#9670;&nbsp;</a></span>oc_new_string</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define oc_new_string</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ocstring, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">str, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">str_len&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;_oc_new_string(ocstring, str, str_len)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>create new string from string (not null terminated) </p>
+
+</div>
+</div>
+<a id="a41251afd98b8794639301a9ef99e67be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41251afd98b8794639301a9ef99e67be">&#9670;&nbsp;</a></span>oc_new_string_array</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define oc_new_string_array</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ocstringarray, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">size&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(<a class="el" href="oc__helpers_8h.html#a79bd60028e1af917dc8f05239e2f23bc">_oc_alloc_string_array</a>(ocstringarray, size))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>new oc string array </p>
+
+</div>
+</div>
+<a id="a5bd70ca9b1f0250da0e76740ce99f7b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bd70ca9b1f0250da0e76740ce99f7b4">&#9670;&nbsp;</a></span>oc_string</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define oc_string</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ocstring</td><td>)</td>
+          <td>&#160;&#160;&#160;(oc_cast(ocstring, char))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>cast oc_string to string </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a79bd60028e1af917dc8f05239e2f23bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79bd60028e1af917dc8f05239e2f23bc">&#9670;&nbsp;</a></span>_oc_alloc_string_array()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _oc_alloc_string_array </td>
+          <td>(</td>
+          <td class="paramtype">oc_string_array_t *&#160;</td>
+          <td class="paramname"><em>ocstringarray</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>allocate string array </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ocstringarray</td><td>array to be allocated </td></tr>
+    <tr><td class="paramname">size</td><td>the size of the string array </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0943d88282589224213101261fc12025"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0943d88282589224213101261fc12025">&#9670;&nbsp;</a></span>_oc_new_array()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _oc_new_array </td>
+          <td>(</td>
+          <td class="paramtype">oc_array_t *&#160;</td>
+          <td class="paramname"><em>ocarray</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">pool&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>new array </p>
+
+</div>
+</div>
+<a id="af96ddf66b54df49a985fdb6c52d9bf31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af96ddf66b54df49a985fdb6c52d9bf31">&#9670;&nbsp;</a></span>oc_conv_byte_array_to_hex_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_conv_byte_array_to_hex_string </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>array</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>array_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>hex_str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>hex_str_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Conversions between hex encoded strings and byte arrays. </p>
+<p>convert array to hex</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">array</td><td>array of bytes </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">array_len</td><td>length of the array </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">hex_str</td><td>data as hex </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">hex_str_len</td><td>lenght of the hex string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int 0 success </dd></dl>
+
+</div>
+</div>
+<a id="a16bbf1dbd390650087470ff8efb79638"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16bbf1dbd390650087470ff8efb79638">&#9670;&nbsp;</a></span>oc_conv_hex_string_to_byte_array()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_conv_hex_string_to_byte_array </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>hex_str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>hex_str_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>array</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>array_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>convert hex string to byte array </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hex_str</td><td>hex string input </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hex_str_len</td><td>size of the hex string </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">array</td><td>array of bytes </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">array_len</td><td>byte array </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int 0 success </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__helpers_8h.html">oc_helpers.h</a></li>
-    <li class="footer">Generated on Tue Aug 24 2021 13:13:34 for IoTivity-Lite by
+    <li class="footer">Generated on Tue Aug 24 2021 16:07:20 for IoTivity-Lite by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

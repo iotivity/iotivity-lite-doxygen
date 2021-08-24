@@ -101,7 +101,7 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:acf84b55c3b10e0a5a7cfff4329008b90"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__network__events_8h.html#acf84b55c3b10e0a5a7cfff4329008b90">interface_event_handler_t</a>) (oc_interface_event_t event)</td></tr>
+<tr class="memitem:acf84b55c3b10e0a5a7cfff4329008b90"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__network__events_8h.html#acf84b55c3b10e0a5a7cfff4329008b90">interface_event_handler_t</a>) (<a class="el" href="oc__network__events_8h.html#abdd165be6caa5026d18f49473b31aa2d">oc_interface_event_t</a> event)</td></tr>
 <tr class="memdesc:acf84b55c3b10e0a5a7cfff4329008b90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function to pass the network interface up/down infomation to App.  <a href="oc__network__events_8h.html#acf84b55c3b10e0a5a7cfff4329008b90">More...</a><br /></td></tr>
 <tr class="separator:acf84b55c3b10e0a5a7cfff4329008b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac361ac183495c87b3213babc600ceadb"><td class="memItemLeft" align="right" valign="top"><a id="ac361ac183495c87b3213babc600ceadb"></a>
@@ -113,21 +113,22 @@ typedef struct oc_message_s&#160;</td><td class="memItemRight" valign="bottom"><
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:abdd165be6caa5026d18f49473b31aa2d"><td class="memItemLeft" align="right" valign="top"><a id="abdd165be6caa5026d18f49473b31aa2d"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>oc_interface_event_t</b> { <b>NETWORK_INTERFACE_DOWN</b>, 
-<b>NETWORK_INTERFACE_UP</b>
+<tr class="memitem:abdd165be6caa5026d18f49473b31aa2d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__network__events_8h.html#abdd165be6caa5026d18f49473b31aa2d">oc_interface_event_t</a> { <a class="el" href="oc__network__events_8h.html#abdd165be6caa5026d18f49473b31aa2da122b034cb4a6bb20b5f1770c2095793d">NETWORK_INTERFACE_DOWN</a>, 
+<a class="el" href="oc__network__events_8h.html#abdd165be6caa5026d18f49473b31aa2dadd6d38b84666ccf8cc15615199773d77">NETWORK_INTERFACE_UP</a>
  }</td></tr>
+<tr class="memdesc:abdd165be6caa5026d18f49473b31aa2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">network events  <a href="oc__network__events_8h.html#abdd165be6caa5026d18f49473b31aa2d">More...</a><br /></td></tr>
 <tr class="separator:abdd165be6caa5026d18f49473b31aa2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a13a6b23014373fe8460a2f7a2b715f70"><td class="memItemLeft" align="right" valign="top"><a id="a13a6b23014373fe8460a2f7a2b715f70"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_network_event</b> (oc_message_t *message)</td></tr>
+<tr class="memitem:a13a6b23014373fe8460a2f7a2b715f70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__network__events_8h.html#a13a6b23014373fe8460a2f7a2b715f70">oc_network_event</a> (oc_message_t *message)</td></tr>
+<tr class="memdesc:a13a6b23014373fe8460a2f7a2b715f70"><td class="mdescLeft">&#160;</td><td class="mdescRight">receive network event  <a href="oc__network__events_8h.html#a13a6b23014373fe8460a2f7a2b715f70">More...</a><br /></td></tr>
 <tr class="separator:a13a6b23014373fe8460a2f7a2b715f70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1bf144d565ebc81b01e2317b7296fc4"><td class="memItemLeft" align="right" valign="top"><a id="ac1bf144d565ebc81b01e2317b7296fc4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_network_interface_event</b> (oc_interface_event_t event)</td></tr>
+<tr class="memitem:ac1bf144d565ebc81b01e2317b7296fc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__network__events_8h.html#ac1bf144d565ebc81b01e2317b7296fc4">oc_network_interface_event</a> (<a class="el" href="oc__network__events_8h.html#abdd165be6caa5026d18f49473b31aa2d">oc_interface_event_t</a> event)</td></tr>
+<tr class="memdesc:ac1bf144d565ebc81b01e2317b7296fc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">initiate network event  <a href="oc__network__events_8h.html#ac1bf144d565ebc81b01e2317b7296fc4">More...</a><br /></td></tr>
 <tr class="separator:ac1bf144d565ebc81b01e2317b7296fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8301388a834b55d750add3c66f79e7cd"><td class="memItemLeft" align="right" valign="top"><a id="a8301388a834b55d750add3c66f79e7cd"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>OC_PROCESS_NAME</b> (oc_network_events)</td></tr>
+<tr class="memitem:a8301388a834b55d750add3c66f79e7cd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__network__events_8h.html#a8301388a834b55d750add3c66f79e7cd">OC_PROCESS_NAME</a> (oc_network_events)</td></tr>
+<tr class="memdesc:a8301388a834b55d750add3c66f79e7cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">process network events  <a href="oc__network__events_8h.html#a8301388a834b55d750add3c66f79e7cd">More...</a><br /></td></tr>
 <tr class="separator:a8301388a834b55d750add3c66f79e7cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
@@ -138,7 +139,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_network_interface_
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* interface_event_handler_t) (oc_interface_event_t event)</td>
+          <td class="memname">typedef void(* interface_event_handler_t) (<a class="el" href="oc__network__events_8h.html#abdd165be6caa5026d18f49473b31aa2d">oc_interface_event_t</a> event)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -169,13 +170,109 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_network_interface_
 
 </div>
 </div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="abdd165be6caa5026d18f49473b31aa2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdd165be6caa5026d18f49473b31aa2d">&#9670;&nbsp;</a></span>oc_interface_event_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="oc__network__events_8h.html#abdd165be6caa5026d18f49473b31aa2d">oc_interface_event_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>network events </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abdd165be6caa5026d18f49473b31aa2da122b034cb4a6bb20b5f1770c2095793d"></a>NETWORK_INTERFACE_DOWN&#160;</td><td class="fielddoc"><p>network interface down </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abdd165be6caa5026d18f49473b31aa2dadd6d38b84666ccf8cc15615199773d77"></a>NETWORK_INTERFACE_UP&#160;</td><td class="fielddoc"><p>network interface up </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a13a6b23014373fe8460a2f7a2b715f70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13a6b23014373fe8460a2f7a2b715f70">&#9670;&nbsp;</a></span>oc_network_event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oc_network_event </td>
+          <td>(</td>
+          <td class="paramtype">oc_message_t *&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>receive network event </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>the network message </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac1bf144d565ebc81b01e2317b7296fc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1bf144d565ebc81b01e2317b7296fc4">&#9670;&nbsp;</a></span>oc_network_interface_event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oc_network_interface_event </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="oc__network__events_8h.html#abdd165be6caa5026d18f49473b31aa2d">oc_interface_event_t</a>&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>initiate network event </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>the event </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8301388a834b55d750add3c66f79e7cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8301388a834b55d750add3c66f79e7cd">&#9670;&nbsp;</a></span>OC_PROCESS_NAME()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OC_PROCESS_NAME </td>
+          <td>(</td>
+          <td class="paramtype">oc_network_events&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>process network events </p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__network__events_8h.html">oc_network_events.h</a></li>
-    <li class="footer">Generated on Tue Aug 24 2021 13:13:34 for IoTivity-Lite by
+    <li class="footer">Generated on Tue Aug 24 2021 16:07:20 for IoTivity-Lite by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

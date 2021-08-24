@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['pi_399',['pi',['../structoc__platform__info__t.html#af8e573c743c9640018fbea887401e3f7',1,'oc_platform_info_t']]],
-  ['piid_400',['piid',['../structoc__device__info__t.html#afce58c82d138d2ed2d62dcbd3b3f02eb',1,'oc_device_info_t']]]
+  ['mfg_5fname_44',['mfg_name',['../structoc__platform__info__t.html#a36a79f70b8fc2377193e9fbdedcea6c9',1,'oc_platform_info_t']]],
+  ['multicast_45',['MULTICAST',['../oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78a607d700b2c0a01c54bdadde074a7cb12',1,'oc_endpoint.h']]]
 ];

@@ -1,5 +1,9 @@
 var oc__endpoint_8h =
 [
+    [ "oc_endpoint_t", "structoc__endpoint__t.html", "structoc__endpoint__t" ],
+    [ "oc_ipv4_addr_t", "structoc__ipv4__addr__t.html", "structoc__ipv4__addr__t" ],
+    [ "oc_ipv6_addr_t", "structoc__ipv6__addr__t.html", "structoc__ipv6__addr__t" ],
+    [ "oc_le_addr_t", "structoc__le__addr__t.html", "structoc__le__addr__t" ],
     [ "oc_make_ipv4_endpoint", "oc__endpoint_8h.html#a6341e17218eff01b49aa2f8ae27e068b", null ],
     [ "oc_make_ipv6_endpoint", "oc__endpoint_8h.html#ac8b9dd8487a08a52bd54676fc297c342", null ],
     [ "oc_endpoint_t", "oc__endpoint_8h.html#a0b37d95d6d4c2ae5b243e8fdba19daa1", null ],

@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['abort_5fimpl_0',['abort_impl',['../oc__assert_8h.html#a7e2346d59d7240c309157eb00ad4a543',1,'oc_assert.h']]],
-  ['add_5fdevice_5fcb_1',['add_device_cb',['../structoc__device__info__t.html#aa7e71d0ef5bb9848723bd81d7414ceaa',1,'oc_device_info_t']]],
-  ['asserting_20roles_2',['Asserting roles',['../group__doc__module__tag__asserting__roles.html',1,'']]]
+  ['_5foc_5falloc_5fstring_5farray_0',['_oc_alloc_string_array',['../oc__helpers_8h.html#a79bd60028e1af917dc8f05239e2f23bc',1,'oc_helpers.h']]],
+  ['_5foc_5fnew_5farray_1',['_oc_new_array',['../oc__helpers_8h.html#a0943d88282589224213101261fc12025',1,'oc_helpers.h']]],
+  ['_5fpayload_2',['_payload',['../structoc__request__t.html#aa792cf0b9f7f7ed0afff5fbe2d9b8d6a',1,'oc_request_t']]],
+  ['_5fpayload_5flen_3',['_payload_len',['../structoc__request__t.html#ab37ead9b768f1ee00fd8b655a4309e8c',1,'oc_request_t']]]
 ];

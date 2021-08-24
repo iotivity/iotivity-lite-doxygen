@@ -1,5 +1,9 @@
 var oc__ri_8h =
 [
+    [ "oc_event_callback_s", "structoc__event__callback__s.html", "structoc__event__callback__s" ],
+    [ "oc_properties_cb_t", "structoc__properties__cb__t.html", "structoc__properties__cb__t" ],
+    [ "oc_request_t", "structoc__request__t.html", "structoc__request__t" ],
+    [ "oc_resource_s", "structoc__resource__s.html", "structoc__resource__s" ],
     [ "OC_NUM_CORE_RESOURCES_PER_DEVICE", "oc__ri_8h.html#a0122290e3f56dba478d442c5c6681860", null ],
     [ "oc_ri_add_timed_event_callback_seconds", "oc__ri_8h.html#a4e6fe6ae768f87ff05d7d6696da225f8", null ],
     [ "oc_collection_t", "oc__ri_8h.html#aaeea17ea80036310d62e43ef1fb2714e", null ],

@@ -112,7 +112,7 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a780ab900ff1c0cd98da487d307023b6a"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#a780ab900ff1c0cd98da487d307023b6a">oc_obt_device_status_cb_t</a>) (oc_uuid_t *uuid, int status, void *data)</td></tr>
 <tr class="memdesc:a780ab900ff1c0cd98da487d307023b6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback invoked to report the status resulting from many of the onboarding tools actions on a device.  <a href="oc__obt_8h.html#a780ab900ff1c0cd98da487d307023b6a">More...</a><br /></td></tr>
 <tr class="separator:a780ab900ff1c0cd98da487d307023b6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e8b2bc4eb523fb3de7de789e13497de"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#a0e8b2bc4eb523fb3de7de789e13497de">oc_obt_discovery_cb_t</a>) (oc_uuid_t *uuid, oc_endpoint_t *eps, void *data)</td></tr>
+<tr class="memitem:a0e8b2bc4eb523fb3de7de789e13497de"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#a0e8b2bc4eb523fb3de7de789e13497de">oc_obt_discovery_cb_t</a>) (oc_uuid_t *uuid, <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *eps, void *data)</td></tr>
 <tr class="memdesc:a0e8b2bc4eb523fb3de7de789e13497de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback invoked in response to device discovery.  <a href="oc__obt_8h.html#a0e8b2bc4eb523fb3de7de789e13497de">More...</a><br /></td></tr>
 <tr class="separator:a0e8b2bc4eb523fb3de7de789e13497de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac31b25a8c0826a130e090c8127ba6636"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#ac31b25a8c0826a130e090c8127ba6636">oc_obt_status_cb_t</a>) (int status, void *data)</td></tr>
@@ -377,7 +377,7 @@ oc_obt_provision_role_wilecard_ace </dd>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* oc_obt_discovery_cb_t) (oc_uuid_t *uuid, oc_endpoint_t *eps, void *data)</td>
+          <td class="memname">typedef void(* oc_obt_discovery_cb_t) (oc_uuid_t *uuid, <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *eps, void *data)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -399,18 +399,18 @@ oc_obt_provision_role_wilecard_ace </dd>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line">unowned_device_cb(oc_uuid_t *uuid, oc_endpoint_t *eps, <span class="keywordtype">void</span> *data)</div>
+<div class="line">unowned_device_cb(oc_uuid_t *uuid, <a class="code" href="structoc__endpoint__t.html">oc_endpoint_t</a> *eps, <span class="keywordtype">void</span> *data)</div>
 <div class="line">{</div>
 <div class="line">  (void)data;</div>
 <div class="line">  <span class="keywordtype">char</span> di[<a class="code" href="oc__uuid_8h.html#a4e556e036773181af67e69a454667f31">OC_UUID_LEN</a>];</div>
 <div class="line">  <a class="code" href="oc__uuid_8h.html#abebb530e4cf0aaedcac99175ea5a7dcd">oc_uuid_to_str</a>(uuid, di, <a class="code" href="oc__uuid_8h.html#a4e556e036773181af67e69a454667f31">OC_UUID_LEN</a>);</div>
-<div class="line">  oc_endpoint_t *ep = eps;</div>
+<div class="line">  <a class="code" href="structoc__endpoint__t.html">oc_endpoint_t</a> *ep = eps;</div>
 <div class="line"> </div>
 <div class="line">  printf(<span class="stringliteral">&quot;\nDiscovered unowned device: %s at:\n&quot;</span>, di);</div>
 <div class="line">  <span class="keywordflow">while</span> (eps != NULL) {</div>
 <div class="line">    PRINTipaddr(*eps);</div>
 <div class="line">    printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
-<div class="line">    eps = eps-&gt;next;</div>
+<div class="line">    eps = eps-&gt;<a class="code" href="structoc__endpoint__t.html#ab649dfd671bd7ffa4accef34548fc893">next</a>;</div>
 <div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  <a class="code" href="group__doc__module__tag__client__state.html#ga34d2e906ebd125b8148817f55bda4b2c">oc_do_get</a>(<span class="stringliteral">&quot;/oic/d&quot;</span>, ep, NULL, &amp;get_device, HIGH_QOS, NULL);</div>
@@ -2909,6 +2909,7 @@ oc_obt_provision_role_wilecard_ace </dd>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="astructoc__endpoint__t_html_ab649dfd671bd7ffa4accef34548fc893"><div class="ttname"><a href="structoc__endpoint__t.html#ab649dfd671bd7ffa4accef34548fc893">oc_endpoint_t::next</a></div><div class="ttdeci">struct oc_endpoint_t * next</div><div class="ttdoc">pointer to the next structure</div><div class="ttdef"><b>Definition:</b> oc_endpoint.h:87</div></div>
 <div class="ttc" id="aoc__storage_8h_html_ae529493bca3a501922f23e3d7701ff05"><div class="ttname"><a href="oc__storage_8h.html#ae529493bca3a501922f23e3d7701ff05">oc_storage_config</a></div><div class="ttdeci">int oc_storage_config(const char *store)</div><div class="ttdoc">open the storage</div></div>
 <div class="ttc" id="aoc__obt_8h_html_afdb6a181ebb448088fd01ac4dca44b69"><div class="ttname"><a href="oc__obt_8h.html#afdb6a181ebb448088fd01ac4dca44b69">oc_obt_perform_just_works_otm</a></div><div class="ttdeci">int oc_obt_perform_just_works_otm(oc_uuid_t *uuid, oc_obt_device_status_cb_t cb, void *data)</div><div class="ttdoc">Perform ownership transfer method (OTM) on the device using Just-Works.</div></div>
 <div class="ttc" id="aoc__obt_8h_html_a6e1774db1d1025d59dc47a6dbdaa1eae"><div class="ttname"><a href="oc__obt_8h.html#a6e1774db1d1025d59dc47a6dbdaa1eae">oc_obt_provision_pairwise_credentials</a></div><div class="ttdeci">int oc_obt_provision_pairwise_credentials(oc_uuid_t *uuid1, oc_uuid_t *uuid2, oc_obt_status_cb_t cb, void *data)</div><div class="ttdoc">Provision pairwise 128-bit pre-shared key (PSK) credentials to a Client and Server so they may establ...</div></div>
@@ -2934,13 +2935,14 @@ oc_obt_provision_role_wilecard_ace </dd>
 <div class="ttc" id="aoc__obt_8h_html_a52c54994b9064ba50455d3811e9ed8aa"><div class="ttname"><a href="oc__obt_8h.html#a52c54994b9064ba50455d3811e9ed8aa">oc_obt_add_roleid</a></div><div class="ttdeci">oc_role_t * oc_obt_add_roleid(oc_role_t *roles, const char *role, const char *authority)</div><div class="ttdoc">Build a linked list of roles to provision a role certificate.</div></div>
 <div class="ttc" id="aoc__obt_8h_html_a82b4be29c82296aac97797380f90a916"><div class="ttname"><a href="oc__obt_8h.html#a82b4be29c82296aac97797380f90a916">oc_obt_provision_identity_certificate</a></div><div class="ttdeci">int oc_obt_provision_identity_certificate(oc_uuid_t *uuid, oc_obt_status_cb_t cb, void *data)</div><div class="ttdoc">Provision identity certificates.</div></div>
 <div class="ttc" id="aoc__obt_8h_html_aa12482dc0b5c7415602c3763a2f33018"><div class="ttname"><a href="oc__obt_8h.html#aa12482dc0b5c7415602c3763a2f33018">oc_obt_ace_resource_set_wc</a></div><div class="ttdeci">void oc_obt_ace_resource_set_wc(oc_ace_res_t *resource, oc_ace_wildcard_t wc)</div><div class="ttdoc">Set the wildcard type on the ACE resource.</div></div>
+<div class="ttc" id="astructoc__endpoint__t_html"><div class="ttname"><a href="structoc__endpoint__t.html">oc_endpoint_t</a></div><div class="ttdoc">the endpoint information</div><div class="ttdef"><b>Definition:</b> oc_endpoint.h:85</div></div>
 <div class="ttc" id="aoc__obt_8h_html_a97556ae3073fdfd4d12713431c458f56"><div class="ttname"><a href="oc__obt_8h.html#a97556ae3073fdfd4d12713431c458f56">oc_obt_init</a></div><div class="ttdeci">int oc_obt_init(void)</div><div class="ttdoc">Initialize the IoTivity stack so it can be used as an onboarding tool (OBT)</div></div>
 <div class="ttc" id="aoc__obt_8h_html_a30d405d88f8d51d180472dd1e373a31e"><div class="ttname"><a href="oc__obt_8h.html#a30d405d88f8d51d180472dd1e373a31e">oc_obt_ace_add_permission</a></div><div class="ttdeci">void oc_obt_ace_add_permission(oc_sec_ace_t *ace, oc_ace_permissions_t permission)</div><div class="ttdoc">Set the access permissions the ACE will grant.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__obt_8h.html">oc_obt.h</a></li>
-    <li class="footer">Generated on Tue Aug 24 2021 13:13:34 for IoTivity-Lite by
+    <li class="footer">Generated on Tue Aug 24 2021 16:07:20 for IoTivity-Lite by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

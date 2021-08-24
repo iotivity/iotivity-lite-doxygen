@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['exit_5fimpl_447',['exit_impl',['../oc__assert_8h.html#a1bce540d44065a67fd8136c1033bee82',1,'oc_assert.h']]]
+  ['abort_5fimpl_599',['abort_impl',['../oc__assert_8h.html#a7e2346d59d7240c309157eb00ad4a543',1,'oc_assert.h']]]
 ];

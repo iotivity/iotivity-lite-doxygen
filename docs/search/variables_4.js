@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['name_720',['name',['../structoc__device__info__t.html#a166cce7286659ef193d310d9efd8c1ad',1,'oc_device_info_t']]]
+  ['flags_914',['flags',['../structoc__endpoint__t.html#a945038b8b9ca9558905bebfa24b4130e',1,'oc_endpoint_t']]]
 ];

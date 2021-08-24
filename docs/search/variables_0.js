@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['add_5fdevice_5fcb_712',['add_device_cb',['../structoc__device__info__t.html#aa7e71d0ef5bb9848723bd81d7414ceaa',1,'oc_device_info_t']]]
+  ['_5fpayload_901',['_payload',['../structoc__request__t.html#aa792cf0b9f7f7ed0afff5fbe2d9b8d6a',1,'oc_request_t']]],
+  ['_5fpayload_5flen_902',['_payload_len',['../structoc__request__t.html#ab37ead9b768f1ee00fd8b655a4309e8c',1,'oc_request_t']]]
 ];
