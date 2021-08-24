@@ -1,5 +1,7 @@
 var oc__core__res_8h =
 [
+    [ "oc_device_info_t", "structoc__device__info__t.html", "structoc__device__info__t" ],
+    [ "oc_platform_info_t", "structoc__platform__info__t.html", "structoc__platform__info__t" ],
     [ "oc_core_add_device_cb_t", "oc__core__res_8h.html#aaef8fad58f22d24cd42a6e6b07d22e37", null ],
     [ "oc_core_init_platform_cb_t", "oc__core__res_8h.html#a598ef30def45a7b6d1a961604e9b28cc", null ],
     [ "oc_device_info_t", "oc__core__res_8h.html#adbcab293f69f9abf2f518d12d43184f4", null ],

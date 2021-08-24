@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['signal_5fevent_5floop_590',['signal_event_loop',['../structoc__handler__t.html#a701b761aa4dddf3a41d25ddc87e821b0',1,'oc_handler_t']]]
+  ['icv_698',['icv',['../structoc__device__info__t.html#a0377fc7c3515160001ef8484f689292a',1,'oc_device_info_t']]],
+  ['init_699',['init',['../structoc__handler__t.html#a3a1a54a7e7cc1c40235dfb2b6a44b875',1,'oc_handler_t']]],
+  ['init_5fplatform_5fcb_700',['init_platform_cb',['../structoc__platform__info__t.html#a5c1f98ebf57c76a495ad7e274ad97491',1,'oc_platform_info_t']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['init_587',['init',['../structoc__handler__t.html#a3a1a54a7e7cc1c40235dfb2b6a44b875',1,'oc_handler_t']]]
+  ['add_5fdevice_5fcb_694',['add_device_cb',['../structoc__device__info__t.html#aa7e71d0ef5bb9848723bd81d7414ceaa',1,'oc_device_info_t']]]
 ];
