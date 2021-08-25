@@ -1,5 +1,11 @@
 var annotated_dup =
 [
+    [ "oc_ace_res_t", "structoc__ace__res__t.html", "structoc__ace__res__t" ],
+    [ "oc_ace_subject_t", "unionoc__ace__subject__t.html", "unionoc__ace__subject__t" ],
+    [ "oc_client_cb_t", "structoc__client__cb__t.html", "structoc__client__cb__t" ],
+    [ "oc_client_handler_t", "structoc__client__handler__t.html", "structoc__client__handler__t" ],
+    [ "oc_client_response_t", "structoc__client__response__t.html", "structoc__client__response__t" ],
+    [ "oc_cred_data_t", "structoc__cred__data__t.html", "structoc__cred__data__t" ],
     [ "oc_device_info_t", "structoc__device__info__t.html", "structoc__device__info__t" ],
     [ "oc_endpoint_t", "structoc__endpoint__t.html", "structoc__endpoint__t" ],
     [ "oc_event_callback_s", "structoc__event__callback__s.html", "structoc__event__callback__s" ],
@@ -14,5 +20,9 @@ var annotated_dup =
     [ "oc_request_t", "structoc__request__t.html", "structoc__request__t" ],
     [ "oc_resource_s", "structoc__resource__s.html", "structoc__resource__s" ],
     [ "oc_response_t", "structoc__response__t.html", "structoc__response__t" ],
+    [ "oc_sec_ace_t", "structoc__sec__ace__t.html", "structoc__sec__ace__t" ],
+    [ "oc_sec_acl_s", "structoc__sec__acl__s.html", "structoc__sec__acl__s" ],
+    [ "oc_sec_cred_t", "structoc__sec__cred__t.html", "structoc__sec__cred__t" ],
+    [ "oc_sec_creds_t", "structoc__sec__creds__t.html", "structoc__sec__creds__t" ],
     [ "oc_session_event_cb", "structoc__session__event__cb.html", "structoc__session__event__cb" ]
 ];

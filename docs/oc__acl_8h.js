@@ -1,5 +1,9 @@
 var oc__acl_8h =
 [
+    [ "oc_ace_res_t", "structoc__ace__res__t.html", "structoc__ace__res__t" ],
+    [ "oc_ace_subject_t", "unionoc__ace__subject__t.html", "unionoc__ace__subject__t" ],
+    [ "oc_sec_ace_t", "structoc__sec__ace__t.html", "structoc__sec__ace__t" ],
+    [ "oc_sec_acl_s", "structoc__sec__acl__s.html", "structoc__sec__acl__s" ],
     [ "oc_ace_res_t", "oc__acl_8h.html#a2a072aa75b749c3bf40379d78c9e73a6", null ],
     [ "oc_ace_subject_t", "oc__acl_8h.html#a5ca2f3f4a98c831ae82840c28e67e81f", null ],
     [ "oc_sec_ace_t", "oc__acl_8h.html#ab284972bac5a7a1733f727bac3566798", null ],

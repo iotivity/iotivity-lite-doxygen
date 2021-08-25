@@ -1,5 +1,8 @@
 var oc__cred_8h =
 [
+    [ "oc_cred_data_t", "structoc__cred__data__t.html", "structoc__cred__data__t" ],
+    [ "oc_sec_cred_t", "structoc__sec__cred__t.html", "structoc__sec__cred__t" ],
+    [ "oc_sec_creds_t", "structoc__sec__creds__t.html", "structoc__sec__creds__t" ],
     [ "oc_cred_data_t", "oc__cred_8h.html#a08d82246e2025421925afbff47e0b31f", null ],
     [ "oc_sec_cred_t", "oc__cred_8h.html#a8fa3b62838c1c25e149db6c2ba86e103", null ],
     [ "oc_sec_creds_t", "oc__cred_8h.html#aebc02f0c03921cf173fe374f12b15c9e", null ],

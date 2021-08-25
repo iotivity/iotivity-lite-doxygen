@@ -1,17 +1,16 @@
 var searchData=
 [
-  ['tag_5ffunc_5fdesc_611',['tag_func_desc',['../structoc__resource__s.html#aa3c84d0e399d9ad8110bae7cd6c5a748',1,'oc_resource_s']]],
-  ['tag_5flocn_612',['tag_locn',['../structoc__resource__s.html#a3e81ec0dd8163c45a3d1cd47f9db9858',1,'oc_resource_s']]],
-  ['tag_5fpos_5fdesc_613',['tag_pos_desc',['../structoc__resource__s.html#aa3182def35cf801909c4e1a0cb8270c4',1,'oc_resource_s']]],
-  ['tag_5fpos_5frel_614',['tag_pos_rel',['../structoc__resource__s.html#a1386c4ba12c1579f2936a5f3904a3236',1,'oc_resource_s']]],
-  ['tcp_615',['TCP',['../oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78aa040cd7feeb588104634cdadf35abf1c',1,'oc_endpoint.h']]],
-  ['tcp_5fcsm_5fstate_5ft_616',['tcp_csm_state_t',['../oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5',1,'oc_connectivity.h']]],
-  ['text_5fcsv_617',['TEXT_CSV',['../oc__ri_8h.html#a83161604a805e3a951254864d16a714fad38e8b48c749c8e181c4121542569996',1,'oc_ri.h']]],
-  ['text_5fhtml_618',['TEXT_HTML',['../oc__ri_8h.html#a83161604a805e3a951254864d16a714fadc660590711150dd66411a306ccd0ee6',1,'oc_ri.h']]],
-  ['text_5fplain_619',['TEXT_PLAIN',['../oc__ri_8h.html#a83161604a805e3a951254864d16a714fa01abe8b1134f6dcd8a242afa0522ed20',1,'oc_ri.h']]],
-  ['text_5fxml_620',['TEXT_XML',['../oc__ri_8h.html#a83161604a805e3a951254864d16a714fae85220b59258b5e200abe5d56979e41e',1,'oc_ri.h']]],
-  ['timer_621',['timer',['../structoc__event__callback__s.html#acfd7db168b82b26393490d4db04538f3',1,'oc_event_callback_s']]],
-  ['transport_5fflags_622',['transport_flags',['../oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78',1,'oc_endpoint.h']]],
-  ['type_623',['type',['../structoc__le__addr__t.html#a1d127017fb298b889f4ba24752d08b8e',1,'oc_le_addr_t']]],
-  ['types_624',['types',['../structoc__resource__s.html#ab46330ee76a0d404bcadf5d1d6984018',1,'oc_resource_s']]]
+  ['server_20side_698',['Server side',['../group__doc__module__tag__server__side.html',1,'']]],
+  ['scope_699',['scope',['../structoc__ipv6__addr__t.html#aad9c61920b7ad19972cb4d83d1180eea',1,'oc_ipv6_addr_t']]],
+  ['secured_700',['SECURED',['../oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78a4233d0336b2b5b9922cc2a448052c137',1,'oc_endpoint.h']]],
+  ['separate_701',['separate',['../structoc__client__cb__t.html#a8c910d948d2fec973c324abdf2e8efa2',1,'oc_client_cb_t']]],
+  ['separate_5fresponse_702',['separate_response',['../structoc__response__t.html#ab00097d13ea4163cb18b264035e7a7c5',1,'oc_response_t']]],
+  ['server_5fintrospection_2edat_2eh_703',['server_introspection.dat.h',['../server__introspection_8dat_8h.html',1,'']]],
+  ['session_5fevent_5fhandler_5ft_704',['session_event_handler_t',['../oc__session__events_8h.html#a8ae3215775705d84e55a1a623c8267c9',1,'oc_session_events.h']]],
+  ['set_5fproperties_705',['set_properties',['../structoc__resource__s.html#a6d8fb9d13071b21ec29abe9b9eed7556',1,'oc_resource_s']]],
+  ['signal_5fevent_5floop_706',['signal_event_loop',['../structoc__handler__t.html#a701b761aa4dddf3a41d25ddc87e821b0',1,'oc_handler_t']]],
+  ['stop_5fmulticast_5freceive_707',['stop_multicast_receive',['../structoc__client__cb__t.html#abb6c979f460a5d392ad05aa6ea93a799',1,'oc_client_cb_t']]],
+  ['subject_708',['subject',['../structoc__sec__ace__t.html#a731a6210ff142e89d1ea7e01b0cec87f',1,'oc_sec_ace_t']]],
+  ['subject_5ftype_709',['subject_type',['../structoc__sec__ace__t.html#a76c1c7a32d1db7ee3c6e6fedf4fe8ae0',1,'oc_sec_ace_t']]],
+  ['subjectuuid_710',['subjectuuid',['../structoc__sec__cred__t.html#a992cf7b399b7823c23c871ffecd67225',1,'oc_sec_cred_t']]]
 ];

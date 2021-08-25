@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['network_5finterface_5fdown_1134',['NETWORK_INTERFACE_DOWN',['../oc__network__events_8h.html#abdd165be6caa5026d18f49473b31aa2da122b034cb4a6bb20b5f1770c2095793d',1,'oc_network_events.h']]],
-  ['network_5finterface_5fup_1135',['NETWORK_INTERFACE_UP',['../oc__network__events_8h.html#abdd165be6caa5026d18f49473b31aa2dadd6d38b84666ccf8cc15615199773d77',1,'oc_network_events.h']]]
+  ['low_5fqos_1327',['LOW_QOS',['../oc__client__state_8h.html#a172718f11f1a33ce09cd1222bcbe5920acc1327122ac76887e8ffae7f519a85f7',1,'oc_client_state.h']]]
 ];

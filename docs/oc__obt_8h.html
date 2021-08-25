@@ -103,10 +103,10 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ad0cb3a2a44f0dffad47d29041790746d"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#ad0cb3a2a44f0dffad47d29041790746d">oc_obt_acl_cb_t</a>) (oc_sec_acl_t *acl, void *data)</td></tr>
+<tr class="memitem:ad0cb3a2a44f0dffad47d29041790746d"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#ad0cb3a2a44f0dffad47d29041790746d">oc_obt_acl_cb_t</a>) (<a class="el" href="oc__acl_8h.html#a485c09b9417208265dc2eed110bd9c82">oc_sec_acl_t</a> *acl, void *data)</td></tr>
 <tr class="memdesc:ad0cb3a2a44f0dffad47d29041790746d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback containing the Access Control List (ACL) owned by a remote device.  <a href="oc__obt_8h.html#ad0cb3a2a44f0dffad47d29041790746d">More...</a><br /></td></tr>
 <tr class="separator:ad0cb3a2a44f0dffad47d29041790746d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae23a5d8804c372493dad9b0c3b5a4522"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#ae23a5d8804c372493dad9b0c3b5a4522">oc_obt_creds_cb_t</a>) (struct oc_sec_creds_t *creds, void *data)</td></tr>
+<tr class="memitem:ae23a5d8804c372493dad9b0c3b5a4522"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#ae23a5d8804c372493dad9b0c3b5a4522">oc_obt_creds_cb_t</a>) (struct <a class="el" href="structoc__sec__creds__t.html">oc_sec_creds_t</a> *creds, void *data)</td></tr>
 <tr class="memdesc:ae23a5d8804c372493dad9b0c3b5a4522"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback containing the credentials owned by a remote device.  <a href="oc__obt_8h.html#ae23a5d8804c372493dad9b0c3b5a4522">More...</a><br /></td></tr>
 <tr class="separator:ae23a5d8804c372493dad9b0c3b5a4522"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a780ab900ff1c0cd98da487d307023b6a"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#a780ab900ff1c0cd98da487d307023b6a">oc_obt_device_status_cb_t</a>) (oc_uuid_t *uuid, int status, void *data)</td></tr>
@@ -121,16 +121,16 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a30d405d88f8d51d180472dd1e373a31e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#a30d405d88f8d51d180472dd1e373a31e">oc_obt_ace_add_permission</a> (oc_sec_ace_t *ace, oc_ace_permissions_t permission)</td></tr>
+<tr class="memitem:a30d405d88f8d51d180472dd1e373a31e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#a30d405d88f8d51d180472dd1e373a31e">oc_obt_ace_add_permission</a> (<a class="el" href="structoc__sec__ace__t.html">oc_sec_ace_t</a> *ace, <a class="el" href="oc__acl_8h.html#afd8b98696c9f44d51d07404d414421c5">oc_ace_permissions_t</a> permission)</td></tr>
 <tr class="memdesc:a30d405d88f8d51d180472dd1e373a31e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the access permissions the ACE will grant.  <a href="oc__obt_8h.html#a30d405d88f8d51d180472dd1e373a31e">More...</a><br /></td></tr>
 <tr class="separator:a30d405d88f8d51d180472dd1e373a31e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbff1d4755a4ca41b6d4af4d7be1ca1c"><td class="memItemLeft" align="right" valign="top">oc_ace_res_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#abbff1d4755a4ca41b6d4af4d7be1ca1c">oc_obt_ace_new_resource</a> (oc_sec_ace_t *ace)</td></tr>
-<tr class="memdesc:abbff1d4755a4ca41b6d4af4d7be1ca1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an ACE resource (<code>oc_ace_res_t</code>) to the ACE.  <a href="oc__obt_8h.html#abbff1d4755a4ca41b6d4af4d7be1ca1c">More...</a><br /></td></tr>
+<tr class="memitem:abbff1d4755a4ca41b6d4af4d7be1ca1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoc__ace__res__t.html">oc_ace_res_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#abbff1d4755a4ca41b6d4af4d7be1ca1c">oc_obt_ace_new_resource</a> (<a class="el" href="structoc__sec__ace__t.html">oc_sec_ace_t</a> *ace)</td></tr>
+<tr class="memdesc:abbff1d4755a4ca41b6d4af4d7be1ca1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an ACE resource (<code><a class="el" href="structoc__ace__res__t.html" title="ACE resource information.">oc_ace_res_t</a></code>) to the ACE.  <a href="oc__obt_8h.html#abbff1d4755a4ca41b6d4af4d7be1ca1c">More...</a><br /></td></tr>
 <tr class="separator:abbff1d4755a4ca41b6d4af4d7be1ca1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2a486209242028f1167384849fcdd8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#af2a486209242028f1167384849fcdd8f">oc_obt_ace_resource_set_href</a> (oc_ace_res_t *resource, const char *href)</td></tr>
+<tr class="memitem:af2a486209242028f1167384849fcdd8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#af2a486209242028f1167384849fcdd8f">oc_obt_ace_resource_set_href</a> (<a class="el" href="structoc__ace__res__t.html">oc_ace_res_t</a> *resource, const char *href)</td></tr>
 <tr class="memdesc:af2a486209242028f1167384849fcdd8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the href on the ACE resource.  <a href="oc__obt_8h.html#af2a486209242028f1167384849fcdd8f">More...</a><br /></td></tr>
 <tr class="separator:af2a486209242028f1167384849fcdd8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa12482dc0b5c7415602c3763a2f33018"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#aa12482dc0b5c7415602c3763a2f33018">oc_obt_ace_resource_set_wc</a> (oc_ace_res_t *resource, oc_ace_wildcard_t wc)</td></tr>
+<tr class="memitem:aa12482dc0b5c7415602c3763a2f33018"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#aa12482dc0b5c7415602c3763a2f33018">oc_obt_ace_resource_set_wc</a> (<a class="el" href="structoc__ace__res__t.html">oc_ace_res_t</a> *resource, <a class="el" href="oc__acl_8h.html#a1e7d2ee5709877a0e75a8e048e17df1f">oc_ace_wildcard_t</a> wc)</td></tr>
 <tr class="memdesc:aa12482dc0b5c7415602c3763a2f33018"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the wildcard type on the ACE resource.  <a href="oc__obt_8h.html#aa12482dc0b5c7415602c3763a2f33018">More...</a><br /></td></tr>
 <tr class="separator:aa12482dc0b5c7415602c3763a2f33018"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52c54994b9064ba50455d3811e9ed8aa"><td class="memItemLeft" align="right" valign="top">oc_role_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#a52c54994b9064ba50455d3811e9ed8aa">oc_obt_add_roleid</a> (oc_role_t *roles, const char *role, const char *authority)</td></tr>
@@ -148,7 +148,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ac109f959a0d67f0ed972457bdd48e4f1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#ac109f959a0d67f0ed972457bdd48e4f1">oc_obt_device_hard_reset</a> (oc_uuid_t *uuid, <a class="el" href="oc__obt_8h.html#a780ab900ff1c0cd98da487d307023b6a">oc_obt_device_status_cb_t</a> cb, void *data)</td></tr>
 <tr class="memdesc:ac109f959a0d67f0ed972457bdd48e4f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">RESET the remote device back to the ready for ownership transfer method (RFOTM) state.  <a href="oc__obt_8h.html#ac109f959a0d67f0ed972457bdd48e4f1">More...</a><br /></td></tr>
 <tr class="separator:ac109f959a0d67f0ed972457bdd48e4f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b3a7fb2907af9cafcd3932b7b8ebb24"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#a8b3a7fb2907af9cafcd3932b7b8ebb24">oc_obt_discover_all_resources</a> (oc_uuid_t *uuid, oc_discovery_all_handler_t handler, void *data)</td></tr>
+<tr class="memitem:a8b3a7fb2907af9cafcd3932b7b8ebb24"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#a8b3a7fb2907af9cafcd3932b7b8ebb24">oc_obt_discover_all_resources</a> (oc_uuid_t *uuid, <a class="el" href="oc__client__state_8h.html#ad0e8cd636823e22b2730c313b456b379">oc_discovery_all_handler_t</a> handler, void *data)</td></tr>
 <tr class="memdesc:a8b3a7fb2907af9cafcd3932b7b8ebb24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discover all resources on the device identified by its uuid.  <a href="oc__obt_8h.html#a8b3a7fb2907af9cafcd3932b7b8ebb24">More...</a><br /></td></tr>
 <tr class="separator:a8b3a7fb2907af9cafcd3932b7b8ebb24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a833ac93dc1156811e00959c1cb9455f5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#a833ac93dc1156811e00959c1cb9455f5">oc_obt_discover_owned_devices</a> (<a class="el" href="oc__obt_8h.html#a0e8b2bc4eb523fb3de7de789e13497de">oc_obt_discovery_cb_t</a> cb, void *data)</td></tr>
@@ -169,13 +169,13 @@ Functions</h2></td></tr>
 <tr class="memitem:acaf537c7abf44a6547353be160a10af7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#acaf537c7abf44a6547353be160a10af7">oc_obt_discover_unowned_devices_site_local_ipv6</a> (<a class="el" href="oc__obt_8h.html#a0e8b2bc4eb523fb3de7de789e13497de">oc_obt_discovery_cb_t</a> cb, void *data)</td></tr>
 <tr class="memdesc:acaf537c7abf44a6547353be160a10af7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discover all unowned devices using the site-local address scope.  <a href="oc__obt_8h.html#acaf537c7abf44a6547353be160a10af7">More...</a><br /></td></tr>
 <tr class="separator:acaf537c7abf44a6547353be160a10af7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c580dac0bf0dede0e9e33c995a05068"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#a9c580dac0bf0dede0e9e33c995a05068">oc_obt_free_ace</a> (oc_sec_ace_t *ace)</td></tr>
+<tr class="memitem:a9c580dac0bf0dede0e9e33c995a05068"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#a9c580dac0bf0dede0e9e33c995a05068">oc_obt_free_ace</a> (<a class="el" href="structoc__sec__ace__t.html">oc_sec_ace_t</a> *ace)</td></tr>
 <tr class="memdesc:a9c580dac0bf0dede0e9e33c995a05068"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the memory associated with the ACE object.  <a href="oc__obt_8h.html#a9c580dac0bf0dede0e9e33c995a05068">More...</a><br /></td></tr>
 <tr class="separator:a9c580dac0bf0dede0e9e33c995a05068"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada8f724b925eef7b6dd0a95aacfea1de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#ada8f724b925eef7b6dd0a95aacfea1de">oc_obt_free_acl</a> (oc_sec_acl_t *acl)</td></tr>
+<tr class="memitem:ada8f724b925eef7b6dd0a95aacfea1de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#ada8f724b925eef7b6dd0a95aacfea1de">oc_obt_free_acl</a> (<a class="el" href="oc__acl_8h.html#a485c09b9417208265dc2eed110bd9c82">oc_sec_acl_t</a> *acl)</td></tr>
 <tr class="memdesc:ada8f724b925eef7b6dd0a95aacfea1de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free an Access Control List (ACL)  <a href="oc__obt_8h.html#ada8f724b925eef7b6dd0a95aacfea1de">More...</a><br /></td></tr>
 <tr class="separator:ada8f724b925eef7b6dd0a95aacfea1de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d8bf9102d6909506897fcfbd4407afe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#a2d8bf9102d6909506897fcfbd4407afe">oc_obt_free_creds</a> (oc_sec_creds_t *creds)</td></tr>
+<tr class="memitem:a2d8bf9102d6909506897fcfbd4407afe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#a2d8bf9102d6909506897fcfbd4407afe">oc_obt_free_creds</a> (<a class="el" href="structoc__sec__creds__t.html">oc_sec_creds_t</a> *creds)</td></tr>
 <tr class="memdesc:a2d8bf9102d6909506897fcfbd4407afe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free a list of credentials.  <a href="oc__obt_8h.html#a2d8bf9102d6909506897fcfbd4407afe">More...</a><br /></td></tr>
 <tr class="separator:a2d8bf9102d6909506897fcfbd4407afe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b828fff581e858f8d9fad7065ad3861"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#a1b828fff581e858f8d9fad7065ad3861">oc_obt_free_roleid</a> (oc_role_t *roles)</td></tr>
@@ -184,13 +184,13 @@ Functions</h2></td></tr>
 <tr class="memitem:a97556ae3073fdfd4d12713431c458f56"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#a97556ae3073fdfd4d12713431c458f56">oc_obt_init</a> (void)</td></tr>
 <tr class="memdesc:a97556ae3073fdfd4d12713431c458f56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the IoTivity stack so it can be used as an onboarding tool (OBT)  <a href="oc__obt_8h.html#a97556ae3073fdfd4d12713431c458f56">More...</a><br /></td></tr>
 <tr class="separator:a97556ae3073fdfd4d12713431c458f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a336c31f19594a24bc837548087ef4d3f"><td class="memItemLeft" align="right" valign="top">oc_sec_ace_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#a336c31f19594a24bc837548087ef4d3f">oc_obt_new_ace_for_connection</a> (oc_ace_connection_type_t conn)</td></tr>
+<tr class="memitem:a336c31f19594a24bc837548087ef4d3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoc__sec__ace__t.html">oc_sec_ace_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#a336c31f19594a24bc837548087ef4d3f">oc_obt_new_ace_for_connection</a> (<a class="el" href="oc__acl_8h.html#a78c4f9f6c2a1be18591d7e9520a73029">oc_ace_connection_type_t</a> conn)</td></tr>
 <tr class="memdesc:a336c31f19594a24bc837548087ef4d3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new Access Control Entry (ACE) with connection type as the subject.  <a href="oc__obt_8h.html#a336c31f19594a24bc837548087ef4d3f">More...</a><br /></td></tr>
 <tr class="separator:a336c31f19594a24bc837548087ef4d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13d845dde3901e8d19cfb41d71c76882"><td class="memItemLeft" align="right" valign="top">oc_sec_ace_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#a13d845dde3901e8d19cfb41d71c76882">oc_obt_new_ace_for_role</a> (const char *role, const char *authority)</td></tr>
+<tr class="memitem:a13d845dde3901e8d19cfb41d71c76882"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoc__sec__ace__t.html">oc_sec_ace_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#a13d845dde3901e8d19cfb41d71c76882">oc_obt_new_ace_for_role</a> (const char *role, const char *authority)</td></tr>
 <tr class="memdesc:a13d845dde3901e8d19cfb41d71c76882"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new Access Control Entry (ACE) with a role as the subject.  <a href="oc__obt_8h.html#a13d845dde3901e8d19cfb41d71c76882">More...</a><br /></td></tr>
 <tr class="separator:a13d845dde3901e8d19cfb41d71c76882"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a560219d829b0d3998b5280221cf0ab3f"><td class="memItemLeft" align="right" valign="top">oc_sec_ace_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#a560219d829b0d3998b5280221cf0ab3f">oc_obt_new_ace_for_subject</a> (oc_uuid_t *uuid)</td></tr>
+<tr class="memitem:a560219d829b0d3998b5280221cf0ab3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoc__sec__ace__t.html">oc_sec_ace_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#a560219d829b0d3998b5280221cf0ab3f">oc_obt_new_ace_for_subject</a> (oc_uuid_t *uuid)</td></tr>
 <tr class="memdesc:a560219d829b0d3998b5280221cf0ab3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new Access Control Entry (ACE) with device UUID as subject.  <a href="oc__obt_8h.html#a560219d829b0d3998b5280221cf0ab3f">More...</a><br /></td></tr>
 <tr class="separator:a560219d829b0d3998b5280221cf0ab3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16cc626cde77086b84b81ad9aed58173"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#a16cc626cde77086b84b81ad9aed58173">oc_obt_perform_cert_otm</a> (oc_uuid_t *uuid, <a class="el" href="oc__obt_8h.html#a780ab900ff1c0cd98da487d307023b6a">oc_obt_device_status_cb_t</a> cb, void *data)</td></tr>
@@ -202,10 +202,10 @@ Functions</h2></td></tr>
 <tr class="memitem:aa3c6c59e8cf6b1f1f3f772339d1da672"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#aa3c6c59e8cf6b1f1f3f772339d1da672">oc_obt_perform_random_pin_otm</a> (oc_uuid_t *uuid, const unsigned char *pin, size_t pin_len, <a class="el" href="oc__obt_8h.html#a780ab900ff1c0cd98da487d307023b6a">oc_obt_device_status_cb_t</a> cb, void *data)</td></tr>
 <tr class="memdesc:aa3c6c59e8cf6b1f1f3f772339d1da672"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform ownership transfer method (OTM) using Random PIN based OTM.  <a href="oc__obt_8h.html#aa3c6c59e8cf6b1f1f3f772339d1da672">More...</a><br /></td></tr>
 <tr class="separator:aa3c6c59e8cf6b1f1f3f772339d1da672"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b9f7fcd65dede0fecb3b37431be970b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#a4b9f7fcd65dede0fecb3b37431be970b">oc_obt_pki_add_identity_cert</a> (size_t device, const unsigned char *cert, size_t cert_size, const unsigned char *key, size_t key_size, oc_sec_credusage_t credusage)</td></tr>
+<tr class="memitem:a4b9f7fcd65dede0fecb3b37431be970b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#a4b9f7fcd65dede0fecb3b37431be970b">oc_obt_pki_add_identity_cert</a> (size_t device, const unsigned char *cert, size_t cert_size, const unsigned char *key, size_t key_size, <a class="el" href="oc__cred_8h.html#af766cf746fb6d10b2f502d7f4f76e29e">oc_sec_credusage_t</a> credusage)</td></tr>
 <tr class="memdesc:a4b9f7fcd65dede0fecb3b37431be970b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal obt function to add a certificate credential to be used by the OBT CA.  <a href="oc__obt_8h.html#a4b9f7fcd65dede0fecb3b37431be970b">More...</a><br /></td></tr>
 <tr class="separator:a4b9f7fcd65dede0fecb3b37431be970b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada5f2bf09c55f8d6833bf42a2d7bc092"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#ada5f2bf09c55f8d6833bf42a2d7bc092">oc_obt_provision_ace</a> (oc_uuid_t *subject, oc_sec_ace_t *ace, <a class="el" href="oc__obt_8h.html#a780ab900ff1c0cd98da487d307023b6a">oc_obt_device_status_cb_t</a> cb, void *data)</td></tr>
+<tr class="memitem:ada5f2bf09c55f8d6833bf42a2d7bc092"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#ada5f2bf09c55f8d6833bf42a2d7bc092">oc_obt_provision_ace</a> (oc_uuid_t *subject, <a class="el" href="structoc__sec__ace__t.html">oc_sec_ace_t</a> *ace, <a class="el" href="oc__obt_8h.html#a780ab900ff1c0cd98da487d307023b6a">oc_obt_device_status_cb_t</a> cb, void *data)</td></tr>
 <tr class="memdesc:ada5f2bf09c55f8d6833bf42a2d7bc092"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provision an ACE to a device.  <a href="oc__obt_8h.html#ada5f2bf09c55f8d6833bf42a2d7bc092">More...</a><br /></td></tr>
 <tr class="separator:ada5f2bf09c55f8d6833bf42a2d7bc092"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4d30c66b27eb7032def9c2f7b4a3234"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#aa4d30c66b27eb7032def9c2f7b4a3234">oc_obt_provision_auth_wildcard_ace</a> (oc_uuid_t *subject, <a class="el" href="oc__obt_8h.html#a780ab900ff1c0cd98da487d307023b6a">oc_obt_device_status_cb_t</a> cb, void *data)</td></tr>
@@ -241,13 +241,13 @@ Functions</h2></td></tr>
 <tr class="memitem:aa2be697947038efe5d0fd3073c666a8b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#aa2be697947038efe5d0fd3073c666a8b">oc_obt_retrieve_acl</a> (oc_uuid_t *uuid, <a class="el" href="oc__obt_8h.html#ad0cb3a2a44f0dffad47d29041790746d">oc_obt_acl_cb_t</a> cb, void *data)</td></tr>
 <tr class="memdesc:aa2be697947038efe5d0fd3073c666a8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve an Access Control List (ACL) from a remote device.  <a href="oc__obt_8h.html#aa2be697947038efe5d0fd3073c666a8b">More...</a><br /></td></tr>
 <tr class="separator:aa2be697947038efe5d0fd3073c666a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87efd5ace782a501e260bb3741e685bc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#a87efd5ace782a501e260bb3741e685bc">oc_obt_retrieve_cloud_conf_device</a> (oc_uuid_t *uuid, const char *url, oc_response_handler_t cb, void *user_data)</td></tr>
+<tr class="memitem:a87efd5ace782a501e260bb3741e685bc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#a87efd5ace782a501e260bb3741e685bc">oc_obt_retrieve_cloud_conf_device</a> (oc_uuid_t *uuid, const char *url, <a class="el" href="oc__client__state_8h.html#ab93155ce23b0cb02c7c7d71b5c251486">oc_response_handler_t</a> cb, void *user_data)</td></tr>
 <tr class="memdesc:a87efd5ace782a501e260bb3741e685bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the data (POST) for the oic.r.coapcloudconf resource  <a href="oc__obt_8h.html#a87efd5ace782a501e260bb3741e685bc">More...</a><br /></td></tr>
 <tr class="separator:a87efd5ace782a501e260bb3741e685bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebf4a8c700f12d08eff69f0724ba3d1d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#aebf4a8c700f12d08eff69f0724ba3d1d">oc_obt_retrieve_creds</a> (oc_uuid_t *subject, <a class="el" href="oc__obt_8h.html#ae23a5d8804c372493dad9b0c3b5a4522">oc_obt_creds_cb_t</a> cb, void *data)</td></tr>
 <tr class="memdesc:aebf4a8c700f12d08eff69f0724ba3d1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve a list of credentials from a remote device owned by the onboarding tool.  <a href="oc__obt_8h.html#aebf4a8c700f12d08eff69f0724ba3d1d">More...</a><br /></td></tr>
 <tr class="separator:aebf4a8c700f12d08eff69f0724ba3d1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38d64bfee5c50fc446dcb196d8a69533"><td class="memItemLeft" align="right" valign="top">oc_sec_creds_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#a38d64bfee5c50fc446dcb196d8a69533">oc_obt_retrieve_own_creds</a> (void)</td></tr>
+<tr class="memitem:a38d64bfee5c50fc446dcb196d8a69533"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoc__sec__creds__t.html">oc_sec_creds_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#a38d64bfee5c50fc446dcb196d8a69533">oc_obt_retrieve_own_creds</a> (void)</td></tr>
 <tr class="memdesc:a38d64bfee5c50fc446dcb196d8a69533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve a list of the onboarding tools own credentials.  <a href="oc__obt_8h.html#a38d64bfee5c50fc446dcb196d8a69533">More...</a><br /></td></tr>
 <tr class="separator:a38d64bfee5c50fc446dcb196d8a69533"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9eefd71f93f6da6949a2f87bc0ea778f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#a9eefd71f93f6da6949a2f87bc0ea778f">oc_obt_set_sd_info</a> (char *name, bool priv)</td></tr>
@@ -256,7 +256,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ae8fc56984038b22e8eb011ca95558331"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#ae8fc56984038b22e8eb011ca95558331">oc_obt_shutdown</a> (void)</td></tr>
 <tr class="memdesc:ae8fc56984038b22e8eb011ca95558331"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free all resources associated with the onboarding tool.  <a href="oc__obt_8h.html#ae8fc56984038b22e8eb011ca95558331">More...</a><br /></td></tr>
 <tr class="separator:ae8fc56984038b22e8eb011ca95558331"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1e83dceddb4bca10bbadc086e8db520"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#aa1e83dceddb4bca10bbadc086e8db520">oc_obt_update_cloud_conf_device</a> (oc_uuid_t *uuid, const char *url, const char *at, const char *apn, const char *cis, const char *sid, oc_response_handler_t cb, void *user_data)</td></tr>
+<tr class="memitem:aa1e83dceddb4bca10bbadc086e8db520"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#aa1e83dceddb4bca10bbadc086e8db520">oc_obt_update_cloud_conf_device</a> (oc_uuid_t *uuid, const char *url, const char *at, const char *apn, const char *cis, const char *sid, <a class="el" href="oc__client__state_8h.html#ab93155ce23b0cb02c7c7d71b5c251486">oc_response_handler_t</a> cb, void *user_data)</td></tr>
 <tr class="memdesc:aa1e83dceddb4bca10bbadc086e8db520"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the data (POST) for the oic.r.coapcloudconf resource  <a href="oc__obt_8h.html#aa1e83dceddb4bca10bbadc086e8db520">More...</a><br /></td></tr>
 <tr class="separator:aa1e83dceddb4bca10bbadc086e8db520"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -288,7 +288,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* oc_obt_acl_cb_t) (oc_sec_acl_t *acl, void *data)</td>
+          <td class="memname">typedef void(* oc_obt_acl_cb_t) (<a class="el" href="oc__acl_8h.html#a485c09b9417208265dc2eed110bd9c82">oc_sec_acl_t</a> *acl, void *data)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -313,7 +313,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* oc_obt_creds_cb_t) (struct oc_sec_creds_t *creds, void *data)</td>
+          <td class="memname">typedef void(* oc_obt_creds_cb_t) (struct <a class="el" href="structoc__sec__creds__t.html">oc_sec_creds_t</a> *creds, void *data)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -322,7 +322,7 @@ Functions</h2></td></tr>
 <p>This callback is invoked in response to the <a class="el" href="oc__obt_8h.html#aebf4a8c700f12d08eff69f0724ba3d1d" title="Retrieve a list of credentials from a remote device owned by the onboarding tool.">oc_obt_retrieve_creds()</a> function. If there was a failure obtaining the credentials the <code>creds</code> parameter will be NULL.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">creds</td><td>A struct containing a linked list of oc_sec_cred_t credentials owned by a remote device </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">creds</td><td>A struct containing a linked list of <a class="el" href="structoc__sec__cred__t.html" title="security credential information">oc_sec_cred_t</a> credentials owned by a remote device </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>context pointer</td></tr>
   </table>
   </dd>
@@ -384,9 +384,9 @@ oc_obt_provision_role_wilecard_ace </dd>
 
 <p>Callback invoked in response to device discovery. </p>
 <p>Example: </p><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line">get_device(oc_client_response_t *data)</div>
+<div class="line">get_device(<a class="code" href="structoc__client__response__t.html">oc_client_response_t</a> *data)</div>
 <div class="line">{</div>
-<div class="line">  oc_rep_t *rep = data-&gt;payload;</div>
+<div class="line">  oc_rep_t *rep = data-&gt;<a class="code" href="structoc__client__response__t.html#a4e7476f42ae4af489a46e6d05b8e4727">payload</a>;</div>
 <div class="line">  <span class="keywordtype">char</span> *di = NULL, *n = NULL;</div>
 <div class="line">  <span class="keywordtype">size_t</span> di_len = 0, n_len = 0;</div>
 <div class="line"> </div>
@@ -413,7 +413,7 @@ oc_obt_provision_role_wilecard_ace </dd>
 <div class="line">    eps = eps-&gt;<a class="code" href="structoc__endpoint__t.html#ab649dfd671bd7ffa4accef34548fc893">next</a>;</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  <a class="code" href="group__doc__module__tag__client__state.html#ga34d2e906ebd125b8148817f55bda4b2c">oc_do_get</a>(<span class="stringliteral">&quot;/oic/d&quot;</span>, ep, NULL, &amp;get_device, HIGH_QOS, NULL);</div>
+<div class="line">  <a class="code" href="group__doc__module__tag__client__state.html#ga34d2e906ebd125b8148817f55bda4b2c">oc_do_get</a>(<span class="stringliteral">&quot;/oic/d&quot;</span>, ep, NULL, &amp;get_device, <a class="code" href="oc__client__state_8h.html#a172718f11f1a33ce09cd1222bcbe5920a907f366721888a6d73bbb40b272b0189">HIGH_QOS</a>, NULL);</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><a class="code" href="oc__obt_8h.html#abbadaf06decd3bf24d99d6720d0123c5">oc_obt_discover_unowned_devices</a>(unowned_device_cb, NULL);</div>
@@ -481,13 +481,13 @@ oc_obt_provision_role_wilecard_ace </dd>
         <tr>
           <td class="memname">void oc_obt_ace_add_permission </td>
           <td>(</td>
-          <td class="paramtype">oc_sec_ace_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="structoc__sec__ace__t.html">oc_sec_ace_t</a> *&#160;</td>
           <td class="paramname"><em>ace</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">oc_ace_permissions_t&#160;</td>
+          <td class="paramtype"><a class="el" href="oc__acl_8h.html#afd8b98696c9f44d51d07404d414421c5">oc_ace_permissions_t</a>&#160;</td>
           <td class="paramname"><em>permission</em>&#160;</td>
         </tr>
         <tr>
@@ -500,11 +500,11 @@ oc_obt_provision_role_wilecard_ace </dd>
 
 <p>Set the access permissions the ACE will grant. </p>
 <p>The function oc_obt_ace_add_permission can be called multiple times to add additional permissions.</p>
-<p>calling: </p><div class="fragment"><div class="line"><a class="code" href="oc__obt_8h.html#a30d405d88f8d51d180472dd1e373a31e">oc_obt_ace_add_permission</a>(ace, OC_PERM_RETRIEVE);</div>
-<div class="line"><a class="code" href="oc__obt_8h.html#a30d405d88f8d51d180472dd1e373a31e">oc_obt_ace_add_permission</a>(ace, OC_PERM_UPDATE);</div>
-<div class="line"><a class="code" href="oc__obt_8h.html#a30d405d88f8d51d180472dd1e373a31e">oc_obt_ace_add_permission</a>(ace, OC_PERM_NOTIFY);</div>
-</div><!-- fragment --><p>will set the same permissions as calling: </p><div class="fragment"><div class="line"><a class="code" href="oc__obt_8h.html#a30d405d88f8d51d180472dd1e373a31e">oc_obt_ace_add_permission</a>(ace, OC_PERM_RETRIEVE | OC_PERM_UPDATE |</div>
-<div class="line">                               OC_PERM_NOTIFY);</div>
+<p>calling: </p><div class="fragment"><div class="line"><a class="code" href="oc__obt_8h.html#a30d405d88f8d51d180472dd1e373a31e">oc_obt_ace_add_permission</a>(ace, <a class="code" href="oc__acl_8h.html#afd8b98696c9f44d51d07404d414421c5a5b1cfa277160e0a1ec205f1d5c3f7857">OC_PERM_RETRIEVE</a>);</div>
+<div class="line"><a class="code" href="oc__obt_8h.html#a30d405d88f8d51d180472dd1e373a31e">oc_obt_ace_add_permission</a>(ace, <a class="code" href="oc__acl_8h.html#afd8b98696c9f44d51d07404d414421c5ac94ce014f890c0f3149df82a5bee52af">OC_PERM_UPDATE</a>);</div>
+<div class="line"><a class="code" href="oc__obt_8h.html#a30d405d88f8d51d180472dd1e373a31e">oc_obt_ace_add_permission</a>(ace, <a class="code" href="oc__acl_8h.html#afd8b98696c9f44d51d07404d414421c5afa73180fee00be16035f83e58a1d0777">OC_PERM_NOTIFY</a>);</div>
+</div><!-- fragment --><p>will set the same permissions as calling: </p><div class="fragment"><div class="line"><a class="code" href="oc__obt_8h.html#a30d405d88f8d51d180472dd1e373a31e">oc_obt_ace_add_permission</a>(ace, <a class="code" href="oc__acl_8h.html#afd8b98696c9f44d51d07404d414421c5a5b1cfa277160e0a1ec205f1d5c3f7857">OC_PERM_RETRIEVE</a> | <a class="code" href="oc__acl_8h.html#afd8b98696c9f44d51d07404d414421c5ac94ce014f890c0f3149df82a5bee52af">OC_PERM_UPDATE</a> |</div>
+<div class="line">                               <a class="code" href="oc__acl_8h.html#afd8b98696c9f44d51d07404d414421c5afa73180fee00be16035f83e58a1d0777">OC_PERM_NOTIFY</a>);</div>
 </div><!-- fragment --><p>The possible values for the oc_ace_permissions_t bitmask are:</p><ul>
 <li>OC_PERM_NONE : no permissions. Never expected to show up in an ACE entry</li>
 <li>OC_PERM_CREATE : permission to add a new resource to the client or server</li>
@@ -537,16 +537,16 @@ oc_obt_provision_role_wilecard_ace </dd>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">oc_ace_res_t* oc_obt_ace_new_resource </td>
+          <td class="memname"><a class="el" href="structoc__ace__res__t.html">oc_ace_res_t</a>* oc_obt_ace_new_resource </td>
           <td>(</td>
-          <td class="paramtype">oc_sec_ace_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="structoc__sec__ace__t.html">oc_sec_ace_t</a> *&#160;</td>
           <td class="paramname"><em>ace</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Add an ACE resource (<code>oc_ace_res_t</code>) to the ACE. </p>
+<p>Add an ACE resource (<code><a class="el" href="structoc__ace__res__t.html" title="ACE resource information.">oc_ace_res_t</a></code>) to the ACE. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">ace</td><td>the ACE that the ACE resource will be added to</td></tr>
@@ -554,7 +554,7 @@ oc_obt_provision_role_wilecard_ace </dd>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>A new oc_ace_res_t</li>
+<li>A new <a class="el" href="structoc__ace__res__t.html" title="ACE resource information.">oc_ace_res_t</a></li>
 <li>NULL if unable to allocate a new ACE resource</li>
 </ul>
 </dd></dl>
@@ -579,7 +579,7 @@ oc_obt_provision_role_wilecard_ace </dd>
         <tr>
           <td class="memname">void oc_obt_ace_resource_set_href </td>
           <td>(</td>
-          <td class="paramtype">oc_ace_res_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="structoc__ace__res__t.html">oc_ace_res_t</a> *&#160;</td>
           <td class="paramname"><em>resource</em>, </td>
         </tr>
         <tr>
@@ -616,13 +616,13 @@ oc_obt_provision_role_wilecard_ace </dd>
         <tr>
           <td class="memname">void oc_obt_ace_resource_set_wc </td>
           <td>(</td>
-          <td class="paramtype">oc_ace_res_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="structoc__ace__res__t.html">oc_ace_res_t</a> *&#160;</td>
           <td class="paramname"><em>resource</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">oc_ace_wildcard_t&#160;</td>
+          <td class="paramtype"><a class="el" href="oc__acl_8h.html#a1e7d2ee5709877a0e75a8e048e17df1f">oc_ace_wildcard_t</a>&#160;</td>
           <td class="paramname"><em>wc</em>&#160;</td>
         </tr>
         <tr>
@@ -932,7 +932,7 @@ oc_obt_provision_role_wilecard_ace </dd>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">oc_discovery_all_handler_t&#160;</td>
+          <td class="paramtype"><a class="el" href="oc__client__state_8h.html#ad0e8cd636823e22b2730c313b456b379">oc_discovery_all_handler_t</a>&#160;</td>
           <td class="paramname"><em>handler</em>, </td>
         </tr>
         <tr>
@@ -1241,7 +1241,7 @@ oc_obt_provision_role_wilecard_ace </dd>
         <tr>
           <td class="memname">void oc_obt_free_ace </td>
           <td>(</td>
-          <td class="paramtype">oc_sec_ace_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="structoc__sec__ace__t.html">oc_sec_ace_t</a> *&#160;</td>
           <td class="paramname"><em>ace</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1267,7 +1267,7 @@ oc_obt_provision_role_wilecard_ace </dd>
         <tr>
           <td class="memname">void oc_obt_free_acl </td>
           <td>(</td>
-          <td class="paramtype">oc_sec_acl_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="oc__acl_8h.html#a485c09b9417208265dc2eed110bd9c82">oc_sec_acl_t</a> *&#160;</td>
           <td class="paramname"><em>acl</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1294,7 +1294,7 @@ oc_obt_provision_role_wilecard_ace </dd>
         <tr>
           <td class="memname">void oc_obt_free_creds </td>
           <td>(</td>
-          <td class="paramtype">oc_sec_creds_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="structoc__sec__creds__t.html">oc_sec_creds_t</a> *&#160;</td>
           <td class="paramname"><em>creds</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1402,9 +1402,9 @@ oc_obt_provision_role_wilecard_ace </dd>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">oc_sec_ace_t* oc_obt_new_ace_for_connection </td>
+          <td class="memname"><a class="el" href="structoc__sec__ace__t.html">oc_sec_ace_t</a>* oc_obt_new_ace_for_connection </td>
           <td>(</td>
-          <td class="paramtype">oc_ace_connection_type_t&#160;</td>
+          <td class="paramtype"><a class="el" href="oc__acl_8h.html#a78c4f9f6c2a1be18591d7e9520a73029">oc_ace_connection_type_t</a>&#160;</td>
           <td class="paramname"><em>conn</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1419,8 +1419,8 @@ oc_obt_provision_role_wilecard_ace </dd>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>A new oc_sec_ace_t with an OC_SUBJECT_CONN subject_type and the conn property set to the provided connection type</li>
-<li>NULL if unable to allocate a new oc_sec_ace_t</li>
+<li>A new <a class="el" href="structoc__sec__ace__t.html" title="Security ACE information.">oc_sec_ace_t</a> with an OC_SUBJECT_CONN subject_type and the conn property set to the provided connection type</li>
+<li>NULL if unable to allocate a new <a class="el" href="structoc__sec__ace__t.html" title="Security ACE information.">oc_sec_ace_t</a></li>
 </ul>
 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__obt_8h.html#a560219d829b0d3998b5280221cf0ab3f" title="Create a new Access Control Entry (ACE) with device UUID as subject.">oc_obt_new_ace_for_subject</a> </dd>
@@ -1440,7 +1440,7 @@ oc_obt_provision_role_wilecard_ace </dd>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">oc_sec_ace_t* oc_obt_new_ace_for_role </td>
+          <td class="memname"><a class="el" href="structoc__sec__ace__t.html">oc_sec_ace_t</a>* oc_obt_new_ace_for_role </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>role</em>, </td>
@@ -1468,8 +1468,8 @@ oc_obt_provision_role_wilecard_ace </dd>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>A new oc_sec_ace_t with an OC_SUBJECT_ROLE subject_type and the role property set to the provided role and authority</li>
-<li>NULL if unable to allocate a new oc_sec_ace_t</li>
+<li>A new <a class="el" href="structoc__sec__ace__t.html" title="Security ACE information.">oc_sec_ace_t</a> with an OC_SUBJECT_ROLE subject_type and the role property set to the provided role and authority</li>
+<li>NULL if unable to allocate a new <a class="el" href="structoc__sec__ace__t.html" title="Security ACE information.">oc_sec_ace_t</a></li>
 </ul>
 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__obt_8h.html#a560219d829b0d3998b5280221cf0ab3f" title="Create a new Access Control Entry (ACE) with device UUID as subject.">oc_obt_new_ace_for_subject</a> </dd>
@@ -1489,7 +1489,7 @@ oc_obt_provision_role_wilecard_ace </dd>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">oc_sec_ace_t* oc_obt_new_ace_for_subject </td>
+          <td class="memname"><a class="el" href="structoc__sec__ace__t.html">oc_sec_ace_t</a>* oc_obt_new_ace_for_subject </td>
           <td>(</td>
           <td class="paramtype">oc_uuid_t *&#160;</td>
           <td class="paramname"><em>uuid</em></td><td>)</td>
@@ -1506,8 +1506,8 @@ oc_obt_provision_role_wilecard_ace </dd>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><ul>
-<li>A pointer to a new oc_sec_ace_t with an OC_SUBJECT_UUID subject_type and the subject id will be set to the passed in device uuid</li>
-<li>NULL if unable to allocate a new oc_sec_ace_t</li>
+<li>A pointer to a new <a class="el" href="structoc__sec__ace__t.html" title="Security ACE information.">oc_sec_ace_t</a> with an OC_SUBJECT_UUID subject_type and the subject id will be set to the passed in device uuid</li>
+<li>NULL if unable to allocate a new <a class="el" href="structoc__sec__ace__t.html" title="Security ACE information.">oc_sec_ace_t</a></li>
 </ul>
 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__obt_8h.html#a336c31f19594a24bc837548087ef4d3f" title="Create a new Access Control Entry (ACE) with connection type as the subject.">oc_obt_new_ace_for_connection</a> </dd>
@@ -1797,7 +1797,7 @@ oc_obt_provision_role_wilecard_ace </dd>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">oc_sec_credusage_t&#160;</td>
+          <td class="paramtype"><a class="el" href="oc__cred_8h.html#af766cf746fb6d10b2f502d7f4f76e29e">oc_sec_credusage_t</a>&#160;</td>
           <td class="paramname"><em>credusage</em>&#160;</td>
         </tr>
         <tr>
@@ -1849,7 +1849,7 @@ oc_obt_provision_role_wilecard_ace </dd>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">oc_sec_ace_t *&#160;</td>
+          <td class="paramtype"><a class="el" href="structoc__sec__ace__t.html">oc_sec_ace_t</a> *&#160;</td>
           <td class="paramname"><em>ace</em>, </td>
         </tr>
         <tr>
@@ -1885,18 +1885,18 @@ oc_obt_provision_role_wilecard_ace </dd>
 <div class="line">  }</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line">oc_sec_ace_t *ace = NULL;</div>
-<div class="line">ace = <a class="code" href="oc__obt_8h.html#a336c31f19594a24bc837548087ef4d3f">oc_obt_new_ace_for_connection</a>(OC_CONN_AUTH_CRYPT);</div>
-<div class="line">oc_ace_res_t *res = <a class="code" href="oc__obt_8h.html#abbff1d4755a4ca41b6d4af4d7be1ca1c">oc_obt_ace_new_resource</a>(ace);</div>
+<div class="line"><a class="code" href="structoc__sec__ace__t.html">oc_sec_ace_t</a> *ace = NULL;</div>
+<div class="line">ace = <a class="code" href="oc__obt_8h.html#a336c31f19594a24bc837548087ef4d3f">oc_obt_new_ace_for_connection</a>(<a class="code" href="oc__acl_8h.html#a78c4f9f6c2a1be18591d7e9520a73029a29f891201b9e45f0161ec1390b81a4e9">OC_CONN_AUTH_CRYPT</a>);</div>
+<div class="line"><a class="code" href="structoc__ace__res__t.html">oc_ace_res_t</a> *res = <a class="code" href="oc__obt_8h.html#abbff1d4755a4ca41b6d4af4d7be1ca1c">oc_obt_ace_new_resource</a>(ace);</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordflow">if</span> (!res) {</div>
 <div class="line">  printf(<span class="stringliteral">&quot;ERROR: Could not allocate new resource for ACE\n&quot;</span>);</div>
 <div class="line">  <a class="code" href="oc__obt_8h.html#a9c580dac0bf0dede0e9e33c995a05068">oc_obt_free_ace</a>(ace);</div>
 <div class="line">  <span class="keywordflow">return</span>;</div>
 <div class="line">}</div>
-<div class="line"><a class="code" href="oc__obt_8h.html#aa12482dc0b5c7415602c3763a2f33018">oc_obt_ace_resource_set_wc</a>(res, OC_ACE_WC_ALL);</div>
-<div class="line"><a class="code" href="oc__obt_8h.html#a30d405d88f8d51d180472dd1e373a31e">oc_obt_ace_add_permission</a>(ace, OC_PERM_RETRIEVE | OC_PERM_UPDATE |</div>
-<div class="line">                               OC_PERM_NOTIFY);</div>
+<div class="line"><a class="code" href="oc__obt_8h.html#aa12482dc0b5c7415602c3763a2f33018">oc_obt_ace_resource_set_wc</a>(res, <a class="code" href="oc__acl_8h.html#a1e7d2ee5709877a0e75a8e048e17df1fabb0bdfc5b89b65a894b096d9863b2e07">OC_ACE_WC_ALL</a>);</div>
+<div class="line"><a class="code" href="oc__obt_8h.html#a30d405d88f8d51d180472dd1e373a31e">oc_obt_ace_add_permission</a>(ace, <a class="code" href="oc__acl_8h.html#afd8b98696c9f44d51d07404d414421c5a5b1cfa277160e0a1ec205f1d5c3f7857">OC_PERM_RETRIEVE</a> | <a class="code" href="oc__acl_8h.html#afd8b98696c9f44d51d07404d414421c5ac94ce014f890c0f3149df82a5bee52af">OC_PERM_UPDATE</a> |</div>
+<div class="line">                               <a class="code" href="oc__acl_8h.html#afd8b98696c9f44d51d07404d414421c5afa73180fee00be16035f83e58a1d0777">OC_PERM_NOTIFY</a>);</div>
 <div class="line"><span class="keywordtype">int</span> ret = <a class="code" href="oc__obt_8h.html#ada5f2bf09c55f8d6833bf42a2d7bc092">oc_obt_provision_ace</a>(uuid, ace, provision_ace2_cb, NULL);</div>
 <div class="line"><span class="keywordflow">if</span> (ret &gt;= 0) {</div>
 <div class="line">  printf(<span class="stringliteral">&quot;Successfully issued request to provision ACE\n&quot;</span>);</div>
@@ -2659,7 +2659,7 @@ oc_obt_provision_role_wilecard_ace </dd>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">oc_response_handler_t&#160;</td>
+          <td class="paramtype"><a class="el" href="oc__client__state_8h.html#ab93155ce23b0cb02c7c7d71b5c251486">oc_response_handler_t</a>&#160;</td>
           <td class="paramname"><em>cb</em>, </td>
         </tr>
         <tr>
@@ -2750,7 +2750,7 @@ oc_obt_provision_role_wilecard_ace </dd>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">oc_sec_creds_t* oc_obt_retrieve_own_creds </td>
+          <td class="memname"><a class="el" href="structoc__sec__creds__t.html">oc_sec_creds_t</a>* oc_obt_retrieve_own_creds </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -2761,7 +2761,7 @@ oc_obt_provision_role_wilecard_ace </dd>
 
 <p>Retrieve a list of the onboarding tools own credentials. </p>
 <p>The credentials returned by <a class="el" href="oc__obt_8h.html#a38d64bfee5c50fc446dcb196d8a69533" title="Retrieve a list of the onboarding tools own credentials.">oc_obt_retrieve_own_creds()</a> point to an internal data structures that store the security context of the OBT. <b>DO NOT</b> free them. Use <a class="el" href="oc__obt_8h.html#a657060b20a2c2d9334c3e00a1641dd6b" title="Delete a one of the onboarding tools credentials by credid.">oc_obt_delete_own_cred_by_credid()</a> to remove credentials from the OBT.</p>
-<dl class="section return"><dt>Returns</dt><dd>A struct containing the onboarding tools uuid and a linked list of oc_sec_cred_t credentials owned by the onboarding tool. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A struct containing the onboarding tools uuid and a linked list of <a class="el" href="structoc__sec__cred__t.html" title="security credential information">oc_sec_cred_t</a> credentials owned by the onboarding tool. </dd></dl>
 
 </div>
 </div>
@@ -2868,7 +2868,7 @@ oc_obt_provision_role_wilecard_ace </dd>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">oc_response_handler_t&#160;</td>
+          <td class="paramtype"><a class="el" href="oc__client__state_8h.html#ab93155ce23b0cb02c7c7d71b5c251486">oc_response_handler_t</a>&#160;</td>
           <td class="paramname"><em>cb</em>, </td>
         </tr>
         <tr>
@@ -2912,6 +2912,7 @@ oc_obt_provision_role_wilecard_ace </dd>
 <div class="ttc" id="astructoc__endpoint__t_html_ab649dfd671bd7ffa4accef34548fc893"><div class="ttname"><a href="structoc__endpoint__t.html#ab649dfd671bd7ffa4accef34548fc893">oc_endpoint_t::next</a></div><div class="ttdeci">struct oc_endpoint_t * next</div><div class="ttdoc">pointer to the next structure</div><div class="ttdef"><b>Definition:</b> oc_endpoint.h:87</div></div>
 <div class="ttc" id="aoc__storage_8h_html_ae529493bca3a501922f23e3d7701ff05"><div class="ttname"><a href="oc__storage_8h.html#ae529493bca3a501922f23e3d7701ff05">oc_storage_config</a></div><div class="ttdeci">int oc_storage_config(const char *store)</div><div class="ttdoc">open the storage</div></div>
 <div class="ttc" id="aoc__obt_8h_html_afdb6a181ebb448088fd01ac4dca44b69"><div class="ttname"><a href="oc__obt_8h.html#afdb6a181ebb448088fd01ac4dca44b69">oc_obt_perform_just_works_otm</a></div><div class="ttdeci">int oc_obt_perform_just_works_otm(oc_uuid_t *uuid, oc_obt_device_status_cb_t cb, void *data)</div><div class="ttdoc">Perform ownership transfer method (OTM) on the device using Just-Works.</div></div>
+<div class="ttc" id="astructoc__client__response__t_html"><div class="ttname"><a href="structoc__client__response__t.html">oc_client_response_t</a></div><div class="ttdoc">Client response information.</div><div class="ttdef"><b>Definition:</b> oc_client_state.h:50</div></div>
 <div class="ttc" id="aoc__obt_8h_html_a6e1774db1d1025d59dc47a6dbdaa1eae"><div class="ttname"><a href="oc__obt_8h.html#a6e1774db1d1025d59dc47a6dbdaa1eae">oc_obt_provision_pairwise_credentials</a></div><div class="ttdeci">int oc_obt_provision_pairwise_credentials(oc_uuid_t *uuid1, oc_uuid_t *uuid2, oc_obt_status_cb_t cb, void *data)</div><div class="ttdoc">Provision pairwise 128-bit pre-shared key (PSK) credentials to a Client and Server so they may establ...</div></div>
 <div class="ttc" id="aoc__obt_8h_html_a6c70bc30db1c49d7de3280cf15f9d9fa"><div class="ttname"><a href="oc__obt_8h.html#a6c70bc30db1c49d7de3280cf15f9d9fa">oc_obt_provision_role_certificate</a></div><div class="ttdeci">int oc_obt_provision_role_certificate(oc_role_t *roles, oc_uuid_t *uuid, oc_obt_status_cb_t cb, void *data)</div><div class="ttdoc">Provision a role certificate to a Client application.</div></div>
 <div class="ttc" id="aoc__obt_8h_html_af68a2d0203a48a7f065085598cef3c71"><div class="ttname"><a href="oc__obt_8h.html#af68a2d0203a48a7f065085598cef3c71">oc_obt_request_random_pin</a></div><div class="ttdeci">int oc_obt_request_random_pin(oc_uuid_t *uuid, oc_obt_device_status_cb_t cb, void *data)</div><div class="ttdoc">Ask device being onboarded to produce a random PIN for PIN ownership transfer method (OTM).</div></div>
@@ -2922,27 +2923,36 @@ oc_obt_provision_role_wilecard_ace </dd>
 <div class="ttc" id="aoc__uuid_8h_html_abebb530e4cf0aaedcac99175ea5a7dcd"><div class="ttname"><a href="oc__uuid_8h.html#abebb530e4cf0aaedcac99175ea5a7dcd">oc_uuid_to_str</a></div><div class="ttdeci">void oc_uuid_to_str(const oc_uuid_t *uuid, char *buffer, int buflen)</div><div class="ttdoc">Convert the 128 bit oc_uuid_t to a sting representation.</div></div>
 <div class="ttc" id="agroup__doc__module__tag__server__side_html_ga0cdcfd9676beaa7368cc9677277279a8"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga0cdcfd9676beaa7368cc9677277279a8">oc_device_bind_resource_type</a></div><div class="ttdeci">void oc_device_bind_resource_type(size_t device, const char *type)</div><div class="ttdoc">Add a Resource Type &quot;rt&quot; property to the an /oic/d resource.</div></div>
 <div class="ttc" id="aoc__obt_8h_html_aa3c6c59e8cf6b1f1f3f772339d1da672"><div class="ttname"><a href="oc__obt_8h.html#aa3c6c59e8cf6b1f1f3f772339d1da672">oc_obt_perform_random_pin_otm</a></div><div class="ttdeci">int oc_obt_perform_random_pin_otm(oc_uuid_t *uuid, const unsigned char *pin, size_t pin_len, oc_obt_device_status_cb_t cb, void *data)</div><div class="ttdoc">Perform ownership transfer method (OTM) using Random PIN based OTM.</div></div>
+<div class="ttc" id="aoc__acl_8h_html_afd8b98696c9f44d51d07404d414421c5a5b1cfa277160e0a1ec205f1d5c3f7857"><div class="ttname"><a href="oc__acl_8h.html#afd8b98696c9f44d51d07404d414421c5a5b1cfa277160e0a1ec205f1d5c3f7857">OC_PERM_RETRIEVE</a></div><div class="ttdeci">@ OC_PERM_RETRIEVE</div><div class="ttdoc">Read, observe, discover permission is granted.</div><div class="ttdef"><b>Definition:</b> oc_acl.h:68</div></div>
+<div class="ttc" id="aoc__client__state_8h_html_a172718f11f1a33ce09cd1222bcbe5920a907f366721888a6d73bbb40b272b0189"><div class="ttname"><a href="oc__client__state_8h.html#a172718f11f1a33ce09cd1222bcbe5920a907f366721888a6d73bbb40b272b0189">HIGH_QOS</a></div><div class="ttdeci">@ HIGH_QOS</div><div class="ttdoc">confirmable messages</div><div class="ttdef"><b>Definition:</b> oc_client_state.h:42</div></div>
 <div class="ttc" id="aoc__uuid_8h_html_a4e556e036773181af67e69a454667f31"><div class="ttname"><a href="oc__uuid_8h.html#a4e556e036773181af67e69a454667f31">OC_UUID_LEN</a></div><div class="ttdeci">#define OC_UUID_LEN</div><div class="ttdoc">The length of a UUID string.</div><div class="ttdef"><b>Definition:</b> oc_uuid.h:40</div></div>
 <div class="ttc" id="aoc__api_8h_html_abc05e63942a1093f807213220841c54b"><div class="ttname"><a href="oc__api_8h.html#abc05e63942a1093f807213220841c54b">oc_init_platform</a></div><div class="ttdeci">int oc_init_platform(const char *mfg_name, oc_init_platform_cb_t init_platform_cb, void *data)</div><div class="ttdoc">Initialize the platform.</div></div>
+<div class="ttc" id="aoc__acl_8h_html_afd8b98696c9f44d51d07404d414421c5ac94ce014f890c0f3149df82a5bee52af"><div class="ttname"><a href="oc__acl_8h.html#afd8b98696c9f44d51d07404d414421c5ac94ce014f890c0f3149df82a5bee52af">OC_PERM_UPDATE</a></div><div class="ttdeci">@ OC_PERM_UPDATE</div><div class="ttdoc">Write, update permission is granted.</div><div class="ttdef"><b>Definition:</b> oc_acl.h:69</div></div>
 <div class="ttc" id="aoc__obt_8h_html_abbff1d4755a4ca41b6d4af4d7be1ca1c"><div class="ttname"><a href="oc__obt_8h.html#abbff1d4755a4ca41b6d4af4d7be1ca1c">oc_obt_ace_new_resource</a></div><div class="ttdeci">oc_ace_res_t * oc_obt_ace_new_resource(oc_sec_ace_t *ace)</div><div class="ttdoc">Add an ACE resource (oc_ace_res_t) to the ACE.</div></div>
+<div class="ttc" id="aoc__acl_8h_html_a78c4f9f6c2a1be18591d7e9520a73029a29f891201b9e45f0161ec1390b81a4e9"><div class="ttname"><a href="oc__acl_8h.html#a78c4f9f6c2a1be18591d7e9520a73029a29f891201b9e45f0161ec1390b81a4e9">OC_CONN_AUTH_CRYPT</a></div><div class="ttdeci">@ OC_CONN_AUTH_CRYPT</div><div class="ttdoc">auth-crypt, authenticated and encrypted</div><div class="ttdef"><b>Definition:</b> oc_acl.h:46</div></div>
 <div class="ttc" id="astructoc__handler__t_html_a3a1a54a7e7cc1c40235dfb2b6a44b875"><div class="ttname"><a href="structoc__handler__t.html#a3a1a54a7e7cc1c40235dfb2b6a44b875">oc_handler_t::init</a></div><div class="ttdeci">int(* init)(void)</div><div class="ttdoc">Device initialization callback that is invoked to initialize the platform and device(s).</div><div class="ttdef"><b>Definition:</b> oc_api.h:80</div></div>
 <div class="ttc" id="aoc__api_8h_html_ae6522fdfeed62a92193214ee99dfc47c"><div class="ttname"><a href="oc__api_8h.html#ae6522fdfeed62a92193214ee99dfc47c">oc_main_init</a></div><div class="ttdeci">int oc_main_init(const oc_handler_t *handler)</div><div class="ttdoc">Register and call handler functions responsible for controlling the IoTivity-lite stack.</div></div>
 <div class="ttc" id="aoc__rep_8h_html_a03f038c3d8296518eb193d1e80d745f7"><div class="ttname"><a href="oc__rep_8h.html#a03f038c3d8296518eb193d1e80d745f7">oc_rep_get_string</a></div><div class="ttdeci">bool oc_rep_get_string(oc_rep_t *rep, const char *key, char **value, size_t *size)</div><div class="ttdoc">Read a text string value from an oc_rep_t</div></div>
+<div class="ttc" id="astructoc__ace__res__t_html"><div class="ttname"><a href="structoc__ace__res__t.html">oc_ace_res_t</a></div><div class="ttdoc">ACE resource information.</div><div class="ttdef"><b>Definition:</b> oc_acl.h:88</div></div>
 <div class="ttc" id="aoc__obt_8h_html_abbadaf06decd3bf24d99d6720d0123c5"><div class="ttname"><a href="oc__obt_8h.html#abbadaf06decd3bf24d99d6720d0123c5">oc_obt_discover_unowned_devices</a></div><div class="ttdeci">int oc_obt_discover_unowned_devices(oc_obt_discovery_cb_t cb, void *data)</div><div class="ttdoc">Discover all unowned devices.</div></div>
+<div class="ttc" id="aoc__acl_8h_html_afd8b98696c9f44d51d07404d414421c5afa73180fee00be16035f83e58a1d0777"><div class="ttname"><a href="oc__acl_8h.html#afd8b98696c9f44d51d07404d414421c5afa73180fee00be16035f83e58a1d0777">OC_PERM_NOTIFY</a></div><div class="ttdeci">@ OC_PERM_NOTIFY</div><div class="ttdoc">Notify permission is granted.</div><div class="ttdef"><b>Definition:</b> oc_acl.h:71</div></div>
 <div class="ttc" id="aoc__obt_8h_html_a336c31f19594a24bc837548087ef4d3f"><div class="ttname"><a href="oc__obt_8h.html#a336c31f19594a24bc837548087ef4d3f">oc_obt_new_ace_for_connection</a></div><div class="ttdeci">oc_sec_ace_t * oc_obt_new_ace_for_connection(oc_ace_connection_type_t conn)</div><div class="ttdoc">Create a new Access Control Entry (ACE) with connection type as the subject.</div></div>
 <div class="ttc" id="aoc__obt_8h_html_ada5f2bf09c55f8d6833bf42a2d7bc092"><div class="ttname"><a href="oc__obt_8h.html#ada5f2bf09c55f8d6833bf42a2d7bc092">oc_obt_provision_ace</a></div><div class="ttdeci">int oc_obt_provision_ace(oc_uuid_t *subject, oc_sec_ace_t *ace, oc_obt_device_status_cb_t cb, void *data)</div><div class="ttdoc">Provision an ACE to a device.</div></div>
 <div class="ttc" id="agroup__doc__module__tag__client__state_html_ga34d2e906ebd125b8148817f55bda4b2c"><div class="ttname"><a href="group__doc__module__tag__client__state.html#ga34d2e906ebd125b8148817f55bda4b2c">oc_do_get</a></div><div class="ttdeci">bool oc_do_get(const char *uri, oc_endpoint_t *endpoint, const char *query, oc_response_handler_t handler, oc_qos_t qos, void *user_data)</div><div class="ttdoc">Issue a GET request to obtain the current value of all properties a resource.</div></div>
 <div class="ttc" id="aoc__obt_8h_html_a52c54994b9064ba50455d3811e9ed8aa"><div class="ttname"><a href="oc__obt_8h.html#a52c54994b9064ba50455d3811e9ed8aa">oc_obt_add_roleid</a></div><div class="ttdeci">oc_role_t * oc_obt_add_roleid(oc_role_t *roles, const char *role, const char *authority)</div><div class="ttdoc">Build a linked list of roles to provision a role certificate.</div></div>
+<div class="ttc" id="astructoc__client__response__t_html_a4e7476f42ae4af489a46e6d05b8e4727"><div class="ttname"><a href="structoc__client__response__t.html#a4e7476f42ae4af489a46e6d05b8e4727">oc_client_response_t::payload</a></div><div class="ttdeci">oc_rep_t * payload</div><div class="ttdoc">response payload, interpreted as cbor</div><div class="ttdef"><b>Definition:</b> oc_client_state.h:52</div></div>
 <div class="ttc" id="aoc__obt_8h_html_a82b4be29c82296aac97797380f90a916"><div class="ttname"><a href="oc__obt_8h.html#a82b4be29c82296aac97797380f90a916">oc_obt_provision_identity_certificate</a></div><div class="ttdeci">int oc_obt_provision_identity_certificate(oc_uuid_t *uuid, oc_obt_status_cb_t cb, void *data)</div><div class="ttdoc">Provision identity certificates.</div></div>
 <div class="ttc" id="aoc__obt_8h_html_aa12482dc0b5c7415602c3763a2f33018"><div class="ttname"><a href="oc__obt_8h.html#aa12482dc0b5c7415602c3763a2f33018">oc_obt_ace_resource_set_wc</a></div><div class="ttdeci">void oc_obt_ace_resource_set_wc(oc_ace_res_t *resource, oc_ace_wildcard_t wc)</div><div class="ttdoc">Set the wildcard type on the ACE resource.</div></div>
+<div class="ttc" id="aoc__acl_8h_html_a1e7d2ee5709877a0e75a8e048e17df1fabb0bdfc5b89b65a894b096d9863b2e07"><div class="ttname"><a href="oc__acl_8h.html#a1e7d2ee5709877a0e75a8e048e17df1fabb0bdfc5b89b65a894b096d9863b2e07">OC_ACE_WC_ALL</a></div><div class="ttdeci">@ OC_ACE_WC_ALL</div><div class="ttdoc">all</div><div class="ttdef"><b>Definition:</b> oc_acl.h:56</div></div>
 <div class="ttc" id="astructoc__endpoint__t_html"><div class="ttname"><a href="structoc__endpoint__t.html">oc_endpoint_t</a></div><div class="ttdoc">the endpoint information</div><div class="ttdef"><b>Definition:</b> oc_endpoint.h:85</div></div>
 <div class="ttc" id="aoc__obt_8h_html_a97556ae3073fdfd4d12713431c458f56"><div class="ttname"><a href="oc__obt_8h.html#a97556ae3073fdfd4d12713431c458f56">oc_obt_init</a></div><div class="ttdeci">int oc_obt_init(void)</div><div class="ttdoc">Initialize the IoTivity stack so it can be used as an onboarding tool (OBT)</div></div>
+<div class="ttc" id="astructoc__sec__ace__t_html"><div class="ttname"><a href="structoc__sec__ace__t.html">oc_sec_ace_t</a></div><div class="ttdoc">Security ACE information.</div><div class="ttdef"><b>Definition:</b> oc_acl.h:116</div></div>
 <div class="ttc" id="aoc__obt_8h_html_a30d405d88f8d51d180472dd1e373a31e"><div class="ttname"><a href="oc__obt_8h.html#a30d405d88f8d51d180472dd1e373a31e">oc_obt_ace_add_permission</a></div><div class="ttdeci">void oc_obt_ace_add_permission(oc_sec_ace_t *ace, oc_ace_permissions_t permission)</div><div class="ttdoc">Set the access permissions the ACE will grant.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__obt_8h.html">oc_obt.h</a></li>
-    <li class="footer">Generated on Tue Aug 24 2021 22:45:52 for IoTivity-Lite by
+    <li class="footer">Generated on Wed Aug 25 2021 00:09:51 for IoTivity-Lite by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

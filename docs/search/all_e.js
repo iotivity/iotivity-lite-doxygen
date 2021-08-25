@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['register_5fresources_597',['register_resources',['../structoc__handler__t.html#af5d55603be647f6281ab5e09ff0dafa0',1,'oc_handler_t']]],
-  ['request_5fpayload_598',['request_payload',['../structoc__request__t.html#ac4751776b29000ba3603ef3392bc64d8',1,'oc_request_t']]],
-  ['requests_5fentry_599',['requests_entry',['../structoc__handler__t.html#ac979523755d1f597b646bff4a70b08cc',1,'oc_handler_t']]],
-  ['resource_600',['resource',['../structoc__request__t.html#ac51d2fe369d26905a4c6c3f409aa014c',1,'oc_request_t']]],
-  ['response_601',['response',['../structoc__request__t.html#a26fe19251a9e8be9067a3e0cd6a09270',1,'oc_request_t']]],
-  ['response_5fbuffer_602',['response_buffer',['../structoc__response__t.html#adcab288d073d8108bfbc11ef81438535',1,'oc_response_t']]]
+  ['qos_686',['qos',['../structoc__client__cb__t.html#ab121ce72c202bece9cecccfaba382e91',1,'oc_client_cb_t']]],
+  ['query_687',['query',['../structoc__client__cb__t.html#a6b9711cc6e3599c82432f9476498600d',1,'oc_client_cb_t::query()'],['../structoc__request__t.html#aaecae8680f3cbda9cce2259c965be214',1,'oc_request_t::query()']]],
+  ['query_5flen_688',['query_len',['../structoc__request__t.html#a0872855f82eafc3f135c6aee3cf75b8e',1,'oc_request_t']]]
 ];

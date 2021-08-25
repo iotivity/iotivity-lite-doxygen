@@ -1,5 +1,8 @@
 var oc__client__state_8h =
 [
+    [ "oc_client_cb_t", "structoc__client__cb__t.html", "structoc__client__cb__t" ],
+    [ "oc_client_handler_t", "structoc__client__handler__t.html", "structoc__client__handler__t" ],
+    [ "oc_client_response_t", "structoc__client__response__t.html", "structoc__client__response__t" ],
     [ "oc_client_cb_t", "oc__client__state_8h.html#a6ae3d9f971c173ac0bc218e81d72746b", null ],
     [ "oc_client_handler_t", "oc__client__state_8h.html#a86a7712879d069005b2b51a31a8074c1", null ],
     [ "oc_discovery_all_handler_t", "oc__client__state_8h.html#ad0e8cd636823e22b2730c313b456b379", null ],

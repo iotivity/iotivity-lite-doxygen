@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['version_626',['version',['../structoc__endpoint__t.html#a1ba8c58bf27a2a88350f0fd5795baace',1,'oc_endpoint_t']]],
-  ['video_5fraw_627',['VIDEO_RAW',['../oc__ri_8h.html#a83161604a805e3a951254864d16a714fae9ba87e9c195384a61ec52830acda6cc',1,'oc_ri.h']]]
+  ['uri_728',['uri',['../structoc__client__cb__t.html#aabebe00e8d262449e42aa92dcc29cd79',1,'oc_client_cb_t::uri()'],['../structoc__resource__s.html#aabebe00e8d262449e42aa92dcc29cd79',1,'oc_resource_s::uri()']]],
+  ['user_5fdata_729',['user_data',['../structoc__client__response__t.html#a0f53d287ac7c064d1a49d4bd93ca1cb9',1,'oc_client_response_t::user_data()'],['../structoc__client__cb__t.html#a0f53d287ac7c064d1a49d4bd93ca1cb9',1,'oc_client_cb_t::user_data()']]],
+  ['uuid_730',['uuid',['../unionoc__ace__subject__t.html#ac318fde4c47ebb5767e129e9213d9317',1,'oc_ace_subject_t']]]
 ];

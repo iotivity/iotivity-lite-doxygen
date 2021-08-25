@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['get_5fhandler_999',['get_handler',['../structoc__resource__s.html#a7de9566976d37caea811d188d7ea7ad0',1,'oc_resource_s']]],
-  ['get_5fproperties_1000',['get_properties',['../structoc__resource__s.html#a99698a1070518a1d190b724318f65a8b',1,'oc_resource_s']]]
+  ['flags_1140',['flags',['../structoc__endpoint__t.html#a945038b8b9ca9558905bebfa24b4130e',1,'oc_endpoint_t']]]
 ];

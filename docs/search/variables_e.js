@@ -1,10 +1,12 @@
 var searchData=
 [
-  ['tag_5ffunc_5fdesc_1032',['tag_func_desc',['../structoc__resource__s.html#aa3c84d0e399d9ad8110bae7cd6c5a748',1,'oc_resource_s']]],
-  ['tag_5flocn_1033',['tag_locn',['../structoc__resource__s.html#a3e81ec0dd8163c45a3d1cd47f9db9858',1,'oc_resource_s']]],
-  ['tag_5fpos_5fdesc_1034',['tag_pos_desc',['../structoc__resource__s.html#aa3182def35cf801909c4e1a0cb8270c4',1,'oc_resource_s']]],
-  ['tag_5fpos_5frel_1035',['tag_pos_rel',['../structoc__resource__s.html#a1386c4ba12c1579f2936a5f3904a3236',1,'oc_resource_s']]],
-  ['timer_1036',['timer',['../structoc__event__callback__s.html#acfd7db168b82b26393490d4db04538f3',1,'oc_event_callback_s']]],
-  ['type_1037',['type',['../structoc__le__addr__t.html#a1d127017fb298b889f4ba24752d08b8e',1,'oc_le_addr_t']]],
-  ['types_1038',['types',['../structoc__resource__s.html#ab46330ee76a0d404bcadf5d1d6984018',1,'oc_resource_s']]]
+  ['ref_5fcount_1177',['ref_count',['../structoc__client__cb__t.html#a8d212098cbfe18fbd9bec648cc0eebb7',1,'oc_client_cb_t']]],
+  ['register_5fresources_1178',['register_resources',['../structoc__handler__t.html#af5d55603be647f6281ab5e09ff0dafa0',1,'oc_handler_t']]],
+  ['request_5fpayload_1179',['request_payload',['../structoc__request__t.html#ac4751776b29000ba3603ef3392bc64d8',1,'oc_request_t']]],
+  ['requests_5fentry_1180',['requests_entry',['../structoc__handler__t.html#ac979523755d1f597b646bff4a70b08cc',1,'oc_handler_t']]],
+  ['resource_1181',['resource',['../structoc__request__t.html#ac51d2fe369d26905a4c6c3f409aa014c',1,'oc_request_t']]],
+  ['response_1182',['response',['../structoc__client__handler__t.html#aa296ddbb003b2b9adac674bd112cb414',1,'oc_client_handler_t::response()'],['../structoc__request__t.html#a26fe19251a9e8be9067a3e0cd6a09270',1,'oc_request_t::response()']]],
+  ['response_5fbuffer_1183',['response_buffer',['../structoc__response__t.html#adcab288d073d8108bfbc11ef81438535',1,'oc_response_t']]],
+  ['role_1184',['role',['../unionoc__ace__subject__t.html#a30e7e74b551dbcb6cc31bafc4659d245',1,'oc_ace_subject_t::role()'],['../structoc__sec__cred__t.html#a30e7e74b551dbcb6cc31bafc4659d245',1,'oc_sec_cred_t::role()']]],
+  ['rowneruuid_1185',['rowneruuid',['../structoc__sec__acl__s.html#af0de68e95004851d0c429f7d528a218c',1,'oc_sec_acl_s::rowneruuid()'],['../structoc__sec__creds__t.html#af0de68e95004851d0c429f7d528a218c',1,'oc_sec_creds_t::rowneruuid()']]]
 ];
