@@ -25,7 +25,8 @@ var oc__cloud_8h =
       [ "OC_CPS_READYTOREGISTER", "oc__cloud_8h.html#a39af3f2bf5bb7ce3e75992d3410710aea8fa3fcc9be2667befcac324b2df68bbf", null ],
       [ "OC_CPS_REGISTERING", "oc__cloud_8h.html#a39af3f2bf5bb7ce3e75992d3410710aeaed725b75c99b67a177c51ef781ad360b", null ],
       [ "OC_CPS_REGISTERED", "oc__cloud_8h.html#a39af3f2bf5bb7ce3e75992d3410710aea80bac32746481b01554ccd0055885936", null ],
-      [ "OC_CPS_FAILED", "oc__cloud_8h.html#a39af3f2bf5bb7ce3e75992d3410710aea1a78dab2cf94b536cedc813aeb42ef7d", null ]
+      [ "OC_CPS_FAILED", "oc__cloud_8h.html#a39af3f2bf5bb7ce3e75992d3410710aea1a78dab2cf94b536cedc813aeb42ef7d", null ],
+      [ "OC_CPS_DEREGISTERING", "oc__cloud_8h.html#a39af3f2bf5bb7ce3e75992d3410710aea2cc1df13a04efd3afd0292cda314e785", null ]
     ] ],
     [ "oc_cloud_add_resource", "oc__cloud_8h.html#af782586d01601ce903e4aad77ffeca42", null ],
     [ "oc_cloud_delete_resource", "oc__cloud_8h.html#a4b387679649212a7c9b7db6eb5e3590b", null ],

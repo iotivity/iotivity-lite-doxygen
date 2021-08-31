@@ -157,6 +157,9 @@ typedef struct oc_link_s&#160;</td><td class="memItemRight" valign="bottom"><b>o
 <tr class="memitem:ab11cdc335264cb1c0fe63731b159eadd"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structoc__request__t.html">oc_request_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#ab11cdc335264cb1c0fe63731b159eadd">oc_request_t</a></td></tr>
 <tr class="memdesc:ab11cdc335264cb1c0fe63731b159eadd"><td class="mdescLeft">&#160;</td><td class="mdescRight">request information structure  <a href="oc__ri_8h.html#ab11cdc335264cb1c0fe63731b159eadd">More...</a><br /></td></tr>
 <tr class="separator:ab11cdc335264cb1c0fe63731b159eadd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e3ccbfead75cd13a6e9776d36ad9b17"><td class="memItemLeft" align="right" valign="top"><a id="a0e3ccbfead75cd13a6e9776d36ad9b17"></a>
+typedef struct oc_resource_defaults_data_t&#160;</td><td class="memItemRight" valign="bottom"><b>oc_resource_defaults_data_t</b></td></tr>
+<tr class="separator:a0e3ccbfead75cd13a6e9776d36ad9b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abff70f828a7b6ed9c10e286a2f099be8"><td class="memItemLeft" align="right" valign="top"><a id="abff70f828a7b6ed9c10e286a2f099be8"></a>
 typedef struct <a class="el" href="structoc__resource__s.html">oc_resource_s</a>&#160;</td><td class="memItemRight" valign="bottom"><b>oc_resource_t</b></td></tr>
 <tr class="separator:abff70f828a7b6ed9c10e286a2f099be8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -274,7 +277,11 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2a3bc5478317e4088ebb06e0ee4b4c087b">OC_IF_RW</a> = 1 &lt;&lt; 5, 
 <a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2a5e082b6f36e0a90aa92fcd0c2c1af871">OC_IF_A</a> = 1 &lt;&lt; 6, 
 <a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2a4449835ae3a016201d03f1a794eb2ddc">OC_IF_S</a> = 1 &lt;&lt; 7, 
-<a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2a17b3d3e09627975e3cf6235059399abf">OC_IF_CREATE</a> = 1 &lt;&lt; 8
+<a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2a17b3d3e09627975e3cf6235059399abf">OC_IF_CREATE</a> = 1 &lt;&lt; 8, 
+<br />
+&#160;&#160;<a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2a06a5bfe5fc584f0623bc0b78474dda92">OC_IF_W</a> = 1 &lt;&lt; 9, 
+<a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2a00480399ba440abd04780586a8b14142">OC_IF_STARTUP</a> = 1 &lt;&lt; 10, 
+<a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2ac7ae4e97b492bdc218b6131132e1bbf4">OC_IF_STARTUP_REVERT</a> = 1 &lt;&lt; 11
 <br />
  }</td></tr>
 <tr class="memdesc:a95fa27c60f90b8e3b976f4ca5f04aab2"><td class="mdescLeft">&#160;</td><td class="mdescRight">interface masks  <a href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">More...</a><br /></td></tr>
@@ -730,6 +737,12 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a95fa27c60f90b8e3b976f4ca5f04aab2a4449835ae3a016201d03f1a794eb2ddc"></a>OC_IF_S&#160;</td><td class="fielddoc"><p>oic.if.s </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a95fa27c60f90b8e3b976f4ca5f04aab2a17b3d3e09627975e3cf6235059399abf"></a>OC_IF_CREATE&#160;</td><td class="fielddoc"><p>oic.if.create </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a95fa27c60f90b8e3b976f4ca5f04aab2a06a5bfe5fc584f0623bc0b78474dda92"></a>OC_IF_W&#160;</td><td class="fielddoc"><p>oic.if.w </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a95fa27c60f90b8e3b976f4ca5f04aab2a00480399ba440abd04780586a8b14142"></a>OC_IF_STARTUP&#160;</td><td class="fielddoc"><p>oic.if.startup </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a95fa27c60f90b8e3b976f4ca5f04aab2ac7ae4e97b492bdc218b6131132e1bbf4"></a>OC_IF_STARTUP_REVERT&#160;</td><td class="fielddoc"><p>oic.if.startup.revert </p>
 </td></tr>
 </table>
 
@@ -1371,7 +1384,7 @@ false not valid </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__ri_8h.html">oc_ri.h</a></li>
-    <li class="footer">Generated on Wed Aug 25 2021 00:09:51 for IoTivity-Lite by
+    <li class="footer">Generated on Tue Aug 31 2021 14:39:50 for IoTivity-Lite by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

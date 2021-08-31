@@ -16,6 +16,7 @@ var oc__ri_8h =
     [ "oc_request_callback_t", "oc__ri_8h.html#aca4fa152ba1f8d2cd7639bf5c8276dbe", null ],
     [ "oc_request_handler_t", "oc__ri_8h.html#a603151eab6b213a08f796aaa21cc78dc", null ],
     [ "oc_request_t", "oc__ri_8h.html#ab11cdc335264cb1c0fe63731b159eadd", null ],
+    [ "oc_resource_defaults_data_t", "oc__ri_8h.html#a0e3ccbfead75cd13a6e9776d36ad9b17", null ],
     [ "oc_resource_t", "oc__ri_8h.html#abff70f828a7b6ed9c10e286a2f099be8", null ],
     [ "oc_response_buffer_t", "oc__ri_8h.html#a1381ff2ccb2f2212c438a31414dbe5be", null ],
     [ "oc_response_t", "oc__ri_8h.html#ae8fe862afa6ce9613ed8b33c1a9e4546", null ],
@@ -98,7 +99,10 @@ var oc__ri_8h =
       [ "OC_IF_RW", "oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2a3bc5478317e4088ebb06e0ee4b4c087b", null ],
       [ "OC_IF_A", "oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2a5e082b6f36e0a90aa92fcd0c2c1af871", null ],
       [ "OC_IF_S", "oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2a4449835ae3a016201d03f1a794eb2ddc", null ],
-      [ "OC_IF_CREATE", "oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2a17b3d3e09627975e3cf6235059399abf", null ]
+      [ "OC_IF_CREATE", "oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2a17b3d3e09627975e3cf6235059399abf", null ],
+      [ "OC_IF_W", "oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2a06a5bfe5fc584f0623bc0b78474dda92", null ],
+      [ "OC_IF_STARTUP", "oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2a00480399ba440abd04780586a8b14142", null ],
+      [ "OC_IF_STARTUP_REVERT", "oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2ac7ae4e97b492bdc218b6131132e1bbf4", null ]
     ] ],
     [ "oc_method_t", "oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26", [
       [ "OC_GET", "oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26ad4da05d28f48b07625a227c6dcf33071", null ],
