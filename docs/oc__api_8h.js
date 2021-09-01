@@ -79,6 +79,7 @@ var oc__api_8h =
     [ "oc_new_resource", "group__doc__module__tag__server__side.html#ga617ddc7eec68117e14bb4e1bf9f867cc", null ],
     [ "oc_notify_observers", "group__doc__module__tag__server__side.html#ga43ac6a6fc039b94df00768d69577a9ed", null ],
     [ "oc_process_baseline_interface", "group__doc__module__tag__server__side.html#gab56b55ccd7daccdb46f752af1b4e3bbd", null ],
+    [ "oc_query_value_exists", "group__doc__module__tag__server__side.html#gaa3a125b0f190fcccc7a294b8429e9a7e", null ],
     [ "oc_remove_delayed_callback", "group__doc__module__tag__common__operations.html#gaf8cac4f44a0020db72b7b9800191a430", null ],
     [ "oc_remove_ownership_status_cb", "oc__api_8h.html#a44732c855ea16654b45c46a0d091a229", null ],
     [ "oc_reset", "oc__api_8h.html#a2b046267a9156c64d090259a7916319f", null ],

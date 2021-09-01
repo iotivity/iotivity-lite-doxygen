@@ -380,6 +380,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a6ba1538fa8a8430eb27bc5fa34e1a34c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a6ba1538fa8a8430eb27bc5fa34e1a34c">oc_ri_is_app_resource_valid</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
 <tr class="memdesc:a6ba1538fa8a8430eb27bc5fa34e1a34c"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the resource is valid  <a href="oc__ri_8h.html#a6ba1538fa8a8430eb27bc5fa34e1a34c">More...</a><br /></td></tr>
 <tr class="separator:a6ba1538fa8a8430eb27bc5fa34e1a34c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d6859298de1d6033ec3d91f5d6e9be9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a0d6859298de1d6033ec3d91f5d6e9be9">oc_ri_query_exists</a> (const char *query, size_t query_len, const char *key)</td></tr>
+<tr class="memdesc:a0d6859298de1d6033ec3d91f5d6e9be9"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if key exist in query  <a href="oc__ri_8h.html#a0d6859298de1d6033ec3d91f5d6e9be9">More...</a><br /></td></tr>
+<tr class="separator:a0d6859298de1d6033ec3d91f5d6e9be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7e211eb65d2962771b99cbdf9ea0413"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#ad7e211eb65d2962771b99cbdf9ea0413">oc_ri_query_nth_key_exists</a> (const char *query, size_t query_len, char **key, size_t *key_len, size_t n)</td></tr>
+<tr class="memdesc:ad7e211eb65d2962771b99cbdf9ea0413"><td class="mdescLeft">&#160;</td><td class="mdescRight">check if the nth key exists  <a href="oc__ri_8h.html#ad7e211eb65d2962771b99cbdf9ea0413">More...</a><br /></td></tr>
+<tr class="separator:ad7e211eb65d2962771b99cbdf9ea0413"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a627c6dfde78e2276611bae0a57646a78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a627c6dfde78e2276611bae0a57646a78">oc_ri_remove_timed_event_callback</a> (void *cb_data, oc_trigger_t event_callback)</td></tr>
 <tr class="memdesc:a627c6dfde78e2276611bae0a57646a78"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove the timed event callback  <a href="oc__ri_8h.html#a627c6dfde78e2276611bae0a57646a78">More...</a><br /></td></tr>
 <tr class="separator:a627c6dfde78e2276611bae0a57646a78"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1189,7 +1195,7 @@ false failure </dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>int the position of the next key value pair in the query or NULL </dd></dl>
 
 </div>
 </div>
@@ -1294,6 +1300,110 @@ false not valid </dd></dl>
 
 </div>
 </div>
+<a id="a0d6859298de1d6033ec3d91f5d6e9be9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d6859298de1d6033ec3d91f5d6e9be9">&#9670;&nbsp;</a></span>oc_ri_query_exists()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_ri_query_exists </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>query</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>query_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>checks if key exist in query </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">query</td><td>the query to inspect </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">query_len</td><td>the lenght of the query </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>the key to be checked if exist, key is null terminated </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int -1 = not exist </dd></dl>
+
+</div>
+</div>
+<a id="ad7e211eb65d2962771b99cbdf9ea0413"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7e211eb65d2962771b99cbdf9ea0413">&#9670;&nbsp;</a></span>oc_ri_query_nth_key_exists()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_ri_query_nth_key_exists </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>query</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>query_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>key_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>check if the nth key exists </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">query</td><td>the query to inspect </td></tr>
+    <tr><td class="paramname">query_len</td><td>the lenght of the query </td></tr>
+    <tr><td class="paramname">key</td><td>the key to be checked if exist, key is not null terminated </td></tr>
+    <tr><td class="paramname">key_len</td><td>the key length </td></tr>
+    <tr><td class="paramname">n</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
+
+</div>
+</div>
 <a id="a627c6dfde78e2276611bae0a57646a78"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a627c6dfde78e2276611bae0a57646a78">&#9670;&nbsp;</a></span>oc_ri_remove_timed_event_callback()</h2>
 
@@ -1384,7 +1494,7 @@ false not valid </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__ri_8h.html">oc_ri.h</a></li>
-    <li class="footer">Generated on Wed Sep 1 2021 08:50:16 for IoTivity-Lite by
+    <li class="footer">Generated on Wed Sep 1 2021 13:05:36 for IoTivity-Lite by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

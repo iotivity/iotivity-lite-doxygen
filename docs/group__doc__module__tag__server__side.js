@@ -18,6 +18,7 @@ var group__doc__module__tag__server__side =
     [ "oc_new_resource", "group__doc__module__tag__server__side.html#ga617ddc7eec68117e14bb4e1bf9f867cc", null ],
     [ "oc_notify_observers", "group__doc__module__tag__server__side.html#ga43ac6a6fc039b94df00768d69577a9ed", null ],
     [ "oc_process_baseline_interface", "group__doc__module__tag__server__side.html#gab56b55ccd7daccdb46f752af1b4e3bbd", null ],
+    [ "oc_query_value_exists", "group__doc__module__tag__server__side.html#gaa3a125b0f190fcccc7a294b8429e9a7e", null ],
     [ "oc_resource_bind_resource_interface", "group__doc__module__tag__server__side.html#gacc374cc9a8acc977db8f9f27dc3c593c", null ],
     [ "oc_resource_bind_resource_type", "group__doc__module__tag__server__side.html#gab17128fac474655e423d58b7e008e95a", null ],
     [ "oc_resource_make_public", "group__doc__module__tag__server__side.html#gaab0e4b35b5783c98bb09872e1d1e8a30", null ],

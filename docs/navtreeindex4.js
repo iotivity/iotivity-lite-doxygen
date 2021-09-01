@@ -1,5 +1,9 @@
 var NAVTREEINDEX4 =
 {
+"structoc__event__callback__s.html#a735984d41155bc1032e09bece8f8d66d":[2,0,8,1],
+"structoc__event__callback__s.html#a809520e8cffa4e0238a226f1fb0cb079":[2,0,8,0],
+"structoc__event__callback__s.html#acfd7db168b82b26393490d4db04538f3":[2,0,8,3],
+"structoc__handler__t.html":[2,0,9],
 "structoc__handler__t.html#a3a1a54a7e7cc1c40235dfb2b6a44b875":[2,0,9,0],
 "structoc__handler__t.html#a701b761aa4dddf3a41d25ddc87e821b0":[2,0,9,3],
 "structoc__handler__t.html#ac979523755d1f597b646bff4a70b08cc":[2,0,9,2],

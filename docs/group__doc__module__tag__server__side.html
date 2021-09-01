@@ -155,6 +155,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gab56b55ccd7daccdb46f752af1b4e3bbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gab56b55ccd7daccdb46f752af1b4e3bbd">oc_process_baseline_interface</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
 <tr class="memdesc:gab56b55ccd7daccdb46f752af1b4e3bbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function used when responding to a GET request to add Common Properties to a GET response.  <a href="group__doc__module__tag__server__side.html#gab56b55ccd7daccdb46f752af1b4e3bbd">More...</a><br /></td></tr>
 <tr class="separator:gab56b55ccd7daccdb46f752af1b4e3bbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa3a125b0f190fcccc7a294b8429e9a7e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gaa3a125b0f190fcccc7a294b8429e9a7e">oc_query_value_exists</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request, const char *key)</td></tr>
+<tr class="memdesc:gaa3a125b0f190fcccc7a294b8429e9a7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a query parameter 'key' exist in the URL query parameter.  <a href="group__doc__module__tag__server__side.html#gaa3a125b0f190fcccc7a294b8429e9a7e">More...</a><br /></td></tr>
+<tr class="separator:gaa3a125b0f190fcccc7a294b8429e9a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacc374cc9a8acc977db8f9f27dc3c593c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gacc374cc9a8acc977db8f9f27dc3c593c">oc_resource_bind_resource_interface</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, <a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a> iface_mask)</td></tr>
 <tr class="memdesc:gacc374cc9a8acc977db8f9f27dc3c593c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the supported interface(s) to the resource.  <a href="group__doc__module__tag__server__side.html#gacc374cc9a8acc977db8f9f27dc3c593c">More...</a><br /></td></tr>
 <tr class="separator:gacc374cc9a8acc977db8f9f27dc3c593c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -996,6 +999,48 @@ false </dd></dl>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="gaa3a125b0f190fcccc7a294b8429e9a7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa3a125b0f190fcccc7a294b8429e9a7e">&#9670;&nbsp;</a></span>oc_query_value_exists()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_query_value_exists </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structoc__request__t.html">oc_request_t</a> *&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if a query parameter 'key' exist in the URL query parameter. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">request</td><td>the <a class="el" href="structoc__request__t.html" title="request information structure">oc_request_t</a> that contains the query parameters </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>the key being searched for</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>1 exist</li>
+<li>-1 does not exist </li>
+</ul>
+</dd></dl>
 
 </div>
 </div>
@@ -1888,7 +1933,7 @@ false </dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Sep 1 2021 08:50:16 for IoTivity-Lite by
+    <li class="footer">Generated on Wed Sep 1 2021 13:05:36 for IoTivity-Lite by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
