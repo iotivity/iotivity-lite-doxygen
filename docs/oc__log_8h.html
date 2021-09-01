@@ -88,17 +88,21 @@ $(document).ready(function(){initNavTree('oc__log_8h.html',''); initResizable();
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a5fccb4fc71e44089a1b1a77fc76c0b68"><td class="memItemLeft" align="right" valign="top"><a id="a5fccb4fc71e44089a1b1a77fc76c0b68"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>__FILENAME__</b>&#160;&#160;&#160;(strrchr(__FILE__, '/') ? strrchr(__FILE__, '/') + 1 : __FILE__)</td></tr>
+<tr class="separator:a5fccb4fc71e44089a1b1a77fc76c0b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7b46e6f72cb7c2de32ad2e5030d871c"><td class="memItemLeft" align="right" valign="top"><a id="aa7b46e6f72cb7c2de32ad2e5030d871c"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>IPADDR_BUFF_SIZE</b>&#160;&#160;&#160;64</td></tr>
 <tr class="separator:aa7b46e6f72cb7c2de32ad2e5030d871c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92e7d136e854c384068ed8bf9ebca684"><td class="memItemLeft" align="right" valign="top"><a id="a92e7d136e854c384068ed8bf9ebca684"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>OC_DBG</b>(...)&#160;&#160;&#160;OC_LOG(&quot;DEBUG&quot;, __VA_ARGS__)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>OC_DBG</b>(...)&#160;&#160;&#160;OC_LOG(&quot;D&quot;, __VA_ARGS__)</td></tr>
 <tr class="separator:a92e7d136e854c384068ed8bf9ebca684"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac275aa540524be46c16e634e3f7cbae1"><td class="memItemLeft" align="right" valign="top"><a id="ac275aa540524be46c16e634e3f7cbae1"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>OC_ERR</b>(...)&#160;&#160;&#160;OC_LOG(&quot;ERROR&quot;, __VA_ARGS__)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>OC_ERR</b>(...)&#160;&#160;&#160;OC_LOG(&quot;E&quot;, __VA_ARGS__)</td></tr>
 <tr class="separator:ac275aa540524be46c16e634e3f7cbae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab15cf53dbc666b8541a75154ed5653d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>OC_LOG</b>(level, ...)</td></tr>
 <tr class="separator:ab15cf53dbc666b8541a75154ed5653d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -107,7 +111,7 @@ Macros</h2></td></tr>
 <tr class="memitem:a4c5fe60da598b67e7f1c3f2041163065"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>OC_LOGipaddr</b>(endpoint)</td></tr>
 <tr class="separator:a4c5fe60da598b67e7f1c3f2041163065"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad111c2e3d57fcb638d9a4ba053bd3d3a"><td class="memItemLeft" align="right" valign="top"><a id="ad111c2e3d57fcb638d9a4ba053bd3d3a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>OC_WRN</b>(...)&#160;&#160;&#160;OC_LOG(&quot;WARNING&quot;, __VA_ARGS__)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>OC_WRN</b>(...)&#160;&#160;&#160;OC_LOG(&quot;W&quot;, __VA_ARGS__)</td></tr>
 <tr class="separator:ad111c2e3d57fcb638d9a4ba053bd3d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15bb631053a1fce9c5470701900984c7"><td class="memItemLeft" align="right" valign="top"><a id="a15bb631053a1fce9c5470701900984c7"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>PRINT</b>(...)&#160;&#160;&#160;printf(__VA_ARGS__)</td></tr>
@@ -130,7 +134,19 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SPRINTF</b>(...)&#160;&#160;&#160;sprintf(__VA_ARGS__)</td></tr>
 <tr class="separator:a1a873447b78151dd35f9ab11285c2b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>generic logging functions:</p><ul>
+<li>OC_LOGipaddr prints the endpoint information to stdout</li>
+<li>OC_LOGbytes prints the bytes to stdout</li>
+<li>OC_DBG prints information as Debug level</li>
+<li>OC_WRN prints information as Warning level</li>
+<li>OC_ERR prints information as Error level</li>
+</ul>
+<p>compile flags:</p><ul>
+<li>OC_DEBUG enables output of logging functions</li>
+<li>OC_NO_LOG_BYTES disables output of OC_LOGbytes logging function if OC_DEBUG is enabled. </li>
+</ul>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ab15cf53dbc666b8541a75154ed5653d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab15cf53dbc666b8541a75154ed5653d4">&#9670;&nbsp;</a></span>OC_LOG</h2>
 
@@ -157,7 +173,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                         \</div>
-<div class="line">    PRINT(<span class="stringliteral">&quot;%s: %s &lt;%s:%d&gt;: &quot;</span>, level, __FILE__, __func__, __LINE__);            \</div>
+<div class="line">    PRINT(<span class="stringliteral">&quot;%s: %s &lt;%s:%d&gt;: &quot;</span>, level, __FILENAME__, __func__, __LINE__);            \</div>
 <div class="line">    PRINT(__VA_ARGS__);                                                        \</div>
 <div class="line">    PRINT(<span class="stringliteral">&quot;\n&quot;</span>);                                                               \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
@@ -190,7 +206,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                         \</div>
-<div class="line">    PRINT(<span class="stringliteral">&quot;DEBUG: %s &lt;%s:%d&gt;: &quot;</span>, __FILE__, __func__, __LINE__);                \</div>
+<div class="line">    PRINT(<span class="stringliteral">&quot;DEBUG: %s &lt;%s:%d&gt;: &quot;</span>, __FILENAME__, __func__, __LINE__);                \</div>
 <div class="line">    uint16_t i;                                                                \</div>
 <div class="line">    for (i = 0; i &lt; length; i++)                                               \</div>
 <div class="line">      PRINT(<span class="stringliteral">&quot; %02X&quot;</span>, bytes[i]);                                                \</div>
@@ -215,7 +231,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                         \</div>
-<div class="line">    PRINT(<span class="stringliteral">&quot;DEBUG: %s &lt;%s:%d&gt;: &quot;</span>, __FILE__, __func__, __LINE__);                \</div>
+<div class="line">    PRINT(<span class="stringliteral">&quot;DEBUG: %s &lt;%s:%d&gt;: &quot;</span>, __FILENAME__, __func__, __LINE__);                \</div>
 <div class="line">    PRINTipaddr(endpoint);                                                     \</div>
 <div class="line">    PRINT(<span class="stringliteral">&quot;\n&quot;</span>);                                                               \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
@@ -276,7 +292,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_651562d8bf6cfd3e81eff5b570d7df50.html">port</a></li><li class="navelem"><a class="el" href="oc__log_8h.html">oc_log.h</a></li>
-    <li class="footer">Generated on Wed Sep 1 2021 13:05:36 for IoTivity-Lite by
+    <li class="footer">Generated on Wed Sep 1 2021 13:05:58 for IoTivity-Lite by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
