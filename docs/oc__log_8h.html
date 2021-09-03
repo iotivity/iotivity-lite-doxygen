@@ -173,7 +173,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                         \</div>
-<div class="line">    PRINT(<span class="stringliteral">&quot;%s: %s &lt;%s:%d&gt;: &quot;</span>, level, __FILENAME__, __func__, __LINE__);            \</div>
+<div class="line">    PRINT(<span class="stringliteral">&quot;%s: %s &lt;%s:%d&gt;: &quot;</span>, level, __FILENAME__, __func__, __LINE__);        \</div>
 <div class="line">    PRINT(__VA_ARGS__);                                                        \</div>
 <div class="line">    PRINT(<span class="stringliteral">&quot;\n&quot;</span>);                                                               \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
@@ -206,7 +206,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                         \</div>
-<div class="line">    PRINT(<span class="stringliteral">&quot;DEBUG: %s &lt;%s:%d&gt;: &quot;</span>, __FILENAME__, __func__, __LINE__);                \</div>
+<div class="line">    PRINT(<span class="stringliteral">&quot;DEBUG: %s &lt;%s:%d&gt;: &quot;</span>, __FILENAME__, __func__, __LINE__);            \</div>
 <div class="line">    uint16_t i;                                                                \</div>
 <div class="line">    for (i = 0; i &lt; length; i++)                                               \</div>
 <div class="line">      PRINT(<span class="stringliteral">&quot; %02X&quot;</span>, bytes[i]);                                                \</div>
@@ -231,7 +231,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                         \</div>
-<div class="line">    PRINT(<span class="stringliteral">&quot;DEBUG: %s &lt;%s:%d&gt;: &quot;</span>, __FILENAME__, __func__, __LINE__);                \</div>
+<div class="line">    PRINT(<span class="stringliteral">&quot;DEBUG: %s &lt;%s:%d&gt;: &quot;</span>, __FILENAME__, __func__, __LINE__);            \</div>
 <div class="line">    PRINTipaddr(endpoint);                                                     \</div>
 <div class="line">    PRINT(<span class="stringliteral">&quot;\n&quot;</span>);                                                               \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
@@ -279,8 +279,8 @@ Macros</h2></td></tr>
 <div class="line">    char *beg = (buff);                                                        \</div>
 <div class="line">    char *end = (buff) + (size);                                               \</div>
 <div class="line">    for (<span class="keywordtype">size_t</span> i = 0; beg &lt;= (end - 3) &amp;&amp; i &lt; (len); i++) {                   \</div>
-<div class="line">      beg += (i == 0) ? SPRINTF(beg, <span class="stringliteral">&quot;%02x&quot;</span>, data[i]) :                        \</div>
-<div class="line">                        SPRINTF(beg, <span class="stringliteral">&quot;:%02x&quot;</span>, data[i]);                        \</div>
+<div class="line">      beg += (i == 0) ? SPRINTF(beg, <span class="stringliteral">&quot;%02x&quot;</span>, data[i])                          \</div>
+<div class="line">                      : SPRINTF(beg, <span class="stringliteral">&quot;:%02x&quot;</span>, data[i]);                        \</div>
 <div class="line">    }                                                                          \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
@@ -292,7 +292,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_651562d8bf6cfd3e81eff5b570d7df50.html">port</a></li><li class="navelem"><a class="el" href="oc__log_8h.html">oc_log.h</a></li>
-    <li class="footer">Generated on Thu Sep 2 2021 13:57:51 for IoTivity-Lite by
+    <li class="footer">Generated on Fri Sep 3 2021 09:34:02 for IoTivity-Lite by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
