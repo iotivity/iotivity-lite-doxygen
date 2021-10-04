@@ -1,15 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"structoc__event__callback__s.html#a3815ba1a8133ced2806062ef9c2e422a":[2,0,8,2],
-"structoc__event__callback__s.html#a735984d41155bc1032e09bece8f8d66d":[2,0,8,1],
-"structoc__event__callback__s.html#a809520e8cffa4e0238a226f1fb0cb079":[2,0,8,0],
-"structoc__event__callback__s.html#acfd7db168b82b26393490d4db04538f3":[2,0,8,3],
-"structoc__handler__t.html":[2,0,9],
-"structoc__handler__t.html#a3a1a54a7e7cc1c40235dfb2b6a44b875":[2,0,9,0],
-"structoc__handler__t.html#a701b761aa4dddf3a41d25ddc87e821b0":[2,0,9,3],
-"structoc__handler__t.html#ac979523755d1f597b646bff4a70b08cc":[2,0,9,2],
-"structoc__handler__t.html#af5d55603be647f6281ab5e09ff0dafa0":[2,0,9,1],
-"structoc__ipv4__addr__t.html":[2,0,10],
 "structoc__ipv4__addr__t.html#a8e0798404bf2cf5dabb84c5ba9a4f236":[2,0,10,1],
 "structoc__ipv4__addr__t.html#addf23a7962e43c9ba2ed54c76bd937d3":[2,0,10,0],
 "structoc__ipv6__addr__t.html":[2,0,11],

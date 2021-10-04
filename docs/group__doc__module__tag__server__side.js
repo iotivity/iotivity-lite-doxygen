@@ -28,7 +28,6 @@ var group__doc__module__tag__server__side =
     [ "oc_resource_set_periodic_observable", "group__doc__module__tag__server__side.html#gac8cdb7e511c08982d790c323d8db7c6e", null ],
     [ "oc_resource_set_properties_cbs", "group__doc__module__tag__server__side.html#gaf9028094981175854c699f6da4a34131", null ],
     [ "oc_resource_set_request_handler", "group__doc__module__tag__server__side.html#gaf8ac0f8a7d9fc45bab26b132cc9346e6", null ],
-    [ "oc_resource_set_secure_mcast", "group__doc__module__tag__server__side.html#gad8d0f3f531d72f5d5cce12c1fbad92fe", null ],
     [ "oc_resource_tag_func_desc", "group__doc__module__tag__server__side.html#ga1f9849f29f1230a59608b9ced28d2ca3", null ],
     [ "oc_resource_tag_locn", "group__doc__module__tag__server__side.html#ga60d486be2dff1002af326a1eed06e4ad", null ],
     [ "oc_resource_tag_pos_desc", "group__doc__module__tag__server__side.html#ga1dfed6e958cc30bcfb3f6d9354717766", null ],
