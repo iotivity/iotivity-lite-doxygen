@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"structoc__handler__t.html#af5d55603be647f6281ab5e09ff0dafa0":[2,0,9,1],
+"structoc__ipv4__addr__t.html":[2,0,10],
 "structoc__ipv4__addr__t.html#a8e0798404bf2cf5dabb84c5ba9a4f236":[2,0,10,1],
 "structoc__ipv4__addr__t.html#addf23a7962e43c9ba2ed54c76bd937d3":[2,0,10,0],
 "structoc__ipv6__addr__t.html":[2,0,11],

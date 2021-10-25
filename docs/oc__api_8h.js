@@ -103,6 +103,7 @@ var oc__api_8h =
     [ "oc_set_con_res_announced", "oc__api_8h.html#a89adceaff6ab9df8d74bbbc1121693a1", null ],
     [ "oc_set_con_write_cb", "group__doc__module__tag__server__side.html#ga1497c8c36b39a1c9cca7972caa40a92c", null ],
     [ "oc_set_delayed_callback", "group__doc__module__tag__common__operations.html#ga976b85e9312419b62f4ed0993bf548f6", null ],
+    [ "oc_set_delayed_callback_ms", "group__doc__module__tag__common__operations.html#ga98c79be5c8205413afae7704b615c287", null ],
     [ "oc_set_factory_presets_cb", "oc__api_8h.html#a5fabaaadaf2e0dccbb1d906f73f9d953", null ],
     [ "oc_set_immutable_device_identifier", "group__doc__module__tag__common__operations.html#ga09cd54cea5742e078a5581d0e41e1e59", null ],
     [ "oc_set_random_pin_callback", "oc__api_8h.html#a5f6ce300fbf84e2181b1ee0040567756", null ],
