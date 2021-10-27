@@ -144,11 +144,11 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af782586d01601ce903e4aad77ffeca42"><td class="memItemLeft" align="right" valign="top"><a id="af782586d01601ce903e4aad77ffeca42"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_add_resource</b> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
+<tr class="memitem:af782586d01601ce903e4aad77ffeca42"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#af782586d01601ce903e4aad77ffeca42">oc_cloud_add_resource</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
+<tr class="memdesc:af782586d01601ce903e4aad77ffeca42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publish resource to cloud.  <a href="oc__cloud_8h.html#af782586d01601ce903e4aad77ffeca42">More...</a><br /></td></tr>
 <tr class="separator:af782586d01601ce903e4aad77ffeca42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b387679649212a7c9b7db6eb5e3590b"><td class="memItemLeft" align="right" valign="top"><a id="a4b387679649212a7c9b7db6eb5e3590b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_delete_resource</b> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
+<tr class="memitem:a4b387679649212a7c9b7db6eb5e3590b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#a4b387679649212a7c9b7db6eb5e3590b">oc_cloud_delete_resource</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
+<tr class="memdesc:a4b387679649212a7c9b7db6eb5e3590b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unpublish resource from cloud.  <a href="oc__cloud_8h.html#a4b387679649212a7c9b7db6eb5e3590b">More...</a><br /></td></tr>
 <tr class="separator:a4b387679649212a7c9b7db6eb5e3590b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc503e0c5bc0cdc2a519400845d8f03e"><td class="memItemLeft" align="right" valign="top"><a id="afc503e0c5bc0cdc2a519400845d8f03e"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_deregister</b> (oc_cloud_context_t *ctx, <a class="el" href="oc__cloud_8h.html#adaa6e94d3d339e364a392045fbc78969">oc_cloud_cb_t</a> cb, void *data)</td></tr>
@@ -177,8 +177,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_manager_stop<
 <tr class="memitem:aae77dc49cffa61cd1553ad83da9577ae"><td class="memItemLeft" align="right" valign="top"><a id="aae77dc49cffa61cd1553ad83da9577ae"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_provision_conf_resource</b> (oc_cloud_context_t *ctx, const char *server, const char *access_token, const char *server_id, const char *auth_provider)</td></tr>
 <tr class="separator:aae77dc49cffa61cd1553ad83da9577ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9990c301d82104116aa9e0f718b024ff"><td class="memItemLeft" align="right" valign="top"><a id="a9990c301d82104116aa9e0f718b024ff"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_publish_resources</b> (size_t device)</td></tr>
+<tr class="memitem:a9990c301d82104116aa9e0f718b024ff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#a9990c301d82104116aa9e0f718b024ff">oc_cloud_publish_resources</a> (size_t device)</td></tr>
+<tr class="memdesc:a9990c301d82104116aa9e0f718b024ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Republish previously published devices.  <a href="oc__cloud_8h.html#a9990c301d82104116aa9e0f718b024ff">More...</a><br /></td></tr>
 <tr class="separator:a9990c301d82104116aa9e0f718b024ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a653ead14921bf35de6a571cbb90393a6"><td class="memItemLeft" align="right" valign="top"><a id="a653ead14921bf35de6a571cbb90393a6"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_refresh_token</b> (oc_cloud_context_t *ctx, <a class="el" href="oc__cloud_8h.html#adaa6e94d3d339e364a392045fbc78969">oc_cloud_cb_t</a> cb, void *data)</td></tr>
@@ -231,6 +231,85 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_register</b> 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="af782586d01601ce903e4aad77ffeca42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af782586d01601ce903e4aad77ffeca42">&#9670;&nbsp;</a></span>oc_cloud_add_resource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_cloud_add_resource </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
+          <td class="paramname"><em>resource</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Publish resource to cloud. </p>
+<p>Function checks that resource is contained in list of published or to-be published resources. If it is, the function does nothing. If it is not, then the resource is added to the to-be published resources list and a publish request with this list is sent to the cloud server.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">resource</td><td>the resource to be published </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4b387679649212a7c9b7db6eb5e3590b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b387679649212a7c9b7db6eb5e3590b">&#9670;&nbsp;</a></span>oc_cloud_delete_resource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oc_cloud_delete_resource </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
+          <td class="paramname"><em>resource</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unpublish resource from cloud. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">resource</td><td>the resource to be unpublished </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9990c301d82104116aa9e0f718b024ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9990c301d82104116aa9e0f718b024ff">&#9670;&nbsp;</a></span>oc_cloud_publish_resources()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_cloud_publish_resources </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Republish previously published devices. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>the device index </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aa39a484a6576b096a8c895f6eb1f2024"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa39a484a6576b096a8c895f6eb1f2024">&#9670;&nbsp;</a></span>oc_cloud_set_published_resources_ttl()</h2>
 
@@ -274,7 +353,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_register</b> 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__cloud_8h.html">oc_cloud.h</a></li>
-    <li class="footer">Generated on Wed Oct 27 2021 13:09:59 for IoTivity-Lite by
+    <li class="footer">Generated on Wed Oct 27 2021 13:28:02 for IoTivity-Lite by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
