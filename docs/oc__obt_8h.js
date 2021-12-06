@@ -26,6 +26,8 @@ var oc__obt_8h =
     [ "oc_obt_free_acl", "oc__obt_8h.html#ada8f724b925eef7b6dd0a95aacfea1de", null ],
     [ "oc_obt_free_creds", "oc__obt_8h.html#a2d8bf9102d6909506897fcfbd4407afe", null ],
     [ "oc_obt_free_roleid", "oc__obt_8h.html#a1b828fff581e858f8d9fad7065ad3861", null ],
+    [ "oc_obt_general_get", "oc__obt_8h.html#a7955ca6b8a921bcb57651d2a1de1f4e4", null ],
+    [ "oc_obt_general_post", "oc__obt_8h.html#a4669786f0acde0b0f92fa79998b5e90b", null ],
     [ "oc_obt_init", "oc__obt_8h.html#a97556ae3073fdfd4d12713431c458f56", null ],
     [ "oc_obt_new_ace_for_connection", "oc__obt_8h.html#a336c31f19594a24bc837548087ef4d3f", null ],
     [ "oc_obt_new_ace_for_role", "oc__obt_8h.html#a13d845dde3901e8d19cfb41d71c76882", null ],
