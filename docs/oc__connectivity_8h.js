@@ -2,6 +2,7 @@ var oc__connectivity_8h =
 [
     [ "OC_BLOCK_SIZE", "oc__connectivity_8h.html#a1ba597b6a772e787cb53155cfbcb7354", null ],
     [ "OC_MAX_APP_DATA_SIZE", "oc__connectivity_8h.html#af90466c0680500fff240021e3bf9466f", null ],
+    [ "OC_MIN_APP_DATA_SIZE", "oc__connectivity_8h.html#a43a5054af4e1a6906c124ef69a9f97fc", null ],
     [ "OC_PDU_SIZE", "oc__connectivity_8h.html#a9188f21fd39550fc762c32552dac9cea", null ],
     [ "tcp_csm_state_t", "oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5", [
       [ "CSM_NONE", "oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5a0b45c025e658a8e3dd49bc4f67535b62", null ],

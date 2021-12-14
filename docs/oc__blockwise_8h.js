@@ -8,8 +8,8 @@ var oc__blockwise_8h =
       [ "OC_BLOCKWISE_CLIENT", "oc__blockwise_8h.html#a491a93728548c3c7369dcb0ef612111daf0eaeec56b192ce13ded1cbb1f90d94a", null ],
       [ "OC_BLOCKWISE_SERVER", "oc__blockwise_8h.html#a491a93728548c3c7369dcb0ef612111da5606599f6a5fe27cc51722d4dedada54", null ]
     ] ],
-    [ "oc_blockwise_alloc_request_buffer", "oc__blockwise_8h.html#a792b4e38e9d189b90e3f4d4788bcfed8", null ],
-    [ "oc_blockwise_alloc_response_buffer", "oc__blockwise_8h.html#a5549d52c0eb5d888a9a03c01f32ee2d4", null ],
+    [ "oc_blockwise_alloc_request_buffer", "oc__blockwise_8h.html#a14be3f1be7d500447280041e93e7f5b2", null ],
+    [ "oc_blockwise_alloc_response_buffer", "oc__blockwise_8h.html#ad98ef257597d83e52714955b2ac39ec7", null ],
     [ "oc_blockwise_dispatch_block", "oc__blockwise_8h.html#ad57c87aea3ea3a021acd5e7a15c9c3a7", null ],
     [ "oc_blockwise_find_request_buffer", "oc__blockwise_8h.html#a93635544f4d11d0d7fa5a5c55a919dbf", null ],
     [ "oc_blockwise_find_request_buffer_by_client_cb", "oc__blockwise_8h.html#a458bff167fcb8ecb0a2a442de35630f9", null ],
