@@ -88,7 +88,8 @@ $(document).ready(function(){initNavTree('oc__uuid_8h.html',''); initResizable()
 <div class="title">oc_uuid.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<div class="textblock"><code>#include &quot;oc_export.h&quot;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -98,15 +99,15 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a5f724cde730627fc1418977b4b015f42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__uuid_8h.html#a5f724cde730627fc1418977b4b015f42">oc_gen_uuid</a> (oc_uuid_t *uuid)</td></tr>
-<tr class="memdesc:a5f724cde730627fc1418977b4b015f42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random Universally Unique IDentifier (UUID)  <a href="oc__uuid_8h.html#a5f724cde730627fc1418977b4b015f42">More...</a><br /></td></tr>
-<tr class="separator:a5f724cde730627fc1418977b4b015f42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c0a2e4f02d3d71a1b05838c713cc35b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__uuid_8h.html#a9c0a2e4f02d3d71a1b05838c713cc35b">oc_str_to_uuid</a> (const char *str, oc_uuid_t *uuid)</td></tr>
-<tr class="memdesc:a9c0a2e4f02d3d71a1b05838c713cc35b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a UUID string representation to a 128-bit oc_uuid_t.  <a href="oc__uuid_8h.html#a9c0a2e4f02d3d71a1b05838c713cc35b">More...</a><br /></td></tr>
-<tr class="separator:a9c0a2e4f02d3d71a1b05838c713cc35b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abebb530e4cf0aaedcac99175ea5a7dcd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__uuid_8h.html#abebb530e4cf0aaedcac99175ea5a7dcd">oc_uuid_to_str</a> (const oc_uuid_t *uuid, char *buffer, int buflen)</td></tr>
-<tr class="memdesc:abebb530e4cf0aaedcac99175ea5a7dcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the 128 bit oc_uuid_t to a sting representation.  <a href="oc__uuid_8h.html#abebb530e4cf0aaedcac99175ea5a7dcd">More...</a><br /></td></tr>
-<tr class="separator:abebb530e4cf0aaedcac99175ea5a7dcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4b98fa6b46dc43e8f057bf521b2936d"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__uuid_8h.html#ab4b98fa6b46dc43e8f057bf521b2936d">oc_gen_uuid</a> (oc_uuid_t *uuid)</td></tr>
+<tr class="memdesc:ab4b98fa6b46dc43e8f057bf521b2936d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random Universally Unique IDentifier (UUID)  <a href="oc__uuid_8h.html#ab4b98fa6b46dc43e8f057bf521b2936d">More...</a><br /></td></tr>
+<tr class="separator:ab4b98fa6b46dc43e8f057bf521b2936d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26f89fd180e18eb80582395c24d0efac"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__uuid_8h.html#a26f89fd180e18eb80582395c24d0efac">oc_str_to_uuid</a> (const char *str, oc_uuid_t *uuid)</td></tr>
+<tr class="memdesc:a26f89fd180e18eb80582395c24d0efac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a UUID string representation to a 128-bit oc_uuid_t.  <a href="oc__uuid_8h.html#a26f89fd180e18eb80582395c24d0efac">More...</a><br /></td></tr>
+<tr class="separator:a26f89fd180e18eb80582395c24d0efac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d3eb46bac3720a6c1d980a055440aa6"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__uuid_8h.html#a3d3eb46bac3720a6c1d980a055440aa6">oc_uuid_to_str</a> (const oc_uuid_t *uuid, char *buffer, int buflen)</td></tr>
+<tr class="memdesc:a3d3eb46bac3720a6c1d980a055440aa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the 128 bit oc_uuid_t to a sting representation.  <a href="oc__uuid_8h.html#a3d3eb46bac3720a6c1d980a055440aa6">More...</a><br /></td></tr>
+<tr class="separator:a3d3eb46bac3720a6c1d980a055440aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Generate and work with UUIDs as specified in RFC 4122.</p>
@@ -125,19 +126,19 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The length of a UUID string. </p>
-<p>This is the length of UUID string as specified by RFC 4122. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__uuid_8h.html#abebb530e4cf0aaedcac99175ea5a7dcd" title="Convert the 128 bit oc_uuid_t to a sting representation.">oc_uuid_to_str</a> </dd></dl>
+<p>This is the length of UUID string as specified by RFC 4122. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__uuid_8h.html#a3d3eb46bac3720a6c1d980a055440aa6" title="Convert the 128 bit oc_uuid_t to a sting representation.">oc_uuid_to_str</a> </dd></dl>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a5f724cde730627fc1418977b4b015f42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f724cde730627fc1418977b4b015f42">&#9670;&nbsp;</a></span>oc_gen_uuid()</h2>
+<a id="ab4b98fa6b46dc43e8f057bf521b2936d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4b98fa6b46dc43e8f057bf521b2936d">&#9670;&nbsp;</a></span>oc_gen_uuid()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oc_gen_uuid </td>
+          <td class="memname">OC_API void oc_gen_uuid </td>
           <td>(</td>
           <td class="paramtype">oc_uuid_t *&#160;</td>
           <td class="paramname"><em>uuid</em></td><td>)</td>
@@ -150,7 +151,7 @@ Functions</h2></td></tr>
 <p>This will return a 128 bit version 4 UUID as specified by RFC 4122.</p>
 <p>Version 4 UUID is created using random or pseudo-random numbers</p>
 <p>Example </p><div class="fragment"><div class="line">oc_uuid_t device_uuid = { { 0 } };</div>
-<div class="line"><a class="code" href="oc__uuid_8h.html#a5f724cde730627fc1418977b4b015f42">oc_gen_uuid</a>(&amp;device_uuid);</div>
+<div class="line"><a class="code" href="oc__uuid_8h.html#ab4b98fa6b46dc43e8f057bf521b2936d">oc_gen_uuid</a>(&amp;device_uuid);</div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">uuid</td><td>the randomly generated UUID </td></tr>
@@ -160,14 +161,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9c0a2e4f02d3d71a1b05838c713cc35b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c0a2e4f02d3d71a1b05838c713cc35b">&#9670;&nbsp;</a></span>oc_str_to_uuid()</h2>
+<a id="a26f89fd180e18eb80582395c24d0efac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26f89fd180e18eb80582395c24d0efac">&#9670;&nbsp;</a></span>oc_str_to_uuid()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oc_str_to_uuid </td>
+          <td class="memname">OC_API void oc_str_to_uuid </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>str</em>, </td>
@@ -189,7 +190,7 @@ Functions</h2></td></tr>
 <p>Convert a UUID string representation to a 128-bit oc_uuid_t. </p>
 <dl class="section note"><dt>Note</dt><dd>oc_str_to_uuid has a special case that does not conform to RFC 4122 if the first character of the <code>str</code> is '*' then the first byte of the oc_uuid_t will be set to '*' (0x2A) and the other bytes will be set to zero.</dd></dl>
 <p>Example </p><div class="fragment"><div class="line">oc_uuid_t uuid;</div>
-<div class="line"><a class="code" href="oc__uuid_8h.html#a9c0a2e4f02d3d71a1b05838c713cc35b">oc_str_to_uuid</a>(<span class="stringliteral">&quot;1628fbcc-13ce-4e37-b883-1fd8d2ad945d&quot;</span>, &amp;uuid);</div>
+<div class="line"><a class="code" href="oc__uuid_8h.html#a26f89fd180e18eb80582395c24d0efac">oc_str_to_uuid</a>(<span class="stringliteral">&quot;1628fbcc-13ce-4e37-b883-1fd8d2ad945d&quot;</span>, &amp;uuid);</div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">str</td><td>the UUID string </td></tr>
@@ -200,14 +201,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="abebb530e4cf0aaedcac99175ea5a7dcd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abebb530e4cf0aaedcac99175ea5a7dcd">&#9670;&nbsp;</a></span>oc_uuid_to_str()</h2>
+<a id="a3d3eb46bac3720a6c1d980a055440aa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d3eb46bac3720a6c1d980a055440aa6">&#9670;&nbsp;</a></span>oc_uuid_to_str()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oc_uuid_to_str </td>
+          <td class="memname">OC_API void oc_uuid_to_str </td>
           <td>(</td>
           <td class="paramtype">const oc_uuid_t *&#160;</td>
           <td class="paramname"><em>uuid</em>, </td>
@@ -236,9 +237,9 @@ Functions</h2></td></tr>
 <p>The string representation of the UUID will be as specified in RFC 4122.</p>
 <dl class="section note"><dt>Note</dt><dd>oc_uuid_to_str has a special case that does not conform to RFC 4122 if the first byte of oc_uuid_t is set to '*' (0x2A) this will return a string "*".</dd></dl>
 <p>Example </p><div class="fragment"><div class="line">oc_uuid_t device_uuid = { { 0 } };</div>
-<div class="line"><a class="code" href="oc__uuid_8h.html#a5f724cde730627fc1418977b4b015f42">oc_gen_uuid</a>(&amp;device_uuid);</div>
+<div class="line"><a class="code" href="oc__uuid_8h.html#ab4b98fa6b46dc43e8f057bf521b2936d">oc_gen_uuid</a>(&amp;device_uuid);</div>
 <div class="line"><span class="keywordtype">char</span> uuid_str[<a class="code" href="oc__uuid_8h.html#a4e556e036773181af67e69a454667f31">OC_UUID_LEN</a>] = { 0 };</div>
-<div class="line"><a class="code" href="oc__uuid_8h.html#abebb530e4cf0aaedcac99175ea5a7dcd">oc_uuid_to_str</a>(&amp;device_uuid, uuid_str, <a class="code" href="oc__uuid_8h.html#a4e556e036773181af67e69a454667f31">OC_UUID_LEN</a>);</div>
+<div class="line"><a class="code" href="oc__uuid_8h.html#a3d3eb46bac3720a6c1d980a055440aa6">oc_uuid_to_str</a>(&amp;device_uuid, uuid_str, <a class="code" href="oc__uuid_8h.html#a4e556e036773181af67e69a454667f31">OC_UUID_LEN</a>);</div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">uuid</td><td>A oc_uuid_t to convert to a string </td></tr>
@@ -252,15 +253,15 @@ Functions</h2></td></tr>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aoc__uuid_8h_html_abebb530e4cf0aaedcac99175ea5a7dcd"><div class="ttname"><a href="oc__uuid_8h.html#abebb530e4cf0aaedcac99175ea5a7dcd">oc_uuid_to_str</a></div><div class="ttdeci">void oc_uuid_to_str(const oc_uuid_t *uuid, char *buffer, int buflen)</div><div class="ttdoc">Convert the 128 bit oc_uuid_t to a sting representation.</div></div>
-<div class="ttc" id="aoc__uuid_8h_html_a9c0a2e4f02d3d71a1b05838c713cc35b"><div class="ttname"><a href="oc__uuid_8h.html#a9c0a2e4f02d3d71a1b05838c713cc35b">oc_str_to_uuid</a></div><div class="ttdeci">void oc_str_to_uuid(const char *str, oc_uuid_t *uuid)</div><div class="ttdoc">Convert a UUID string representation to a 128-bit oc_uuid_t.</div></div>
-<div class="ttc" id="aoc__uuid_8h_html_a4e556e036773181af67e69a454667f31"><div class="ttname"><a href="oc__uuid_8h.html#a4e556e036773181af67e69a454667f31">OC_UUID_LEN</a></div><div class="ttdeci">#define OC_UUID_LEN</div><div class="ttdoc">The length of a UUID string.</div><div class="ttdef"><b>Definition:</b> oc_uuid.h:39</div></div>
-<div class="ttc" id="aoc__uuid_8h_html_a5f724cde730627fc1418977b4b015f42"><div class="ttname"><a href="oc__uuid_8h.html#a5f724cde730627fc1418977b4b015f42">oc_gen_uuid</a></div><div class="ttdeci">void oc_gen_uuid(oc_uuid_t *uuid)</div><div class="ttdoc">Generate a random Universally Unique IDentifier (UUID)</div></div>
+<div class="ttc" id="aoc__uuid_8h_html_ab4b98fa6b46dc43e8f057bf521b2936d"><div class="ttname"><a href="oc__uuid_8h.html#ab4b98fa6b46dc43e8f057bf521b2936d">oc_gen_uuid</a></div><div class="ttdeci">OC_API void oc_gen_uuid(oc_uuid_t *uuid)</div><div class="ttdoc">Generate a random Universally Unique IDentifier (UUID)</div></div>
+<div class="ttc" id="aoc__uuid_8h_html_a4e556e036773181af67e69a454667f31"><div class="ttname"><a href="oc__uuid_8h.html#a4e556e036773181af67e69a454667f31">OC_UUID_LEN</a></div><div class="ttdeci">#define OC_UUID_LEN</div><div class="ttdoc">The length of a UUID string.</div><div class="ttdef"><b>Definition:</b> oc_uuid.h:40</div></div>
+<div class="ttc" id="aoc__uuid_8h_html_a26f89fd180e18eb80582395c24d0efac"><div class="ttname"><a href="oc__uuid_8h.html#a26f89fd180e18eb80582395c24d0efac">oc_str_to_uuid</a></div><div class="ttdeci">OC_API void oc_str_to_uuid(const char *str, oc_uuid_t *uuid)</div><div class="ttdoc">Convert a UUID string representation to a 128-bit oc_uuid_t.</div></div>
+<div class="ttc" id="aoc__uuid_8h_html_a3d3eb46bac3720a6c1d980a055440aa6"><div class="ttname"><a href="oc__uuid_8h.html#a3d3eb46bac3720a6c1d980a055440aa6">oc_uuid_to_str</a></div><div class="ttdeci">OC_API void oc_uuid_to_str(const oc_uuid_t *uuid, char *buffer, int buflen)</div><div class="ttdoc">Convert the 128 bit oc_uuid_t to a sting representation.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__uuid_8h.html">oc_uuid.h</a></li>
-    <li class="footer">Generated on Tue Feb 22 2022 09:07:08 for IoTivity-Lite by
+    <li class="footer">Generated on Wed Feb 23 2022 10:18:14 for IoTivity-Lite by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
