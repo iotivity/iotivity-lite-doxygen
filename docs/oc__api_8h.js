@@ -94,7 +94,7 @@ var oc__api_8h =
     [ "oc_resource_set_properties_cbs", "group__doc__module__tag__server__side.html#gaf9028094981175854c699f6da4a34131", null ],
     [ "oc_resource_set_request_handler", "group__doc__module__tag__server__side.html#gaf8ac0f8a7d9fc45bab26b132cc9346e6", null ],
     [ "oc_resource_tag_func_desc", "group__doc__module__tag__server__side.html#ga1f9849f29f1230a59608b9ced28d2ca3", null ],
-    [ "oc_resource_tag_locn", "group__doc__module__tag__server__side.html#ga60d486be2dff1002af326a1eed06e4ad", null ],
+    [ "oc_resource_tag_locn", "group__doc__module__tag__server__side.html#gad572fe8e6e6e13bccfd08afb116fcfc4", null ],
     [ "oc_resource_tag_pos_desc", "group__doc__module__tag__server__side.html#ga1dfed6e958cc30bcfb3f6d9354717766", null ],
     [ "oc_resource_tag_pos_rel", "group__doc__module__tag__server__side.html#ga61f5b9d101ea41bf333e2ba140b7b44e", null ],
     [ "oc_send_diagnostic_message", "group__doc__module__tag__server__side.html#gadcfcce0aa1c740c40c85905b5f1e561a", null ],

@@ -431,7 +431,7 @@ var searchData=
   ['oc_5fresource_5fset_5fproperties_5fcbs_542',['oc_resource_set_properties_cbs',['../group__doc__module__tag__server__side.html#gaf9028094981175854c699f6da4a34131',1,'oc_api.h']]],
   ['oc_5fresource_5fset_5frequest_5fhandler_543',['oc_resource_set_request_handler',['../group__doc__module__tag__server__side.html#gaf8ac0f8a7d9fc45bab26b132cc9346e6',1,'oc_api.h']]],
   ['oc_5fresource_5ftag_5ffunc_5fdesc_544',['oc_resource_tag_func_desc',['../group__doc__module__tag__server__side.html#ga1f9849f29f1230a59608b9ced28d2ca3',1,'oc_api.h']]],
-  ['oc_5fresource_5ftag_5flocn_545',['oc_resource_tag_locn',['../group__doc__module__tag__server__side.html#ga60d486be2dff1002af326a1eed06e4ad',1,'oc_api.h']]],
+  ['oc_5fresource_5ftag_5flocn_545',['oc_resource_tag_locn',['../group__doc__module__tag__server__side.html#gad572fe8e6e6e13bccfd08afb116fcfc4',1,'oc_api.h']]],
   ['oc_5fresource_5ftag_5fpos_5fdesc_546',['oc_resource_tag_pos_desc',['../group__doc__module__tag__server__side.html#ga1dfed6e958cc30bcfb3f6d9354717766',1,'oc_api.h']]],
   ['oc_5fresource_5ftag_5fpos_5frel_547',['oc_resource_tag_pos_rel',['../group__doc__module__tag__server__side.html#ga61f5b9d101ea41bf333e2ba140b7b44e',1,'oc_api.h']]],
   ['oc_5fresponse_5fbuffer_5ft_548',['oc_response_buffer_t',['../oc__ri_8h.html#a1381ff2ccb2f2212c438a31414dbe5be',1,'oc_ri.h']]],
