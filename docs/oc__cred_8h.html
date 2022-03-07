@@ -90,7 +90,8 @@ $(document).ready(function(){initNavTree('oc__cred_8h.html',''); initResizable()
 <div class="title">oc_cred.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="oc__ri_8h.html">oc_ri.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;oc_export.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="oc__ri_8h.html">oc_ri.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__uuid_8h.html">oc_uuid.h</a>&quot;</code><br />
 <code>#include &quot;util/oc_list.h&quot;</code><br />
 </div><table class="memberdecls">
@@ -167,21 +168,30 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:afbb1b89e693f03e1fe588a4ba1d75488"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cred_8h.html#afbb1b89e693f03e1fe588a4ba1d75488">oc_cred_credtype_string</a> (<a class="el" href="oc__cred_8h.html#a323a3e3e2357812cc618ef5a2fa40908">oc_sec_credtype_t</a> credtype)</td></tr>
-<tr class="memdesc:afbb1b89e693f03e1fe588a4ba1d75488"><td class="mdescLeft">&#160;</td><td class="mdescRight">credential type to string  <a href="oc__cred_8h.html#afbb1b89e693f03e1fe588a4ba1d75488">More...</a><br /></td></tr>
-<tr class="separator:afbb1b89e693f03e1fe588a4ba1d75488"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a669b1743f36695f56b032bcbeae36fb3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="oc__cred_8h.html#af766cf746fb6d10b2f502d7f4f76e29e">oc_sec_credusage_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cred_8h.html#a669b1743f36695f56b032bcbeae36fb3">oc_cred_parse_credusage</a> (oc_string_t *credusage_string)</td></tr>
-<tr class="memdesc:a669b1743f36695f56b032bcbeae36fb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">parse credential string to type  <a href="oc__cred_8h.html#a669b1743f36695f56b032bcbeae36fb3">More...</a><br /></td></tr>
-<tr class="separator:a669b1743f36695f56b032bcbeae36fb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8936b56d64b46ef2079f02c587e15de0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="oc__cred_8h.html#a4bf6d443c0cedb2c9ac90cc866cb28b3">oc_sec_encoding_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cred_8h.html#a8936b56d64b46ef2079f02c587e15de0">oc_cred_parse_encoding</a> (oc_string_t *encoding_string)</td></tr>
-<tr class="memdesc:a8936b56d64b46ef2079f02c587e15de0"><td class="mdescLeft">&#160;</td><td class="mdescRight">parse credential encoding string to type  <a href="oc__cred_8h.html#a8936b56d64b46ef2079f02c587e15de0">More...</a><br /></td></tr>
-<tr class="separator:a8936b56d64b46ef2079f02c587e15de0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab26cf422c4d90369c577341faacced7b"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cred_8h.html#ab26cf422c4d90369c577341faacced7b">oc_cred_read_credusage</a> (<a class="el" href="oc__cred_8h.html#af766cf746fb6d10b2f502d7f4f76e29e">oc_sec_credusage_t</a> credusage)</td></tr>
-<tr class="memdesc:ab26cf422c4d90369c577341faacced7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">read credential usaga  <a href="oc__cred_8h.html#ab26cf422c4d90369c577341faacced7b">More...</a><br /></td></tr>
-<tr class="separator:ab26cf422c4d90369c577341faacced7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebd296a2739e512916377e608c31d41b"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cred_8h.html#aebd296a2739e512916377e608c31d41b">oc_cred_read_encoding</a> (<a class="el" href="oc__cred_8h.html#a4bf6d443c0cedb2c9ac90cc866cb28b3">oc_sec_encoding_t</a> encoding)</td></tr>
-<tr class="memdesc:aebd296a2739e512916377e608c31d41b"><td class="mdescLeft">&#160;</td><td class="mdescRight">read credential encoding  <a href="oc__cred_8h.html#aebd296a2739e512916377e608c31d41b">More...</a><br /></td></tr>
-<tr class="separator:aebd296a2739e512916377e608c31d41b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e661673ad75f1ea01bd0179a55e9d6d"><td class="memItemLeft" align="right" valign="top">const OC_API char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cred_8h.html#a5e661673ad75f1ea01bd0179a55e9d6d">oc_cred_credtype_string</a> (<a class="el" href="oc__cred_8h.html#a323a3e3e2357812cc618ef5a2fa40908">oc_sec_credtype_t</a> credtype)</td></tr>
+<tr class="memdesc:a5e661673ad75f1ea01bd0179a55e9d6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">credential type to string  <a href="oc__cred_8h.html#a5e661673ad75f1ea01bd0179a55e9d6d">More...</a><br /></td></tr>
+<tr class="separator:a5e661673ad75f1ea01bd0179a55e9d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeea9e866ceec69f5c9798df02ecd325b"><td class="memItemLeft" align="right" valign="top">OC_API <a class="el" href="oc__cred_8h.html#af766cf746fb6d10b2f502d7f4f76e29e">oc_sec_credusage_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cred_8h.html#aeea9e866ceec69f5c9798df02ecd325b">oc_cred_parse_credusage</a> (oc_string_t *credusage_string)</td></tr>
+<tr class="memdesc:aeea9e866ceec69f5c9798df02ecd325b"><td class="mdescLeft">&#160;</td><td class="mdescRight">parse credential string to type  <a href="oc__cred_8h.html#aeea9e866ceec69f5c9798df02ecd325b">More...</a><br /></td></tr>
+<tr class="separator:aeea9e866ceec69f5c9798df02ecd325b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb11bc83cfbcb55c7e7fa6228c465f7e"><td class="memItemLeft" align="right" valign="top">OC_API <a class="el" href="oc__cred_8h.html#a4bf6d443c0cedb2c9ac90cc866cb28b3">oc_sec_encoding_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cred_8h.html#acb11bc83cfbcb55c7e7fa6228c465f7e">oc_cred_parse_encoding</a> (oc_string_t *encoding_string)</td></tr>
+<tr class="memdesc:acb11bc83cfbcb55c7e7fa6228c465f7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">parse credential encoding string to type  <a href="oc__cred_8h.html#acb11bc83cfbcb55c7e7fa6228c465f7e">More...</a><br /></td></tr>
+<tr class="separator:acb11bc83cfbcb55c7e7fa6228c465f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad880c1684c127f2c6cdc8e51e0a7aad3"><td class="memItemLeft" align="right" valign="top">const OC_API char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cred_8h.html#ad880c1684c127f2c6cdc8e51e0a7aad3">oc_cred_read_credusage</a> (<a class="el" href="oc__cred_8h.html#af766cf746fb6d10b2f502d7f4f76e29e">oc_sec_credusage_t</a> credusage)</td></tr>
+<tr class="memdesc:ad880c1684c127f2c6cdc8e51e0a7aad3"><td class="mdescLeft">&#160;</td><td class="mdescRight">read credential usaga  <a href="oc__cred_8h.html#ad880c1684c127f2c6cdc8e51e0a7aad3">More...</a><br /></td></tr>
+<tr class="separator:ad880c1684c127f2c6cdc8e51e0a7aad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e3ba074542e918c370fa3361bf9511f"><td class="memItemLeft" align="right" valign="top">const OC_API char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cred_8h.html#a3e3ba074542e918c370fa3361bf9511f">oc_cred_read_encoding</a> (<a class="el" href="oc__cred_8h.html#a4bf6d443c0cedb2c9ac90cc866cb28b3">oc_sec_encoding_t</a> encoding)</td></tr>
+<tr class="memdesc:a3e3ba074542e918c370fa3361bf9511f"><td class="mdescLeft">&#160;</td><td class="mdescRight">read credential encoding  <a href="oc__cred_8h.html#a3e3ba074542e918c370fa3361bf9511f">More...</a><br /></td></tr>
+<tr class="separator:a3e3ba074542e918c370fa3361bf9511f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8151d8c3647369d047541fe36389545d"><td class="memItemLeft" align="right" valign="top">OC_API <a class="el" href="structoc__sec__cred__t.html">oc_sec_cred_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cred_8h.html#a8151d8c3647369d047541fe36389545d">oc_sec_get_cred_by_credid</a> (int credid, size_t device)</td></tr>
+<tr class="memdesc:a8151d8c3647369d047541fe36389545d"><td class="mdescLeft">&#160;</td><td class="mdescRight">get credential by credid from given device  <a href="oc__cred_8h.html#a8151d8c3647369d047541fe36389545d">More...</a><br /></td></tr>
+<tr class="separator:a8151d8c3647369d047541fe36389545d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9925d7a29e2a6edcd28c2ce6ac6defdf"><td class="memItemLeft" align="right" valign="top">OC_API <a class="el" href="structoc__sec__creds__t.html">oc_sec_creds_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cred_8h.html#a9925d7a29e2a6edcd28c2ce6ac6defdf">oc_sec_get_creds</a> (size_t device)</td></tr>
+<tr class="memdesc:a9925d7a29e2a6edcd28c2ce6ac6defdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">get all credentials of given device  <a href="oc__cred_8h.html#a9925d7a29e2a6edcd28c2ce6ac6defdf">More...</a><br /></td></tr>
+<tr class="separator:a9925d7a29e2a6edcd28c2ce6ac6defdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80d03c4bf42972fefbc7516643348c56"><td class="memItemLeft" align="right" valign="top">OC_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cred_8h.html#a80d03c4bf42972fefbc7516643348c56">oc_sec_remove_cred_by_credid</a> (int credid, size_t device)</td></tr>
+<tr class="memdesc:a80d03c4bf42972fefbc7516643348c56"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove credential with credid from given device  <a href="oc__cred_8h.html#a80d03c4bf42972fefbc7516643348c56">More...</a><br /></td></tr>
+<tr class="separator:a80d03c4bf42972fefbc7516643348c56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a08d82246e2025421925afbff47e0b31f"></a>
@@ -362,14 +372,14 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="afbb1b89e693f03e1fe588a4ba1d75488"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afbb1b89e693f03e1fe588a4ba1d75488">&#9670;&nbsp;</a></span>oc_cred_credtype_string()</h2>
+<a id="a5e661673ad75f1ea01bd0179a55e9d6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e661673ad75f1ea01bd0179a55e9d6d">&#9670;&nbsp;</a></span>oc_cred_credtype_string()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char* oc_cred_credtype_string </td>
+          <td class="memname">const OC_API char* oc_cred_credtype_string </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="oc__cred_8h.html#a323a3e3e2357812cc618ef5a2fa40908">oc_sec_credtype_t</a>&#160;</td>
           <td class="paramname"><em>credtype</em></td><td>)</td>
@@ -389,14 +399,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a669b1743f36695f56b032bcbeae36fb3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a669b1743f36695f56b032bcbeae36fb3">&#9670;&nbsp;</a></span>oc_cred_parse_credusage()</h2>
+<a id="aeea9e866ceec69f5c9798df02ecd325b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeea9e866ceec69f5c9798df02ecd325b">&#9670;&nbsp;</a></span>oc_cred_parse_credusage()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="oc__cred_8h.html#af766cf746fb6d10b2f502d7f4f76e29e">oc_sec_credusage_t</a> oc_cred_parse_credusage </td>
+          <td class="memname">OC_API <a class="el" href="oc__cred_8h.html#af766cf746fb6d10b2f502d7f4f76e29e">oc_sec_credusage_t</a> oc_cred_parse_credusage </td>
           <td>(</td>
           <td class="paramtype">oc_string_t *&#160;</td>
           <td class="paramname"><em>credusage_string</em></td><td>)</td>
@@ -416,14 +426,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8936b56d64b46ef2079f02c587e15de0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8936b56d64b46ef2079f02c587e15de0">&#9670;&nbsp;</a></span>oc_cred_parse_encoding()</h2>
+<a id="acb11bc83cfbcb55c7e7fa6228c465f7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb11bc83cfbcb55c7e7fa6228c465f7e">&#9670;&nbsp;</a></span>oc_cred_parse_encoding()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="oc__cred_8h.html#a4bf6d443c0cedb2c9ac90cc866cb28b3">oc_sec_encoding_t</a> oc_cred_parse_encoding </td>
+          <td class="memname">OC_API <a class="el" href="oc__cred_8h.html#a4bf6d443c0cedb2c9ac90cc866cb28b3">oc_sec_encoding_t</a> oc_cred_parse_encoding </td>
           <td>(</td>
           <td class="paramtype">oc_string_t *&#160;</td>
           <td class="paramname"><em>encoding_string</em></td><td>)</td>
@@ -443,14 +453,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab26cf422c4d90369c577341faacced7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab26cf422c4d90369c577341faacced7b">&#9670;&nbsp;</a></span>oc_cred_read_credusage()</h2>
+<a id="ad880c1684c127f2c6cdc8e51e0a7aad3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad880c1684c127f2c6cdc8e51e0a7aad3">&#9670;&nbsp;</a></span>oc_cred_read_credusage()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char* oc_cred_read_credusage </td>
+          <td class="memname">const OC_API char* oc_cred_read_credusage </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="oc__cred_8h.html#af766cf746fb6d10b2f502d7f4f76e29e">oc_sec_credusage_t</a>&#160;</td>
           <td class="paramname"><em>credusage</em></td><td>)</td>
@@ -470,14 +480,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aebd296a2739e512916377e608c31d41b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aebd296a2739e512916377e608c31d41b">&#9670;&nbsp;</a></span>oc_cred_read_encoding()</h2>
+<a id="a3e3ba074542e918c370fa3361bf9511f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e3ba074542e918c370fa3361bf9511f">&#9670;&nbsp;</a></span>oc_cred_read_encoding()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char* oc_cred_read_encoding </td>
+          <td class="memname">const OC_API char* oc_cred_read_encoding </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="oc__cred_8h.html#a4bf6d443c0cedb2c9ac90cc866cb28b3">oc_sec_encoding_t</a>&#160;</td>
           <td class="paramname"><em>encoding</em></td><td>)</td>
@@ -497,13 +507,118 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a8151d8c3647369d047541fe36389545d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8151d8c3647369d047541fe36389545d">&#9670;&nbsp;</a></span>oc_sec_get_cred_by_credid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OC_API <a class="el" href="structoc__sec__cred__t.html">oc_sec_cred_t</a>* oc_sec_get_cred_by_credid </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>credid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>device</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get credential by credid from given device </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">credid</td><td>credential id </td></tr>
+    <tr><td class="paramname">device</td><td>index of the device </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>oc_sec_cred_t* found credential or NULL </dd></dl>
+
+</div>
+</div>
+<a id="a9925d7a29e2a6edcd28c2ce6ac6defdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9925d7a29e2a6edcd28c2ce6ac6defdf">&#9670;&nbsp;</a></span>oc_sec_get_creds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OC_API <a class="el" href="structoc__sec__creds__t.html">oc_sec_creds_t</a>* oc_sec_get_creds </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get all credentials of given device </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>index of the device </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>oc_sec_creds_t* list of credentials </dd></dl>
+
+</div>
+</div>
+<a id="a80d03c4bf42972fefbc7516643348c56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80d03c4bf42972fefbc7516643348c56">&#9670;&nbsp;</a></span>oc_sec_remove_cred_by_credid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OC_API bool oc_sec_remove_cred_by_credid </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>credid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>device</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>remove credential with credid from given device </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">credid</td><td>credential id </td></tr>
+    <tr><td class="paramname">device</td><td>index of the device </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool true credential with given id was found and removed </dd>
+<dd>
+bool false otherwise </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__cred_8h.html">oc_cred.h</a></li>
-    <li class="footer">Generated on Mon Mar 7 2022 08:51:58 for IoTivity-Lite by
+    <li class="footer">Generated on Mon Mar 7 2022 09:16:44 for IoTivity-Lite by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

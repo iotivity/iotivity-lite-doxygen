@@ -32,9 +32,12 @@ var oc__cred_8h =
       [ "OC_ENCODING_PEM", "oc__cred_8h.html#a4bf6d443c0cedb2c9ac90cc866cb28b3a275da18921a1d6ba2c66e6a30c64d202", null ],
       [ "OC_ENCODING_HANDLE", "oc__cred_8h.html#a4bf6d443c0cedb2c9ac90cc866cb28b3af4ca00125407c70759a8e930115e1f27", null ]
     ] ],
-    [ "oc_cred_credtype_string", "oc__cred_8h.html#afbb1b89e693f03e1fe588a4ba1d75488", null ],
-    [ "oc_cred_parse_credusage", "oc__cred_8h.html#a669b1743f36695f56b032bcbeae36fb3", null ],
-    [ "oc_cred_parse_encoding", "oc__cred_8h.html#a8936b56d64b46ef2079f02c587e15de0", null ],
-    [ "oc_cred_read_credusage", "oc__cred_8h.html#ab26cf422c4d90369c577341faacced7b", null ],
-    [ "oc_cred_read_encoding", "oc__cred_8h.html#aebd296a2739e512916377e608c31d41b", null ]
+    [ "oc_cred_credtype_string", "oc__cred_8h.html#a5e661673ad75f1ea01bd0179a55e9d6d", null ],
+    [ "oc_cred_parse_credusage", "oc__cred_8h.html#aeea9e866ceec69f5c9798df02ecd325b", null ],
+    [ "oc_cred_parse_encoding", "oc__cred_8h.html#acb11bc83cfbcb55c7e7fa6228c465f7e", null ],
+    [ "oc_cred_read_credusage", "oc__cred_8h.html#ad880c1684c127f2c6cdc8e51e0a7aad3", null ],
+    [ "oc_cred_read_encoding", "oc__cred_8h.html#a3e3ba074542e918c370fa3361bf9511f", null ],
+    [ "oc_sec_get_cred_by_credid", "oc__cred_8h.html#a8151d8c3647369d047541fe36389545d", null ],
+    [ "oc_sec_get_creds", "oc__cred_8h.html#a9925d7a29e2a6edcd28c2ce6ac6defdf", null ],
+    [ "oc_sec_remove_cred_by_credid", "oc__cred_8h.html#a80d03c4bf42972fefbc7516643348c56", null ]
 ];
