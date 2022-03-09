@@ -94,6 +94,7 @@ $(document).ready(function(){initNavTree('oc__cred_8h.html',''); initResizable()
 <code>#include &quot;<a class="el" href="oc__ri_8h.html">oc_ri.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__uuid_8h.html">oc_uuid.h</a>&quot;</code><br />
 <code>#include &quot;util/oc_list.h&quot;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -189,6 +190,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a9925d7a29e2a6edcd28c2ce6ac6defdf"><td class="memItemLeft" align="right" valign="top">OC_API <a class="el" href="structoc__sec__creds__t.html">oc_sec_creds_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cred_8h.html#a9925d7a29e2a6edcd28c2ce6ac6defdf">oc_sec_get_creds</a> (size_t device)</td></tr>
 <tr class="memdesc:a9925d7a29e2a6edcd28c2ce6ac6defdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">get all credentials of given device  <a href="oc__cred_8h.html#a9925d7a29e2a6edcd28c2ce6ac6defdf">More...</a><br /></td></tr>
 <tr class="separator:a9925d7a29e2a6edcd28c2ce6ac6defdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2745aaa9100104bd68b13da320f4a25d"><td class="memItemLeft" align="right" valign="top">OC_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cred_8h.html#a2745aaa9100104bd68b13da320f4a25d">oc_sec_parse_cred</a> (oc_rep_t *rep, <a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint, bool dumpToStorage)</td></tr>
+<tr class="memdesc:a2745aaa9100104bd68b13da320f4a25d"><td class="mdescLeft">&#160;</td><td class="mdescRight">parse credentials from a payload  <a href="oc__cred_8h.html#a2745aaa9100104bd68b13da320f4a25d">More...</a><br /></td></tr>
+<tr class="separator:a2745aaa9100104bd68b13da320f4a25d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80d03c4bf42972fefbc7516643348c56"><td class="memItemLeft" align="right" valign="top">OC_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cred_8h.html#a80d03c4bf42972fefbc7516643348c56">oc_sec_remove_cred_by_credid</a> (int credid, size_t device)</td></tr>
 <tr class="memdesc:a80d03c4bf42972fefbc7516643348c56"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove credential with credid from given device  <a href="oc__cred_8h.html#a80d03c4bf42972fefbc7516643348c56">More...</a><br /></td></tr>
 <tr class="separator:a80d03c4bf42972fefbc7516643348c56"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -572,6 +576,60 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a2745aaa9100104bd68b13da320f4a25d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2745aaa9100104bd68b13da320f4a25d">&#9670;&nbsp;</a></span>oc_sec_parse_cred()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OC_API int oc_sec_parse_cred </td>
+          <td>(</td>
+          <td class="paramtype">oc_rep_t *&#160;</td>
+          <td class="paramname"><em>rep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
+          <td class="paramname"><em>resource</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *&#160;</td>
+          <td class="paramname"><em>endpoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>dumpToStorage</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>parse credentials from a payload </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rep</td><td>payload to parse </td></tr>
+    <tr><td class="paramname">resource</td><td>resource of the credentials </td></tr>
+    <tr><td class="paramname">endpoint</td><td>endpoint of the credentials owner </td></tr>
+    <tr><td class="paramname">dumpToStorage</td><td>dump the parsed credentials to storage </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int -1 on failure </dd>
+<dd>
+int 0 payload was successfully parsed </dd></dl>
+
+</div>
+</div>
 <a id="a80d03c4bf42972fefbc7516643348c56"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a80d03c4bf42972fefbc7516643348c56">&#9670;&nbsp;</a></span>oc_sec_remove_cred_by_credid()</h2>
 
@@ -618,7 +676,7 @@ bool false otherwise </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__cred_8h.html">oc_cred.h</a></li>
-    <li class="footer">Generated on Wed Mar 9 2022 12:27:12 for IoTivity-Lite by
+    <li class="footer">Generated on Wed Mar 9 2022 12:36:43 for IoTivity-Lite by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
