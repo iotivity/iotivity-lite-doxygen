@@ -155,6 +155,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:gad90e302a794a66ac5c9d5fbe734ca42c"><td class="memItemLeft" align="right" valign="top">
 typedef struct oc_role_t&#160;</td><td class="memItemRight" valign="bottom"><b>oc_role_t</b></td></tr>
 <tr class="separator:gad90e302a794a66ac5c9d5fbe734ca42c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0251fdbc9015fae0e14ff8c8b70cf7d"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__api_8h.html#af0251fdbc9015fae0e14ff8c8b70cf7d">oc_select_oxms_cb_t</a>) (size_t device_index, int *oxms, int *num_oxms, void *user_data)</td></tr>
+<tr class="memdesc:af0251fdbc9015fae0e14ff8c8b70cf7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback to filter out unsupported ownership methods when they are evaluated.  <a href="oc__api_8h.html#af0251fdbc9015fae0e14ff8c8b70cf7d">More...</a><br /></td></tr>
+<tr class="separator:af0251fdbc9015fae0e14ff8c8b70cf7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -440,6 +443,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a5f6ce300fbf84e2181b1ee0040567756"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__api_8h.html#a5f6ce300fbf84e2181b1ee0040567756">oc_set_random_pin_callback</a> (<a class="el" href="oc__api_8h.html#ac450472adae9e5c6941663559d6a7150">oc_random_pin_cb_t</a> cb, void *data)</td></tr>
 <tr class="memdesc:a5f6ce300fbf84e2181b1ee0040567756"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the random pin callback for Random PIN Ownership Transfer Method (OTM)  <a href="oc__api_8h.html#a5f6ce300fbf84e2181b1ee0040567756">More...</a><br /></td></tr>
 <tr class="separator:a5f6ce300fbf84e2181b1ee0040567756"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff3a70487d7851c022386df601655fb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__api_8h.html#aff3a70487d7851c022386df601655fb6">oc_set_select_oxms_cb</a> (<a class="el" href="oc__api_8h.html#af0251fdbc9015fae0e14ff8c8b70cf7d">oc_select_oxms_cb_t</a> callback, void *user_data)</td></tr>
+<tr class="memdesc:aff3a70487d7851c022386df601655fb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the callback to filter out unsupported ownership methods.  <a href="oc__api_8h.html#aff3a70487d7851c022386df601655fb6">More...</a><br /></td></tr>
+<tr class="separator:aff3a70487d7851c022386df601655fb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1a6752c73365b6d03a1dcfcf3d3005fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga1a6752c73365b6d03a1dcfcf3d3005fc">oc_set_separate_response_buffer</a> (<a class="el" href="oc__ri_8h.html#aa8574b4921b4ecdddd325a4634bec426">oc_separate_response_t</a> *handle)</td></tr>
 <tr class="memdesc:ga1a6752c73365b6d03a1dcfcf3d3005fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a response buffer for holding the response payload.  <a href="group__doc__module__tag__server__side.html#ga1a6752c73365b6d03a1dcfcf3d3005fc">More...</a><br /></td></tr>
 <tr class="separator:ga1a6752c73365b6d03a1dcfcf3d3005fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -777,6 +783,32 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__api_8h.html#a5f6ce300fbf84e2181b1ee0040567756" title="Set the random pin callback for Random PIN Ownership Transfer Method (OTM)">oc_set_random_pin_callback</a> </dd></dl>
+
+</div>
+</div>
+<a id="af0251fdbc9015fae0e14ff8c8b70cf7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0251fdbc9015fae0e14ff8c8b70cf7d">&#9670;&nbsp;</a></span>oc_select_oxms_cb_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* oc_select_oxms_cb_t) (size_t device_index, int *oxms, int *num_oxms, void *user_data)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback to filter out unsupported ownership methods when they are evaluated. </p>
+<p>For example, if you want to support only the manufacturer certificate based owner transfer method, you will set oxms[0] to OC_OXMTYPE_MFG_CERT and *num_oxms to 1.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device_index</td><td>of the logical device that changed ownership </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">oxms</td><td>array of supported ownership types(oc_sec_doxmtype_t). Filters out non-supported methods. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">num_oxms</td><td>number of supported ownership methods. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">user_data</td><td>context pointer </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1317,6 +1349,44 @@ Use of this function requires building the stack with OC_SECURITY defined.</dd><
 
 </div>
 </div>
+<a id="aff3a70487d7851c022386df601655fb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff3a70487d7851c022386df601655fb6">&#9670;&nbsp;</a></span>oc_set_select_oxms_cb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oc_set_select_oxms_cb </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="oc__api_8h.html#af0251fdbc9015fae0e14ff8c8b70cf7d">oc_select_oxms_cb_t</a>&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the callback to filter out unsupported ownership methods. </p>
+<p>The function can be used to set or unset the callback. For example, if you want to support only the manufacturer certificate based owner transfer method.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">callback</td><td>The callback to register or NULL to unset it. If the function is invoked a second time, then the previously set callback is simply replaced. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">user_data</td><td>context pointer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aoc__storage_8h_html_ae529493bca3a501922f23e3d7701ff05"><div class="ttname"><a href="oc__storage_8h.html#ae529493bca3a501922f23e3d7701ff05">oc_storage_config</a></div><div class="ttdeci">int oc_storage_config(const char *store)</div><div class="ttdoc">open the storage</div></div>
@@ -1335,7 +1405,7 @@ Use of this function requires building the stack with OC_SECURITY defined.</dd><
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__api_8h.html">oc_api.h</a></li>
-    <li class="footer">Generated on Wed Mar 9 2022 12:36:43 for IoTivity-Lite by
+    <li class="footer">Generated on Wed Mar 9 2022 12:45:00 for IoTivity-Lite by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

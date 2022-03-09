@@ -15,6 +15,7 @@ var oc__api_8h =
     [ "oc_resource_free_instance_t", "group__doc__module__tag__collections.html#gab130607248507d452563e8521f6b34ab", null ],
     [ "oc_resource_get_instance_t", "group__doc__module__tag__collections.html#gabd4df858d188b26542c6bfc7a8759084", null ],
     [ "oc_role_t", "group__doc__module__tag__asserting__roles.html#gad90e302a794a66ac5c9d5fbe734ca42c", null ],
+    [ "oc_select_oxms_cb_t", "oc__api_8h.html#af0251fdbc9015fae0e14ff8c8b70cf7d", null ],
     [ "oc_add_collection", "group__doc__module__tag__collections.html#ga80b00ed34f2fe3db8f580136c124fcda", null ],
     [ "oc_add_device", "oc__api_8h.html#a5aa72dd8d7d03ff826801b1d7d67ec68", null ],
     [ "oc_add_ownership_status_cb", "oc__api_8h.html#a41e3073ff265025d515ad82db0ce201a", null ],
@@ -109,6 +110,7 @@ var oc__api_8h =
     [ "oc_set_factory_presets_cb", "oc__api_8h.html#a5fabaaadaf2e0dccbb1d906f73f9d953", null ],
     [ "oc_set_immutable_device_identifier", "group__doc__module__tag__common__operations.html#ga09cd54cea5742e078a5581d0e41e1e59", null ],
     [ "oc_set_random_pin_callback", "oc__api_8h.html#a5f6ce300fbf84e2181b1ee0040567756", null ],
+    [ "oc_set_select_oxms_cb", "oc__api_8h.html#aff3a70487d7851c022386df601655fb6", null ],
     [ "oc_set_separate_response_buffer", "group__doc__module__tag__server__side.html#ga1a6752c73365b6d03a1dcfcf3d3005fc", null ],
     [ "oc_stop_multicast", "group__doc__module__tag__client__state.html#ga14c08ecd261e6f6ce93f1d92007576b1", null ],
     [ "oc_stop_observe", "group__doc__module__tag__client__state.html#gabce4bcea94e2ad38ffac39ce447b4eb8", null ]
