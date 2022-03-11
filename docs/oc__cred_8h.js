@@ -9,6 +9,7 @@ var oc__cred_8h =
     [ "oc_sec_credtype_t", "oc__cred_8h.html#ace54e80ac00bcb841f7fc5c7d802737f", null ],
     [ "oc_sec_credusage_t", "oc__cred_8h.html#ab62dc87b328cd84951e98f3a42334754", null ],
     [ "oc_sec_encoding_t", "oc__cred_8h.html#a1faad59ca383c11ee62dca31afcbeae9", null ],
+    [ "oc_sec_on_apply_cred_cb_t", "oc__cred_8h.html#aad0e334314d1985ddf603ce71ee5c401", null ],
     [ "oc_sec_credtype_t", "oc__cred_8h.html#a323a3e3e2357812cc618ef5a2fa40908", [
       [ "OC_CREDTYPE_NULL", "oc__cred_8h.html#a323a3e3e2357812cc618ef5a2fa40908a62f4f4479f0179d3a99da69c1c0019a3", null ],
       [ "OC_CREDTYPE_PSK", "oc__cred_8h.html#a323a3e3e2357812cc618ef5a2fa40908abeb6562aed8ae15ad930285be00a6979", null ],
@@ -37,8 +38,8 @@ var oc__cred_8h =
     [ "oc_cred_parse_encoding", "oc__cred_8h.html#acb11bc83cfbcb55c7e7fa6228c465f7e", null ],
     [ "oc_cred_read_credusage", "oc__cred_8h.html#ad880c1684c127f2c6cdc8e51e0a7aad3", null ],
     [ "oc_cred_read_encoding", "oc__cred_8h.html#a3e3ba074542e918c370fa3361bf9511f", null ],
+    [ "oc_sec_apply_cred", "oc__cred_8h.html#ac86914c93bfadcd217e9c49c3088c5c7", null ],
     [ "oc_sec_get_cred_by_credid", "oc__cred_8h.html#a8151d8c3647369d047541fe36389545d", null ],
     [ "oc_sec_get_creds", "oc__cred_8h.html#a9925d7a29e2a6edcd28c2ce6ac6defdf", null ],
-    [ "oc_sec_parse_cred", "oc__cred_8h.html#a2745aaa9100104bd68b13da320f4a25d", null ],
     [ "oc_sec_remove_cred_by_credid", "oc__cred_8h.html#a80d03c4bf42972fefbc7516643348c56", null ]
 ];
