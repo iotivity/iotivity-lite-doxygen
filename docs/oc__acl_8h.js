@@ -8,6 +8,7 @@ var oc__acl_8h =
     [ "oc_ace_subject_t", "oc__acl_8h.html#a5ca2f3f4a98c831ae82840c28e67e81f", null ],
     [ "oc_sec_ace_t", "oc__acl_8h.html#ab284972bac5a7a1733f727bac3566798", null ],
     [ "oc_sec_acl_t", "oc__acl_8h.html#a485c09b9417208265dc2eed110bd9c82", null ],
+    [ "oc_sec_on_apply_acl_cb_t", "oc__acl_8h.html#a85f93e93930876127f8e81a18e3ff08f", null ],
     [ "oc_ace_connection_type_t", "oc__acl_8h.html#a78c4f9f6c2a1be18591d7e9520a73029", [
       [ "OC_CONN_AUTH_CRYPT", "oc__acl_8h.html#a78c4f9f6c2a1be18591d7e9520a73029a29f891201b9e45f0161ec1390b81a4e9", null ],
       [ "OC_CONN_ANON_CLEAR", "oc__acl_8h.html#a78c4f9f6c2a1be18591d7e9520a73029a7e84f6e6032db9fda96167fd6657373f", null ]
@@ -30,5 +31,7 @@ var oc__acl_8h =
       [ "OC_ACE_WC_ALL", "oc__acl_8h.html#a1e7d2ee5709877a0e75a8e048e17df1fabb0bdfc5b89b65a894b096d9863b2e07", null ],
       [ "OC_ACE_WC_ALL_SECURED", "oc__acl_8h.html#a1e7d2ee5709877a0e75a8e048e17df1fa7a9d72599e3ecc53301b6b0b9dcf2b8a", null ],
       [ "OC_ACE_WC_ALL_PUBLIC", "oc__acl_8h.html#a1e7d2ee5709877a0e75a8e048e17df1fa2001231471c769e94a8a9a96d134e24d", null ]
-    ] ]
+    ] ],
+    [ "oc_sec_apply_acl", "oc__acl_8h.html#ab0b4c0cd296bdd8a068e6d629ff30de7", null ],
+    [ "oc_sec_get_acl", "oc__acl_8h.html#a5dfed8d8872d4cd41d1937010238bb80", null ]
 ];
