@@ -90,6 +90,7 @@ $(document).ready(function(){initNavTree('oc__cloud_8h.html',''); initResizable(
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="oc__client__state_8h.html">oc_client_state.h</a>&quot;</code><br />
+<code>#include &quot;oc_export.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__ri_8h.html">oc_ri.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__session__events_8h.html">oc_session_events.h</a>&quot;</code><br />
 </div><table class="memberdecls">
@@ -144,51 +145,54 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af782586d01601ce903e4aad77ffeca42"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#af782586d01601ce903e4aad77ffeca42">oc_cloud_add_resource</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
-<tr class="memdesc:af782586d01601ce903e4aad77ffeca42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publish resource to cloud.  <a href="oc__cloud_8h.html#af782586d01601ce903e4aad77ffeca42">More...</a><br /></td></tr>
-<tr class="separator:af782586d01601ce903e4aad77ffeca42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b387679649212a7c9b7db6eb5e3590b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#a4b387679649212a7c9b7db6eb5e3590b">oc_cloud_delete_resource</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
-<tr class="memdesc:a4b387679649212a7c9b7db6eb5e3590b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unpublish resource from cloud.  <a href="oc__cloud_8h.html#a4b387679649212a7c9b7db6eb5e3590b">More...</a><br /></td></tr>
-<tr class="separator:a4b387679649212a7c9b7db6eb5e3590b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc503e0c5bc0cdc2a519400845d8f03e"><td class="memItemLeft" align="right" valign="top"><a id="afc503e0c5bc0cdc2a519400845d8f03e"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_deregister</b> (oc_cloud_context_t *ctx, <a class="el" href="oc__cloud_8h.html#adaa6e94d3d339e364a392045fbc78969">oc_cloud_cb_t</a> cb, void *data)</td></tr>
-<tr class="separator:afc503e0c5bc0cdc2a519400845d8f03e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a342c492abafdbb228366e2c061334260"><td class="memItemLeft" align="right" valign="top"><a id="a342c492abafdbb228366e2c061334260"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_discover_resources</b> (oc_cloud_context_t *ctx, <a class="el" href="oc__client__state_8h.html#ad0e8cd636823e22b2730c313b456b379">oc_discovery_all_handler_t</a> handler, void *user_data)</td></tr>
-<tr class="separator:a342c492abafdbb228366e2c061334260"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83abbc37f00ba1497cecb555bb7f71b6"><td class="memItemLeft" align="right" valign="top"><a id="a83abbc37f00ba1497cecb555bb7f71b6"></a>
-oc_cloud_context_t *&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_get_context</b> (size_t device)</td></tr>
-<tr class="separator:a83abbc37f00ba1497cecb555bb7f71b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44b473309d38733b18efee5ced53095c"><td class="memItemLeft" align="right" valign="top"><a id="a44b473309d38733b18efee5ced53095c"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_get_token_expiry</b> (oc_cloud_context_t *ctx)</td></tr>
-<tr class="separator:a44b473309d38733b18efee5ced53095c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae88aa9c13dbd2e514b0cd342dfcfe0a7"><td class="memItemLeft" align="right" valign="top"><a id="ae88aa9c13dbd2e514b0cd342dfcfe0a7"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_login</b> (oc_cloud_context_t *ctx, <a class="el" href="oc__cloud_8h.html#adaa6e94d3d339e364a392045fbc78969">oc_cloud_cb_t</a> cb, void *data)</td></tr>
-<tr class="separator:ae88aa9c13dbd2e514b0cd342dfcfe0a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a037eae72d7f84079d7c3caeb4a3bf6c5"><td class="memItemLeft" align="right" valign="top"><a id="a037eae72d7f84079d7c3caeb4a3bf6c5"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_logout</b> (oc_cloud_context_t *ctx, <a class="el" href="oc__cloud_8h.html#adaa6e94d3d339e364a392045fbc78969">oc_cloud_cb_t</a> cb, void *data)</td></tr>
-<tr class="separator:a037eae72d7f84079d7c3caeb4a3bf6c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6efa2f7d9da40ac77668698c0ed466a"><td class="memItemLeft" align="right" valign="top"><a id="ae6efa2f7d9da40ac77668698c0ed466a"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_manager_start</b> (oc_cloud_context_t *ctx, <a class="el" href="oc__cloud_8h.html#adaa6e94d3d339e364a392045fbc78969">oc_cloud_cb_t</a> cb, void *data)</td></tr>
-<tr class="separator:ae6efa2f7d9da40ac77668698c0ed466a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69ed7d30633c64e156ee5a2447439c9e"><td class="memItemLeft" align="right" valign="top"><a id="a69ed7d30633c64e156ee5a2447439c9e"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_manager_stop</b> (oc_cloud_context_t *ctx)</td></tr>
-<tr class="separator:a69ed7d30633c64e156ee5a2447439c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae77dc49cffa61cd1553ad83da9577ae"><td class="memItemLeft" align="right" valign="top"><a id="aae77dc49cffa61cd1553ad83da9577ae"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_provision_conf_resource</b> (oc_cloud_context_t *ctx, const char *server, const char *access_token, const char *server_id, const char *auth_provider)</td></tr>
-<tr class="separator:aae77dc49cffa61cd1553ad83da9577ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9990c301d82104116aa9e0f718b024ff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#a9990c301d82104116aa9e0f718b024ff">oc_cloud_publish_resources</a> (size_t device)</td></tr>
-<tr class="memdesc:a9990c301d82104116aa9e0f718b024ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Republish previously published devices.  <a href="oc__cloud_8h.html#a9990c301d82104116aa9e0f718b024ff">More...</a><br /></td></tr>
-<tr class="separator:a9990c301d82104116aa9e0f718b024ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a653ead14921bf35de6a571cbb90393a6"><td class="memItemLeft" align="right" valign="top"><a id="a653ead14921bf35de6a571cbb90393a6"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_refresh_token</b> (oc_cloud_context_t *ctx, <a class="el" href="oc__cloud_8h.html#adaa6e94d3d339e364a392045fbc78969">oc_cloud_cb_t</a> cb, void *data)</td></tr>
-<tr class="separator:a653ead14921bf35de6a571cbb90393a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a784e69b8cee199202ccea3ebc9449416"><td class="memItemLeft" align="right" valign="top"><a id="a784e69b8cee199202ccea3ebc9449416"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_register</b> (oc_cloud_context_t *ctx, <a class="el" href="oc__cloud_8h.html#adaa6e94d3d339e364a392045fbc78969">oc_cloud_cb_t</a> cb, void *data)</td></tr>
-<tr class="separator:a784e69b8cee199202ccea3ebc9449416"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa39a484a6576b096a8c895f6eb1f2024"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#aa39a484a6576b096a8c895f6eb1f2024">oc_cloud_set_published_resources_ttl</a> (oc_cloud_context_t *ctx, uint32_t ttl)</td></tr>
-<tr class="memdesc:aa39a484a6576b096a8c895f6eb1f2024"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Time to Live value in the provided cloud context.  <a href="oc__cloud_8h.html#aa39a484a6576b096a8c895f6eb1f2024">More...</a><br /></td></tr>
-<tr class="separator:aa39a484a6576b096a8c895f6eb1f2024"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a517154d64976ae860bf8f9dd8e01c5da"><td class="memItemLeft" align="right" valign="top">OC_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#a517154d64976ae860bf8f9dd8e01c5da">oc_cloud_add_resource</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
+<tr class="memdesc:a517154d64976ae860bf8f9dd8e01c5da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publish resource to cloud.  <a href="oc__cloud_8h.html#a517154d64976ae860bf8f9dd8e01c5da">More...</a><br /></td></tr>
+<tr class="separator:a517154d64976ae860bf8f9dd8e01c5da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac46b568c036b54548c4a94190738e79a"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#ac46b568c036b54548c4a94190738e79a">oc_cloud_delete_resource</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
+<tr class="memdesc:ac46b568c036b54548c4a94190738e79a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unpublish resource from cloud.  <a href="oc__cloud_8h.html#ac46b568c036b54548c4a94190738e79a">More...</a><br /></td></tr>
+<tr class="separator:ac46b568c036b54548c4a94190738e79a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b2f8fa8fe77465c78a34397ba816049"><td class="memItemLeft" align="right" valign="top"><a id="a7b2f8fa8fe77465c78a34397ba816049"></a>
+OC_API int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_deregister</b> (oc_cloud_context_t *ctx, <a class="el" href="oc__cloud_8h.html#adaa6e94d3d339e364a392045fbc78969">oc_cloud_cb_t</a> cb, void *data)</td></tr>
+<tr class="separator:a7b2f8fa8fe77465c78a34397ba816049"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad6717b9885e4f7800566b007d31c87c"><td class="memItemLeft" align="right" valign="top"><a id="aad6717b9885e4f7800566b007d31c87c"></a>
+OC_API int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_discover_resources</b> (oc_cloud_context_t *ctx, <a class="el" href="oc__client__state_8h.html#ad0e8cd636823e22b2730c313b456b379">oc_discovery_all_handler_t</a> handler, void *user_data)</td></tr>
+<tr class="separator:aad6717b9885e4f7800566b007d31c87c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22b924c040afc36d30699a7ed383b640"><td class="memItemLeft" align="right" valign="top">OC_API oc_cloud_context_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#a22b924c040afc36d30699a7ed383b640">oc_cloud_get_context</a> (size_t device)</td></tr>
+<tr class="memdesc:a22b924c040afc36d30699a7ed383b640"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get cloud context for device.  <a href="oc__cloud_8h.html#a22b924c040afc36d30699a7ed383b640">More...</a><br /></td></tr>
+<tr class="separator:a22b924c040afc36d30699a7ed383b640"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af140cbd344f532319e446accda34763e"><td class="memItemLeft" align="right" valign="top"><a id="af140cbd344f532319e446accda34763e"></a>
+OC_API int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_get_token_expiry</b> (oc_cloud_context_t *ctx)</td></tr>
+<tr class="separator:af140cbd344f532319e446accda34763e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa932934364ee13c0288a1abc271769a6"><td class="memItemLeft" align="right" valign="top"><a id="aa932934364ee13c0288a1abc271769a6"></a>
+OC_API int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_login</b> (oc_cloud_context_t *ctx, <a class="el" href="oc__cloud_8h.html#adaa6e94d3d339e364a392045fbc78969">oc_cloud_cb_t</a> cb, void *data)</td></tr>
+<tr class="separator:aa932934364ee13c0288a1abc271769a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa17c235b6b81a13f092a443e8fbc8134"><td class="memItemLeft" align="right" valign="top"><a id="aa17c235b6b81a13f092a443e8fbc8134"></a>
+OC_API int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_logout</b> (oc_cloud_context_t *ctx, <a class="el" href="oc__cloud_8h.html#adaa6e94d3d339e364a392045fbc78969">oc_cloud_cb_t</a> cb, void *data)</td></tr>
+<tr class="separator:aa17c235b6b81a13f092a443e8fbc8134"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae889d0e2bb7e0b53053c27bf7210db2c"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#ae889d0e2bb7e0b53053c27bf7210db2c">oc_cloud_manager_restart</a> (oc_cloud_context_t *ctx)</td></tr>
+<tr class="memdesc:ae889d0e2bb7e0b53053c27bf7210db2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restart cloud registration process with the current configuration.  <a href="oc__cloud_8h.html#ae889d0e2bb7e0b53053c27bf7210db2c">More...</a><br /></td></tr>
+<tr class="separator:ae889d0e2bb7e0b53053c27bf7210db2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8f86b5755b95d37b5a5f2693b13bb99"><td class="memItemLeft" align="right" valign="top">OC_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#af8f86b5755b95d37b5a5f2693b13bb99">oc_cloud_manager_start</a> (oc_cloud_context_t *ctx, <a class="el" href="oc__cloud_8h.html#adaa6e94d3d339e364a392045fbc78969">oc_cloud_cb_t</a> cb, void *data)</td></tr>
+<tr class="memdesc:af8f86b5755b95d37b5a5f2693b13bb99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start cloud registration process.  <a href="oc__cloud_8h.html#af8f86b5755b95d37b5a5f2693b13bb99">More...</a><br /></td></tr>
+<tr class="separator:af8f86b5755b95d37b5a5f2693b13bb99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad13a763399d71c344f990b6d85b8ed3f"><td class="memItemLeft" align="right" valign="top">OC_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#ad13a763399d71c344f990b6d85b8ed3f">oc_cloud_manager_stop</a> (oc_cloud_context_t *ctx)</td></tr>
+<tr class="memdesc:ad13a763399d71c344f990b6d85b8ed3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop cloud registration process, remove related pending delayed callbacks and clean-up data.  <a href="oc__cloud_8h.html#ad13a763399d71c344f990b6d85b8ed3f">More...</a><br /></td></tr>
+<tr class="separator:ad13a763399d71c344f990b6d85b8ed3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af14c6072398cb20acf9695a1aefbab90"><td class="memItemLeft" align="right" valign="top"><a id="af14c6072398cb20acf9695a1aefbab90"></a>
+OC_API int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_provision_conf_resource</b> (oc_cloud_context_t *ctx, const char *server, const char *access_token, const char *server_id, const char *auth_provider)</td></tr>
+<tr class="separator:af14c6072398cb20acf9695a1aefbab90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05cb48518b592f5d518d89461c9e8043"><td class="memItemLeft" align="right" valign="top">OC_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#a05cb48518b592f5d518d89461c9e8043">oc_cloud_publish_resources</a> (size_t device)</td></tr>
+<tr class="memdesc:a05cb48518b592f5d518d89461c9e8043"><td class="mdescLeft">&#160;</td><td class="mdescRight">Republish previously published devices.  <a href="oc__cloud_8h.html#a05cb48518b592f5d518d89461c9e8043">More...</a><br /></td></tr>
+<tr class="separator:a05cb48518b592f5d518d89461c9e8043"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e7569124ef59d0066b6d412a182e255"><td class="memItemLeft" align="right" valign="top"><a id="a4e7569124ef59d0066b6d412a182e255"></a>
+OC_API int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_refresh_token</b> (oc_cloud_context_t *ctx, <a class="el" href="oc__cloud_8h.html#adaa6e94d3d339e364a392045fbc78969">oc_cloud_cb_t</a> cb, void *data)</td></tr>
+<tr class="separator:a4e7569124ef59d0066b6d412a182e255"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0217d6fdcb7e85196c5a878c5be116f2"><td class="memItemLeft" align="right" valign="top"><a id="a0217d6fdcb7e85196c5a878c5be116f2"></a>
+OC_API int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_register</b> (oc_cloud_context_t *ctx, <a class="el" href="oc__cloud_8h.html#adaa6e94d3d339e364a392045fbc78969">oc_cloud_cb_t</a> cb, void *data)</td></tr>
+<tr class="separator:a0217d6fdcb7e85196c5a878c5be116f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84c14a3bc7523e1350f7f9f756b5ac4d"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#a84c14a3bc7523e1350f7f9f756b5ac4d">oc_cloud_set_published_resources_ttl</a> (oc_cloud_context_t *ctx, uint32_t ttl)</td></tr>
+<tr class="memdesc:a84c14a3bc7523e1350f7f9f756b5ac4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Time to Live value in the provided cloud context.  <a href="oc__cloud_8h.html#a84c14a3bc7523e1350f7f9f756b5ac4d">More...</a><br /></td></tr>
+<tr class="separator:a84c14a3bc7523e1350f7f9f756b5ac4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="adaa6e94d3d339e364a392045fbc78969"></a>
@@ -231,14 +235,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_register</b> 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="af782586d01601ce903e4aad77ffeca42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af782586d01601ce903e4aad77ffeca42">&#9670;&nbsp;</a></span>oc_cloud_add_resource()</h2>
+<a id="a517154d64976ae860bf8f9dd8e01c5da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a517154d64976ae860bf8f9dd8e01c5da">&#9670;&nbsp;</a></span>oc_cloud_add_resource()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int oc_cloud_add_resource </td>
+          <td class="memname">OC_API int oc_cloud_add_resource </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
           <td class="paramname"><em>resource</em></td><td>)</td>
@@ -258,14 +262,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_register</b> 
 
 </div>
 </div>
-<a id="a4b387679649212a7c9b7db6eb5e3590b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b387679649212a7c9b7db6eb5e3590b">&#9670;&nbsp;</a></span>oc_cloud_delete_resource()</h2>
+<a id="ac46b568c036b54548c4a94190738e79a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac46b568c036b54548c4a94190738e79a">&#9670;&nbsp;</a></span>oc_cloud_delete_resource()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oc_cloud_delete_resource </td>
+          <td class="memname">OC_API void oc_cloud_delete_resource </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
           <td class="paramname"><em>resource</em></td><td>)</td>
@@ -284,14 +288,136 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_register</b> 
 
 </div>
 </div>
-<a id="a9990c301d82104116aa9e0f718b024ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9990c301d82104116aa9e0f718b024ff">&#9670;&nbsp;</a></span>oc_cloud_publish_resources()</h2>
+<a id="a22b924c040afc36d30699a7ed383b640"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22b924c040afc36d30699a7ed383b640">&#9670;&nbsp;</a></span>oc_cloud_get_context()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int oc_cloud_publish_resources </td>
+          <td class="memname">OC_API oc_cloud_context_t* oc_cloud_get_context </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get cloud context for device. </p>
+
+</div>
+</div>
+<a id="ae889d0e2bb7e0b53053c27bf7210db2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae889d0e2bb7e0b53053c27bf7210db2c">&#9670;&nbsp;</a></span>oc_cloud_manager_restart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OC_API void oc_cloud_manager_restart </td>
+          <td>(</td>
+          <td class="paramtype">oc_cloud_context_t *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Restart cloud registration process with the current configuration. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>cloud context (cannot be NULL) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af8f86b5755b95d37b5a5f2693b13bb99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8f86b5755b95d37b5a5f2693b13bb99">&#9670;&nbsp;</a></span>oc_cloud_manager_start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OC_API int oc_cloud_manager_start </td>
+          <td>(</td>
+          <td class="paramtype">oc_cloud_context_t *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="oc__cloud_8h.html#adaa6e94d3d339e364a392045fbc78969">oc_cloud_cb_t</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Start cloud registration process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>cloud context (cannot be NULL) </td></tr>
+    <tr><td class="paramname">cb</td><td>callback function invoked on status change (cannot be NULL) </td></tr>
+    <tr><td class="paramname">data</td><td>user data provided to the status change function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int 0 on success </dd>
+<dd>
+int -1 on error </dd></dl>
+
+</div>
+</div>
+<a id="ad13a763399d71c344f990b6d85b8ed3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad13a763399d71c344f990b6d85b8ed3f">&#9670;&nbsp;</a></span>oc_cloud_manager_stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OC_API int oc_cloud_manager_stop </td>
+          <td>(</td>
+          <td class="paramtype">oc_cloud_context_t *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stop cloud registration process, remove related pending delayed callbacks and clean-up data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>cloud context (cannot be NULL) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int 0 on success </dd>
+<dd>
+int -1 on error </dd></dl>
+
+</div>
+</div>
+<a id="a05cb48518b592f5d518d89461c9e8043"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05cb48518b592f5d518d89461c9e8043">&#9670;&nbsp;</a></span>oc_cloud_publish_resources()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OC_API int oc_cloud_publish_resources </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>device</em></td><td>)</td>
@@ -310,14 +436,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_register</b> 
 
 </div>
 </div>
-<a id="aa39a484a6576b096a8c895f6eb1f2024"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa39a484a6576b096a8c895f6eb1f2024">&#9670;&nbsp;</a></span>oc_cloud_set_published_resources_ttl()</h2>
+<a id="a84c14a3bc7523e1350f7f9f756b5ac4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84c14a3bc7523e1350f7f9f756b5ac4d">&#9670;&nbsp;</a></span>oc_cloud_set_published_resources_ttl()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oc_cloud_set_published_resources_ttl </td>
+          <td class="memname">OC_API void oc_cloud_set_published_resources_ttl </td>
           <td>(</td>
           <td class="paramtype">oc_cloud_context_t *&#160;</td>
           <td class="paramname"><em>ctx</em>, </td>
@@ -353,7 +479,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_register</b> 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__cloud_8h.html">oc_cloud.h</a></li>
-    <li class="footer">Generated on Mon Mar 14 2022 08:42:23 for IoTivity-Lite by
+    <li class="footer">Generated on Fri Mar 18 2022 09:41:24 for IoTivity-Lite by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
