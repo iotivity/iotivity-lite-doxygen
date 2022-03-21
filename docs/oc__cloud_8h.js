@@ -33,6 +33,7 @@ var oc__cloud_8h =
     [ "oc_cloud_deregister", "oc__cloud_8h.html#a7b2f8fa8fe77465c78a34397ba816049", null ],
     [ "oc_cloud_discover_resources", "oc__cloud_8h.html#aad6717b9885e4f7800566b007d31c87c", null ],
     [ "oc_cloud_get_context", "oc__cloud_8h.html#a22b924c040afc36d30699a7ed383b640", null ],
+    [ "oc_cloud_get_identity_cert_chain", "oc__cloud_8h.html#a37c7ef5d19d8cb2ddf63aa6a64bcc85c", null ],
     [ "oc_cloud_get_token_expiry", "oc__cloud_8h.html#af140cbd344f532319e446accda34763e", null ],
     [ "oc_cloud_login", "oc__cloud_8h.html#aa932934364ee13c0288a1abc271769a6", null ],
     [ "oc_cloud_logout", "oc__cloud_8h.html#aa17c235b6b81a13f092a443e8fbc8134", null ],
@@ -43,5 +44,6 @@ var oc__cloud_8h =
     [ "oc_cloud_publish_resources", "oc__cloud_8h.html#a05cb48518b592f5d518d89461c9e8043", null ],
     [ "oc_cloud_refresh_token", "oc__cloud_8h.html#a4e7569124ef59d0066b6d412a182e255", null ],
     [ "oc_cloud_register", "oc__cloud_8h.html#a0217d6fdcb7e85196c5a878c5be116f2", null ],
+    [ "oc_cloud_set_identity_cert_chain", "oc__cloud_8h.html#a15658e05fe949aa899c0df24bd96e201", null ],
     [ "oc_cloud_set_published_resources_ttl", "oc__cloud_8h.html#a84c14a3bc7523e1350f7f9f756b5ac4d", null ]
 ];
