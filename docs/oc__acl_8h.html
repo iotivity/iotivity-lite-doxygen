@@ -165,9 +165,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab0b4c0cd296bdd8a068e6d629ff30de7"><td class="memItemLeft" align="right" valign="top">OC_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__acl_8h.html#ab0b4c0cd296bdd8a068e6d629ff30de7">oc_sec_apply_acl</a> (oc_rep_t *rep, size_t device, bool dumpToStorage, <a class="el" href="oc__acl_8h.html#a85f93e93930876127f8e81a18e3ff08f">oc_sec_on_apply_acl_cb_t</a> on_apply_ace_cb, void *on_apply_ace_data)</td></tr>
-<tr class="memdesc:ab0b4c0cd296bdd8a068e6d629ff30de7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse payload and add/update access control list.  <a href="oc__acl_8h.html#ab0b4c0cd296bdd8a068e6d629ff30de7">More...</a><br /></td></tr>
-<tr class="separator:ab0b4c0cd296bdd8a068e6d629ff30de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc817b2edece053441e069eee56f1fa8"><td class="memItemLeft" align="right" valign="top">OC_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__acl_8h.html#acc817b2edece053441e069eee56f1fa8">oc_sec_apply_acl</a> (oc_rep_t *rep, size_t device, <a class="el" href="oc__acl_8h.html#a85f93e93930876127f8e81a18e3ff08f">oc_sec_on_apply_acl_cb_t</a> on_apply_ace_cb, void *on_apply_ace_data)</td></tr>
+<tr class="memdesc:acc817b2edece053441e069eee56f1fa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse payload and add/update access control list.  <a href="oc__acl_8h.html#acc817b2edece053441e069eee56f1fa8">More...</a><br /></td></tr>
+<tr class="separator:acc817b2edece053441e069eee56f1fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5dfed8d8872d4cd41d1937010238bb80"><td class="memItemLeft" align="right" valign="top">OC_API <a class="el" href="oc__acl_8h.html#a485c09b9417208265dc2eed110bd9c82">oc_sec_acl_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__acl_8h.html#a5dfed8d8872d4cd41d1937010238bb80">oc_sec_get_acl</a> (size_t device)</td></tr>
 <tr class="memdesc:a5dfed8d8872d4cd41d1937010238bb80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get access control list of device.  <a href="oc__acl_8h.html#a5dfed8d8872d4cd41d1937010238bb80">More...</a><br /></td></tr>
 <tr class="separator:a5dfed8d8872d4cd41d1937010238bb80"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -365,8 +365,8 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ab0b4c0cd296bdd8a068e6d629ff30de7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0b4c0cd296bdd8a068e6d629ff30de7">&#9670;&nbsp;</a></span>oc_sec_apply_acl()</h2>
+<a id="acc817b2edece053441e069eee56f1fa8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc817b2edece053441e069eee56f1fa8">&#9670;&nbsp;</a></span>oc_sec_apply_acl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -382,12 +382,6 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>dumpToStorage</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -414,7 +408,6 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">rep</td><td>Payload to parse </td></tr>
     <tr><td class="paramname">device</td><td>Index of the device </td></tr>
-    <tr><td class="paramname">dumpToStorage</td><td>Dump the parsed credentials to storage </td></tr>
     <tr><td class="paramname">on_apply_ace_cb</td><td>Callback invoked when a new access control entry is added or updated </td></tr>
     <tr><td class="paramname">on_apply_ace_data</td><td>User data passed to the on_apply_ace_cb function </td></tr>
   </table>
@@ -673,7 +666,6 @@ int 0 Payload was successfully parsed </dd></dl>
 <div class="ttc" id="aoc__clock_8h_html_a5bf6973bad0f8494b06d8204a4879433"><div class="ttname"><a href="oc__clock_8h.html#a5bf6973bad0f8494b06d8204a4879433">oc_clock_wait</a></div><div class="ttdeci">void oc_clock_wait(oc_clock_time_t t)</div><div class="ttdoc">Wait for a given number of ticks.</div></div>
 <div class="ttc" id="aoc__connectivity_8h_html_a9d56c760b9872172c0c76cba052369e5a0b45c025e658a8e3dd49bc4f67535b62"><div class="ttname"><a href="oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5a0b45c025e658a8e3dd49bc4f67535b62">CSM_NONE</a></div><div class="ttdeci">@ CSM_NONE</div><div class="ttdoc">None.</div><div class="ttdef"><b>Definition:</b> oc_connectivity.h:217</div></div>
 <div class="ttc" id="astructoc__client__response__t_html_a65db7354001aae97f74ce1acb5c8a97a"><div class="ttname"><a href="structoc__client__response__t.html#a65db7354001aae97f74ce1acb5c8a97a">oc_client_response_t::code</a></div><div class="ttdeci">oc_status_t code</div><div class="ttdoc">status of the response</div><div class="ttdef"><b>Definition:</b> oc_client_state.h:59</div></div>
-<div class="ttc" id="aoc__cred_8h_html_ac86914c93bfadcd217e9c49c3088c5c7"><div class="ttname"><a href="oc__cred_8h.html#ac86914c93bfadcd217e9c49c3088c5c7">oc_sec_apply_cred</a></div><div class="ttdeci">OC_API int oc_sec_apply_cred(oc_rep_t *rep, oc_resource_t *resource, oc_endpoint_t *endpoint, bool dumpToStorage, oc_sec_on_apply_cred_cb_t on_apply_cred_cb, void *on_apply_cred_data)</div><div class="ttdoc">parse payload and add/update credentials</div></div>
 <div class="ttc" id="aoc__acl_8h_html_afd8b98696c9f44d51d07404d414421c5a5b1cfa277160e0a1ec205f1d5c3f7857"><div class="ttname"><a href="oc__acl_8h.html#afd8b98696c9f44d51d07404d414421c5a5b1cfa277160e0a1ec205f1d5c3f7857">OC_PERM_RETRIEVE</a></div><div class="ttdeci">@ OC_PERM_RETRIEVE</div><div class="ttdoc">Read, observe, discover permission is granted.</div><div class="ttdef"><b>Definition:</b> oc_acl.h:71</div></div>
 <div class="ttc" id="aoc__core__res_8h_html_a6ae1cf0f4111e7af57394b8cd9a3c51b"><div class="ttname"><a href="oc__core__res_8h.html#a6ae1cf0f4111e7af57394b8cd9a3c51b">oc_core_add_new_device</a></div><div class="ttdeci">oc_device_info_t * oc_core_add_new_device(const char *uri, const char *rt, const char *name, const char *spec_version, const char *data_model_version, oc_core_add_device_cb_t add_device_cb, void *data)</div><div class="ttdoc">Add new devide to the platform.</div></div>
 <div class="ttc" id="aoc__swupdate_8h_html_a8148bdcecd49211d73ad6fe2d6eb2c39a6d402a81caa46c6a1e642a6c0beeb544"><div class="ttname"><a href="oc__swupdate_8h.html#a8148bdcecd49211d73ad6fe2d6eb2c39a6d402a81caa46c6a1e642a6c0beeb544">OC_SWUPDATE_RESULT_LESS_FLASH</a></div><div class="ttdeci">@ OC_SWUPDATE_RESULT_LESS_FLASH</div><div class="ttdoc">not enough FLASH</div><div class="ttdef"><b>Definition:</b> oc_swupdate.h:37</div></div>
@@ -769,7 +761,6 @@ int 0 Payload was successfully parsed </dd></dl>
 <div class="ttc" id="aoc__ri_8h_html_a068a1c38013c32d65427aeed54503a38a8673f08874f1652701f435fabef6c201"><div class="ttname"><a href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38a8673f08874f1652701f435fabef6c201">OC_STATUS_CREATED</a></div><div class="ttdeci">@ OC_STATUS_CREATED</div><div class="ttdoc">Created.</div><div class="ttdef"><b>Definition:</b> oc_ri.h:64</div></div>
 <div class="ttc" id="aoc__network__events_8h_html_abdd165be6caa5026d18f49473b31aa2da122b034cb4a6bb20b5f1770c2095793d"><div class="ttname"><a href="oc__network__events_8h.html#abdd165be6caa5026d18f49473b31aa2da122b034cb4a6bb20b5f1770c2095793d">NETWORK_INTERFACE_DOWN</a></div><div class="ttdeci">@ NETWORK_INTERFACE_DOWN</div><div class="ttdoc">network interface down</div><div class="ttdef"><b>Definition:</b> oc_network_events.h:34</div></div>
 <div class="ttc" id="aoc__cloud_8h_html_a22b924c040afc36d30699a7ed383b640"><div class="ttname"><a href="oc__cloud_8h.html#a22b924c040afc36d30699a7ed383b640">oc_cloud_get_context</a></div><div class="ttdeci">OC_API oc_cloud_context_t * oc_cloud_get_context(size_t device)</div><div class="ttdoc">Get cloud context for device.</div></div>
-<div class="ttc" id="aoc__acl_8h_html_ab0b4c0cd296bdd8a068e6d629ff30de7"><div class="ttname"><a href="oc__acl_8h.html#ab0b4c0cd296bdd8a068e6d629ff30de7">oc_sec_apply_acl</a></div><div class="ttdeci">OC_API int oc_sec_apply_acl(oc_rep_t *rep, size_t device, bool dumpToStorage, oc_sec_on_apply_acl_cb_t on_apply_ace_cb, void *on_apply_ace_data)</div><div class="ttdoc">Parse payload and add/update access control list.</div></div>
 <div class="ttc" id="aoc__acl_8h_html_ab98a20bf3bbf69e66b7fe630e83e8b4dabaa1bdd471e09a07e11f3146ab705f39"><div class="ttname"><a href="oc__acl_8h.html#ab98a20bf3bbf69e66b7fe630e83e8b4dabaa1bdd471e09a07e11f3146ab705f39">OC_SUBJECT_ROLE</a></div><div class="ttdeci">@ OC_SUBJECT_ROLE</div><div class="ttdoc">Security role specified as an Authority and Rolename.</div><div class="ttdef"><b>Definition:</b> oc_acl.h:84</div></div>
 <div class="ttc" id="aoc__cred_8h_html_a08d82246e2025421925afbff47e0b31f"><div class="ttname"><a href="oc__cred_8h.html#a08d82246e2025421925afbff47e0b31f">oc_cred_data_t</a></div><div class="ttdeci">struct oc_cred_data_t oc_cred_data_t</div><div class="ttdoc">credential data info</div></div>
 <div class="ttc" id="agroup__doc__module__tag__client__state_html_ga003b754ee83012cc9b65e4a738d34751"><div class="ttname"><a href="group__doc__module__tag__client__state.html#ga003b754ee83012cc9b65e4a738d34751">oc_do_ip_discovery</a></div><div class="ttdeci">bool oc_do_ip_discovery(const char *rt, oc_discovery_handler_t handler, void *user_data)</div><div class="ttdoc">Discover all servers that have a resource type.</div></div>
@@ -910,6 +901,7 @@ int 0 Payload was successfully parsed </dd></dl>
 <div class="ttc" id="aoc__obt_8h_html_a00578bf9f0ee12756189994c4a6d7a8e"><div class="ttname"><a href="oc__obt_8h.html#a00578bf9f0ee12756189994c4a6d7a8e">oc_obt_provision_role_wildcard_ace</a></div><div class="ttdeci">int oc_obt_provision_role_wildcard_ace(oc_uuid_t *subject, const char *role, const char *authority, oc_obt_device_status_cb_t cb, void *data)</div><div class="ttdoc">Provision a role ACE for the wildcard &quot;*&quot; resource with RW permissions.</div></div>
 <div class="ttc" id="agroup__doc__module__tag__server__side_html_ga1497c8c36b39a1c9cca7972caa40a92c"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga1497c8c36b39a1c9cca7972caa40a92c">oc_set_con_write_cb</a></div><div class="ttdeci">void oc_set_con_write_cb(oc_con_write_cb_t callback)</div><div class="ttdoc">Sets the callback to receive change notifications for the oic.wk.con resource.</div></div>
 <div class="ttc" id="aoc__rep_8h_html_ab29eccc16d4f246204604d20ac33859c"><div class="ttname"><a href="oc__rep_8h.html#ab29eccc16d4f246204604d20ac33859c">oc_rep_get_byte_string_array</a></div><div class="ttdeci">bool oc_rep_get_byte_string_array(oc_rep_t *rep, const char *key, oc_string_array_t *value, size_t *size)</div><div class="ttdoc">Read an byte string array value from an oc_rep_t</div></div>
+<div class="ttc" id="aoc__acl_8h_html_acc817b2edece053441e069eee56f1fa8"><div class="ttname"><a href="oc__acl_8h.html#acc817b2edece053441e069eee56f1fa8">oc_sec_apply_acl</a></div><div class="ttdeci">OC_API int oc_sec_apply_acl(oc_rep_t *rep, size_t device, oc_sec_on_apply_acl_cb_t on_apply_ace_cb, void *on_apply_ace_data)</div><div class="ttdoc">Parse payload and add/update access control list.</div></div>
 <div class="ttc" id="aoc__client__state_8h_html_a37581fc662e5c9cecf258875b4429ca2"><div class="ttname"><a href="oc__client__state_8h.html#a37581fc662e5c9cecf258875b4429ca2">oc_ri_find_client_cb_by_mid</a></div><div class="ttdeci">oc_client_cb_t * oc_ri_find_client_cb_by_mid(uint16_t mid)</div><div class="ttdoc">find the client callback info by message id (mid)</div></div>
 <div class="ttc" id="aoc__assert_8h_html_a7e2346d59d7240c309157eb00ad4a543"><div class="ttname"><a href="oc__assert_8h.html#a7e2346d59d7240c309157eb00ad4a543">abort_impl</a></div><div class="ttdeci">void abort_impl(void)</div><div class="ttdoc">abort application</div></div>
 <div class="ttc" id="aoc__core__res_8h_html_ae3cd5e15ed65a998a6ff9534defb4b90"><div class="ttname"><a href="oc__core__res_8h.html#ae3cd5e15ed65a998a6ff9534defb4b90">oc_core_is_SVR</a></div><div class="ttdeci">bool oc_core_is_SVR(oc_resource_t *resource, size_t device)</div><div class="ttdoc">determine if a resource is Security Vertical Resource</div></div>
@@ -948,6 +940,7 @@ int 0 Payload was successfully parsed </dd></dl>
 <div class="ttc" id="astructoc__client__cb__t_html_a4faf01c32b64a470a54e72e14dc5a5b7"><div class="ttname"><a href="structoc__client__cb__t.html#a4faf01c32b64a470a54e72e14dc5a5b7">oc_client_cb_t::handler</a></div><div class="ttdeci">oc_client_handler_t handler</div><div class="ttdoc">handler information</div><div class="ttdef"><b>Definition:</b> oc_client_state.h:115</div></div>
 <div class="ttc" id="astructoc__resource__s_html_aabebe00e8d262449e42aa92dcc29cd79"><div class="ttname"><a href="structoc__resource__s.html#aabebe00e8d262449e42aa92dcc29cd79">oc_resource_s::uri</a></div><div class="ttdeci">oc_string_t uri</div><div class="ttdoc">uri of the resource</div><div class="ttdef"><b>Definition:</b> oc_ri.h:301</div></div>
 <div class="ttc" id="astructoc__resource__s_html_ab46330ee76a0d404bcadf5d1d6984018"><div class="ttname"><a href="structoc__resource__s.html#ab46330ee76a0d404bcadf5d1d6984018">oc_resource_s::types</a></div><div class="ttdeci">oc_string_array_t types</div><div class="ttdoc">&quot;rt&quot; types of the resource</div><div class="ttdef"><b>Definition:</b> oc_ri.h:302</div></div>
+<div class="ttc" id="aoc__cred_8h_html_aace1e016af67e77d670e75e55823bb12"><div class="ttname"><a href="oc__cred_8h.html#aace1e016af67e77d670e75e55823bb12">oc_sec_apply_cred</a></div><div class="ttdeci">OC_API int oc_sec_apply_cred(oc_rep_t *rep, oc_resource_t *resource, oc_endpoint_t *endpoint, oc_sec_on_apply_cred_cb_t on_apply_cred_cb, void *on_apply_cred_data)</div><div class="ttdoc">parse payload and add/update credentials</div></div>
 <div class="ttc" id="aoc__helpers_8h_html_a79bd60028e1af917dc8f05239e2f23bc"><div class="ttname"><a href="oc__helpers_8h.html#a79bd60028e1af917dc8f05239e2f23bc">_oc_alloc_string_array</a></div><div class="ttdeci">void _oc_alloc_string_array(oc_string_array_t *ocstringarray, size_t size)</div><div class="ttdoc">allocate string array</div></div>
 <div class="ttc" id="aoc__ri_8h_html_ab11cdc335264cb1c0fe63731b159eadd"><div class="ttname"><a href="oc__ri_8h.html#ab11cdc335264cb1c0fe63731b159eadd">oc_request_t</a></div><div class="ttdeci">struct oc_request_t oc_request_t</div><div class="ttdoc">request information structure</div></div>
 <div class="ttc" id="agroup__doc__module__tag__server__side_html_gacc374cc9a8acc977db8f9f27dc3c593c"><div class="ttname"><a href="group__doc__module__tag__server__side.html#gacc374cc9a8acc977db8f9f27dc3c593c">oc_resource_bind_resource_interface</a></div><div class="ttdeci">void oc_resource_bind_resource_interface(oc_resource_t *resource, oc_interface_mask_t iface_mask)</div><div class="ttdoc">Add the supported interface(s) to the resource.</div></div>
@@ -1186,7 +1179,7 @@ int 0 Payload was successfully parsed </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__acl_8h.html">oc_acl.h</a></li>
-    <li class="footer">Generated on Wed Mar 23 2022 08:36:50 for IoTivity-Lite by
+    <li class="footer">Generated on Wed Mar 23 2022 09:09:36 for IoTivity-Lite by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

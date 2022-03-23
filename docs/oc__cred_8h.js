@@ -38,7 +38,7 @@ var oc__cred_8h =
     [ "oc_cred_parse_encoding", "oc__cred_8h.html#acb11bc83cfbcb55c7e7fa6228c465f7e", null ],
     [ "oc_cred_read_credusage", "oc__cred_8h.html#ad880c1684c127f2c6cdc8e51e0a7aad3", null ],
     [ "oc_cred_read_encoding", "oc__cred_8h.html#a3e3ba074542e918c370fa3361bf9511f", null ],
-    [ "oc_sec_apply_cred", "oc__cred_8h.html#ac86914c93bfadcd217e9c49c3088c5c7", null ],
+    [ "oc_sec_apply_cred", "oc__cred_8h.html#aace1e016af67e77d670e75e55823bb12", null ],
     [ "oc_sec_get_cred_by_credid", "oc__cred_8h.html#a8151d8c3647369d047541fe36389545d", null ],
     [ "oc_sec_get_creds", "oc__cred_8h.html#a9925d7a29e2a6edcd28c2ce6ac6defdf", null ],
     [ "oc_sec_remove_cred_by_credid", "oc__cred_8h.html#a80d03c4bf42972fefbc7516643348c56", null ]
