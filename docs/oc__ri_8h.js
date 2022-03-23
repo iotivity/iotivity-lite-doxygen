@@ -146,6 +146,7 @@ var oc__ri_8h =
     [ "oc_ri_add_resource", "oc__ri_8h.html#a1481c68aff7317781a4af49dd53289ea", null ],
     [ "oc_ri_add_timed_event_callback_ticks", "oc__ri_8h.html#a05de71c3b10d3286e8f6e6b8f784e959", null ],
     [ "oc_ri_alloc_resource", "oc__ri_8h.html#a7147ccded944c339e039abb43e485619", null ],
+    [ "oc_ri_dealloc_resource", "oc__ri_8h.html#a8bd8b3d42654b9209dd1a51f468005c4", null ],
     [ "oc_ri_delete_resource", "oc__ri_8h.html#a441e6c2103a50c5fc16933739ff0b6c1", null ],
     [ "oc_ri_free_resource_properties", "oc__ri_8h.html#a2ba4762ae0434f521a5e73e0a63dc8d8", null ],
     [ "oc_ri_get_app_resource_by_uri", "oc__ri_8h.html#ab3e169480a3cd53f3f69b2e60ddb4427", null ],
