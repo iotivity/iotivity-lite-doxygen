@@ -165,11 +165,14 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a0e30bebd3a26198ba8af942ffea12a9b"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__acl_8h.html#a0e30bebd3a26198ba8af942ffea12a9b">oc_sec_acl_add_bootstrap_acl</a> (size_t device)</td></tr>
+<tr class="memdesc:a0e30bebd3a26198ba8af942ffea12a9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add initial access control list for core resources of a device.  <a href="oc__acl_8h.html#a0e30bebd3a26198ba8af942ffea12a9b">More...</a><br /></td></tr>
+<tr class="separator:a0e30bebd3a26198ba8af942ffea12a9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc817b2edece053441e069eee56f1fa8"><td class="memItemLeft" align="right" valign="top">OC_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__acl_8h.html#acc817b2edece053441e069eee56f1fa8">oc_sec_apply_acl</a> (oc_rep_t *rep, size_t device, <a class="el" href="oc__acl_8h.html#a85f93e93930876127f8e81a18e3ff08f">oc_sec_on_apply_acl_cb_t</a> on_apply_ace_cb, void *on_apply_ace_data)</td></tr>
 <tr class="memdesc:acc817b2edece053441e069eee56f1fa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse payload and add/update access control list.  <a href="oc__acl_8h.html#acc817b2edece053441e069eee56f1fa8">More...</a><br /></td></tr>
 <tr class="separator:acc817b2edece053441e069eee56f1fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5dfed8d8872d4cd41d1937010238bb80"><td class="memItemLeft" align="right" valign="top">OC_API <a class="el" href="oc__acl_8h.html#a485c09b9417208265dc2eed110bd9c82">oc_sec_acl_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__acl_8h.html#a5dfed8d8872d4cd41d1937010238bb80">oc_sec_get_acl</a> (size_t device)</td></tr>
-<tr class="memdesc:a5dfed8d8872d4cd41d1937010238bb80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get access control list of device.  <a href="oc__acl_8h.html#a5dfed8d8872d4cd41d1937010238bb80">More...</a><br /></td></tr>
+<tr class="memdesc:a5dfed8d8872d4cd41d1937010238bb80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get access control list of a device.  <a href="oc__acl_8h.html#a5dfed8d8872d4cd41d1937010238bb80">More...</a><br /></td></tr>
 <tr class="separator:a5dfed8d8872d4cd41d1937010238bb80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
@@ -365,6 +368,32 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a0e30bebd3a26198ba8af942ffea12a9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e30bebd3a26198ba8af942ffea12a9b">&#9670;&nbsp;</a></span>oc_sec_acl_add_bootstrap_acl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OC_API void oc_sec_acl_add_bootstrap_acl </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add initial access control list for core resources of a device. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>Index of the device </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="acc817b2edece053441e069eee56f1fa8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acc817b2edece053441e069eee56f1fa8">&#9670;&nbsp;</a></span>oc_sec_apply_acl()</h2>
 
@@ -435,7 +464,7 @@ int 0 Payload was successfully parsed </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Get access control list of device. </p>
+<p>Get access control list of a device. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">device</td><td>Index of the device </td></tr>
@@ -514,10 +543,10 @@ int 0 Payload was successfully parsed </dd></dl>
 <div class="ttc" id="aoc__ri_8h_html_a95fa27c60f90b8e3b976f4ca5f04aab2a00480399ba440abd04780586a8b14142"><div class="ttname"><a href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2a00480399ba440abd04780586a8b14142">OC_IF_STARTUP</a></div><div class="ttdeci">@ OC_IF_STARTUP</div><div class="ttdoc">oic.if.startup</div><div class="ttdef"><b>Definition:</b> oc_ri.h:178</div></div>
 <div class="ttc" id="astructoc__sec__acl__s_html"><div class="ttname"><a href="structoc__sec__acl__s.html">oc_sec_acl_s</a></div><div class="ttdoc">security access control list</div><div class="ttdef"><b>Definition:</b> oc_acl.h:38</div></div>
 <div class="ttc" id="astructoc__device__info__t_html_a0377fc7c3515160001ef8484f689292a"><div class="ttname"><a href="structoc__device__info__t.html#a0377fc7c3515160001ef8484f689292a">oc_device_info_t::icv</a></div><div class="ttdeci">oc_string_t icv</div><div class="ttdoc">specification version</div><div class="ttdef"><b>Definition:</b> oc_core_res.h:62</div></div>
-<div class="ttc" id="aoc__acl_8h_html_a5dfed8d8872d4cd41d1937010238bb80"><div class="ttname"><a href="oc__acl_8h.html#a5dfed8d8872d4cd41d1937010238bb80">oc_sec_get_acl</a></div><div class="ttdeci">OC_API oc_sec_acl_t * oc_sec_get_acl(size_t device)</div><div class="ttdoc">Get access control list of device.</div></div>
+<div class="ttc" id="aoc__acl_8h_html_a5dfed8d8872d4cd41d1937010238bb80"><div class="ttname"><a href="oc__acl_8h.html#a5dfed8d8872d4cd41d1937010238bb80">oc_sec_get_acl</a></div><div class="ttdeci">OC_API oc_sec_acl_t * oc_sec_get_acl(size_t device)</div><div class="ttdoc">Get access control list of a device.</div></div>
 <div class="ttc" id="aoc__obt_8h_html_a6c70bc30db1c49d7de3280cf15f9d9fa"><div class="ttname"><a href="oc__obt_8h.html#a6c70bc30db1c49d7de3280cf15f9d9fa">oc_obt_provision_role_certificate</a></div><div class="ttdeci">int oc_obt_provision_role_certificate(oc_role_t *roles, oc_uuid_t *uuid, oc_obt_status_cb_t cb, void *data)</div><div class="ttdoc">Provision a role certificate to a Client application.</div></div>
 <div class="ttc" id="aoc__uuid_8h_html_ab4b98fa6b46dc43e8f057bf521b2936d"><div class="ttname"><a href="oc__uuid_8h.html#ab4b98fa6b46dc43e8f057bf521b2936d">oc_gen_uuid</a></div><div class="ttdeci">OC_API void oc_gen_uuid(oc_uuid_t *uuid)</div><div class="ttdoc">Generate a random Universally Unique IDentifier (UUID)</div></div>
-<div class="ttc" id="aoc__acl_8h_html_a85f93e93930876127f8e81a18e3ff08f"><div class="ttname"><a href="oc__acl_8h.html#a85f93e93930876127f8e81a18e3ff08f">oc_sec_on_apply_acl_cb_t</a></div><div class="ttdeci">void(* oc_sec_on_apply_acl_cb_t)(oc_uuid_t rowneruuid, oc_sec_ace_t *ace, void *user_data)</div><div class="ttdoc">Callback invoked with a created / updated access control entry.</div><div class="ttdef"><b>Definition:</b> oc_acl.h:146</div></div>
+<div class="ttc" id="aoc__acl_8h_html_a85f93e93930876127f8e81a18e3ff08f"><div class="ttname"><a href="oc__acl_8h.html#a85f93e93930876127f8e81a18e3ff08f">oc_sec_on_apply_acl_cb_t</a></div><div class="ttdeci">void(* oc_sec_on_apply_acl_cb_t)(oc_uuid_t rowneruuid, oc_sec_ace_t *ace, void *user_data)</div><div class="ttdoc">Callback invoked with a created / updated access control entry.</div><div class="ttdef"><b>Definition:</b> oc_acl.h:154</div></div>
 <div class="ttc" id="aoc__blockwise_8h_html_a491a93728548c3c7369dcb0ef612111daf0eaeec56b192ce13ded1cbb1f90d94a"><div class="ttname"><a href="oc__blockwise_8h.html#a491a93728548c3c7369dcb0ef612111daf0eaeec56b192ce13ded1cbb1f90d94a">OC_BLOCKWISE_CLIENT</a></div><div class="ttdeci">@ OC_BLOCKWISE_CLIENT</div><div class="ttdoc">client</div><div class="ttdef"><b>Definition:</b> oc_blockwise.h:37</div></div>
 <div class="ttc" id="astructoc__client__response__t_html_ac4a3f18156ea9b9a3bf4492e673dc615"><div class="ttname"><a href="structoc__client__response__t.html#ac4a3f18156ea9b9a3bf4492e673dc615">oc_client_response_t::client_cb</a></div><div class="ttdeci">void * client_cb</div><div class="ttdoc">callback for the response to the calling client</div><div class="ttdef"><b>Definition:</b> oc_client_state.h:56</div></div>
 <div class="ttc" id="aoc__api_8h_html_a91c3c40bc00b2b107948a55a969fc0c9"><div class="ttname"><a href="oc__api_8h.html#a91c3c40bc00b2b107948a55a969fc0c9">oc_ownership_status_cb_t</a></div><div class="ttdeci">void(* oc_ownership_status_cb_t)(const oc_uuid_t *device_uuid, size_t device_index, bool owned, void *user_data)</div><div class="ttdoc">Callback invoked when the &quot;owned&quot; property of the doxm is changed.</div><div class="ttdef"><b>Definition:</b> oc_api.h:589</div></div>
@@ -1025,6 +1054,7 @@ int 0 Payload was successfully parsed </dd></dl>
 <div class="ttc" id="agroup__doc__module__tag__client__state_html_ga0ea338b5dc0e21469896f08e3238cc42"><div class="ttname"><a href="group__doc__module__tag__client__state.html#ga0ea338b5dc0e21469896f08e3238cc42">oc_do_realm_local_ipv6_discovery_all</a></div><div class="ttdeci">bool oc_do_realm_local_ipv6_discovery_all(oc_discovery_all_handler_t handler, void *user_data)</div><div class="ttdoc">Discover all servers using the realm-local scope.</div></div>
 <div class="ttc" id="aoc__client__state_8h_html_a983b138b2c42a68570ba23e19deb19b3afb9e0389577f8dde325ec0e2d131edec"><div class="ttname"><a href="oc__client__state_8h.html#a983b138b2c42a68570ba23e19deb19b3afb9e0389577f8dde325ec0e2d131edec">OC_STOP_DISCOVERY</a></div><div class="ttdeci">@ OC_STOP_DISCOVERY</div><div class="ttdoc">stop discovering (also no more data)</div><div class="ttdef"><b>Definition:</b> oc_client_state.h:68</div></div>
 <div class="ttc" id="astructoc__device__info__t_html_a166cce7286659ef193d310d9efd8c1ad"><div class="ttname"><a href="structoc__device__info__t.html#a166cce7286659ef193d310d9efd8c1ad">oc_device_info_t::name</a></div><div class="ttdeci">oc_string_t name</div><div class="ttdoc">name of the device</div><div class="ttdef"><b>Definition:</b> oc_core_res.h:61</div></div>
+<div class="ttc" id="aoc__acl_8h_html_a0e30bebd3a26198ba8af942ffea12a9b"><div class="ttname"><a href="oc__acl_8h.html#a0e30bebd3a26198ba8af942ffea12a9b">oc_sec_acl_add_bootstrap_acl</a></div><div class="ttdeci">OC_API void oc_sec_acl_add_bootstrap_acl(size_t device)</div><div class="ttdoc">Add initial access control list for core resources of a device.</div></div>
 <div class="ttc" id="aoc__core__res_8h_html_ae047207ba3bd0e6109eb5516e2557412"><div class="ttname"><a href="oc__core__res_8h.html#ae047207ba3bd0e6109eb5516e2557412">oc_core_init</a></div><div class="ttdeci">void oc_core_init(void)</div><div class="ttdoc">initialize the core functionality</div></div>
 <div class="ttc" id="aoc__ri_8h_html_a068a1c38013c32d65427aeed54503a38a0bc6332d8f2a693d0945dcf0b4347d8b"><div class="ttname"><a href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38a0bc6332d8f2a693d0945dcf0b4347d8b">OC_STATUS_REQUEST_ENTITY_TOO_LARGE</a></div><div class="ttdeci">@ OC_STATUS_REQUEST_ENTITY_TOO_LARGE</div><div class="ttdoc">Request Entity Too Large.</div><div class="ttdef"><b>Definition:</b> oc_ri.h:75</div></div>
 <div class="ttc" id="aoc__ri_8h_html_a83161604a805e3a951254864d16a714fa51e4c9c0968dba0df5043a7d25f4e932"><div class="ttname"><a href="oc__ri_8h.html#a83161604a805e3a951254864d16a714fa51e4c9c0968dba0df5043a7d25f4e932">APPLICATION_SENML_CBOR</a></div><div class="ttdeci">@ APPLICATION_SENML_CBOR</div><div class="ttdoc">application/senml+cbor</div><div class="ttdef"><b>Definition:</b> oc_ri.h:120</div></div>
@@ -1179,7 +1209,7 @@ int 0 Payload was successfully parsed </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__acl_8h.html">oc_acl.h</a></li>
-    <li class="footer">Generated on Wed Mar 23 2022 09:09:36 for IoTivity-Lite by
+    <li class="footer">Generated on Mon Mar 28 2022 09:39:29 for IoTivity-Lite by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

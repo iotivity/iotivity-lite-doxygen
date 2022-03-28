@@ -221,6 +221,7 @@ var NAVTREEINDEX0 =
 "index.html":[0],
 "modules.html":[1],
 "oc__acl_8h.html":[3,0,0],
+"oc__acl_8h.html#a0e30bebd3a26198ba8af942ffea12a9b":[3,0,0,13],
 "oc__acl_8h.html#a1e7d2ee5709877a0e75a8e048e17df1f":[3,0,0,12],
 "oc__acl_8h.html#a1e7d2ee5709877a0e75a8e048e17df1fa2001231471c769e94a8a9a96d134e24d":[3,0,0,12,3],
 "oc__acl_8h.html#a1e7d2ee5709877a0e75a8e048e17df1fa7a9d72599e3ecc53301b6b0b9dcf2b8a":[3,0,0,12,2],
@@ -229,7 +230,7 @@ var NAVTREEINDEX0 =
 "oc__acl_8h.html#a2a072aa75b749c3bf40379d78c9e73a6":[3,0,0,4],
 "oc__acl_8h.html#a485c09b9417208265dc2eed110bd9c82":[3,0,0,7],
 "oc__acl_8h.html#a5ca2f3f4a98c831ae82840c28e67e81f":[3,0,0,5],
-"oc__acl_8h.html#a5dfed8d8872d4cd41d1937010238bb80":[3,0,0,14],
+"oc__acl_8h.html#a5dfed8d8872d4cd41d1937010238bb80":[3,0,0,15],
 "oc__acl_8h.html#a78c4f9f6c2a1be18591d7e9520a73029":[3,0,0,9],
 "oc__acl_8h.html#a78c4f9f6c2a1be18591d7e9520a73029a29f891201b9e45f0161ec1390b81a4e9":[3,0,0,9,0],
 "oc__acl_8h.html#a78c4f9f6c2a1be18591d7e9520a73029a7e84f6e6032db9fda96167fd6657373f":[3,0,0,9,1],
@@ -239,7 +240,7 @@ var NAVTREEINDEX0 =
 "oc__acl_8h.html#ab98a20bf3bbf69e66b7fe630e83e8b4daae0f1c9a82108c528ee4aa452d79aa55":[3,0,0,11,0],
 "oc__acl_8h.html#ab98a20bf3bbf69e66b7fe630e83e8b4dabaa1bdd471e09a07e11f3146ab705f39":[3,0,0,11,1],
 "oc__acl_8h.html#ab98a20bf3bbf69e66b7fe630e83e8b4dac5d30185c4faf24f548504fe0fec939e":[3,0,0,11,2],
-"oc__acl_8h.html#acc817b2edece053441e069eee56f1fa8":[3,0,0,13],
+"oc__acl_8h.html#acc817b2edece053441e069eee56f1fa8":[3,0,0,14],
 "oc__acl_8h.html#afd8b98696c9f44d51d07404d414421c5":[3,0,0,10],
 "oc__acl_8h.html#afd8b98696c9f44d51d07404d414421c5a5b1cfa277160e0a1ec205f1d5c3f7857":[3,0,0,10,2],
 "oc__acl_8h.html#afd8b98696c9f44d51d07404d414421c5a8eda312176b03576775888f1f9d8383e":[3,0,0,10,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "oc__acl_8h.html#afd8b98696c9f44d51d07404d414421c5adbd92fc7b5de899caf2f98bf449b1280":[3,0,0,10,1],
 "oc__acl_8h.html#afd8b98696c9f44d51d07404d414421c5afa73180fee00be16035f83e58a1d0777":[3,0,0,10,5],
 "oc__api_8h.html":[3,0,1],
-"oc__api_8h.html#a0168913152597d658554d6bec6a833d2":[3,0,1,84],
-"oc__api_8h.html#a07db38d877a6ecbeb92ba881925f09c3":[3,0,1,3]
+"oc__api_8h.html#a0168913152597d658554d6bec6a833d2":[3,0,1,84]
 };

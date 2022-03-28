@@ -32,6 +32,7 @@ var oc__acl_8h =
       [ "OC_ACE_WC_ALL_SECURED", "oc__acl_8h.html#a1e7d2ee5709877a0e75a8e048e17df1fa7a9d72599e3ecc53301b6b0b9dcf2b8a", null ],
       [ "OC_ACE_WC_ALL_PUBLIC", "oc__acl_8h.html#a1e7d2ee5709877a0e75a8e048e17df1fa2001231471c769e94a8a9a96d134e24d", null ]
     ] ],
+    [ "oc_sec_acl_add_bootstrap_acl", "oc__acl_8h.html#a0e30bebd3a26198ba8af942ffea12a9b", null ],
     [ "oc_sec_apply_acl", "oc__acl_8h.html#acc817b2edece053441e069eee56f1fa8", null ],
     [ "oc_sec_get_acl", "oc__acl_8h.html#a5dfed8d8872d4cd41d1937010238bb80", null ]
 ];
