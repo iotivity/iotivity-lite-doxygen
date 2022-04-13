@@ -13,5 +13,6 @@ var structoc__sec__cred__t =
     [ "publicdata", "structoc__sec__cred__t.html#a6bd1a2c8f44999793a35cda7a1e141fb", null ],
     [ "role", "structoc__sec__cred__t.html#a30e7e74b551dbcb6cc31bafc4659d245", null ],
     [ "role", "structoc__sec__cred__t.html#af2adc246175c6b08f5ec49639386a2a0", null ],
-    [ "subjectuuid", "structoc__sec__cred__t.html#a992cf7b399b7823c23c871ffecd67225", null ]
+    [ "subjectuuid", "structoc__sec__cred__t.html#a992cf7b399b7823c23c871ffecd67225", null ],
+    [ "tag", "structoc__sec__cred__t.html#a2fe57bbf309da7820e3e3fb9ad0fc2ef", null ]
 ];
