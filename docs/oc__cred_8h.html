@@ -129,7 +129,7 @@ Typedefs</h2></td></tr>
 <tr class="memdesc:a1faad59ca383c11ee62dca31afcbeae9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Security encoding information.  <a href="oc__cred_8h.html#a1faad59ca383c11ee62dca31afcbeae9">More...</a><br /></td></tr>
 <tr class="separator:a1faad59ca383c11ee62dca31afcbeae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d7834c30f61c858ee25c8ba8a47a2c6"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cred_8h.html#a5d7834c30f61c858ee25c8ba8a47a2c6">oc_sec_on_apply_cred_cb_t</a>) (oc_sec_on_apply_cred_data_t data, void *user_data)</td></tr>
-<tr class="memdesc:a5d7834c30f61c858ee25c8ba8a47a2c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback invoked with a created / updated credential.  <a href="oc__cred_8h.html#a5d7834c30f61c858ee25c8ba8a47a2c6">More...</a><br /></td></tr>
+<tr class="memdesc:a5d7834c30f61c858ee25c8ba8a47a2c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">callback invoked with a created / updated credential  <a href="oc__cred_8h.html#a5d7834c30f61c858ee25c8ba8a47a2c6">More...</a><br /></td></tr>
 <tr class="separator:a5d7834c30f61c858ee25c8ba8a47a2c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d8d60ff451f94a8cf1ddfa8450a3203"><td class="memItemLeft" align="right" valign="top"><a id="a5d8d60ff451f94a8cf1ddfa8450a3203"></a>
 typedef struct oc_sec_on_apply_cred_data_t&#160;</td><td class="memItemRight" valign="bottom"><b>oc_sec_on_apply_cred_data_t</b></td></tr>
@@ -185,7 +185,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:acb11bc83cfbcb55c7e7fa6228c465f7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">parse credential encoding string to type  <a href="oc__cred_8h.html#acb11bc83cfbcb55c7e7fa6228c465f7e">More...</a><br /></td></tr>
 <tr class="separator:acb11bc83cfbcb55c7e7fa6228c465f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad880c1684c127f2c6cdc8e51e0a7aad3"><td class="memItemLeft" align="right" valign="top">const OC_API char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cred_8h.html#ad880c1684c127f2c6cdc8e51e0a7aad3">oc_cred_read_credusage</a> (<a class="el" href="oc__cred_8h.html#af766cf746fb6d10b2f502d7f4f76e29e">oc_sec_credusage_t</a> credusage)</td></tr>
-<tr class="memdesc:ad880c1684c127f2c6cdc8e51e0a7aad3"><td class="mdescLeft">&#160;</td><td class="mdescRight">read credential usaga  <a href="oc__cred_8h.html#ad880c1684c127f2c6cdc8e51e0a7aad3">More...</a><br /></td></tr>
+<tr class="memdesc:ad880c1684c127f2c6cdc8e51e0a7aad3"><td class="mdescLeft">&#160;</td><td class="mdescRight">read credential usage  <a href="oc__cred_8h.html#ad880c1684c127f2c6cdc8e51e0a7aad3">More...</a><br /></td></tr>
 <tr class="separator:ad880c1684c127f2c6cdc8e51e0a7aad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e3ba074542e918c370fa3361bf9511f"><td class="memItemLeft" align="right" valign="top">const OC_API char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cred_8h.html#a3e3ba074542e918c370fa3361bf9511f">oc_cred_read_encoding</a> (<a class="el" href="oc__cred_8h.html#a4bf6d443c0cedb2c9ac90cc866cb28b3">oc_sec_encoding_t</a> encoding)</td></tr>
 <tr class="memdesc:a3e3ba074542e918c370fa3361bf9511f"><td class="mdescLeft">&#160;</td><td class="mdescRight">read credential encoding  <a href="oc__cred_8h.html#a3e3ba074542e918c370fa3361bf9511f">More...</a><br /></td></tr>
@@ -315,11 +315,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Callback invoked with a created / updated credential. </p>
+<p>callback invoked with a created / updated credential </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td>Data with new/updated credential data </td></tr>
-    <tr><td class="paramname">user_data</td><td>User data passed from the caller </td></tr>
+    <tr><td class="paramname">data</td><td>data with new/updated credential data </td></tr>
+    <tr><td class="paramname">user_data</td><td>user data passed from the caller </td></tr>
   </table>
   </dd>
 </dl>
@@ -505,7 +505,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>read credential usaga </p>
+<p>read credential usage </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">credusage</td><td>credential usage as type </td></tr>
@@ -752,7 +752,7 @@ bool false otherwise </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__cred_8h.html">oc_cred.h</a></li>
-    <li class="footer">Generated on Wed Apr 13 2022 10:25:15 for IoTivity-Lite by
+    <li class="footer">Generated on Thu Apr 14 2022 13:01:45 for IoTivity-Lite by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
