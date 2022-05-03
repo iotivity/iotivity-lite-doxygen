@@ -114,10 +114,10 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_byte_string_array_get_allocated_size</b>(ocstringarray)&#160;&#160;&#160;((ocstringarray).size / STRING_ARRAY_ITEM_MAX_LEN)</td></tr>
 <tr class="separator:aaf03f4fb5f6f370b7b3d9b919eb22321"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3c74955eb2906689a12e2554597d949"><td class="memItemLeft" align="right" valign="top"><a id="aa3c74955eb2906689a12e2554597d949"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_byte_string_array_get_item</b>(ocstringarray,  index)&#160;&#160;&#160;(<a class="el" href="oc__helpers_8h.html#a5bd70ca9b1f0250da0e76740ce99f7b4">oc_string</a>(ocstringarray) + index * STRING_ARRAY_ITEM_MAX_LEN + 1)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_byte_string_array_get_item</b>(ocstringarray,  index)&#160;&#160;&#160;(<a class="el" href="oc__helpers_8h.html#a5bd70ca9b1f0250da0e76740ce99f7b4">oc_string</a>(ocstringarray) + (index)*STRING_ARRAY_ITEM_MAX_LEN + 1)</td></tr>
 <tr class="separator:aa3c74955eb2906689a12e2554597d949"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23c2fcbec21e74ec2253bf58e21390ad"><td class="memItemLeft" align="right" valign="top"><a id="a23c2fcbec21e74ec2253bf58e21390ad"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_byte_string_array_get_item_size</b>(ocstringarray,  index)&#160;&#160;&#160;(*(<a class="el" href="oc__helpers_8h.html#a5bd70ca9b1f0250da0e76740ce99f7b4">oc_string</a>(ocstringarray) + index * STRING_ARRAY_ITEM_MAX_LEN))</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_byte_string_array_get_item_size</b>(ocstringarray,  index)&#160;&#160;&#160;(*(<a class="el" href="oc__helpers_8h.html#a5bd70ca9b1f0250da0e76740ce99f7b4">oc_string</a>(ocstringarray) + (index)*STRING_ARRAY_ITEM_MAX_LEN))</td></tr>
 <tr class="separator:a23c2fcbec21e74ec2253bf58e21390ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34785f17900d0b88e30c5fdf496dd7bf"><td class="memItemLeft" align="right" valign="top"><a id="a34785f17900d0b88e30c5fdf496dd7bf"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_byte_string_array_set_item</b>(ocstringarray,  str,  str_len,  index)&#160;&#160;&#160;(_oc_copy_byte_string_to_array(&amp;(ocstringarray), str, str_len, index))</td></tr>
@@ -183,7 +183,7 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_string_array_get_allocated_size</b>(ocstringarray)&#160;&#160;&#160;((ocstringarray).size / STRING_ARRAY_ITEM_MAX_LEN)</td></tr>
 <tr class="separator:a8d4225a6ded52a4fa9b85445a1f2cc38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a491f6b77c244590a80b23e8fbd2306b6"><td class="memItemLeft" align="right" valign="top"><a id="a491f6b77c244590a80b23e8fbd2306b6"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_string_array_get_item</b>(ocstringarray,  index)&#160;&#160;&#160;(<a class="el" href="oc__helpers_8h.html#a5bd70ca9b1f0250da0e76740ce99f7b4">oc_string</a>(ocstringarray) + index * STRING_ARRAY_ITEM_MAX_LEN)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_string_array_get_item</b>(ocstringarray,  index)&#160;&#160;&#160;(<a class="el" href="oc__helpers_8h.html#a5bd70ca9b1f0250da0e76740ce99f7b4">oc_string</a>(ocstringarray) + (index)*STRING_ARRAY_ITEM_MAX_LEN)</td></tr>
 <tr class="separator:a491f6b77c244590a80b23e8fbd2306b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b16d54e001ad10f5394c88a80a5a5cf"><td class="memItemLeft" align="right" valign="top"><a id="a3b16d54e001ad10f5394c88a80a5a5cf"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_string_array_get_item_size</b>(ocstringarray,  index)&#160;&#160;&#160;(strlen((const char *)oc_string_array_get_item(ocstringarray, index)))</td></tr>
@@ -905,7 +905,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array<
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__helpers_8h.html">oc_helpers.h</a></li>
-    <li class="footer">Generated on Sun May 1 2022 15:16:27 for IoTivity-Lite by
+    <li class="footer">Generated on Tue May 3 2022 08:19:04 for IoTivity-Lite by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

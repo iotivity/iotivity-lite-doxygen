@@ -639,7 +639,7 @@ CborEncoder&#160;</td><td class="memItemRight" valign="bottom"><b>root_map</b></
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                         \</div>
-<div class="line">    if ((<span class="keyword">const</span> <span class="keywordtype">char</span> *)value != NULL) {                                         \</div>
+<div class="line">    if ((<span class="keyword">const</span> <span class="keywordtype">char</span> *)(value) != NULL) {                                       \</div>
 <div class="line">      g_err |=                                                                 \</div>
 <div class="line">        oc_rep_encode_text_string(&amp;parent##_array, value, strlen(value));      \</div>
 <div class="line">    } <span class="keywordflow">else</span> {                                                                   \</div>
@@ -1275,8 +1275,8 @@ CborEncoder&#160;</td><td class="memItemRight" valign="bottom"><b>root_map</b></
 <div class="line">    g_err |=                                                                   \</div>
 <div class="line">      oc_rep_encoder_create_array(&amp;<span class="keywordtype">object</span>##_map, &amp;key##_value_array, length);  \</div>
 <div class="line">    int i;                                                                     \</div>
-<div class="line">    for (i = 0; i &lt; length; i++) {                                             \</div>
-<div class="line">      g_err |= oc_rep_encode_boolean(&amp;key##_value_array, values[i]);           \</div>
+<div class="line">    for (i = 0; i &lt; (length); i++) {                                           \</div>
+<div class="line">      g_err |= oc_rep_encode_boolean(&amp;key##_value_array, (values)[i]);         \</div>
 <div class="line">    }                                                                          \</div>
 <div class="line">    g_err |=                                                                   \</div>
 <div class="line">      oc_rep_encoder_close_container(&amp;<span class="keywordtype">object</span>##_map, &amp;key##_value_array);       \</div>
@@ -1490,9 +1490,9 @@ CborEncoder&#160;</td><td class="memItemRight" valign="bottom"><b>root_map</b></
 <div class="line">    g_err |=                                                                   \</div>
 <div class="line">      oc_rep_encoder_create_array(&amp;<span class="keywordtype">object</span>##_map, &amp;key##_value_array, length);  \</div>
 <div class="line">    int i;                                                                     \</div>
-<div class="line">    for (i = 0; i &lt; length; i++) {                                             \</div>
+<div class="line">    for (i = 0; i &lt; (length); i++) {                                           \</div>
 <div class="line">      g_err |= oc_rep_encode_floating_point(&amp;key##_value_array,                \</div>
-<div class="line">                                            CborDoubleType, &amp;values[i]);       \</div>
+<div class="line">                                            CborDoubleType, &amp;(values)[i]);     \</div>
 <div class="line">    }                                                                          \</div>
 <div class="line">    g_err |=                                                                   \</div>
 <div class="line">      oc_rep_encoder_close_container(&amp;<span class="keywordtype">object</span>##_map, &amp;key##_value_array);       \</div>
@@ -1606,8 +1606,8 @@ CborEncoder&#160;</td><td class="memItemRight" valign="bottom"><b>root_map</b></
 <div class="line">    g_err |=                                                                   \</div>
 <div class="line">      oc_rep_encoder_create_array(&amp;<span class="keywordtype">object</span>##_map, &amp;key##_value_array, length);  \</div>
 <div class="line">    int i;                                                                     \</div>
-<div class="line">    for (i = 0; i &lt; length; i++) {                                             \</div>
-<div class="line">      g_err |= oc_rep_encode_int(&amp;key##_value_array, values[i]);               \</div>
+<div class="line">    for (i = 0; i &lt; (length); i++) {                                           \</div>
+<div class="line">      g_err |= oc_rep_encode_int(&amp;key##_value_array, (values)[i]);             \</div>
 <div class="line">    }                                                                          \</div>
 <div class="line">    g_err |=                                                                   \</div>
 <div class="line">      oc_rep_encoder_close_container(&amp;<span class="keywordtype">object</span>##_map, &amp;key##_value_array);       \</div>
@@ -1654,7 +1654,7 @@ CborEncoder&#160;</td><td class="memItemRight" valign="bottom"><b>root_map</b></
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">if</span> ((<span class="keyword">const</span> <span class="keywordtype">char</span> *)key != NULL)                                               \</div>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">if</span> ((<span class="keyword">const</span> <span class="keywordtype">char</span> *)(key) != NULL)                                             \</div>
 <div class="line">  g_err |= oc_rep_encode_text_string(parent, key, strlen(key))</div>
 </div><!-- fragment -->
 <p>End users are very unlikely to use this macro. </p>
@@ -1861,7 +1861,7 @@ oc_string_array_add_item </dd></dl>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                         \</div>
 <div class="line">    g_err |= oc_rep_encode_text_string(&amp;<span class="keywordtype">object</span>##_map, #key, strlen(#key));     \</div>
-<div class="line">    if ((<span class="keyword">const</span> <span class="keywordtype">char</span> *)value != NULL) {                                         \</div>
+<div class="line">    if ((<span class="keyword">const</span> <span class="keywordtype">char</span> *)(value) != NULL) {                                       \</div>
 <div class="line">      g_err |= oc_rep_encode_text_string(&amp;<span class="keywordtype">object</span>##_map, value, strlen(value)); \</div>
 <div class="line">    } <span class="keywordflow">else</span> {                                                                   \</div>
 <div class="line">      g_err |= oc_rep_encode_text_string(&amp;<span class="keywordtype">object</span>##_map, <span class="stringliteral">&quot;&quot;</span>, 0);                \</div>
@@ -1951,7 +1951,7 @@ oc_string_array_add_item </dd></dl>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                         \</div>
-<div class="line">    if ((<span class="keyword">const</span> <span class="keywordtype">char</span> *)value != NULL) {                                         \</div>
+<div class="line">    if ((<span class="keyword">const</span> <span class="keywordtype">char</span> *)(value) != NULL) {                                       \</div>
 <div class="line">      g_err |= oc_rep_encode_text_string(&amp;parent##_map, value, strlen(value)); \</div>
 <div class="line">    } <span class="keywordflow">else</span> {                                                                   \</div>
 <div class="line">      g_err |= oc_rep_encode_text_string(&amp;parent##_map, <span class="stringliteral">&quot;&quot;</span>, 0);                \</div>
@@ -3177,7 +3177,7 @@ oc_string_array_get_item_size </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__rep_8h.html">oc_rep.h</a></li>
-    <li class="footer">Generated on Sun May 1 2022 15:16:27 for IoTivity-Lite by
+    <li class="footer">Generated on Tue May 3 2022 08:19:04 for IoTivity-Lite by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
