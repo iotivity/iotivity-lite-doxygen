@@ -8,6 +8,7 @@ var oc__swupdate_8h =
       [ "OC_SWUPDATE_RESULT_CONN_FAIL", "oc__swupdate_8h.html#a8148bdcecd49211d73ad6fe2d6eb2c39afcc0d7617187edf767473b6eb32abde2", null ],
       [ "OC_SWUPDATE_RESULT_SVV_FAIL", "oc__swupdate_8h.html#a8148bdcecd49211d73ad6fe2d6eb2c39a3747daf386659055125554d18492022b", null ],
       [ "OC_SWUPDATE_RESULT_INVALID_URL", "oc__swupdate_8h.html#a8148bdcecd49211d73ad6fe2d6eb2c39ac6fa1e2aaa4e71b58cbfd5006358ada7", null ],
+      [ "OC_SWUPDATE_RESULT_UNSUPPORTED_PROT", "oc__swupdate_8h.html#a8148bdcecd49211d73ad6fe2d6eb2c39a602d14f5323e7071038b734bfb1f844a", null ],
       [ "OC_SWUPDATE_RESULT_UPGRADE_FAIL", "oc__swupdate_8h.html#a8148bdcecd49211d73ad6fe2d6eb2c39a1227723c2e0025c54b2fb07bb3036856", null ]
     ] ],
     [ "oc_swupdate_notify_done", "oc__swupdate_8h.html#a3fb6e4a2c3b0f1858efbbe290131789b", null ],
