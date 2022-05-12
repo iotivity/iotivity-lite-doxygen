@@ -27,9 +27,10 @@ var NAVTREEINDEX1 =
 "oc__api_8h.html#af0b944acc98a497365efbc1d1c9aa32e":[3,0,1,8],
 "oc__api_8h.html#aff3a70487d7851c022386df601655fb6":[3,0,1,110],
 "oc__assert_8h.html":[3,0,2],
-"oc__assert_8h.html#a1bce540d44065a67fd8136c1033bee82":[3,0,2,2],
-"oc__assert_8h.html#a7e2346d59d7240c309157eb00ad4a543":[3,0,2,1],
-"oc__assert_8h.html#acdd692a1ad9eeca2f137906e97e756f7":[3,0,2,0],
+"oc__assert_8h.html#a296a2b634a686beff6ee467200410466":[3,0,2,3],
+"oc__assert_8h.html#a3eb1f5c3cc58b759ced16d4a78de620b":[3,0,2,2],
+"oc__assert_8h.html#a677131767f6cceda714ecff87b64a99d":[3,0,2,0],
+"oc__assert_8h.html#acdd692a1ad9eeca2f137906e97e756f7":[3,0,2,1],
 "oc__base64_8h.html":[3,0,3],
 "oc__base64_8h.html#ae2a29fa32e9e60cd25d61cb172bf947d":[3,0,3,0],
 "oc__base64_8h.html#aeb1fbf0dddca75caddedf73704d133f5":[3,0,3,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "oc__cred_8h.html#af766cf746fb6d10b2f502d7f4f76e29ea2dd8a6e50e216550f555b4464fe24ddf":[3,0,14,12,0],
 "oc__cred_8h.html#af766cf746fb6d10b2f502d7f4f76e29ea36de4fca7fcc01086598cd1227625ce0":[3,0,14,12,2],
 "oc__cred_8h.html#af766cf746fb6d10b2f502d7f4f76e29ea6d967ca34d03da86b30c2f486d14ee14":[3,0,14,12,5],
-"oc__cred_8h.html#af766cf746fb6d10b2f502d7f4f76e29ea7211474370e98e6fb6ba4ab190fc9384":[3,0,14,12,3],
-"oc__discovery_8h.html":[3,0,15]
+"oc__cred_8h.html#af766cf746fb6d10b2f502d7f4f76e29ea7211474370e98e6fb6ba4ab190fc9384":[3,0,14,12,3]
 };
