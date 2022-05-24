@@ -22,6 +22,7 @@ var annotated_dup =
     [ "oc_response_t", "structoc__response__t.html", "structoc__response__t" ],
     [ "oc_sec_ace_t", "structoc__sec__ace__t.html", "structoc__sec__ace__t" ],
     [ "oc_sec_acl_s", "structoc__sec__acl__s.html", "structoc__sec__acl__s" ],
+    [ "oc_sec_certs_data_t", "structoc__sec__certs__data__t.html", "structoc__sec__certs__data__t" ],
     [ "oc_sec_cred_t", "structoc__sec__cred__t.html", "structoc__sec__cred__t" ],
     [ "oc_sec_creds_t", "structoc__sec__creds__t.html", "structoc__sec__creds__t" ],
     [ "oc_session_event_cb", "structoc__session__event__cb.html", "structoc__session__event__cb" ]

@@ -95,11 +95,16 @@ $(document).ready(function(){initNavTree('oc__cred_8h.html',''); initResizable()
 <code>#include &quot;<a class="el" href="oc__uuid_8h.html">oc_uuid.h</a>&quot;</code><br />
 <code>#include &quot;util/oc_list.h&quot;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &lt;stddef.h&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__cred__data__t.html">oc_cred_data_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">credential data info  <a href="structoc__cred__data__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__sec__certs__data__t.html">oc_sec_certs_data_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selected certificate data used for verification.  <a href="structoc__sec__certs__data__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__sec__cred__t.html">oc_sec_cred_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">security credential information  <a href="structoc__sec__cred__t.html#details">More...</a><br /></td></tr>
@@ -113,6 +118,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a08d82246e2025421925afbff47e0b31f"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structoc__cred__data__t.html">oc_cred_data_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cred_8h.html#a08d82246e2025421925afbff47e0b31f">oc_cred_data_t</a></td></tr>
 <tr class="memdesc:a08d82246e2025421925afbff47e0b31f"><td class="mdescLeft">&#160;</td><td class="mdescRight">credential data info  <a href="oc__cred_8h.html#a08d82246e2025421925afbff47e0b31f">More...</a><br /></td></tr>
 <tr class="separator:a08d82246e2025421925afbff47e0b31f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4007a3d487fbf70cf97cf12c88f09edf"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structoc__sec__certs__data__t.html">oc_sec_certs_data_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cred_8h.html#a4007a3d487fbf70cf97cf12c88f09edf">oc_sec_certs_data_t</a></td></tr>
+<tr class="memdesc:a4007a3d487fbf70cf97cf12c88f09edf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selected certificate data used for verification.  <a href="oc__cred_8h.html#a4007a3d487fbf70cf97cf12c88f09edf">More...</a><br /></td></tr>
+<tr class="separator:a4007a3d487fbf70cf97cf12c88f09edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fa3b62838c1c25e149db6c2ba86e103"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structoc__sec__cred__t.html">oc_sec_cred_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cred_8h.html#a8fa3b62838c1c25e149db6c2ba86e103">oc_sec_cred_t</a></td></tr>
 <tr class="memdesc:a8fa3b62838c1c25e149db6c2ba86e103"><td class="mdescLeft">&#160;</td><td class="mdescRight">security credential information  <a href="oc__cred_8h.html#a8fa3b62838c1c25e149db6c2ba86e103">More...</a><br /></td></tr>
 <tr class="separator:a8fa3b62838c1c25e149db6c2ba86e103"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,6 +142,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a5d8d60ff451f94a8cf1ddfa8450a3203"><td class="memItemLeft" align="right" valign="top"><a id="a5d8d60ff451f94a8cf1ddfa8450a3203"></a>
 typedef struct oc_sec_on_apply_cred_data_t&#160;</td><td class="memItemRight" valign="bottom"><b>oc_sec_on_apply_cred_data_t</b></td></tr>
 <tr class="separator:a5d8d60ff451f94a8cf1ddfa8450a3203"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac986fd47bf32820e65ea6f5c54f3cc6"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cred_8h.html#aac986fd47bf32820e65ea6f5c54f3cc6">oc_verify_sec_certs_data_fn_t</a>) (const <a class="el" href="structoc__sec__certs__data__t.html">oc_sec_certs_data_t</a> *data)</td></tr>
+<tr class="memdesc:aac986fd47bf32820e65ea6f5c54f3cc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function to verify a single certificate.  <a href="oc__cred_8h.html#aac986fd47bf32820e65ea6f5c54f3cc6">More...</a><br /></td></tr>
+<tr class="separator:aac986fd47bf32820e65ea6f5c54f3cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -190,6 +201,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a3e3ba074542e918c370fa3361bf9511f"><td class="memItemLeft" align="right" valign="top">const OC_API char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cred_8h.html#a3e3ba074542e918c370fa3361bf9511f">oc_cred_read_encoding</a> (<a class="el" href="oc__cred_8h.html#a4bf6d443c0cedb2c9ac90cc866cb28b3">oc_sec_encoding_t</a> encoding)</td></tr>
 <tr class="memdesc:a3e3ba074542e918c370fa3361bf9511f"><td class="mdescLeft">&#160;</td><td class="mdescRight">read credential encoding  <a href="oc__cred_8h.html#a3e3ba074542e918c370fa3361bf9511f">More...</a><br /></td></tr>
 <tr class="separator:a3e3ba074542e918c370fa3361bf9511f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45812c6c110debd44244e905103b2402"><td class="memItemLeft" align="right" valign="top">OC_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cred_8h.html#a45812c6c110debd44244e905103b2402">oc_cred_verify_certificate_chain</a> (const <a class="el" href="structoc__sec__cred__t.html">oc_sec_cred_t</a> *cred, <a class="el" href="oc__cred_8h.html#aac986fd47bf32820e65ea6f5c54f3cc6">oc_verify_sec_certs_data_fn_t</a> verify_cert)</td></tr>
+<tr class="memdesc:a45812c6c110debd44244e905103b2402"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verify the certificate chain associated with the credential.  <a href="oc__cred_8h.html#a45812c6c110debd44244e905103b2402">More...</a><br /></td></tr>
+<tr class="separator:a45812c6c110debd44244e905103b2402"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aace1e016af67e77d670e75e55823bb12"><td class="memItemLeft" align="right" valign="top">OC_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cred_8h.html#aace1e016af67e77d670e75e55823bb12">oc_sec_apply_cred</a> (oc_rep_t *rep, <a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint, <a class="el" href="oc__cred_8h.html#a5d7834c30f61c858ee25c8ba8a47a2c6">oc_sec_on_apply_cred_cb_t</a> on_apply_cred_cb, void *on_apply_cred_data)</td></tr>
 <tr class="memdesc:aace1e016af67e77d670e75e55823bb12"><td class="mdescLeft">&#160;</td><td class="mdescRight">parse payload and add/update credentials  <a href="oc__cred_8h.html#aace1e016af67e77d670e75e55823bb12">More...</a><br /></td></tr>
 <tr class="separator:aace1e016af67e77d670e75e55823bb12"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -220,6 +234,22 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>credential data info </p>
+
+</div>
+</div>
+<a id="a4007a3d487fbf70cf97cf12c88f09edf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4007a3d487fbf70cf97cf12c88f09edf">&#9670;&nbsp;</a></span>oc_sec_certs_data_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structoc__sec__certs__data__t.html">oc_sec_certs_data_t</a> <a class="el" href="structoc__sec__certs__data__t.html">oc_sec_certs_data_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Selected certificate data used for verification. </p>
 
 </div>
 </div>
@@ -323,6 +353,23 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="aac986fd47bf32820e65ea6f5c54f3cc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac986fd47bf32820e65ea6f5c54f3cc6">&#9670;&nbsp;</a></span>oc_verify_sec_certs_data_fn_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef bool(* oc_verify_sec_certs_data_fn_t) (const <a class="el" href="structoc__sec__certs__data__t.html">oc_sec_certs_data_t</a> *data)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback function to verify a single certificate. </p>
+<p>Return true if certificate is valid, return false otherwise. </p>
 
 </div>
 </div>
@@ -543,6 +590,48 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a45812c6c110debd44244e905103b2402"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45812c6c110debd44244e905103b2402">&#9670;&nbsp;</a></span>oc_cred_verify_certificate_chain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OC_API int oc_cred_verify_certificate_chain </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structoc__sec__cred__t.html">oc_sec_cred_t</a> *&#160;</td>
+          <td class="paramname"><em>cred</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="oc__cred_8h.html#aac986fd47bf32820e65ea6f5c54f3cc6">oc_verify_sec_certs_data_fn_t</a>&#160;</td>
+          <td class="paramname"><em>verify_cert</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verify the certificate chain associated with the credential. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cred</td><td>credential associated with the certificate chain (cannot be NULL) </td></tr>
+    <tr><td class="paramname">verify_cert</td><td>function used to verify a single certificate (cannot be NULL) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 all certificates in the chain are valid </dd>
+<dd>
+1 at least one certificate in the chain is not valid </dd>
+<dd>
+-1 on error </dd></dl>
+
+</div>
+</div>
 <a id="aace1e016af67e77d670e75e55823bb12"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aace1e016af67e77d670e75e55823bb12">&#9670;&nbsp;</a></span>oc_sec_apply_cred()</h2>
 
@@ -752,7 +841,7 @@ bool false otherwise </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__cred_8h.html">oc_cred.h</a></li>
-    <li class="footer">Generated on Thu May 19 2022 22:04:21 for IoTivity-Lite by
+    <li class="footer">Generated on Tue May 24 2022 15:36:26 for IoTivity-Lite by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
