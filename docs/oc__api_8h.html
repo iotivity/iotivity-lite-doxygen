@@ -290,6 +290,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gacaf94048a737088aef4f9f13b5fef1c7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gacaf94048a737088aef4f9f13b5fef1c7">oc_get_response_payload_raw</a> (<a class="el" href="structoc__client__response__t.html">oc_client_response_t</a> *response, const uint8_t **payload, size_t *size, <a class="el" href="oc__ri_8h.html#a83161604a805e3a951254864d16a714f">oc_content_format_t</a> *content_format)</td></tr>
 <tr class="memdesc:gacaf94048a737088aef4f9f13b5fef1c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the response payload, without processing  <a href="group__doc__module__tag__server__side.html#gacaf94048a737088aef4f9f13b5fef1c7">More...</a><br /></td></tr>
 <tr class="separator:gacaf94048a737088aef4f9f13b5fef1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga64b9f2692bf69bc1bd817edcc35fc711"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__common__operations.html#ga64b9f2692bf69bc1bd817edcc35fc711">oc_has_delayed_callback</a> (void *cb_data, oc_trigger_t callback, bool ignore_cb_data)</td></tr>
+<tr class="memdesc:ga64b9f2692bf69bc1bd817edcc35fc711"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if given delayed callback has already been scheduled.  <a href="group__doc__module__tag__common__operations.html#ga64b9f2692bf69bc1bd817edcc35fc711">More...</a><br /></td></tr>
+<tr class="separator:ga64b9f2692bf69bc1bd817edcc35fc711"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabbee24e2e7b99e6e657c0fd07ceb1db9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gabbee24e2e7b99e6e657c0fd07ceb1db9">oc_ignore_request</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request)</td></tr>
 <tr class="memdesc:gabbee24e2e7b99e6e657c0fd07ceb1db9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ignore the request.  <a href="group__doc__module__tag__server__side.html#gabbee24e2e7b99e6e657c0fd07ceb1db9">More...</a><br /></td></tr>
 <tr class="separator:gabbee24e2e7b99e6e657c0fd07ceb1db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -357,7 +360,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:gaa3a125b0f190fcccc7a294b8429e9a7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a query parameter 'key' exist in the URL query parameter.  <a href="group__doc__module__tag__server__side.html#gaa3a125b0f190fcccc7a294b8429e9a7e">More...</a><br /></td></tr>
 <tr class="separator:gaa3a125b0f190fcccc7a294b8429e9a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf8cac4f44a0020db72b7b9800191a430"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__common__operations.html#gaf8cac4f44a0020db72b7b9800191a430">oc_remove_delayed_callback</a> (void *cb_data, oc_trigger_t callback)</td></tr>
-<tr class="memdesc:gaf8cac4f44a0020db72b7b9800191a430"><td class="mdescLeft">&#160;</td><td class="mdescRight">used to cancel a delayed callback  <a href="group__doc__module__tag__common__operations.html#gaf8cac4f44a0020db72b7b9800191a430">More...</a><br /></td></tr>
+<tr class="memdesc:gaf8cac4f44a0020db72b7b9800191a430"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel a scheduled delayed callback.  <a href="group__doc__module__tag__common__operations.html#gaf8cac4f44a0020db72b7b9800191a430">More...</a><br /></td></tr>
 <tr class="separator:gaf8cac4f44a0020db72b7b9800191a430"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44732c855ea16654b45c46a0d091a229"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__api_8h.html#a44732c855ea16654b45c46a0d091a229">oc_remove_ownership_status_cb</a> (<a class="el" href="oc__api_8h.html#a91c3c40bc00b2b107948a55a969fc0c9">oc_ownership_status_cb_t</a> cb, void *user_data)</td></tr>
 <tr class="memdesc:a44732c855ea16654b45c46a0d091a229"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the ownership changed callback.  <a href="oc__api_8h.html#a44732c855ea16654b45c46a0d091a229">More...</a><br /></td></tr>
@@ -1405,7 +1408,7 @@ Use of this function requires building the stack with OC_SECURITY defined.</dd><
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__api_8h.html">oc_api.h</a></li>
-    <li class="footer">Generated on Tue May 24 2022 15:36:26 for IoTivity-Lite by
+    <li class="footer">Generated on Wed May 25 2022 10:19:22 for IoTivity-Lite by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

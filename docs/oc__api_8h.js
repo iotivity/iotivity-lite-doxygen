@@ -59,6 +59,7 @@ var oc__api_8h =
     [ "oc_get_query_value", "group__doc__module__tag__server__side.html#gabb57daa047912dab3f8a5f2f883aabf6", null ],
     [ "oc_get_request_payload_raw", "group__doc__module__tag__server__side.html#gad3b59ade20fd1584a0e84723cbb386ce", null ],
     [ "oc_get_response_payload_raw", "group__doc__module__tag__server__side.html#gacaf94048a737088aef4f9f13b5fef1c7", null ],
+    [ "oc_has_delayed_callback", "group__doc__module__tag__common__operations.html#ga64b9f2692bf69bc1bd817edcc35fc711", null ],
     [ "oc_ignore_request", "group__doc__module__tag__server__side.html#gabbee24e2e7b99e6e657c0fd07ceb1db9", null ],
     [ "oc_indicate_separate_response", "group__doc__module__tag__server__side.html#gad7cae396843a07b955e6d588291645c7", null ],
     [ "oc_init_platform", "oc__api_8h.html#abc05e63942a1093f807213220841c54b", null ],

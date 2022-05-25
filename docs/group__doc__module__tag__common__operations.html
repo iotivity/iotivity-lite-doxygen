@@ -103,8 +103,11 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga64b9f2692bf69bc1bd817edcc35fc711"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__common__operations.html#ga64b9f2692bf69bc1bd817edcc35fc711">oc_has_delayed_callback</a> (void *cb_data, oc_trigger_t callback, bool ignore_cb_data)</td></tr>
+<tr class="memdesc:ga64b9f2692bf69bc1bd817edcc35fc711"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if given delayed callback has already been scheduled.  <a href="group__doc__module__tag__common__operations.html#ga64b9f2692bf69bc1bd817edcc35fc711">More...</a><br /></td></tr>
+<tr class="separator:ga64b9f2692bf69bc1bd817edcc35fc711"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf8cac4f44a0020db72b7b9800191a430"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__common__operations.html#gaf8cac4f44a0020db72b7b9800191a430">oc_remove_delayed_callback</a> (void *cb_data, oc_trigger_t callback)</td></tr>
-<tr class="memdesc:gaf8cac4f44a0020db72b7b9800191a430"><td class="mdescLeft">&#160;</td><td class="mdescRight">used to cancel a delayed callback  <a href="group__doc__module__tag__common__operations.html#gaf8cac4f44a0020db72b7b9800191a430">More...</a><br /></td></tr>
+<tr class="memdesc:gaf8cac4f44a0020db72b7b9800191a430"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel a scheduled delayed callback.  <a href="group__doc__module__tag__common__operations.html#gaf8cac4f44a0020db72b7b9800191a430">More...</a><br /></td></tr>
 <tr class="separator:gaf8cac4f44a0020db72b7b9800191a430"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga976b85e9312419b62f4ed0993bf548f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__common__operations.html#ga976b85e9312419b62f4ed0993bf548f6">oc_set_delayed_callback</a> (void *cb_data, oc_trigger_t callback, uint16_t seconds)</td></tr>
 <tr class="memdesc:ga976b85e9312419b62f4ed0993bf548f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule a callback to be invoked after a set number of seconds.  <a href="group__doc__module__tag__common__operations.html#ga976b85e9312419b62f4ed0993bf548f6">More...</a><br /></td></tr>
@@ -196,6 +199,54 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ga64b9f2692bf69bc1bd817edcc35fc711"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga64b9f2692bf69bc1bd817edcc35fc711">&#9670;&nbsp;</a></span>oc_has_delayed_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool oc_has_delayed_callback </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">oc_trigger_t&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ignore_cb_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if given delayed callback has already been scheduled. </p>
+<p>To match a delayed callback: 1) function pointers must be equal 2) the user defined context pointers must be equal or ignore_cb_data must be true</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cb_data</td><td>the user defined context pointer </td></tr>
+    <tr><td class="paramname">callback</td><td>the delayed callback to look for </td></tr>
+    <tr><td class="paramname">ignore_cb_data</td><td>don't compare the user defined context pointers </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true matching delayed callback was found </dd>
+<dd>
+false otherwise </dd></dl>
+
+</div>
+</div>
 <a id="gaf8cac4f44a0020db72b7b9800191a430"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaf8cac4f44a0020db72b7b9800191a430">&#9670;&nbsp;</a></span>oc_remove_delayed_callback()</h2>
 
@@ -222,7 +273,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>used to cancel a delayed callback </p>
+<p>Cancel a scheduled delayed callback. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">cb_data</td><td>the user defined context pointer that was passed to the oc_sed_delayed_callback() function </td></tr>
@@ -365,7 +416,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue May 24 2022 15:36:26 for IoTivity-Lite by
+    <li class="footer">Generated on Wed May 25 2022 10:19:22 for IoTivity-Lite by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

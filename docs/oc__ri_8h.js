@@ -154,6 +154,7 @@ var oc__ri_8h =
     [ "oc_ri_get_interface_mask", "oc__ri_8h.html#a6baefdb983ff5f4aad3c9dd7ac218c15", null ],
     [ "oc_ri_get_query_nth_key_value", "oc__ri_8h.html#a01ad97dc89a77750825e5c9c6406a1f1", null ],
     [ "oc_ri_get_query_value", "oc__ri_8h.html#a7c4f56d09ca6f568fd08497b3f8e1162", null ],
+    [ "oc_ri_has_timed_event_callback", "oc__ri_8h.html#a852912e025d82d6d3b4060aed5888e46", null ],
     [ "oc_ri_init", "oc__ri_8h.html#a8703351e3156d5419ff7cc485400c9eb", null ],
     [ "oc_ri_is_app_resource_valid", "oc__ri_8h.html#a6ba1538fa8a8430eb27bc5fa34e1a34c", null ],
     [ "oc_ri_query_exists", "oc__ri_8h.html#a0d6859298de1d6033ec3d91f5d6e9be9", null ],
