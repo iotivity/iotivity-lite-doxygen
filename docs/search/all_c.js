@@ -133,7 +133,7 @@ var searchData=
   ['oc_5fcred_5fparse_5fencoding_244',['oc_cred_parse_encoding',['../oc__cred_8h.html#acb11bc83cfbcb55c7e7fa6228c465f7e',1,'oc_cred.h']]],
   ['oc_5fcred_5fread_5fcredusage_245',['oc_cred_read_credusage',['../oc__cred_8h.html#ad880c1684c127f2c6cdc8e51e0a7aad3',1,'oc_cred.h']]],
   ['oc_5fcred_5fread_5fencoding_246',['oc_cred_read_encoding',['../oc__cred_8h.html#a3e3ba074542e918c370fa3361bf9511f',1,'oc_cred.h']]],
-  ['oc_5fcred_5fverify_5fcertificate_5fchain_247',['oc_cred_verify_certificate_chain',['../oc__cred_8h.html#a45812c6c110debd44244e905103b2402',1,'oc_cred.h']]],
+  ['oc_5fcred_5fverify_5fcertificate_5fchain_247',['oc_cred_verify_certificate_chain',['../oc__cred_8h.html#ad4813eacf50d1f236e319f5d71c8396e',1,'oc_cred.h']]],
   ['oc_5fcredtype_5fnull_248',['OC_CREDTYPE_NULL',['../oc__cred_8h.html#a323a3e3e2357812cc618ef5a2fa40908a62f4f4479f0179d3a99da69c1c0019a3',1,'oc_cred.h']]],
   ['oc_5fcredtype_5fpsk_249',['OC_CREDTYPE_PSK',['../oc__cred_8h.html#a323a3e3e2357812cc618ef5a2fa40908abeb6562aed8ae15ad930285be00a6979',1,'oc_cred.h']]],
   ['oc_5fcredusage_5fidentity_5fcert_250',['OC_CREDUSAGE_IDENTITY_CERT',['../oc__cred_8h.html#af766cf746fb6d10b2f502d7f4f76e29ea36de4fca7fcc01086598cd1227625ce0',1,'oc_cred.h']]],
@@ -600,7 +600,7 @@ var searchData=
   ['oc_5fuuid_5fis_5fequal_711',['oc_uuid_is_equal',['../oc__uuid_8h.html#a053dfa2380a9c638fdac9d8e0cd213dd',1,'oc_uuid.h']]],
   ['oc_5fuuid_5flen_712',['OC_UUID_LEN',['../oc__uuid_8h.html#a4e556e036773181af67e69a454667f31',1,'oc_uuid.h']]],
   ['oc_5fuuid_5fto_5fstr_713',['oc_uuid_to_str',['../oc__uuid_8h.html#a3d3eb46bac3720a6c1d980a055440aa6',1,'oc_uuid.h']]],
-  ['oc_5fverify_5fsec_5fcerts_5fdata_5ffn_5ft_714',['oc_verify_sec_certs_data_fn_t',['../oc__cred_8h.html#aac986fd47bf32820e65ea6f5c54f3cc6',1,'oc_cred.h']]],
+  ['oc_5fverify_5fsec_5fcerts_5fdata_5ffn_5ft_714',['oc_verify_sec_certs_data_fn_t',['../oc__cred_8h.html#ac0594433e2ea4594ead9e953203caf6e',1,'oc_cred.h']]],
   ['origin_715',['origin',['../structoc__request__t.html#a237e6d8df119a6b041a0af6c11f4b651',1,'oc_request_t']]],
   ['owner_5fcred_716',['owner_cred',['../structoc__sec__cred__t.html#a5eeec0a7ccd94fc7c7f1f929685ba463',1,'oc_sec_cred_t']]]
 ];
