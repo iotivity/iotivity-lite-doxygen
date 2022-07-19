@@ -163,9 +163,9 @@ Functions</h2></td></tr>
 <tr class="memitem:af055cc72d372ead0c5b58f60896c064f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__endpoint_8h.html#af055cc72d372ead0c5b58f60896c064f">oc_endpoint_set_local_address</a> (<a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *ep, int interface_index)</td></tr>
 <tr class="memdesc:af055cc72d372ead0c5b58f60896c064f"><td class="mdescLeft">&#160;</td><td class="mdescRight">set interface index on the endpoint  <a href="oc__endpoint_8h.html#af055cc72d372ead0c5b58f60896c064f">More...</a><br /></td></tr>
 <tr class="separator:af055cc72d372ead0c5b58f60896c064f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b1ba00a5e0834a3bda665259a31e609"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__endpoint_8h.html#a4b1ba00a5e0834a3bda665259a31e609">oc_endpoint_string_parse_path</a> (oc_string_t *endpoint_str, oc_string_t *path)</td></tr>
-<tr class="memdesc:a4b1ba00a5e0834a3bda665259a31e609"><td class="mdescLeft">&#160;</td><td class="mdescRight">parse endopoint  <a href="oc__endpoint_8h.html#a4b1ba00a5e0834a3bda665259a31e609">More...</a><br /></td></tr>
-<tr class="separator:a4b1ba00a5e0834a3bda665259a31e609"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54edc0ea5f6bf111e0a24d13ff26b156"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__endpoint_8h.html#a54edc0ea5f6bf111e0a24d13ff26b156">oc_endpoint_string_parse_path</a> (const oc_string_t *endpoint_str, oc_string_t *path)</td></tr>
+<tr class="memdesc:a54edc0ea5f6bf111e0a24d13ff26b156"><td class="mdescLeft">&#160;</td><td class="mdescRight">parse path component (ie.  <a href="oc__endpoint_8h.html#a54edc0ea5f6bf111e0a24d13ff26b156">More...</a><br /></td></tr>
+<tr class="separator:a54edc0ea5f6bf111e0a24d13ff26b156"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9e390c2515206b065b414aee3ed272d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__endpoint_8h.html#ad9e390c2515206b065b414aee3ed272d">oc_endpoint_to_string</a> (<a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint, oc_string_t *endpoint_str)</td></tr>
 <tr class="memdesc:ad9e390c2515206b065b414aee3ed272d"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert the endpoint to a human readable string (e.g.  <a href="oc__endpoint_8h.html#ad9e390c2515206b065b414aee3ed272d">More...</a><br /></td></tr>
 <tr class="separator:ad9e390c2515206b065b414aee3ed272d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -309,7 +309,7 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="acbafbf0eebae1e60a53d50301fa1ab78aff712168361fe68b2bb6193df4977d3c"></a>IPV6&#160;</td><td class="fielddoc"><p>ipv6 communication </p>
 </td></tr>
-<tr><td class="fieldname"><a id="acbafbf0eebae1e60a53d50301fa1ab78aa040cd7feeb588104634cdadf35abf1c"></a>TCP&#160;</td><td class="fielddoc"><p>tpc communication </p>
+<tr><td class="fieldname"><a id="acbafbf0eebae1e60a53d50301fa1ab78aa040cd7feeb588104634cdadf35abf1c"></a>TCP&#160;</td><td class="fielddoc"><p>tcp communication </p>
 </td></tr>
 <tr><td class="fieldname"><a id="acbafbf0eebae1e60a53d50301fa1ab78a64cafb1a68af59a2d90b42f786567b11"></a>GATT&#160;</td><td class="fielddoc"><p>BLE GATT communication. </p>
 </td></tr>
@@ -546,8 +546,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4b1ba00a5e0834a3bda665259a31e609"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b1ba00a5e0834a3bda665259a31e609">&#9670;&nbsp;</a></span>oc_endpoint_string_parse_path()</h2>
+<a id="a54edc0ea5f6bf111e0a24d13ff26b156"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54edc0ea5f6bf111e0a24d13ff26b156">&#9670;&nbsp;</a></span>oc_endpoint_string_parse_path()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -555,7 +555,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">int oc_endpoint_string_parse_path </td>
           <td>(</td>
-          <td class="paramtype">oc_string_t *&#160;</td>
+          <td class="paramtype">const oc_string_t *&#160;</td>
           <td class="paramname"><em>endpoint_str</em>, </td>
         </tr>
         <tr>
@@ -572,15 +572,18 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>parse endopoint </p>
+<p>parse path component (ie. </p>
+<p>the part after the first '/') of a uri</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">endpoint_str</td><td></td></tr>
-    <tr><td class="paramname">path</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">endpoint_str</td><td>uri to parse </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">path</td><td>output variable </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success </dd>
+<dd>
+-1 on failure </dd></dl>
 
 </div>
 </div>
@@ -750,7 +753,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__endpoint_8h.html">oc_endpoint.h</a></li>
-    <li class="footer">Generated on Mon Jul 18 2022 12:06:35 for IoTivity-Lite by
+    <li class="footer">Generated on Tue Jul 19 2022 08:22:42 for IoTivity-Lite by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
