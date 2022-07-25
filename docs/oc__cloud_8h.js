@@ -8,7 +8,8 @@ var oc__cloud_8h =
       [ "CLOUD_OK", "oc__cloud_8h.html#ac4aaa7e7ebe63f9ae0440ff98cacd903a356dbb74ebee978fc8324a05c591f232", null ],
       [ "CLOUD_ERROR_RESPONSE", "oc__cloud_8h.html#ac4aaa7e7ebe63f9ae0440ff98cacd903aac56ba0adcb025e55c625273c494a00b", null ],
       [ "CLOUD_ERROR_CONNECT", "oc__cloud_8h.html#ac4aaa7e7ebe63f9ae0440ff98cacd903ab714c9b2f5b3c993a67109fddd966cfe", null ],
-      [ "CLOUD_ERROR_REFRESH_ACCESS_TOKEN", "oc__cloud_8h.html#ac4aaa7e7ebe63f9ae0440ff98cacd903aca88900fd1d06385bc39f3947569bacb", null ]
+      [ "CLOUD_ERROR_REFRESH_ACCESS_TOKEN", "oc__cloud_8h.html#ac4aaa7e7ebe63f9ae0440ff98cacd903aca88900fd1d06385bc39f3947569bacb", null ],
+      [ "CLOUD_ERROR_UNAUTHORIZED", "oc__cloud_8h.html#ac4aaa7e7ebe63f9ae0440ff98cacd903a1195f97010b3dd4f41eba6eb34d6f154", null ]
     ] ],
     [ "oc_cloud_status_t", "oc__cloud_8h.html#a2ab39e0e37b5bf16a0b45d95bbb47dc1", [
       [ "OC_CLOUD_INITIALIZED", "oc__cloud_8h.html#a2ab39e0e37b5bf16a0b45d95bbb47dc1abbfbecf05635095c22447bc73cee3bc0", null ],
