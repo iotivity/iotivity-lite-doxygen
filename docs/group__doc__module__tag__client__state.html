@@ -109,6 +109,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga34d2e906ebd125b8148817f55bda4b2c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__client__state.html#ga34d2e906ebd125b8148817f55bda4b2c">oc_do_get</a> (const char *uri, <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint, const char *query, <a class="el" href="oc__client__state_8h.html#ab93155ce23b0cb02c7c7d71b5c251486">oc_response_handler_t</a> handler, <a class="el" href="oc__client__state_8h.html#a172718f11f1a33ce09cd1222bcbe5920">oc_qos_t</a> qos, void *user_data)</td></tr>
 <tr class="memdesc:ga34d2e906ebd125b8148817f55bda4b2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Issue a GET request to obtain the current value of all properties a resource.  <a href="group__doc__module__tag__client__state.html#ga34d2e906ebd125b8148817f55bda4b2c">More...</a><br /></td></tr>
 <tr class="separator:ga34d2e906ebd125b8148817f55bda4b2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga02bdb307798e1c07eb60bbfadc514385"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__client__state.html#ga02bdb307798e1c07eb60bbfadc514385">oc_do_get_with_timeout</a> (const char *uri, <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint, const char *query, uint16_t timeout_seconds, <a class="el" href="oc__client__state_8h.html#ab93155ce23b0cb02c7c7d71b5c251486">oc_response_handler_t</a> handler, <a class="el" href="oc__client__state_8h.html#a172718f11f1a33ce09cd1222bcbe5920">oc_qos_t</a> qos, void *user_data)</td></tr>
+<tr class="memdesc:ga02bdb307798e1c07eb60bbfadc514385"><td class="mdescLeft">&#160;</td><td class="mdescRight">Issue a GET request to obtain the current value of all properties a resource.  <a href="group__doc__module__tag__client__state.html#ga02bdb307798e1c07eb60bbfadc514385">More...</a><br /></td></tr>
+<tr class="separator:ga02bdb307798e1c07eb60bbfadc514385"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga003b754ee83012cc9b65e4a738d34751"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__client__state.html#ga003b754ee83012cc9b65e4a738d34751">oc_do_ip_discovery</a> (const char *rt, <a class="el" href="oc__client__state_8h.html#a4d5394353a67d4186ead8cd6d68fa168">oc_discovery_handler_t</a> handler, void *user_data)</td></tr>
 <tr class="memdesc:ga003b754ee83012cc9b65e4a738d34751"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discover all servers that have a resource type.  <a href="group__doc__module__tag__client__state.html#ga003b754ee83012cc9b65e4a738d34751">More...</a><br /></td></tr>
 <tr class="separator:ga003b754ee83012cc9b65e4a738d34751"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -344,6 +347,79 @@ Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">uri</td><td>the uri of the resource </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">endpoint</td><td>the endpoint of the server </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">query</td><td>a query parameter that will be sent to the server's oc_request_callback_t. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handler</td><td>function invoked once the client has received the servers response to the GET request </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">qos</td><td>the quality of service current options are HIGH_QOS or LOW_QOS </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">user_data</td><td>context pointer that will be sent to the oc_response_handler_t</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the client successfully dispatched the CoAP GET request </dd></dl>
+
+</div>
+</div>
+<a id="ga02bdb307798e1c07eb60bbfadc514385"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga02bdb307798e1c07eb60bbfadc514385">&#9670;&nbsp;</a></span>oc_do_get_with_timeout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool oc_do_get_with_timeout </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>uri</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *&#160;</td>
+          <td class="paramname"><em>endpoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>query</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>timeout_seconds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="oc__client__state_8h.html#ab93155ce23b0cb02c7c7d71b5c251486">oc_response_handler_t</a>&#160;</td>
+          <td class="paramname"><em>handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="oc__client__state_8h.html#a172718f11f1a33ce09cd1222bcbe5920">oc_qos_t</a>&#160;</td>
+          <td class="paramname"><em>qos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Issue a GET request to obtain the current value of all properties a resource. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">uri</td><td>the uri of the resource </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">endpoint</td><td>the endpoint of the server </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">query</td><td>a query parameter that will be sent to the server's oc_request_callback_t. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout_seconds</td><td>timeout for the get </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">handler</td><td>function invoked once the client has received the servers response to the GET request </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">qos</td><td>the quality of service current options are HIGH_QOS or LOW_QOS </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">user_data</td><td>context pointer that will be sent to the oc_response_handler_t</td></tr>
@@ -1333,7 +1409,7 @@ false </dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jul 25 2022 15:43:47 for IoTivity-Lite by
+    <li class="footer">Generated on Tue Aug 16 2022 08:41:24 for IoTivity-Lite by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

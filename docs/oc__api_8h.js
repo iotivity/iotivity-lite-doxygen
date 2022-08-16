@@ -38,6 +38,7 @@ var oc__api_8h =
     [ "oc_device_bind_resource_type", "group__doc__module__tag__server__side.html#ga0cdcfd9676beaa7368cc9677277279a8", null ],
     [ "oc_do_delete", "group__doc__module__tag__client__state.html#ga33e3aefd112aa73b7dc80900f31f3f55", null ],
     [ "oc_do_get", "group__doc__module__tag__client__state.html#ga34d2e906ebd125b8148817f55bda4b2c", null ],
+    [ "oc_do_get_with_timeout", "group__doc__module__tag__client__state.html#ga02bdb307798e1c07eb60bbfadc514385", null ],
     [ "oc_do_ip_discovery", "group__doc__module__tag__client__state.html#ga003b754ee83012cc9b65e4a738d34751", null ],
     [ "oc_do_ip_discovery_all", "group__doc__module__tag__client__state.html#ga51bd1229a746fae48746a4f399270cec", null ],
     [ "oc_do_ip_discovery_all_at_endpoint", "group__doc__module__tag__client__state.html#gaf1012624869bdd92b8a12f97f302d9ec", null ],
