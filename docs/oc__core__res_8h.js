@@ -17,12 +17,12 @@ var oc__core__res_8h =
     [ "oc_core_get_resource_by_uri", "oc__core__res_8h.html#a0f16b93c49240e6e11224b6a92a29fb5", null ],
     [ "oc_core_init", "oc__core__res_8h.html#ae047207ba3bd0e6109eb5516e2557412", null ],
     [ "oc_core_init_platform", "oc__core__res_8h.html#a20fecb30aeba81ace5a974de61d40c1d", null ],
-    [ "oc_core_is_DCR", "oc__core__res_8h.html#a2fade990cfc7a6fb1f24f8c3832808a5", null ],
-    [ "oc_core_is_SVR", "oc__core__res_8h.html#ae3cd5e15ed65a998a6ff9534defb4b90", null ],
-    [ "oc_core_is_vertical_resource", "oc__core__res_8h.html#ab7fdfcd8dd120c3079bdc1ea919ad8e3", null ],
+    [ "oc_core_is_DCR", "oc__core__res_8h.html#a5308cef52443fd78acd2a0768243a446", null ],
+    [ "oc_core_is_SVR", "oc__core__res_8h.html#adcfdf872f1bc5b45214e0d112e544576", null ],
+    [ "oc_core_is_vertical_resource", "oc__core__res_8h.html#ae13c44607776eac24d60ffd14905fc1d", null ],
     [ "oc_core_populate_resource", "oc__core__res_8h.html#afc0d5303c9ed898e5a3e83e76b941336", null ],
     [ "oc_core_set_latency", "oc__core__res_8h.html#a08b9a53cb2b71fe4ea7794c87da5ce0b", null ],
     [ "oc_core_shutdown", "oc__core__res_8h.html#a4f83145f9b94c3e531f7008959dec07b", null ],
-    [ "oc_filter_resource_by_rt", "oc__core__res_8h.html#ac90407354ec43f8e8603d86e3dd22698", null ],
+    [ "oc_filter_resource_by_rt", "oc__core__res_8h.html#a0c97b5e5f4e47fdd2b916525cd730e86", null ],
     [ "oc_store_uri", "oc__core__res_8h.html#afd7bb7ba0fc48f2cf65610f28db19b18", null ]
 ];
