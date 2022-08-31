@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['low_5fqos_1416',['LOW_QOS',['../oc__client__state_8h.html#a172718f11f1a33ce09cd1222bcbe5920acc1327122ac76887e8ffae7f519a85f7',1,'oc_client_state.h']]]
+  ['multicast_1351',['MULTICAST',['../oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78a607d700b2c0a01c54bdadde074a7cb12',1,'oc_endpoint.h']]]
 ];
