@@ -5,5 +5,5 @@ var oc__uuid_8h =
     [ "oc_gen_uuid", "oc__uuid_8h.html#ab4b98fa6b46dc43e8f057bf521b2936d", null ],
     [ "oc_str_to_uuid", "oc__uuid_8h.html#a26f89fd180e18eb80582395c24d0efac", null ],
     [ "oc_uuid_is_equal", "oc__uuid_8h.html#a053dfa2380a9c638fdac9d8e0cd213dd", null ],
-    [ "oc_uuid_to_str", "oc__uuid_8h.html#a3d3eb46bac3720a6c1d980a055440aa6", null ]
+    [ "oc_uuid_to_str", "oc__uuid_8h.html#a037b0d0c259bb3f75eae6a13e0c09793", null ]
 ];
