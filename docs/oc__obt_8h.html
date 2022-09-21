@@ -232,9 +232,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_obt_post_d2dserverl
 <tr class="memitem:a00578bf9f0ee12756189994c4a6d7a8e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#a00578bf9f0ee12756189994c4a6d7a8e">oc_obt_provision_role_wildcard_ace</a> (oc_uuid_t *subject, const char *role, const char *authority, <a class="el" href="oc__obt_8h.html#a780ab900ff1c0cd98da487d307023b6a">oc_obt_device_status_cb_t</a> cb, void *data)</td></tr>
 <tr class="memdesc:a00578bf9f0ee12756189994c4a6d7a8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provision a role ACE for the wildcard "*" resource with RW permissions.  <a href="oc__obt_8h.html#a00578bf9f0ee12756189994c4a6d7a8e">More...</a><br /></td></tr>
 <tr class="separator:a00578bf9f0ee12756189994c4a6d7a8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5026c1719c95a2cff99d844f5964bdc4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#a5026c1719c95a2cff99d844f5964bdc4">oc_obt_provision_trust_anchor</a> (char *certificate, size_t certificate_size, char *subject, oc_uuid_t *uuid, <a class="el" href="oc__obt_8h.html#ac31b25a8c0826a130e090c8127ba6636">oc_obt_status_cb_t</a> cb, void *data)</td></tr>
-<tr class="memdesc:a5026c1719c95a2cff99d844f5964bdc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provision a trust anchor for an cloud enabled server.  <a href="oc__obt_8h.html#a5026c1719c95a2cff99d844f5964bdc4">More...</a><br /></td></tr>
-<tr class="separator:a5026c1719c95a2cff99d844f5964bdc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1990ca797fce1663ed7fac8c79255d1f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#a1990ca797fce1663ed7fac8c79255d1f">oc_obt_provision_trust_anchor</a> (const char *certificate, size_t certificate_size, char *subject, oc_uuid_t *uuid, <a class="el" href="oc__obt_8h.html#ac31b25a8c0826a130e090c8127ba6636">oc_obt_status_cb_t</a> cb, void *data)</td></tr>
+<tr class="memdesc:a1990ca797fce1663ed7fac8c79255d1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provision a trust anchor for an cloud enabled server.  <a href="oc__obt_8h.html#a1990ca797fce1663ed7fac8c79255d1f">More...</a><br /></td></tr>
+<tr class="separator:a1990ca797fce1663ed7fac8c79255d1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af68a2d0203a48a7f065085598cef3c71"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__obt_8h.html#af68a2d0203a48a7f065085598cef3c71">oc_obt_request_random_pin</a> (oc_uuid_t *uuid, <a class="el" href="oc__obt_8h.html#a780ab900ff1c0cd98da487d307023b6a">oc_obt_device_status_cb_t</a> cb, void *data)</td></tr>
 <tr class="memdesc:af68a2d0203a48a7f065085598cef3c71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ask device being onboarded to produce a random PIN for PIN ownership transfer method (OTM).  <a href="oc__obt_8h.html#af68a2d0203a48a7f065085598cef3c71">More...</a><br /></td></tr>
 <tr class="separator:af68a2d0203a48a7f065085598cef3c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2200,8 +2200,8 @@ oc_obt_provision_role_wilecard_ace </dd>
 
 </div>
 </div>
-<a id="a5026c1719c95a2cff99d844f5964bdc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5026c1719c95a2cff99d844f5964bdc4">&#9670;&nbsp;</a></span>oc_obt_provision_trust_anchor()</h2>
+<a id="a1990ca797fce1663ed7fac8c79255d1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1990ca797fce1663ed7fac8c79255d1f">&#9670;&nbsp;</a></span>oc_obt_provision_trust_anchor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2209,7 +2209,7 @@ oc_obt_provision_role_wilecard_ace </dd>
         <tr>
           <td class="memname">int oc_obt_provision_trust_anchor </td>
           <td>(</td>
-          <td class="paramtype">char *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>certificate</em>, </td>
         </tr>
         <tr>
@@ -2704,7 +2704,7 @@ oc_obt_provision_role_wilecard_ace </dd>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__obt_8h.html">oc_obt.h</a></li>
-    <li class="footer">Generated on Fri Sep 16 2022 16:17:01 for IoTivity-Lite by
+    <li class="footer">Generated on Wed Sep 21 2022 09:36:01 for IoTivity-Lite by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

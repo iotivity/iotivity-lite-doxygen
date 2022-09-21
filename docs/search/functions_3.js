@@ -185,7 +185,7 @@ var searchData=
   ['oc_5fobt_5fprovision_5fpairwise_5fcredentials_994',['oc_obt_provision_pairwise_credentials',['../oc__obt_8h.html#a6e1774db1d1025d59dc47a6dbdaa1eae',1,'oc_obt.h']]],
   ['oc_5fobt_5fprovision_5frole_5fcertificate_995',['oc_obt_provision_role_certificate',['../oc__obt_8h.html#a6c70bc30db1c49d7de3280cf15f9d9fa',1,'oc_obt.h']]],
   ['oc_5fobt_5fprovision_5frole_5fwildcard_5face_996',['oc_obt_provision_role_wildcard_ace',['../oc__obt_8h.html#a00578bf9f0ee12756189994c4a6d7a8e',1,'oc_obt.h']]],
-  ['oc_5fobt_5fprovision_5ftrust_5fanchor_997',['oc_obt_provision_trust_anchor',['../oc__obt_8h.html#a5026c1719c95a2cff99d844f5964bdc4',1,'oc_obt.h']]],
+  ['oc_5fobt_5fprovision_5ftrust_5fanchor_997',['oc_obt_provision_trust_anchor',['../oc__obt_8h.html#a1990ca797fce1663ed7fac8c79255d1f',1,'oc_obt.h']]],
   ['oc_5fobt_5frequest_5frandom_5fpin_998',['oc_obt_request_random_pin',['../oc__obt_8h.html#af68a2d0203a48a7f065085598cef3c71',1,'oc_obt.h']]],
   ['oc_5fobt_5fretrieve_5facl_999',['oc_obt_retrieve_acl',['../oc__obt_8h.html#aa2be697947038efe5d0fd3073c666a8b',1,'oc_obt.h']]],
   ['oc_5fobt_5fretrieve_5fcloud_5fconf_5fdevice_1000',['oc_obt_retrieve_cloud_conf_device',['../oc__obt_8h.html#a87efd5ace782a501e260bb3741e685bc',1,'oc_obt.h']]],
