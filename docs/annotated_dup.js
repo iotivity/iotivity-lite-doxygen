@@ -15,6 +15,7 @@ var annotated_dup =
     [ "oc_le_addr_t", "structoc__le__addr__t.html", "structoc__le__addr__t" ],
     [ "oc_platform_info_t", "structoc__platform__info__t.html", "structoc__platform__info__t" ],
     [ "oc_properties_cb_t", "structoc__properties__cb__t.html", "structoc__properties__cb__t" ],
+    [ "oc_pushd_resource_rep", "structoc__pushd__resource__rep.html", "structoc__pushd__resource__rep" ],
     [ "oc_request_handler_s", "structoc__request__handler__s.html", "structoc__request__handler__s" ],
     [ "oc_request_t", "structoc__request__t.html", "structoc__request__t" ],
     [ "oc_resource_s", "structoc__resource__s.html", "structoc__resource__s" ],

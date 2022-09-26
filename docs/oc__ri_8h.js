@@ -161,5 +161,6 @@ var oc__ri_8h =
     [ "oc_ri_query_nth_key_exists", "oc__ri_8h.html#ad7e211eb65d2962771b99cbdf9ea0413", null ],
     [ "oc_ri_remove_timed_event_callback", "oc__ri_8h.html#a627c6dfde78e2276611bae0a57646a78", null ],
     [ "oc_ri_shutdown", "oc__ri_8h.html#af50fe1e19e0b2607dd2b3ac1db93668e", null ],
-    [ "oc_status_code", "oc__ri_8h.html#a8bc80a7833566d791556f311e514e722", null ]
+    [ "oc_status_code", "oc__ri_8h.html#a8bc80a7833566d791556f311e514e722", null ],
+    [ "oc_status_to_str", "oc__ri_8h.html#a54efe20089f5f922636d5de2c5a1dd6d", null ]
 ];

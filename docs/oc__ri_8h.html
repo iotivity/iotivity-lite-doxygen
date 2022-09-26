@@ -97,6 +97,7 @@ $(document).ready(function(){initNavTree('oc__ri_8h.html',''); initResizable(); 
 <code>#include &quot;<a class="el" href="oc__rep_8h.html">oc_rep.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__uuid_8h.html">oc_uuid.h</a>&quot;</code><br />
 <code>#include &quot;util/oc_etimer.h&quot;</code><br />
+<code>#include &quot;util/oc_features.h&quot;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -402,6 +403,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a8bc80a7833566d791556f311e514e722"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a8bc80a7833566d791556f311e514e722">oc_status_code</a> (<a class="el" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38">oc_status_t</a> key)</td></tr>
 <tr class="memdesc:a8bc80a7833566d791556f311e514e722"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert the status code to integer  <a href="oc__ri_8h.html#a8bc80a7833566d791556f311e514e722">More...</a><br /></td></tr>
 <tr class="separator:a8bc80a7833566d791556f311e514e722"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54efe20089f5f922636d5de2c5a1dd6d"><td class="memItemLeft" align="right" valign="top">const OC_API char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a54efe20089f5f922636d5de2c5a1dd6d">oc_status_to_str</a> (<a class="el" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38">oc_status_t</a> key)</td></tr>
+<tr class="memdesc:a54efe20089f5f922636d5de2c5a1dd6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert the status code to string  <a href="oc__ri_8h.html#a54efe20089f5f922636d5de2c5a1dd6d">More...</a><br /></td></tr>
+<tr class="separator:a54efe20089f5f922636d5de2c5a1dd6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a4e6fe6ae768f87ff05d7d6696da225f8"></a>
@@ -1571,13 +1575,40 @@ false not valid </dd></dl>
 
 </div>
 </div>
+<a id="a54efe20089f5f922636d5de2c5a1dd6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54efe20089f5f922636d5de2c5a1dd6d">&#9670;&nbsp;</a></span>oc_status_to_str()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const OC_API char* oc_status_to_str </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38">oc_status_t</a>&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>convert the status code to string </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>key the application level key of the code </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>char* CoAP status code string </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__ri_8h.html">oc_ri.h</a></li>
-    <li class="footer">Generated on Wed Sep 21 2022 09:36:01 for IoTivity-Lite by
+    <li class="footer">Generated on Mon Sep 26 2022 13:41:18 for IoTivity-Lite by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
