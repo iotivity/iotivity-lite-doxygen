@@ -6,6 +6,7 @@ var oc__acl_8h =
     [ "oc_sec_acl_s", "structoc__sec__acl__s.html", "structoc__sec__acl__s" ],
     [ "oc_ace_res_t", "oc__acl_8h.html#a2a072aa75b749c3bf40379d78c9e73a6", null ],
     [ "oc_ace_subject_t", "oc__acl_8h.html#a5ca2f3f4a98c831ae82840c28e67e81f", null ],
+    [ "oc_sec_ace_filter_t", "oc__acl_8h.html#a20dc76c511992e4f8ac839099c9584cc", null ],
     [ "oc_sec_ace_t", "oc__acl_8h.html#ab284972bac5a7a1733f727bac3566798", null ],
     [ "oc_sec_acl_t", "oc__acl_8h.html#a485c09b9417208265dc2eed110bd9c82", null ],
     [ "oc_sec_on_apply_acl_cb_t", "oc__acl_8h.html#adb8058ec4ee722ac6999e712a3e21863", null ],
@@ -34,6 +35,7 @@ var oc__acl_8h =
       [ "OC_ACE_WC_ALL_PUBLIC", "oc__acl_8h.html#a1e7d2ee5709877a0e75a8e048e17df1fa2001231471c769e94a8a9a96d134e24d", null ]
     ] ],
     [ "oc_sec_acl_add_bootstrap_acl", "oc__acl_8h.html#abd975f8a09517681f2ad1947dc850fbb", null ],
+    [ "oc_sec_acl_clear", "oc__acl_8h.html#a76c8509b26f9b855023ae93207443d03", null ],
     [ "oc_sec_apply_acl", "oc__acl_8h.html#acc817b2edece053441e069eee56f1fa8", null ],
     [ "oc_sec_get_ace_by_aceid", "oc__acl_8h.html#ae7df0da1db57051dc3ca52f1be3f388a", null ],
     [ "oc_sec_get_acl", "oc__acl_8h.html#a5dfed8d8872d4cd41d1937010238bb80", null ],

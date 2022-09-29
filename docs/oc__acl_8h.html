@@ -120,6 +120,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a5ca2f3f4a98c831ae82840c28e67e81f"><td class="memItemLeft" align="right" valign="top">typedef union <a class="el" href="unionoc__ace__subject__t.html">oc_ace_subject_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__acl_8h.html#a5ca2f3f4a98c831ae82840c28e67e81f">oc_ace_subject_t</a></td></tr>
 <tr class="memdesc:a5ca2f3f4a98c831ae82840c28e67e81f"><td class="mdescLeft">&#160;</td><td class="mdescRight">ACE subject information.  <a href="oc__acl_8h.html#a5ca2f3f4a98c831ae82840c28e67e81f">More...</a><br /></td></tr>
 <tr class="separator:a5ca2f3f4a98c831ae82840c28e67e81f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20dc76c511992e4f8ac839099c9584cc"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__acl_8h.html#a20dc76c511992e4f8ac839099c9584cc">oc_sec_ace_filter_t</a>) (const <a class="el" href="structoc__sec__ace__t.html">oc_sec_ace_t</a> *ace, void *user_data)</td></tr>
+<tr class="memdesc:a20dc76c511992e4f8ac839099c9584cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access control entry (ACE) filtering function.  <a href="oc__acl_8h.html#a20dc76c511992e4f8ac839099c9584cc">More...</a><br /></td></tr>
+<tr class="separator:a20dc76c511992e4f8ac839099c9584cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab284972bac5a7a1733f727bac3566798"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structoc__sec__ace__t.html">oc_sec_ace_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__acl_8h.html#ab284972bac5a7a1733f727bac3566798">oc_sec_ace_t</a></td></tr>
 <tr class="memdesc:ab284972bac5a7a1733f727bac3566798"><td class="mdescLeft">&#160;</td><td class="mdescRight">Security ACE information.  <a href="oc__acl_8h.html#ab284972bac5a7a1733f727bac3566798">More...</a><br /></td></tr>
 <tr class="separator:ab284972bac5a7a1733f727bac3566798"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -171,6 +174,9 @@ Functions</h2></td></tr>
 <tr class="memitem:abd975f8a09517681f2ad1947dc850fbb"><td class="memItemLeft" align="right" valign="top">OC_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__acl_8h.html#abd975f8a09517681f2ad1947dc850fbb">oc_sec_acl_add_bootstrap_acl</a> (size_t device)</td></tr>
 <tr class="memdesc:abd975f8a09517681f2ad1947dc850fbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add initial access control list for core resources of a device.  <a href="oc__acl_8h.html#abd975f8a09517681f2ad1947dc850fbb">More...</a><br /></td></tr>
 <tr class="separator:abd975f8a09517681f2ad1947dc850fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76c8509b26f9b855023ae93207443d03"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__acl_8h.html#a76c8509b26f9b855023ae93207443d03">oc_sec_acl_clear</a> (size_t device, <a class="el" href="oc__acl_8h.html#a20dc76c511992e4f8ac839099c9584cc">oc_sec_ace_filter_t</a> filter, void *user_data)</td></tr>
+<tr class="memdesc:a76c8509b26f9b855023ae93207443d03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove access control entries matching filter from given device.  <a href="oc__acl_8h.html#a76c8509b26f9b855023ae93207443d03">More...</a><br /></td></tr>
+<tr class="separator:a76c8509b26f9b855023ae93207443d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc817b2edece053441e069eee56f1fa8"><td class="memItemLeft" align="right" valign="top">OC_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__acl_8h.html#acc817b2edece053441e069eee56f1fa8">oc_sec_apply_acl</a> (oc_rep_t *rep, size_t device, <a class="el" href="oc__acl_8h.html#adb8058ec4ee722ac6999e712a3e21863">oc_sec_on_apply_acl_cb_t</a> on_apply_ace_cb, void *on_apply_ace_data)</td></tr>
 <tr class="memdesc:acc817b2edece053441e069eee56f1fa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse payload and add/update access control list.  <a href="oc__acl_8h.html#acc817b2edece053441e069eee56f1fa8">More...</a><br /></td></tr>
 <tr class="separator:acc817b2edece053441e069eee56f1fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,6 +223,32 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>ACE subject information. </p>
+
+</div>
+</div>
+<a id="a20dc76c511992e4f8ac839099c9584cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20dc76c511992e4f8ac839099c9584cc">&#9670;&nbsp;</a></span>oc_sec_ace_filter_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef bool(* oc_sec_ace_filter_t) (const <a class="el" href="structoc__sec__ace__t.html">oc_sec_ace_t</a> *ace, void *user_data)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Access control entry (ACE) filtering function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ace</td><td>ACE to check </td></tr>
+    <tr><td class="paramname">user_data</td><td>user data passed from the caller </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if ACE matches the filter </dd>
+<dd>
+false otherwise </dd></dl>
 
 </div>
 </div>
@@ -405,6 +437,50 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>true On success </dd>
 <dd>
 false On failure </dd></dl>
+
+</div>
+</div>
+<a id="a76c8509b26f9b855023ae93207443d03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76c8509b26f9b855023ae93207443d03">&#9670;&nbsp;</a></span>oc_sec_acl_clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OC_API void oc_sec_acl_clear </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="oc__acl_8h.html#a20dc76c511992e4f8ac839099c9584cc">oc_sec_ace_filter_t</a>&#160;</td>
+          <td class="paramname"><em>filter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove access control entries matching filter from given device. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>Index of the device </td></tr>
+    <tr><td class="paramname">filter</td><td>Filtering function (if NULL all existing ACEs match) </td></tr>
+    <tr><td class="paramname">user_data</td><td>User data passed from the caller </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -690,6 +766,7 @@ false Otherwise </dd></dl>
 <div class="ttc" id="agroup__doc__module__tag__collections_html_gab38e8990085bdd2fee9a4f6b33277ca3"><div class="ttname"><a href="group__doc__module__tag__collections.html#gab38e8990085bdd2fee9a4f6b33277ca3">oc_collection_add_supported_rt</a></div><div class="ttdeci">bool oc_collection_add_supported_rt(oc_resource_t *collection, const char *rt)</div><div class="ttdoc">Add a supported Resource Type to a collection.</div></div>
 <div class="ttc" id="astructoc__sec__cred__t_html_a39f4c436515763be1c728e9237f3447f"><div class="ttname"><a href="structoc__sec__cred__t.html#a39f4c436515763be1c728e9237f3447f">oc_sec_cred_t::privatedata</a></div><div class="ttdeci">oc_cred_data_t privatedata</div><div class="ttdoc">private data</div><div class="ttdef"><b>Definition:</b> oc_cred.h:97</div></div>
 <div class="ttc" id="aoc__client__state_8h_html_ab93155ce23b0cb02c7c7d71b5c251486"><div class="ttname"><a href="oc__client__state_8h.html#ab93155ce23b0cb02c7c7d71b5c251486">oc_response_handler_t</a></div><div class="ttdeci">void(* oc_response_handler_t)(oc_client_response_t *)</div><div class="ttdoc">client response handler</div><div class="ttdef"><b>Definition:</b> oc_client_state.h:92</div></div>
+<div class="ttc" id="aoc__cred_8h_html_aaf52ad19671d50a2642ad269b470c5ce"><div class="ttname"><a href="oc__cred_8h.html#aaf52ad19671d50a2642ad269b470c5ce">oc_sec_cred_clear</a></div><div class="ttdeci">OC_API void oc_sec_cred_clear(size_t device, oc_sec_cred_filter_t filter, void *user_data)</div><div class="ttdoc">remove credentials matching filter from given device</div></div>
 <div class="ttc" id="aoc__obt_8h_html_a88db9fd01e28a111dc4bbad13cadb84b"><div class="ttname"><a href="oc__obt_8h.html#a88db9fd01e28a111dc4bbad13cadb84b">oc_obt_delete_ace_by_aceid</a></div><div class="ttdeci">int oc_obt_delete_ace_by_aceid(oc_uuid_t *uuid, int aceid, oc_obt_status_cb_t cb, void *data)</div><div class="ttdoc">Remove an Access Control Entry (ACE) from a remote device's Access Control List (ACL)</div></div>
 <div class="ttc" id="aoc__buffer__settings_8h_html_a1279de769040b9559bf5d205df7d59c9"><div class="ttname"><a href="oc__buffer__settings_8h.html#a1279de769040b9559bf5d205df7d59c9">oc_set_mtu_size</a></div><div class="ttdeci">int oc_set_mtu_size(size_t mtu_size)</div><div class="ttdoc">sets the size of the MTU to be used</div></div>
 <div class="ttc" id="aoc__acl_8h_html_ab98a20bf3bbf69e66b7fe630e83e8b4dac5d30185c4faf24f548504fe0fec939e"><div class="ttname"><a href="oc__acl_8h.html#ab98a20bf3bbf69e66b7fe630e83e8b4dac5d30185c4faf24f548504fe0fec939e">OC_SUBJECT_CONN</a></div><div class="ttdeci">@ OC_SUBJECT_CONN</div><div class="ttdoc">connection type, ACE to be matched based on the connection or message type</div><div class="ttdef"><b>Definition:</b> oc_acl.h:85</div></div>
@@ -735,7 +812,7 @@ false Otherwise </dd></dl>
 <div class="ttc" id="aoc__ri_8h_html_a83161604a805e3a951254864d16a714fa4d093eeacb23c4a26f053b0e3ca618d8"><div class="ttname"><a href="oc__ri_8h.html#a83161604a805e3a951254864d16a714fa4d093eeacb23c4a26f053b0e3ca618d8">IMAGE_PNG</a></div><div class="ttdeci">@ IMAGE_PNG</div><div class="ttdoc">image/png - not used</div><div class="ttdef"><b>Definition:</b> oc_ri.h:105</div></div>
 <div class="ttc" id="aoc__storage_8h_html"><div class="ttname"><a href="oc__storage_8h.html">oc_storage.h</a></div></div>
 <div class="ttc" id="astructoc__resource__s_html_a1386c4ba12c1579f2936a5f3904a3236"><div class="ttname"><a href="structoc__resource__s.html#a1386c4ba12c1579f2936a5f3904a3236">oc_resource_s::tag_pos_rel</a></div><div class="ttdeci">double tag_pos_rel[3]</div><div class="ttdoc">tag relative position [x,y,z]</div><div class="ttdef"><b>Definition:</b> oc_ri.h:324</div></div>
-<div class="ttc" id="astructoc__sec__certs__data__t_html_a349c5ecd89031b4cf963b77c0e9cdddd"><div class="ttname"><a href="structoc__sec__certs__data__t.html#a349c5ecd89031b4cf963b77c0e9cdddd">oc_sec_certs_data_t::valid_from</a></div><div class="ttdeci">uint64_t valid_from</div><div class="ttdoc">UNIX timestamp (UTC +0000) from which the certificate is valid.</div><div class="ttdef"><b>Definition:</b> oc_cred.h:132</div></div>
+<div class="ttc" id="astructoc__sec__certs__data__t_html_a349c5ecd89031b4cf963b77c0e9cdddd"><div class="ttname"><a href="structoc__sec__certs__data__t.html#a349c5ecd89031b4cf963b77c0e9cdddd">oc_sec_certs_data_t::valid_from</a></div><div class="ttdeci">uint64_t valid_from</div><div class="ttdoc">UNIX timestamp (UTC +0000) from which the certificate is valid.</div><div class="ttdef"><b>Definition:</b> oc_cred.h:143</div></div>
 <div class="ttc" id="aoc__ri_8h_html_a83161604a805e3a951254864d16a714fae85220b59258b5e200abe5d56979e41e"><div class="ttname"><a href="oc__ri_8h.html#a83161604a805e3a951254864d16a714fae85220b59258b5e200abe5d56979e41e">TEXT_XML</a></div><div class="ttdeci">@ TEXT_XML</div><div class="ttdoc">text/xml</div><div class="ttdef"><b>Definition:</b> oc_ri.h:100</div></div>
 <div class="ttc" id="astructoc__resource__s_html_a94c514bd73ebe068bc95f3c0b33dceda"><div class="ttname"><a href="structoc__resource__s.html#a94c514bd73ebe068bc95f3c0b33dceda">oc_resource_s::device</a></div><div class="ttdeci">size_t device</div><div class="ttdoc">device index</div><div class="ttdef"><b>Definition:</b> oc_ri.h:311</div></div>
 <div class="ttc" id="aoc__obt_8h_html_a560219d829b0d3998b5280221cf0ab3f"><div class="ttname"><a href="oc__obt_8h.html#a560219d829b0d3998b5280221cf0ab3f">oc_obt_new_ace_for_subject</a></div><div class="ttdeci">oc_sec_ace_t * oc_obt_new_ace_for_subject(oc_uuid_t *uuid)</div><div class="ttdoc">Create a new Access Control Entry (ACE) with device UUID as subject.</div></div>
@@ -840,7 +917,7 @@ false Otherwise </dd></dl>
 <div class="ttc" id="aoc__ri_8h_html_a068a1c38013c32d65427aeed54503a38a580f21056428ad2d98633471f0c82f3d"><div class="ttname"><a href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38a580f21056428ad2d98633471f0c82f3d">OC_STATUS_INTERNAL_SERVER_ERROR</a></div><div class="ttdeci">@ OC_STATUS_INTERNAL_SERVER_ERROR</div><div class="ttdoc">Internal Server Error.</div><div class="ttdef"><b>Definition:</b> oc_ri.h:81</div></div>
 <div class="ttc" id="aoc__rep_8h_html_a905056f3a3a4c36633d8baa575d51ab8"><div class="ttname"><a href="oc__rep_8h.html#a905056f3a3a4c36633d8baa575d51ab8">oc_rep_get_byte_string</a></div><div class="ttdeci">bool oc_rep_get_byte_string(oc_rep_t *rep, const char *key, char **value, size_t *size)</div><div class="ttdoc">Read a byte string value from an oc_rep_t</div></div>
 <div class="ttc" id="aoc__endpoint_8h_html_acbafbf0eebae1e60a53d50301fa1ab78aa040cd7feeb588104634cdadf35abf1c"><div class="ttname"><a href="oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78aa040cd7feeb588104634cdadf35abf1c">TCP</a></div><div class="ttdeci">@ TCP</div><div class="ttdoc">tcp communication</div><div class="ttdef"><b>Definition:</b> oc_endpoint.h:74</div></div>
-<div class="ttc" id="astructoc__sec__certs__data__t_html_afabc34d000235716bf2e5adcc01d60d9"><div class="ttname"><a href="structoc__sec__certs__data__t.html#afabc34d000235716bf2e5adcc01d60d9">oc_sec_certs_data_t::valid_to</a></div><div class="ttdeci">uint64_t valid_to</div><div class="ttdoc">UNIX timestamp (UTC +0000) to which the certificate is valid.</div><div class="ttdef"><b>Definition:</b> oc_cred.h:134</div></div>
+<div class="ttc" id="astructoc__sec__certs__data__t_html_afabc34d000235716bf2e5adcc01d60d9"><div class="ttname"><a href="structoc__sec__certs__data__t.html#afabc34d000235716bf2e5adcc01d60d9">oc_sec_certs_data_t::valid_to</a></div><div class="ttdeci">uint64_t valid_to</div><div class="ttdoc">UNIX timestamp (UTC +0000) to which the certificate is valid.</div><div class="ttdef"><b>Definition:</b> oc_cred.h:145</div></div>
 <div class="ttc" id="aoc__clock__util_8h_html"><div class="ttname"><a href="oc__clock__util_8h.html">oc_clock_util.h</a></div></div>
 <div class="ttc" id="astructoc__request__t_html_a59cf0d81c2cdfeeb6f9d0d9499e19f9d"><div class="ttname"><a href="structoc__request__t.html#a59cf0d81c2cdfeeb6f9d0d9499e19f9d">oc_request_t::content_format</a></div><div class="ttdeci">oc_content_format_t content_format</div><div class="ttdoc">content format (of the payload in the request)</div><div class="ttdef"><b>Definition:</b> oc_ri.h:242</div></div>
 <div class="ttc" id="aoc__endpoint_8h_html"><div class="ttname"><a href="oc__endpoint_8h.html">oc_endpoint.h</a></div></div>
@@ -862,6 +939,7 @@ false Otherwise </dd></dl>
 <div class="ttc" id="aoc__ri_8h_html_a8b3dc0c2e5cbb134f0f5ef73b7f4e7c7"><div class="ttname"><a href="oc__ri_8h.html#a8b3dc0c2e5cbb134f0f5ef73b7f4e7c7">oc_event_callback_t</a></div><div class="ttdeci">struct oc_event_callback_s oc_event_callback_t</div><div class="ttdoc">event callback</div></div>
 <div class="ttc" id="astructoc__response__t_html_adcab288d073d8108bfbc11ef81438535"><div class="ttname"><a href="structoc__response__t.html#adcab288d073d8108bfbc11ef81438535">oc_response_t::response_buffer</a></div><div class="ttdeci">oc_response_buffer_t * response_buffer</div><div class="ttdoc">response buffer</div><div class="ttdef"><b>Definition:</b> oc_ri.h:165</div></div>
 <div class="ttc" id="aoc__endpoint_8h_html_acbafbf0eebae1e60a53d50301fa1ab78a05eb094889c0adc67ccc19ea72284315"><div class="ttname"><a href="oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78a05eb094889c0adc67ccc19ea72284315">DISCOVERY</a></div><div class="ttdeci">@ DISCOVERY</div><div class="ttdoc">used for discovery</div><div class="ttdef"><b>Definition:</b> oc_endpoint.h:70</div></div>
+<div class="ttc" id="aoc__acl_8h_html_a76c8509b26f9b855023ae93207443d03"><div class="ttname"><a href="oc__acl_8h.html#a76c8509b26f9b855023ae93207443d03">oc_sec_acl_clear</a></div><div class="ttdeci">OC_API void oc_sec_acl_clear(size_t device, oc_sec_ace_filter_t filter, void *user_data)</div><div class="ttdoc">Remove access control entries matching filter from given device.</div></div>
 <div class="ttc" id="aoc__clock_8h_html_a5518eafc90948c3b95c2fe6630fa392a"><div class="ttname"><a href="oc__clock_8h.html#a5518eafc90948c3b95c2fe6630fa392a">oc_clock_time</a></div><div class="ttdeci">oc_clock_time_t oc_clock_time(void)</div><div class="ttdoc">Get the current clock time.</div></div>
 <div class="ttc" id="astructoc__sec__cred__t_html_a2fe57bbf309da7820e3e3fb9ad0fc2ef"><div class="ttname"><a href="structoc__sec__cred__t.html#a2fe57bbf309da7820e3e3fb9ad0fc2ef">oc_sec_cred_t::tag</a></div><div class="ttdeci">oc_string_t tag</div><div class="ttdoc">custom user tag</div><div class="ttdef"><b>Definition:</b> oc_cred.h:112</div></div>
 <div class="ttc" id="aoc__client__state_8h_html_ab24c579b8008ded958bc0322ca506cff"><div class="ttname"><a href="oc__client__state_8h.html#ab24c579b8008ded958bc0322ca506cff">oc_ri_alloc_client_cb</a></div><div class="ttdeci">oc_client_cb_t * oc_ri_alloc_client_cb(const char *uri, oc_endpoint_t *endpoint, oc_method_t method, const char *query, oc_client_handler_t handler, oc_qos_t qos, void *user_data)</div><div class="ttdoc">allocate the client callback information</div></div>
@@ -942,7 +1020,7 @@ false Otherwise </dd></dl>
 <div class="ttc" id="aoc__ri_8h_html_a068a1c38013c32d65427aeed54503a38a483d03ac6df269eb49b2ca709372889b"><div class="ttname"><a href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38a483d03ac6df269eb49b2ca709372889b">OC_STATUS_OK</a></div><div class="ttdeci">@ OC_STATUS_OK</div><div class="ttdoc">OK.</div><div class="ttdef"><b>Definition:</b> oc_ri.h:67</div></div>
 <div class="ttc" id="aoc__ri_8h_html_aab06afb6391b17826f3af7d1a6227a4bab360b38f69a2f8b6374bff0398642c9d"><div class="ttname"><a href="oc__ri_8h.html#aab06afb6391b17826f3af7d1a6227a4bab360b38f69a2f8b6374bff0398642c9d">OC_DISCOVERABLE</a></div><div class="ttdeci">@ OC_DISCOVERABLE</div><div class="ttdoc">discoverable</div><div class="ttdef"><b>Definition:</b> oc_ri.h:52</div></div>
 <div class="ttc" id="aoc__client__state_8h_html_a5a0915083eefca7d16238eff6a6db704"><div class="ttname"><a href="oc__client__state_8h.html#a5a0915083eefca7d16238eff6a6db704">oc_ri_free_client_cbs_by_endpoint</a></div><div class="ttdeci">void oc_ri_free_client_cbs_by_endpoint(oc_endpoint_t *endpoint)</div><div class="ttdoc">free the client callback informatin by endpoint</div></div>
-<div class="ttc" id="aoc__cred_8h_html_a5d7834c30f61c858ee25c8ba8a47a2c6"><div class="ttname"><a href="oc__cred_8h.html#a5d7834c30f61c858ee25c8ba8a47a2c6">oc_sec_on_apply_cred_cb_t</a></div><div class="ttdeci">void(* oc_sec_on_apply_cred_cb_t)(oc_sec_on_apply_cred_data_t data, void *user_data)</div><div class="ttdoc">callback invoked with a created / updated credential</div><div class="ttdef"><b>Definition:</b> oc_cred.h:227</div></div>
+<div class="ttc" id="aoc__cred_8h_html_a5d7834c30f61c858ee25c8ba8a47a2c6"><div class="ttname"><a href="oc__cred_8h.html#a5d7834c30f61c858ee25c8ba8a47a2c6">oc_sec_on_apply_cred_cb_t</a></div><div class="ttdeci">void(* oc_sec_on_apply_cred_cb_t)(oc_sec_on_apply_cred_data_t data, void *user_data)</div><div class="ttdoc">callback invoked with a created / updated credential</div><div class="ttdef"><b>Definition:</b> oc_cred.h:238</div></div>
 <div class="ttc" id="aoc__signal__event__loop_8h_html"><div class="ttname"><a href="oc__signal__event__loop_8h.html">oc_signal_event_loop.h</a></div></div>
 <div class="ttc" id="aunionoc__ace__subject__t_html_a1b7c342edf3e1a962ab14ba62f41f666"><div class="ttname"><a href="unionoc__ace__subject__t.html#a1b7c342edf3e1a962ab14ba62f41f666">oc_ace_subject_t::authority</a></div><div class="ttdeci">oc_string_t authority</div><div class="ttdoc">authority</div><div class="ttdef"><b>Definition:</b> oc_acl.h:111</div></div>
 <div class="ttc" id="aoc__obt_8h_html_abbff1d4755a4ca41b6d4af4d7be1ca1c"><div class="ttname"><a href="oc__obt_8h.html#abbff1d4755a4ca41b6d4af4d7be1ca1c">oc_obt_ace_new_resource</a></div><div class="ttdeci">oc_ace_res_t * oc_obt_ace_new_resource(oc_sec_ace_t *ace)</div><div class="ttdoc">Add an ACE resource (oc_ace_res_t) to the ACE.</div></div>
@@ -1052,8 +1130,8 @@ false Otherwise </dd></dl>
 <div class="ttc" id="aoc__rep_8h_html_ab29eccc16d4f246204604d20ac33859c"><div class="ttname"><a href="oc__rep_8h.html#ab29eccc16d4f246204604d20ac33859c">oc_rep_get_byte_string_array</a></div><div class="ttdeci">bool oc_rep_get_byte_string_array(oc_rep_t *rep, const char *key, oc_string_array_t *value, size_t *size)</div><div class="ttdoc">Read an byte string array value from an oc_rep_t</div></div>
 <div class="ttc" id="aoc__acl_8h_html_acc817b2edece053441e069eee56f1fa8"><div class="ttname"><a href="oc__acl_8h.html#acc817b2edece053441e069eee56f1fa8">oc_sec_apply_acl</a></div><div class="ttdeci">OC_API int oc_sec_apply_acl(oc_rep_t *rep, size_t device, oc_sec_on_apply_acl_cb_t on_apply_ace_cb, void *on_apply_ace_data)</div><div class="ttdoc">Parse payload and add/update access control list.</div></div>
 <div class="ttc" id="aoc__client__state_8h_html_a37581fc662e5c9cecf258875b4429ca2"><div class="ttname"><a href="oc__client__state_8h.html#a37581fc662e5c9cecf258875b4429ca2">oc_ri_find_client_cb_by_mid</a></div><div class="ttdeci">oc_client_cb_t * oc_ri_find_client_cb_by_mid(uint16_t mid)</div><div class="ttdoc">find the client callback info by message id (mid)</div></div>
-<div class="ttc" id="astructoc__sec__certs__data__t_html"><div class="ttname"><a href="structoc__sec__certs__data__t.html">oc_sec_certs_data_t</a></div><div class="ttdoc">Selected certificate data used for verification.</div><div class="ttdef"><b>Definition:</b> oc_cred.h:130</div></div>
-<div class="ttc" id="aoc__acl_8h_html_adb8058ec4ee722ac6999e712a3e21863"><div class="ttname"><a href="oc__acl_8h.html#adb8058ec4ee722ac6999e712a3e21863">oc_sec_on_apply_acl_cb_t</a></div><div class="ttdeci">void(* oc_sec_on_apply_acl_cb_t)(oc_sec_on_apply_acl_data_t data, void *user_data)</div><div class="ttdoc">Callback invoked with a created / updated access control entry.</div><div class="ttdef"><b>Definition:</b> oc_acl.h:201</div></div>
+<div class="ttc" id="astructoc__sec__certs__data__t_html"><div class="ttname"><a href="structoc__sec__certs__data__t.html">oc_sec_certs_data_t</a></div><div class="ttdoc">Selected certificate data used for verification.</div><div class="ttdef"><b>Definition:</b> oc_cred.h:141</div></div>
+<div class="ttc" id="aoc__acl_8h_html_adb8058ec4ee722ac6999e712a3e21863"><div class="ttname"><a href="oc__acl_8h.html#adb8058ec4ee722ac6999e712a3e21863">oc_sec_on_apply_acl_cb_t</a></div><div class="ttdeci">void(* oc_sec_on_apply_acl_cb_t)(oc_sec_on_apply_acl_data_t data, void *user_data)</div><div class="ttdoc">Callback invoked with a created / updated access control entry.</div><div class="ttdef"><b>Definition:</b> oc_acl.h:222</div></div>
 <div class="ttc" id="aoc__ri_8h_html_a83161604a805e3a951254864d16a714fae9ba87e9c195384a61ec52830acda6cc"><div class="ttname"><a href="oc__ri_8h.html#a83161604a805e3a951254864d16a714fae9ba87e9c195384a61ec52830acda6cc">VIDEO_RAW</a></div><div class="ttdeci">@ VIDEO_RAW</div><div class="ttdoc">video/raw - not used</div><div class="ttdef"><b>Definition:</b> oc_ri.h:108</div></div>
 <div class="ttc" id="agroup__doc__module__tag__collections_html_ga0c961214569feae0005677b211a1adf5"><div class="ttname"><a href="group__doc__module__tag__collections.html#ga0c961214569feae0005677b211a1adf5">oc_new_collection</a></div><div class="ttdeci">oc_resource_t * oc_new_collection(const char *name, const char *uri, uint8_t num_resource_types, size_t device)</div><div class="ttdoc">Creates a new empty collection.</div></div>
 <div class="ttc" id="aoc__ri_8h_html_a8bd8b3d42654b9209dd1a51f468005c4"><div class="ttname"><a href="oc__ri_8h.html#a8bd8b3d42654b9209dd1a51f468005c4">oc_ri_dealloc_resource</a></div><div class="ttdeci">void oc_ri_dealloc_resource(oc_resource_t *resource)</div><div class="ttdoc">deallocate a resource structure</div></div>
@@ -1068,6 +1146,7 @@ false Otherwise </dd></dl>
 <div class="ttc" id="aoc__acl_8h_html_afd8b98696c9f44d51d07404d414421c5afa73180fee00be16035f83e58a1d0777"><div class="ttname"><a href="oc__acl_8h.html#afd8b98696c9f44d51d07404d414421c5afa73180fee00be16035f83e58a1d0777">OC_PERM_NOTIFY</a></div><div class="ttdeci">@ OC_PERM_NOTIFY</div><div class="ttdoc">Notify permission is granted.</div><div class="ttdef"><b>Definition:</b> oc_acl.h:75</div></div>
 <div class="ttc" id="agroup__doc__module__tag__server__side_html_ga24e8975d42a239215ee94219967d3853"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga24e8975d42a239215ee94219967d3853">oc_notify_observers_delayed</a></div><div class="ttdeci">void oc_notify_observers_delayed(oc_resource_t *resource, uint16_t seconds)</div><div class="ttdoc">Schedule notify all observers to invoke after a set number of seconds.</div></div>
 <div class="ttc" id="aoc__session__events_8h_html_ac8a484b47be856384dd3d86390f04367"><div class="ttname"><a href="oc__session__events_8h.html#ac8a484b47be856384dd3d86390f04367">oc_session_state_t</a></div><div class="ttdeci">oc_session_state_t</div><div class="ttdoc">session states</div><div class="ttdef"><b>Definition:</b> oc_session_events.h:33</div></div>
+<div class="ttc" id="aoc__acl_8h_html_a20dc76c511992e4f8ac839099c9584cc"><div class="ttname"><a href="oc__acl_8h.html#a20dc76c511992e4f8ac839099c9584cc">oc_sec_ace_filter_t</a></div><div class="ttdeci">bool(* oc_sec_ace_filter_t)(const oc_sec_ace_t *ace, void *user_data)</div><div class="ttdoc">Access control entry (ACE) filtering function.</div><div class="ttdef"><b>Definition:</b> oc_acl.h:139</div></div>
 <div class="ttc" id="aoc__ri_8h_html_ab3e169480a3cd53f3f69b2e60ddb4427"><div class="ttname"><a href="oc__ri_8h.html#ab3e169480a3cd53f3f69b2e60ddb4427">oc_ri_get_app_resource_by_uri</a></div><div class="ttdeci">oc_resource_t * oc_ri_get_app_resource_by_uri(const char *uri, size_t uri_len, size_t device)</div><div class="ttdoc">retrieve the resource by uri and device indes</div></div>
 <div class="ttc" id="agroup__doc__module__tag__common__operations_html_ga09cd54cea5742e078a5581d0e41e1e59"><div class="ttname"><a href="group__doc__module__tag__common__operations.html#ga09cd54cea5742e078a5581d0e41e1e59">oc_set_immutable_device_identifier</a></div><div class="ttdeci">void oc_set_immutable_device_identifier(size_t device, oc_uuid_t *piid)</div><div class="ttdoc">Set the immutable device identifier.</div></div>
 <div class="ttc" id="aoc__obt_8h_html_aebf4a8c700f12d08eff69f0724ba3d1d"><div class="ttname"><a href="oc__obt_8h.html#aebf4a8c700f12d08eff69f0724ba3d1d">oc_obt_retrieve_creds</a></div><div class="ttdeci">int oc_obt_retrieve_creds(oc_uuid_t *subject, oc_obt_creds_cb_t cb, void *data)</div><div class="ttdoc">Retrieve a list of credentials from a remote device owned by the onboarding tool.</div></div>
@@ -1145,7 +1224,7 @@ false Otherwise </dd></dl>
 <div class="ttc" id="astructoc__resource__s_html_ac176b517f265d964fd85f5c7fb00c6d5"><div class="ttname"><a href="structoc__resource__s.html#ac176b517f265d964fd85f5c7fb00c6d5">oc_resource_s::num_observers</a></div><div class="ttdeci">uint8_t num_observers</div><div class="ttdoc">amount of observers</div><div class="ttdef"><b>Definition:</b> oc_ri.h:328</div></div>
 <div class="ttc" id="aoc__obt_8h_html_ada5f2bf09c55f8d6833bf42a2d7bc092"><div class="ttname"><a href="oc__obt_8h.html#ada5f2bf09c55f8d6833bf42a2d7bc092">oc_obt_provision_ace</a></div><div class="ttdeci">int oc_obt_provision_ace(oc_uuid_t *subject, oc_sec_ace_t *ace, oc_obt_device_status_cb_t cb, void *data)</div><div class="ttdoc">Provision an ACE to a device.</div></div>
 <div class="ttc" id="astructoc__resource__s_html_aa753b0d40e8c4a8743483bb335d1f3d9"><div class="ttname"><a href="structoc__resource__s.html#aa753b0d40e8c4a8743483bb335d1f3d9">oc_resource_s::observe_period_seconds</a></div><div class="ttdeci">uint16_t observe_period_seconds</div><div class="ttdoc">observe period in seconds</div><div class="ttdef"><b>Definition:</b> oc_ri.h:336</div></div>
-<div class="ttc" id="aoc__cred_8h_html_ac0594433e2ea4594ead9e953203caf6e"><div class="ttname"><a href="oc__cred_8h.html#ac0594433e2ea4594ead9e953203caf6e">oc_verify_sec_certs_data_fn_t</a></div><div class="ttdeci">bool(* oc_verify_sec_certs_data_fn_t)(const oc_sec_certs_data_t *data, void *user_data)</div><div class="ttdoc">Callback function to verify a single certificate.</div><div class="ttdef"><b>Definition:</b> oc_cred.h:142</div></div>
+<div class="ttc" id="aoc__cred_8h_html_ac0594433e2ea4594ead9e953203caf6e"><div class="ttname"><a href="oc__cred_8h.html#ac0594433e2ea4594ead9e953203caf6e">oc_verify_sec_certs_data_fn_t</a></div><div class="ttdeci">bool(* oc_verify_sec_certs_data_fn_t)(const oc_sec_certs_data_t *data, void *user_data)</div><div class="ttdoc">Callback function to verify a single certificate.</div><div class="ttdef"><b>Definition:</b> oc_cred.h:153</div></div>
 <div class="ttc" id="agroup__doc__module__tag__collections_html_ga3414d119ce8f0952f3f9cbb2797d3bf3"><div class="ttname"><a href="group__doc__module__tag__collections.html#ga3414d119ce8f0952f3f9cbb2797d3bf3">oc_link_add_rel</a></div><div class="ttdeci">void oc_link_add_rel(oc_link_t *link, const char *rel)</div><div class="ttdoc">Adds a relation to the link.</div></div>
 <div class="ttc" id="aoc__cred_8h_html_af766cf746fb6d10b2f502d7f4f76e29ea6d967ca34d03da86b30c2f486d14ee14"><div class="ttname"><a href="oc__cred_8h.html#af766cf746fb6d10b2f502d7f4f76e29ea6d967ca34d03da86b30c2f486d14ee14">OC_CREDUSAGE_MFG_CERT</a></div><div class="ttdeci">@ OC_CREDUSAGE_MFG_CERT</div><div class="ttdoc">Manufacturer CA oic.sec.cred.mfgcert.</div><div class="ttdef"><b>Definition:</b> oc_cred.h:59</div></div>
 <div class="ttc" id="aoc__buffer__settings_8h_html_a1a0598b2bd3d052a4260859224f1264d"><div class="ttname"><a href="oc__buffer__settings_8h.html#a1a0598b2bd3d052a4260859224f1264d">oc_get_mtu_size</a></div><div class="ttdeci">long oc_get_mtu_size(void)</div><div class="ttdoc">retrieve the currently used MTU size</div></div>
@@ -1224,6 +1303,7 @@ false Otherwise </dd></dl>
 <div class="ttc" id="astructoc__request__t_html_ab37ead9b768f1ee00fd8b655a4309e8c"><div class="ttname"><a href="structoc__request__t.html#ab37ead9b768f1ee00fd8b655a4309e8c">oc_request_t::_payload_len</a></div><div class="ttdeci">size_t _payload_len</div><div class="ttdoc">payload size</div><div class="ttdef"><b>Definition:</b> oc_ri.h:240</div></div>
 <div class="ttc" id="aoc__helpers_8h_html"><div class="ttname"><a href="oc__helpers_8h.html">oc_helpers.h</a></div></div>
 <div class="ttc" id="aoc__core__res_8h_html_ab73d2ae0cf4a7d6563d51527f0442ef7"><div class="ttname"><a href="oc__core__res_8h.html#ab73d2ae0cf4a7d6563d51527f0442ef7">oc_core_get_latency</a></div><div class="ttdeci">int oc_core_get_latency(void)</div><div class="ttdoc">retrieves the latency (lat) property in eps of the oic.wk.res resource.</div></div>
+<div class="ttc" id="aoc__cred_8h_html_ab650f98e0d169115da0d6a610bc7544b"><div class="ttname"><a href="oc__cred_8h.html#ab650f98e0d169115da0d6a610bc7544b">oc_sec_cred_filter_t</a></div><div class="ttdeci">bool(* oc_sec_cred_filter_t)(const oc_sec_cred_t *cred, void *user_data)</div><div class="ttdoc">Security credential filtering function.</div><div class="ttdef"><b>Definition:</b> oc_cred.h:133</div></div>
 <div class="ttc" id="astructoc__event__callback__s_html_a735984d41155bc1032e09bece8f8d66d"><div class="ttname"><a href="structoc__event__callback__s.html#a735984d41155bc1032e09bece8f8d66d">oc_event_callback_s::data</a></div><div class="ttdeci">void * data</div><div class="ttdoc">data for the callback</div><div class="ttdef"><b>Definition:</b> oc_ri.h:358</div></div>
 <div class="ttc" id="aoc__buffer_8h_html_a25c34e4e33b154eff1c96692862ec982"><div class="ttname"><a href="oc__buffer_8h.html#a25c34e4e33b154eff1c96692862ec982">oc_allocate_message_from_pool</a></div><div class="ttdeci">oc_message_t * oc_allocate_message_from_pool(struct oc_memb *pool)</div><div class="ttdoc">allocate message from specific memory pool</div></div>
 <div class="ttc" id="aoc__core__res_8h_html_a5308cef52443fd78acd2a0768243a446"><div class="ttname"><a href="oc__core__res_8h.html#a5308cef52443fd78acd2a0768243a446">oc_core_is_DCR</a></div><div class="ttdeci">bool oc_core_is_DCR(const oc_resource_t *resource, size_t device)</div><div class="ttdoc">determine if a resource is a Device Configuration Resource</div></div>
@@ -1328,7 +1408,7 @@ false Otherwise </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__acl_8h.html">oc_acl.h</a></li>
-    <li class="footer">Generated on Mon Sep 26 2022 13:41:18 for IoTivity-Lite by
+    <li class="footer">Generated on Thu Sep 29 2022 07:41:27 for IoTivity-Lite by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
