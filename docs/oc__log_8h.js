@@ -9,6 +9,7 @@ var oc__log_8h =
     [ "OC_LOGipaddr", "oc__log_8h.html#a4c5fe60da598b67e7f1c3f2041163065", null ],
     [ "OC_WRN", "oc__log_8h.html#ad111c2e3d57fcb638d9a4ba053bd3d3a", null ],
     [ "PRINT", "oc__log_8h.html#a15bb631053a1fce9c5470701900984c7", null ],
+    [ "PRINT_ENDPOINT_ADDR", "oc__log_8h.html#ab0a1dd7481629e6607ebcc655721daad", null ],
     [ "PRINTipaddr", "oc__log_8h.html#a013f76c40c9e6392dc45593b9012a5c9", null ],
     [ "PRINTipaddr_local", "oc__log_8h.html#a5e518f99bb71a46757899f401b28ecbc", null ],
     [ "SNPRINTF", "oc__log_8h.html#a8616c1a6f794ff9d14b3f5204413a1cc", null ],

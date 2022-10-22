@@ -116,11 +116,14 @@ Macros</h2></td></tr>
 <tr class="memitem:a15bb631053a1fce9c5470701900984c7"><td class="memItemLeft" align="right" valign="top"><a id="a15bb631053a1fce9c5470701900984c7"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>PRINT</b>(...)&#160;&#160;&#160;printf(__VA_ARGS__)</td></tr>
 <tr class="separator:a15bb631053a1fce9c5470701900984c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0a1dd7481629e6607ebcc655721daad"><td class="memItemLeft" align="right" valign="top"><a id="ab0a1dd7481629e6607ebcc655721daad"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PRINT_ENDPOINT_ADDR</b>(endpoint,  addr_memb)</td></tr>
+<tr class="separator:ab0a1dd7481629e6607ebcc655721daad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a013f76c40c9e6392dc45593b9012a5c9"><td class="memItemLeft" align="right" valign="top"><a id="a013f76c40c9e6392dc45593b9012a5c9"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>PRINTipaddr</b>(endpoint)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PRINTipaddr</b>(endpoint)&#160;&#160;&#160;PRINT_ENDPOINT_ADDR(endpoint, addr)</td></tr>
 <tr class="separator:a013f76c40c9e6392dc45593b9012a5c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e518f99bb71a46757899f401b28ecbc"><td class="memItemLeft" align="right" valign="top"><a id="a5e518f99bb71a46757899f401b28ecbc"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>PRINTipaddr_local</b>(endpoint)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PRINTipaddr_local</b>(endpoint)&#160;&#160;&#160;PRINT_ENDPOINT_ADDR(endpoint, addr_local)</td></tr>
 <tr class="separator:a5e518f99bb71a46757899f401b28ecbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8616c1a6f794ff9d14b3f5204413a1cc"><td class="memItemLeft" align="right" valign="top"><a id="a8616c1a6f794ff9d14b3f5204413a1cc"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SNPRINTF</b>(...)&#160;&#160;&#160;snprintf(__VA_ARGS__)</td></tr>
@@ -291,7 +294,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_651562d8bf6cfd3e81eff5b570d7df50.html">port</a></li><li class="navelem"><a class="el" href="oc__log_8h.html">oc_log.h</a></li>
-    <li class="footer">Generated on Fri Oct 21 2022 16:35:13 for IoTivity-Lite by
+    <li class="footer">Generated on Sat Oct 22 2022 13:23:46 for IoTivity-Lite by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>
