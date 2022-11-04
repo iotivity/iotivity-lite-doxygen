@@ -169,9 +169,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga14c08ecd261e6f6ce93f1d92007576b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__client__state.html#ga14c08ecd261e6f6ce93f1d92007576b1">oc_stop_multicast</a> (<a class="el" href="structoc__client__response__t.html">oc_client_response_t</a> *response)</td></tr>
 <tr class="memdesc:ga14c08ecd261e6f6ce93f1d92007576b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">stop the multicast update (e.g.  <a href="group__doc__module__tag__client__state.html#ga14c08ecd261e6f6ce93f1d92007576b1">More...</a><br /></td></tr>
 <tr class="separator:ga14c08ecd261e6f6ce93f1d92007576b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabce4bcea94e2ad38ffac39ce447b4eb8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__client__state.html#gabce4bcea94e2ad38ffac39ce447b4eb8">oc_stop_observe</a> (const char *uri, <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint)</td></tr>
-<tr class="memdesc:gabce4bcea94e2ad38ffac39ce447b4eb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unsubscribe for notifications from a resource.  <a href="group__doc__module__tag__client__state.html#gabce4bcea94e2ad38ffac39ce447b4eb8">More...</a><br /></td></tr>
-<tr class="separator:gabce4bcea94e2ad38ffac39ce447b4eb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga02d9477c9d5b135226810b71614ed0d4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__client__state.html#ga02d9477c9d5b135226810b71614ed0d4">oc_stop_observe</a> (const char *uri, const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint)</td></tr>
+<tr class="memdesc:ga02d9477c9d5b135226810b71614ed0d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unsubscribe for notifications from a resource.  <a href="group__doc__module__tag__client__state.html#ga02d9477c9d5b135226810b71614ed0d4">More...</a><br /></td></tr>
+<tr class="separator:ga02d9477c9d5b135226810b71614ed0d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Client side support functions. </p>
@@ -720,7 +720,7 @@ Functions</h2></td></tr>
 
 <p>Dispatch a GET request with the CoAP Observe option to subscribe for notifications from a resource. </p>
 <p>The oc_response_handler_t will be invoked each time upon receiving a notification.</p>
-<p>The handler will continue to be invoked till <a class="el" href="group__doc__module__tag__client__state.html#gabce4bcea94e2ad38ffac39ce447b4eb8" title="Unsubscribe for notifications from a resource.">oc_stop_observe()</a> is called.</p>
+<p>The handler will continue to be invoked till <a class="el" href="group__doc__module__tag__client__state.html#ga02d9477c9d5b135226810b71614ed0d4" title="Unsubscribe for notifications from a resource.">oc_stop_observe()</a> is called.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">uri</td><td>the uri of the resource </td></tr>
@@ -1353,8 +1353,8 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="gabce4bcea94e2ad38ffac39ce447b4eb8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabce4bcea94e2ad38ffac39ce447b4eb8">&#9670;&nbsp;</a></span>oc_stop_observe()</h2>
+<a id="ga02d9477c9d5b135226810b71614ed0d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga02d9477c9d5b135226810b71614ed0d4">&#9670;&nbsp;</a></span>oc_stop_observe()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1368,7 +1368,7 @@ false </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *&#160;</td>
           <td class="paramname"><em>endpoint</em>&#160;</td>
         </tr>
         <tr>
@@ -1409,7 +1409,7 @@ false </dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Nov 3 2022 13:25:54 for IoTivity-Lite by
+    <li class="footer">Generated on Fri Nov 4 2022 22:43:31 for IoTivity-Lite by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

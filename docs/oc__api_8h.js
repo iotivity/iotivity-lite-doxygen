@@ -115,5 +115,5 @@ var oc__api_8h =
     [ "oc_set_select_oxms_cb", "oc__api_8h.html#aff3a70487d7851c022386df601655fb6", null ],
     [ "oc_set_separate_response_buffer", "group__doc__module__tag__server__side.html#ga1a6752c73365b6d03a1dcfcf3d3005fc", null ],
     [ "oc_stop_multicast", "group__doc__module__tag__client__state.html#ga14c08ecd261e6f6ce93f1d92007576b1", null ],
-    [ "oc_stop_observe", "group__doc__module__tag__client__state.html#gabce4bcea94e2ad38ffac39ce447b4eb8", null ]
+    [ "oc_stop_observe", "group__doc__module__tag__client__state.html#ga02d9477c9d5b135226810b71614ed0d4", null ]
 ];

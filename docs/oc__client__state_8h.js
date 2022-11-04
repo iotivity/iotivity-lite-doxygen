@@ -18,11 +18,11 @@ var oc__client__state_8h =
     ] ],
     [ "oc_ri_alloc_client_cb", "oc__client__state_8h.html#ab24c579b8008ded958bc0322ca506cff", null ],
     [ "oc_ri_find_client_cb_by_mid", "oc__client__state_8h.html#a37581fc662e5c9cecf258875b4429ca2", null ],
-    [ "oc_ri_find_client_cb_by_token", "oc__client__state_8h.html#a7ce3325140b542af10486e5d0298481e", null ],
-    [ "oc_ri_free_client_cbs_by_endpoint", "oc__client__state_8h.html#a5a0915083eefca7d16238eff6a6db704", null ],
+    [ "oc_ri_find_client_cb_by_token", "oc__client__state_8h.html#a321000f991affa327b9af8ab2c005110", null ],
+    [ "oc_ri_free_client_cbs_by_endpoint", "oc__client__state_8h.html#afcade4e569fb2952046f7878c44b80f4", null ],
     [ "oc_ri_free_client_cbs_by_mid", "oc__client__state_8h.html#abd4c28572243f8b7343fdc826f6a22a4", null ],
-    [ "oc_ri_get_client_cb", "oc__client__state_8h.html#ad769e0d91b1758a254dfb4449fbbd102", null ],
+    [ "oc_ri_get_client_cb", "oc__client__state_8h.html#a15c6564400999bcac6848ead117988e6", null ],
     [ "oc_ri_invoke_client_cb", "oc__client__state_8h.html#a72b5c4671ceac7ba12d1966ab8ab0482", null ],
-    [ "oc_ri_is_client_cb_valid", "oc__client__state_8h.html#a47f318c6ad81d4fd19414e7767e81567", null ],
+    [ "oc_ri_is_client_cb_valid", "oc__client__state_8h.html#a3954708d64c17fa0c937d22371e991eb", null ],
     [ "oc_ri_process_discovery_payload", "oc__client__state_8h.html#a67016f802fe0302bc611945ebdfd8bbb", null ]
 ];

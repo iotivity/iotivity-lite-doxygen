@@ -24,5 +24,5 @@ var group__doc__module__tag__client__state =
     [ "oc_init_put", "group__doc__module__tag__client__state.html#gab5bea04b5899e9ac014d11fa0fcaf464", null ],
     [ "oc_send_ping", "group__doc__module__tag__client__state.html#ga25e847060010751c77114922d01d3457", null ],
     [ "oc_stop_multicast", "group__doc__module__tag__client__state.html#ga14c08ecd261e6f6ce93f1d92007576b1", null ],
-    [ "oc_stop_observe", "group__doc__module__tag__client__state.html#gabce4bcea94e2ad38ffac39ce447b4eb8", null ]
+    [ "oc_stop_observe", "group__doc__module__tag__client__state.html#ga02d9477c9d5b135226810b71614ed0d4", null ]
 ];
