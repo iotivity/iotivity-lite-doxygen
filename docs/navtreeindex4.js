@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"structoc__client__response__t.html#ac4a3f18156ea9b9a3bf4492e673dc615":[2,0,4,2],
+"structoc__cred__data__t.html":[2,0,5],
 "structoc__cred__data__t.html#a270c8a83a2564fbedc5aa19be79143bd":[2,0,5,0],
 "structoc__cred__data__t.html#a7452b9ae3dd3407188d233990bd00f88":[2,0,5,1],
 "structoc__device__info__t.html":[2,0,6],

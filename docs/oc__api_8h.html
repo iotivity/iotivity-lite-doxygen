@@ -372,11 +372,17 @@ Functions</h2></td></tr>
 <tr class="memdesc:a44732c855ea16654b45c46a0d091a229"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the ownership changed callback.  <a href="oc__api_8h.html#a44732c855ea16654b45c46a0d091a229">More...</a><br /></td></tr>
 <tr class="separator:a44732c855ea16654b45c46a0d091a229"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b046267a9156c64d090259a7916319f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__api_8h.html#a2b046267a9156c64d090259a7916319f">oc_reset</a> ()</td></tr>
-<tr class="memdesc:a2b046267a9156c64d090259a7916319f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset all logical devices to the RFOTM state.  <a href="oc__api_8h.html#a2b046267a9156c64d090259a7916319f">More...</a><br /></td></tr>
+<tr class="memdesc:a2b046267a9156c64d090259a7916319f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset all logical devices to the RFOTM state and close all opened TLS connections immediately.  <a href="oc__api_8h.html#a2b046267a9156c64d090259a7916319f">More...</a><br /></td></tr>
 <tr class="separator:a2b046267a9156c64d090259a7916319f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0168913152597d658554d6bec6a833d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__api_8h.html#a0168913152597d658554d6bec6a833d2">oc_reset_device</a> (size_t device)</td></tr>
-<tr class="memdesc:a0168913152597d658554d6bec6a833d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset logical device to the RFOTM state.  <a href="oc__api_8h.html#a0168913152597d658554d6bec6a833d2">More...</a><br /></td></tr>
+<tr class="memdesc:a0168913152597d658554d6bec6a833d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset logical device to the RFOTM state and close all opened TLS connections immediately.  <a href="oc__api_8h.html#a0168913152597d658554d6bec6a833d2">More...</a><br /></td></tr>
 <tr class="separator:a0168913152597d658554d6bec6a833d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30640940cd7f426f53bac0ba44d0679d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__api_8h.html#a30640940cd7f426f53bac0ba44d0679d">oc_reset_device_v1</a> (size_t device, bool close_all_tls_connections_immediately)</td></tr>
+<tr class="memdesc:a30640940cd7f426f53bac0ba44d0679d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset logical device to the RFOTM state.  <a href="oc__api_8h.html#a30640940cd7f426f53bac0ba44d0679d">More...</a><br /></td></tr>
+<tr class="separator:a30640940cd7f426f53bac0ba44d0679d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f0762b709aab504772dd1e7b6f4a8f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__api_8h.html#a5f0762b709aab504772dd1e7b6f4a8f8">oc_reset_v1</a> (bool close_all_tls_connections_immediately)</td></tr>
+<tr class="memdesc:a5f0762b709aab504772dd1e7b6f4a8f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset all logical devices to the RFOTM state.  <a href="oc__api_8h.html#a5f0762b709aab504772dd1e7b6f4a8f8">More...</a><br /></td></tr>
+<tr class="separator:a5f0762b709aab504772dd1e7b6f4a8f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacc374cc9a8acc977db8f9f27dc3c593c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gacc374cc9a8acc977db8f9f27dc3c593c">oc_resource_bind_resource_interface</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, <a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a> iface_mask)</td></tr>
 <tr class="memdesc:gacc374cc9a8acc977db8f9f27dc3c593c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the supported interface(s) to the resource.  <a href="group__doc__module__tag__server__side.html#gacc374cc9a8acc977db8f9f27dc3c593c">More...</a><br /></td></tr>
 <tr class="separator:gacc374cc9a8acc977db8f9f27dc3c593c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1210,11 +1216,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Reset all logical devices to the RFOTM state. </p>
+<p>Reset all logical devices to the RFOTM state and close all opened TLS connections immediately. </p>
 <p>All devices will be placed in the 'Ready For Ownership Transfer Mode' (RFOTM). This is the initial startup state for for all devices that have not yet been onboarded. After this call all devices will need to be onboarded and provisioned again.</p>
-<dl class="section note"><dt>Note</dt><dd>The function <a class="el" href="oc__api_8h.html#a2b046267a9156c64d090259a7916319f" title="Reset all logical devices to the RFOTM state.">oc_reset()</a> deals only with security and provisioning it does not reset any other device settings.</dd>
+<dl class="section note"><dt>Note</dt><dd>The function <a class="el" href="oc__api_8h.html#a2b046267a9156c64d090259a7916319f" title="Reset all logical devices to the RFOTM state and close all opened TLS connections immediately.">oc_reset()</a> deals only with security and provisioning it does not reset any other device settings.</dd>
 <dd>
-Use of this function requires building with OC_SECURITY defined. </dd></dl>
+Use of this function requires building with OC_SECURITY defined. </dd>
+<dd>
+A device connected to a cloud is not unregistered from the cloud since the connection has been closed immediately. </dd></dl>
 
 </div>
 </div>
@@ -1234,14 +1242,85 @@ Use of this function requires building with OC_SECURITY defined. </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Reset logical device to the RFOTM state. </p>
+<p>Reset logical device to the RFOTM state and close all opened TLS connections immediately. </p>
 <p>The device will be placed in the 'Ready For Ownership Transfer Mode' (RFOTM). This is the initial state startup state for for all devices that have not yet been onboarded. After this call the device will need to be onboarded and provisioned again.</p>
-<dl class="section note"><dt>Note</dt><dd>The function <a class="el" href="oc__api_8h.html#a0168913152597d658554d6bec6a833d2" title="Reset logical device to the RFOTM state.">oc_reset_device()</a> deals only with security and provisioning it does not reset any other device settings.</dd>
+<dl class="section note"><dt>Note</dt><dd>The function <a class="el" href="oc__api_8h.html#a0168913152597d658554d6bec6a833d2" title="Reset logical device to the RFOTM state and close all opened TLS connections immediately.">oc_reset_device()</a> deals only with security and provisioning it does not reset any other device settings.</dd>
 <dd>
 Use of this function requires building the stack with OC_SECURITY defined.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>index of the logical device to reset </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a30640940cd7f426f53bac0ba44d0679d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30640940cd7f426f53bac0ba44d0679d">&#9670;&nbsp;</a></span>oc_reset_device_v1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool oc_reset_device_v1 </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>close_all_tls_connections_immediately</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reset logical device to the RFOTM state. </p>
+<p>The device will be placed in the 'Ready For Ownership Transfer Mode' (RFOTM). This is the initial state startup state for for all devices that have not yet been onboarded. After this call the device will need to be onboarded and provisioned again.</p>
+<dl class="section note"><dt>Note</dt><dd>The function <a class="el" href="oc__api_8h.html#a0168913152597d658554d6bec6a833d2" title="Reset logical device to the RFOTM state and close all opened TLS connections immediately.">oc_reset_device()</a> deals only with security and provisioning it does not reset any other device settings.</dd>
+<dd>
+Use of this function requires building the stack with OC_SECURITY defined.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>index of the logical device to reset </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">close_all_tls_connections_immediately</td><td>true to close all TLS connections immediately, false to close them after the 2 second delay. Set to false if the device is connected to a cloud and you want to unregister it. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5f0762b709aab504772dd1e7b6f4a8f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f0762b709aab504772dd1e7b6f4a8f8">&#9670;&nbsp;</a></span>oc_reset_v1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oc_reset_v1 </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>close_all_tls_connections_immediately</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reset all logical devices to the RFOTM state. </p>
+<p>All devices will be placed in the 'Ready For Ownership Transfer Mode' (RFOTM). This is the initial startup state for for all devices that have not yet been onboarded. After this call all devices will need to be onboarded and provisioned again.</p>
+<dl class="section note"><dt>Note</dt><dd>The function <a class="el" href="oc__api_8h.html#a5f0762b709aab504772dd1e7b6f4a8f8" title="Reset all logical devices to the RFOTM state.">oc_reset_v1()</a> deals only with security and provisioning it does not reset any other device settings.</dd>
+<dd>
+Use of this function requires building with OC_SECURITY defined.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">close_all_tls_connections_immediately</td><td>true to close all TLS connections immediately, false to close them after the 2 second delay. Set to false if the device is connected to a cloud and you want to unregister it. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1414,7 +1493,7 @@ Use of this function requires building the stack with OC_SECURITY defined.</dd><
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__api_8h.html">oc_api.h</a></li>
-    <li class="footer">Generated on Tue Nov 8 2022 12:38:10 for IoTivity-Lite by
+    <li class="footer">Generated on Thu Nov 24 2022 08:10:53 for IoTivity-Lite by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
   </ul>

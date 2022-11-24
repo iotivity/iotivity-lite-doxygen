@@ -87,6 +87,8 @@ var oc__api_8h =
     [ "oc_remove_ownership_status_cb", "oc__api_8h.html#a44732c855ea16654b45c46a0d091a229", null ],
     [ "oc_reset", "oc__api_8h.html#a2b046267a9156c64d090259a7916319f", null ],
     [ "oc_reset_device", "oc__api_8h.html#a0168913152597d658554d6bec6a833d2", null ],
+    [ "oc_reset_device_v1", "oc__api_8h.html#a30640940cd7f426f53bac0ba44d0679d", null ],
+    [ "oc_reset_v1", "oc__api_8h.html#a5f0762b709aab504772dd1e7b6f4a8f8", null ],
     [ "oc_resource_bind_resource_interface", "group__doc__module__tag__server__side.html#gacc374cc9a8acc977db8f9f27dc3c593c", null ],
     [ "oc_resource_bind_resource_type", "group__doc__module__tag__server__side.html#gab17128fac474655e423d58b7e008e95a", null ],
     [ "oc_resource_make_public", "group__doc__module__tag__server__side.html#gaab0e4b35b5783c98bb09872e1d1e8a30", null ],
