@@ -22,7 +22,6 @@ var files_dup =
     [ "oc_helpers.h", "oc__helpers_8h.html", "oc__helpers_8h" ],
     [ "oc_introspection.h", "oc__introspection_8h.html", "oc__introspection_8h" ],
     [ "oc_log.h", "oc__log_8h.html", "oc__log_8h" ],
-    [ "oc_network_event_handler_internal.h", "oc__network__event__handler__internal_8h.html", "oc__network__event__handler__internal_8h" ],
     [ "oc_network_events.h", "oc__network__events_8h.html", "oc__network__events_8h" ],
     [ "oc_network_monitor.h", "oc__network__monitor_8h.html", "oc__network__monitor_8h" ],
     [ "oc_obt.h", "oc__obt_8h.html", "oc__obt_8h" ],

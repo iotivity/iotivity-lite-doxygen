@@ -188,6 +188,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf9028094981175854c699f6da4a34131"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gaf9028094981175854c699f6da4a34131">oc_resource_set_properties_cbs</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, <a class="el" href="oc__ri_8h.html#ad13e620d8765af96f28937e52f817726">oc_get_properties_cb_t</a> get_properties, void *get_props_user_data, <a class="el" href="oc__ri_8h.html#ad38ea7c0a6833931d8bfe8094c5100e4">oc_set_properties_cb_t</a> set_properties, void *set_props_user_data)</td></tr>
 <tr class="memdesc:gaf9028094981175854c699f6da4a34131"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the callback properties for set properties and get properties  <a href="group__doc__module__tag__server__side.html#gaf9028094981175854c699f6da4a34131">More...</a><br /></td></tr>
 <tr class="separator:gaf9028094981175854c699f6da4a34131"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf2cb26b72d6454326767573219e96219"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gaf2cb26b72d6454326767573219e96219">oc_resource_set_pushable</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, bool state)</td></tr>
+<tr class="memdesc:gaf2cb26b72d6454326767573219e96219"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify if a resource can be pushable.  <a href="group__doc__module__tag__server__side.html#gaf2cb26b72d6454326767573219e96219">More...</a><br /></td></tr>
+<tr class="separator:gaf2cb26b72d6454326767573219e96219"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf8ac0f8a7d9fc45bab26b132cc9346e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gaf8ac0f8a7d9fc45bab26b132cc9346e6">oc_resource_set_request_handler</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, <a class="el" href="oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26">oc_method_t</a> method, <a class="el" href="oc__ri_8h.html#aca4fa152ba1f8d2cd7639bf5c8276dbe">oc_request_callback_t</a> callback, void *user_data)</td></tr>
 <tr class="memdesc:gaf8ac0f8a7d9fc45bab26b132cc9346e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify a request_callback for GET, PUT, POST, and DELETE methods.  <a href="group__doc__module__tag__server__side.html#gaf8ac0f8a7d9fc45bab26b132cc9346e6">More...</a><br /></td></tr>
 <tr class="separator:gaf8ac0f8a7d9fc45bab26b132cc9346e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1494,6 +1497,43 @@ false </dd></dl>
 
 </div>
 </div>
+<a id="gaf2cb26b72d6454326767573219e96219"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf2cb26b72d6454326767573219e96219">&#9670;&nbsp;</a></span>oc_resource_set_pushable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OC_API void oc_resource_set_pushable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
+          <td class="paramname"><em>resource</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Specify if a resource can be pushable. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">resource</td><td>to specify as pushable or non-pushable </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">state</td><td>if true the resource will be pushable if false the resource will be non-pushable </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="gaf8ac0f8a7d9fc45bab26b132cc9346e6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaf8ac0f8a7d9fc45bab26b132cc9346e6">&#9670;&nbsp;</a></span>oc_resource_set_request_handler()</h2>
 
@@ -1975,7 +2015,7 @@ false </dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Nov 29 2022 17:33:02 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Nov 29 2022 18:56:10 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -147,6 +147,9 @@ typedef struct oc_collection_s&#160;</td><td class="memItemRight" valign="bottom
 <tr class="memitem:a0c0cf4983494ee97927016dcd4af1d79"><td class="memItemLeft" align="right" valign="top"><a id="a0c0cf4983494ee97927016dcd4af1d79"></a>
 typedef struct oc_link_s&#160;</td><td class="memItemRight" valign="bottom"><b>oc_link_t</b></td></tr>
 <tr class="separator:a0c0cf4983494ee97927016dcd4af1d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52b466ffaa97604d4ecd3037ecb53dc8"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a52b466ffaa97604d4ecd3037ecb53dc8">oc_payload_callback_t</a>) ()</td></tr>
+<tr class="memdesc:a52b466ffaa97604d4ecd3037ecb53dc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">application should define this callback which builds updated contents of pushable Resource  <a href="oc__ri_8h.html#a52b466ffaa97604d4ecd3037ecb53dc8">More...</a><br /></td></tr>
+<tr class="separator:a52b466ffaa97604d4ecd3037ecb53dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3508ca00139d64f25fb3af2ab967f9d"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structoc__properties__cb__t.html">oc_properties_cb_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#ac3508ca00139d64f25fb3af2ab967f9d">oc_properties_cb_t</a></td></tr>
 <tr class="memdesc:ac3508ca00139d64f25fb3af2ab967f9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">properties callback structure  <a href="oc__ri_8h.html#ac3508ca00139d64f25fb3af2ab967f9d">More...</a><br /></td></tr>
 <tr class="separator:ac3508ca00139d64f25fb3af2ab967f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -302,10 +305,12 @@ Enumerations</h2></td></tr>
 <tr class="memitem:aab06afb6391b17826f3af7d1a6227a4b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#aab06afb6391b17826f3af7d1a6227a4b">oc_resource_properties_t</a> { <br />
 &#160;&#160;<a class="el" href="oc__ri_8h.html#aab06afb6391b17826f3af7d1a6227a4bab360b38f69a2f8b6374bff0398642c9d">OC_DISCOVERABLE</a> = (1 &lt;&lt; 0)
 , <a class="el" href="oc__ri_8h.html#aab06afb6391b17826f3af7d1a6227a4ba8d5c243825d19b745cc4920d1acc1708">OC_OBSERVABLE</a> = (1 &lt;&lt; 1)
+, <a class="el" href="oc__ri_8h.html#aab06afb6391b17826f3af7d1a6227a4bad55da5cb72fab7b546c0dceac4d1c6bb">OC_PUSHABLE</a> = (1 &lt;&lt; 2)
 , <a class="el" href="oc__ri_8h.html#aab06afb6391b17826f3af7d1a6227a4bafe4f5b880274c5b36a88b0e38d18ea73">OC_SECURE</a> = (1 &lt;&lt; 4)
-, <a class="el" href="oc__ri_8h.html#aab06afb6391b17826f3af7d1a6227a4bad391b47ebac21f7ee0cb4efea50c5d28">OC_PERIODIC</a> = (1 &lt;&lt; 6)
 , <br />
-&#160;&#160;<a class="el" href="oc__ri_8h.html#aab06afb6391b17826f3af7d1a6227a4ba0a6777481bb2f777f45b31034b768a95">OC_SECURE_MCAST</a> = (1 &lt;&lt; 8)
+&#160;&#160;<a class="el" href="oc__ri_8h.html#aab06afb6391b17826f3af7d1a6227a4bad391b47ebac21f7ee0cb4efea50c5d28">OC_PERIODIC</a> = (1 &lt;&lt; 6)
+, <a class="el" href="oc__ri_8h.html#aab06afb6391b17826f3af7d1a6227a4ba0a6777481bb2f777f45b31034b768a95">OC_SECURE_MCAST</a> = (1 &lt;&lt; 8)
+, <a class="el" href="oc__ri_8h.html#aab06afb6391b17826f3af7d1a6227a4bad7219a71e28c6179f1d1b233d9825536">OC_ACCESS_IN_RFOTM</a> = (1 &lt;&lt; 9)
 <br />
  }</td></tr>
 <tr class="memdesc:aab06afb6391b17826f3af7d1a6227a4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">resource properties (bit mask)  <a href="oc__ri_8h.html#aab06afb6391b17826f3af7d1a6227a4b">More...</a><br /></td></tr>
@@ -490,6 +495,22 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>get properties callback </p>
+
+</div>
+</div>
+<a id="a52b466ffaa97604d4ecd3037ecb53dc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52b466ffaa97604d4ecd3037ecb53dc8">&#9670;&nbsp;</a></span>oc_payload_callback_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* oc_payload_callback_t) ()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>application should define this callback which builds updated contents of pushable Resource </p>
 
 </div>
 </div>
@@ -811,11 +832,15 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="aab06afb6391b17826f3af7d1a6227a4ba8d5c243825d19b745cc4920d1acc1708"></a>OC_OBSERVABLE&#160;</td><td class="fielddoc"><p>observable </p>
 </td></tr>
+<tr><td class="fieldname"><a id="aab06afb6391b17826f3af7d1a6227a4bad55da5cb72fab7b546c0dceac4d1c6bb"></a>OC_PUSHABLE&#160;</td><td class="fielddoc"><p>pushable </p>
+</td></tr>
 <tr><td class="fieldname"><a id="aab06afb6391b17826f3af7d1a6227a4bafe4f5b880274c5b36a88b0e38d18ea73"></a>OC_SECURE&#160;</td><td class="fielddoc"><p>secure </p>
 </td></tr>
 <tr><td class="fieldname"><a id="aab06afb6391b17826f3af7d1a6227a4bad391b47ebac21f7ee0cb4efea50c5d28"></a>OC_PERIODIC&#160;</td><td class="fielddoc"><p>periodiacal update </p>
 </td></tr>
 <tr><td class="fieldname"><a id="aab06afb6391b17826f3af7d1a6227a4ba0a6777481bb2f777f45b31034b768a95"></a>OC_SECURE_MCAST&#160;</td><td class="fielddoc"><p>secure multicast (oscore) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aab06afb6391b17826f3af7d1a6227a4bad7219a71e28c6179f1d1b233d9825536"></a>OC_ACCESS_IN_RFOTM&#160;</td><td class="fielddoc"><p>allow access to resource in ready for ownership transfer method(RFOTM) state </p>
 </td></tr>
 </table>
 
@@ -1608,7 +1633,7 @@ false not valid </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__ri_8h.html">oc_ri.h</a></li>
-    <li class="footer">Generated on Tue Nov 29 2022 17:33:01 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Nov 29 2022 18:56:10 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

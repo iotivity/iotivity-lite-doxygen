@@ -84,6 +84,9 @@ $(document).ready(function(){initNavTree('globals_o.html',''); initResizable(); 
 <div class="textblock">Here is a list of all documented functions, variables, defines, enums, and typedefs with links to the documentation:</div>
 
 <h3><a id="index_o"></a>- o -</h3><ul>
+<li>OC_ACCESS_IN_RFOTM
+: <a class="el" href="oc__ri_8h.html#aab06afb6391b17826f3af7d1a6227a4bad7219a71e28c6179f1d1b233d9825536">oc_ri.h</a>
+</li>
 <li>oc_ace_connection_type_t
 : <a class="el" href="oc__acl_8h.html#a78c4f9f6c2a1be18591d7e9520a73029">oc_acl.h</a>
 </li>
@@ -754,7 +757,7 @@ $(document).ready(function(){initNavTree('globals_o.html',''); initResizable(); 
 : <a class="el" href="group__doc__module__tag__collections.html#ga3414d119ce8f0952f3f9cbb2797d3bf3">oc_api.h</a>
 </li>
 <li>oc_locn_t
-: <a class="el" href="oc__enums_8h.html#a60005d2b5f046608e31d15d8c64573bd">oc_enums.h</a>
+: <a class="el" href="oc__enums_8h.html#a0ff2339a87e42cc47f612c6fd15f0a54">oc_enums.h</a>
 </li>
 <li>oc_main_init()
 : <a class="el" href="oc__api_8h.html#ae6522fdfeed62a92193214ee99dfc47c">oc_api.h</a>
@@ -773,18 +776,6 @@ $(document).ready(function(){initNavTree('globals_o.html',''); initResizable(); 
 </li>
 <li>oc_method_t
 : <a class="el" href="oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26">oc_ri.h</a>
-</li>
-<li>oc_network_event_handler_mutex_destroy()
-: <a class="el" href="oc__network__event__handler__internal_8h.html#acb282a1154f3c0d33061bbe02761fd0a">oc_network_event_handler_internal.h</a>
-</li>
-<li>oc_network_event_handler_mutex_init()
-: <a class="el" href="oc__network__event__handler__internal_8h.html#a58e9949fb158255f0a4d1a5d5303d15c">oc_network_event_handler_internal.h</a>
-</li>
-<li>oc_network_event_handler_mutex_lock()
-: <a class="el" href="oc__network__event__handler__internal_8h.html#a29053dd5767e78778db71acf83c18cd3">oc_network_event_handler_internal.h</a>
-</li>
-<li>oc_network_event_handler_mutex_unlock()
-: <a class="el" href="oc__network__event__handler__internal_8h.html#a81eccfc8c6bb0d4c3fcbc1b91ac7168b">oc_network_event_handler_internal.h</a>
 </li>
 <li>oc_new_bool_array
 : <a class="el" href="oc__helpers_8h.html#a885d05a580d7abcae59cee72cbd06a63">oc_helpers.h</a>
@@ -972,6 +963,9 @@ $(document).ready(function(){initNavTree('globals_o.html',''); initResizable(); 
 <li>oc_ownership_status_cb_t
 : <a class="el" href="oc__api_8h.html#a91c3c40bc00b2b107948a55a969fc0c9">oc_api.h</a>
 </li>
+<li>oc_payload_callback_t
+: <a class="el" href="oc__ri_8h.html#a52b466ffaa97604d4ecd3037ecb53dc8">oc_ri.h</a>
+</li>
 <li>OC_PERIODIC
 : <a class="el" href="oc__ri_8h.html#aab06afb6391b17826f3af7d1a6227a4bad391b47ebac21f7ee0cb4efea50c5d28">oc_ri.h</a>
 </li>
@@ -1031,6 +1025,9 @@ $(document).ready(function(){initNavTree('globals_o.html',''); initResizable(); 
 </li>
 <li>oc_properties_cb_t
 : <a class="el" href="oc__ri_8h.html#ac3508ca00139d64f25fb3af2ab967f9d">oc_ri.h</a>
+</li>
+<li>OC_PUSHABLE
+: <a class="el" href="oc__ri_8h.html#aab06afb6391b17826f3af7d1a6227a4bad55da5cb72fab7b546c0dceac4d1c6bb">oc_ri.h</a>
 </li>
 <li>oc_pushd_resource_rep_t
 : <a class="el" href="oc__push_8h.html#ae6492141a7ebcd0ac9c10699c8970362">oc_push.h</a>
@@ -1298,6 +1295,9 @@ $(document).ready(function(){initNavTree('globals_o.html',''); initResizable(); 
 </li>
 <li>oc_resource_set_properties_cbs()
 : <a class="el" href="group__doc__module__tag__server__side.html#gaf9028094981175854c699f6da4a34131">oc_api.h</a>
+</li>
+<li>oc_resource_set_pushable()
+: <a class="el" href="group__doc__module__tag__server__side.html#gaf2cb26b72d6454326767573219e96219">oc_api.h</a>
 </li>
 <li>oc_resource_set_request_handler()
 : <a class="el" href="group__doc__module__tag__server__side.html#gaf8ac0f8a7d9fc45bab26b132cc9346e6">oc_api.h</a>
@@ -1857,7 +1857,7 @@ $(document).ready(function(){initNavTree('globals_o.html',''); initResizable(); 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Nov 29 2022 17:33:02 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Nov 29 2022 18:56:10 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

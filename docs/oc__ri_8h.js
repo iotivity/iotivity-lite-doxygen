@@ -12,6 +12,7 @@ var oc__ri_8h =
     [ "oc_event_callback_t", "oc__ri_8h.html#a8b3dc0c2e5cbb134f0f5ef73b7f4e7c7", null ],
     [ "oc_get_properties_cb_t", "oc__ri_8h.html#ad13e620d8765af96f28937e52f817726", null ],
     [ "oc_link_t", "oc__ri_8h.html#a0c0cf4983494ee97927016dcd4af1d79", null ],
+    [ "oc_payload_callback_t", "oc__ri_8h.html#a52b466ffaa97604d4ecd3037ecb53dc8", null ],
     [ "oc_properties_cb_t", "oc__ri_8h.html#ac3508ca00139d64f25fb3af2ab967f9d", null ],
     [ "oc_request_callback_t", "oc__ri_8h.html#aca4fa152ba1f8d2cd7639bf5c8276dbe", null ],
     [ "oc_request_handler_t", "oc__ri_8h.html#a603151eab6b213a08f796aaa21cc78dc", null ],
@@ -114,9 +115,11 @@ var oc__ri_8h =
     [ "oc_resource_properties_t", "oc__ri_8h.html#aab06afb6391b17826f3af7d1a6227a4b", [
       [ "OC_DISCOVERABLE", "oc__ri_8h.html#aab06afb6391b17826f3af7d1a6227a4bab360b38f69a2f8b6374bff0398642c9d", null ],
       [ "OC_OBSERVABLE", "oc__ri_8h.html#aab06afb6391b17826f3af7d1a6227a4ba8d5c243825d19b745cc4920d1acc1708", null ],
+      [ "OC_PUSHABLE", "oc__ri_8h.html#aab06afb6391b17826f3af7d1a6227a4bad55da5cb72fab7b546c0dceac4d1c6bb", null ],
       [ "OC_SECURE", "oc__ri_8h.html#aab06afb6391b17826f3af7d1a6227a4bafe4f5b880274c5b36a88b0e38d18ea73", null ],
       [ "OC_PERIODIC", "oc__ri_8h.html#aab06afb6391b17826f3af7d1a6227a4bad391b47ebac21f7ee0cb4efea50c5d28", null ],
-      [ "OC_SECURE_MCAST", "oc__ri_8h.html#aab06afb6391b17826f3af7d1a6227a4ba0a6777481bb2f777f45b31034b768a95", null ]
+      [ "OC_SECURE_MCAST", "oc__ri_8h.html#aab06afb6391b17826f3af7d1a6227a4ba0a6777481bb2f777f45b31034b768a95", null ],
+      [ "OC_ACCESS_IN_RFOTM", "oc__ri_8h.html#aab06afb6391b17826f3af7d1a6227a4bad7219a71e28c6179f1d1b233d9825536", null ]
     ] ],
     [ "oc_status_t", "oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38", [
       [ "OC_STATUS_OK", "oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38a483d03ac6df269eb49b2ca709372889b", null ],

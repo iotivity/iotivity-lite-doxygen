@@ -1,5 +1,7 @@
 var NAVTREEINDEX1 =
 {
+"oc__acl_8h.html#adb8058ec4ee722ac6999e712a3e21863":[3,0,0,9],
+"oc__acl_8h.html#ae2a28176d054cc1794e22458c0871741":[3,0,0,21],
 "oc__acl_8h.html#ae7df0da1db57051dc3ca52f1be3f388a":[3,0,0,18],
 "oc__api_8h.html":[3,0,1],
 "oc__api_8h.html#a0168913152597d658554d6bec6a833d2":[3,0,1,86],
@@ -13,11 +15,11 @@ var NAVTREEINDEX1 =
 "oc__api_8h.html#a57a741fa2165d561ffc7faf0f084cd69":[3,0,1,6],
 "oc__api_8h.html#a5aa72dd8d7d03ff826801b1d7d67ec68":[3,0,1,17],
 "oc__api_8h.html#a5f0762b709aab504772dd1e7b6f4a8f8":[3,0,1,88],
-"oc__api_8h.html#a5f6ce300fbf84e2181b1ee0040567756":[3,0,1,113],
-"oc__api_8h.html#a5fabaaadaf2e0dccbb1d906f73f9d953":[3,0,1,111],
+"oc__api_8h.html#a5f6ce300fbf84e2181b1ee0040567756":[3,0,1,114],
+"oc__api_8h.html#a5fabaaadaf2e0dccbb1d906f73f9d953":[3,0,1,112],
 "oc__api_8h.html#a6cf429db1849423722bad55d93f753c6":[3,0,1,74],
 "oc__api_8h.html#a81431be6c5b5bfa9949bf4b0fcd4b644":[3,0,1,55],
-"oc__api_8h.html#a89adceaff6ab9df8d74bbbc1121693a1":[3,0,1,107],
+"oc__api_8h.html#a89adceaff6ab9df8d74bbbc1121693a1":[3,0,1,108],
 "oc__api_8h.html#a91c3c40bc00b2b107948a55a969fc0c9":[3,0,1,10],
 "oc__api_8h.html#a9a4f40914dd68e17b88345bcce756666":[3,0,1,4],
 "oc__api_8h.html#abc05e63942a1093f807213220841c54b":[3,0,1,63],
@@ -26,7 +28,7 @@ var NAVTREEINDEX1 =
 "oc__api_8h.html#ae6522fdfeed62a92193214ee99dfc47c":[3,0,1,72],
 "oc__api_8h.html#af0251fdbc9015fae0e14ff8c8b70cf7d":[3,0,1,15],
 "oc__api_8h.html#af0b944acc98a497365efbc1d1c9aa32e":[3,0,1,8],
-"oc__api_8h.html#aff3a70487d7851c022386df601655fb6":[3,0,1,114],
+"oc__api_8h.html#aff3a70487d7851c022386df601655fb6":[3,0,1,115],
 "oc__assert_8h.html":[3,0,2],
 "oc__assert_8h.html#a296a2b634a686beff6ee467200410466":[3,0,2,3],
 "oc__assert_8h.html#a3eb1f5c3cc58b759ced16d4a78de620b":[3,0,2,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX1 =
 "oc__cred_8h.html#a84ab483f442588a72ed1d34e3fd2caf6":[3,0,14,21],
 "oc__cred_8h.html#a8fa3b62838c1c25e149db6c2ba86e103":[3,0,14,7],
 "oc__cred_8h.html#a9925d7a29e2a6edcd28c2ce6ac6defdf":[3,0,14,27],
-"oc__cred_8h.html#aace1e016af67e77d670e75e55823bb12":[3,0,14,24],
-"oc__cred_8h.html#aaf52ad19671d50a2642ad269b470c5ce":[3,0,14,25],
-"oc__cred_8h.html#ab62dc87b328cd84951e98f3a42334754":[3,0,14,10]
+"oc__cred_8h.html#aace1e016af67e77d670e75e55823bb12":[3,0,14,24]
 };

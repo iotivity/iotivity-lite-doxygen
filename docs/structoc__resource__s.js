@@ -1,5 +1,6 @@
 var structoc__resource__s =
 [
+    [ "anon_permission_in_rfotm", "structoc__resource__s.html#a46bb97e09f65d6d53de8c736aeda70cd", null ],
     [ "default_interface", "structoc__resource__s.html#a86bcf5945d4c50ddb5b5649c60958b2e", null ],
     [ "delete_handler", "structoc__resource__s.html#a6de252bfbd3fa8e86d21dfeaff4cd18a", null ],
     [ "device", "structoc__resource__s.html#a94c514bd73ebe068bc95f3c0b33dceda", null ],
@@ -11,6 +12,7 @@ var structoc__resource__s =
     [ "num_links", "structoc__resource__s.html#a4552f9eeb4b406fae5671e6ab2705319", null ],
     [ "num_observers", "structoc__resource__s.html#ac176b517f265d964fd85f5c7fb00c6d5", null ],
     [ "observe_period_seconds", "structoc__resource__s.html#aa753b0d40e8c4a8743483bb335d1f3d9", null ],
+    [ "payload_builder", "structoc__resource__s.html#aa6a066799e36a8545b0509249ebef2f8", null ],
     [ "post_handler", "structoc__resource__s.html#a4a50f30a0d108a675e81ead08cca2b0d", null ],
     [ "properties", "structoc__resource__s.html#a68d2105369153e6e6dc4b3bbef15e556", null ],
     [ "put_handler", "structoc__resource__s.html#ac3145624632eee6cf266ff0a4b222a2c", null ],
