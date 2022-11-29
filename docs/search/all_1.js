@@ -38,7 +38,7 @@ var searchData=
   ['application_5fx_5fobix_5fbinary_44',['APPLICATION_X_OBIX_BINARY',['../oc__ri_8h.html#a83161604a805e3a951254864d16a714faa29c075e150f4637e52b42db893c4a54',1,'oc_ri.h']]],
   ['application_5fxml_45',['APPLICATION_XML',['../oc__ri_8h.html#a83161604a805e3a951254864d16a714faf4a0ace3aee0606f453437e8eb1db113',1,'oc_ri.h']]],
   ['application_5fxmpp_5fxml_46',['APPLICATION_XMPP_XML',['../oc__ri_8h.html#a83161604a805e3a951254864d16a714fae6e231bc0d40b8fd8bdffe0b0b056026',1,'oc_ri.h']]],
-  ['audio_5fraw_47',['AUDIO_RAW',['../oc__ri_8h.html#a83161604a805e3a951254864d16a714fa34e0444167037fcb8635e251881d11dc',1,'oc_ri.h']]],
-  ['authority_48',['authority',['../unionoc__ace__subject__t.html#a1b7c342edf3e1a962ab14ba62f41f666',1,'oc_ace_subject_t::authority()'],['../structoc__sec__cred__t.html#a1b7c342edf3e1a962ab14ba62f41f666',1,'oc_sec_cred_t::authority()']]],
-  ['asserting_20roles_49',['Asserting roles',['../group__doc__module__tag__asserting__roles.html',1,'']]]
+  ['asserting_20roles_47',['Asserting roles',['../group__doc__module__tag__asserting__roles.html',1,'']]],
+  ['audio_5fraw_48',['AUDIO_RAW',['../oc__ri_8h.html#a83161604a805e3a951254864d16a714fa34e0444167037fcb8635e251881d11dc',1,'oc_ri.h']]],
+  ['authority_49',['authority',['../unionoc__ace__subject__t.html#a1b7c342edf3e1a962ab14ba62f41f666',1,'oc_ace_subject_t::authority()'],['../structoc__sec__cred__t.html#a1b7c342edf3e1a962ab14ba62f41f666',1,'oc_sec_cred_t::authority()']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gatt_1362',['GATT',['../oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78a64cafb1a68af59a2d90b42f786567b11',1,'oc_endpoint.h']]]
+  ['discovery_1486',['DISCOVERY',['../oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78a05eb094889c0adc67ccc19ea72284315',1,'oc_endpoint.h']]]
 ];

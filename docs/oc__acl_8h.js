@@ -15,14 +15,6 @@ var oc__acl_8h =
       [ "OC_CONN_AUTH_CRYPT", "oc__acl_8h.html#a78c4f9f6c2a1be18591d7e9520a73029a29f891201b9e45f0161ec1390b81a4e9", null ],
       [ "OC_CONN_ANON_CLEAR", "oc__acl_8h.html#a78c4f9f6c2a1be18591d7e9520a73029a7e84f6e6032db9fda96167fd6657373f", null ]
     ] ],
-    [ "oc_ace_permissions_t", "oc__acl_8h.html#afd8b98696c9f44d51d07404d414421c5", [
-      [ "OC_PERM_NONE", "oc__acl_8h.html#afd8b98696c9f44d51d07404d414421c5a8eda312176b03576775888f1f9d8383e", null ],
-      [ "OC_PERM_CREATE", "oc__acl_8h.html#afd8b98696c9f44d51d07404d414421c5adbd92fc7b5de899caf2f98bf449b1280", null ],
-      [ "OC_PERM_RETRIEVE", "oc__acl_8h.html#afd8b98696c9f44d51d07404d414421c5a5b1cfa277160e0a1ec205f1d5c3f7857", null ],
-      [ "OC_PERM_UPDATE", "oc__acl_8h.html#afd8b98696c9f44d51d07404d414421c5ac94ce014f890c0f3149df82a5bee52af", null ],
-      [ "OC_PERM_DELETE", "oc__acl_8h.html#afd8b98696c9f44d51d07404d414421c5ab7a1ff0b4fca4bf5dc7b8d6be022e03d", null ],
-      [ "OC_PERM_NOTIFY", "oc__acl_8h.html#afd8b98696c9f44d51d07404d414421c5afa73180fee00be16035f83e58a1d0777", null ]
-    ] ],
     [ "oc_ace_subject_type_t", "oc__acl_8h.html#ab98a20bf3bbf69e66b7fe630e83e8b4d", [
       [ "OC_SUBJECT_UUID", "oc__acl_8h.html#ab98a20bf3bbf69e66b7fe630e83e8b4daae0f1c9a82108c528ee4aa452d79aa55", null ],
       [ "OC_SUBJECT_ROLE", "oc__acl_8h.html#ab98a20bf3bbf69e66b7fe630e83e8b4dabaa1bdd471e09a07e11f3146ab705f39", null ],
@@ -34,6 +26,7 @@ var oc__acl_8h =
       [ "OC_ACE_WC_ALL_SECURED", "oc__acl_8h.html#a1e7d2ee5709877a0e75a8e048e17df1fa7a9d72599e3ecc53301b6b0b9dcf2b8a", null ],
       [ "OC_ACE_WC_ALL_PUBLIC", "oc__acl_8h.html#a1e7d2ee5709877a0e75a8e048e17df1fa2001231471c769e94a8a9a96d134e24d", null ]
     ] ],
+    [ "oc_resource_set_access_in_RFOTM", "oc__acl_8h.html#ab050d71282b1024e44cdb5f9f8b2da17", null ],
     [ "oc_sec_acl_add_bootstrap_acl", "oc__acl_8h.html#abd975f8a09517681f2ad1947dc850fbb", null ],
     [ "oc_sec_acl_clear", "oc__acl_8h.html#a76c8509b26f9b855023ae93207443d03", null ],
     [ "oc_sec_apply_acl", "oc__acl_8h.html#acc817b2edece053441e069eee56f1fa8", null ],

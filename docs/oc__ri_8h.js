@@ -162,5 +162,5 @@ var oc__ri_8h =
     [ "oc_ri_remove_timed_event_callback", "oc__ri_8h.html#ac33d857dcdd5169edb5e54b247a3b1f4", null ],
     [ "oc_ri_shutdown", "oc__ri_8h.html#af50fe1e19e0b2607dd2b3ac1db93668e", null ],
     [ "oc_status_code", "oc__ri_8h.html#a8bc80a7833566d791556f311e514e722", null ],
-    [ "oc_status_to_str", "oc__ri_8h.html#a54efe20089f5f922636d5de2c5a1dd6d", null ]
+    [ "oc_status_to_str", "oc__ri_8h.html#abf3a3fb70d2be6bbcd2d2f74affcb080", null ]
 ];
