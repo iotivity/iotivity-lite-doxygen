@@ -155,7 +155,7 @@ var searchData=
   ['oc_5fdiscovery_5fall_5fhandler_5ft_267',['oc_discovery_all_handler_t',['../oc__client__state_8h.html#ad0e8cd636823e22b2730c313b456b379',1,'oc_client_state.h']]],
   ['oc_5fdiscovery_5fflags_5ft_268',['oc_discovery_flags_t',['../oc__client__state_8h.html#a983b138b2c42a68570ba23e19deb19b3',1,'oc_client_state.h']]],
   ['oc_5fdiscovery_5fhandler_5ft_269',['oc_discovery_handler_t',['../oc__client__state_8h.html#a4d5394353a67d4186ead8cd6d68fa168',1,'oc_client_state.h']]],
-  ['oc_5fdns_5flookup_270',['oc_dns_lookup',['../oc__connectivity_8h.html#af4ab8e017f16ef084b24d1f8431e4baa',1,'oc_connectivity.h']]],
+  ['oc_5fdns_5flookup_270',['oc_dns_lookup',['../oc__connectivity_8h.html#a17fcc4b1fd577de08c171d3ece534e33',1,'oc_connectivity.h']]],
   ['oc_5fdo_5fdelete_271',['oc_do_delete',['../group__doc__module__tag__client__state.html#ga33e3aefd112aa73b7dc80900f31f3f55',1,'oc_api.h']]],
   ['oc_5fdo_5fget_272',['oc_do_get',['../group__doc__module__tag__client__state.html#ga34d2e906ebd125b8148817f55bda4b2c',1,'oc_api.h']]],
   ['oc_5fdo_5fget_5fwith_5ftimeout_273',['oc_do_get_with_timeout',['../group__doc__module__tag__client__state.html#ga02bdb307798e1c07eb60bbfadc514385',1,'oc_api.h']]],

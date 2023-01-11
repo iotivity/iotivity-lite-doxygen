@@ -90,7 +90,7 @@ var searchData=
   ['oc_5fdelete_5flink_980',['oc_delete_link',['../group__doc__module__tag__collections.html#ga0fde42ca7451b515a445c3247acccbb5',1,'oc_api.h']]],
   ['oc_5fdelete_5fresource_981',['oc_delete_resource',['../group__doc__module__tag__server__side.html#ga8be722cad423befa951a60f518e6f3b2',1,'oc_api.h']]],
   ['oc_5fdevice_5fbind_5fresource_5ftype_982',['oc_device_bind_resource_type',['../group__doc__module__tag__server__side.html#ga0cdcfd9676beaa7368cc9677277279a8',1,'oc_api.h']]],
-  ['oc_5fdns_5flookup_983',['oc_dns_lookup',['../oc__connectivity_8h.html#af4ab8e017f16ef084b24d1f8431e4baa',1,'oc_connectivity.h']]],
+  ['oc_5fdns_5flookup_983',['oc_dns_lookup',['../oc__connectivity_8h.html#a17fcc4b1fd577de08c171d3ece534e33',1,'oc_connectivity.h']]],
   ['oc_5fdo_5fdelete_984',['oc_do_delete',['../group__doc__module__tag__client__state.html#ga33e3aefd112aa73b7dc80900f31f3f55',1,'oc_api.h']]],
   ['oc_5fdo_5fget_985',['oc_do_get',['../group__doc__module__tag__client__state.html#ga34d2e906ebd125b8148817f55bda4b2c',1,'oc_api.h']]],
   ['oc_5fdo_5fget_5fwith_5ftimeout_986',['oc_do_get_with_timeout',['../group__doc__module__tag__client__state.html#ga02bdb307798e1c07eb60bbfadc514385',1,'oc_api.h']]],

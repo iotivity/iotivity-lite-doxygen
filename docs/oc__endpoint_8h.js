@@ -7,6 +7,7 @@ var oc__endpoint_8h =
     [ "oc_make_ipv4_endpoint", "oc__endpoint_8h.html#a6341e17218eff01b49aa2f8ae27e068b", null ],
     [ "oc_make_ipv6_endpoint", "oc__endpoint_8h.html#ac8b9dd8487a08a52bd54676fc297c342", null ],
     [ "oc_endpoint_t", "oc__endpoint_8h.html#a0b37d95d6d4c2ae5b243e8fdba19daa1", null ],
+    [ "transport_flags", "oc__endpoint_8h.html#a2f4bc4f1c4fd73614831a0f3f7a7e7e4", null ],
     [ "ocf_version_t", "oc__endpoint_8h.html#afb0461f47733d9479eee4c93c65196ec", [
       [ "OCF_VER_1_0_0", "oc__endpoint_8h.html#afb0461f47733d9479eee4c93c65196eca96d5f760ef57290b834f4a640b338986", null ],
       [ "OIC_VER_1_1_0", "oc__endpoint_8h.html#afb0461f47733d9479eee4c93c65196ecaa4b85c1c4e0f70b8b3b7b06f3f65b78c", null ]

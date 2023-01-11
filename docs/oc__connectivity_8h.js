@@ -26,7 +26,7 @@ var oc__connectivity_8h =
     [ "oc_connectivity_get_endpoints", "oc__connectivity_8h.html#a1d559666b450aef41dd704952e4a7e96", null ],
     [ "oc_connectivity_init", "oc__connectivity_8h.html#ab2d899d0971e0b47c21a02b818dc4696", null ],
     [ "oc_connectivity_shutdown", "oc__connectivity_8h.html#aa737faed9576af48ccf1ae2fc51f655f", null ],
-    [ "oc_dns_lookup", "oc__connectivity_8h.html#af4ab8e017f16ef084b24d1f8431e4baa", null ],
+    [ "oc_dns_lookup", "oc__connectivity_8h.html#a17fcc4b1fd577de08c171d3ece534e33", null ],
     [ "oc_send_buffer", "oc__connectivity_8h.html#a42bf2fb6678fc9b9cc162e30cece7beb", null ],
     [ "oc_send_discovery_request", "oc__connectivity_8h.html#ae2a9b061283aa60d8b0b3a3405a42698", null ],
     [ "oc_tcp_connection_state", "oc__connectivity_8h.html#a79e6c131d737bfe6dcbea723f0a15231", null ],

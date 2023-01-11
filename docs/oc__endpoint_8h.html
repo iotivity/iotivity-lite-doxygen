@@ -121,6 +121,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a0b37d95d6d4c2ae5b243e8fdba19daa1"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__endpoint_8h.html#a0b37d95d6d4c2ae5b243e8fdba19daa1">oc_endpoint_t</a></td></tr>
 <tr class="memdesc:a0b37d95d6d4c2ae5b243e8fdba19daa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">the endpoint information  <a href="oc__endpoint_8h.html#a0b37d95d6d4c2ae5b243e8fdba19daa1">More...</a><br /></td></tr>
 <tr class="separator:a0b37d95d6d4c2ae5b243e8fdba19daa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f4bc4f1c4fd73614831a0f3f7a7e7e4"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78">transport_flags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__endpoint_8h.html#a2f4bc4f1c4fd73614831a0f3f7a7e7e4">transport_flags</a></td></tr>
+<tr class="memdesc:a2f4bc4f1c4fd73614831a0f3f7a7e7e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">transport flags (bit map)  <a href="oc__endpoint_8h.html#a2f4bc4f1c4fd73614831a0f3f7a7e7e4">More...</a><br /></td></tr>
+<tr class="separator:a2f4bc4f1c4fd73614831a0f3f7a7e7e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -220,11 +223,11 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <a class="code" href="structoc__endpoint__t.html">oc_endpoint_t</a> __name__ = { .<a class="code" href="structoc__endpoint__t.html#a945038b8b9ca9558905bebfa24b4130e">flags</a> = __flags__,                               \</div>
+<b>Value:</b><div class="fragment"><div class="line">  <a class="code" href="structoc__endpoint__t.html">oc_endpoint_t</a> __name__ = { .<a class="code" href="structoc__endpoint__t.html#a0942a0902616fd2591dc585d2193e323">flags</a> = __flags__,                               \</div>
 <div class="line">                             .addr.ipv4 = { .port = __port__,                  \</div>
 <div class="line">                                            .address = { __VA_ARGS__ } } }</div>
 <div class="ttc" id="astructoc__endpoint__t_html"><div class="ttname"><a href="structoc__endpoint__t.html">oc_endpoint_t</a></div><div class="ttdoc">the endpoint information</div><div class="ttdef"><b>Definition:</b> oc_endpoint.h:85</div></div>
-<div class="ttc" id="astructoc__endpoint__t_html_a945038b8b9ca9558905bebfa24b4130e"><div class="ttname"><a href="structoc__endpoint__t.html#a945038b8b9ca9558905bebfa24b4130e">oc_endpoint_t::flags</a></div><div class="ttdeci">enum transport_flags flags</div><div class="ttdoc">the transport flags</div><div class="ttdef"><b>Definition:</b> oc_endpoint.h:88</div></div>
+<div class="ttc" id="astructoc__endpoint__t_html_a0942a0902616fd2591dc585d2193e323"><div class="ttname"><a href="structoc__endpoint__t.html#a0942a0902616fd2591dc585d2193e323">oc_endpoint_t::flags</a></div><div class="ttdeci">transport_flags flags</div><div class="ttdoc">the transport flags</div><div class="ttdef"><b>Definition:</b> oc_endpoint.h:88</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -265,7 +268,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <a class="code" href="structoc__endpoint__t.html">oc_endpoint_t</a> __name__ = { .<a class="code" href="structoc__endpoint__t.html#a945038b8b9ca9558905bebfa24b4130e">flags</a> = __flags__,                               \</div>
+<b>Value:</b><div class="fragment"><div class="line">  <a class="code" href="structoc__endpoint__t.html">oc_endpoint_t</a> __name__ = { .<a class="code" href="structoc__endpoint__t.html#a0942a0902616fd2591dc585d2193e323">flags</a> = __flags__,                               \</div>
 <div class="line">                             .addr.ipv6 = { .port = __port__,                  \</div>
 <div class="line">                                            .address = { __VA_ARGS__ } } }</div>
 </div><!-- fragment -->
@@ -285,6 +288,22 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>the endpoint information </p>
+
+</div>
+</div>
+<a id="a2f4bc4f1c4fd73614831a0f3f7a7e7e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f4bc4f1c4fd73614831a0f3f7a7e7e4">&#9670;&nbsp;</a></span>transport_flags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78">transport_flags</a> <a class="el" href="oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78">transport_flags</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>transport flags (bit map) </p>
 
 </div>
 </div>
@@ -753,7 +772,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__endpoint_8h.html">oc_endpoint.h</a></li>
-    <li class="footer">Generated on Mon Jan 9 2023 13:00:22 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Jan 11 2023 16:07:10 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
