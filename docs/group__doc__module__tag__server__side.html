@@ -119,18 +119,18 @@ Functions</h2></td></tr>
 <tr class="memitem:ga0cdcfd9676beaa7368cc9677277279a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga0cdcfd9676beaa7368cc9677277279a8">oc_device_bind_resource_type</a> (size_t device, const char *type)</td></tr>
 <tr class="memdesc:ga0cdcfd9676beaa7368cc9677277279a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a Resource Type "rt" property to the an <code>/oic/d</code> resource.  <a href="group__doc__module__tag__server__side.html#ga0cdcfd9676beaa7368cc9677277279a8">More...</a><br /></td></tr>
 <tr class="separator:ga0cdcfd9676beaa7368cc9677277279a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6e62a8f6485efd4dff90d4b07ebdb57c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga6e62a8f6485efd4dff90d4b07ebdb57c">oc_get_diagnostic_message</a> (<a class="el" href="structoc__client__response__t.html">oc_client_response_t</a> *response, const char **msg, size_t *size)</td></tr>
-<tr class="memdesc:ga6e62a8f6485efd4dff90d4b07ebdb57c"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the diagnostic payload from a response  <a href="group__doc__module__tag__server__side.html#ga6e62a8f6485efd4dff90d4b07ebdb57c">More...</a><br /></td></tr>
-<tr class="separator:ga6e62a8f6485efd4dff90d4b07ebdb57c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7376142521e76079732029aafc2ba8be"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga7376142521e76079732029aafc2ba8be">oc_get_diagnostic_message</a> (const <a class="el" href="structoc__client__response__t.html">oc_client_response_t</a> *response, const char **msg, size_t *size)</td></tr>
+<tr class="memdesc:ga7376142521e76079732029aafc2ba8be"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the diagnostic payload from a response  <a href="group__doc__module__tag__server__side.html#ga7376142521e76079732029aafc2ba8be">More...</a><br /></td></tr>
+<tr class="separator:ga7376142521e76079732029aafc2ba8be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7b1a6e27279dc11c72dd8afe4a4a0e40"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga7b1a6e27279dc11c72dd8afe4a4a0e40">oc_get_query_value</a> (const <a class="el" href="structoc__request__t.html">oc_request_t</a> *request, const char *key, const char **value)</td></tr>
 <tr class="memdesc:ga7b1a6e27279dc11c72dd8afe4a4a0e40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the start of the value in a URL query parameter key=value pair.  <a href="group__doc__module__tag__server__side.html#ga7b1a6e27279dc11c72dd8afe4a4a0e40">More...</a><br /></td></tr>
 <tr class="separator:ga7b1a6e27279dc11c72dd8afe4a4a0e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad3b59ade20fd1584a0e84723cbb386ce"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gad3b59ade20fd1584a0e84723cbb386ce">oc_get_request_payload_raw</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request, const uint8_t **payload, size_t *size, <a class="el" href="oc__ri_8h.html#a83161604a805e3a951254864d16a714f">oc_content_format_t</a> *content_format)</td></tr>
 <tr class="memdesc:gad3b59ade20fd1584a0e84723cbb386ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the payload from the request, no processing  <a href="group__doc__module__tag__server__side.html#gad3b59ade20fd1584a0e84723cbb386ce">More...</a><br /></td></tr>
 <tr class="separator:gad3b59ade20fd1584a0e84723cbb386ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacaf94048a737088aef4f9f13b5fef1c7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gacaf94048a737088aef4f9f13b5fef1c7">oc_get_response_payload_raw</a> (<a class="el" href="structoc__client__response__t.html">oc_client_response_t</a> *response, const uint8_t **payload, size_t *size, <a class="el" href="oc__ri_8h.html#a83161604a805e3a951254864d16a714f">oc_content_format_t</a> *content_format)</td></tr>
-<tr class="memdesc:gacaf94048a737088aef4f9f13b5fef1c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the response payload, without processing  <a href="group__doc__module__tag__server__side.html#gacaf94048a737088aef4f9f13b5fef1c7">More...</a><br /></td></tr>
-<tr class="separator:gacaf94048a737088aef4f9f13b5fef1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7778fcee747e4b985f3557c0a8e5f692"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga7778fcee747e4b985f3557c0a8e5f692">oc_get_response_payload_raw</a> (const <a class="el" href="structoc__client__response__t.html">oc_client_response_t</a> *response, const uint8_t **payload, size_t *size, <a class="el" href="oc__ri_8h.html#a83161604a805e3a951254864d16a714f">oc_content_format_t</a> *content_format)</td></tr>
+<tr class="memdesc:ga7778fcee747e4b985f3557c0a8e5f692"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the response payload, without processing  <a href="group__doc__module__tag__server__side.html#ga7778fcee747e4b985f3557c0a8e5f692">More...</a><br /></td></tr>
+<tr class="separator:ga7778fcee747e4b985f3557c0a8e5f692"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabbee24e2e7b99e6e657c0fd07ceb1db9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gabbee24e2e7b99e6e657c0fd07ceb1db9">oc_ignore_request</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request)</td></tr>
 <tr class="memdesc:gabbee24e2e7b99e6e657c0fd07ceb1db9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ignore the request.  <a href="group__doc__module__tag__server__side.html#gabbee24e2e7b99e6e657c0fd07ceb1db9">More...</a><br /></td></tr>
 <tr class="separator:gabbee24e2e7b99e6e657c0fd07ceb1db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -387,8 +387,8 @@ The callee shall not block for too long as the stack is blocked during the invoc
 
 </div>
 </div>
-<a id="ga6e62a8f6485efd4dff90d4b07ebdb57c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6e62a8f6485efd4dff90d4b07ebdb57c">&#9670;&nbsp;</a></span>oc_get_diagnostic_message()</h2>
+<a id="ga7376142521e76079732029aafc2ba8be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7376142521e76079732029aafc2ba8be">&#9670;&nbsp;</a></span>oc_get_diagnostic_message()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -396,7 +396,7 @@ The callee shall not block for too long as the stack is blocked during the invoc
         <tr>
           <td class="memname">bool oc_get_diagnostic_message </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structoc__client__response__t.html">oc_client_response_t</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="structoc__client__response__t.html">oc_client_response_t</a> *&#160;</td>
           <td class="paramname"><em>response</em>, </td>
         </tr>
         <tr>
@@ -538,8 +538,8 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="gacaf94048a737088aef4f9f13b5fef1c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacaf94048a737088aef4f9f13b5fef1c7">&#9670;&nbsp;</a></span>oc_get_response_payload_raw()</h2>
+<a id="ga7778fcee747e4b985f3557c0a8e5f692"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7778fcee747e4b985f3557c0a8e5f692">&#9670;&nbsp;</a></span>oc_get_response_payload_raw()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -547,7 +547,7 @@ false </dd></dl>
         <tr>
           <td class="memname">bool oc_get_response_payload_raw </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structoc__client__response__t.html">oc_client_response_t</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="structoc__client__response__t.html">oc_client_response_t</a> *&#160;</td>
           <td class="paramname"><em>response</em>, </td>
         </tr>
         <tr>
@@ -2015,7 +2015,7 @@ false </dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Jan 17 2023 16:54:29 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Jan 18 2023 23:37:30 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
