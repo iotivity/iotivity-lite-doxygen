@@ -77,7 +77,7 @@ var searchData=
   ['oc_5fcloud_5fdelete_5fresource_189',['oc_cloud_delete_resource',['../oc__cloud_8h.html#ac46b568c036b54548c4a94190738e79a',1,'oc_cloud.h']]],
   ['oc_5fcloud_5fderegister_190',['oc_cloud_deregister',['../oc__cloud_8h.html#a7b2f8fa8fe77465c78a34397ba816049',1,'oc_cloud.h']]],
   ['oc_5fcloud_5fget_5fcontext_191',['oc_cloud_get_context',['../oc__cloud_8h.html#a22b924c040afc36d30699a7ed383b640',1,'oc_cloud.h']]],
-  ['oc_5fcloud_5fget_5fidentity_5fcert_5fchain_192',['oc_cloud_get_identity_cert_chain',['../oc__cloud_8h.html#a37c7ef5d19d8cb2ddf63aa6a64bcc85c',1,'oc_cloud.h']]],
+  ['oc_5fcloud_5fget_5fidentity_5fcert_5fchain_192',['oc_cloud_get_identity_cert_chain',['../oc__cloud_8h.html#a8ca145b47f7b411ad73172a9254f6d85',1,'oc_cloud.h']]],
   ['oc_5fcloud_5flogin_193',['oc_cloud_login',['../oc__cloud_8h.html#aa932934364ee13c0288a1abc271769a6',1,'oc_cloud.h']]],
   ['oc_5fcloud_5flogout_194',['oc_cloud_logout',['../oc__cloud_8h.html#aa17c235b6b81a13f092a443e8fbc8134',1,'oc_cloud.h']]],
   ['oc_5fcloud_5fmanager_5frestart_195',['oc_cloud_manager_restart',['../oc__cloud_8h.html#ae889d0e2bb7e0b53053c27bf7210db2c',1,'oc_cloud.h']]],

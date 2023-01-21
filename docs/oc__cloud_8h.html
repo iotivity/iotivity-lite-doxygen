@@ -164,12 +164,12 @@ OC_API int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_discov
 <tr class="memitem:a22b924c040afc36d30699a7ed383b640"><td class="memItemLeft" align="right" valign="top">OC_API oc_cloud_context_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#a22b924c040afc36d30699a7ed383b640">oc_cloud_get_context</a> (size_t device)</td></tr>
 <tr class="memdesc:a22b924c040afc36d30699a7ed383b640"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get cloud context for device.  <a href="oc__cloud_8h.html#a22b924c040afc36d30699a7ed383b640">More...</a><br /></td></tr>
 <tr class="separator:a22b924c040afc36d30699a7ed383b640"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37c7ef5d19d8cb2ddf63aa6a64bcc85c"><td class="memItemLeft" align="right" valign="top">OC_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#a37c7ef5d19d8cb2ddf63aa6a64bcc85c">oc_cloud_get_identity_cert_chain</a> (oc_cloud_context_t *ctx)</td></tr>
-<tr class="memdesc:a37c7ef5d19d8cb2ddf63aa6a64bcc85c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get selected identity certificate chain to establish TLS connection.  <a href="oc__cloud_8h.html#a37c7ef5d19d8cb2ddf63aa6a64bcc85c">More...</a><br /></td></tr>
-<tr class="separator:a37c7ef5d19d8cb2ddf63aa6a64bcc85c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af140cbd344f532319e446accda34763e"><td class="memItemLeft" align="right" valign="top"><a id="af140cbd344f532319e446accda34763e"></a>
-OC_API int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_get_token_expiry</b> (oc_cloud_context_t *ctx)</td></tr>
-<tr class="separator:af140cbd344f532319e446accda34763e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ca145b47f7b411ad73172a9254f6d85"><td class="memItemLeft" align="right" valign="top">OC_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#a8ca145b47f7b411ad73172a9254f6d85">oc_cloud_get_identity_cert_chain</a> (const oc_cloud_context_t *ctx)</td></tr>
+<tr class="memdesc:a8ca145b47f7b411ad73172a9254f6d85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get selected identity certificate chain to establish TLS connection.  <a href="oc__cloud_8h.html#a8ca145b47f7b411ad73172a9254f6d85">More...</a><br /></td></tr>
+<tr class="separator:a8ca145b47f7b411ad73172a9254f6d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2e89ae98f3846b3ce9de3d0e25434b8"><td class="memItemLeft" align="right" valign="top"><a id="ab2e89ae98f3846b3ce9de3d0e25434b8"></a>
+OC_API int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_get_token_expiry</b> (const oc_cloud_context_t *ctx)</td></tr>
+<tr class="separator:ab2e89ae98f3846b3ce9de3d0e25434b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa932934364ee13c0288a1abc271769a6"><td class="memItemLeft" align="right" valign="top">OC_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#aa932934364ee13c0288a1abc271769a6">oc_cloud_login</a> (oc_cloud_context_t *ctx, <a class="el" href="oc__cloud_8h.html#adaa6e94d3d339e364a392045fbc78969">oc_cloud_cb_t</a> cb, void *data)</td></tr>
 <tr class="memdesc:aa932934364ee13c0288a1abc271769a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send request to sign in the device to the cloud.  <a href="oc__cloud_8h.html#aa932934364ee13c0288a1abc271769a6">More...</a><br /></td></tr>
 <tr class="separator:aa932934364ee13c0288a1abc271769a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -368,8 +368,8 @@ int -1 on error </dd></dl>
 
 </div>
 </div>
-<a id="a37c7ef5d19d8cb2ddf63aa6a64bcc85c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37c7ef5d19d8cb2ddf63aa6a64bcc85c">&#9670;&nbsp;</a></span>oc_cloud_get_identity_cert_chain()</h2>
+<a id="a8ca145b47f7b411ad73172a9254f6d85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ca145b47f7b411ad73172a9254f6d85">&#9670;&nbsp;</a></span>oc_cloud_get_identity_cert_chain()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -377,7 +377,7 @@ int -1 on error </dd></dl>
         <tr>
           <td class="memname">OC_API int oc_cloud_get_identity_cert_chain </td>
           <td>(</td>
-          <td class="paramtype">oc_cloud_context_t *&#160;</td>
+          <td class="paramtype">const oc_cloud_context_t *&#160;</td>
           <td class="paramname"><em>ctx</em></td><td>)</td>
           <td></td>
         </tr>
@@ -791,7 +791,7 @@ int -1 on error </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__cloud_8h.html">oc_cloud.h</a></li>
-    <li class="footer">Generated on Wed Jan 18 2023 23:37:29 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jan 21 2023 16:09:11 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
