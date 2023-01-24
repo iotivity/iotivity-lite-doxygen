@@ -185,8 +185,8 @@ OC_API int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_get_to
 <tr class="memitem:ad13a763399d71c344f990b6d85b8ed3f"><td class="memItemLeft" align="right" valign="top">OC_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#ad13a763399d71c344f990b6d85b8ed3f">oc_cloud_manager_stop</a> (oc_cloud_context_t *ctx)</td></tr>
 <tr class="memdesc:ad13a763399d71c344f990b6d85b8ed3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop cloud registration process, remove related pending delayed callbacks and clean-up data.  <a href="oc__cloud_8h.html#ad13a763399d71c344f990b6d85b8ed3f">More...</a><br /></td></tr>
 <tr class="separator:ad13a763399d71c344f990b6d85b8ed3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af14c6072398cb20acf9695a1aefbab90"><td class="memItemLeft" align="right" valign="top"><a id="af14c6072398cb20acf9695a1aefbab90"></a>
-OC_API int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_provision_conf_resource</b> (oc_cloud_context_t *ctx, const char *server, const char *access_token, const char *server_id, const char *auth_provider)</td></tr>
+<tr class="memitem:af14c6072398cb20acf9695a1aefbab90"><td class="memItemLeft" align="right" valign="top">OC_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#af14c6072398cb20acf9695a1aefbab90">oc_cloud_provision_conf_resource</a> (oc_cloud_context_t *ctx, const char *server, const char *access_token, const char *server_id, const char *auth_provider)</td></tr>
+<tr class="memdesc:af14c6072398cb20acf9695a1aefbab90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure cloud properties.  <a href="oc__cloud_8h.html#af14c6072398cb20acf9695a1aefbab90">More...</a><br /></td></tr>
 <tr class="separator:af14c6072398cb20acf9695a1aefbab90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05cb48518b592f5d518d89461c9e8043"><td class="memItemLeft" align="right" valign="top">OC_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#a05cb48518b592f5d518d89461c9e8043">oc_cloud_publish_resources</a> (size_t device)</td></tr>
 <tr class="memdesc:a05cb48518b592f5d518d89461c9e8043"><td class="mdescLeft">&#160;</td><td class="mdescRight">Republish previously published devices.  <a href="oc__cloud_8h.html#a05cb48518b592f5d518d89461c9e8043">More...</a><br /></td></tr>
@@ -591,6 +591,68 @@ int -1 on error </dd></dl>
 
 </div>
 </div>
+<a id="af14c6072398cb20acf9695a1aefbab90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af14c6072398cb20acf9695a1aefbab90">&#9670;&nbsp;</a></span>oc_cloud_provision_conf_resource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OC_API int oc_cloud_provision_conf_resource </td>
+          <td>(</td>
+          <td class="paramtype">oc_cloud_context_t *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>server</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>access_token</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>server_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>auth_provider</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Configure cloud properties. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Cloud context to update (cannot be be NULL) </td></tr>
+    <tr><td class="paramname">server</td><td>Cloud server URL </td></tr>
+    <tr><td class="paramname">access_token</td><td>Access token from an Authorisation Provider </td></tr>
+    <tr><td class="paramname">server_id</td><td>Cloud server ID </td></tr>
+    <tr><td class="paramname">auth_provider</td><td>Name of the Authorization Provider which provided the access token </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success </dd>
+<dd>
+-1 on failure</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Cloud manager will be restarted if is was started previously </dd></dl>
+
+</div>
+</div>
 <a id="a05cb48518b592f5d518d89461c9e8043"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a05cb48518b592f5d518d89461c9e8043">&#9670;&nbsp;</a></span>oc_cloud_publish_resources()</h2>
 
@@ -791,7 +853,7 @@ int -1 on error </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__cloud_8h.html">oc_cloud.h</a></li>
-    <li class="footer">Generated on Mon Jan 23 2023 10:53:11 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Jan 24 2023 21:49:59 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

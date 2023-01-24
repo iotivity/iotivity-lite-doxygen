@@ -144,7 +144,8 @@ var oc__ri_8h =
       [ "OC_STATUS_PROXYING_NOT_SUPPORTED", "oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38a994b5bf750c97a233884fdea5066a132", null ],
       [ "__NUM_OC_STATUS_CODES__", "oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38a385a4b33121acc7f9e1ca31fa593b1ad", null ],
       [ "OC_IGNORE", "oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38a27ab50ca2634c458be1fd54251179172", null ],
-      [ "OC_PING_TIMEOUT", "oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38ada6a9cd6b2ff47d615b04c0a0dfcfc88", null ]
+      [ "OC_PING_TIMEOUT", "oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38ada6a9cd6b2ff47d615b04c0a0dfcfc88", null ],
+      [ "OC_REQUEST_TIMEOUT", "oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38ae210754b895fe6568e99f242be11172a", null ]
     ] ],
     [ "oc_ri_add_resource", "oc__ri_8h.html#a1481c68aff7317781a4af49dd53289ea", null ],
     [ "oc_ri_add_timed_event_callback_ticks", "oc__ri_8h.html#a05de71c3b10d3286e8f6e6b8f784e959", null ],
