@@ -344,7 +344,11 @@ OC_API int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_get_to
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int 0 on success </dd>
 <dd>
-int -1 on error </dd></dl>
+int -1 on error</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>oc_cloud_deregister shouldn't be called when oc_cloud_login or oc_cloud_refresh_token have been invoked and haven't yet received a response.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__cloud_8h.html#aa932934364ee13c0288a1abc271769a6" title="Send request to sign in the device to the cloud.">oc_cloud_login</a> </dd>
+<dd>
+<a class="el" href="oc__cloud_8h.html#a4e7569124ef59d0066b6d412a182e255" title="Send request to refresh the device access token to the cloud.">oc_cloud_refresh_token</a> </dd></dl>
 
 </div>
 </div>
@@ -853,7 +857,7 @@ int -1 on error </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__cloud_8h.html">oc_cloud.h</a></li>
-    <li class="footer">Generated on Wed Jan 25 2023 13:56:28 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jan 30 2023 18:08:41 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

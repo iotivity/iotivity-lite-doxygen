@@ -94,6 +94,7 @@ $(document).ready(function(){initNavTree('oc__ri_8h.html',''); initResizable(); 
 <div class="textblock"><code>#include &quot;oc_config.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__endpoint_8h.html">oc_endpoint.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__enums_8h.html">oc_enums.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="oc__export_8h.html">oc_export.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__rep_8h.html">oc_rep.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__uuid_8h.html">oc_uuid.h</a>&quot;</code><br />
 <code>#include &quot;util/oc_etimer.h&quot;</code><br />
@@ -174,6 +175,12 @@ typedef struct <a class="el" href="structoc__resource__s.html">oc_resource_s</a>
 <tr class="memitem:ae8fe862afa6ce9613ed8b33c1a9e4546"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structoc__response__t.html">oc_response_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#ae8fe862afa6ce9613ed8b33c1a9e4546">oc_response_t</a></td></tr>
 <tr class="memdesc:ae8fe862afa6ce9613ed8b33c1a9e4546"><td class="mdescLeft">&#160;</td><td class="mdescRight">response type  <a href="oc__ri_8h.html#ae8fe862afa6ce9613ed8b33c1a9e4546">More...</a><br /></td></tr>
 <tr class="separator:ae8fe862afa6ce9613ed8b33c1a9e4546"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac53a2923da1e036f62cb84da82d1c8c3"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#ac53a2923da1e036f62cb84da82d1c8c3">oc_ri_timed_event_filter_t</a>) (const void *cb_data, const void *filter_data)</td></tr>
+<tr class="memdesc:ac53a2923da1e036f62cb84da82d1c8c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filtering function used to match scheduled timed events by context data.  <a href="oc__ri_8h.html#ac53a2923da1e036f62cb84da82d1c8c3">More...</a><br /></td></tr>
+<tr class="separator:ac53a2923da1e036f62cb84da82d1c8c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41f1ba7b8bc314d1f6bb1bb35a4b16ce"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a41f1ba7b8bc314d1f6bb1bb35a4b16ce">oc_ri_timed_event_on_delete_t</a>) (void *cb_data)</td></tr>
+<tr class="memdesc:a41f1ba7b8bc314d1f6bb1bb35a4b16ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function invoked with timed event context data before the timed event is deallocated.  <a href="oc__ri_8h.html#a41f1ba7b8bc314d1f6bb1bb35a4b16ce">More...</a><br /></td></tr>
+<tr class="separator:a41f1ba7b8bc314d1f6bb1bb35a4b16ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8574b4921b4ecdddd325a4634bec426"><td class="memItemLeft" align="right" valign="top">typedef struct oc_separate_response_s&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#aa8574b4921b4ecdddd325a4634bec426">oc_separate_response_t</a></td></tr>
 <tr class="memdesc:aa8574b4921b4ecdddd325a4634bec426"><td class="mdescLeft">&#160;</td><td class="mdescRight">seperate response type  <a href="oc__ri_8h.html#aa8574b4921b4ecdddd325a4634bec426">More...</a><br /></td></tr>
 <tr class="separator:aa8574b4921b4ecdddd325a4634bec426"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -355,9 +362,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a1481c68aff7317781a4af49dd53289ea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a1481c68aff7317781a4af49dd53289ea">oc_ri_add_resource</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
 <tr class="memdesc:a1481c68aff7317781a4af49dd53289ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">add resource to the system  <a href="oc__ri_8h.html#a1481c68aff7317781a4af49dd53289ea">More...</a><br /></td></tr>
 <tr class="separator:a1481c68aff7317781a4af49dd53289ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05de71c3b10d3286e8f6e6b8f784e959"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a05de71c3b10d3286e8f6e6b8f784e959">oc_ri_add_timed_event_callback_ticks</a> (void *cb_data, oc_trigger_t event_callback, oc_clock_time_t ticks)</td></tr>
-<tr class="memdesc:a05de71c3b10d3286e8f6e6b8f784e959"><td class="mdescLeft">&#160;</td><td class="mdescRight">add timed event callback  <a href="oc__ri_8h.html#a05de71c3b10d3286e8f6e6b8f784e959">More...</a><br /></td></tr>
-<tr class="separator:a05de71c3b10d3286e8f6e6b8f784e959"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ce65e738f997897e1fa07dc06d90d4e"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a1ce65e738f997897e1fa07dc06d90d4e">oc_ri_add_timed_event_callback_ticks</a> (void *cb_data, oc_trigger_t event_callback, oc_clock_time_t ticks)</td></tr>
+<tr class="memdesc:a1ce65e738f997897e1fa07dc06d90d4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">add timed event callback  <a href="oc__ri_8h.html#a1ce65e738f997897e1fa07dc06d90d4e">More...</a><br /></td></tr>
+<tr class="separator:a1ce65e738f997897e1fa07dc06d90d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7147ccded944c339e039abb43e485619"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a7147ccded944c339e039abb43e485619">oc_ri_alloc_resource</a> (void)</td></tr>
 <tr class="memdesc:a7147ccded944c339e039abb43e485619"><td class="mdescLeft">&#160;</td><td class="mdescRight">allocate a resource structure  <a href="oc__ri_8h.html#a7147ccded944c339e039abb43e485619">More...</a><br /></td></tr>
 <tr class="separator:a7147ccded944c339e039abb43e485619"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -385,9 +392,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a8e71507c8e64d0d010c18c18e9593d39"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a8e71507c8e64d0d010c18c18e9593d39">oc_ri_get_query_value</a> (const char *query, size_t query_len, const char *key, const char **value)</td></tr>
 <tr class="memdesc:a8e71507c8e64d0d010c18c18e9593d39"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the value of the query parameter "key"  <a href="oc__ri_8h.html#a8e71507c8e64d0d010c18c18e9593d39">More...</a><br /></td></tr>
 <tr class="separator:a8e71507c8e64d0d010c18c18e9593d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a027c12af41fd57bae85a25c3cd2b3c94"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a027c12af41fd57bae85a25c3cd2b3c94">oc_ri_has_timed_event_callback</a> (const void *cb_data, oc_trigger_t event_callback, bool ignore_cb_data)</td></tr>
-<tr class="memdesc:a027c12af41fd57bae85a25c3cd2b3c94"><td class="mdescLeft">&#160;</td><td class="mdescRight">check if the timed event callback already exists.  <a href="oc__ri_8h.html#a027c12af41fd57bae85a25c3cd2b3c94">More...</a><br /></td></tr>
-<tr class="separator:a027c12af41fd57bae85a25c3cd2b3c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace8b4ee604a5ec9ebef8fe3a2101e370"><td class="memItemLeft" align="right" valign="top">OC_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#ace8b4ee604a5ec9ebef8fe3a2101e370">oc_ri_has_timed_event_callback</a> (const void *cb_data, oc_trigger_t event_callback, bool ignore_cb_data)</td></tr>
+<tr class="memdesc:ace8b4ee604a5ec9ebef8fe3a2101e370"><td class="mdescLeft">&#160;</td><td class="mdescRight">check if the timed event callback already exists.  <a href="oc__ri_8h.html#ace8b4ee604a5ec9ebef8fe3a2101e370">More...</a><br /></td></tr>
+<tr class="separator:ace8b4ee604a5ec9ebef8fe3a2101e370"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8703351e3156d5419ff7cc485400c9eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a8703351e3156d5419ff7cc485400c9eb">oc_ri_init</a> (void)</td></tr>
 <tr class="memdesc:a8703351e3156d5419ff7cc485400c9eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialize the resource implementation handler  <a href="oc__ri_8h.html#a8703351e3156d5419ff7cc485400c9eb">More...</a><br /></td></tr>
 <tr class="separator:a8703351e3156d5419ff7cc485400c9eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -400,9 +407,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a4986689628b7095abbd58472bcb9cd7e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a4986689628b7095abbd58472bcb9cd7e">oc_ri_query_nth_key_exists</a> (const char *query, size_t query_len, const char **key, size_t *key_len, size_t n)</td></tr>
 <tr class="memdesc:a4986689628b7095abbd58472bcb9cd7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">check if the nth key exists  <a href="oc__ri_8h.html#a4986689628b7095abbd58472bcb9cd7e">More...</a><br /></td></tr>
 <tr class="separator:a4986689628b7095abbd58472bcb9cd7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac33d857dcdd5169edb5e54b247a3b1f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#ac33d857dcdd5169edb5e54b247a3b1f4">oc_ri_remove_timed_event_callback</a> (const void *cb_data, oc_trigger_t event_callback)</td></tr>
-<tr class="memdesc:ac33d857dcdd5169edb5e54b247a3b1f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove the timed event callback  <a href="oc__ri_8h.html#ac33d857dcdd5169edb5e54b247a3b1f4">More...</a><br /></td></tr>
-<tr class="separator:ac33d857dcdd5169edb5e54b247a3b1f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1c22615d84a88b3ef75b0ca9008b70c"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#ab1c22615d84a88b3ef75b0ca9008b70c">oc_ri_remove_timed_event_callback</a> (const void *cb_data, oc_trigger_t event_callback)</td></tr>
+<tr class="memdesc:ab1c22615d84a88b3ef75b0ca9008b70c"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove the timed event callback  <a href="oc__ri_8h.html#ab1c22615d84a88b3ef75b0ca9008b70c">More...</a><br /></td></tr>
+<tr class="separator:ab1c22615d84a88b3ef75b0ca9008b70c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adafb68ec0009578949c018a07f204c26"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#adafb68ec0009578949c018a07f204c26">oc_ri_remove_timed_event_callback_by_filter</a> (oc_trigger_t cb, <a class="el" href="oc__ri_8h.html#ac53a2923da1e036f62cb84da82d1c8c3">oc_ri_timed_event_filter_t</a> filter, const void *filter_data, bool match_all, <a class="el" href="oc__ri_8h.html#a41f1ba7b8bc314d1f6bb1bb35a4b16ce">oc_ri_timed_event_on_delete_t</a> on_delete)</td></tr>
+<tr class="memdesc:adafb68ec0009578949c018a07f204c26"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove the timed event callback by filter  <a href="oc__ri_8h.html#adafb68ec0009578949c018a07f204c26">More...</a><br /></td></tr>
+<tr class="separator:adafb68ec0009578949c018a07f204c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af50fe1e19e0b2607dd2b3ac1db93668e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#af50fe1e19e0b2607dd2b3ac1db93668e">oc_ri_shutdown</a> (void)</td></tr>
 <tr class="memdesc:af50fe1e19e0b2607dd2b3ac1db93668e"><td class="mdescLeft">&#160;</td><td class="mdescRight">shut down the resource implementation handler  <a href="oc__ri_8h.html#af50fe1e19e0b2607dd2b3ac1db93668e">More...</a><br /></td></tr>
 <tr class="separator:af50fe1e19e0b2607dd2b3ac1db93668e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -608,6 +618,48 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>response type </p>
+
+</div>
+</div>
+<a id="ac53a2923da1e036f62cb84da82d1c8c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac53a2923da1e036f62cb84da82d1c8c3">&#9670;&nbsp;</a></span>oc_ri_timed_event_filter_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef bool(* oc_ri_timed_event_filter_t) (const void *cb_data, const void *filter_data)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Filtering function used to match scheduled timed events by context data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cb_data</td><td>Data for the timed event callback </td></tr>
+    <tr><td class="paramname">filter_data</td><td>User data passed from the caller to the filtering function</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__ri_8h.html#adafb68ec0009578949c018a07f204c26" title="remove the timed event callback by filter">oc_ri_remove_timed_event_callback_by_filter</a> </dd></dl>
+
+</div>
+</div>
+<a id="a41f1ba7b8bc314d1f6bb1bb35a4b16ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41f1ba7b8bc314d1f6bb1bb35a4b16ce">&#9670;&nbsp;</a></span>oc_ri_timed_event_on_delete_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* oc_ri_timed_event_on_delete_t) (void *cb_data)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function invoked with timed event context data before the timed event is deallocated. </p>
+<dl class="section note"><dt>Note</dt><dd>Expected use case is for a dynamically allocated context to be deallocated by this callback.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__ri_8h.html#adafb68ec0009578949c018a07f204c26" title="remove the timed event callback by filter">oc_ri_remove_timed_event_callback_by_filter</a> </dd></dl>
 
 </div>
 </div>
@@ -941,14 +993,14 @@ false failure </dd></dl>
 
 </div>
 </div>
-<a id="a05de71c3b10d3286e8f6e6b8f784e959"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05de71c3b10d3286e8f6e6b8f784e959">&#9670;&nbsp;</a></span>oc_ri_add_timed_event_callback_ticks()</h2>
+<a id="a1ce65e738f997897e1fa07dc06d90d4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ce65e738f997897e1fa07dc06d90d4e">&#9670;&nbsp;</a></span>oc_ri_add_timed_event_callback_ticks()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oc_ri_add_timed_event_callback_ticks </td>
+          <td class="memname">OC_API void oc_ri_add_timed_event_callback_ticks </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>cb_data</em>, </td>
@@ -1318,14 +1370,14 @@ int -1 on failure </dd></dl>
 
 </div>
 </div>
-<a id="a027c12af41fd57bae85a25c3cd2b3c94"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a027c12af41fd57bae85a25c3cd2b3c94">&#9670;&nbsp;</a></span>oc_ri_has_timed_event_callback()</h2>
+<a id="ace8b4ee604a5ec9ebef8fe3a2101e370"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace8b4ee604a5ec9ebef8fe3a2101e370">&#9670;&nbsp;</a></span>oc_ri_has_timed_event_callback()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool oc_ri_has_timed_event_callback </td>
+          <td class="memname">OC_API bool oc_ri_has_timed_event_callback </td>
           <td>(</td>
           <td class="paramtype">const void *&#160;</td>
           <td class="paramname"><em>cb_data</em>, </td>
@@ -1519,14 +1571,14 @@ false not valid </dd></dl>
 
 </div>
 </div>
-<a id="ac33d857dcdd5169edb5e54b247a3b1f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac33d857dcdd5169edb5e54b247a3b1f4">&#9670;&nbsp;</a></span>oc_ri_remove_timed_event_callback()</h2>
+<a id="ab1c22615d84a88b3ef75b0ca9008b70c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1c22615d84a88b3ef75b0ca9008b70c">&#9670;&nbsp;</a></span>oc_ri_remove_timed_event_callback()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oc_ri_remove_timed_event_callback </td>
+          <td class="memname">OC_API void oc_ri_remove_timed_event_callback </td>
           <td>(</td>
           <td class="paramtype">const void *&#160;</td>
           <td class="paramname"><em>cb_data</em>, </td>
@@ -1548,11 +1600,71 @@ false not valid </dd></dl>
 <p>remove the timed event callback </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cb_data</td><td>the timed event callback info </td></tr>
-    <tr><td class="paramname">event_callback</td><td>the callback </td></tr>
+    <tr><td class="paramname">cb_data</td><td>timed event callback info </td></tr>
+    <tr><td class="paramname">event_callback</td><td>timed event callback </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="adafb68ec0009578949c018a07f204c26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adafb68ec0009578949c018a07f204c26">&#9670;&nbsp;</a></span>oc_ri_remove_timed_event_callback_by_filter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OC_API void oc_ri_remove_timed_event_callback_by_filter </td>
+          <td>(</td>
+          <td class="paramtype">oc_trigger_t&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="oc__ri_8h.html#ac53a2923da1e036f62cb84da82d1c8c3">oc_ri_timed_event_filter_t</a>&#160;</td>
+          <td class="paramname"><em>filter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>filter_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>match_all</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="oc__ri_8h.html#a41f1ba7b8bc314d1f6bb1bb35a4b16ce">oc_ri_timed_event_on_delete_t</a>&#160;</td>
+          <td class="paramname"><em>on_delete</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>remove the timed event callback by filter </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cb</td><td>timed event callback </td></tr>
+    <tr><td class="paramname">filter</td><td>filtering function (cannot be NULL) </td></tr>
+    <tr><td class="paramname">filter_data</td><td>user data provided to the filtering function </td></tr>
+    <tr><td class="paramname">match_all</td><td>iterate over all timed events (otherwise the iteration will stop after the first match) </td></tr>
+    <tr><td class="paramname">on_delete</td><td>function invoked with the context data of the timed event, before the event is deallocated</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>if the matched timed event is currently being processed then the <code>on_delete</code> callback will be invoked when the processing is finished. So it might occurr some time after the call to oc_ri_remove_timed_event_callback_by_filter has finished.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__ri_8h.html#ac53a2923da1e036f62cb84da82d1c8c3" title="Filtering function used to match scheduled timed events by context data.">oc_ri_timed_event_filter_t</a> </dd></dl>
 
 </div>
 </div>
@@ -1636,7 +1748,7 @@ false not valid </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__ri_8h.html">oc_ri.h</a></li>
-    <li class="footer">Generated on Wed Jan 25 2023 13:56:28 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jan 30 2023 18:08:41 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
