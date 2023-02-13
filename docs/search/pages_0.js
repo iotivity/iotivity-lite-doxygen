@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['iotivity_2dlite_20api_1714',['IoTivity-Lite API',['../index.html',1,'']]]
+  ['deprecated_20list_1728',['Deprecated List',['../deprecated.html',1,'']]]
 ];

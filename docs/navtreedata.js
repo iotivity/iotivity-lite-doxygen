@@ -26,6 +26,7 @@ var NAVTREE =
 [
   [ "IoTivity-Lite", "index.html", [
     [ "IoTivity-Lite API", "index.html", null ],
+    [ "Deprecated List", "deprecated.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
@@ -53,11 +54,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"oc__acl_8h.html#ab050d71282b1024e44cdb5f9f8b2da17",
-"oc__cred_8h.html#a5d7834c30f61c858ee25c8ba8a47a2c6",
-"oc__helpers_8h.html#a727102f5d5715caa4b830333fd736550",
-"oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38a27ab50ca2634c458be1fd54251179172",
-"structoc__client__response__t.html#ab37ead9b768f1ee00fd8b655a4309e8c"
+"oc__acl_8h.html#a78c4f9f6c2a1be18591d7e9520a73029",
+"oc__cred_8h.html#a4bf6d443c0cedb2c9ac90cc866cb28b3a275da18921a1d6ba2c66e6a30c64d202",
+"oc__helpers_8h.html#a4c22b4de420e3f649835616d377788ad",
+"oc__ri_8h.html#a0122290e3f56dba478d442c5c6681860",
+"structoc__client__response__t.html#a0f53d287ac7c064d1a49d4bd93ca1cb9"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

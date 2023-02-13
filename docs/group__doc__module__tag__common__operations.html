@@ -115,9 +115,12 @@ Functions</h2></td></tr>
 <tr class="memitem:gab239ad62e1bc74df82b8f51f91466157"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__common__operations.html#gab239ad62e1bc74df82b8f51f91466157">oc_set_delayed_callback</a> (void *cb_data, oc_trigger_t callback, uint16_t seconds)</td></tr>
 <tr class="memdesc:gab239ad62e1bc74df82b8f51f91466157"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule a callback to be invoked after a set number of seconds.  <a href="group__doc__module__tag__common__operations.html#gab239ad62e1bc74df82b8f51f91466157">More...</a><br /></td></tr>
 <tr class="separator:gab239ad62e1bc74df82b8f51f91466157"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaff6fed063db767ef574e79bb9ffd5a38"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__common__operations.html#gaff6fed063db767ef574e79bb9ffd5a38">oc_set_delayed_callback_ms</a> (void *cb_data, oc_trigger_t callback, uint16_t miliseconds)</td></tr>
-<tr class="memdesc:gaff6fed063db767ef574e79bb9ffd5a38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule a callback to be invoked after a set number of miliseconds.  <a href="group__doc__module__tag__common__operations.html#gaff6fed063db767ef574e79bb9ffd5a38">More...</a><br /></td></tr>
-<tr class="separator:gaff6fed063db767ef574e79bb9ffd5a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga08ac7b2878c5a30a2d20a61e52015684"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__common__operations.html#ga08ac7b2878c5a30a2d20a61e52015684">oc_set_delayed_callback_ms</a> (void *cb_data, oc_trigger_t callback, uint16_t milliseconds)</td></tr>
+<tr class="memdesc:ga08ac7b2878c5a30a2d20a61e52015684"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule a callback to be invoked after a set number of milliseconds.  <a href="group__doc__module__tag__common__operations.html#ga08ac7b2878c5a30a2d20a61e52015684">More...</a><br /></td></tr>
+<tr class="separator:ga08ac7b2878c5a30a2d20a61e52015684"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga86154e349470e80af5637322b58d9f1a"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__common__operations.html#ga86154e349470e80af5637322b58d9f1a">oc_set_delayed_callback_ms_v1</a> (void *cb_data, oc_trigger_t callback, uint64_t milliseconds)</td></tr>
+<tr class="memdesc:ga86154e349470e80af5637322b58d9f1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule a callback to be invoked after a set number of milliseconds.  <a href="group__doc__module__tag__common__operations.html#ga86154e349470e80af5637322b58d9f1a">More...</a><br /></td></tr>
+<tr class="separator:ga86154e349470e80af5637322b58d9f1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga09cd54cea5742e078a5581d0e41e1e59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__common__operations.html#ga09cd54cea5742e078a5581d0e41e1e59">oc_set_immutable_device_identifier</a> (size_t device, oc_uuid_t *piid)</td></tr>
 <tr class="memdesc:ga09cd54cea5742e078a5581d0e41e1e59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the immutable device identifier.  <a href="group__doc__module__tag__common__operations.html#ga09cd54cea5742e078a5581d0e41e1e59">More...</a><br /></td></tr>
 <tr class="separator:ga09cd54cea5742e078a5581d0e41e1e59"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -393,8 +396,8 @@ false otherwise </dd></dl>
 
 </div>
 </div>
-<a id="gaff6fed063db767ef574e79bb9ffd5a38"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaff6fed063db767ef574e79bb9ffd5a38">&#9670;&nbsp;</a></span>oc_set_delayed_callback_ms()</h2>
+<a id="ga08ac7b2878c5a30a2d20a61e52015684"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga08ac7b2878c5a30a2d20a61e52015684">&#9670;&nbsp;</a></span>oc_set_delayed_callback_ms()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -415,7 +418,7 @@ false otherwise </dd></dl>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>miliseconds</em>&#160;</td>
+          <td class="paramname"><em>milliseconds</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -425,12 +428,57 @@ false otherwise </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Schedule a callback to be invoked after a set number of miliseconds. </p>
+<p>Schedule a callback to be invoked after a set number of milliseconds. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>use oc_set_delayed_callback_ms_v1 instead </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">cb_data</td><td>user defined context pointer that is passed to the oc_trigger_t callback </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>the callback invoked after the set number of miliseconds </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">miliseconds</td><td>the number of miliseconds to wait till the callback is invoked </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>the callback invoked after the set number of milliseconds </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">milliseconds</td><td>the number of milliseconds to wait till the callback is invoked </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga86154e349470e80af5637322b58d9f1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga86154e349470e80af5637322b58d9f1a">&#9670;&nbsp;</a></span>oc_set_delayed_callback_ms_v1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OC_API void oc_set_delayed_callback_ms_v1 </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>cb_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">oc_trigger_t&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>milliseconds</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Schedule a callback to be invoked after a set number of milliseconds. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb_data</td><td>user defined context pointer that is passed to the oc_trigger_t callback </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>the callback invoked after the set number of milliseconds </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">milliseconds</td><td>the number of milliseconds to wait till the callback is invoked </td></tr>
   </table>
   </dd>
 </dl>
@@ -481,7 +529,7 @@ false otherwise </dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Feb 10 2023 19:41:46 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Feb 13 2023 16:50:32 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -82,6 +82,7 @@ $(document).ready(function(){initNavTree('oc__cloud_8h.html',''); initResizable(
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
@@ -94,6 +95,12 @@ $(document).ready(function(){initNavTree('oc__cloud_8h.html',''); initResizable(
 <code>#include &quot;<a class="el" href="oc__ri_8h.html">oc_ri.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__session__events_8h.html">oc_session_events.h</a>&quot;</code><br />
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__cloud__keepalive__t.html">oc_cloud_keepalive_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cloud keepalive configuration.  <a href="structoc__cloud__keepalive__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:adaa6e94d3d339e364a392045fbc78969"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#adaa6e94d3d339e364a392045fbc78969">oc_cloud_cb_t</a>) (struct oc_cloud_context_t *ctx, <a class="el" href="oc__cloud_8h.html#a2ab39e0e37b5bf16a0b45d95bbb47dc1">oc_cloud_status_t</a> status, void *user_data)</td></tr>
@@ -102,6 +109,12 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a8c4ed194071f3d1a5d0427a038fe11f9"><td class="memItemLeft" align="right" valign="top"><a id="a8c4ed194071f3d1a5d0427a038fe11f9"></a>
 typedef struct oc_cloud_context_t&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_context_t</b></td></tr>
 <tr class="separator:a8c4ed194071f3d1a5d0427a038fe11f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94a049d676da80d6a4bf80d7832f9a78"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structoc__cloud__keepalive__t.html">oc_cloud_keepalive_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#a94a049d676da80d6a4bf80d7832f9a78">oc_cloud_keepalive_t</a></td></tr>
+<tr class="memdesc:a94a049d676da80d6a4bf80d7832f9a78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cloud keepalive configuration.  <a href="oc__cloud_8h.html#a94a049d676da80d6a4bf80d7832f9a78">More...</a><br /></td></tr>
+<tr class="separator:a94a049d676da80d6a4bf80d7832f9a78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54aa20e5605a8a73e97d2a2e0d825471"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#a54aa20e5605a8a73e97d2a2e0d825471">oc_cloud_on_keepalive_response_cb_t</a>) (bool response_received, uint64_t *next_ping, uint16_t *next_ping_timeout, void *user_data)</td></tr>
+<tr class="memdesc:a54aa20e5605a8a73e97d2a2e0d825471"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback invoked by the cloud manager when cloud change state to logged in or a keepalive response is received.  <a href="oc__cloud_8h.html#a54aa20e5605a8a73e97d2a2e0d825471">More...</a><br /></td></tr>
+<tr class="separator:a54aa20e5605a8a73e97d2a2e0d825471"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dff8b6f801ef058df036f456ef64e68"><td class="memItemLeft" align="right" valign="top"><a id="a1dff8b6f801ef058df036f456ef64e68"></a>
 typedef struct oc_cloud_store_t&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_store_t</b></td></tr>
 <tr class="separator:a1dff8b6f801ef058df036f456ef64e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,6 +213,9 @@ OC_API int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_get_to
 <tr class="memitem:a15658e05fe949aa899c0df24bd96e201"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#a15658e05fe949aa899c0df24bd96e201">oc_cloud_set_identity_cert_chain</a> (oc_cloud_context_t *ctx, int selected_identity_cred_id)</td></tr>
 <tr class="memdesc:a15658e05fe949aa899c0df24bd96e201"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set identity certificate chain to establish TLS connection.  <a href="oc__cloud_8h.html#a15658e05fe949aa899c0df24bd96e201">More...</a><br /></td></tr>
 <tr class="separator:a15658e05fe949aa899c0df24bd96e201"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac24bd82a6c24b565b3f5509dcee43519"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#ac24bd82a6c24b565b3f5509dcee43519">oc_cloud_set_keepalive</a> (oc_cloud_context_t *ctx, <a class="el" href="oc__cloud_8h.html#a54aa20e5605a8a73e97d2a2e0d825471">oc_cloud_on_keepalive_response_cb_t</a> on_keepalive_response, void *user_data)</td></tr>
+<tr class="memdesc:ac24bd82a6c24b565b3f5509dcee43519"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set keepalive parameters for the cloud manager.  <a href="oc__cloud_8h.html#ac24bd82a6c24b565b3f5509dcee43519">More...</a><br /></td></tr>
+<tr class="separator:ac24bd82a6c24b565b3f5509dcee43519"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84c14a3bc7523e1350f7f9f756b5ac4d"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#a84c14a3bc7523e1350f7f9f756b5ac4d">oc_cloud_set_published_resources_ttl</a> (oc_cloud_context_t *ctx, uint32_t ttl)</td></tr>
 <tr class="memdesc:a84c14a3bc7523e1350f7f9f756b5ac4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Time to Live value in the provided cloud context.  <a href="oc__cloud_8h.html#a84c14a3bc7523e1350f7f9f756b5ac4d">More...</a><br /></td></tr>
 <tr class="separator:a84c14a3bc7523e1350f7f9f756b5ac4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -226,6 +242,48 @@ OC_API int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_get_to
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a94a049d676da80d6a4bf80d7832f9a78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94a049d676da80d6a4bf80d7832f9a78">&#9670;&nbsp;</a></span>oc_cloud_keepalive_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structoc__cloud__keepalive__t.html">oc_cloud_keepalive_t</a> <a class="el" href="structoc__cloud__keepalive__t.html">oc_cloud_keepalive_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cloud keepalive configuration. </p>
+
+</div>
+</div>
+<a id="a54aa20e5605a8a73e97d2a2e0d825471"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54aa20e5605a8a73e97d2a2e0d825471">&#9670;&nbsp;</a></span>oc_cloud_on_keepalive_response_cb_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef bool(* oc_cloud_on_keepalive_response_cb_t) (bool response_received, uint64_t *next_ping, uint16_t *next_ping_timeout, void *user_data)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback invoked by the cloud manager when cloud change state to logged in or a keepalive response is received. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">response_received</td><td>Keepalive response received, true if received, otherwise false </td></tr>
+    <tr><td class="paramname">next_ping</td><td>Delay in milliseconds before next keepalive ping </td></tr>
+    <tr><td class="paramname">next_ping_timeout</td><td>Timeout in seconds for next keepalive ping </td></tr>
+    <tr><td class="paramname">user_data</td><td>User data passed from the caller</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the cloud manager should continue sending keepalive pings, false if cloud manager should consider the connection lost </dd></dl>
 
 </div>
 </div>
@@ -814,6 +872,50 @@ int -1 on error </dd></dl>
 
 </div>
 </div>
+<a id="ac24bd82a6c24b565b3f5509dcee43519"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac24bd82a6c24b565b3f5509dcee43519">&#9670;&nbsp;</a></span>oc_cloud_set_keepalive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OC_API void oc_cloud_set_keepalive </td>
+          <td>(</td>
+          <td class="paramtype">oc_cloud_context_t *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="oc__cloud_8h.html#a54aa20e5605a8a73e97d2a2e0d825471">oc_cloud_on_keepalive_response_cb_t</a>&#160;</td>
+          <td class="paramname"><em>on_keepalive_response</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set keepalive parameters for the cloud manager. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Cloud context to update, must not be NULL. </td></tr>
+    <tr><td class="paramname">on_keepalive_response</td><td>Callback invoked by the cloud manager when cloud change state to logged in or a keepalive response is received. </td></tr>
+    <tr><td class="paramname">user_data</td><td>User data passed from the caller </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a84c14a3bc7523e1350f7f9f756b5ac4d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a84c14a3bc7523e1350f7f9f756b5ac4d">&#9670;&nbsp;</a></span>oc_cloud_set_published_resources_ttl()</h2>
 
@@ -857,7 +959,7 @@ int -1 on error </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__cloud_8h.html">oc_cloud.h</a></li>
-    <li class="footer">Generated on Fri Feb 10 2023 19:41:46 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Feb 13 2023 16:50:32 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
