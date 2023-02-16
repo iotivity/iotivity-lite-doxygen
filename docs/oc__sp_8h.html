@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>IoTivity-Lite: oc_pushd_resource_rep Struct Reference</title>
+<title>IoTivity-Lite: oc_sp.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('structoc__pushd__resource__rep.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('oc__sp_8h.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -82,73 +82,62 @@ $(document).ready(function(){initNavTree('structoc__pushd__resource__rep.html','
 
 <div class="header">
   <div class="summary">
-<a href="#pub-attribs">Data Fields</a>  </div>
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
-<div class="title">oc_pushd_resource_rep Struct Reference</div>  </div>
+<div class="title">oc_sp.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>object used to store Resource pushed to "oic.r.pushreceiver:receivers[i].receiveruri"  
- <a href="structoc__pushd__resource__rep.html#details">More...</a></p>
-
-<p><code>#include &lt;oc_push.h&gt;</code></p>
+<p>OCF security profiles.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Data Fields</h2></td></tr>
-<tr class="memitem:a1f18d5063c59061115b46a512ceee0d6"><td class="memItemLeft" align="right" valign="top"><a id="a1f18d5063c59061115b46a512ceee0d6"></a>
-struct <a class="el" href="structoc__pushd__resource__rep.html">oc_pushd_resource_rep</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>next</b></td></tr>
-<tr class="separator:a1f18d5063c59061115b46a512ceee0d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35bfe629f0630bd15f98814caa3267b4"><td class="memItemLeft" align="right" valign="top">oc_rep_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__pushd__resource__rep.html#a35bfe629f0630bd15f98814caa3267b4">rep</a></td></tr>
-<tr class="memdesc:a35bfe629f0630bd15f98814caa3267b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">payload of pushed Resource  <a href="structoc__pushd__resource__rep.html#a35bfe629f0630bd15f98814caa3267b4">More...</a><br /></td></tr>
-<tr class="separator:a35bfe629f0630bd15f98814caa3267b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac51d2fe369d26905a4c6c3f409aa014c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__pushd__resource__rep.html#ac51d2fe369d26905a4c6c3f409aa014c">resource</a></td></tr>
-<tr class="memdesc:ac51d2fe369d26905a4c6c3f409aa014c"><td class="mdescLeft">&#160;</td><td class="mdescRight">used to point any pushed Resource managed by iotivity-lite  <a href="structoc__pushd__resource__rep.html#ac51d2fe369d26905a4c6c3f409aa014c">More...</a><br /></td></tr>
-<tr class="separator:ac51d2fe369d26905a4c6c3f409aa014c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:aa600b7f9ac50ab33f6501ae156ab9267"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__sp_8h.html#aa600b7f9ac50ab33f6501ae156ab9267">oc_sp_types_t</a> { <a class="el" href="oc__sp_8h.html#aa600b7f9ac50ab33f6501ae156ab9267a2752c9d6414f2a2b92321e5a0a0e7b4e">OC_SP_BASELINE</a> = 1 &lt;&lt; 1
+, <a class="el" href="oc__sp_8h.html#aa600b7f9ac50ab33f6501ae156ab9267a12b0a0b2ec9d5d436e02fcf4bf0158c6">OC_SP_BLACK</a> = 1 &lt;&lt; 2
+, <a class="el" href="oc__sp_8h.html#aa600b7f9ac50ab33f6501ae156ab9267a985dcbb563fec019726de7109d8dbbfb">OC_SP_BLUE</a> = 1 &lt;&lt; 3
+, <a class="el" href="oc__sp_8h.html#aa600b7f9ac50ab33f6501ae156ab9267ad4f4d39c252f8699e475b53747826e47">OC_SP_PURPLE</a> = 1 &lt;&lt; 4
+ }</td></tr>
+<tr class="memdesc:aa600b7f9ac50ab33f6501ae156ab9267"><td class="mdescLeft">&#160;</td><td class="mdescRight">OCF defined security profiles.  <a href="oc__sp_8h.html#aa600b7f9ac50ab33f6501ae156ab9267">More...</a><br /></td></tr>
+<tr class="separator:aa600b7f9ac50ab33f6501ae156ab9267"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>object used to store Resource pushed to "oic.r.pushreceiver:receivers[i].receiveruri" </p>
-</div><h2 class="groupheader">Field Documentation</h2>
-<a id="a35bfe629f0630bd15f98814caa3267b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35bfe629f0630bd15f98814caa3267b4">&#9670;&nbsp;</a></span>rep</h2>
+<div class="textblock"><p>OCF security profiles. </p>
+</div><h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="aa600b7f9ac50ab33f6501ae156ab9267"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa600b7f9ac50ab33f6501ae156ab9267">&#9670;&nbsp;</a></span>oc_sp_types_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">oc_rep_t* rep</td>
+          <td class="memname">enum <a class="el" href="oc__sp_8h.html#aa600b7f9ac50ab33f6501ae156ab9267">oc_sp_types_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>payload of pushed Resource </p>
+<p>OCF defined security profiles. </p>
+<p>Security Profiles differentiate devices based on requirements from different verticals such as industrial, health care, or smart home.</p>
+<p>See <a class="el" href="oc__pki_8h.html#a5025f4ae1f5e2791d2d267f88d984bcb" title="Set the OCF Security Profile.">oc_pki_set_security_profile()</a> for a description of the each of the security profiles or reference the security profiles section of the OCF Security Specification. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa600b7f9ac50ab33f6501ae156ab9267a2752c9d6414f2a2b92321e5a0a0e7b4e"></a>OC_SP_BASELINE&#160;</td><td class="fielddoc"><p>The OCF Baseline Security Profile. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa600b7f9ac50ab33f6501ae156ab9267a12b0a0b2ec9d5d436e02fcf4bf0158c6"></a>OC_SP_BLACK&#160;</td><td class="fielddoc"><p>The OCF Black Security Profile. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa600b7f9ac50ab33f6501ae156ab9267a985dcbb563fec019726de7109d8dbbfb"></a>OC_SP_BLUE&#160;</td><td class="fielddoc"><p>The OCF Blue Security Profile. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa600b7f9ac50ab33f6501ae156ab9267ad4f4d39c252f8699e475b53747826e47"></a>OC_SP_PURPLE&#160;</td><td class="fielddoc"><p>The OCF Purple Security Profile. </p>
+</td></tr>
+</table>
 
 </div>
 </div>
-<a id="ac51d2fe369d26905a4c6c3f409aa014c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac51d2fe369d26905a4c6c3f409aa014c">&#9670;&nbsp;</a></span>resource</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structoc__resource__s.html">oc_resource_t</a>* resource</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>used to point any pushed Resource managed by iotivity-lite </p>
-
-</div>
-</div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="oc__push_8h.html">oc_push.h</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="structoc__pushd__resource__rep.html">oc_pushd_resource_rep</a></li>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__sp_8h.html">oc_sp.h</a></li>
     <li class="footer">Generated on Thu Feb 16 2023 20:15:48 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

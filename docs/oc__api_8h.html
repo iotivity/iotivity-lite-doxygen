@@ -685,14 +685,14 @@ Functions</h2></td></tr>
 <div class="line">    <span class="keywordflow">return</span>;</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  <a class="code" href="oc__pki_8h.html#a5025f4ae1f5e2791d2d267f88d984bcb">oc_pki_set_security_profile</a>(0, <a class="code" href="oc__pki_8h.html#aa600b7f9ac50ab33f6501ae156ab9267a12b0a0b2ec9d5d436e02fcf4bf0158c6">OC_SP_BLACK</a>, <a class="code" href="oc__pki_8h.html#aa600b7f9ac50ab33f6501ae156ab9267a12b0a0b2ec9d5d436e02fcf4bf0158c6">OC_SP_BLACK</a>, ee_credid);</div>
+<div class="line">  <a class="code" href="oc__pki_8h.html#a5025f4ae1f5e2791d2d267f88d984bcb">oc_pki_set_security_profile</a>(0, <a class="code" href="oc__sp_8h.html#aa600b7f9ac50ab33f6501ae156ab9267a12b0a0b2ec9d5d436e02fcf4bf0158c6">OC_SP_BLACK</a>, <a class="code" href="oc__sp_8h.html#aa600b7f9ac50ab33f6501ae156ab9267a12b0a0b2ec9d5d436e02fcf4bf0158c6">OC_SP_BLACK</a>, ee_credid);</div>
 <div class="line"><span class="preprocessor">#endif </span><span class="comment">// OC_SECURITY &amp;&amp; OC_PKI</span></div>
 <div class="line">}</div>
 <div class="ttc" id="aoc__pki_8h_html_a5025f4ae1f5e2791d2d267f88d984bcb"><div class="ttname"><a href="oc__pki_8h.html#a5025f4ae1f5e2791d2d267f88d984bcb">oc_pki_set_security_profile</a></div><div class="ttdeci">void oc_pki_set_security_profile(size_t device, oc_sp_types_t supported_profiles, oc_sp_types_t current_profile, int mfg_credid)</div><div class="ttdoc">Set the OCF Security Profile.</div></div>
-<div class="ttc" id="aoc__pki_8h_html_aa600b7f9ac50ab33f6501ae156ab9267a12b0a0b2ec9d5d436e02fcf4bf0158c6"><div class="ttname"><a href="oc__pki_8h.html#aa600b7f9ac50ab33f6501ae156ab9267a12b0a0b2ec9d5d436e02fcf4bf0158c6">OC_SP_BLACK</a></div><div class="ttdeci">@ OC_SP_BLACK</div><div class="ttdoc">The OCF Black Security Profile.</div><div class="ttdef"><b>Definition:</b> oc_pki.h:48</div></div>
 <div class="ttc" id="aoc__pki_8h_html_aaf8beabe04b2a3393783dea0c72b3c71"><div class="ttname"><a href="oc__pki_8h.html#aaf8beabe04b2a3393783dea0c72b3c71">oc_pki_add_mfg_cert</a></div><div class="ttdeci">int oc_pki_add_mfg_cert(size_t device, const unsigned char *cert, size_t cert_size, const unsigned char *key, size_t key_size)</div><div class="ttdoc">Add the manufactures PKI identity certificate.</div></div>
 <div class="ttc" id="aoc__pki_8h_html_ab429d36577356b5b821e919d43320110"><div class="ttname"><a href="oc__pki_8h.html#ab429d36577356b5b821e919d43320110">oc_pki_add_mfg_trust_anchor</a></div><div class="ttdeci">int oc_pki_add_mfg_trust_anchor(size_t device, const unsigned char *cert, size_t cert_size)</div><div class="ttdoc">Add manufacture trust anchor CA.</div></div>
 <div class="ttc" id="aoc__pki_8h_html_ac433de092d318760639c905791c2a5d0"><div class="ttname"><a href="oc__pki_8h.html#ac433de092d318760639c905791c2a5d0">oc_pki_add_mfg_intermediate_cert</a></div><div class="ttdeci">int oc_pki_add_mfg_intermediate_cert(size_t device, int credid, const unsigned char *cert, size_t cert_size)</div><div class="ttdoc">Add an intermediate manufacture CA certificate.</div></div>
+<div class="ttc" id="aoc__sp_8h_html_aa600b7f9ac50ab33f6501ae156ab9267a12b0a0b2ec9d5d436e02fcf4bf0158c6"><div class="ttname"><a href="oc__sp_8h.html#aa600b7f9ac50ab33f6501ae156ab9267a12b0a0b2ec9d5d436e02fcf4bf0158c6">OC_SP_BLACK</a></div><div class="ttdeci">@ OC_SP_BLACK</div><div class="ttdoc">The OCF Black Security Profile.</div><div class="ttdef"><b>Definition:</b> oc_sp.h:44</div></div>
 </div><!-- fragment --> <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>number of the device </td></tr>
@@ -1513,7 +1513,7 @@ Use of this function requires building with OC_SECURITY defined.</dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__api_8h.html">oc_api.h</a></li>
-    <li class="footer">Generated on Mon Feb 13 2023 16:50:32 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Feb 16 2023 20:15:48 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

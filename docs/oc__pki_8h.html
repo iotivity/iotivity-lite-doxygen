@@ -82,7 +82,7 @@ $(document).ready(function(){initNavTree('oc__pki_8h.html',''); initResizable();
 
 <div class="header">
   <div class="summary">
-<a href="#enum-members">Enumerations</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">oc_pki.h File Reference</div>  </div>
@@ -92,16 +92,15 @@ $(document).ready(function(){initNavTree('oc__pki_8h.html',''); initResizable();
 <p>OCF public key infrastructure (PKI) functions.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stddef.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="oc__sp_8h.html">oc_sp.h</a>&quot;</code><br />
+<code>#include &quot;mbedtls/mbedtls_config.h&quot;</code><br />
+<code>#include &quot;mbedtls/x509_crt.h&quot;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:aa600b7f9ac50ab33f6501ae156ab9267"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__pki_8h.html#aa600b7f9ac50ab33f6501ae156ab9267">oc_sp_types_t</a> { <a class="el" href="oc__pki_8h.html#aa600b7f9ac50ab33f6501ae156ab9267a2752c9d6414f2a2b92321e5a0a0e7b4e">OC_SP_BASELINE</a> = 1 &lt;&lt; 1
-, <a class="el" href="oc__pki_8h.html#aa600b7f9ac50ab33f6501ae156ab9267a12b0a0b2ec9d5d436e02fcf4bf0158c6">OC_SP_BLACK</a> = 1 &lt;&lt; 2
-, <a class="el" href="oc__pki_8h.html#aa600b7f9ac50ab33f6501ae156ab9267a985dcbb563fec019726de7109d8dbbfb">OC_SP_BLUE</a> = 1 &lt;&lt; 3
-, <a class="el" href="oc__pki_8h.html#aa600b7f9ac50ab33f6501ae156ab9267ad4f4d39c252f8699e475b53747826e47">OC_SP_PURPLE</a> = 1 &lt;&lt; 4
- }</td></tr>
-<tr class="memdesc:aa600b7f9ac50ab33f6501ae156ab9267"><td class="mdescLeft">&#160;</td><td class="mdescRight">OCF defined security profiles.  <a href="oc__pki_8h.html#aa600b7f9ac50ab33f6501ae156ab9267">More...</a><br /></td></tr>
-<tr class="separator:aa600b7f9ac50ab33f6501ae156ab9267"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a4a1379146f98bc0639209dfe30d6453f"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__pki_8h.html#a4a1379146f98bc0639209dfe30d6453f">oc_pki_verify_certificate_cb_t</a>) (struct oc_tls_peer_t *peer, mbedtls_x509_crt *crt, int depth, uint32_t *flags)</td></tr>
+<tr class="memdesc:a4a1379146f98bc0639209dfe30d6453f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback invoked after ocf verifies the certificate chain.  <a href="oc__pki_8h.html#a4a1379146f98bc0639209dfe30d6453f">More...</a><br /></td></tr>
+<tr class="separator:a4a1379146f98bc0639209dfe30d6453f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -117,39 +116,44 @@ Functions</h2></td></tr>
 <tr class="memitem:ada8a6b2b7068f7103e5fa9d761cc6719"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__pki_8h.html#ada8a6b2b7068f7103e5fa9d761cc6719">oc_pki_add_trust_anchor</a> (size_t device, const unsigned char *cert, size_t cert_size)</td></tr>
 <tr class="memdesc:ada8a6b2b7068f7103e5fa9d761cc6719"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add trust anchor CA.  <a href="oc__pki_8h.html#ada8a6b2b7068f7103e5fa9d761cc6719">More...</a><br /></td></tr>
 <tr class="separator:ada8a6b2b7068f7103e5fa9d761cc6719"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5025f4ae1f5e2791d2d267f88d984bcb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__pki_8h.html#a5025f4ae1f5e2791d2d267f88d984bcb">oc_pki_set_security_profile</a> (size_t device, <a class="el" href="oc__pki_8h.html#aa600b7f9ac50ab33f6501ae156ab9267">oc_sp_types_t</a> supported_profiles, <a class="el" href="oc__pki_8h.html#aa600b7f9ac50ab33f6501ae156ab9267">oc_sp_types_t</a> current_profile, int mfg_credid)</td></tr>
+<tr class="memitem:ace0d7b2434910b1885b9860a164e9d16"><td class="memItemLeft" align="right" valign="top"><a class="el" href="oc__pki_8h.html#a4a1379146f98bc0639209dfe30d6453f">oc_pki_verify_certificate_cb_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__pki_8h.html#ace0d7b2434910b1885b9860a164e9d16">oc_pki_get_verify_certificate_cb</a> ()</td></tr>
+<tr class="memdesc:ace0d7b2434910b1885b9860a164e9d16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the verification callback for the certificate chain.  <a href="oc__pki_8h.html#ace0d7b2434910b1885b9860a164e9d16">More...</a><br /></td></tr>
+<tr class="separator:ace0d7b2434910b1885b9860a164e9d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5025f4ae1f5e2791d2d267f88d984bcb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__pki_8h.html#a5025f4ae1f5e2791d2d267f88d984bcb">oc_pki_set_security_profile</a> (size_t device, <a class="el" href="oc__sp_8h.html#aa600b7f9ac50ab33f6501ae156ab9267">oc_sp_types_t</a> supported_profiles, <a class="el" href="oc__sp_8h.html#aa600b7f9ac50ab33f6501ae156ab9267">oc_sp_types_t</a> current_profile, int mfg_credid)</td></tr>
 <tr class="memdesc:a5025f4ae1f5e2791d2d267f88d984bcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the OCF Security Profile.  <a href="oc__pki_8h.html#a5025f4ae1f5e2791d2d267f88d984bcb">More...</a><br /></td></tr>
 <tr class="separator:a5025f4ae1f5e2791d2d267f88d984bcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7282f7198ea18625e2ab65780eb66270"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__pki_8h.html#a7282f7198ea18625e2ab65780eb66270">oc_pki_set_verify_certificate_cb</a> (<a class="el" href="oc__pki_8h.html#a4a1379146f98bc0639209dfe30d6453f">oc_pki_verify_certificate_cb_t</a> cb)</td></tr>
+<tr class="memdesc:a7282f7198ea18625e2ab65780eb66270"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the verification callback for the certificate chain.  <a href="oc__pki_8h.html#a7282f7198ea18625e2ab65780eb66270">More...</a><br /></td></tr>
+<tr class="separator:a7282f7198ea18625e2ab65780eb66270"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>OCF public key infrastructure (PKI) functions. </p>
 <p>Collection of functions used to add public key infrastructure (PKI) support to devices. </p>
-</div><h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="aa600b7f9ac50ab33f6501ae156ab9267"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa600b7f9ac50ab33f6501ae156ab9267">&#9670;&nbsp;</a></span>oc_sp_types_t</h2>
+</div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="a4a1379146f98bc0639209dfe30d6453f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a1379146f98bc0639209dfe30d6453f">&#9670;&nbsp;</a></span>oc_pki_verify_certificate_cb_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="oc__pki_8h.html#aa600b7f9ac50ab33f6501ae156ab9267">oc_sp_types_t</a></td>
+          <td class="memname">typedef int(* oc_pki_verify_certificate_cb_t) (struct oc_tls_peer_t *peer, mbedtls_x509_crt *crt, int depth, uint32_t *flags)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>OCF defined security profiles. </p>
-<p>Security Profiles differentiate devices based on requirements from different verticals such as industrial, health care, or smart home.</p>
-<p>See <a class="el" href="oc__pki_8h.html#a5025f4ae1f5e2791d2d267f88d984bcb" title="Set the OCF Security Profile.">oc_pki_set_security_profile()</a> for a description of the each of the security profiles or reference the security profiles section of the OCF Security Specification. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa600b7f9ac50ab33f6501ae156ab9267a2752c9d6414f2a2b92321e5a0a0e7b4e"></a>OC_SP_BASELINE&#160;</td><td class="fielddoc"><p>The OCF Baseline Security Profile. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aa600b7f9ac50ab33f6501ae156ab9267a12b0a0b2ec9d5d436e02fcf4bf0158c6"></a>OC_SP_BLACK&#160;</td><td class="fielddoc"><p>The OCF Black Security Profile. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aa600b7f9ac50ab33f6501ae156ab9267a985dcbb563fec019726de7109d8dbbfb"></a>OC_SP_BLUE&#160;</td><td class="fielddoc"><p>The OCF Blue Security Profile. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aa600b7f9ac50ab33f6501ae156ab9267ad4f4d39c252f8699e475b53747826e47"></a>OC_SP_PURPLE&#160;</td><td class="fielddoc"><p>The OCF Purple Security Profile. </p>
-</td></tr>
-</table>
+<p>Callback invoked after ocf verifies the certificate chain. </p>
+<p>For each certificate in the chain, the callback is invoked with the depth of the certificate in the chain.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">peer</td><td>TLS peer connection </td></tr>
+    <tr><td class="paramname">crt</td><td>Certificate </td></tr>
+    <tr><td class="paramname">depth</td><td>Depth of the certificate chain, 0 is the leaf certificate. </td></tr>
+    <tr><td class="paramname">flags</td><td>Verification flags from mbedtls_x509_crt_verify(), see <a href="https://github.com/Mbed-TLS/mbedtls/blob/10ada3501975e7abab25a7fa28e9e8e0f6b4259f/include/mbedtls/x509.h#L99">https://github.com/Mbed-TLS/mbedtls/blob/10ada3501975e7abab25a7fa28e9e8e0f6b4259f/include/mbedtls/x509.h#L99</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if the certificate is valid, otherwise -1 </dd></dl>
 
 </div>
 </div>
@@ -371,6 +375,26 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ace0d7b2434910b1885b9860a164e9d16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace0d7b2434910b1885b9860a164e9d16">&#9670;&nbsp;</a></span>oc_pki_get_verify_certificate_cb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="oc__pki_8h.html#a4a1379146f98bc0639209dfe30d6453f">oc_pki_verify_certificate_cb_t</a> oc_pki_get_verify_certificate_cb </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the verification callback for the certificate chain. </p>
+<dl class="section return"><dt>Returns</dt><dd>the callback function </dd></dl>
+
+</div>
+</div>
 <a id="a5025f4ae1f5e2791d2d267f88d984bcb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5025f4ae1f5e2791d2d267f88d984bcb">&#9670;&nbsp;</a></span>oc_pki_set_security_profile()</h2>
 
@@ -386,13 +410,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="oc__pki_8h.html#aa600b7f9ac50ab33f6501ae156ab9267">oc_sp_types_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="oc__sp_8h.html#aa600b7f9ac50ab33f6501ae156ab9267">oc_sp_types_t</a>&#160;</td>
           <td class="paramname"><em>supported_profiles</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="oc__pki_8h.html#aa600b7f9ac50ab33f6501ae156ab9267">oc_sp_types_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="oc__sp_8h.html#aa600b7f9ac50ab33f6501ae156ab9267">oc_sp_types_t</a>&#160;</td>
           <td class="paramname"><em>current_profile</em>, </td>
         </tr>
         <tr>
@@ -461,13 +485,39 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a7282f7198ea18625e2ab65780eb66270"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7282f7198ea18625e2ab65780eb66270">&#9670;&nbsp;</a></span>oc_pki_set_verify_certificate_cb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oc_pki_set_verify_certificate_cb </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="oc__pki_8h.html#a4a1379146f98bc0639209dfe30d6453f">oc_pki_verify_certificate_cb_t</a>&#160;</td>
+          <td class="paramname"><em>cb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the verification callback for the certificate chain. </p>
+<p>It is invoked after ocf verifies the certificate chain. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>the callback function </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__pki_8h.html">oc_pki.h</a></li>
-    <li class="footer">Generated on Mon Feb 13 2023 16:50:32 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Feb 16 2023 20:15:48 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
