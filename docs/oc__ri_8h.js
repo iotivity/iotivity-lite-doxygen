@@ -12,7 +12,7 @@ var oc__ri_8h =
     [ "oc_event_callback_t", "oc__ri_8h.html#a8b3dc0c2e5cbb134f0f5ef73b7f4e7c7", null ],
     [ "oc_get_properties_cb_t", "oc__ri_8h.html#ad13e620d8765af96f28937e52f817726", null ],
     [ "oc_link_t", "oc__ri_8h.html#a0c0cf4983494ee97927016dcd4af1d79", null ],
-    [ "oc_payload_callback_t", "oc__ri_8h.html#a52b466ffaa97604d4ecd3037ecb53dc8", null ],
+    [ "oc_payload_callback_t", "oc__ri_8h.html#ab3356150f36167cd5b5aa73bd23bc854", null ],
     [ "oc_properties_cb_t", "oc__ri_8h.html#ac3508ca00139d64f25fb3af2ab967f9d", null ],
     [ "oc_request_callback_t", "oc__ri_8h.html#aca4fa152ba1f8d2cd7639bf5c8276dbe", null ],
     [ "oc_request_handler_t", "oc__ri_8h.html#a603151eab6b213a08f796aaa21cc78dc", null ],

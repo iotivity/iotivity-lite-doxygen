@@ -104,8 +104,11 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a821e081cc0916032e6cbb77db0565fd7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__pki_8h.html#a821e081cc0916032e6cbb77db0565fd7">oc_pki_add_identity_cert</a> (size_t device, const unsigned char *cert, size_t cert_size, const unsigned char *key, size_t key_size)</td></tr>
+<tr class="memdesc:a821e081cc0916032e6cbb77db0565fd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a PKI identity certificate.  <a href="oc__pki_8h.html#a821e081cc0916032e6cbb77db0565fd7">More...</a><br /></td></tr>
+<tr class="separator:a821e081cc0916032e6cbb77db0565fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf8beabe04b2a3393783dea0c72b3c71"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__pki_8h.html#aaf8beabe04b2a3393783dea0c72b3c71">oc_pki_add_mfg_cert</a> (size_t device, const unsigned char *cert, size_t cert_size, const unsigned char *key, size_t key_size)</td></tr>
-<tr class="memdesc:aaf8beabe04b2a3393783dea0c72b3c71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the manufactures PKI identity certificate.  <a href="oc__pki_8h.html#aaf8beabe04b2a3393783dea0c72b3c71">More...</a><br /></td></tr>
+<tr class="memdesc:aaf8beabe04b2a3393783dea0c72b3c71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the manufacturer's PKI identity certificate.  <a href="oc__pki_8h.html#aaf8beabe04b2a3393783dea0c72b3c71">More...</a><br /></td></tr>
 <tr class="separator:aaf8beabe04b2a3393783dea0c72b3c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac433de092d318760639c905791c2a5d0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__pki_8h.html#ac433de092d318760639c905791c2a5d0">oc_pki_add_mfg_intermediate_cert</a> (size_t device, int credid, const unsigned char *cert, size_t cert_size)</td></tr>
 <tr class="memdesc:ac433de092d318760639c905791c2a5d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an intermediate manufacture CA certificate.  <a href="oc__pki_8h.html#ac433de092d318760639c905791c2a5d0">More...</a><br /></td></tr>
@@ -116,12 +119,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ada8a6b2b7068f7103e5fa9d761cc6719"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__pki_8h.html#ada8a6b2b7068f7103e5fa9d761cc6719">oc_pki_add_trust_anchor</a> (size_t device, const unsigned char *cert, size_t cert_size)</td></tr>
 <tr class="memdesc:ada8a6b2b7068f7103e5fa9d761cc6719"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add trust anchor CA.  <a href="oc__pki_8h.html#ada8a6b2b7068f7103e5fa9d761cc6719">More...</a><br /></td></tr>
 <tr class="separator:ada8a6b2b7068f7103e5fa9d761cc6719"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace0d7b2434910b1885b9860a164e9d16"><td class="memItemLeft" align="right" valign="top"><a class="el" href="oc__pki_8h.html#a4a1379146f98bc0639209dfe30d6453f">oc_pki_verify_certificate_cb_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__pki_8h.html#ace0d7b2434910b1885b9860a164e9d16">oc_pki_get_verify_certificate_cb</a> ()</td></tr>
-<tr class="memdesc:ace0d7b2434910b1885b9860a164e9d16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the verification callback for the certificate chain.  <a href="oc__pki_8h.html#ace0d7b2434910b1885b9860a164e9d16">More...</a><br /></td></tr>
-<tr class="separator:ace0d7b2434910b1885b9860a164e9d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5025f4ae1f5e2791d2d267f88d984bcb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__pki_8h.html#a5025f4ae1f5e2791d2d267f88d984bcb">oc_pki_set_security_profile</a> (size_t device, <a class="el" href="oc__sp_8h.html#aa600b7f9ac50ab33f6501ae156ab9267">oc_sp_types_t</a> supported_profiles, <a class="el" href="oc__sp_8h.html#aa600b7f9ac50ab33f6501ae156ab9267">oc_sp_types_t</a> current_profile, int mfg_credid)</td></tr>
-<tr class="memdesc:a5025f4ae1f5e2791d2d267f88d984bcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the OCF Security Profile.  <a href="oc__pki_8h.html#a5025f4ae1f5e2791d2d267f88d984bcb">More...</a><br /></td></tr>
-<tr class="separator:a5025f4ae1f5e2791d2d267f88d984bcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ad9d78d4e2d7a734a142cf18735d831"><td class="memItemLeft" align="right" valign="top"><a class="el" href="oc__pki_8h.html#a4a1379146f98bc0639209dfe30d6453f">oc_pki_verify_certificate_cb_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__pki_8h.html#a7ad9d78d4e2d7a734a142cf18735d831">oc_pki_get_verify_certificate_cb</a> (void)</td></tr>
+<tr class="memdesc:a7ad9d78d4e2d7a734a142cf18735d831"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the verification callback for the certificate chain.  <a href="oc__pki_8h.html#a7ad9d78d4e2d7a734a142cf18735d831">More...</a><br /></td></tr>
+<tr class="separator:a7ad9d78d4e2d7a734a142cf18735d831"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7282f7198ea18625e2ab65780eb66270"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__pki_8h.html#a7282f7198ea18625e2ab65780eb66270">oc_pki_set_verify_certificate_cb</a> (<a class="el" href="oc__pki_8h.html#a4a1379146f98bc0639209dfe30d6453f">oc_pki_verify_certificate_cb_t</a> cb)</td></tr>
 <tr class="memdesc:a7282f7198ea18625e2ab65780eb66270"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the verification callback for the certificate chain.  <a href="oc__pki_8h.html#a7282f7198ea18625e2ab65780eb66270">More...</a><br /></td></tr>
 <tr class="separator:a7282f7198ea18625e2ab65780eb66270"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,6 +158,69 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a821e081cc0916032e6cbb77db0565fd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a821e081cc0916032e6cbb77db0565fd7">&#9670;&nbsp;</a></span>oc_pki_add_identity_cert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_pki_add_identity_cert </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramname"><em>cert</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>cert_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>key_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a PKI identity certificate. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>index of the logical device the identity certificate belongs to </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cert</td><td>pointer to a string containing a PEM encoded identity certificate </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cert_size</td><td>the size of the <code>cert</code> string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>the PEM encoded private key associated with this certificate </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key_size</td><td>the size of the <code>key</code> string</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>the credential ID of the /oic/sec/cred entry containing the certificate chain</li>
+<li><code>-1</code> on failure </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
 <a id="aaf8beabe04b2a3393783dea0c72b3c71"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaf8beabe04b2a3393783dea0c72b3c71">&#9670;&nbsp;</a></span>oc_pki_add_mfg_cert()</h2>
 
@@ -202,7 +265,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Add the manufactures PKI identity certificate. </p>
+<p>Add the manufacturer's PKI identity certificate. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>index of the logical device the identity certificate belongs to </td></tr>
@@ -375,8 +438,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ace0d7b2434910b1885b9860a164e9d16"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace0d7b2434910b1885b9860a164e9d16">&#9670;&nbsp;</a></span>oc_pki_get_verify_certificate_cb()</h2>
+<a id="a7ad9d78d4e2d7a734a142cf18735d831"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ad9d78d4e2d7a734a142cf18735d831">&#9670;&nbsp;</a></span>oc_pki_get_verify_certificate_cb()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -384,6 +447,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="oc__pki_8h.html#a4a1379146f98bc0639209dfe30d6453f">oc_pki_verify_certificate_cb_t</a> oc_pki_get_verify_certificate_cb </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -392,96 +456,6 @@ Functions</h2></td></tr>
 
 <p>Get the verification callback for the certificate chain. </p>
 <dl class="section return"><dt>Returns</dt><dd>the callback function </dd></dl>
-
-</div>
-</div>
-<a id="a5025f4ae1f5e2791d2d267f88d984bcb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5025f4ae1f5e2791d2d267f88d984bcb">&#9670;&nbsp;</a></span>oc_pki_set_security_profile()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void oc_pki_set_security_profile </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="oc__sp_8h.html#aa600b7f9ac50ab33f6501ae156ab9267">oc_sp_types_t</a>&#160;</td>
-          <td class="paramname"><em>supported_profiles</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="oc__sp_8h.html#aa600b7f9ac50ab33f6501ae156ab9267">oc_sp_types_t</a>&#160;</td>
-          <td class="paramname"><em>current_profile</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>mfg_credid</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set the OCF Security Profile. </p>
-<p>The OCF Security Specification defines several Security Profiles that can be selected based on the security requirements of different verticals such as such as industrial, health care, or smart home.</p>
-<p>There are currently five types of Security Profiles specified by OCF.</p>
-<p>Following, is a non-exhaustive summary of each Security Profile type. For more details see OCF Security Specification section regarding Security Profiles.</p>
-<ol type="1">
-<li>Unspecified or <code>0</code><ul>
-<li>reserved for future use.</li>
-</ul>
-</li>
-<li>OC_SP_BASELINE Baseline: indicates the OCF device satisfies normative security requirements as specified by the OCF Security Specification. Baseline Security Profile is the default security profile if no other profile is provided.</li>
-<li>OC_SP_BLACK Black: healthcare and industrial devices with additional security requirements are the initial target for the Black Security Profile. Black Security Profile is for edge devices with exceptional profiles of trust bestowed upon them. Black Security Profile must support the following<ul>
-<li>The device satisfies all normative security requirements</li>
-<li>Onboarding via OCF Rooted Certificate Chain, including PKI chain validation</li>
-<li>Support for AES 128 encryption for data at rest and in transit</li>
-<li>Manufacturer assertion of secure credential storage</li>
-<li>Resource should contain credential(s) if required by the selected OTM</li>
-<li>The OCF Device shall include an X.509v3 certificate and the extension's 'securityProfile' field shall specify it is an OCF Black Security Profile</li>
-</ul>
-</li>
-<li>OC_SP_BLUE Blue: indicates the OCF device has been issued a certificate authority from OCF. The Blue Security Profile is for an ecosystem where platform vendors may be using devices from a different vendor. The Blue profile gives a way to assure quality devices on a different vendors platform. Blue Security Profile must support the following<ul>
-<li>The device satisfies all normative security requirements</li>
-<li>Vender attestation that the device satisfies platform security and privacy functionality requirements.</li>
-<li>The device is registered with OCF.</li>
-<li>The Security Profile may be digitally signed by an OCF owner signing key.</li>
-<li>The OCF Device shall include an X.509v3 certificate and the extension's 'securityProfile' field shall specify it is an OCF Blue Security Profile</li>
-<li>The OCF Device shall include an X.509v3 OCF CPL Attributes Extension in its certificate.</li>
-<li>The device shall perform a check on the certification status of the device and platform.</li>
-<li>The device shall be hosted on a secure platform.</li>
-<li>The device shall use AES128 equivalent or better protection for transmitted and stored data.</li>
-</ul>
-</li>
-<li>OC_SP_PURPLE Purple: indicates the device shall be able to update its firmware in a secure manner. Purple Security Profile must support the following:<ul>
-<li>Secure credential storage</li>
-<li>Software integrity validation</li>
-<li>Secure update</li>
-<li>If a certificate is used the OCF Device shall include an X.509v3 certificate and the extension's 'securityProfile' field shall specify it is an OCF Purple Security Profile.</li>
-<li>If a certificate is used the OCF Device shall include an X.509v3 OCFCPLAttributes Extension in its End-Entity Certificate when manufacturer certificate is used.</li>
-</ul>
-</li>
-</ol>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>index of the logical device the security profile is be set on </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">supported_profiles</td><td>a bitwise OR list of oc_sp_types_t that are supported by the device. The current_profile value may be changed to one of the other supported_profiles during the onboarding process. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">current_profile</td><td>the currently selected security profile </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mfg_credid</td><td>the credential ID of the /oic/sec/cred entry containing the manufactures end-entity certificate </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -517,7 +491,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__pki_8h.html">oc_pki.h</a></li>
-    <li class="footer">Generated on Fri Feb 17 2023 10:48:28 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Feb 17 2023 12:06:44 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

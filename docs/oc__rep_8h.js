@@ -63,7 +63,7 @@ var oc__rep_8h =
       [ "OC_REP_STRING_ARRAY", "oc__rep_8h.html#a514288f5ab16855778b0f2845362b590ad6a7b933c73bbb8f5906ed01bbf7995e", null ],
       [ "OC_REP_OBJECT_ARRAY", "oc__rep_8h.html#a514288f5ab16855778b0f2845362b590a3c604aab9a87822f65874acc2719989a", null ]
     ] ],
-    [ "oc_alloc_rep", "oc__rep_8h.html#a7cd6778dd360d4428b5f1d464aff340f", null ],
+    [ "oc_alloc_rep", "oc__rep_8h.html#a9af4fb4adfd8934cca013889fd77856f", null ],
     [ "oc_free_rep", "oc__rep_8h.html#ac436f2afde99d2f44f14e666fd318b39", null ],
     [ "oc_parse_rep", "oc__rep_8h.html#ab483b822db5fec4c156b91353f730845", null ],
     [ "oc_rep_encode_boolean", "oc__rep_8h.html#a817587b89b1489e0ada6933713cae0af", null ],
