@@ -1,6 +1,5 @@
 var group__doc__module__tag__client__state =
 [
-    [ "Asserting roles", "group__doc__module__tag__asserting__roles.html", "group__doc__module__tag__asserting__roles" ],
     [ "oc_close_session", "group__doc__module__tag__client__state.html#ga3ab90b2a430ed4a12a5d460c03e3afd3", null ],
     [ "oc_do_delete", "group__doc__module__tag__client__state.html#ga3ab4c4307d3f080f92e06a3d53729605", null ],
     [ "oc_do_delete_with_timeout", "group__doc__module__tag__client__state.html#gab08bd1becba4caeb2ce1820e9face4dd", null ],

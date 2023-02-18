@@ -96,6 +96,7 @@ $(document).ready(function(){initNavTree('oc__obt_8h.html',''); initResizable();
 <code>#include &quot;<a class="el" href="oc__api_8h.html">oc_api.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__cred_8h.html">oc_cred.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__pki_8h.html">oc_pki.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="oc__role_8h.html">oc_role.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__uuid_8h.html">oc_uuid.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -1415,8 +1416,8 @@ oc_obt_provision_role_wilecard_ace </dd>
 <div class="ttc" id="aoc__api_8h_html_ae6522fdfeed62a92193214ee99dfc47c"><div class="ttname"><a href="oc__api_8h.html#ae6522fdfeed62a92193214ee99dfc47c">oc_main_init</a></div><div class="ttdeci">int oc_main_init(const oc_handler_t *handler)</div><div class="ttdoc">Register and call handler functions responsible for controlling the IoTivity-lite stack.</div></div>
 <div class="ttc" id="aoc__obt_8h_html_a97556ae3073fdfd4d12713431c458f56"><div class="ttname"><a href="oc__obt_8h.html#a97556ae3073fdfd4d12713431c458f56">oc_obt_init</a></div><div class="ttdeci">int oc_obt_init(void)</div><div class="ttdoc">Initialize the IoTivity stack so it can be used as an onboarding tool (OBT)</div></div>
 <div class="ttc" id="aoc__storage_8h_html_ae529493bca3a501922f23e3d7701ff05"><div class="ttname"><a href="oc__storage_8h.html#ae529493bca3a501922f23e3d7701ff05">oc_storage_config</a></div><div class="ttdeci">int oc_storage_config(const char *store)</div><div class="ttdoc">open the storage</div></div>
-<div class="ttc" id="astructoc__handler__t_html"><div class="ttname"><a href="structoc__handler__t.html">oc_handler_t</a></div><div class="ttdoc">Call back handlers that are invoked in response to oc_main_init()</div><div class="ttdef"><b>Definition:</b> oc_api.h:55</div></div>
-<div class="ttc" id="astructoc__handler__t_html_a857eaefcde68aba9fe0d2170a660fdfb"><div class="ttname"><a href="structoc__handler__t.html#a857eaefcde68aba9fe0d2170a660fdfb">oc_handler_t::init</a></div><div class="ttdeci">int(* init)(void)</div><div class="ttdoc">Device initialization callback that is invoked to initialize the platform and device(s).</div><div class="ttdef"><b>Definition:</b> oc_api.h:85</div></div>
+<div class="ttc" id="astructoc__handler__t_html"><div class="ttname"><a href="structoc__handler__t.html">oc_handler_t</a></div><div class="ttdoc">Call back handlers that are invoked in response to oc_main_init()</div><div class="ttdef"><b>Definition:</b> oc_api.h:56</div></div>
+<div class="ttc" id="astructoc__handler__t_html_a857eaefcde68aba9fe0d2170a660fdfb"><div class="ttname"><a href="structoc__handler__t.html#a857eaefcde68aba9fe0d2170a660fdfb">oc_handler_t::init</a></div><div class="ttdeci">int(* init)(void)</div><div class="ttdoc">Device initialization callback that is invoked to initialize the platform and device(s).</div><div class="ttdef"><b>Definition:</b> oc_api.h:86</div></div>
 </div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd><ul>
 <li><code>0</code> on success</li>
 <li><code>-1</code> on failure </li>
@@ -2707,7 +2708,7 @@ oc_obt_provision_role_wilecard_ace </dd>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__obt_8h.html">oc_obt.h</a></li>
-    <li class="footer">Generated on Fri Feb 17 2023 12:06:44 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Feb 18 2023 14:37:58 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

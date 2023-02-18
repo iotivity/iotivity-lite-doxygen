@@ -1,5 +1,6 @@
 var modules =
 [
+    [ "Asserting roles", "group__doc__module__tag__asserting__roles.html", "group__doc__module__tag__asserting__roles" ],
     [ "Client side", "group__doc__module__tag__client__state.html", "group__doc__module__tag__client__state" ],
     [ "Clock library", "group__clock.html", null ],
     [ "Common operations", "group__doc__module__tag__common__operations.html", "group__doc__module__tag__common__operations" ],

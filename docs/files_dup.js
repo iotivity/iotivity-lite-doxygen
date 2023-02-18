@@ -30,6 +30,7 @@ var files_dup =
     [ "oc_random.h", "oc__random_8h.html", "oc__random_8h" ],
     [ "oc_rep.h", "oc__rep_8h.html", "oc__rep_8h" ],
     [ "oc_ri.h", "oc__ri_8h.html", "oc__ri_8h" ],
+    [ "oc_role.h", "oc__role_8h.html", "oc__role_8h" ],
     [ "oc_session_events.h", "oc__session__events_8h.html", "oc__session__events_8h" ],
     [ "oc_signal_event_loop.h", "oc__signal__event__loop_8h.html", "oc__signal__event__loop_8h" ],
     [ "oc_sp.h", "oc__sp_8h.html", "oc__sp_8h" ],
