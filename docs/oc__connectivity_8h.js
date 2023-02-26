@@ -22,7 +22,7 @@ var oc__connectivity_8h =
       [ "CSM_DONE", "oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5a75ea9fa774c72351779d6a2877384b12", null ],
       [ "CSM_ERROR", "oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5a784a21056404e8c5f25f959e9926af74", null ]
     ] ],
-    [ "oc_connectivity_end_session", "oc__connectivity_8h.html#a68dc8cf514b3fda58710762a8348593f", null ],
+    [ "oc_connectivity_end_session", "oc__connectivity_8h.html#a270bc0ca0d9ab9f5c2254e38f304975b", null ],
     [ "oc_connectivity_get_endpoints", "oc__connectivity_8h.html#a1d559666b450aef41dd704952e4a7e96", null ],
     [ "oc_connectivity_init", "oc__connectivity_8h.html#ab2d899d0971e0b47c21a02b818dc4696", null ],
     [ "oc_connectivity_shutdown", "oc__connectivity_8h.html#aa737faed9576af48ccf1ae2fc51f655f", null ],
@@ -30,6 +30,6 @@ var oc__connectivity_8h =
     [ "oc_send_buffer", "oc__connectivity_8h.html#a42bf2fb6678fc9b9cc162e30cece7beb", null ],
     [ "oc_send_discovery_request", "oc__connectivity_8h.html#ae2a9b061283aa60d8b0b3a3405a42698", null ],
     [ "oc_tcp_connection_state", "oc__connectivity_8h.html#a79e6c131d737bfe6dcbea723f0a15231", null ],
-    [ "oc_tcp_get_csm_state", "oc__connectivity_8h.html#a42c4eee0779b0ee32bd7a38929281655", null ],
-    [ "oc_tcp_update_csm_state", "oc__connectivity_8h.html#ac8cfaca985049f5b1350393a02e83359", null ]
+    [ "oc_tcp_get_csm_state", "oc__connectivity_8h.html#aa6756a3fce193116a8a459a632916b7d", null ],
+    [ "oc_tcp_update_csm_state", "oc__connectivity_8h.html#a95508e6b60b65b93ca2e40c52f8d37f9", null ]
 ];

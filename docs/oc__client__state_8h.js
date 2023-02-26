@@ -16,7 +16,7 @@ var oc__client__state_8h =
       [ "HIGH_QOS", "oc__client__state_8h.html#a172718f11f1a33ce09cd1222bcbe5920a907f366721888a6d73bbb40b272b0189", null ],
       [ "LOW_QOS", "oc__client__state_8h.html#a172718f11f1a33ce09cd1222bcbe5920acc1327122ac76887e8ffae7f519a85f7", null ]
     ] ],
-    [ "oc_ri_alloc_client_cb", "oc__client__state_8h.html#ab24c579b8008ded958bc0322ca506cff", null ],
+    [ "oc_ri_alloc_client_cb", "oc__client__state_8h.html#a313beb5ac1b4aaa51c2e38ad94829f33", null ],
     [ "oc_ri_find_client_cb_by_mid", "oc__client__state_8h.html#a37581fc662e5c9cecf258875b4429ca2", null ],
     [ "oc_ri_find_client_cb_by_token", "oc__client__state_8h.html#a321000f991affa327b9af8ab2c005110", null ],
     [ "oc_ri_free_client_cbs_by_endpoint", "oc__client__state_8h.html#afcade4e569fb2952046f7878c44b80f4", null ],
