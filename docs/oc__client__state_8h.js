@@ -24,5 +24,5 @@ var oc__client__state_8h =
     [ "oc_ri_get_client_cb", "oc__client__state_8h.html#a15c6564400999bcac6848ead117988e6", null ],
     [ "oc_ri_invoke_client_cb", "oc__client__state_8h.html#a72b5c4671ceac7ba12d1966ab8ab0482", null ],
     [ "oc_ri_is_client_cb_valid", "oc__client__state_8h.html#a3954708d64c17fa0c937d22371e991eb", null ],
-    [ "oc_ri_process_discovery_payload", "oc__client__state_8h.html#a67016f802fe0302bc611945ebdfd8bbb", null ]
+    [ "oc_ri_process_discovery_payload", "oc__client__state_8h.html#a8137320b5b9c4262532c23b8f33160af", null ]
 ];

@@ -35,7 +35,7 @@ var oc__cloud_8h =
     [ "oc_cloud_add_resource", "oc__cloud_8h.html#a517154d64976ae860bf8f9dd8e01c5da", null ],
     [ "oc_cloud_delete_resource", "oc__cloud_8h.html#ac46b568c036b54548c4a94190738e79a", null ],
     [ "oc_cloud_deregister", "oc__cloud_8h.html#a7b2f8fa8fe77465c78a34397ba816049", null ],
-    [ "oc_cloud_discover_resources", "oc__cloud_8h.html#aad6717b9885e4f7800566b007d31c87c", null ],
+    [ "oc_cloud_discover_resources", "oc__cloud_8h.html#a8f14b9f03189dca54d910b23ef1c5303", null ],
     [ "oc_cloud_get_context", "oc__cloud_8h.html#a22b924c040afc36d30699a7ed383b640", null ],
     [ "oc_cloud_get_identity_cert_chain", "oc__cloud_8h.html#a8ca145b47f7b411ad73172a9254f6d85", null ],
     [ "oc_cloud_get_token_expiry", "oc__cloud_8h.html#ab2e89ae98f3846b3ce9de3d0e25434b8", null ],

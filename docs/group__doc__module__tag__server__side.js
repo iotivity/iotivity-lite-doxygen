@@ -8,7 +8,7 @@ var group__doc__module__tag__server__side =
     [ "oc_device_bind_resource_type", "group__doc__module__tag__server__side.html#ga0cdcfd9676beaa7368cc9677277279a8", null ],
     [ "oc_get_diagnostic_message", "group__doc__module__tag__server__side.html#ga7376142521e76079732029aafc2ba8be", null ],
     [ "oc_get_query_value", "group__doc__module__tag__server__side.html#ga7b1a6e27279dc11c72dd8afe4a4a0e40", null ],
-    [ "oc_get_request_payload_raw", "group__doc__module__tag__server__side.html#gad3b59ade20fd1584a0e84723cbb386ce", null ],
+    [ "oc_get_request_payload_raw", "group__doc__module__tag__server__side.html#gaa98ea4e09b9b92ff5c6912d089f12ff2", null ],
     [ "oc_get_response_payload_raw", "group__doc__module__tag__server__side.html#ga7778fcee747e4b985f3557c0a8e5f692", null ],
     [ "oc_ignore_request", "group__doc__module__tag__server__side.html#gabbee24e2e7b99e6e657c0fd07ceb1db9", null ],
     [ "oc_indicate_separate_response", "group__doc__module__tag__server__side.html#gad7cae396843a07b955e6d588291645c7", null ],
