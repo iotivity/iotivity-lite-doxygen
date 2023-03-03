@@ -92,6 +92,7 @@ $(document).ready(function(){initNavTree('oc__log_8h.html',''); initResizable();
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="oc__clock__util_8h.html">oc_clock_util.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -180,9 +181,13 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                         \</div>
-<div class="line">    PRINT(<span class="stringliteral">&quot;%s: %s &lt;%s:%d&gt;: &quot;</span>, level, __FILENAME__, __func__, __LINE__);        \</div>
+<div class="line">    char oc_log_fn_buf[64] = { 0 };                                            \</div>
+<div class="line">    oc_clock_time_rfc3339(oc_log_fn_buf, <span class="keyword">sizeof</span>(oc_log_fn_buf));               \</div>
+<div class="line">    PRINT(<span class="stringliteral">&quot;[OC %s] %s: %s &lt;%s:%d&gt;: &quot;</span>, oc_log_fn_buf, level, __FILENAME__,      \</div>
+<div class="line">          __func__, __LINE__);                                                 \</div>
 <div class="line">    PRINT(__VA_ARGS__);                                                        \</div>
 <div class="line">    PRINT(<span class="stringliteral">&quot;\n&quot;</span>);                                                               \</div>
+<div class="line">    fflush(stdout);                                                            \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
 </div>
@@ -213,10 +218,14 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                         \</div>
-<div class="line">    PRINT(<span class="stringliteral">&quot;DEBUG: %s &lt;%s:%d&gt;: &quot;</span>, __FILENAME__, __func__, __LINE__);            \</div>
+<div class="line">    char oc_log_fn_buf[64] = { 0 };                                            \</div>
+<div class="line">    oc_clock_time_rfc3339(oc_log_fn_buf, <span class="keyword">sizeof</span>(oc_log_fn_buf));               \</div>
+<div class="line">    PRINT(<span class="stringliteral">&quot;[OC %s] D: %s &lt;%s:%d&gt;: &quot;</span>, oc_log_fn_buf, __FILENAME__, __func__,    \</div>
+<div class="line">          __LINE__);                                                           \</div>
 <div class="line">    for (<span class="keywordtype">size_t</span> i = 0; i &lt; (size_t)(length); i++)                              \</div>
 <div class="line">      PRINT(<span class="stringliteral">&quot; %02X&quot;</span>, (bytes)[i]);                                              \</div>
 <div class="line">    PRINT(<span class="stringliteral">&quot;\n&quot;</span>);                                                               \</div>
+<div class="line">    fflush(stdout);                                                            \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
 </div>
@@ -237,9 +246,13 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                         \</div>
-<div class="line">    PRINT(<span class="stringliteral">&quot;DEBUG: %s &lt;%s:%d&gt;: &quot;</span>, __FILENAME__, __func__, __LINE__);            \</div>
+<div class="line">    char oc_log_fn_buf[64] = { 0 };                                            \</div>
+<div class="line">    oc_clock_time_rfc3339(oc_log_fn_buf, <span class="keyword">sizeof</span>(oc_log_fn_buf));               \</div>
+<div class="line">    PRINT(<span class="stringliteral">&quot;[OC %s] D: %s &lt;%s:%d&gt;: &quot;</span>, oc_log_fn_buf, __FILENAME__, __func__,    \</div>
+<div class="line">          __LINE__);                                                           \</div>
 <div class="line">    PRINTipaddr(endpoint);                                                     \</div>
 <div class="line">    PRINT(<span class="stringliteral">&quot;\n&quot;</span>);                                                               \</div>
+<div class="line">    fflush(stdout);                                                            \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
 </div>
@@ -298,7 +311,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_651562d8bf6cfd3e81eff5b570d7df50.html">port</a></li><li class="navelem"><a class="el" href="oc__log_8h.html">oc_log.h</a></li>
-    <li class="footer">Generated on Wed Mar 1 2023 20:13:14 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Mar 3 2023 11:43:22 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
