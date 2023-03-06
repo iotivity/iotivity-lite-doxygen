@@ -19,7 +19,7 @@ var group__doc__module__tag__server__side =
     [ "oc_notify_observers", "group__doc__module__tag__server__side.html#ga43ac6a6fc039b94df00768d69577a9ed", null ],
     [ "oc_notify_observers_delayed", "group__doc__module__tag__server__side.html#ga24e8975d42a239215ee94219967d3853", null ],
     [ "oc_notify_observers_delayed_ms", "group__doc__module__tag__server__side.html#ga946ffe7104c26ee52fc67d5d0e385795", null ],
-    [ "oc_process_baseline_interface", "group__doc__module__tag__server__side.html#gab56b55ccd7daccdb46f752af1b4e3bbd", null ],
+    [ "oc_process_baseline_interface", "group__doc__module__tag__server__side.html#ga84e32551f9d7097a63a7a9410e170a01", null ],
     [ "oc_query_value_exists", "group__doc__module__tag__server__side.html#gab3991a8929db3766a9475ff4fb1279f8", null ],
     [ "oc_resource_bind_resource_interface", "group__doc__module__tag__server__side.html#gacc374cc9a8acc977db8f9f27dc3c593c", null ],
     [ "oc_resource_bind_resource_type", "group__doc__module__tag__server__side.html#gab17128fac474655e423d58b7e008e95a", null ],

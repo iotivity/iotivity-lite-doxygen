@@ -79,7 +79,7 @@ var oc__api_8h =
     [ "oc_notify_observers", "group__doc__module__tag__server__side.html#ga43ac6a6fc039b94df00768d69577a9ed", null ],
     [ "oc_notify_observers_delayed", "group__doc__module__tag__server__side.html#ga24e8975d42a239215ee94219967d3853", null ],
     [ "oc_notify_observers_delayed_ms", "group__doc__module__tag__server__side.html#ga946ffe7104c26ee52fc67d5d0e385795", null ],
-    [ "oc_process_baseline_interface", "group__doc__module__tag__server__side.html#gab56b55ccd7daccdb46f752af1b4e3bbd", null ],
+    [ "oc_process_baseline_interface", "group__doc__module__tag__server__side.html#ga84e32551f9d7097a63a7a9410e170a01", null ],
     [ "oc_query_value_exists", "group__doc__module__tag__server__side.html#gab3991a8929db3766a9475ff4fb1279f8", null ],
     [ "oc_remove_delayed_callback", "group__doc__module__tag__common__operations.html#gaf0a19f95a097b7bdd451d89264bfbd80", null ],
     [ "oc_remove_delayed_callback_by_filter", "group__doc__module__tag__common__operations.html#ga5b1b876b615c11a182ac82586dec1517", null ],

@@ -89,24 +89,22 @@ $(document).ready(function(){initNavTree('oc__assert_8h.html',''); initResizable
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="oc__log_8h.html">port/oc_log.h</a>&quot;</code><br />
+<code>#include &quot;util/oc_compiler.h&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a677131767f6cceda714ecff87b64a99d"><td class="memItemLeft" align="right" valign="top"><a id="a677131767f6cceda714ecff87b64a99d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>GCC_NO_RETURN</b></td></tr>
-<tr class="separator:a677131767f6cceda714ecff87b64a99d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdd692a1ad9eeca2f137906e97e756f7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__assert_8h.html#acdd692a1ad9eeca2f137906e97e756f7">oc_assert</a>(cond)</td></tr>
 <tr class="memdesc:acdd692a1ad9eeca2f137906e97e756f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">assert the condition and if it fails abort with message (reason)  <a href="oc__assert_8h.html#acdd692a1ad9eeca2f137906e97e756f7">More...</a><br /></td></tr>
 <tr class="separator:acdd692a1ad9eeca2f137906e97e756f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3eb1f5c3cc58b759ced16d4a78de620b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__assert_8h.html#a3eb1f5c3cc58b759ced16d4a78de620b">abort_impl</a> (void) GCC_NO_RETURN</td></tr>
-<tr class="memdesc:a3eb1f5c3cc58b759ced16d4a78de620b"><td class="mdescLeft">&#160;</td><td class="mdescRight">abort application  <a href="oc__assert_8h.html#a3eb1f5c3cc58b759ced16d4a78de620b">More...</a><br /></td></tr>
-<tr class="separator:a3eb1f5c3cc58b759ced16d4a78de620b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a296a2b634a686beff6ee467200410466"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__assert_8h.html#a296a2b634a686beff6ee467200410466">exit_impl</a> (int status) GCC_NO_RETURN</td></tr>
-<tr class="memdesc:a296a2b634a686beff6ee467200410466"><td class="mdescLeft">&#160;</td><td class="mdescRight">exit the application  <a href="oc__assert_8h.html#a296a2b634a686beff6ee467200410466">More...</a><br /></td></tr>
-<tr class="separator:a296a2b634a686beff6ee467200410466"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2f9cae392b91daf71b44bc3a762328f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__assert_8h.html#ae2f9cae392b91daf71b44bc3a762328f">abort_impl</a> (void) OC_NO_RETURN</td></tr>
+<tr class="memdesc:ae2f9cae392b91daf71b44bc3a762328f"><td class="mdescLeft">&#160;</td><td class="mdescRight">abort application  <a href="oc__assert_8h.html#ae2f9cae392b91daf71b44bc3a762328f">More...</a><br /></td></tr>
+<tr class="separator:ae2f9cae392b91daf71b44bc3a762328f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fb16134a003cf40826172a1e04ae51d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__assert_8h.html#a0fb16134a003cf40826172a1e04ae51d">exit_impl</a> (int status) OC_NO_RETURN</td></tr>
+<tr class="memdesc:a0fb16134a003cf40826172a1e04ae51d"><td class="mdescLeft">&#160;</td><td class="mdescRight">exit the application  <a href="oc__assert_8h.html#a0fb16134a003cf40826172a1e04ae51d">More...</a><br /></td></tr>
+<tr class="separator:a0fb16134a003cf40826172a1e04ae51d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="acdd692a1ad9eeca2f137906e97e756f7"></a>
@@ -135,8 +133,8 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a3eb1f5c3cc58b759ced16d4a78de620b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3eb1f5c3cc58b759ced16d4a78de620b">&#9670;&nbsp;</a></span>abort_impl()</h2>
+<a id="ae2f9cae392b91daf71b44bc3a762328f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2f9cae392b91daf71b44bc3a762328f">&#9670;&nbsp;</a></span>abort_impl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -155,8 +153,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a296a2b634a686beff6ee467200410466"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a296a2b634a686beff6ee467200410466">&#9670;&nbsp;</a></span>exit_impl()</h2>
+<a id="a0fb16134a003cf40826172a1e04ae51d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fb16134a003cf40826172a1e04ae51d">&#9670;&nbsp;</a></span>exit_impl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -187,7 +185,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_651562d8bf6cfd3e81eff5b570d7df50.html">port</a></li><li class="navelem"><a class="el" href="oc__assert_8h.html">oc_assert.h</a></li>
-    <li class="footer">Generated on Fri Mar 3 2023 21:28:29 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Mar 6 2023 16:50:02 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
