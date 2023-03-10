@@ -1,6 +1,6 @@
 var oc__pki_8h =
 [
-    [ "oc_pki_verify_certificate_cb_t", "oc__pki_8h.html#a4a1379146f98bc0639209dfe30d6453f", null ],
+    [ "oc_pki_verify_certificate_cb_t", "oc__pki_8h.html#a96373a3f65a5a29bafab923471f8aa3a", null ],
     [ "oc_pki_add_identity_cert", "oc__pki_8h.html#a821e081cc0916032e6cbb77db0565fd7", null ],
     [ "oc_pki_add_mfg_cert", "oc__pki_8h.html#aaf8beabe04b2a3393783dea0c72b3c71", null ],
     [ "oc_pki_add_mfg_intermediate_cert", "oc__pki_8h.html#ac433de092d318760639c905791c2a5d0", null ],

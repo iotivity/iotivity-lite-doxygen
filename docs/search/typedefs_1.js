@@ -30,7 +30,7 @@ var searchData=
   ['oc_5fon_5fpush_5farrived_5ft_1473',['oc_on_push_arrived_t',['../oc__push_8h.html#a2b21b70e1a5fbafaca7ffdc60f163e24',1,'oc_push.h']]],
   ['oc_5fownership_5fstatus_5fcb_5ft_1474',['oc_ownership_status_cb_t',['../oc__api_8h.html#a91c3c40bc00b2b107948a55a969fc0c9',1,'oc_api.h']]],
   ['oc_5fpayload_5fcallback_5ft_1475',['oc_payload_callback_t',['../oc__ri_8h.html#ab3356150f36167cd5b5aa73bd23bc854',1,'oc_ri.h']]],
-  ['oc_5fpki_5fverify_5fcertificate_5fcb_5ft_1476',['oc_pki_verify_certificate_cb_t',['../oc__pki_8h.html#a4a1379146f98bc0639209dfe30d6453f',1,'oc_pki.h']]],
+  ['oc_5fpki_5fverify_5fcertificate_5fcb_5ft_1476',['oc_pki_verify_certificate_cb_t',['../oc__pki_8h.html#a96373a3f65a5a29bafab923471f8aa3a',1,'oc_pki.h']]],
   ['oc_5fplatform_5finfo_5ft_1477',['oc_platform_info_t',['../oc__core__res_8h.html#a7b8a0731c685aac21e221e0ddeba75c0',1,'oc_core_res.h']]],
   ['oc_5fpos_5fdescription_5ft_1478',['oc_pos_description_t',['../oc__enums_8h.html#a0c544e8142a8017359566c97f7da1ca4',1,'oc_enums.h']]],
   ['oc_5fproperties_5fcb_5ft_1479',['oc_properties_cb_t',['../oc__ri_8h.html#ac3508ca00139d64f25fb3af2ab967f9d',1,'oc_ri.h']]],

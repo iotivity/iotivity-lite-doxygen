@@ -354,7 +354,7 @@ var searchData=
   ['oc_5fpki_5fget_5fverify_5fcertificate_5fcb_467',['oc_pki_get_verify_certificate_cb',['../oc__pki_8h.html#a7ad9d78d4e2d7a734a142cf18735d831',1,'oc_pki.h']]],
   ['oc_5fpki_5fset_5fsecurity_5fprofile_468',['oc_pki_set_security_profile',['../oc__sp_8h.html#a5025f4ae1f5e2791d2d267f88d984bcb',1,'oc_sp.h']]],
   ['oc_5fpki_5fset_5fverify_5fcertificate_5fcb_469',['oc_pki_set_verify_certificate_cb',['../oc__pki_8h.html#a7282f7198ea18625e2ab65780eb66270',1,'oc_pki.h']]],
-  ['oc_5fpki_5fverify_5fcertificate_5fcb_5ft_470',['oc_pki_verify_certificate_cb_t',['../oc__pki_8h.html#a4a1379146f98bc0639209dfe30d6453f',1,'oc_pki.h']]],
+  ['oc_5fpki_5fverify_5fcertificate_5fcb_5ft_470',['oc_pki_verify_certificate_cb_t',['../oc__pki_8h.html#a96373a3f65a5a29bafab923471f8aa3a',1,'oc_pki.h']]],
   ['oc_5fplatform_5finfo_5ft_471',['oc_platform_info_t',['../oc__core__res_8h.html#a7b8a0731c685aac21e221e0ddeba75c0',1,'oc_platform_info_t():&#160;oc_core_res.h'],['../structoc__platform__info__t.html',1,'oc_platform_info_t']]],
   ['oc_5fpos_5fdescription_5ft_472',['oc_pos_description_t',['../oc__enums_8h.html#a0c544e8142a8017359566c97f7da1ca4',1,'oc_pos_description_t():&#160;oc_enums.h'],['../oc__enums_8h.html#ac4d1f5d2b4c25b95fa6bc96968d03532',1,'oc_pos_description_t():&#160;oc_enums.h']]],
   ['oc_5fpost_473',['OC_POST',['../oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26a2a3c53df3082c04b8e49ebaca236529b',1,'oc_ri.h']]],
