@@ -147,7 +147,10 @@ var oc__ri_8h =
       [ "__NUM_OC_STATUS_CODES__", "oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38a385a4b33121acc7f9e1ca31fa593b1ad", null ],
       [ "OC_IGNORE", "oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38a27ab50ca2634c458be1fd54251179172", null ],
       [ "OC_PING_TIMEOUT", "oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38ada6a9cd6b2ff47d615b04c0a0dfcfc88", null ],
-      [ "OC_REQUEST_TIMEOUT", "oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38ae210754b895fe6568e99f242be11172a", null ]
+      [ "OC_REQUEST_TIMEOUT", "oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38ae210754b895fe6568e99f242be11172a", null ],
+      [ "OC_CONNECTION_CLOSED", "oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38a207c92464129951636727ef588381d70", null ],
+      [ "OC_TRANSACTION_TIMEOUT", "oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38a1246eb95891a582686ead917590eaa12", null ],
+      [ "OC_CANCELLED", "oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38ac64c2ce9394949a9836e80dad4545c60", null ]
     ] ],
     [ "oc_ri_add_resource", "oc__ri_8h.html#a1481c68aff7317781a4af49dd53289ea", null ],
     [ "oc_ri_add_timed_event_callback_ticks", "oc__ri_8h.html#a1ce65e738f997897e1fa07dc06d90d4e", null ],
