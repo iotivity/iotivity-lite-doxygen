@@ -207,9 +207,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ad4813eacf50d1f236e319f5d71c8396e"><td class="memItemLeft" align="right" valign="top">OC_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cred_8h.html#ad4813eacf50d1f236e319f5d71c8396e">oc_cred_verify_certificate_chain</a> (const <a class="el" href="structoc__sec__cred__t.html">oc_sec_cred_t</a> *cred, <a class="el" href="oc__cred_8h.html#ac0594433e2ea4594ead9e953203caf6e">oc_verify_sec_certs_data_fn_t</a> verify_cert, void *user_data)</td></tr>
 <tr class="memdesc:ad4813eacf50d1f236e319f5d71c8396e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verify the certificate chain associated with the credential.  <a href="oc__cred_8h.html#ad4813eacf50d1f236e319f5d71c8396e">More...</a><br /></td></tr>
 <tr class="separator:ad4813eacf50d1f236e319f5d71c8396e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aace1e016af67e77d670e75e55823bb12"><td class="memItemLeft" align="right" valign="top">OC_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cred_8h.html#aace1e016af67e77d670e75e55823bb12">oc_sec_apply_cred</a> (oc_rep_t *rep, <a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint, <a class="el" href="oc__cred_8h.html#a5d7834c30f61c858ee25c8ba8a47a2c6">oc_sec_on_apply_cred_cb_t</a> on_apply_cred_cb, void *on_apply_cred_data)</td></tr>
-<tr class="memdesc:aace1e016af67e77d670e75e55823bb12"><td class="mdescLeft">&#160;</td><td class="mdescRight">parse payload and add/update credentials  <a href="oc__cred_8h.html#aace1e016af67e77d670e75e55823bb12">More...</a><br /></td></tr>
-<tr class="separator:aace1e016af67e77d670e75e55823bb12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa337bfc613c59c4403e70e2baadaad99"><td class="memItemLeft" align="right" valign="top">OC_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cred_8h.html#aa337bfc613c59c4403e70e2baadaad99">oc_sec_apply_cred</a> (const oc_rep_t *rep, const <a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint, <a class="el" href="oc__cred_8h.html#a5d7834c30f61c858ee25c8ba8a47a2c6">oc_sec_on_apply_cred_cb_t</a> on_apply_cred_cb, void *on_apply_cred_data)</td></tr>
+<tr class="memdesc:aa337bfc613c59c4403e70e2baadaad99"><td class="mdescLeft">&#160;</td><td class="mdescRight">parse payload and add/update credentials  <a href="oc__cred_8h.html#aa337bfc613c59c4403e70e2baadaad99">More...</a><br /></td></tr>
+<tr class="separator:aa337bfc613c59c4403e70e2baadaad99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf52ad19671d50a2642ad269b470c5ce"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cred_8h.html#aaf52ad19671d50a2642ad269b470c5ce">oc_sec_cred_clear</a> (size_t device, <a class="el" href="oc__cred_8h.html#ab650f98e0d169115da0d6a610bc7544b">oc_sec_cred_filter_t</a> filter, void *user_data)</td></tr>
 <tr class="memdesc:aaf52ad19671d50a2642ad269b470c5ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove credentials matching filter from given device  <a href="oc__cred_8h.html#aaf52ad19671d50a2642ad269b470c5ce">More...</a><br /></td></tr>
 <tr class="separator:aaf52ad19671d50a2642ad269b470c5ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -671,8 +671,8 @@ false otherwise </dd></dl>
 
 </div>
 </div>
-<a id="aace1e016af67e77d670e75e55823bb12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aace1e016af67e77d670e75e55823bb12">&#9670;&nbsp;</a></span>oc_sec_apply_cred()</h2>
+<a id="aa337bfc613c59c4403e70e2baadaad99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa337bfc613c59c4403e70e2baadaad99">&#9670;&nbsp;</a></span>oc_sec_apply_cred()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -680,19 +680,19 @@ false otherwise </dd></dl>
         <tr>
           <td class="memname">OC_API int oc_sec_apply_cred </td>
           <td>(</td>
-          <td class="paramtype">oc_rep_t *&#160;</td>
+          <td class="paramtype">const oc_rep_t *&#160;</td>
           <td class="paramname"><em>rep</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
           <td class="paramname"><em>resource</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *&#160;</td>
           <td class="paramname"><em>endpoint</em>, </td>
         </tr>
         <tr>
@@ -924,7 +924,7 @@ bool false otherwise </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__cred_8h.html">oc_cred.h</a></li>
-    <li class="footer">Generated on Wed Mar 22 2023 07:21:49 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Mar 27 2023 15:18:46 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

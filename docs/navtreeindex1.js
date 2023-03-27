@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"oc__acl_8h.html#a76c8509b26f9b855023ae93207443d03":[4,0,0,16],
 "oc__acl_8h.html#a78c4f9f6c2a1be18591d7e9520a73029":[4,0,0,11],
 "oc__acl_8h.html#a78c4f9f6c2a1be18591d7e9520a73029a29f891201b9e45f0161ec1390b81a4e9":[4,0,0,11,0],
 "oc__acl_8h.html#a78c4f9f6c2a1be18591d7e9520a73029a7e84f6e6032db9fda96167fd6657373f":[4,0,0,11,1],
@@ -10,7 +11,6 @@ var NAVTREEINDEX1 =
 "oc__acl_8h.html#ab98a20bf3bbf69e66b7fe630e83e8b4dabaa1bdd471e09a07e11f3146ab705f39":[4,0,0,12,1],
 "oc__acl_8h.html#ab98a20bf3bbf69e66b7fe630e83e8b4dac5d30185c4faf24f548504fe0fec939e":[4,0,0,12,2],
 "oc__acl_8h.html#abd975f8a09517681f2ad1947dc850fbb":[4,0,0,15],
-"oc__acl_8h.html#acc817b2edece053441e069eee56f1fa8":[4,0,0,17],
 "oc__acl_8h.html#adb8058ec4ee722ac6999e712a3e21863":[4,0,0,9],
 "oc__acl_8h.html#ae2a28176d054cc1794e22458c0871741":[4,0,0,21],
 "oc__acl_8h.html#ae7df0da1db57051dc3ca52f1be3f388a":[4,0,0,18],
@@ -126,9 +126,10 @@ var NAVTREEINDEX1 =
 "oc__client__state_8h.html#ad0e8cd636823e22b2730c313b456b379":[4,0,8,5],
 "oc__client__state_8h.html#afcade4e569fb2952046f7878c44b80f4":[4,0,8,13],
 "oc__clock_8h.html":[4,0,9],
+"oc__clock_8h.html#a176be95e4179cd47fc2f5b1d99556633":[4,0,9,3],
 "oc__clock_8h.html#a4caefe772a4121e0f6414ba01d5ae589":[4,0,9,0],
 "oc__clock_8h.html#a5518eafc90948c3b95c2fe6630fa392a":[4,0,9,2],
-"oc__clock_8h.html#a5bf6973bad0f8494b06d8204a4879433":[4,0,9,3],
+"oc__clock_8h.html#a5bf6973bad0f8494b06d8204a4879433":[4,0,9,4],
 "oc__clock_8h.html#adcc5d195008d3e7152c48cd3a4cac54f":[4,0,9,1],
 "oc__clock__util_8h.html":[4,0,10],
 "oc__clock__util_8h.html#a22e4ff87eaf7bb27724887dce817895f":[4,0,10,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "oc__cred_8h.html#a1faad59ca383c11ee62dca31afcbeae9":[4,0,15,11],
 "oc__cred_8h.html#a26e9cb43ab6232b815f05b59aa5737e1":[4,0,15,18],
 "oc__cred_8h.html#a323a3e3e2357812cc618ef5a2fa40908":[4,0,15,15],
-"oc__cred_8h.html#a323a3e3e2357812cc618ef5a2fa40908a4636ea40f715aaf98d026c609019f840":[4,0,15,15,4],
-"oc__cred_8h.html#a323a3e3e2357812cc618ef5a2fa40908a490294b8bd78c8aa9f745821643e33ec":[4,0,15,15,5]
+"oc__cred_8h.html#a323a3e3e2357812cc618ef5a2fa40908a4636ea40f715aaf98d026c609019f840":[4,0,15,15,4]
 };

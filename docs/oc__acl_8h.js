@@ -29,7 +29,7 @@ var oc__acl_8h =
     [ "oc_resource_set_access_in_RFOTM", "oc__acl_8h.html#ab050d71282b1024e44cdb5f9f8b2da17", null ],
     [ "oc_sec_acl_add_bootstrap_acl", "oc__acl_8h.html#abd975f8a09517681f2ad1947dc850fbb", null ],
     [ "oc_sec_acl_clear", "oc__acl_8h.html#a76c8509b26f9b855023ae93207443d03", null ],
-    [ "oc_sec_apply_acl", "oc__acl_8h.html#acc817b2edece053441e069eee56f1fa8", null ],
+    [ "oc_sec_apply_acl", "oc__acl_8h.html#a47d298f865c98d63b3adacb072699455", null ],
     [ "oc_sec_get_ace_by_aceid", "oc__acl_8h.html#ae7df0da1db57051dc3ca52f1be3f388a", null ],
     [ "oc_sec_get_acl", "oc__acl_8h.html#a5dfed8d8872d4cd41d1937010238bb80", null ],
     [ "oc_sec_remove_ace", "oc__acl_8h.html#a64108ae5adef3157642dc4836a178e44", null ],
