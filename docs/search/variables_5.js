@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['flags_1379',['flags',['../structoc__endpoint__t.html#a0942a0902616fd2591dc585d2193e323',1,'oc_endpoint_t']]]
+  ['flags_1513',['flags',['../structoc__endpoint__t.html#a0942a0902616fd2591dc585d2193e323',1,'oc_endpoint_t']]]
 ];

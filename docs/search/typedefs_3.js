@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['transport_5fflags_1521',['transport_flags',['../oc__endpoint_8h.html#a2f4bc4f1c4fd73614831a0f3f7a7e7e4',1,'oc_endpoint.h']]]
+  ['session_5fevent_5fhandler_5ft_1655',['session_event_handler_t',['../oc__session__events_8h.html#a8ae3215775705d84e55a1a623c8267c9',1,'oc_session_events.h']]]
 ];

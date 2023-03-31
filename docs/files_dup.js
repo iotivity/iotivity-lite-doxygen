@@ -1,8 +1,12 @@
 var files_dup =
 [
+    [ "lc-addrlabels.h", "lc-addrlabels_8h.html", "lc-addrlabels_8h" ],
+    [ "lc-switch.h", "lc-switch_8h.html", "lc-switch_8h" ],
+    [ "lc.h", "lc_8h.html", "lc_8h" ],
     [ "oc_acl.h", "oc__acl_8h.html", "oc__acl_8h" ],
     [ "oc_api.h", "oc__api_8h.html", "oc__api_8h" ],
     [ "oc_assert.h", "oc__assert_8h.html", "oc__assert_8h" ],
+    [ "oc_atomic.h", "oc__atomic_8h.html", "oc__atomic_8h" ],
     [ "oc_base64.h", "oc__base64_8h.html", "oc__base64_8h" ],
     [ "oc_blockwise.h", "oc__blockwise_8h.html", "oc__blockwise_8h" ],
     [ "oc_buffer.h", "oc__buffer_8h.html", "oc__buffer_8h" ],
@@ -13,6 +17,7 @@ var files_dup =
     [ "oc_clock_util.h", "oc__clock__util_8h.html", "oc__clock__util_8h" ],
     [ "oc_cloud.h", "oc__cloud_8h.html", "oc__cloud_8h" ],
     [ "oc_collection.h", "oc__collection_8h.html", "oc__collection_8h" ],
+    [ "oc_compiler.h", "oc__compiler_8h.html", "oc__compiler_8h" ],
     [ "oc_connectivity.h", "oc__connectivity_8h.html", "oc__connectivity_8h" ],
     [ "oc_core_res.h", "oc__core__res_8h.html", "oc__core__res_8h" ],
     [ "oc_cred.h", "oc__cred_8h.html", "oc__cred_8h" ],
@@ -20,6 +25,7 @@ var files_dup =
     [ "oc_endpoint.h", "oc__endpoint_8h.html", "oc__endpoint_8h" ],
     [ "oc_enums.h", "oc__enums_8h.html", "oc__enums_8h" ],
     [ "oc_export.h", "oc__export_8h.html", "oc__export_8h" ],
+    [ "oc_features.h", "oc__features_8h.html", "oc__features_8h" ],
     [ "oc_helpers.h", "oc__helpers_8h.html", "oc__helpers_8h" ],
     [ "oc_introspection.h", "oc__introspection_8h.html", "oc__introspection_8h" ],
     [ "oc_log.h", "oc__log_8h.html", "oc__log_8h" ],
@@ -39,5 +45,8 @@ var files_dup =
     [ "oc_store.h", "oc__store_8h.html", "oc__store_8h" ],
     [ "oc_swupdate.h", "oc__swupdate_8h.html", "oc__swupdate_8h" ],
     [ "oc_uuid.h", "oc__uuid_8h.html", "oc__uuid_8h" ],
+    [ "plgd_time.h", "plgd__time_8h.html", "plgd__time_8h" ],
+    [ "pt-sem.h", "pt-sem_8h.html", "pt-sem_8h" ],
+    [ "pt.h", "pt_8h.html", "pt_8h" ],
     [ "server_introspection.dat.h", "server__introspection_8dat_8h.html", "server__introspection_8dat_8h" ]
 ];
