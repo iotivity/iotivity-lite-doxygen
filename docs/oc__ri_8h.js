@@ -72,6 +72,7 @@ var oc__ri_8h =
     ] ],
     [ "oc_core_resource_t", "oc__ri_8h.html#a9785665049cc191e499e6afb40088444", [
       [ "OCF_P", "oc__ri_8h.html#a9785665049cc191e499e6afb40088444a01e9db06899b8f903ccbcb4a16657dea", null ],
+      [ "PLGD_TIME", "oc__ri_8h.html#a9785665049cc191e499e6afb40088444a0eff7cbb049ce2e435ea0ee1ab9a5860", null ],
       [ "OCF_CON", "oc__ri_8h.html#a9785665049cc191e499e6afb40088444a07d123ee480fb9d1c8218b3de7dde1dc", null ],
       [ "OCF_INTROSPECTION_WK", "oc__ri_8h.html#a9785665049cc191e499e6afb40088444a9e35f13ad520522ce22b32e8d21229fe", null ],
       [ "OCF_INTROSPECTION_DATA", "oc__ri_8h.html#a9785665049cc191e499e6afb40088444a58fe54a2c8798a4ff4f5e5e0ffc922d0", null ],
