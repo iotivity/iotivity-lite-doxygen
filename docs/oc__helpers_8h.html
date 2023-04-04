@@ -258,12 +258,15 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_oc_string_array_add_
 <tr class="memitem:a16bbf1dbd390650087470ff8efb79638"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a16bbf1dbd390650087470ff8efb79638">oc_conv_hex_string_to_byte_array</a> (const char *hex_str, size_t hex_str_len, uint8_t *array, size_t *array_len)</td></tr>
 <tr class="memdesc:a16bbf1dbd390650087470ff8efb79638"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert hex string to byte array  <a href="oc__helpers_8h.html#a16bbf1dbd390650087470ff8efb79638">More...</a><br /></td></tr>
 <tr class="separator:a16bbf1dbd390650087470ff8efb79638"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4714b1fd5cf0a681ec4d17f436c44497"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a4714b1fd5cf0a681ec4d17f436c44497">oc_copy_string</a> (oc_string_t *dst, const oc_string_t *src)</td></tr>
+<tr class="memdesc:a4714b1fd5cf0a681ec4d17f436c44497"><td class="mdescLeft">&#160;</td><td class="mdescRight">copy ocstring  <a href="oc__helpers_8h.html#a4714b1fd5cf0a681ec4d17f436c44497">More...</a><br /></td></tr>
+<tr class="separator:a4714b1fd5cf0a681ec4d17f436c44497"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9170160c3afc735c8adf574d00d20c8c"><td class="memItemLeft" align="right" valign="top"><a id="a9170160c3afc735c8adf574d00d20c8c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array</b> (oc_string_array_t *ocstringarray, oc_string_t *ocstring)</td></tr>
 <tr class="separator:a9170160c3afc735c8adf574d00d20c8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86fb74121901cd63f0b4527c7715c66d"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a86fb74121901cd63f0b4527c7715c66d">oc_set_string</a> (oc_string_t *ocstring, const char *str, size_t str_len)</td></tr>
-<tr class="memdesc:a86fb74121901cd63f0b4527c7715c66d"><td class="mdescLeft">&#160;</td><td class="mdescRight">reset ocstring contents  <a href="oc__helpers_8h.html#a86fb74121901cd63f0b4527c7715c66d">More...</a><br /></td></tr>
-<tr class="separator:a86fb74121901cd63f0b4527c7715c66d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ae2f9f772a06747062dce2d63067065"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a5ae2f9f772a06747062dce2d63067065">oc_set_string</a> (oc_string_t *dst, const char *str, size_t str_len)</td></tr>
+<tr class="memdesc:a5ae2f9f772a06747062dce2d63067065"><td class="mdescLeft">&#160;</td><td class="mdescRight">reset ocstring contents  <a href="oc__helpers_8h.html#a5ae2f9f772a06747062dce2d63067065">More...</a><br /></td></tr>
+<tr class="separator:a5ae2f9f772a06747062dce2d63067065"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="aa5ab461e92a3e8f7ea5c8bec61a00776"></a>
@@ -951,8 +954,45 @@ int -1 on failure </dd></dl>
 
 </div>
 </div>
-<a id="a86fb74121901cd63f0b4527c7715c66d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86fb74121901cd63f0b4527c7715c66d">&#9670;&nbsp;</a></span>oc_set_string()</h2>
+<a id="a4714b1fd5cf0a681ec4d17f436c44497"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4714b1fd5cf0a681ec4d17f436c44497">&#9670;&nbsp;</a></span>oc_copy_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OC_API void oc_copy_string </td>
+          <td>(</td>
+          <td class="paramtype">oc_string_t *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const oc_string_t *&#160;</td>
+          <td class="paramname"><em>src</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>copy ocstring </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dst</td><td>destination (cannot be NULL) </td></tr>
+    <tr><td class="paramname">src</td><td>source (if NULL data of destination is freed and the destination is memset to zeroes) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5ae2f9f772a06747062dce2d63067065"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ae2f9f772a06747062dce2d63067065">&#9670;&nbsp;</a></span>oc_set_string()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -961,7 +1001,7 @@ int -1 on failure </dd></dl>
           <td class="memname">OC_API void oc_set_string </td>
           <td>(</td>
           <td class="paramtype">oc_string_t *&#160;</td>
-          <td class="paramname"><em>ocstring</em>, </td>
+          <td class="paramname"><em>dst</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -986,8 +1026,8 @@ int -1 on failure </dd></dl>
 <p>reset ocstring contents </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ocstring</td><td>ocstring to be reset </td></tr>
-    <tr><td class="paramname">str</td><td>not terminated string which will replace current str </td></tr>
+    <tr><td class="paramname">dst</td><td>ocstring to be reset (cannot be NULL) </td></tr>
+    <tr><td class="paramname">str</td><td>string which will replace current str (if NULL then the data of ocstring is freed and ocstring is memset to zeroes) </td></tr>
     <tr><td class="paramname">str_len</td><td>size of the string </td></tr>
   </table>
   </dd>
@@ -1001,7 +1041,7 @@ int -1 on failure </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__helpers_8h.html">oc_helpers.h</a></li>
-    <li class="footer">Generated on Fri Mar 31 2023 13:15:44 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Apr 4 2023 07:17:06 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
