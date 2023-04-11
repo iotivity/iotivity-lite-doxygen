@@ -1,5 +1,7 @@
 var NAVTREEINDEX6 =
 {
+"structoc__request__handler__s.html#a1f41b1bcac7f6bab2a1d4842533b1db5":[3,0,18,0],
+"structoc__request__t.html":[3,0,19],
 "structoc__request__t.html#a0872855f82eafc3f135c6aee3cf75b8e":[3,0,19,6],
 "structoc__request__t.html#a26fe19251a9e8be9067a3e0cd6a09270":[3,0,19,9],
 "structoc__request__t.html#a423ba932267a5c6284b6a4a1f7fcf02b":[3,0,19,4],
@@ -70,9 +72,6 @@ var NAVTREEINDEX6 =
 "structoc__sec__creds__t.html":[3,0,26],
 "structoc__sec__creds__t.html#aabd5d818698847fe3cf584eb3d287ca7":[3,0,26,0],
 "structoc__sec__creds__t.html#af0de68e95004851d0c429f7d528a218c":[3,0,26,1],
-"structoc__session__event__cb.html":[3,0,27],
-"structoc__session__event__cb.html#ab021b9f14c4a6a5bff72aad14489f842":[3,0,27,0],
-"structoc__session__event__cb.html#aebc1360e4d028b8db032d23142e2f1aa":[3,0,27,1],
 "structoc__timer.html":[2,11,0],
 "structoc__timer.html#a37eff53de4c530ef375591ba5ab234b7":[2,11,0,0],
 "structoc__timer.html#a730098665049b168eb3545e41530f6ee":[2,11,0,1],

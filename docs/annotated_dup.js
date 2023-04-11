@@ -27,6 +27,5 @@ var annotated_dup =
     [ "oc_sec_certs_data_t", "structoc__sec__certs__data__t.html", "structoc__sec__certs__data__t" ],
     [ "oc_sec_cred_t", "structoc__sec__cred__t.html", "structoc__sec__cred__t" ],
     [ "oc_sec_creds_t", "structoc__sec__creds__t.html", "structoc__sec__creds__t" ],
-    [ "oc_session_event_cb", "structoc__session__event__cb.html", "structoc__session__event__cb" ],
     [ "oc_timer", "structoc__timer.html", "structoc__timer" ]
 ];

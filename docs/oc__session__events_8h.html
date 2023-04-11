@@ -82,7 +82,7 @@ $(document).ready(function(){initNavTree('oc__session__events_8h.html',''); init
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
@@ -90,23 +90,23 @@ $(document).ready(function(){initNavTree('oc__session__events_8h.html',''); init
 <div class="title">oc_session_events.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="oc__endpoint_8h.html">oc_endpoint.h</a>&quot;</code><br />
-<code>#include &quot;util/oc_process.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="oc__export_8h.html">oc_export.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="oc__endpoint_8h.html">oc_endpoint.h</a>&quot;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__session__event__cb.html">oc_session_event_cb</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure to manage session event handler list.  <a href="structoc__session__event__cb.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a0e2e533699c14307a9bb42dad9497665"><td class="memItemLeft" align="right" valign="top"><a id="a0e2e533699c14307a9bb42dad9497665"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>OC_ERR_SESSION_EVENT_HANDLER_NOT_FOUND</b>&#160;&#160;&#160;-2</td></tr>
+<tr class="separator:a0e2e533699c14307a9bb42dad9497665"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:aad6ba87630c5a88d464e7adb8666c069"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structoc__session__event__cb.html">oc_session_event_cb</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__session__events_8h.html#aad6ba87630c5a88d464e7adb8666c069">oc_session_event_cb_t</a></td></tr>
-<tr class="memdesc:aad6ba87630c5a88d464e7adb8666c069"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure to manage session event handler list.  <a href="oc__session__events_8h.html#aad6ba87630c5a88d464e7adb8666c069">More...</a><br /></td></tr>
-<tr class="separator:aad6ba87630c5a88d464e7adb8666c069"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ae3215775705d84e55a1a623c8267c9"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__session__events_8h.html#a8ae3215775705d84e55a1a623c8267c9">session_event_handler_t</a>) (const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint, <a class="el" href="oc__session__events_8h.html#ac8a484b47be856384dd3d86390f04367">oc_session_state_t</a> state)</td></tr>
 <tr class="memdesc:a8ae3215775705d84e55a1a623c8267c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function to pass the session event infomation to App.  <a href="oc__session__events_8h.html#a8ae3215775705d84e55a1a623c8267c9">More...</a><br /></td></tr>
 <tr class="separator:a8ae3215775705d84e55a1a623c8267c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e3f27cb75296ecadd0c8973de8244ea"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__session__events_8h.html#a3e3f27cb75296ecadd0c8973de8244ea">session_event_handler_v1_t</a>) (const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint, <a class="el" href="oc__session__events_8h.html#ac8a484b47be856384dd3d86390f04367">oc_session_state_t</a> state, void *user_data)</td></tr>
+<tr class="memdesc:a3e3f27cb75296ecadd0c8973de8244ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function to pass the session event infomation to App.  <a href="oc__session__events_8h.html#a3e3f27cb75296ecadd0c8973de8244ea">More...</a><br /></td></tr>
+<tr class="separator:a3e3f27cb75296ecadd0c8973de8244ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -118,36 +118,15 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8aab2128a3aae41640b048d9389ea9d1"><td class="memItemLeft" align="right" valign="top"><a id="a8aab2128a3aae41640b048d9389ea9d1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>OC_PROCESS_NAME</b> (oc_session_events)</td></tr>
-<tr class="separator:a8aab2128a3aae41640b048d9389ea9d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9453b3dd77655baba0a4eb2a315642a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__session__events_8h.html#ae9453b3dd77655baba0a4eb2a315642a">oc_session_end_event</a> (const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint)</td></tr>
-<tr class="memdesc:ae9453b3dd77655baba0a4eb2a315642a"><td class="mdescLeft">&#160;</td><td class="mdescRight">session end event  <a href="oc__session__events_8h.html#ae9453b3dd77655baba0a4eb2a315642a">More...</a><br /></td></tr>
-<tr class="separator:ae9453b3dd77655baba0a4eb2a315642a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a588463b2d953a3d1820a6f72666ff11d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__session__events_8h.html#a588463b2d953a3d1820a6f72666ff11d">oc_session_events_set_event_delay</a> (int secs)</td></tr>
-<tr class="memdesc:a588463b2d953a3d1820a6f72666ff11d"><td class="mdescLeft">&#160;</td><td class="mdescRight">set delay for events  <a href="oc__session__events_8h.html#a588463b2d953a3d1820a6f72666ff11d">More...</a><br /></td></tr>
-<tr class="separator:a588463b2d953a3d1820a6f72666ff11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00c15ec73de78709cd31da2247f190a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__session__events_8h.html#a00c15ec73de78709cd31da2247f190a3">oc_session_start_event</a> (const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint)</td></tr>
-<tr class="memdesc:a00c15ec73de78709cd31da2247f190a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">session start event  <a href="oc__session__events_8h.html#a00c15ec73de78709cd31da2247f190a3">More...</a><br /></td></tr>
-<tr class="separator:a00c15ec73de78709cd31da2247f190a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9cab4739ad58f230bd27a8142dbba47"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__session__events_8h.html#af9cab4739ad58f230bd27a8142dbba47">oc_session_events_set_event_delay</a> (int secs)</td></tr>
+<tr class="memdesc:af9cab4739ad58f230bd27a8142dbba47"><td class="mdescLeft">&#160;</td><td class="mdescRight">set delay for events  <a href="oc__session__events_8h.html#af9cab4739ad58f230bd27a8142dbba47">More...</a><br /></td></tr>
+<tr class="separator:af9cab4739ad58f230bd27a8142dbba47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a id="aad6ba87630c5a88d464e7adb8666c069"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad6ba87630c5a88d464e7adb8666c069">&#9670;&nbsp;</a></span>oc_session_event_cb_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef struct <a class="el" href="structoc__session__event__cb.html">oc_session_event_cb</a> <a class="el" href="oc__session__events_8h.html#aad6ba87630c5a88d464e7adb8666c069">oc_session_event_cb_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Structure to manage session event handler list. </p>
-
-</div>
-</div>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Kishen Maloor </dd>
+<dd>
+Daniel Adam </dd></dl>
+</div><h2 class="groupheader">Typedef Documentation</h2>
 <a id="a8ae3215775705d84e55a1a623c8267c9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8ae3215775705d84e55a1a623c8267c9">&#9670;&nbsp;</a></span>session_event_handler_t</h2>
 
@@ -164,10 +143,36 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">endpoint</td><td>endpoint info which the session event is happened. </td></tr>
-    <tr><td class="paramname">state</td><td>enum values in oc_session_state_t. </td></tr>
+    <tr><td class="paramname">state</td><td>enum values in oc_session_state_t.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>replaced by session_event_handler_v1_t in v2.2.5.4 </dd></dl>
+
+</div>
+</div>
+<a id="a3e3f27cb75296ecadd0c8973de8244ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e3f27cb75296ecadd0c8973de8244ea">&#9670;&nbsp;</a></span>session_event_handler_v1_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* session_event_handler_v1_t) (const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint, <a class="el" href="oc__session__events_8h.html#ac8a484b47be856384dd3d86390f04367">oc_session_state_t</a> state, void *user_data)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback function to pass the session event infomation to App. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endpoint</td><td>endpoint info which the session event is happened </td></tr>
+    <tr><td class="paramname">state</td><td>enum values in oc_session_state_t </td></tr>
+    <tr><td class="paramname">user_data</td><td>user data provided by the user to oc_add_session_event_callback_v1</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__network__monitor_8h.html#aa4673b2a3ac20f1b3c42fa052ffbecfe" title="Add the callback to receive session event notifications.">oc_add_session_event_callback_v1</a> </dd></dl>
 
 </div>
 </div>
@@ -195,40 +200,14 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ae9453b3dd77655baba0a4eb2a315642a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9453b3dd77655baba0a4eb2a315642a">&#9670;&nbsp;</a></span>oc_session_end_event()</h2>
+<a id="af9cab4739ad58f230bd27a8142dbba47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9cab4739ad58f230bd27a8142dbba47">&#9670;&nbsp;</a></span>oc_session_events_set_event_delay()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oc_session_end_event </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *&#160;</td>
-          <td class="paramname"><em>endpoint</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>session end event </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">endpoint</td><td>stop event on endpoint </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a588463b2d953a3d1820a6f72666ff11d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a588463b2d953a3d1820a6f72666ff11d">&#9670;&nbsp;</a></span>oc_session_events_set_event_delay()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void oc_session_events_set_event_delay </td>
+          <td class="memname">OC_API void oc_session_events_set_event_delay </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>secs</em></td><td>)</td>
@@ -247,39 +226,13 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a00c15ec73de78709cd31da2247f190a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00c15ec73de78709cd31da2247f190a3">&#9670;&nbsp;</a></span>oc_session_start_event()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void oc_session_start_event </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *&#160;</td>
-          <td class="paramname"><em>endpoint</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>session start event </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">endpoint</td><td>start event on endpoint </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__session__events_8h.html">oc_session_events.h</a></li>
-    <li class="footer">Generated on Tue Apr 4 2023 11:02:54 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Apr 11 2023 21:39:08 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
