@@ -253,7 +253,7 @@ var searchData=
   ['oc_5fremove_5fdelayed_5fcallback_5fby_5ffilter_1298',['oc_remove_delayed_callback_by_filter',['../group__doc__module__tag__common__operations.html#ga5b1b876b615c11a182ac82586dec1517',1,'oc_api.h']]],
   ['oc_5fremove_5fnetwork_5finterface_5fevent_5fcallback_1299',['oc_remove_network_interface_event_callback',['../oc__network__monitor_8h.html#a660d179fac54918c849ebac4cd6cab94',1,'oc_network_monitor.h']]],
   ['oc_5fremove_5fownership_5fstatus_5fcb_1300',['oc_remove_ownership_status_cb',['../oc__api_8h.html#a44732c855ea16654b45c46a0d091a229',1,'oc_api.h']]],
-  ['oc_5fremove_5fsession_5fevent_5fcallback_1301',['oc_remove_session_event_callback',['../oc__network__monitor_8h.html#a3579cb6b58334deccb8cba6b2ea9a13f',1,'oc_network_monitor.h']]],
+  ['oc_5fremove_5fsession_5fevent_5fcallback_1301',['oc_remove_session_event_callback',['../oc__network__monitor_8h.html#af65b95f6bbbf0a1f6d4c0398e711aa5e',1,'oc_network_monitor.h']]],
   ['oc_5fremove_5fsession_5fevent_5fcallback_5fv1_1302',['oc_remove_session_event_callback_v1',['../oc__network__monitor_8h.html#a817e189775b6797b93d25a4730a290a9',1,'oc_network_monitor.h']]],
   ['oc_5frep_5fencode_5fboolean_1303',['oc_rep_encode_boolean',['../oc__rep_8h.html#a817587b89b1489e0ada6933713cae0af',1,'oc_rep.h']]],
   ['oc_5frep_5fencode_5fbyte_5fstring_1304',['oc_rep_encode_byte_string',['../oc__rep_8h.html#a2e8032cc84793149297e9edeb6eb3ccc',1,'oc_rep.h']]],
@@ -421,9 +421,9 @@ var searchData=
   ['oc_5fswupdate_5fnotify_5fnew_5fversion_5favailable_1466',['oc_swupdate_notify_new_version_available',['../oc__swupdate_8h.html#a38b6ea006c4815cda2bdbd015b5a08ef',1,'oc_swupdate.h']]],
   ['oc_5fswupdate_5fnotify_5fupgrading_1467',['oc_swupdate_notify_upgrading',['../oc__swupdate_8h.html#ae97d4ea5eadaac56bd5c99a96497bbd5',1,'oc_swupdate.h']]],
   ['oc_5fswupdate_5fset_5fimpl_1468',['oc_swupdate_set_impl',['../oc__swupdate_8h.html#a46e55765e915217b11f63652773a6288',1,'oc_swupdate.h']]],
-  ['oc_5ftcp_5fconnection_5fstate_1469',['oc_tcp_connection_state',['../oc__connectivity_8h.html#a79e6c131d737bfe6dcbea723f0a15231',1,'oc_connectivity.h']]],
-  ['oc_5ftcp_5fget_5fcsm_5fstate_1470',['oc_tcp_get_csm_state',['../oc__connectivity_8h.html#aa6756a3fce193116a8a459a632916b7d',1,'oc_connectivity.h']]],
-  ['oc_5ftcp_5fupdate_5fcsm_5fstate_1471',['oc_tcp_update_csm_state',['../oc__connectivity_8h.html#a95508e6b60b65b93ca2e40c52f8d37f9',1,'oc_connectivity.h']]],
+  ['oc_5ftcp_5fconnection_5fstate_1469',['oc_tcp_connection_state',['../oc__connectivity_8h.html#a32746b373233d4f3f8c042e897f18433',1,'oc_connectivity.h']]],
+  ['oc_5ftcp_5fget_5fcsm_5fstate_1470',['oc_tcp_get_csm_state',['../oc__connectivity_8h.html#ae7f6bf2ea7df6c57b160cf939a97f6a7',1,'oc_connectivity.h']]],
+  ['oc_5ftcp_5fupdate_5fcsm_5fstate_1471',['oc_tcp_update_csm_state',['../oc__connectivity_8h.html#a4c3cc69dfb19e7193c95e19b6c58d205',1,'oc_connectivity.h']]],
   ['oc_5fuuid_5fis_5fequal_1472',['oc_uuid_is_equal',['../oc__uuid_8h.html#a053dfa2380a9c638fdac9d8e0cd213dd',1,'oc_uuid.h']]],
   ['oc_5fuuid_5fto_5fstr_1473',['oc_uuid_to_str',['../oc__uuid_8h.html#a037b0d0c259bb3f75eae6a13e0c09793',1,'oc_uuid.h']]]
 ];

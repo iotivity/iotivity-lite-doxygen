@@ -91,14 +91,15 @@ $(document).ready(function(){initNavTree('oc__connectivity_8h.html',''); initRes
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;messaging/coap/conf.h&quot;</code><br />
+<code>#include &quot;oc_config.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="oc__endpoint_8h.html">oc_endpoint.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="oc__export_8h.html">oc_export.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="oc__network__events_8h.html">oc_network_events.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="oc__session__events_8h.html">oc_session_events.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__log_8h.html">port/oc_log.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__atomic_8h.html">util/oc_atomic.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__features_8h.html">util/oc_features.h</a>&quot;</code><br />
 <code>#include &quot;util/oc_process.h&quot;</code><br />
-<code>#include &quot;oc_config.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="oc__endpoint_8h.html">oc_endpoint.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="oc__network__events_8h.html">oc_network_events.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="oc__session__events_8h.html">oc_session_events.h</a>&quot;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="oc__buffer__settings_8h.html">oc_buffer_settings.h</a>&quot;</code><br />
 </div><table class="memberdecls">
@@ -170,15 +171,15 @@ Functions</h2></td></tr>
 <tr class="memitem:ae2a9b061283aa60d8b0b3a3405a42698"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__connectivity_8h.html#ae2a9b061283aa60d8b0b3a3405a42698">oc_send_discovery_request</a> (oc_message_t *message)</td></tr>
 <tr class="memdesc:ae2a9b061283aa60d8b0b3a3405a42698"><td class="mdescLeft">&#160;</td><td class="mdescRight">send discovery request  <a href="oc__connectivity_8h.html#ae2a9b061283aa60d8b0b3a3405a42698">More...</a><br /></td></tr>
 <tr class="separator:ae2a9b061283aa60d8b0b3a3405a42698"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79e6c131d737bfe6dcbea723f0a15231"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__connectivity_8h.html#a79e6c131d737bfe6dcbea723f0a15231">oc_tcp_connection_state</a> (const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint)</td></tr>
-<tr class="memdesc:a79e6c131d737bfe6dcbea723f0a15231"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get state of TCP connection for given endpoint.  <a href="oc__connectivity_8h.html#a79e6c131d737bfe6dcbea723f0a15231">More...</a><br /></td></tr>
-<tr class="separator:a79e6c131d737bfe6dcbea723f0a15231"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6756a3fce193116a8a459a632916b7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5">tcp_csm_state_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__connectivity_8h.html#aa6756a3fce193116a8a459a632916b7d">oc_tcp_get_csm_state</a> (const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint)</td></tr>
-<tr class="memdesc:aa6756a3fce193116a8a459a632916b7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the csm state  <a href="oc__connectivity_8h.html#aa6756a3fce193116a8a459a632916b7d">More...</a><br /></td></tr>
-<tr class="separator:aa6756a3fce193116a8a459a632916b7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95508e6b60b65b93ca2e40c52f8d37f9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__connectivity_8h.html#a95508e6b60b65b93ca2e40c52f8d37f9">oc_tcp_update_csm_state</a> (const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint, <a class="el" href="oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5">tcp_csm_state_t</a> csm)</td></tr>
-<tr class="memdesc:a95508e6b60b65b93ca2e40c52f8d37f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">update the csm state on the tcp connection  <a href="oc__connectivity_8h.html#a95508e6b60b65b93ca2e40c52f8d37f9">More...</a><br /></td></tr>
-<tr class="separator:a95508e6b60b65b93ca2e40c52f8d37f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32746b373233d4f3f8c042e897f18433"><td class="memItemLeft" align="right" valign="top">OC_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__connectivity_8h.html#a32746b373233d4f3f8c042e897f18433">oc_tcp_connection_state</a> (const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint)</td></tr>
+<tr class="memdesc:a32746b373233d4f3f8c042e897f18433"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get state of TCP connection for given endpoint.  <a href="oc__connectivity_8h.html#a32746b373233d4f3f8c042e897f18433">More...</a><br /></td></tr>
+<tr class="separator:a32746b373233d4f3f8c042e897f18433"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7f6bf2ea7df6c57b160cf939a97f6a7"><td class="memItemLeft" align="right" valign="top">OC_API <a class="el" href="oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5">tcp_csm_state_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__connectivity_8h.html#ae7f6bf2ea7df6c57b160cf939a97f6a7">oc_tcp_get_csm_state</a> (const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint)</td></tr>
+<tr class="memdesc:ae7f6bf2ea7df6c57b160cf939a97f6a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the csm state  <a href="oc__connectivity_8h.html#ae7f6bf2ea7df6c57b160cf939a97f6a7">More...</a><br /></td></tr>
+<tr class="separator:ae7f6bf2ea7df6c57b160cf939a97f6a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c3cc69dfb19e7193c95e19b6c58d205"><td class="memItemLeft" align="right" valign="top">OC_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__connectivity_8h.html#a4c3cc69dfb19e7193c95e19b6c58d205">oc_tcp_update_csm_state</a> (const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint, <a class="el" href="oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5">tcp_csm_state_t</a> csm)</td></tr>
+<tr class="memdesc:a4c3cc69dfb19e7193c95e19b6c58d205"><td class="mdescLeft">&#160;</td><td class="mdescRight">update the csm state on the tcp connection  <a href="oc__connectivity_8h.html#a4c3cc69dfb19e7193c95e19b6c58d205">More...</a><br /></td></tr>
+<tr class="separator:a4c3cc69dfb19e7193c95e19b6c58d205"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="a9d56c760b9872172c0c76cba052369e5"></a>
@@ -415,14 +416,14 @@ int -1 on error </dd></dl>
 
 </div>
 </div>
-<a id="a79e6c131d737bfe6dcbea723f0a15231"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79e6c131d737bfe6dcbea723f0a15231">&#9670;&nbsp;</a></span>oc_tcp_connection_state()</h2>
+<a id="a32746b373233d4f3f8c042e897f18433"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32746b373233d4f3f8c042e897f18433">&#9670;&nbsp;</a></span>oc_tcp_connection_state()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int oc_tcp_connection_state </td>
+          <td class="memname">OC_API int oc_tcp_connection_state </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *&#160;</td>
           <td class="paramname"><em>endpoint</em></td><td>)</td>
@@ -446,14 +447,14 @@ OC_TCP_SOCKET_STATE_CONNECTING TCP connection is waiting to be established </dd>
 
 </div>
 </div>
-<a id="aa6756a3fce193116a8a459a632916b7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6756a3fce193116a8a459a632916b7d">&#9670;&nbsp;</a></span>oc_tcp_get_csm_state()</h2>
+<a id="ae7f6bf2ea7df6c57b160cf939a97f6a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7f6bf2ea7df6c57b160cf939a97f6a7">&#9670;&nbsp;</a></span>oc_tcp_get_csm_state()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5">tcp_csm_state_t</a> oc_tcp_get_csm_state </td>
+          <td class="memname">OC_API <a class="el" href="oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5">tcp_csm_state_t</a> oc_tcp_get_csm_state </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *&#160;</td>
           <td class="paramname"><em>endpoint</em></td><td>)</td>
@@ -473,14 +474,14 @@ OC_TCP_SOCKET_STATE_CONNECTING TCP connection is waiting to be established </dd>
 
 </div>
 </div>
-<a id="a95508e6b60b65b93ca2e40c52f8d37f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95508e6b60b65b93ca2e40c52f8d37f9">&#9670;&nbsp;</a></span>oc_tcp_update_csm_state()</h2>
+<a id="a4c3cc69dfb19e7193c95e19b6c58d205"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c3cc69dfb19e7193c95e19b6c58d205">&#9670;&nbsp;</a></span>oc_tcp_update_csm_state()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int oc_tcp_update_csm_state </td>
+          <td class="memname">OC_API int oc_tcp_update_csm_state </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *&#160;</td>
           <td class="paramname"><em>endpoint</em>, </td>
@@ -517,7 +518,7 @@ OC_TCP_SOCKET_STATE_CONNECTING TCP connection is waiting to be established </dd>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_651562d8bf6cfd3e81eff5b570d7df50.html">port</a></li><li class="navelem"><a class="el" href="oc__connectivity_8h.html">oc_connectivity.h</a></li>
-    <li class="footer">Generated on Tue Apr 11 2023 21:39:08 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Apr 17 2023 12:41:54 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

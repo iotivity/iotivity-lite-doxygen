@@ -29,7 +29,7 @@ var oc__connectivity_8h =
     [ "oc_dns_lookup", "oc__connectivity_8h.html#a17fcc4b1fd577de08c171d3ece534e33", null ],
     [ "oc_send_buffer", "oc__connectivity_8h.html#a42bf2fb6678fc9b9cc162e30cece7beb", null ],
     [ "oc_send_discovery_request", "oc__connectivity_8h.html#ae2a9b061283aa60d8b0b3a3405a42698", null ],
-    [ "oc_tcp_connection_state", "oc__connectivity_8h.html#a79e6c131d737bfe6dcbea723f0a15231", null ],
-    [ "oc_tcp_get_csm_state", "oc__connectivity_8h.html#aa6756a3fce193116a8a459a632916b7d", null ],
-    [ "oc_tcp_update_csm_state", "oc__connectivity_8h.html#a95508e6b60b65b93ca2e40c52f8d37f9", null ]
+    [ "oc_tcp_connection_state", "oc__connectivity_8h.html#a32746b373233d4f3f8c042e897f18433", null ],
+    [ "oc_tcp_get_csm_state", "oc__connectivity_8h.html#ae7f6bf2ea7df6c57b160cf939a97f6a7", null ],
+    [ "oc_tcp_update_csm_state", "oc__connectivity_8h.html#a4c3cc69dfb19e7193c95e19b6c58d205", null ]
 ];
