@@ -78,7 +78,7 @@ var searchData=
   ['oc_5fcore_5fget_5fnum_5fdevices_1126',['oc_core_get_num_devices',['../oc__core__res_8h.html#aa7dc2c2f7072ae6c305e404ddd8b204f',1,'oc_core_res.h']]],
   ['oc_5fcore_5fget_5fplatform_5finfo_1127',['oc_core_get_platform_info',['../oc__core__res_8h.html#adaf7f631c7ddea5e0e6e8bd50495a160',1,'oc_core_res.h']]],
   ['oc_5fcore_5fget_5fresource_5fby_5findex_1128',['oc_core_get_resource_by_index',['../oc__core__res_8h.html#afdf03e702cf42d39a4cf97fe0139a073',1,'oc_core_res.h']]],
-  ['oc_5fcore_5fget_5fresource_5fby_5furi_1129',['oc_core_get_resource_by_uri',['../oc__core__res_8h.html#a0f16b93c49240e6e11224b6a92a29fb5',1,'oc_core_res.h']]],
+  ['oc_5fcore_5fget_5fresource_5fby_5furi_1129',['oc_core_get_resource_by_uri',['../oc__core__res_8h.html#a314e04c4b9a7ebf96d3abfc2c10124bc',1,'oc_core_res.h']]],
   ['oc_5fcore_5fis_5fdcr_1130',['oc_core_is_DCR',['../oc__core__res_8h.html#a5308cef52443fd78acd2a0768243a446',1,'oc_core_res.h']]],
   ['oc_5fcore_5fis_5fsvr_1131',['oc_core_is_SVR',['../oc__core__res_8h.html#adcfdf872f1bc5b45214e0d112e544576',1,'oc_core_res.h']]],
   ['oc_5fcore_5fis_5fvertical_5fresource_1132',['oc_core_is_vertical_resource',['../oc__core__res_8h.html#ae13c44607776eac24d60ffd14905fc1d',1,'oc_core_res.h']]],

@@ -90,6 +90,7 @@ $(document).ready(function(){initNavTree('oc__core__res_8h.html',''); initResiza
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="oc__ri_8h.html">oc_ri.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="oc__compiler_8h.html">util/oc_compiler.h</a>&quot;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -136,9 +137,9 @@ Functions</h2></td></tr>
 <tr class="memitem:afdf03e702cf42d39a4cf97fe0139a073"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#afdf03e702cf42d39a4cf97fe0139a073">oc_core_get_resource_by_index</a> (int type, size_t device)</td></tr>
 <tr class="memdesc:afdf03e702cf42d39a4cf97fe0139a073"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the resource by type (e.g.  <a href="oc__core__res_8h.html#afdf03e702cf42d39a4cf97fe0139a073">More...</a><br /></td></tr>
 <tr class="separator:afdf03e702cf42d39a4cf97fe0139a073"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f16b93c49240e6e11224b6a92a29fb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a0f16b93c49240e6e11224b6a92a29fb5">oc_core_get_resource_by_uri</a> (const char *uri, size_t device)</td></tr>
-<tr class="memdesc:a0f16b93c49240e6e11224b6a92a29fb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the resource by uri  <a href="oc__core__res_8h.html#a0f16b93c49240e6e11224b6a92a29fb5">More...</a><br /></td></tr>
-<tr class="separator:a0f16b93c49240e6e11224b6a92a29fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a314e04c4b9a7ebf96d3abfc2c10124bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a314e04c4b9a7ebf96d3abfc2c10124bc">oc_core_get_resource_by_uri</a> (const char *uri, size_t device) OC_NONNULL()</td></tr>
+<tr class="memdesc:a314e04c4b9a7ebf96d3abfc2c10124bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the resource by uri  <a href="oc__core__res_8h.html#a314e04c4b9a7ebf96d3abfc2c10124bc">More...</a><br /></td></tr>
+<tr class="separator:a314e04c4b9a7ebf96d3abfc2c10124bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5308cef52443fd78acd2a0768243a446"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a5308cef52443fd78acd2a0768243a446">oc_core_is_DCR</a> (const <a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, size_t device)</td></tr>
 <tr class="memdesc:a5308cef52443fd78acd2a0768243a446"><td class="mdescLeft">&#160;</td><td class="mdescRight">determine if a resource is a Device Configuration Resource  <a href="oc__core__res_8h.html#a5308cef52443fd78acd2a0768243a446">More...</a><br /></td></tr>
 <tr class="separator:a5308cef52443fd78acd2a0768243a446"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -379,8 +380,8 @@ NULL on failure </dd></dl>
 
 </div>
 </div>
-<a id="a0f16b93c49240e6e11224b6a92a29fb5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f16b93c49240e6e11224b6a92a29fb5">&#9670;&nbsp;</a></span>oc_core_get_resource_by_uri()</h2>
+<a id="a314e04c4b9a7ebf96d3abfc2c10124bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a314e04c4b9a7ebf96d3abfc2c10124bc">&#9670;&nbsp;</a></span>oc_core_get_resource_by_uri()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -408,7 +409,7 @@ NULL on failure </dd></dl>
 <p>retrieve the resource by uri </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">uri</td><td>the uri </td></tr>
+    <tr><td class="paramname">uri</td><td>the uri (cannot be NULL) </td></tr>
     <tr><td class="paramname">device</td><td>the device index </td></tr>
   </table>
   </dd>
@@ -571,7 +572,7 @@ false : is not a vertical resource </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__core__res_8h.html">oc_core_res.h</a></li>
-    <li class="footer">Generated on Wed Apr 19 2023 05:52:43 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Apr 19 2023 23:35:49 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
