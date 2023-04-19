@@ -92,7 +92,6 @@ $(document).ready(function(){initNavTree('oc__session__events_8h.html',''); init
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="oc__export_8h.html">oc_export.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__endpoint_8h.html">oc_endpoint.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="oc__compiler_8h.html">util/oc_compiler.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -102,15 +101,12 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a20a429745530afff80a49548871c2ee3"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__session__events_8h.html#a20a429745530afff80a49548871c2ee3">session_event_handler_t</a>) (const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint, <a class="el" href="oc__session__events_8h.html#ac8a484b47be856384dd3d86390f04367">oc_session_state_t</a> state) OC_DEPRECATED(&quot;replaced by <a class="el" href="oc__session__events_8h.html#a3e3f27cb75296ecadd0c8973de8244ea">session_event_handler_v1_t</a></td></tr>
-<tr class="memdesc:a20a429745530afff80a49548871c2ee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function to pass the session event infomation to App.  <a href="oc__session__events_8h.html#a20a429745530afff80a49548871c2ee3">More...</a><br /></td></tr>
-<tr class="separator:a20a429745530afff80a49548871c2ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ae3215775705d84e55a1a623c8267c9"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__session__events_8h.html#a8ae3215775705d84e55a1a623c8267c9">session_event_handler_t</a>) (const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint, <a class="el" href="oc__session__events_8h.html#ac8a484b47be856384dd3d86390f04367">oc_session_state_t</a> state)</td></tr>
+<tr class="memdesc:a8ae3215775705d84e55a1a623c8267c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function to pass the session event infomation to App.  <a href="oc__session__events_8h.html#a8ae3215775705d84e55a1a623c8267c9">More...</a><br /></td></tr>
+<tr class="separator:a8ae3215775705d84e55a1a623c8267c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e3f27cb75296ecadd0c8973de8244ea"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__session__events_8h.html#a3e3f27cb75296ecadd0c8973de8244ea">session_event_handler_v1_t</a>) (const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint, <a class="el" href="oc__session__events_8h.html#ac8a484b47be856384dd3d86390f04367">oc_session_state_t</a> state, void *user_data)</td></tr>
 <tr class="memdesc:a3e3f27cb75296ecadd0c8973de8244ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function to pass the session event infomation to App.  <a href="oc__session__events_8h.html#a3e3f27cb75296ecadd0c8973de8244ea">More...</a><br /></td></tr>
 <tr class="separator:a3e3f27cb75296ecadd0c8973de8244ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2741bfcf1d8a054b580415bf804ceb9c"><td class="memItemLeft" align="right" valign="top"><a id="a2741bfcf1d8a054b580415bf804ceb9c"></a>
-typedef void(*) deprecated i&#160;</td><td class="memItemRight" valign="bottom"><b>v2</b>)</td></tr>
-<tr class="separator:a2741bfcf1d8a054b580415bf804ceb9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -131,14 +127,14 @@ Functions</h2></td></tr>
 <dd>
 Daniel Adam </dd></dl>
 </div><h2 class="groupheader">Typedef Documentation</h2>
-<a id="a20a429745530afff80a49548871c2ee3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20a429745530afff80a49548871c2ee3">&#9670;&nbsp;</a></span>session_event_handler_t</h2>
+<a id="a8ae3215775705d84e55a1a623c8267c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ae3215775705d84e55a1a623c8267c9">&#9670;&nbsp;</a></span>session_event_handler_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* session_event_handler_t) (const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint, <a class="el" href="oc__session__events_8h.html#ac8a484b47be856384dd3d86390f04367">oc_session_state_t</a> state) OC_DEPRECATED(&quot;replaced by <a class="el" href="oc__session__events_8h.html#a3e3f27cb75296ecadd0c8973de8244ea">session_event_handler_v1_t</a></td>
+          <td class="memname">typedef void(* session_event_handler_t) (const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint, <a class="el" href="oc__session__events_8h.html#ac8a484b47be856384dd3d86390f04367">oc_session_state_t</a> state)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -151,7 +147,7 @@ Daniel Adam </dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated:</a></b></dt><dd>replaced by session_event_handler_v1_t in v2.2.5.4 </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>will be removed with deprecated functions oc_add_session_event_callback and oc_remove_session_event_callback in the future </dd></dl>
 
 </div>
 </div>
@@ -236,7 +232,7 @@ Daniel Adam </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__session__events_8h.html">oc_session_events.h</a></li>
-    <li class="footer">Generated on Tue Apr 18 2023 14:31:45 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Apr 19 2023 05:52:43 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

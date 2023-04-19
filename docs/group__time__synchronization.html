@@ -98,9 +98,15 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga6fd3ef17baa3cfda63cc97c96b5c9ab8"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__time__synchronization.html#ga6fd3ef17baa3cfda63cc97c96b5c9ab8">plgd_set_system_time_fn_t</a>) (oc_clock_time_t time, void *user_data)</td></tr>
 <tr class="memdesc:ga6fd3ef17baa3cfda63cc97c96b5c9ab8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function used to set time on the whole system invoked whenever the plgd time is updated.  <a href="group__time__synchronization.html#ga6fd3ef17baa3cfda63cc97c96b5c9ab8">More...</a><br /></td></tr>
 <tr class="separator:ga6fd3ef17baa3cfda63cc97c96b5c9ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga082ac5a8844ef7d2fa2bcc7ac3a02edb"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__time__synchronization.html#ga082ac5a8844ef7d2fa2bcc7ac3a02edb">plgd_time_on_fetch_fn_t</a>) (<a class="el" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38">oc_status_t</a> code, oc_clock_time_t time, void *data)</td></tr>
+<tr class="memdesc:ga082ac5a8844ef7d2fa2bcc7ac3a02edb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback invoked when plgd_time_fetch request receives a response or timeouts.  <a href="group__time__synchronization.html#ga082ac5a8844ef7d2fa2bcc7ac3a02edb">More...</a><br /></td></tr>
+<tr class="separator:ga082ac5a8844ef7d2fa2bcc7ac3a02edb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:ga4593b05617daafbe7bd602315656aad3"><td class="memItemLeft" align="right" valign="top"><a id="ga4593b05617daafbe7bd602315656aad3"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>plgd_time_fetch_flags_t</b> { <b>PLGD_TIME_FETCH_FLAG_TCP_SESSION_OPENED</b>
+ }</td></tr>
+<tr class="separator:ga4593b05617daafbe7bd602315656aad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacf1cea487d557b5f7d06c6ea6f0f574c"><td class="memItemLeft" align="right" valign="top"><a id="gacf1cea487d557b5f7d06c6ea6f0f574c"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>plgd_time_status_t</b> { <b>PLGD_TIME_STATUS_SYNCING</b> = 1
 , <b>PLGD_TIME_STATUS_IN_SYNC</b>
 , <b>PLGD_TIME_STATUS_IN_SYNC_FROM_STORAGE</b>
@@ -109,36 +115,42 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga849a69a956c5c06398fd9375dfca196b"><td class="memItemLeft" align="right" valign="top">oc_clock_time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__time__synchronization.html#ga849a69a956c5c06398fd9375dfca196b">plgd_time</a> (void)</td></tr>
-<tr class="memdesc:ga849a69a956c5c06398fd9375dfca196b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate current plgd time.  <a href="group__time__synchronization.html#ga849a69a956c5c06398fd9375dfca196b">More...</a><br /></td></tr>
-<tr class="separator:ga849a69a956c5c06398fd9375dfca196b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0f1bc6a215ff33c9c650ace40081f6fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__time__synchronization.html#ga0f1bc6a215ff33c9c650ace40081f6fe">plgd_time_configure</a> (bool use_in_mbedtls, <a class="el" href="group__time__synchronization.html#ga6fd3ef17baa3cfda63cc97c96b5c9ab8">plgd_set_system_time_fn_t</a> set_system_time, void *set_system_time_data)</td></tr>
-<tr class="memdesc:ga0f1bc6a215ff33c9c650ace40081f6fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the plgd time feature.  <a href="group__time__synchronization.html#ga0f1bc6a215ff33c9c650ace40081f6fe">More...</a><br /></td></tr>
-<tr class="separator:ga0f1bc6a215ff33c9c650ace40081f6fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaff12a0b5525b27382f3df30eeefe016f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__time__synchronization.html#gaff12a0b5525b27382f3df30eeefe016f">plgd_time_dump</a> (void)</td></tr>
-<tr class="memdesc:gaff12a0b5525b27382f3df30eeefe016f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save persistent data of the plgd time resource to storage.  <a href="group__time__synchronization.html#gaff12a0b5525b27382f3df30eeefe016f">More...</a><br /></td></tr>
-<tr class="separator:gaff12a0b5525b27382f3df30eeefe016f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga79f3b02796bf9fe4664ebf9b83d1361c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__time__synchronization.html#ga79f3b02796bf9fe4664ebf9b83d1361c">plgd_time_is_active</a> (void)</td></tr>
-<tr class="memdesc:ga79f3b02796bf9fe4664ebf9b83d1361c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plgd time is active (ie it is set to a valid, non-zero value).  <a href="group__time__synchronization.html#ga79f3b02796bf9fe4664ebf9b83d1361c">More...</a><br /></td></tr>
-<tr class="separator:ga79f3b02796bf9fe4664ebf9b83d1361c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae92d0df0042a5e0dd1596c3b469a05f5"><td class="memItemLeft" align="right" valign="top">oc_clock_time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__time__synchronization.html#gae92d0df0042a5e0dd1596c3b469a05f5">plgd_time_last_synced_time</a> (void)</td></tr>
-<tr class="memdesc:gae92d0df0042a5e0dd1596c3b469a05f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the latest synchronization time.  <a href="group__time__synchronization.html#gae92d0df0042a5e0dd1596c3b469a05f5">More...</a><br /></td></tr>
-<tr class="separator:gae92d0df0042a5e0dd1596c3b469a05f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga290c8782e312e5f3e76cacab284157e4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__time__synchronization.html#ga290c8782e312e5f3e76cacab284157e4">plgd_time_load</a> (void)</td></tr>
-<tr class="memdesc:ga290c8782e312e5f3e76cacab284157e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load persistent data of the plgd time resource from storage.  <a href="group__time__synchronization.html#ga290c8782e312e5f3e76cacab284157e4">More...</a><br /></td></tr>
-<tr class="separator:ga290c8782e312e5f3e76cacab284157e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad8051c5138a13ce402c6c4ecd6da975f"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__time__synchronization.html#gad8051c5138a13ce402c6c4ecd6da975f">plgd_time_seconds</a> (void)</td></tr>
-<tr class="memdesc:gad8051c5138a13ce402c6c4ecd6da975f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the number of seconds since the Unix Epoch.  <a href="group__time__synchronization.html#gad8051c5138a13ce402c6c4ecd6da975f">More...</a><br /></td></tr>
-<tr class="separator:gad8051c5138a13ce402c6c4ecd6da975f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga03fb3807b79f3838549e7101cfe4bb59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__time__synchronization.html#ga03fb3807b79f3838549e7101cfe4bb59">plgd_time_set_status</a> (plgd_time_status_t status)</td></tr>
-<tr class="memdesc:ga03fb3807b79f3838549e7101cfe4bb59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set plgd time status.  <a href="group__time__synchronization.html#ga03fb3807b79f3838549e7101cfe4bb59">More...</a><br /></td></tr>
-<tr class="separator:ga03fb3807b79f3838549e7101cfe4bb59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaeea9fc461a676c7e3db6585709d75e6f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__time__synchronization.html#gaeea9fc461a676c7e3db6585709d75e6f">plgd_time_set_time</a> (oc_clock_time_t time)</td></tr>
-<tr class="memdesc:gaeea9fc461a676c7e3db6585709d75e6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronize the plgd time.  <a href="group__time__synchronization.html#gaeea9fc461a676c7e3db6585709d75e6f">More...</a><br /></td></tr>
-<tr class="separator:gaeea9fc461a676c7e3db6585709d75e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga229fe20bc4023a510048484814f4f9ac"><td class="memItemLeft" align="right" valign="top">plgd_time_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__time__synchronization.html#ga229fe20bc4023a510048484814f4f9ac">plgd_time_status</a> (void)</td></tr>
-<tr class="memdesc:ga229fe20bc4023a510048484814f4f9ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get plgd time status.  <a href="group__time__synchronization.html#ga229fe20bc4023a510048484814f4f9ac">More...</a><br /></td></tr>
-<tr class="separator:ga229fe20bc4023a510048484814f4f9ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga97f672c53ce2d7e564bb4e2832503fcd"><td class="memItemLeft" align="right" valign="top">OC_API oc_clock_time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__time__synchronization.html#ga97f672c53ce2d7e564bb4e2832503fcd">plgd_time</a> (void)</td></tr>
+<tr class="memdesc:ga97f672c53ce2d7e564bb4e2832503fcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate current plgd time.  <a href="group__time__synchronization.html#ga97f672c53ce2d7e564bb4e2832503fcd">More...</a><br /></td></tr>
+<tr class="separator:ga97f672c53ce2d7e564bb4e2832503fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga259790db688ab9ebd73fcbb20bd7b7da"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__time__synchronization.html#ga259790db688ab9ebd73fcbb20bd7b7da">plgd_time_configure</a> (bool use_in_mbedtls, <a class="el" href="group__time__synchronization.html#ga6fd3ef17baa3cfda63cc97c96b5c9ab8">plgd_set_system_time_fn_t</a> set_system_time, void *set_system_time_data)</td></tr>
+<tr class="memdesc:ga259790db688ab9ebd73fcbb20bd7b7da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the plgd time feature.  <a href="group__time__synchronization.html#ga259790db688ab9ebd73fcbb20bd7b7da">More...</a><br /></td></tr>
+<tr class="separator:ga259790db688ab9ebd73fcbb20bd7b7da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga015789c98e41e41858e6d3897b8bb2c0"><td class="memItemLeft" align="right" valign="top">OC_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__time__synchronization.html#ga015789c98e41e41858e6d3897b8bb2c0">plgd_time_dump</a> (void)</td></tr>
+<tr class="memdesc:ga015789c98e41e41858e6d3897b8bb2c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save persistent data of the plgd time resource to storage.  <a href="group__time__synchronization.html#ga015789c98e41e41858e6d3897b8bb2c0">More...</a><br /></td></tr>
+<tr class="separator:ga015789c98e41e41858e6d3897b8bb2c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafe2d18b94ea25e34a9bc06d52e427495"><td class="memItemLeft" align="right" valign="top">OC_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__time__synchronization.html#gafe2d18b94ea25e34a9bc06d52e427495">plgd_time_fetch</a> (plgd_time_fetch_config_t fetch, unsigned *flags)</td></tr>
+<tr class="memdesc:gafe2d18b94ea25e34a9bc06d52e427495"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch time from an endpoint by a GET request.  <a href="group__time__synchronization.html#gafe2d18b94ea25e34a9bc06d52e427495">More...</a><br /></td></tr>
+<tr class="separator:gafe2d18b94ea25e34a9bc06d52e427495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6ee4cc632d9c42febc927b0087799dd6"><td class="memItemLeft" align="right" valign="top">OC_API plgd_time_fetch_config_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__time__synchronization.html#ga6ee4cc632d9c42febc927b0087799dd6">plgd_time_fetch_config</a> (const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint, const char *uri, <a class="el" href="group__time__synchronization.html#ga082ac5a8844ef7d2fa2bcc7ac3a02edb">plgd_time_on_fetch_fn_t</a> on_fetch, void *on_fetch_data, uint16_t timeout, int selected_identity_credid, bool disable_time_verification)</td></tr>
+<tr class="memdesc:ga6ee4cc632d9c42febc927b0087799dd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience wrapper to create plgd_time_fetch_config_t from arguments.  <a href="group__time__synchronization.html#ga6ee4cc632d9c42febc927b0087799dd6">More...</a><br /></td></tr>
+<tr class="separator:ga6ee4cc632d9c42febc927b0087799dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2765adfd7965d198d07e817cc5670201"><td class="memItemLeft" align="right" valign="top">OC_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__time__synchronization.html#ga2765adfd7965d198d07e817cc5670201">plgd_time_is_active</a> (void)</td></tr>
+<tr class="memdesc:ga2765adfd7965d198d07e817cc5670201"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plgd time is active (ie it is set to a valid, non-zero value).  <a href="group__time__synchronization.html#ga2765adfd7965d198d07e817cc5670201">More...</a><br /></td></tr>
+<tr class="separator:ga2765adfd7965d198d07e817cc5670201"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga406749699ac4fb3cc3037c9002904c04"><td class="memItemLeft" align="right" valign="top">OC_API oc_clock_time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__time__synchronization.html#ga406749699ac4fb3cc3037c9002904c04">plgd_time_last_synced_time</a> (void)</td></tr>
+<tr class="memdesc:ga406749699ac4fb3cc3037c9002904c04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the latest synchronization time.  <a href="group__time__synchronization.html#ga406749699ac4fb3cc3037c9002904c04">More...</a><br /></td></tr>
+<tr class="separator:ga406749699ac4fb3cc3037c9002904c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaacf5735a112110c87ac4b0915924cf5"><td class="memItemLeft" align="right" valign="top">OC_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__time__synchronization.html#gaaacf5735a112110c87ac4b0915924cf5">plgd_time_load</a> (void)</td></tr>
+<tr class="memdesc:gaaacf5735a112110c87ac4b0915924cf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load persistent data of the plgd time resource from storage.  <a href="group__time__synchronization.html#gaaacf5735a112110c87ac4b0915924cf5">More...</a><br /></td></tr>
+<tr class="separator:gaaacf5735a112110c87ac4b0915924cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3fb3aa0fe4b2a69fcf60c690301ebe83"><td class="memItemLeft" align="right" valign="top">OC_API unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__time__synchronization.html#ga3fb3aa0fe4b2a69fcf60c690301ebe83">plgd_time_seconds</a> (void)</td></tr>
+<tr class="memdesc:ga3fb3aa0fe4b2a69fcf60c690301ebe83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the number of seconds since the Unix Epoch.  <a href="group__time__synchronization.html#ga3fb3aa0fe4b2a69fcf60c690301ebe83">More...</a><br /></td></tr>
+<tr class="separator:ga3fb3aa0fe4b2a69fcf60c690301ebe83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga97288ce4140821b9267780ff8916454d"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__time__synchronization.html#ga97288ce4140821b9267780ff8916454d">plgd_time_set_status</a> (plgd_time_status_t status)</td></tr>
+<tr class="memdesc:ga97288ce4140821b9267780ff8916454d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set plgd time status.  <a href="group__time__synchronization.html#ga97288ce4140821b9267780ff8916454d">More...</a><br /></td></tr>
+<tr class="separator:ga97288ce4140821b9267780ff8916454d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6fe34e34de8fc274da3a48c2d416a787"><td class="memItemLeft" align="right" valign="top">OC_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__time__synchronization.html#ga6fe34e34de8fc274da3a48c2d416a787">plgd_time_set_time</a> (oc_clock_time_t time)</td></tr>
+<tr class="memdesc:ga6fe34e34de8fc274da3a48c2d416a787"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronize the plgd time.  <a href="group__time__synchronization.html#ga6fe34e34de8fc274da3a48c2d416a787">More...</a><br /></td></tr>
+<tr class="separator:ga6fe34e34de8fc274da3a48c2d416a787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga262f704d45533cc9ae26f6d7b0edce38"><td class="memItemLeft" align="right" valign="top">OC_API plgd_time_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__time__synchronization.html#ga262f704d45533cc9ae26f6d7b0edce38">plgd_time_status</a> (void)</td></tr>
+<tr class="memdesc:ga262f704d45533cc9ae26f6d7b0edce38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get plgd time status.  <a href="group__time__synchronization.html#ga262f704d45533cc9ae26f6d7b0edce38">More...</a><br /></td></tr>
+<tr class="separator:ga262f704d45533cc9ae26f6d7b0edce38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>A facitility to synchronize time for SSL certificates validation or for the whole system. </p>
@@ -166,15 +178,39 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="ga849a69a956c5c06398fd9375dfca196b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga849a69a956c5c06398fd9375dfca196b">&#9670;&nbsp;</a></span>plgd_time()</h2>
+<a id="ga082ac5a8844ef7d2fa2bcc7ac3a02edb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga082ac5a8844ef7d2fa2bcc7ac3a02edb">&#9670;&nbsp;</a></span>plgd_time_on_fetch_fn_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">oc_clock_time_t plgd_time </td>
+          <td class="memname">typedef void(* plgd_time_on_fetch_fn_t) (<a class="el" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38">oc_status_t</a> code, oc_clock_time_t time, void *data)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback invoked when plgd_time_fetch request receives a response or timeouts. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">code</td><td>response code of the time fetch request </td></tr>
+    <tr><td class="paramname">time</td><td>time provided by the endpoint (only valid if <code>code</code> is OC_STATUS_OK) </td></tr>
+    <tr><td class="paramname">data</td><td>custom user data </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ga97f672c53ce2d7e564bb4e2832503fcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga97f672c53ce2d7e564bb4e2832503fcd">&#9670;&nbsp;</a></span>plgd_time()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OC_API oc_clock_time_t plgd_time </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -188,18 +224,18 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>&gt;=0 number of system ticks since the Unix Epoch </dd>
 <dd>
 -1 on error</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__time__synchronization.html#gaeea9fc461a676c7e3db6585709d75e6f" title="Synchronize the plgd time.">plgd_time_set_time</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__time__synchronization.html#ga6fe34e34de8fc274da3a48c2d416a787" title="Synchronize the plgd time.">plgd_time_set_time</a> </dd></dl>
 
 </div>
 </div>
-<a id="ga0f1bc6a215ff33c9c650ace40081f6fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0f1bc6a215ff33c9c650ace40081f6fe">&#9670;&nbsp;</a></span>plgd_time_configure()</h2>
+<a id="ga259790db688ab9ebd73fcbb20bd7b7da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga259790db688ab9ebd73fcbb20bd7b7da">&#9670;&nbsp;</a></span>plgd_time_configure()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void plgd_time_configure </td>
+          <td class="memname">OC_API void plgd_time_configure </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>use_in_mbedtls</em>, </td>
@@ -234,18 +270,18 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>to report synchronization status use plgd_time_set_status</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__time__synchronization.html#gaeea9fc461a676c7e3db6585709d75e6f" title="Synchronize the plgd time.">plgd_time_set_time</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__time__synchronization.html#ga6fe34e34de8fc274da3a48c2d416a787" title="Synchronize the plgd time.">plgd_time_set_time</a> </dd></dl>
 
 </div>
 </div>
-<a id="gaff12a0b5525b27382f3df30eeefe016f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaff12a0b5525b27382f3df30eeefe016f">&#9670;&nbsp;</a></span>plgd_time_dump()</h2>
+<a id="ga015789c98e41e41858e6d3897b8bb2c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga015789c98e41e41858e6d3897b8bb2c0">&#9670;&nbsp;</a></span>plgd_time_dump()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool plgd_time_dump </td>
+          <td class="memname">OC_API bool plgd_time_dump </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -261,14 +297,123 @@ false on failure </dd></dl>
 
 </div>
 </div>
-<a id="ga79f3b02796bf9fe4664ebf9b83d1361c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga79f3b02796bf9fe4664ebf9b83d1361c">&#9670;&nbsp;</a></span>plgd_time_is_active()</h2>
+<a id="gafe2d18b94ea25e34a9bc06d52e427495"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafe2d18b94ea25e34a9bc06d52e427495">&#9670;&nbsp;</a></span>plgd_time_fetch()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool plgd_time_is_active </td>
+          <td class="memname">OC_API bool plgd_time_fetch </td>
+          <td>(</td>
+          <td class="paramtype">plgd_time_fetch_config_t&#160;</td>
+          <td class="paramname"><em>fetch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned *&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fetch time from an endpoint by a GET request. </p>
+<p>For TLS/DTLS/TCP communication the request will use an existing session or a peer. If there is no existing session or peer then it will attempt to create it and after the request is finished it will be closed. (If the session or peer existed before the fetch time request it won't be closed.)</p>
+<p>The closing of TCP sessions in iotivity-lite is asynchronous and is executed on the network thread. There are no guarantees about the timing. The session might've be already closed before plgd_time_fetch returns or it might be closed some time later. This might cause an issue if you try to create a TCP connection to the same endpoint right away after calling plgd_time_fetch. If the asynchronous closing of the previous session hasn't finished yet then it will close your session, because in the current implementation sessions are indexed by the endpoint address and not by some unique IDs. You can avoid this problem by checking for PLGD_TIME_FETCH_FLAG_TCP_SESSION_OPENED. The flag is appended to <code>flags</code> when plgd_time_fetch opens a new TCP session. (When a new session is opened by plgd_time_fetch it will always be scheduled to close before the function returns). To check if a session is closed use oc_tcp_connection_state. To wait for a session to close use oc_add_session_event_callback_v1, which will invoke a custom callback when a session is disconnected.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">fetch</td><td>fetch time configuration </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">flags</td><td>output flags </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true on success </dd>
+<dd>
+false on failure</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>plgd_time_fetch_config_t </dd>
+<dd>
+plgd_time_fetch_flags_t </dd>
+<dd>
+<a class="el" href="oc__network__monitor_8h.html#aa4673b2a3ac20f1b3c42fa052ffbecfe" title="Add the callback to receive session event notifications.">oc_add_session_event_callback_v1</a> </dd>
+<dd>
+<a class="el" href="oc__connectivity_8h.html#a32746b373233d4f3f8c042e897f18433" title="Get state of TCP connection for given endpoint.">oc_tcp_connection_state</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga6ee4cc632d9c42febc927b0087799dd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6ee4cc632d9c42febc927b0087799dd6">&#9670;&nbsp;</a></span>plgd_time_fetch_config()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OC_API plgd_time_fetch_config_t plgd_time_fetch_config </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *&#160;</td>
+          <td class="paramname"><em>endpoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>uri</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__time__synchronization.html#ga082ac5a8844ef7d2fa2bcc7ac3a02edb">plgd_time_on_fetch_fn_t</a>&#160;</td>
+          <td class="paramname"><em>on_fetch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>on_fetch_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>timeout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>selected_identity_credid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>disable_time_verification</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convenience wrapper to create plgd_time_fetch_config_t from arguments. </p>
+
+</div>
+</div>
+<a id="ga2765adfd7965d198d07e817cc5670201"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2765adfd7965d198d07e817cc5670201">&#9670;&nbsp;</a></span>plgd_time_is_active()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OC_API bool plgd_time_is_active </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -281,18 +426,18 @@ false on failure </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>true plgd time is synchronized </dd>
 <dd>
 false otherwise</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__time__synchronization.html#gaeea9fc461a676c7e3db6585709d75e6f" title="Synchronize the plgd time.">plgd_time_set_time</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__time__synchronization.html#ga6fe34e34de8fc274da3a48c2d416a787" title="Synchronize the plgd time.">plgd_time_set_time</a> </dd></dl>
 
 </div>
 </div>
-<a id="gae92d0df0042a5e0dd1596c3b469a05f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae92d0df0042a5e0dd1596c3b469a05f5">&#9670;&nbsp;</a></span>plgd_time_last_synced_time()</h2>
+<a id="ga406749699ac4fb3cc3037c9002904c04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga406749699ac4fb3cc3037c9002904c04">&#9670;&nbsp;</a></span>plgd_time_last_synced_time()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">oc_clock_time_t plgd_time_last_synced_time </td>
+          <td class="memname">OC_API oc_clock_time_t plgd_time_last_synced_time </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -305,14 +450,14 @@ false otherwise</dd></dl>
 
 </div>
 </div>
-<a id="ga290c8782e312e5f3e76cacab284157e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga290c8782e312e5f3e76cacab284157e4">&#9670;&nbsp;</a></span>plgd_time_load()</h2>
+<a id="gaaacf5735a112110c87ac4b0915924cf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaacf5735a112110c87ac4b0915924cf5">&#9670;&nbsp;</a></span>plgd_time_load()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool plgd_time_load </td>
+          <td class="memname">OC_API bool plgd_time_load </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -329,14 +474,14 @@ false otherwise</dd></dl>
 
 </div>
 </div>
-<a id="gad8051c5138a13ce402c6c4ecd6da975f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad8051c5138a13ce402c6c4ecd6da975f">&#9670;&nbsp;</a></span>plgd_time_seconds()</h2>
+<a id="ga3fb3aa0fe4b2a69fcf60c690301ebe83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3fb3aa0fe4b2a69fcf60c690301ebe83">&#9670;&nbsp;</a></span>plgd_time_seconds()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned long plgd_time_seconds </td>
+          <td class="memname">OC_API unsigned long plgd_time_seconds </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -349,14 +494,14 @@ false otherwise</dd></dl>
 
 </div>
 </div>
-<a id="ga03fb3807b79f3838549e7101cfe4bb59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga03fb3807b79f3838549e7101cfe4bb59">&#9670;&nbsp;</a></span>plgd_time_set_status()</h2>
+<a id="ga97288ce4140821b9267780ff8916454d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga97288ce4140821b9267780ff8916454d">&#9670;&nbsp;</a></span>plgd_time_set_status()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void plgd_time_set_status </td>
+          <td class="memname">OC_API void plgd_time_set_status </td>
           <td>(</td>
           <td class="paramtype">plgd_time_status_t&#160;</td>
           <td class="paramname"><em>status</em></td><td>)</td>
@@ -369,14 +514,14 @@ false otherwise</dd></dl>
 
 </div>
 </div>
-<a id="gaeea9fc461a676c7e3db6585709d75e6f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaeea9fc461a676c7e3db6585709d75e6f">&#9670;&nbsp;</a></span>plgd_time_set_time()</h2>
+<a id="ga6fe34e34de8fc274da3a48c2d416a787"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6fe34e34de8fc274da3a48c2d416a787">&#9670;&nbsp;</a></span>plgd_time_set_time()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int plgd_time_set_time </td>
+          <td class="memname">OC_API int plgd_time_set_time </td>
           <td>(</td>
           <td class="paramtype">oc_clock_time_t&#160;</td>
           <td class="paramname"><em>time</em></td><td>)</td>
@@ -400,14 +545,14 @@ false otherwise</dd></dl>
 
 </div>
 </div>
-<a id="ga229fe20bc4023a510048484814f4f9ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga229fe20bc4023a510048484814f4f9ac">&#9670;&nbsp;</a></span>plgd_time_status()</h2>
+<a id="ga262f704d45533cc9ae26f6d7b0edce38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga262f704d45533cc9ae26f6d7b0edce38">&#9670;&nbsp;</a></span>plgd_time_status()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">plgd_time_status_t plgd_time_status </td>
+          <td class="memname">OC_API plgd_time_status_t plgd_time_status </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -425,7 +570,7 @@ false otherwise</dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Apr 18 2023 14:31:45 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Apr 19 2023 05:52:43 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
