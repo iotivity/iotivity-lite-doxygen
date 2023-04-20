@@ -7,7 +7,7 @@ var group__doc__module__tag__common__operations =
     [ "oc_remove_delayed_callback", "group__doc__module__tag__common__operations.html#gaf0a19f95a097b7bdd451d89264bfbd80", null ],
     [ "oc_remove_delayed_callback_by_filter", "group__doc__module__tag__common__operations.html#ga5b1b876b615c11a182ac82586dec1517", null ],
     [ "oc_set_delayed_callback", "group__doc__module__tag__common__operations.html#gab239ad62e1bc74df82b8f51f91466157", null ],
-    [ "oc_set_delayed_callback_ms", "group__doc__module__tag__common__operations.html#ga08ac7b2878c5a30a2d20a61e52015684", null ],
+    [ "oc_set_delayed_callback_ms", "group__doc__module__tag__common__operations.html#ga9fdce010e251adf9dd34d1efb6279f12", null ],
     [ "oc_set_delayed_callback_ms_v1", "group__doc__module__tag__common__operations.html#ga86154e349470e80af5637322b58d9f1a", null ],
     [ "oc_set_immutable_device_identifier", "group__doc__module__tag__common__operations.html#ga627d0770c9a32e85077200765ccc18f2", null ]
 ];

@@ -93,8 +93,9 @@ $(document).ready(function(){initNavTree('oc__client__state_8h.html',''); initRe
 <div class="textblock"><code>#include &quot;messaging/coap/constants.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__endpoint_8h.html">oc_endpoint.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__ri_8h.html">oc_ri.h</a>&quot;</code><br />
-<code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="oc__compiler_8h.html">util/oc_compiler.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__blockwise_8h.html">oc_blockwise.h</a>&quot;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -150,15 +151,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a321000f991affa327b9af8ab2c005110"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoc__client__cb__t.html">oc_client_cb_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__client__state_8h.html#a321000f991affa327b9af8ab2c005110">oc_ri_find_client_cb_by_token</a> (const uint8_t *token, uint8_t token_len)</td></tr>
 <tr class="memdesc:a321000f991affa327b9af8ab2c005110"><td class="mdescLeft">&#160;</td><td class="mdescRight">find the client callback info by token  <a href="oc__client__state_8h.html#a321000f991affa327b9af8ab2c005110">More...</a><br /></td></tr>
 <tr class="separator:a321000f991affa327b9af8ab2c005110"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcade4e569fb2952046f7878c44b80f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__client__state_8h.html#afcade4e569fb2952046f7878c44b80f4">oc_ri_free_client_cbs_by_endpoint</a> (const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint)</td></tr>
-<tr class="memdesc:afcade4e569fb2952046f7878c44b80f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">free the client callback information by endpoint with code OC_CANCELLED  <a href="oc__client__state_8h.html#afcade4e569fb2952046f7878c44b80f4">More...</a><br /></td></tr>
-<tr class="separator:afcade4e569fb2952046f7878c44b80f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e9c7dd3f291b1a3601cf0b427b15333"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__client__state_8h.html#a9e9c7dd3f291b1a3601cf0b427b15333">oc_ri_free_client_cbs_by_endpoint</a> (const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint) OC_DEPRECATED(&quot;replaced by <a class="el" href="oc__client__state_8h.html#a71da0c7c205d5f436ae5dccef966b262">oc_ri_free_client_cbs_by_endpoint_v1</a> in v2.2.5.4&quot;)</td></tr>
+<tr class="memdesc:a9e9c7dd3f291b1a3601cf0b427b15333"><td class="mdescLeft">&#160;</td><td class="mdescRight">free the client callback information by endpoint with code OC_CANCELLED  <a href="oc__client__state_8h.html#a9e9c7dd3f291b1a3601cf0b427b15333">More...</a><br /></td></tr>
+<tr class="separator:a9e9c7dd3f291b1a3601cf0b427b15333"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71da0c7c205d5f436ae5dccef966b262"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__client__state_8h.html#a71da0c7c205d5f436ae5dccef966b262">oc_ri_free_client_cbs_by_endpoint_v1</a> (const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint, <a class="el" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38">oc_status_t</a> code)</td></tr>
 <tr class="memdesc:a71da0c7c205d5f436ae5dccef966b262"><td class="mdescLeft">&#160;</td><td class="mdescRight">free the client callback information by endpoint with a specific code  <a href="oc__client__state_8h.html#a71da0c7c205d5f436ae5dccef966b262">More...</a><br /></td></tr>
 <tr class="separator:a71da0c7c205d5f436ae5dccef966b262"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd4c28572243f8b7343fdc826f6a22a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__client__state_8h.html#abd4c28572243f8b7343fdc826f6a22a4">oc_ri_free_client_cbs_by_mid</a> (uint16_t mid)</td></tr>
-<tr class="memdesc:abd4c28572243f8b7343fdc826f6a22a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">free the client callback infomation by message id (mid) with code OC_CANCELLED  <a href="oc__client__state_8h.html#abd4c28572243f8b7343fdc826f6a22a4">More...</a><br /></td></tr>
-<tr class="separator:abd4c28572243f8b7343fdc826f6a22a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0beae9abbf2dec29f7437b815f96c71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__client__state_8h.html#ad0beae9abbf2dec29f7437b815f96c71">oc_ri_free_client_cbs_by_mid</a> (uint16_t mid) OC_DEPRECATED(&quot;replaced by <a class="el" href="oc__client__state_8h.html#a009f9692c8102e38dd125fcc9e32a2a2">oc_ri_free_client_cbs_by_mid_v1</a> in v2.2.5.4&quot;)</td></tr>
+<tr class="memdesc:ad0beae9abbf2dec29f7437b815f96c71"><td class="mdescLeft">&#160;</td><td class="mdescRight">free the client callback infomation by message id (mid) with code OC_CANCELLED  <a href="oc__client__state_8h.html#ad0beae9abbf2dec29f7437b815f96c71">More...</a><br /></td></tr>
+<tr class="separator:ad0beae9abbf2dec29f7437b815f96c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a009f9692c8102e38dd125fcc9e32a2a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__client__state_8h.html#a009f9692c8102e38dd125fcc9e32a2a2">oc_ri_free_client_cbs_by_mid_v1</a> (uint16_t mid, <a class="el" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38">oc_status_t</a> code)</td></tr>
 <tr class="memdesc:a009f9692c8102e38dd125fcc9e32a2a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">free the client callback infomation by message id (mid)  <a href="oc__client__state_8h.html#a009f9692c8102e38dd125fcc9e32a2a2">More...</a><br /></td></tr>
 <tr class="separator:a009f9692c8102e38dd125fcc9e32a2a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -440,8 +441,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="afcade4e569fb2952046f7878c44b80f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afcade4e569fb2952046f7878c44b80f4">&#9670;&nbsp;</a></span>oc_ri_free_client_cbs_by_endpoint()</h2>
+<a id="a9e9c7dd3f291b1a3601cf0b427b15333"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e9c7dd3f291b1a3601cf0b427b15333">&#9670;&nbsp;</a></span>oc_ri_free_client_cbs_by_endpoint()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -457,7 +458,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>free the client callback information by endpoint with code OC_CANCELLED </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>use oc_ri_free_client_cbs_by_endpoint_v1 instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>replaced by oc_ri_free_client_cbs_by_endpoint_v1 in v2.2.5.4 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">endpoint</td><td>the endpoint </td></tr>
@@ -504,8 +505,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="abd4c28572243f8b7343fdc826f6a22a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd4c28572243f8b7343fdc826f6a22a4">&#9670;&nbsp;</a></span>oc_ri_free_client_cbs_by_mid()</h2>
+<a id="ad0beae9abbf2dec29f7437b815f96c71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0beae9abbf2dec29f7437b815f96c71">&#9670;&nbsp;</a></span>oc_ri_free_client_cbs_by_mid()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -521,7 +522,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>free the client callback infomation by message id (mid) with code OC_CANCELLED </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>use oc_ri_free_client_cbs_by_mid_v1 instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>replaced by oc_ri_free_client_cbs_by_mid_v1 in v2.2.5.4 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">mid</td><td>the message id </td></tr>
@@ -762,7 +763,7 @@ false is incomplete </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__client__state_8h.html">oc_client_state.h</a></li>
-    <li class="footer">Generated on Wed Apr 19 2023 23:35:49 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Apr 20 2023 14:56:00 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
