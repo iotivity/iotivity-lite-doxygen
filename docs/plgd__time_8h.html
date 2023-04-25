@@ -97,6 +97,8 @@ $(document).ready(function(){initNavTree('plgd__time_8h.html',''); initResizable
 <code>#include &quot;<a class="el" href="oc__export_8h.html">oc_export.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__ri_8h.html">oc_ri.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__clock_8h.html">port/oc_clock.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="oc__compiler_8h.html">util/oc_compiler.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="oc__pki_8h.html">oc_pki.h</a>&quot;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -133,9 +135,12 @@ Functions</h2></td></tr>
 <tr class="memitem:gafe2d18b94ea25e34a9bc06d52e427495"><td class="memItemLeft" align="right" valign="top">OC_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__time__synchronization.html#gafe2d18b94ea25e34a9bc06d52e427495">plgd_time_fetch</a> (plgd_time_fetch_config_t fetch, unsigned *flags)</td></tr>
 <tr class="memdesc:gafe2d18b94ea25e34a9bc06d52e427495"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch time from an endpoint by a GET request.  <a href="group__time__synchronization.html#gafe2d18b94ea25e34a9bc06d52e427495">More...</a><br /></td></tr>
 <tr class="separator:gafe2d18b94ea25e34a9bc06d52e427495"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6ee4cc632d9c42febc927b0087799dd6"><td class="memItemLeft" align="right" valign="top">OC_API plgd_time_fetch_config_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__time__synchronization.html#ga6ee4cc632d9c42febc927b0087799dd6">plgd_time_fetch_config</a> (const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint, const char *uri, <a class="el" href="group__time__synchronization.html#ga082ac5a8844ef7d2fa2bcc7ac3a02edb">plgd_time_on_fetch_fn_t</a> on_fetch, void *on_fetch_data, uint16_t timeout, int selected_identity_credid, bool disable_time_verification)</td></tr>
-<tr class="memdesc:ga6ee4cc632d9c42febc927b0087799dd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience wrapper to create plgd_time_fetch_config_t from arguments.  <a href="group__time__synchronization.html#ga6ee4cc632d9c42febc927b0087799dd6">More...</a><br /></td></tr>
-<tr class="separator:ga6ee4cc632d9c42febc927b0087799dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaedfe3e272752cb003465e137e467c9bc"><td class="memItemLeft" align="right" valign="top">OC_API plgd_time_fetch_config_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__time__synchronization.html#gaedfe3e272752cb003465e137e467c9bc">plgd_time_fetch_config</a> (const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint, const char *uri, <a class="el" href="group__time__synchronization.html#ga082ac5a8844ef7d2fa2bcc7ac3a02edb">plgd_time_on_fetch_fn_t</a> on_fetch, void *on_fetch_data, uint16_t timeout, int selected_identity_credid, bool disable_time_verification) OC_NONNULL(1</td></tr>
+<tr class="memdesc:gaedfe3e272752cb003465e137e467c9bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience wrapper to create plgd_time_fetch_config_t with default \ verification function.  <a href="group__time__synchronization.html#gaedfe3e272752cb003465e137e467c9bc">More...</a><br /></td></tr>
+<tr class="separator:gaedfe3e272752cb003465e137e467c9bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga306a47d107b6f89a77e7c253d8918491"><td class="memItemLeft" align="right" valign="top">OC_API plgd_time_fetch_config_t OC_API plgd_time_fetch_config_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__time__synchronization.html#ga306a47d107b6f89a77e7c253d8918491">plgd_time_fetch_config_with_custom_verification</a> (const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint, const char *uri, <a class="el" href="group__time__synchronization.html#ga082ac5a8844ef7d2fa2bcc7ac3a02edb">plgd_time_on_fetch_fn_t</a> on_fetch, void *on_fetch_data, uint16_t timeout, int selected_identity_credid, <a class="el" href="oc__pki_8h.html#a96373a3f65a5a29bafab923471f8aa3a">oc_pki_verify_certificate_cb_t</a> verify, oc_pki_user_data_t verify_data) OC_NONNULL(1</td></tr>
+<tr class="memdesc:ga306a47d107b6f89a77e7c253d8918491"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience wrapper to create plgd_time_fetch_config_t with a custom verification function.  <a href="group__time__synchronization.html#ga306a47d107b6f89a77e7c253d8918491">More...</a><br /></td></tr>
+<tr class="separator:ga306a47d107b6f89a77e7c253d8918491"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2765adfd7965d198d07e817cc5670201"><td class="memItemLeft" align="right" valign="top">OC_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__time__synchronization.html#ga2765adfd7965d198d07e817cc5670201">plgd_time_is_active</a> (void)</td></tr>
 <tr class="memdesc:ga2765adfd7965d198d07e817cc5670201"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plgd time is active (ie it is set to a valid, non-zero value).  <a href="group__time__synchronization.html#ga2765adfd7965d198d07e817cc5670201">More...</a><br /></td></tr>
 <tr class="separator:ga2765adfd7965d198d07e817cc5670201"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,7 +172,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_e98b4db3a3aa25c6ab8af28bcd62737a.html">plgd</a></li><li class="navelem"><a class="el" href="plgd__time_8h.html">plgd_time.h</a></li>
-    <li class="footer">Generated on Fri Apr 21 2023 10:21:58 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Apr 25 2023 18:08:19 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
