@@ -1,5 +1,16 @@
 var NAVTREEINDEX5 =
 {
+"oc__ri_8h.html#a83161604a805e3a951254864d16a714fa2bad92425c2ebbccd9821c76dcc0681e":[4,0,36,26,41],
+"oc__ri_8h.html#a83161604a805e3a951254864d16a714fa34e0444167037fcb8635e251881d11dc":[4,0,36,26,8],
+"oc__ri_8h.html#a83161604a805e3a951254864d16a714fa380457d9202d92da2ab64af3df39f208":[4,0,36,26,29],
+"oc__ri_8h.html#a83161604a805e3a951254864d16a714fa495e8756329b5c7d5115ba9261c95777":[4,0,36,26,36],
+"oc__ri_8h.html#a83161604a805e3a951254864d16a714fa4d093eeacb23c4a26f053b0e3ca618d8":[4,0,36,26,6],
+"oc__ri_8h.html#a83161604a805e3a951254864d16a714fa51e0dc9a11a2eb6c5220f0a5fdae22d5":[4,0,36,26,33],
+"oc__ri_8h.html#a83161604a805e3a951254864d16a714fa51e4c9c0968dba0df5043a7d25f4e932":[4,0,36,26,25],
+"oc__ri_8h.html#a83161604a805e3a951254864d16a714fa52ca5e0c6552a1c464539824e3047042":[4,0,36,26,38],
+"oc__ri_8h.html#a83161604a805e3a951254864d16a714fa542c384df4dfd5696439f191db7f2cac":[4,0,36,26,15],
+"oc__ri_8h.html#a83161604a805e3a951254864d16a714fa5dd3a1766e3862f35f7a333279d650c1":[4,0,36,26,4],
+"oc__ri_8h.html#a83161604a805e3a951254864d16a714fa633dae7b894e5dec21d3fe5ee889c1de":[4,0,36,26,30],
 "oc__ri_8h.html#a83161604a805e3a951254864d16a714fa6563ce58a5ccb28f4c84c8eaa1bbf110":[4,0,36,26,22],
 "oc__ri_8h.html#a83161604a805e3a951254864d16a714fa75057ddd8df3415419de12a3404d1002":[4,0,36,26,37],
 "oc__ri_8h.html#a83161604a805e3a951254864d16a714fa7962c09c0e9f813b4525357875b5754f":[4,0,36,26,28],
@@ -238,16 +249,5 @@ var NAVTREEINDEX5 =
 "structoc__ipv4__addr__t.html#a8e0798404bf2cf5dabb84c5ba9a4f236":[3,0,12,1],
 "structoc__ipv4__addr__t.html#addf23a7962e43c9ba2ed54c76bd937d3":[3,0,12,0],
 "structoc__ipv6__addr__t.html":[3,0,13],
-"structoc__ipv6__addr__t.html#a8e0798404bf2cf5dabb84c5ba9a4f236":[3,0,13,1],
-"structoc__ipv6__addr__t.html#aad9c61920b7ad19972cb4d83d1180eea":[3,0,13,2],
-"structoc__ipv6__addr__t.html#ae4879450c8041e3ab7fd9d958557f826":[3,0,13,0],
-"structoc__le__addr__t.html":[3,0,14],
-"structoc__le__addr__t.html#a1d127017fb298b889f4ba24752d08b8e":[3,0,14,1],
-"structoc__le__addr__t.html#a3859a5a24fa98fcde6ab0e29800d2318":[3,0,14,0],
-"structoc__platform__info__t.html":[3,0,15],
-"structoc__platform__info__t.html#a36a79f70b8fc2377193e9fbdedcea6c9":[3,0,15,2],
-"structoc__platform__info__t.html#a5c1f98ebf57c76a495ad7e274ad97491":[3,0,15,1],
-"structoc__platform__info__t.html#a735984d41155bc1032e09bece8f8d66d":[3,0,15,0],
-"structoc__platform__info__t.html#af8e573c743c9640018fbea887401e3f7":[3,0,15,3],
-"structoc__properties__cb__t.html":[3,0,16]
+"structoc__ipv6__addr__t.html#a8e0798404bf2cf5dabb84c5ba9a4f236":[3,0,13,1]
 };

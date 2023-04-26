@@ -82,227 +82,315 @@ $(document).ready(function(){initNavTree('oc__log_8h.html',''); initResizable();
 
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">oc_log.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>generic logging functions:  
+<p>OCF public log functions.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
-<code>#include &lt;string.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="oc__clock__util_8h.html">oc_clock_util.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="oc__export_8h.html">oc_export.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="oc__compiler_8h.html">util/oc_compiler.h</a>&quot;</code><br />
+<code>#include &lt;stddef.h&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a5fccb4fc71e44089a1b1a77fc76c0b68"><td class="memItemLeft" align="right" valign="top"><a id="a5fccb4fc71e44089a1b1a77fc76c0b68"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>__FILENAME__</b>&#160;&#160;&#160;  (strrchr(__FILE__, '/') ? strrchr(__FILE__, '/') + 1 : __FILE__)</td></tr>
-<tr class="separator:a5fccb4fc71e44089a1b1a77fc76c0b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7b46e6f72cb7c2de32ad2e5030d871c"><td class="memItemLeft" align="right" valign="top"><a id="aa7b46e6f72cb7c2de32ad2e5030d871c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>IPADDR_BUFF_SIZE</b>&#160;&#160;&#160;64</td></tr>
-<tr class="separator:aa7b46e6f72cb7c2de32ad2e5030d871c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92e7d136e854c384068ed8bf9ebca684"><td class="memItemLeft" align="right" valign="top"><a id="a92e7d136e854c384068ed8bf9ebca684"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>OC_DBG</b>(...)&#160;&#160;&#160;OC_LOG(&quot;D&quot;, __VA_ARGS__)</td></tr>
-<tr class="separator:a92e7d136e854c384068ed8bf9ebca684"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac275aa540524be46c16e634e3f7cbae1"><td class="memItemLeft" align="right" valign="top"><a id="ac275aa540524be46c16e634e3f7cbae1"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>OC_ERR</b>(...)&#160;&#160;&#160;OC_LOG(&quot;E&quot;, __VA_ARGS__)</td></tr>
-<tr class="separator:ac275aa540524be46c16e634e3f7cbae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab15cf53dbc666b8541a75154ed5653d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>OC_LOG</b>(level, ...)</td></tr>
-<tr class="separator:ab15cf53dbc666b8541a75154ed5653d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fea838f4be733a6ee72284a1a090081"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>OC_LOGbytes</b>(bytes,  length)</td></tr>
-<tr class="separator:a7fea838f4be733a6ee72284a1a090081"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c5fe60da598b67e7f1c3f2041163065"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>OC_LOGipaddr</b>(endpoint)</td></tr>
-<tr class="separator:a4c5fe60da598b67e7f1c3f2041163065"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad111c2e3d57fcb638d9a4ba053bd3d3a"><td class="memItemLeft" align="right" valign="top"><a id="ad111c2e3d57fcb638d9a4ba053bd3d3a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>OC_WRN</b>(...)&#160;&#160;&#160;OC_LOG(&quot;W&quot;, __VA_ARGS__)</td></tr>
-<tr class="separator:ad111c2e3d57fcb638d9a4ba053bd3d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15bb631053a1fce9c5470701900984c7"><td class="memItemLeft" align="right" valign="top"><a id="a15bb631053a1fce9c5470701900984c7"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>PRINT</b>(...)&#160;&#160;&#160;printf(__VA_ARGS__)</td></tr>
-<tr class="separator:a15bb631053a1fce9c5470701900984c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0a1dd7481629e6607ebcc655721daad"><td class="memItemLeft" align="right" valign="top"><a id="ab0a1dd7481629e6607ebcc655721daad"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>PRINT_ENDPOINT_ADDR</b>(endpoint,  addr_memb)</td></tr>
-<tr class="separator:ab0a1dd7481629e6607ebcc655721daad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a013f76c40c9e6392dc45593b9012a5c9"><td class="memItemLeft" align="right" valign="top"><a id="a013f76c40c9e6392dc45593b9012a5c9"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>PRINTipaddr</b>(endpoint)&#160;&#160;&#160;PRINT_ENDPOINT_ADDR(endpoint, addr)</td></tr>
-<tr class="separator:a013f76c40c9e6392dc45593b9012a5c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e518f99bb71a46757899f401b28ecbc"><td class="memItemLeft" align="right" valign="top"><a id="a5e518f99bb71a46757899f401b28ecbc"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>PRINTipaddr_local</b>(endpoint)&#160;&#160;&#160;PRINT_ENDPOINT_ADDR(endpoint, addr_local)</td></tr>
-<tr class="separator:a5e518f99bb71a46757899f401b28ecbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8616c1a6f794ff9d14b3f5204413a1cc"><td class="memItemLeft" align="right" valign="top"><a id="a8616c1a6f794ff9d14b3f5204413a1cc"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SNPRINTF</b>(...)&#160;&#160;&#160;snprintf(__VA_ARGS__)</td></tr>
-<tr class="separator:a8616c1a6f794ff9d14b3f5204413a1cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6b2550b0bcf2043338794478a99c449"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>SNPRINTFbytes</b>(buff,  size,  data,  len)</td></tr>
-<tr class="separator:ae6b2550b0bcf2043338794478a99c449"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40d27382b804b94b12e8ca5f92393768"><td class="memItemLeft" align="right" valign="top"><a id="a40d27382b804b94b12e8ca5f92393768"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SNPRINTFipaddr</b>(str,  size,  endpoint)</td></tr>
-<tr class="separator:a40d27382b804b94b12e8ca5f92393768"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a873447b78151dd35f9ab11285c2b8c"><td class="memItemLeft" align="right" valign="top"><a id="a1a873447b78151dd35f9ab11285c2b8c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SPRINTF</b>(...)&#160;&#160;&#160;sprintf(__VA_ARGS__)</td></tr>
-<tr class="separator:a1a873447b78151dd35f9ab11285c2b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c74a5c1647dffc04dd57db11bf01fd2"><td class="memItemLeft" align="right" valign="top"><a id="a6c74a5c1647dffc04dd57db11bf01fd2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>OC_LOG_LEVEL_DEBUG_MACRO</b>&#160;&#160;&#160;(7)</td></tr>
+<tr class="separator:a6c74a5c1647dffc04dd57db11bf01fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa562b08b172feca88497a043c4fae524"><td class="memItemLeft" align="right" valign="top"><a id="aa562b08b172feca88497a043c4fae524"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>OC_LOG_LEVEL_DISABLED_MACRO</b>&#160;&#160;&#160;(-1)</td></tr>
+<tr class="separator:aa562b08b172feca88497a043c4fae524"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af107ba9bcb556f8e3c45caf033456334"><td class="memItemLeft" align="right" valign="top"><a id="af107ba9bcb556f8e3c45caf033456334"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>OC_LOG_LEVEL_ERROR_MACRO</b>&#160;&#160;&#160;(3)</td></tr>
+<tr class="separator:af107ba9bcb556f8e3c45caf033456334"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad280de24970a9d8f740af3379d2d8af2"><td class="memItemLeft" align="right" valign="top"><a id="ad280de24970a9d8f740af3379d2d8af2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>OC_LOG_LEVEL_INFO_MACRO</b>&#160;&#160;&#160;(6)</td></tr>
+<tr class="separator:ad280de24970a9d8f740af3379d2d8af2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1b72ed009c70b28d5f951d40cc8de69"><td class="memItemLeft" align="right" valign="top"><a id="ae1b72ed009c70b28d5f951d40cc8de69"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>OC_LOG_LEVEL_IS_ENABLED</b>(level)&#160;&#160;&#160;(0)</td></tr>
+<tr class="separator:ae1b72ed009c70b28d5f951d40cc8de69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec86d0cd0ca5e132da9859e8fcb8a7a8"><td class="memItemLeft" align="right" valign="top"><a id="aec86d0cd0ca5e132da9859e8fcb8a7a8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>OC_LOG_LEVEL_NOTICE_MACRO</b>&#160;&#160;&#160;(5)</td></tr>
+<tr class="separator:aec86d0cd0ca5e132da9859e8fcb8a7a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab735a295d3e3a47d64a2820f523bb357"><td class="memItemLeft" align="right" valign="top"><a id="ab735a295d3e3a47d64a2820f523bb357"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>OC_LOG_LEVEL_TRACE_MACRO</b>&#160;&#160;&#160;(8)</td></tr>
+<tr class="separator:ab735a295d3e3a47d64a2820f523bb357"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad832b955ac77039dcf9443a0cf87f681"><td class="memItemLeft" align="right" valign="top"><a id="ad832b955ac77039dcf9443a0cf87f681"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>OC_LOG_LEVEL_WARNING_MACRO</b>&#160;&#160;&#160;(4)</td></tr>
+<tr class="separator:ad832b955ac77039dcf9443a0cf87f681"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:af1be784ef6446e663bf13d4fe74eaa5b"><td class="memItemLeft" align="right" valign="top"><a id="af1be784ef6446e663bf13d4fe74eaa5b"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>OC_NONNULL</b>) ()</td></tr>
+<tr class="separator:af1be784ef6446e663bf13d4fe74eaa5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19ab34b5cdfe3f9925de7418bca9af4e"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__log_8h.html#a19ab34b5cdfe3f9925de7418bca9af4e">oc_print_log_fn_t</a>) (<a class="el" href="oc__log_8h.html#abf655f01c4ec91ee48607f5441c45df9">oc_log_level_t</a> level, <a class="el" href="oc__log_8h.html#a51c20822e2ed76081cd103d806e1984f">oc_log_component_t</a> component, const char *file, int line, const char *func_name, const char *format,...) OC_PRINTF_FORMAT(6</td></tr>
+<tr class="memdesc:a19ab34b5cdfe3f9925de7418bca9af4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Custom logging function.  <a href="oc__log_8h.html#a19ab34b5cdfe3f9925de7418bca9af4e">More...</a><br /></td></tr>
+<tr class="separator:a19ab34b5cdfe3f9925de7418bca9af4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a51c20822e2ed76081cd103d806e1984f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__log_8h.html#a51c20822e2ed76081cd103d806e1984f">oc_log_component_t</a> { <a class="el" href="oc__log_8h.html#a51c20822e2ed76081cd103d806e1984fa86d1b63ed043b4c72ad9bdd7b84383b7">OC_LOG_COMPONENT_DEFAULT</a> = 1 &lt;&lt; 0
+ }</td></tr>
+<tr class="memdesc:a51c20822e2ed76081cd103d806e1984f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log component determines the source of the message.  <a href="oc__log_8h.html#a51c20822e2ed76081cd103d806e1984f">More...</a><br /></td></tr>
+<tr class="separator:a51c20822e2ed76081cd103d806e1984f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf655f01c4ec91ee48607f5441c45df9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__log_8h.html#abf655f01c4ec91ee48607f5441c45df9">oc_log_level_t</a> { <br />
+&#160;&#160;<a class="el" href="oc__log_8h.html#abf655f01c4ec91ee48607f5441c45df9a61a0af6662f07a2b17f0f56e2c08a19e">OC_LOG_LEVEL_DISABLED</a> = OC_LOG_LEVEL_DISABLED_MACRO
+, <a class="el" href="oc__log_8h.html#abf655f01c4ec91ee48607f5441c45df9a67fd5d8647c24105b18e4fb494797c64">OC_LOG_LEVEL_ERROR</a> = OC_LOG_LEVEL_ERROR_MACRO
+, <a class="el" href="oc__log_8h.html#abf655f01c4ec91ee48607f5441c45df9a9daf93c79cdf339495883dd87e6694ce">OC_LOG_LEVEL_WARNING</a> = OC_LOG_LEVEL_WARNING_MACRO
+, <a class="el" href="oc__log_8h.html#abf655f01c4ec91ee48607f5441c45df9a8f8a1055db7c1f8512378ad81e4ee476">OC_LOG_LEVEL_NOTICE</a>
+, <br />
+&#160;&#160;<a class="el" href="oc__log_8h.html#abf655f01c4ec91ee48607f5441c45df9afbe1408c4d2140d65b93dbb033578a9a">OC_LOG_LEVEL_INFO</a> = OC_LOG_LEVEL_INFO_MACRO
+, <a class="el" href="oc__log_8h.html#abf655f01c4ec91ee48607f5441c45df9af27109afdaacfdb66fb5948a86e03675">OC_LOG_LEVEL_DEBUG</a> = OC_LOG_LEVEL_DEBUG_MACRO
+, <a class="el" href="oc__log_8h.html#abf655f01c4ec91ee48607f5441c45df9ab6dfd07f3e0182841ac8de2cad36dbd1">OC_LOG_LEVEL_TRACE</a> = OC_LOG_LEVEL_TRACE_MACRO
+<br />
+ }</td></tr>
+<tr class="memdesc:abf655f01c4ec91ee48607f5441c45df9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log level determines the importance of the message.  <a href="oc__log_8h.html#abf655f01c4ec91ee48607f5441c45df9">More...</a><br /></td></tr>
+<tr class="separator:abf655f01c4ec91ee48607f5441c45df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ac47fea1c4fd3a8293a0022c72c518e89"><td class="memItemLeft" align="right" valign="top">OC_API const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__log_8h.html#ac47fea1c4fd3a8293a0022c72c518e89">oc_log_component_name</a> (<a class="el" href="oc__log_8h.html#a51c20822e2ed76081cd103d806e1984f">oc_log_component_t</a> component) OC_RETURNS_NONNULL</td></tr>
+<tr class="memdesc:ac47fea1c4fd3a8293a0022c72c518e89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get component name.  <a href="oc__log_8h.html#ac47fea1c4fd3a8293a0022c72c518e89">More...</a><br /></td></tr>
+<tr class="separator:ac47fea1c4fd3a8293a0022c72c518e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cadc4d2b6ef015084f669736b56ca76"><td class="memItemLeft" align="right" valign="top">OC_API <a class="el" href="oc__log_8h.html#abf655f01c4ec91ee48607f5441c45df9">oc_log_level_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__log_8h.html#a6cadc4d2b6ef015084f669736b56ca76">oc_log_get_level</a> (void)</td></tr>
+<tr class="memdesc:a6cadc4d2b6ef015084f669736b56ca76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get log level of the global logger.  <a href="oc__log_8h.html#a6cadc4d2b6ef015084f669736b56ca76">More...</a><br /></td></tr>
+<tr class="separator:a6cadc4d2b6ef015084f669736b56ca76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a3fe1eb490914dbe14027f16d8c0fce"><td class="memItemLeft" align="right" valign="top">OC_API const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__log_8h.html#a4a3fe1eb490914dbe14027f16d8c0fce">oc_log_level_to_label</a> (<a class="el" href="oc__log_8h.html#abf655f01c4ec91ee48607f5441c45df9">oc_log_level_t</a> level) OC_RETURNS_NONNULL</td></tr>
+<tr class="memdesc:a4a3fe1eb490914dbe14027f16d8c0fce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert log level to string.  <a href="oc__log_8h.html#a4a3fe1eb490914dbe14027f16d8c0fce">More...</a><br /></td></tr>
+<tr class="separator:a4a3fe1eb490914dbe14027f16d8c0fce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac837959830378e8f68dbf5343777d9a2"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__log_8h.html#ac837959830378e8f68dbf5343777d9a2">oc_log_set_function</a> (<a class="el" href="oc__log_8h.html#a19ab34b5cdfe3f9925de7418bca9af4e">oc_print_log_fn_t</a> log_func)</td></tr>
+<tr class="memdesc:ac837959830378e8f68dbf5343777d9a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set log callback function.  <a href="oc__log_8h.html#ac837959830378e8f68dbf5343777d9a2">More...</a><br /></td></tr>
+<tr class="separator:ac837959830378e8f68dbf5343777d9a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e7ce64f812e071f9a52a4b6b31880b0"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__log_8h.html#a7e7ce64f812e071f9a52a4b6b31880b0">oc_log_set_level</a> (<a class="el" href="oc__log_8h.html#abf655f01c4ec91ee48607f5441c45df9">oc_log_level_t</a> level)</td></tr>
+<tr class="memdesc:a7e7ce64f812e071f9a52a4b6b31880b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set log level of the global logger, logs with lower importance will be ignored.  <a href="oc__log_8h.html#a7e7ce64f812e071f9a52a4b6b31880b0">More...</a><br /></td></tr>
+<tr class="separator:a7e7ce64f812e071f9a52a4b6b31880b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>generic logging functions: </p>
-<ul>
-<li>OC_LOGipaddr prints the endpoint information to stdout</li>
-<li>OC_LOGbytes prints the bytes to stdout</li>
-<li>OC_DBG prints information as Debug level</li>
-<li>OC_WRN prints information as Warning level</li>
-<li>OC_ERR prints information as Error level</li>
-</ul>
-<p>compile flags:</p><ul>
-<li>OC_DEBUG enables output of logging functions</li>
-<li>OC_NO_LOG_BYTES disables output of OC_LOGbytes logging function if OC_DEBUG is enabled. </li>
-</ul>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ab15cf53dbc666b8541a75154ed5653d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab15cf53dbc666b8541a75154ed5653d4">&#9670;&nbsp;</a></span>OC_LOG</h2>
+<div class="textblock"><p>OCF public log functions. </p>
+<p>Allow to set log callback function and level.</p>
+<dl class="section author"><dt>Author</dt><dd>Jozef Kralik, Daniel Adam </dd></dl>
+</div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="a19ab34b5cdfe3f9925de7418bca9af4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19ab34b5cdfe3f9925de7418bca9af4e">&#9670;&nbsp;</a></span>oc_print_log_fn_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define OC_LOG</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">level, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>...</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">typedef void(* oc_print_log_fn_t) (<a class="el" href="oc__log_8h.html#abf655f01c4ec91ee48607f5441c45df9">oc_log_level_t</a> level, <a class="el" href="oc__log_8h.html#a51c20822e2ed76081cd103d806e1984f">oc_log_component_t</a> component, const char *file, int line, const char *func_name, const char *format,...) OC_PRINTF_FORMAT(6</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                         \</div>
-<div class="line">    char oc_log_fn_buf[64] = { 0 };                                            \</div>
-<div class="line">    oc_clock_time_rfc3339(oc_log_fn_buf, <span class="keyword">sizeof</span>(oc_log_fn_buf));               \</div>
-<div class="line">    PRINT(<span class="stringliteral">&quot;[OC %s] %s: %s &lt;%s:%d&gt;: &quot;</span>, oc_log_fn_buf, level, __FILENAME__,      \</div>
-<div class="line">          __func__, __LINE__);                                                 \</div>
-<div class="line">    PRINT(__VA_ARGS__);                                                        \</div>
-<div class="line">    PRINT(<span class="stringliteral">&quot;\n&quot;</span>);                                                               \</div>
-<div class="line">    fflush(stdout);                                                            \</div>
-<div class="line">  } <span class="keywordflow">while</span> (0)</div>
-</div><!-- fragment -->
+
+<p>Custom logging function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>log level of the message </td></tr>
+    <tr><td class="paramname">component</td><td>log component of the message </td></tr>
+    <tr><td class="paramname">file</td><td>file of the log message call </td></tr>
+    <tr><td class="paramname">line</td><td>line of the log message call in <code>file</code> </td></tr>
+    <tr><td class="paramname">func_name</td><td>function name in which the log message call is invoked </td></tr>
+    <tr><td class="paramname">format</td><td>format of the log message </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a7fea838f4be733a6ee72284a1a090081"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7fea838f4be733a6ee72284a1a090081">&#9670;&nbsp;</a></span>OC_LOGbytes</h2>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a51c20822e2ed76081cd103d806e1984f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51c20822e2ed76081cd103d806e1984f">&#9670;&nbsp;</a></span>oc_log_component_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define OC_LOGbytes</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">bytes, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">length&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">enum <a class="el" href="oc__log_8h.html#a51c20822e2ed76081cd103d806e1984f">oc_log_component_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                         \</div>
-<div class="line">    char oc_log_fn_buf[64] = { 0 };                                            \</div>
-<div class="line">    oc_clock_time_rfc3339(oc_log_fn_buf, <span class="keyword">sizeof</span>(oc_log_fn_buf));               \</div>
-<div class="line">    PRINT(<span class="stringliteral">&quot;[OC %s] D: %s &lt;%s:%d&gt;: &quot;</span>, oc_log_fn_buf, __FILENAME__, __func__,    \</div>
-<div class="line">          __LINE__);                                                           \</div>
-<div class="line">    for (<span class="keywordtype">size_t</span> i = 0; i &lt; (size_t)(length); i++)                              \</div>
-<div class="line">      PRINT(<span class="stringliteral">&quot; %02X&quot;</span>, (bytes)[i]);                                              \</div>
-<div class="line">    PRINT(<span class="stringliteral">&quot;\n&quot;</span>);                                                               \</div>
-<div class="line">    fflush(stdout);                                                            \</div>
-<div class="line">  } <span class="keywordflow">while</span> (0)</div>
-</div><!-- fragment -->
+
+<p>Log component determines the source of the message. </p>
+<p>The components are defined as bit flags. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a51c20822e2ed76081cd103d806e1984fa86d1b63ed043b4c72ad9bdd7b84383b7"></a>OC_LOG_COMPONENT_DEFAULT&#160;</td><td class="fielddoc"><p>default, non-specific component </p>
+</td></tr>
+</table>
+
 </div>
 </div>
-<a id="a4c5fe60da598b67e7f1c3f2041163065"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c5fe60da598b67e7f1c3f2041163065">&#9670;&nbsp;</a></span>OC_LOGipaddr</h2>
+<a id="abf655f01c4ec91ee48607f5441c45df9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf655f01c4ec91ee48607f5441c45df9">&#9670;&nbsp;</a></span>oc_log_level_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define OC_LOGipaddr</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">endpoint</td><td>)</td>
-          <td></td>
+          <td class="memname">enum <a class="el" href="oc__log_8h.html#abf655f01c4ec91ee48607f5441c45df9">oc_log_level_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                         \</div>
-<div class="line">    char oc_log_fn_buf[64] = { 0 };                                            \</div>
-<div class="line">    oc_clock_time_rfc3339(oc_log_fn_buf, <span class="keyword">sizeof</span>(oc_log_fn_buf));               \</div>
-<div class="line">    PRINT(<span class="stringliteral">&quot;[OC %s] D: %s &lt;%s:%d&gt;: &quot;</span>, oc_log_fn_buf, __FILENAME__, __func__,    \</div>
-<div class="line">          __LINE__);                                                           \</div>
-<div class="line">    PRINTipaddr(endpoint);                                                     \</div>
-<div class="line">    PRINT(<span class="stringliteral">&quot;\n&quot;</span>);                                                               \</div>
-<div class="line">    fflush(stdout);                                                            \</div>
-<div class="line">  } <span class="keywordflow">while</span> (0)</div>
-</div><!-- fragment -->
+
+<p>Log level determines the importance of the message. </p>
+<p>The levels are in order of decreasing importance. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abf655f01c4ec91ee48607f5441c45df9a61a0af6662f07a2b17f0f56e2c08a19e"></a>OC_LOG_LEVEL_DISABLED&#160;</td><td class="fielddoc"><p>disable logging </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abf655f01c4ec91ee48607f5441c45df9a67fd5d8647c24105b18e4fb494797c64"></a>OC_LOG_LEVEL_ERROR&#160;</td><td class="fielddoc"><p>error conditions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abf655f01c4ec91ee48607f5441c45df9a9daf93c79cdf339495883dd87e6694ce"></a>OC_LOG_LEVEL_WARNING&#160;</td><td class="fielddoc"><p>warning conditions </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abf655f01c4ec91ee48607f5441c45df9a8f8a1055db7c1f8512378ad81e4ee476"></a>OC_LOG_LEVEL_NOTICE&#160;</td><td class="fielddoc"><p>normal, but significant condition </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abf655f01c4ec91ee48607f5441c45df9afbe1408c4d2140d65b93dbb033578a9a"></a>OC_LOG_LEVEL_INFO&#160;</td><td class="fielddoc"><p>informational message </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abf655f01c4ec91ee48607f5441c45df9af27109afdaacfdb66fb5948a86e03675"></a>OC_LOG_LEVEL_DEBUG&#160;</td><td class="fielddoc"><p>debug level message </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abf655f01c4ec91ee48607f5441c45df9ab6dfd07f3e0182841ac8de2cad36dbd1"></a>OC_LOG_LEVEL_TRACE&#160;</td><td class="fielddoc"><p>trace level message </p>
+</td></tr>
+</table>
+
 </div>
 </div>
-<a id="ae6b2550b0bcf2043338794478a99c449"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6b2550b0bcf2043338794478a99c449">&#9670;&nbsp;</a></span>SNPRINTFbytes</h2>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ac47fea1c4fd3a8293a0022c72c518e89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac47fea1c4fd3a8293a0022c72c518e89">&#9670;&nbsp;</a></span>oc_log_component_name()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define SNPRINTFbytes</td>
+          <td class="memname">OC_API const char* oc_log_component_name </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">buff, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="oc__log_8h.html#a51c20822e2ed76081cd103d806e1984f">oc_log_component_t</a>&#160;</td>
+          <td class="paramname"><em>component</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">size, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">data, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">len&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                         \</div>
-<div class="line">    char *beg = (buff);                                                        \</div>
-<div class="line">    char *end = (buff) + (size);                                               \</div>
-<div class="line">    for (<span class="keywordtype">size_t</span> i = 0; beg &lt;= (end - 3) &amp;&amp; i &lt; (len); i++) {                   \</div>
-<div class="line">      beg += (i == 0) ? SPRINTF(beg, <span class="stringliteral">&quot;%02x&quot;</span>, (data)[i])                        \</div>
-<div class="line">                      : SPRINTF(beg, <span class="stringliteral">&quot;:%02x&quot;</span>, (data)[i]);                      \</div>
-<div class="line">    }                                                                          \</div>
-<div class="line">  } <span class="keywordflow">while</span> (0)</div>
-</div><!-- fragment -->
+
+<p>Get component name. </p>
+<p>It is thread safe.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">component</td><td>Component type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>const char* Name of a component. </dd>
+<dd>
+Empty string for an invalid IoTivity-lite component type. </dd></dl>
+
+</div>
+</div>
+<a id="a6cadc4d2b6ef015084f669736b56ca76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cadc4d2b6ef015084f669736b56ca76">&#9670;&nbsp;</a></span>oc_log_get_level()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OC_API <a class="el" href="oc__log_8h.html#abf655f01c4ec91ee48607f5441c45df9">oc_log_level_t</a> oc_log_get_level </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get log level of the global logger. </p>
+<p>It is thread safe.</p>
+<dl class="section return"><dt>Returns</dt><dd>Log level </dd></dl>
+
+</div>
+</div>
+<a id="a4a3fe1eb490914dbe14027f16d8c0fce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a3fe1eb490914dbe14027f16d8c0fce">&#9670;&nbsp;</a></span>oc_log_level_to_label()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OC_API const char* oc_log_level_to_label </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="oc__log_8h.html#abf655f01c4ec91ee48607f5441c45df9">oc_log_level_t</a>&#160;</td>
+          <td class="paramname"><em>level</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert log level to string. </p>
+<p>It is thread safe.</p>
+<dl class="section return"><dt>Returns</dt><dd>Log level in const char *. </dd>
+<dd>
+Empty string for an invalid log level value </dd></dl>
+
+</div>
+</div>
+<a id="ac837959830378e8f68dbf5343777d9a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac837959830378e8f68dbf5343777d9a2">&#9670;&nbsp;</a></span>oc_log_set_function()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OC_API void oc_log_set_function </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="oc__log_8h.html#a19ab34b5cdfe3f9925de7418bca9af4e">oc_print_log_fn_t</a>&#160;</td>
+          <td class="paramname"><em>log_func</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set log callback function. </p>
+<p>It is recommended to set it before oc_main_init because it is not thread safe.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">log_func</td><td>Log callback function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>If log_func is NULL, the default log function will be used which prints to a message in format "[OC &lt;rfc3339 time&gt;] &lt;label&gt;: &lt;filename&gt;:&lt;line&gt;
+&lt;message&gt;" to stdout. </dd></dl>
+
+</div>
+</div>
+<a id="a7e7ce64f812e071f9a52a4b6b31880b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e7ce64f812e071f9a52a4b6b31880b0">&#9670;&nbsp;</a></span>oc_log_set_level()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OC_API void oc_log_set_level </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="oc__log_8h.html#abf655f01c4ec91ee48607f5441c45df9">oc_log_level_t</a>&#160;</td>
+          <td class="paramname"><em>level</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set log level of the global logger, logs with lower importance will be ignored. </p>
+<p>It is thread safe.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>Log level </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>If log level is not set, the default log level is OC_LOG_LEVEL_INFO. </dd></dl>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -310,8 +398,8 @@ Macros</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_651562d8bf6cfd3e81eff5b570d7df50.html">port</a></li><li class="navelem"><a class="el" href="oc__log_8h.html">oc_log.h</a></li>
-    <li class="footer">Generated on Tue Apr 25 2023 18:08:19 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__log_8h.html">oc_log.h</a></li>
+    <li class="footer">Generated on Wed Apr 26 2023 00:56:02 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
