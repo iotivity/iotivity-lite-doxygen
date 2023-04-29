@@ -58,8 +58,8 @@ var NAVTREEINDEX =
 "oc__certs_8h.html#a6cdc73130a7aa909460302b3f00fd349",
 "oc__enums_8h.html#a2a2e721367a0c1e572142ab3366a1272a26f0b38b09ba49ff30a39b7a020fbec8",
 "oc__network__monitor_8h.html#aa4673b2a3ac20f1b3c42fa052ffbecfe",
-"oc__ri_8h.html#a83161604a805e3a951254864d16a714fa2bad92425c2ebbccd9821c76dcc0681e",
-"structoc__ipv6__addr__t.html#aad9c61920b7ad19972cb4d83d1180eea"
+"oc__ri_8h.html#a83161604a805e3a951254864d16a714fa071adccc564ca4e02b58bca2a2fc6956",
+"structoc__handler__t.html#a919d218b198dc7286a98d486aab5d91b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

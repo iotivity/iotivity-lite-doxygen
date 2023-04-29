@@ -1,5 +1,12 @@
 var NAVTREEINDEX5 =
 {
+"oc__ri_8h.html#a83161604a805e3a951254864d16a714fa071adccc564ca4e02b58bca2a2fc6956":[4,0,36,26,19],
+"oc__ri_8h.html#a83161604a805e3a951254864d16a714fa0ae498716a4a369246c762674e6ae68f":[4,0,36,26,13],
+"oc__ri_8h.html#a83161604a805e3a951254864d16a714fa1bb340e9e188cf6694bc2828453518dc":[4,0,36,26,34],
+"oc__ri_8h.html#a83161604a805e3a951254864d16a714fa21d8199d9c33c195bbaaf0ae2daf4b78":[4,0,36,26,32],
+"oc__ri_8h.html#a83161604a805e3a951254864d16a714fa252083752bec883e8a18da49c4b0a64b":[4,0,36,26,18],
+"oc__ri_8h.html#a83161604a805e3a951254864d16a714fa266c47aec5d84f84943411f9e27be878":[4,0,36,26,12],
+"oc__ri_8h.html#a83161604a805e3a951254864d16a714fa28a93b9a2126ecec7a5ec6c434298ab3":[4,0,36,26,26],
 "oc__ri_8h.html#a83161604a805e3a951254864d16a714fa2bad92425c2ebbccd9821c76dcc0681e":[4,0,36,26,41],
 "oc__ri_8h.html#a83161604a805e3a951254864d16a714fa34e0444167037fcb8635e251881d11dc":[4,0,36,26,8],
 "oc__ri_8h.html#a83161604a805e3a951254864d16a714fa380457d9202d92da2ab64af3df39f208":[4,0,36,26,29],
@@ -242,12 +249,5 @@ var NAVTREEINDEX5 =
 "structoc__event__callback__s.html#acfd7db168b82b26393490d4db04538f3":[3,0,10,3],
 "structoc__handler__t.html":[3,0,11],
 "structoc__handler__t.html#a30a0125aaf993cd9975c700c3a86d5fb":[3,0,11,1],
-"structoc__handler__t.html#a857eaefcde68aba9fe0d2170a660fdfb":[3,0,11,0],
-"structoc__handler__t.html#a919d218b198dc7286a98d486aab5d91b":[3,0,11,2],
-"structoc__handler__t.html#af83a0573a13366c40f8b85fb359d24e8":[3,0,11,3],
-"structoc__ipv4__addr__t.html":[3,0,12],
-"structoc__ipv4__addr__t.html#a8e0798404bf2cf5dabb84c5ba9a4f236":[3,0,12,1],
-"structoc__ipv4__addr__t.html#addf23a7962e43c9ba2ed54c76bd937d3":[3,0,12,0],
-"structoc__ipv6__addr__t.html":[3,0,13],
-"structoc__ipv6__addr__t.html#a8e0798404bf2cf5dabb84c5ba9a4f236":[3,0,13,1]
+"structoc__handler__t.html#a857eaefcde68aba9fe0d2170a660fdfb":[3,0,11,0]
 };
