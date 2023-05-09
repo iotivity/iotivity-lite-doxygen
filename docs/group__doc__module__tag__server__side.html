@@ -104,126 +104,135 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga3eaefb66d2e5bf5009aeac9d8276e065"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga3eaefb66d2e5bf5009aeac9d8276e065">oc_con_write_cb_t</a>) (size_t device_index, oc_rep_t *rep)</td></tr>
 <tr class="memdesc:ga3eaefb66d2e5bf5009aeac9d8276e065"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for change notifications from the oic.wk.con resource.  <a href="group__doc__module__tag__server__side.html#ga3eaefb66d2e5bf5009aeac9d8276e065">More...</a><br /></td></tr>
 <tr class="separator:ga3eaefb66d2e5bf5009aeac9d8276e065"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga81109e81a7c40aaa290298e9411ed95d"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga81109e81a7c40aaa290298e9411ed95d">oc_send_response_cb_t</a>) (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request, <a class="el" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38">oc_status_t</a> response_code)</td></tr>
+<tr class="memdesc:ga81109e81a7c40aaa290298e9411ed95d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function is triggered by oc_send_response before the response is set.  <a href="group__doc__module__tag__server__side.html#ga81109e81a7c40aaa290298e9411ed95d">More...</a><br /></td></tr>
+<tr class="separator:ga81109e81a7c40aaa290298e9411ed95d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga8cef7c8b4cfdde5cbd79aace72172d41"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga8cef7c8b4cfdde5cbd79aace72172d41">oc_add_resource</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
-<tr class="memdesc:ga8cef7c8b4cfdde5cbd79aace72172d41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a resource to the IoTivity stack.  <a href="group__doc__module__tag__server__side.html#ga8cef7c8b4cfdde5cbd79aace72172d41">More...</a><br /></td></tr>
-<tr class="separator:ga8cef7c8b4cfdde5cbd79aace72172d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabb337e93d0191bd886fb66c872d80f2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gabb337e93d0191bd886fb66c872d80f2c">oc_delayed_delete_resource</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
-<tr class="memdesc:gabb337e93d0191bd886fb66c872d80f2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule a callback to remove a resource.  <a href="group__doc__module__tag__server__side.html#gabb337e93d0191bd886fb66c872d80f2c">More...</a><br /></td></tr>
-<tr class="separator:gabb337e93d0191bd886fb66c872d80f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8be722cad423befa951a60f518e6f3b2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga8be722cad423befa951a60f518e6f3b2">oc_delete_resource</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
-<tr class="memdesc:ga8be722cad423befa951a60f518e6f3b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a resource from the IoTivity stack and delete the resource.  <a href="group__doc__module__tag__server__side.html#ga8be722cad423befa951a60f518e6f3b2">More...</a><br /></td></tr>
-<tr class="separator:ga8be722cad423befa951a60f518e6f3b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0cdcfd9676beaa7368cc9677277279a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga0cdcfd9676beaa7368cc9677277279a8">oc_device_bind_resource_type</a> (size_t device, const char *type)</td></tr>
-<tr class="memdesc:ga0cdcfd9676beaa7368cc9677277279a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a Resource Type "rt" property to the an <code>/oic/d</code> resource.  <a href="group__doc__module__tag__server__side.html#ga0cdcfd9676beaa7368cc9677277279a8">More...</a><br /></td></tr>
-<tr class="separator:ga0cdcfd9676beaa7368cc9677277279a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7376142521e76079732029aafc2ba8be"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga7376142521e76079732029aafc2ba8be">oc_get_diagnostic_message</a> (const <a class="el" href="structoc__client__response__t.html">oc_client_response_t</a> *response, const char **msg, size_t *size)</td></tr>
-<tr class="memdesc:ga7376142521e76079732029aafc2ba8be"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the diagnostic payload from a response  <a href="group__doc__module__tag__server__side.html#ga7376142521e76079732029aafc2ba8be">More...</a><br /></td></tr>
-<tr class="separator:ga7376142521e76079732029aafc2ba8be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7b1a6e27279dc11c72dd8afe4a4a0e40"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga7b1a6e27279dc11c72dd8afe4a4a0e40">oc_get_query_value</a> (const <a class="el" href="structoc__request__t.html">oc_request_t</a> *request, const char *key, const char **value)</td></tr>
-<tr class="memdesc:ga7b1a6e27279dc11c72dd8afe4a4a0e40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the start of the value in a URL query parameter key=value pair.  <a href="group__doc__module__tag__server__side.html#ga7b1a6e27279dc11c72dd8afe4a4a0e40">More...</a><br /></td></tr>
-<tr class="separator:ga7b1a6e27279dc11c72dd8afe4a4a0e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa98ea4e09b9b92ff5c6912d089f12ff2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gaa98ea4e09b9b92ff5c6912d089f12ff2">oc_get_request_payload_raw</a> (const <a class="el" href="structoc__request__t.html">oc_request_t</a> *request, const uint8_t **payload, size_t *size, <a class="el" href="oc__ri_8h.html#a83161604a805e3a951254864d16a714f">oc_content_format_t</a> *content_format)</td></tr>
-<tr class="memdesc:gaa98ea4e09b9b92ff5c6912d089f12ff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the payload from the request, no processing  <a href="group__doc__module__tag__server__side.html#gaa98ea4e09b9b92ff5c6912d089f12ff2">More...</a><br /></td></tr>
-<tr class="separator:gaa98ea4e09b9b92ff5c6912d089f12ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7778fcee747e4b985f3557c0a8e5f692"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga7778fcee747e4b985f3557c0a8e5f692">oc_get_response_payload_raw</a> (const <a class="el" href="structoc__client__response__t.html">oc_client_response_t</a> *response, const uint8_t **payload, size_t *size, <a class="el" href="oc__ri_8h.html#a83161604a805e3a951254864d16a714f">oc_content_format_t</a> *content_format)</td></tr>
-<tr class="memdesc:ga7778fcee747e4b985f3557c0a8e5f692"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the response payload, without processing  <a href="group__doc__module__tag__server__side.html#ga7778fcee747e4b985f3557c0a8e5f692">More...</a><br /></td></tr>
-<tr class="separator:ga7778fcee747e4b985f3557c0a8e5f692"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabbee24e2e7b99e6e657c0fd07ceb1db9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gabbee24e2e7b99e6e657c0fd07ceb1db9">oc_ignore_request</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request)</td></tr>
-<tr class="memdesc:gabbee24e2e7b99e6e657c0fd07ceb1db9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ignore the request.  <a href="group__doc__module__tag__server__side.html#gabbee24e2e7b99e6e657c0fd07ceb1db9">More...</a><br /></td></tr>
-<tr class="separator:gabbee24e2e7b99e6e657c0fd07ceb1db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad7cae396843a07b955e6d588291645c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gad7cae396843a07b955e6d588291645c7">oc_indicate_separate_response</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request, <a class="el" href="oc__ri_8h.html#aa8574b4921b4ecdddd325a4634bec426">oc_separate_response_t</a> *response)</td></tr>
-<tr class="memdesc:gad7cae396843a07b955e6d588291645c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Respond to an incoming request asynchronously.  <a href="group__doc__module__tag__server__side.html#gad7cae396843a07b955e6d588291645c7">More...</a><br /></td></tr>
-<tr class="separator:gad7cae396843a07b955e6d588291645c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5f33d43ecb0adf38a04d499ecf6b8ea3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga5f33d43ecb0adf38a04d499ecf6b8ea3">oc_init_query_iterator</a> (void)</td></tr>
-<tr class="memdesc:ga5f33d43ecb0adf38a04d499ecf6b8ea3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This resets the query iterator to the start of the URI query parameter.  <a href="group__doc__module__tag__server__side.html#ga5f33d43ecb0adf38a04d499ecf6b8ea3">More...</a><br /></td></tr>
-<tr class="separator:ga5f33d43ecb0adf38a04d499ecf6b8ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1bb22fcc031f05d4749aa3415d02c1b0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga1bb22fcc031f05d4749aa3415d02c1b0">oc_iterate_query</a> (const <a class="el" href="structoc__request__t.html">oc_request_t</a> *request, const char **key, size_t *key_len, const char **value, size_t *value_len)</td></tr>
-<tr class="memdesc:ga1bb22fcc031f05d4749aa3415d02c1b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate through the URI query parameters and get each key=value pair.  <a href="group__doc__module__tag__server__side.html#ga1bb22fcc031f05d4749aa3415d02c1b0">More...</a><br /></td></tr>
-<tr class="separator:ga1bb22fcc031f05d4749aa3415d02c1b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1e26e072f25a51224bbe38a5d0bb9b16"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga1e26e072f25a51224bbe38a5d0bb9b16">oc_iterate_query_get_values</a> (const <a class="el" href="structoc__request__t.html">oc_request_t</a> *request, const char *key, const char **value, int *value_len)</td></tr>
-<tr class="memdesc:ga1e26e072f25a51224bbe38a5d0bb9b16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate though the URI query parameters for a specific key.  <a href="group__doc__module__tag__server__side.html#ga1e26e072f25a51224bbe38a5d0bb9b16">More...</a><br /></td></tr>
-<tr class="separator:ga1e26e072f25a51224bbe38a5d0bb9b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga617ddc7eec68117e14bb4e1bf9f867cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga617ddc7eec68117e14bb4e1bf9f867cc">oc_new_resource</a> (const char *name, const char *uri, uint8_t num_resource_types, size_t device)</td></tr>
-<tr class="memdesc:ga617ddc7eec68117e14bb4e1bf9f867cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate and populate a new oc_resource_t.  <a href="group__doc__module__tag__server__side.html#ga617ddc7eec68117e14bb4e1bf9f867cc">More...</a><br /></td></tr>
-<tr class="separator:ga617ddc7eec68117e14bb4e1bf9f867cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga43ac6a6fc039b94df00768d69577a9ed"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga43ac6a6fc039b94df00768d69577a9ed">oc_notify_observers</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
-<tr class="memdesc:ga43ac6a6fc039b94df00768d69577a9ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify all observers of a change to a given resource's property.  <a href="group__doc__module__tag__server__side.html#ga43ac6a6fc039b94df00768d69577a9ed">More...</a><br /></td></tr>
-<tr class="separator:ga43ac6a6fc039b94df00768d69577a9ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga24e8975d42a239215ee94219967d3853"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga24e8975d42a239215ee94219967d3853">oc_notify_observers_delayed</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, uint16_t seconds)</td></tr>
-<tr class="memdesc:ga24e8975d42a239215ee94219967d3853"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule notify all observers to invoke after a set number of seconds.  <a href="group__doc__module__tag__server__side.html#ga24e8975d42a239215ee94219967d3853">More...</a><br /></td></tr>
-<tr class="separator:ga24e8975d42a239215ee94219967d3853"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga946ffe7104c26ee52fc67d5d0e385795"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga946ffe7104c26ee52fc67d5d0e385795">oc_notify_observers_delayed_ms</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, uint16_t milliseconds)</td></tr>
-<tr class="memdesc:ga946ffe7104c26ee52fc67d5d0e385795"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule notify all observers to invoke after a set number of milliseconds.  <a href="group__doc__module__tag__server__side.html#ga946ffe7104c26ee52fc67d5d0e385795">More...</a><br /></td></tr>
-<tr class="separator:ga946ffe7104c26ee52fc67d5d0e385795"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga84e32551f9d7097a63a7a9410e170a01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga84e32551f9d7097a63a7a9410e170a01">oc_process_baseline_interface</a> (const <a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
-<tr class="memdesc:ga84e32551f9d7097a63a7a9410e170a01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function used when responding to a GET request to add Common Properties to a GET response.  <a href="group__doc__module__tag__server__side.html#ga84e32551f9d7097a63a7a9410e170a01">More...</a><br /></td></tr>
-<tr class="separator:ga84e32551f9d7097a63a7a9410e170a01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab3991a8929db3766a9475ff4fb1279f8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gab3991a8929db3766a9475ff4fb1279f8">oc_query_value_exists</a> (const <a class="el" href="structoc__request__t.html">oc_request_t</a> *request, const char *key)</td></tr>
-<tr class="memdesc:gab3991a8929db3766a9475ff4fb1279f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a query parameter 'key' exist in the URL query parameter.  <a href="group__doc__module__tag__server__side.html#gab3991a8929db3766a9475ff4fb1279f8">More...</a><br /></td></tr>
-<tr class="separator:gab3991a8929db3766a9475ff4fb1279f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacc374cc9a8acc977db8f9f27dc3c593c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gacc374cc9a8acc977db8f9f27dc3c593c">oc_resource_bind_resource_interface</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, <a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a> iface_mask)</td></tr>
-<tr class="memdesc:gacc374cc9a8acc977db8f9f27dc3c593c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the supported interface(s) to the resource.  <a href="group__doc__module__tag__server__side.html#gacc374cc9a8acc977db8f9f27dc3c593c">More...</a><br /></td></tr>
-<tr class="separator:gacc374cc9a8acc977db8f9f27dc3c593c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab17128fac474655e423d58b7e008e95a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gab17128fac474655e423d58b7e008e95a">oc_resource_bind_resource_type</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, const char *type)</td></tr>
-<tr class="memdesc:gab17128fac474655e423d58b7e008e95a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a Resource Type "rt" property to the resource.  <a href="group__doc__module__tag__server__side.html#gab17128fac474655e423d58b7e008e95a">More...</a><br /></td></tr>
-<tr class="separator:gab17128fac474655e423d58b7e008e95a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0892739628f3fe0f73a16ce827346009"><td class="memItemLeft" align="right" valign="top">OC_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga0892739628f3fe0f73a16ce827346009">oc_add_resource</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
+<tr class="memdesc:ga0892739628f3fe0f73a16ce827346009"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a resource to the IoTivity stack.  <a href="group__doc__module__tag__server__side.html#ga0892739628f3fe0f73a16ce827346009">More...</a><br /></td></tr>
+<tr class="separator:ga0892739628f3fe0f73a16ce827346009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga64204cf4775391bb168147df708cbab0"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga64204cf4775391bb168147df708cbab0">oc_delayed_delete_resource</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
+<tr class="memdesc:ga64204cf4775391bb168147df708cbab0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule a callback to remove a resource.  <a href="group__doc__module__tag__server__side.html#ga64204cf4775391bb168147df708cbab0">More...</a><br /></td></tr>
+<tr class="separator:ga64204cf4775391bb168147df708cbab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2c66e9e67ef883ae3a498822c89bed4f"><td class="memItemLeft" align="right" valign="top">OC_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga2c66e9e67ef883ae3a498822c89bed4f">oc_delete_resource</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
+<tr class="memdesc:ga2c66e9e67ef883ae3a498822c89bed4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a resource from the IoTivity stack and delete the resource.  <a href="group__doc__module__tag__server__side.html#ga2c66e9e67ef883ae3a498822c89bed4f">More...</a><br /></td></tr>
+<tr class="separator:ga2c66e9e67ef883ae3a498822c89bed4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaffe316025d61724b1957740f5cb061dd"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gaffe316025d61724b1957740f5cb061dd">oc_device_bind_resource_type</a> (size_t device, const char *type)</td></tr>
+<tr class="memdesc:gaffe316025d61724b1957740f5cb061dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a Resource Type "rt" property to the an <code>/oic/d</code> resource.  <a href="group__doc__module__tag__server__side.html#gaffe316025d61724b1957740f5cb061dd">More...</a><br /></td></tr>
+<tr class="separator:gaffe316025d61724b1957740f5cb061dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga545c2a949d0ebf8c792972c24edb84a2"><td class="memItemLeft" align="right" valign="top">OC_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga545c2a949d0ebf8c792972c24edb84a2">oc_get_diagnostic_message</a> (const <a class="el" href="structoc__client__response__t.html">oc_client_response_t</a> *response, const char **msg, size_t *size)</td></tr>
+<tr class="memdesc:ga545c2a949d0ebf8c792972c24edb84a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the diagnostic payload from a response  <a href="group__doc__module__tag__server__side.html#ga545c2a949d0ebf8c792972c24edb84a2">More...</a><br /></td></tr>
+<tr class="separator:ga545c2a949d0ebf8c792972c24edb84a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0b1fb8cc3e2f72115cb7320d38bf51cd"><td class="memItemLeft" align="right" valign="top">OC_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga0b1fb8cc3e2f72115cb7320d38bf51cd">oc_get_query_value</a> (const <a class="el" href="structoc__request__t.html">oc_request_t</a> *request, const char *key, const char **value)</td></tr>
+<tr class="memdesc:ga0b1fb8cc3e2f72115cb7320d38bf51cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the start of the value in a URL query parameter key=value pair.  <a href="group__doc__module__tag__server__side.html#ga0b1fb8cc3e2f72115cb7320d38bf51cd">More...</a><br /></td></tr>
+<tr class="separator:ga0b1fb8cc3e2f72115cb7320d38bf51cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga855e88626f09a868cdf896000c6652a6"><td class="memItemLeft" align="right" valign="top">OC_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga855e88626f09a868cdf896000c6652a6">oc_get_request_payload_raw</a> (const <a class="el" href="structoc__request__t.html">oc_request_t</a> *request, const uint8_t **payload, size_t *size, <a class="el" href="oc__ri_8h.html#a83161604a805e3a951254864d16a714f">oc_content_format_t</a> *content_format)</td></tr>
+<tr class="memdesc:ga855e88626f09a868cdf896000c6652a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the payload from the request, no processing  <a href="group__doc__module__tag__server__side.html#ga855e88626f09a868cdf896000c6652a6">More...</a><br /></td></tr>
+<tr class="separator:ga855e88626f09a868cdf896000c6652a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga27f049db3be4e3c17778c1de3641e349"><td class="memItemLeft" align="right" valign="top">OC_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga27f049db3be4e3c17778c1de3641e349">oc_get_response_payload_raw</a> (const <a class="el" href="structoc__client__response__t.html">oc_client_response_t</a> *response, const uint8_t **payload, size_t *size, <a class="el" href="oc__ri_8h.html#a83161604a805e3a951254864d16a714f">oc_content_format_t</a> *content_format)</td></tr>
+<tr class="memdesc:ga27f049db3be4e3c17778c1de3641e349"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the response payload, without processing  <a href="group__doc__module__tag__server__side.html#ga27f049db3be4e3c17778c1de3641e349">More...</a><br /></td></tr>
+<tr class="separator:ga27f049db3be4e3c17778c1de3641e349"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac0df2122d5bce50e3742fa76031b44fd"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gac0df2122d5bce50e3742fa76031b44fd">oc_ignore_request</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request)</td></tr>
+<tr class="memdesc:gac0df2122d5bce50e3742fa76031b44fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ignore the request.  <a href="group__doc__module__tag__server__side.html#gac0df2122d5bce50e3742fa76031b44fd">More...</a><br /></td></tr>
+<tr class="separator:gac0df2122d5bce50e3742fa76031b44fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4ff7fda738dd6a36ab3b32cf47ff8148"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga4ff7fda738dd6a36ab3b32cf47ff8148">oc_indicate_separate_response</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request, <a class="el" href="oc__ri_8h.html#aa8574b4921b4ecdddd325a4634bec426">oc_separate_response_t</a> *response)</td></tr>
+<tr class="memdesc:ga4ff7fda738dd6a36ab3b32cf47ff8148"><td class="mdescLeft">&#160;</td><td class="mdescRight">Respond to an incoming request asynchronously.  <a href="group__doc__module__tag__server__side.html#ga4ff7fda738dd6a36ab3b32cf47ff8148">More...</a><br /></td></tr>
+<tr class="separator:ga4ff7fda738dd6a36ab3b32cf47ff8148"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8a59c5e273ba776c6154fc3f7bed2093"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga8a59c5e273ba776c6154fc3f7bed2093">oc_init_query_iterator</a> (void)</td></tr>
+<tr class="memdesc:ga8a59c5e273ba776c6154fc3f7bed2093"><td class="mdescLeft">&#160;</td><td class="mdescRight">This resets the query iterator to the start of the URI query parameter.  <a href="group__doc__module__tag__server__side.html#ga8a59c5e273ba776c6154fc3f7bed2093">More...</a><br /></td></tr>
+<tr class="separator:ga8a59c5e273ba776c6154fc3f7bed2093"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb7378e985142c77d74589f46ce55357"><td class="memItemLeft" align="right" valign="top">OC_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gaeb7378e985142c77d74589f46ce55357">oc_iterate_query</a> (const <a class="el" href="structoc__request__t.html">oc_request_t</a> *request, const char **key, size_t *key_len, const char **value, size_t *value_len)</td></tr>
+<tr class="memdesc:gaeb7378e985142c77d74589f46ce55357"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate through the URI query parameters and get each key=value pair.  <a href="group__doc__module__tag__server__side.html#gaeb7378e985142c77d74589f46ce55357">More...</a><br /></td></tr>
+<tr class="separator:gaeb7378e985142c77d74589f46ce55357"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga31e1e89e2efd82d6913fe7a5c838f867"><td class="memItemLeft" align="right" valign="top">OC_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga31e1e89e2efd82d6913fe7a5c838f867">oc_iterate_query_get_values</a> (const <a class="el" href="structoc__request__t.html">oc_request_t</a> *request, const char *key, const char **value, int *value_len)</td></tr>
+<tr class="memdesc:ga31e1e89e2efd82d6913fe7a5c838f867"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate though the URI query parameters for a specific key.  <a href="group__doc__module__tag__server__side.html#ga31e1e89e2efd82d6913fe7a5c838f867">More...</a><br /></td></tr>
+<tr class="separator:ga31e1e89e2efd82d6913fe7a5c838f867"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga598543a2daa27b984c61ebc697299a1a"><td class="memItemLeft" align="right" valign="top">OC_API <a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga598543a2daa27b984c61ebc697299a1a">oc_new_resource</a> (const char *name, const char *uri, uint8_t num_resource_types, size_t device)</td></tr>
+<tr class="memdesc:ga598543a2daa27b984c61ebc697299a1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate and populate a new oc_resource_t.  <a href="group__doc__module__tag__server__side.html#ga598543a2daa27b984c61ebc697299a1a">More...</a><br /></td></tr>
+<tr class="separator:ga598543a2daa27b984c61ebc697299a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga961def38ceea35a2191e1071ab9e0989"><td class="memItemLeft" align="right" valign="top">OC_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga961def38ceea35a2191e1071ab9e0989">oc_notify_observers</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
+<tr class="memdesc:ga961def38ceea35a2191e1071ab9e0989"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify all observers of a change to a given resource's property.  <a href="group__doc__module__tag__server__side.html#ga961def38ceea35a2191e1071ab9e0989">More...</a><br /></td></tr>
+<tr class="separator:ga961def38ceea35a2191e1071ab9e0989"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4c8b481e3ecb6708a17fc2f91d6e4a28"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga4c8b481e3ecb6708a17fc2f91d6e4a28">oc_notify_observers_delayed</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, uint16_t seconds)</td></tr>
+<tr class="memdesc:ga4c8b481e3ecb6708a17fc2f91d6e4a28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule notify all observers to invoke after a set number of seconds.  <a href="group__doc__module__tag__server__side.html#ga4c8b481e3ecb6708a17fc2f91d6e4a28">More...</a><br /></td></tr>
+<tr class="separator:ga4c8b481e3ecb6708a17fc2f91d6e4a28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf356531673c5009829bf8b0e51ff6049"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gaf356531673c5009829bf8b0e51ff6049">oc_notify_observers_delayed_ms</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, uint16_t milliseconds)</td></tr>
+<tr class="memdesc:gaf356531673c5009829bf8b0e51ff6049"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule notify all observers to invoke after a set number of milliseconds.  <a href="group__doc__module__tag__server__side.html#gaf356531673c5009829bf8b0e51ff6049">More...</a><br /></td></tr>
+<tr class="separator:gaf356531673c5009829bf8b0e51ff6049"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3a3ad9191b27d5bdce0f09b1b35c75d1"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga3a3ad9191b27d5bdce0f09b1b35c75d1">oc_process_baseline_interface</a> (const <a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
+<tr class="memdesc:ga3a3ad9191b27d5bdce0f09b1b35c75d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function used when responding to a GET request to add Common Properties to a GET response.  <a href="group__doc__module__tag__server__side.html#ga3a3ad9191b27d5bdce0f09b1b35c75d1">More...</a><br /></td></tr>
+<tr class="separator:ga3a3ad9191b27d5bdce0f09b1b35c75d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad3c24454e04dcf1170e5364090ff14df"><td class="memItemLeft" align="right" valign="top">OC_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gad3c24454e04dcf1170e5364090ff14df">oc_query_value_exists</a> (const <a class="el" href="structoc__request__t.html">oc_request_t</a> *request, const char *key)</td></tr>
+<tr class="memdesc:gad3c24454e04dcf1170e5364090ff14df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a query parameter 'key' exist in the URL query parameter.  <a href="group__doc__module__tag__server__side.html#gad3c24454e04dcf1170e5364090ff14df">More...</a><br /></td></tr>
+<tr class="separator:gad3c24454e04dcf1170e5364090ff14df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga433d9220c49817bd94768eb2c7aa277f"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga433d9220c49817bd94768eb2c7aa277f">oc_resource_bind_resource_interface</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, <a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a> iface_mask)</td></tr>
+<tr class="memdesc:ga433d9220c49817bd94768eb2c7aa277f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the supported interface(s) to the resource.  <a href="group__doc__module__tag__server__side.html#ga433d9220c49817bd94768eb2c7aa277f">More...</a><br /></td></tr>
+<tr class="separator:ga433d9220c49817bd94768eb2c7aa277f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab9f7a22c21390172f26a2148cbe2780c"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gab9f7a22c21390172f26a2148cbe2780c">oc_resource_bind_resource_type</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, const char *type)</td></tr>
+<tr class="memdesc:gab9f7a22c21390172f26a2148cbe2780c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a Resource Type "rt" property to the resource.  <a href="group__doc__module__tag__server__side.html#gab9f7a22c21390172f26a2148cbe2780c">More...</a><br /></td></tr>
+<tr class="separator:gab9f7a22c21390172f26a2148cbe2780c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaab0e4b35b5783c98bb09872e1d1e8a30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gaab0e4b35b5783c98bb09872e1d1e8a30">oc_resource_make_public</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
 <tr class="memdesc:gaab0e4b35b5783c98bb09872e1d1e8a30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expose unsecured coap:// endpoints (in addition to secured coaps:// endpoints) for this resource in /oic/res.  <a href="group__doc__module__tag__server__side.html#gaab0e4b35b5783c98bb09872e1d1e8a30">More...</a><br /></td></tr>
 <tr class="separator:gaab0e4b35b5783c98bb09872e1d1e8a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8fc917cb0185f7471b58355d6f400777"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga8fc917cb0185f7471b58355d6f400777">oc_resource_set_default_interface</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, <a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a> iface_mask)</td></tr>
-<tr class="memdesc:ga8fc917cb0185f7471b58355d6f400777"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select the default interface.  <a href="group__doc__module__tag__server__side.html#ga8fc917cb0185f7471b58355d6f400777">More...</a><br /></td></tr>
-<tr class="separator:ga8fc917cb0185f7471b58355d6f400777"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4c3f04fa5089c82be3e9eb7339ae8f58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga4c3f04fa5089c82be3e9eb7339ae8f58">oc_resource_set_discoverable</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, bool state)</td></tr>
-<tr class="memdesc:ga4c3f04fa5089c82be3e9eb7339ae8f58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify if a resource can be found using OCF discover mechanisms.  <a href="group__doc__module__tag__server__side.html#ga4c3f04fa5089c82be3e9eb7339ae8f58">More...</a><br /></td></tr>
-<tr class="separator:ga4c3f04fa5089c82be3e9eb7339ae8f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad20b61d7925c4ca727476987d8e2fe3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gad20b61d7925c4ca727476987d8e2fe3d">oc_resource_set_observable</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, bool state)</td></tr>
-<tr class="memdesc:gad20b61d7925c4ca727476987d8e2fe3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify that a resource should notify clients when a property has been modified.  <a href="group__doc__module__tag__server__side.html#gad20b61d7925c4ca727476987d8e2fe3d">More...</a><br /></td></tr>
-<tr class="separator:gad20b61d7925c4ca727476987d8e2fe3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac8cdb7e511c08982d790c323d8db7c6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gac8cdb7e511c08982d790c323d8db7c6e">oc_resource_set_periodic_observable</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, uint16_t seconds)</td></tr>
-<tr class="memdesc:gac8cdb7e511c08982d790c323d8db7c6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The resource will periodically notify observing clients of is property values.  <a href="group__doc__module__tag__server__side.html#gac8cdb7e511c08982d790c323d8db7c6e">More...</a><br /></td></tr>
-<tr class="separator:gac8cdb7e511c08982d790c323d8db7c6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf9028094981175854c699f6da4a34131"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gaf9028094981175854c699f6da4a34131">oc_resource_set_properties_cbs</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, <a class="el" href="oc__ri_8h.html#ad13e620d8765af96f28937e52f817726">oc_get_properties_cb_t</a> get_properties, void *get_props_user_data, <a class="el" href="oc__ri_8h.html#ad38ea7c0a6833931d8bfe8094c5100e4">oc_set_properties_cb_t</a> set_properties, void *set_props_user_data)</td></tr>
-<tr class="memdesc:gaf9028094981175854c699f6da4a34131"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the callback properties for set properties and get properties  <a href="group__doc__module__tag__server__side.html#gaf9028094981175854c699f6da4a34131">More...</a><br /></td></tr>
-<tr class="separator:gaf9028094981175854c699f6da4a34131"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf2cb26b72d6454326767573219e96219"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gaf2cb26b72d6454326767573219e96219">oc_resource_set_pushable</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, bool state)</td></tr>
-<tr class="memdesc:gaf2cb26b72d6454326767573219e96219"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify if a resource can be pushable.  <a href="group__doc__module__tag__server__side.html#gaf2cb26b72d6454326767573219e96219">More...</a><br /></td></tr>
-<tr class="separator:gaf2cb26b72d6454326767573219e96219"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf8ac0f8a7d9fc45bab26b132cc9346e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gaf8ac0f8a7d9fc45bab26b132cc9346e6">oc_resource_set_request_handler</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, <a class="el" href="oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26">oc_method_t</a> method, <a class="el" href="oc__ri_8h.html#aca4fa152ba1f8d2cd7639bf5c8276dbe">oc_request_callback_t</a> callback, void *user_data)</td></tr>
-<tr class="memdesc:gaf8ac0f8a7d9fc45bab26b132cc9346e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify a request_callback for GET, PUT, POST, and DELETE methods.  <a href="group__doc__module__tag__server__side.html#gaf8ac0f8a7d9fc45bab26b132cc9346e6">More...</a><br /></td></tr>
-<tr class="separator:gaf8ac0f8a7d9fc45bab26b132cc9346e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1f9849f29f1230a59608b9ced28d2ca3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga1f9849f29f1230a59608b9ced28d2ca3">oc_resource_tag_func_desc</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, <a class="el" href="oc__enums_8h.html#a2a2e721367a0c1e572142ab3366a1272">oc_enum_t</a> func)</td></tr>
-<tr class="memdesc:ga1f9849f29f1230a59608b9ced28d2ca3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the tag value for the relatvie position "tag_func_rel" tag.  <a href="group__doc__module__tag__server__side.html#ga1f9849f29f1230a59608b9ced28d2ca3">More...</a><br /></td></tr>
-<tr class="separator:ga1f9849f29f1230a59608b9ced28d2ca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad572fe8e6e6e13bccfd08afb116fcfc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gad572fe8e6e6e13bccfd08afb116fcfc4">oc_resource_tag_locn</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, <a class="el" href="oc__enums_8h.html#a60005d2b5f046608e31d15d8c64573bd">oc_locn_t</a> locn)</td></tr>
-<tr class="memdesc:gad572fe8e6e6e13bccfd08afb116fcfc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the value of the "tag_locn" tag  <a href="group__doc__module__tag__server__side.html#gad572fe8e6e6e13bccfd08afb116fcfc4">More...</a><br /></td></tr>
-<tr class="separator:gad572fe8e6e6e13bccfd08afb116fcfc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1dfed6e958cc30bcfb3f6d9354717766"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga1dfed6e958cc30bcfb3f6d9354717766">oc_resource_tag_pos_desc</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, <a class="el" href="oc__enums_8h.html#ac4d1f5d2b4c25b95fa6bc96968d03532">oc_pos_description_t</a> pos)</td></tr>
-<tr class="memdesc:ga1dfed6e958cc30bcfb3f6d9354717766"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the tag value for tag "tag-pos-desc" on the resource.  <a href="group__doc__module__tag__server__side.html#ga1dfed6e958cc30bcfb3f6d9354717766">More...</a><br /></td></tr>
-<tr class="separator:ga1dfed6e958cc30bcfb3f6d9354717766"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga61f5b9d101ea41bf333e2ba140b7b44e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga61f5b9d101ea41bf333e2ba140b7b44e">oc_resource_tag_pos_rel</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, double x, double y, double z)</td></tr>
-<tr class="memdesc:ga61f5b9d101ea41bf333e2ba140b7b44e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value for the relative position "tag-pos-rel" tag.  <a href="group__doc__module__tag__server__side.html#ga61f5b9d101ea41bf333e2ba140b7b44e">More...</a><br /></td></tr>
-<tr class="separator:ga61f5b9d101ea41bf333e2ba140b7b44e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadcfcce0aa1c740c40c85905b5f1e561a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gadcfcce0aa1c740c40c85905b5f1e561a">oc_send_diagnostic_message</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request, const char *msg, size_t msg_len, <a class="el" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38">oc_status_t</a> response_code)</td></tr>
-<tr class="memdesc:gadcfcce0aa1c740c40c85905b5f1e561a"><td class="mdescLeft">&#160;</td><td class="mdescRight">send a diagnostic payload  <a href="group__doc__module__tag__server__side.html#gadcfcce0aa1c740c40c85905b5f1e561a">More...</a><br /></td></tr>
-<tr class="separator:gadcfcce0aa1c740c40c85905b5f1e561a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga64b2ca53e56b0878149faff19c24c21f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga64b2ca53e56b0878149faff19c24c21f">oc_send_response</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request, <a class="el" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38">oc_status_t</a> response_code)</td></tr>
-<tr class="memdesc:ga64b2ca53e56b0878149faff19c24c21f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called after the response to a GET, PUT, POST or DELETE call has been prepared completed.  <a href="group__doc__module__tag__server__side.html#ga64b2ca53e56b0878149faff19c24c21f">More...</a><br /></td></tr>
-<tr class="separator:ga64b2ca53e56b0878149faff19c24c21f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab8b2f6fcf1ccbe750079af98f167a834"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gab8b2f6fcf1ccbe750079af98f167a834">oc_send_response_raw</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request, const uint8_t *payload, size_t size, <a class="el" href="oc__ri_8h.html#a83161604a805e3a951254864d16a714f">oc_content_format_t</a> content_format, <a class="el" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38">oc_status_t</a> response_code)</td></tr>
-<tr class="memdesc:gab8b2f6fcf1ccbe750079af98f167a834"><td class="mdescLeft">&#160;</td><td class="mdescRight">send the request, no processing  <a href="group__doc__module__tag__server__side.html#gab8b2f6fcf1ccbe750079af98f167a834">More...</a><br /></td></tr>
-<tr class="separator:gab8b2f6fcf1ccbe750079af98f167a834"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab8e08bb0d0476a29ecd562f02e7ec61e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gab8e08bb0d0476a29ecd562f02e7ec61e">oc_send_separate_response</a> (<a class="el" href="oc__ri_8h.html#aa8574b4921b4ecdddd325a4634bec426">oc_separate_response_t</a> *handle, <a class="el" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38">oc_status_t</a> response_code)</td></tr>
-<tr class="memdesc:gab8e08bb0d0476a29ecd562f02e7ec61e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called to send the deferred response to a GET, PUT, POST or DELETE request.  <a href="group__doc__module__tag__server__side.html#gab8e08bb0d0476a29ecd562f02e7ec61e">More...</a><br /></td></tr>
-<tr class="separator:gab8e08bb0d0476a29ecd562f02e7ec61e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1497c8c36b39a1c9cca7972caa40a92c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga1497c8c36b39a1c9cca7972caa40a92c">oc_set_con_write_cb</a> (<a class="el" href="group__doc__module__tag__server__side.html#ga3eaefb66d2e5bf5009aeac9d8276e065">oc_con_write_cb_t</a> callback)</td></tr>
-<tr class="memdesc:ga1497c8c36b39a1c9cca7972caa40a92c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the callback to receive change notifications for the <code>oic.wk.con</code> resource.  <a href="group__doc__module__tag__server__side.html#ga1497c8c36b39a1c9cca7972caa40a92c">More...</a><br /></td></tr>
-<tr class="separator:ga1497c8c36b39a1c9cca7972caa40a92c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1a6752c73365b6d03a1dcfcf3d3005fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga1a6752c73365b6d03a1dcfcf3d3005fc">oc_set_separate_response_buffer</a> (<a class="el" href="oc__ri_8h.html#aa8574b4921b4ecdddd325a4634bec426">oc_separate_response_t</a> *handle)</td></tr>
-<tr class="memdesc:ga1a6752c73365b6d03a1dcfcf3d3005fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a response buffer for holding the response payload.  <a href="group__doc__module__tag__server__side.html#ga1a6752c73365b6d03a1dcfcf3d3005fc">More...</a><br /></td></tr>
-<tr class="separator:ga1a6752c73365b6d03a1dcfcf3d3005fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0afb75a82a2d070012aa1f37dba180c0"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga0afb75a82a2d070012aa1f37dba180c0">oc_resource_set_default_interface</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, <a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a> iface_mask)</td></tr>
+<tr class="memdesc:ga0afb75a82a2d070012aa1f37dba180c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select the default interface.  <a href="group__doc__module__tag__server__side.html#ga0afb75a82a2d070012aa1f37dba180c0">More...</a><br /></td></tr>
+<tr class="separator:ga0afb75a82a2d070012aa1f37dba180c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gace53890abda2c8db4cedff36d6ce2219"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gace53890abda2c8db4cedff36d6ce2219">oc_resource_set_discoverable</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, bool state)</td></tr>
+<tr class="memdesc:gace53890abda2c8db4cedff36d6ce2219"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify if a resource can be found using OCF discover mechanisms.  <a href="group__doc__module__tag__server__side.html#gace53890abda2c8db4cedff36d6ce2219">More...</a><br /></td></tr>
+<tr class="separator:gace53890abda2c8db4cedff36d6ce2219"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga06f7fc9fe08f00ddc1b237efcbf9463b"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga06f7fc9fe08f00ddc1b237efcbf9463b">oc_resource_set_observable</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, bool state)</td></tr>
+<tr class="memdesc:ga06f7fc9fe08f00ddc1b237efcbf9463b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify that a resource should notify clients when a property has been modified.  <a href="group__doc__module__tag__server__side.html#ga06f7fc9fe08f00ddc1b237efcbf9463b">More...</a><br /></td></tr>
+<tr class="separator:ga06f7fc9fe08f00ddc1b237efcbf9463b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga77ab584f4c2a8902a46b31bd06ab573f"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga77ab584f4c2a8902a46b31bd06ab573f">oc_resource_set_periodic_observable</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, uint16_t seconds)</td></tr>
+<tr class="memdesc:ga77ab584f4c2a8902a46b31bd06ab573f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The resource will periodically notify observing clients of is property values.  <a href="group__doc__module__tag__server__side.html#ga77ab584f4c2a8902a46b31bd06ab573f">More...</a><br /></td></tr>
+<tr class="separator:ga77ab584f4c2a8902a46b31bd06ab573f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga044346b9b3fa39566b3c5d701704aab9"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga044346b9b3fa39566b3c5d701704aab9">oc_resource_set_properties_cbs</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, <a class="el" href="oc__ri_8h.html#ad13e620d8765af96f28937e52f817726">oc_get_properties_cb_t</a> get_properties, void *get_props_user_data, <a class="el" href="oc__ri_8h.html#ad38ea7c0a6833931d8bfe8094c5100e4">oc_set_properties_cb_t</a> set_properties, void *set_props_user_data)</td></tr>
+<tr class="memdesc:ga044346b9b3fa39566b3c5d701704aab9"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the callback properties for set properties and get properties  <a href="group__doc__module__tag__server__side.html#ga044346b9b3fa39566b3c5d701704aab9">More...</a><br /></td></tr>
+<tr class="separator:ga044346b9b3fa39566b3c5d701704aab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa532c4183fedfa742415d44ec2256366"><td class="memItemLeft" align="right" valign="top">OC_API OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gaa532c4183fedfa742415d44ec2256366">oc_resource_set_pushable</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, bool state)</td></tr>
+<tr class="memdesc:gaa532c4183fedfa742415d44ec2256366"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify if a resource can be pushable.  <a href="group__doc__module__tag__server__side.html#gaa532c4183fedfa742415d44ec2256366">More...</a><br /></td></tr>
+<tr class="separator:gaa532c4183fedfa742415d44ec2256366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae67885704a684b474a581921f0bc64f7"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gae67885704a684b474a581921f0bc64f7">oc_resource_set_request_handler</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, <a class="el" href="oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26">oc_method_t</a> method, <a class="el" href="oc__ri_8h.html#aca4fa152ba1f8d2cd7639bf5c8276dbe">oc_request_callback_t</a> callback, void *user_data)</td></tr>
+<tr class="memdesc:gae67885704a684b474a581921f0bc64f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify a request_callback for GET, PUT, POST, and DELETE methods.  <a href="group__doc__module__tag__server__side.html#gae67885704a684b474a581921f0bc64f7">More...</a><br /></td></tr>
+<tr class="separator:gae67885704a684b474a581921f0bc64f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga65a815bb462e64369f36717b552c29a7"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga65a815bb462e64369f36717b552c29a7">oc_resource_tag_func_desc</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, <a class="el" href="oc__enums_8h.html#a2a2e721367a0c1e572142ab3366a1272">oc_enum_t</a> func)</td></tr>
+<tr class="memdesc:ga65a815bb462e64369f36717b552c29a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the tag value for the relatvie position "tag_func_rel" tag.  <a href="group__doc__module__tag__server__side.html#ga65a815bb462e64369f36717b552c29a7">More...</a><br /></td></tr>
+<tr class="separator:ga65a815bb462e64369f36717b552c29a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad43ea2f435db5ad734637bbeae5cc616"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gad43ea2f435db5ad734637bbeae5cc616">oc_resource_tag_locn</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, <a class="el" href="oc__enums_8h.html#a60005d2b5f046608e31d15d8c64573bd">oc_locn_t</a> locn)</td></tr>
+<tr class="memdesc:gad43ea2f435db5ad734637bbeae5cc616"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the value of the "tag_locn" tag  <a href="group__doc__module__tag__server__side.html#gad43ea2f435db5ad734637bbeae5cc616">More...</a><br /></td></tr>
+<tr class="separator:gad43ea2f435db5ad734637bbeae5cc616"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9200cdaa1b6d8510d3c3b1e4c82122d6"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga9200cdaa1b6d8510d3c3b1e4c82122d6">oc_resource_tag_pos_desc</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, <a class="el" href="oc__enums_8h.html#ac4d1f5d2b4c25b95fa6bc96968d03532">oc_pos_description_t</a> pos)</td></tr>
+<tr class="memdesc:ga9200cdaa1b6d8510d3c3b1e4c82122d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the tag value for tag "tag-pos-desc" on the resource.  <a href="group__doc__module__tag__server__side.html#ga9200cdaa1b6d8510d3c3b1e4c82122d6">More...</a><br /></td></tr>
+<tr class="separator:ga9200cdaa1b6d8510d3c3b1e4c82122d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaba1099be637f4acb91a1cde08555762e"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gaba1099be637f4acb91a1cde08555762e">oc_resource_tag_pos_rel</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, double x, double y, double z)</td></tr>
+<tr class="memdesc:gaba1099be637f4acb91a1cde08555762e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value for the relative position "tag-pos-rel" tag.  <a href="group__doc__module__tag__server__side.html#gaba1099be637f4acb91a1cde08555762e">More...</a><br /></td></tr>
+<tr class="separator:gaba1099be637f4acb91a1cde08555762e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga66de4068b4ad9ed854767ac7935675d9"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga66de4068b4ad9ed854767ac7935675d9">oc_send_diagnostic_message</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request, const char *msg, size_t msg_len, <a class="el" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38">oc_status_t</a> response_code)</td></tr>
+<tr class="memdesc:ga66de4068b4ad9ed854767ac7935675d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">send a diagnostic payload  <a href="group__doc__module__tag__server__side.html#ga66de4068b4ad9ed854767ac7935675d9">More...</a><br /></td></tr>
+<tr class="separator:ga66de4068b4ad9ed854767ac7935675d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga91d407466fa75640e48ed64031db1578"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga91d407466fa75640e48ed64031db1578">oc_send_response</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request, <a class="el" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38">oc_status_t</a> response_code)</td></tr>
+<tr class="memdesc:ga91d407466fa75640e48ed64031db1578"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called after the response to a GET, PUT, POST or DELETE call has been prepared completed.  <a href="group__doc__module__tag__server__side.html#ga91d407466fa75640e48ed64031db1578">More...</a><br /></td></tr>
+<tr class="separator:ga91d407466fa75640e48ed64031db1578"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga78e8a185e657c88d5e93ed3cc08132c0"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga78e8a185e657c88d5e93ed3cc08132c0">oc_send_response_raw</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request, const uint8_t *payload, size_t size, <a class="el" href="oc__ri_8h.html#a83161604a805e3a951254864d16a714f">oc_content_format_t</a> content_format, <a class="el" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38">oc_status_t</a> response_code)</td></tr>
+<tr class="memdesc:ga78e8a185e657c88d5e93ed3cc08132c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">send the request, no processing  <a href="group__doc__module__tag__server__side.html#ga78e8a185e657c88d5e93ed3cc08132c0">More...</a><br /></td></tr>
+<tr class="separator:ga78e8a185e657c88d5e93ed3cc08132c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga939b73579fc2e84cbf03df7cbf988cde"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga939b73579fc2e84cbf03df7cbf988cde">oc_send_response_with_callback</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request, <a class="el" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38">oc_status_t</a> response_code, bool trigger_cb)</td></tr>
+<tr class="memdesc:ga939b73579fc2e84cbf03df7cbf988cde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called after the response to a GET, PUT, POST or DELETE call has been prepared completed.  <a href="group__doc__module__tag__server__side.html#ga939b73579fc2e84cbf03df7cbf988cde">More...</a><br /></td></tr>
+<tr class="separator:ga939b73579fc2e84cbf03df7cbf988cde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga343c242e058df94730944d5b106d0b5f"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga343c242e058df94730944d5b106d0b5f">oc_send_separate_response</a> (<a class="el" href="oc__ri_8h.html#aa8574b4921b4ecdddd325a4634bec426">oc_separate_response_t</a> *handle, <a class="el" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38">oc_status_t</a> response_code)</td></tr>
+<tr class="memdesc:ga343c242e058df94730944d5b106d0b5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called to send the deferred response to a GET, PUT, POST or DELETE request.  <a href="group__doc__module__tag__server__side.html#ga343c242e058df94730944d5b106d0b5f">More...</a><br /></td></tr>
+<tr class="separator:ga343c242e058df94730944d5b106d0b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3f0e0da6b118401756cdbb542c985996"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga3f0e0da6b118401756cdbb542c985996">oc_set_con_write_cb</a> (<a class="el" href="group__doc__module__tag__server__side.html#ga3eaefb66d2e5bf5009aeac9d8276e065">oc_con_write_cb_t</a> callback)</td></tr>
+<tr class="memdesc:ga3f0e0da6b118401756cdbb542c985996"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the callback to receive change notifications for the <code>oic.wk.con</code> resource.  <a href="group__doc__module__tag__server__side.html#ga3f0e0da6b118401756cdbb542c985996">More...</a><br /></td></tr>
+<tr class="separator:ga3f0e0da6b118401756cdbb542c985996"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6b891acc8a993f828b0fa626e036b9ac"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga6b891acc8a993f828b0fa626e036b9ac">oc_set_send_response_callback</a> (<a class="el" href="group__doc__module__tag__server__side.html#ga81109e81a7c40aaa290298e9411ed95d">oc_send_response_cb_t</a> cb)</td></tr>
+<tr class="memdesc:ga6b891acc8a993f828b0fa626e036b9ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the send response callback function.  <a href="group__doc__module__tag__server__side.html#ga6b891acc8a993f828b0fa626e036b9ac">More...</a><br /></td></tr>
+<tr class="separator:ga6b891acc8a993f828b0fa626e036b9ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab749fb66961a18c0341bc00f134793d2"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gab749fb66961a18c0341bc00f134793d2">oc_set_separate_response_buffer</a> (<a class="el" href="oc__ri_8h.html#aa8574b4921b4ecdddd325a4634bec426">oc_separate_response_t</a> *handle)</td></tr>
+<tr class="memdesc:gab749fb66961a18c0341bc00f134793d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a response buffer for holding the response payload.  <a href="group__doc__module__tag__server__side.html#gab749fb66961a18c0341bc00f134793d2">More...</a><br /></td></tr>
+<tr class="separator:gab749fb66961a18c0341bc00f134793d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Optional group of functions OCF server support. </p>
@@ -257,15 +266,40 @@ The callee shall not block for too long as the stack is blocked during the invoc
 
 </div>
 </div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="ga8cef7c8b4cfdde5cbd79aace72172d41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8cef7c8b4cfdde5cbd79aace72172d41">&#9670;&nbsp;</a></span>oc_add_resource()</h2>
+<a id="ga81109e81a7c40aaa290298e9411ed95d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga81109e81a7c40aaa290298e9411ed95d">&#9670;&nbsp;</a></span>oc_send_response_cb_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool oc_add_resource </td>
+          <td class="memname">typedef void(* oc_send_response_cb_t) (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request, <a class="el" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38">oc_status_t</a> response_code)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback function is triggered by oc_send_response before the response is set. </p>
+<p>In this callback, the application can set/override the response payload.</p>
+<dl class="section note"><dt>Note</dt><dd>For separate message, pong message, and notification, this callback is not triggered.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">request</td><td>the request being responded to </td></tr>
+    <tr><td class="paramname">response_code</td><td>the status of the response </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ga0892739628f3fe0f73a16ce827346009"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0892739628f3fe0f73a16ce827346009">&#9670;&nbsp;</a></span>oc_add_resource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OC_API bool oc_add_resource </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
           <td class="paramname"><em>resource</em></td><td>)</td>
@@ -290,14 +324,14 @@ The callee shall not block for too long as the stack is blocked during the invoc
 
 </div>
 </div>
-<a id="gabb337e93d0191bd886fb66c872d80f2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabb337e93d0191bd886fb66c872d80f2c">&#9670;&nbsp;</a></span>oc_delayed_delete_resource()</h2>
+<a id="ga64204cf4775391bb168147df708cbab0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga64204cf4775391bb168147df708cbab0">&#9670;&nbsp;</a></span>oc_delayed_delete_resource()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oc_delayed_delete_resource </td>
+          <td class="memname">OC_API void oc_delayed_delete_resource </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
           <td class="paramname"><em>resource</em></td><td>)</td>
@@ -316,14 +350,14 @@ The callee shall not block for too long as the stack is blocked during the invoc
 
 </div>
 </div>
-<a id="ga8be722cad423befa951a60f518e6f3b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8be722cad423befa951a60f518e6f3b2">&#9670;&nbsp;</a></span>oc_delete_resource()</h2>
+<a id="ga2c66e9e67ef883ae3a498822c89bed4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2c66e9e67ef883ae3a498822c89bed4f">&#9670;&nbsp;</a></span>oc_delete_resource()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool oc_delete_resource </td>
+          <td class="memname">OC_API bool oc_delete_resource </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
           <td class="paramname"><em>resource</em></td><td>)</td>
@@ -349,14 +383,14 @@ The callee shall not block for too long as the stack is blocked during the invoc
 
 </div>
 </div>
-<a id="ga0cdcfd9676beaa7368cc9677277279a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0cdcfd9676beaa7368cc9677277279a8">&#9670;&nbsp;</a></span>oc_device_bind_resource_type()</h2>
+<a id="gaffe316025d61724b1957740f5cb061dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaffe316025d61724b1957740f5cb061dd">&#9670;&nbsp;</a></span>oc_device_bind_resource_type()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oc_device_bind_resource_type </td>
+          <td class="memname">OC_API void oc_device_bind_resource_type </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -387,14 +421,14 @@ The callee shall not block for too long as the stack is blocked during the invoc
 
 </div>
 </div>
-<a id="ga7376142521e76079732029aafc2ba8be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7376142521e76079732029aafc2ba8be">&#9670;&nbsp;</a></span>oc_get_diagnostic_message()</h2>
+<a id="ga545c2a949d0ebf8c792972c24edb84a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga545c2a949d0ebf8c792972c24edb84a2">&#9670;&nbsp;</a></span>oc_get_diagnostic_message()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool oc_get_diagnostic_message </td>
+          <td class="memname">OC_API bool oc_get_diagnostic_message </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structoc__client__response__t.html">oc_client_response_t</a> *&#160;</td>
           <td class="paramname"><em>response</em>, </td>
@@ -434,14 +468,14 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="ga7b1a6e27279dc11c72dd8afe4a4a0e40"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7b1a6e27279dc11c72dd8afe4a4a0e40">&#9670;&nbsp;</a></span>oc_get_query_value()</h2>
+<a id="ga0b1fb8cc3e2f72115cb7320d38bf51cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0b1fb8cc3e2f72115cb7320d38bf51cd">&#9670;&nbsp;</a></span>oc_get_query_value()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int oc_get_query_value </td>
+          <td class="memname">OC_API int oc_get_query_value </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structoc__request__t.html">oc_request_t</a> *&#160;</td>
           <td class="paramname"><em>request</em>, </td>
@@ -484,14 +518,14 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="gaa98ea4e09b9b92ff5c6912d089f12ff2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa98ea4e09b9b92ff5c6912d089f12ff2">&#9670;&nbsp;</a></span>oc_get_request_payload_raw()</h2>
+<a id="ga855e88626f09a868cdf896000c6652a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga855e88626f09a868cdf896000c6652a6">&#9670;&nbsp;</a></span>oc_get_request_payload_raw()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool oc_get_request_payload_raw </td>
+          <td class="memname">OC_API bool oc_get_request_payload_raw </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structoc__request__t.html">oc_request_t</a> *&#160;</td>
           <td class="paramname"><em>request</em>, </td>
@@ -538,14 +572,14 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="ga7778fcee747e4b985f3557c0a8e5f692"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7778fcee747e4b985f3557c0a8e5f692">&#9670;&nbsp;</a></span>oc_get_response_payload_raw()</h2>
+<a id="ga27f049db3be4e3c17778c1de3641e349"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga27f049db3be4e3c17778c1de3641e349">&#9670;&nbsp;</a></span>oc_get_response_payload_raw()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool oc_get_response_payload_raw </td>
+          <td class="memname">OC_API bool oc_get_response_payload_raw </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structoc__client__response__t.html">oc_client_response_t</a> *&#160;</td>
           <td class="paramname"><em>response</em>, </td>
@@ -592,14 +626,14 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="gabbee24e2e7b99e6e657c0fd07ceb1db9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabbee24e2e7b99e6e657c0fd07ceb1db9">&#9670;&nbsp;</a></span>oc_ignore_request()</h2>
+<a id="gac0df2122d5bce50e3742fa76031b44fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac0df2122d5bce50e3742fa76031b44fd">&#9670;&nbsp;</a></span>oc_ignore_request()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oc_ignore_request </td>
+          <td class="memname">OC_API void oc_ignore_request </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structoc__request__t.html">oc_request_t</a> *&#160;</td>
           <td class="paramname"><em>request</em></td><td>)</td>
@@ -619,18 +653,18 @@ false </dd></dl>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__ri_8h.html#aca4fa152ba1f8d2cd7639bf5c8276dbe" title="request callback">oc_request_callback_t</a> </dd>
 <dd>
-<a class="el" href="group__doc__module__tag__server__side.html#ga64b2ca53e56b0878149faff19c24c21f" title="Called after the response to a GET, PUT, POST or DELETE call has been prepared completed.">oc_send_response</a> </dd></dl>
+<a class="el" href="group__doc__module__tag__server__side.html#ga91d407466fa75640e48ed64031db1578" title="Called after the response to a GET, PUT, POST or DELETE call has been prepared completed.">oc_send_response</a> </dd></dl>
 
 </div>
 </div>
-<a id="gad7cae396843a07b955e6d588291645c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad7cae396843a07b955e6d588291645c7">&#9670;&nbsp;</a></span>oc_indicate_separate_response()</h2>
+<a id="ga4ff7fda738dd6a36ab3b32cf47ff8148"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4ff7fda738dd6a36ab3b32cf47ff8148">&#9670;&nbsp;</a></span>oc_indicate_separate_response()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oc_indicate_separate_response </td>
+          <td class="memname">OC_API void oc_indicate_separate_response </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structoc__request__t.html">oc_request_t</a> *&#160;</td>
           <td class="paramname"><em>request</em>, </td>
@@ -657,13 +691,13 @@ false </dd></dl>
 <div class="line">handle_separate_response(<span class="keywordtype">void</span> *data)</div>
 <div class="line">{</div>
 <div class="line"><span class="keywordflow">if</span> (sep_response.active) {</div>
-<div class="line">  <a class="code" href="group__doc__module__tag__server__side.html#ga1a6752c73365b6d03a1dcfcf3d3005fc">oc_set_separate_response_buffer</a>(&amp;sep_response);</div>
+<div class="line">  <a class="code" href="group__doc__module__tag__server__side.html#gab749fb66961a18c0341bc00f134793d2">oc_set_separate_response_buffer</a>(&amp;sep_response);</div>
 <div class="line">  printf(<span class="stringliteral">&quot;Handle separate response for GET handler:\n&quot;</span>);</div>
 <div class="line">  <a class="code" href="oc__rep_8h.html#a5a0a8355dd2a54e03bf9c8b65b7a8436">oc_rep_start_root_object</a>();</div>
 <div class="line">  <a class="code" href="oc__rep_8h.html#a9fea833e16965d2200342ae3c8deef35">oc_rep_set_boolean</a>(root, value, <span class="keyword">true</span>);</div>
 <div class="line">  <a class="code" href="oc__rep_8h.html#aef1a23bf7d770f5d304ff07b15ef65ce">oc_rep_set_int</a>(root, dimmingSetting, 75);</div>
 <div class="line">  <a class="code" href="oc__rep_8h.html#ab3a74cd8010eb2b4798b6f38cea3c487">oc_rep_end_root_object</a>();</div>
-<div class="line">  <a class="code" href="group__doc__module__tag__server__side.html#gab8e08bb0d0476a29ecd562f02e7ec61e">oc_send_separate_response</a>(&amp;sep_response, <a class="code" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38a483d03ac6df269eb49b2ca709372889b">OC_STATUS_OK</a>);</div>
+<div class="line">  <a class="code" href="group__doc__module__tag__server__side.html#ga343c242e058df94730944d5b106d0b5f">oc_send_separate_response</a>(&amp;sep_response, <a class="code" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38a483d03ac6df269eb49b2ca709372889b">OC_STATUS_OK</a>);</div>
 <div class="line">}</div>
 <div class="line"><span class="keywordflow">return</span> OC_EVENT_DONE;</div>
 <div class="line">}</div>
@@ -673,13 +707,13 @@ false </dd></dl>
 <div class="line">            <span class="keywordtype">void</span> *user_data)</div>
 <div class="line">{</div>
 <div class="line">  printf(<span class="stringliteral">&quot;GET handler:\n&quot;</span>);</div>
-<div class="line">  <a class="code" href="group__doc__module__tag__server__side.html#gad7cae396843a07b955e6d588291645c7">oc_indicate_separate_response</a>(request, &amp;sep_response);</div>
+<div class="line">  <a class="code" href="group__doc__module__tag__server__side.html#ga4ff7fda738dd6a36ab3b32cf47ff8148">oc_indicate_separate_response</a>(request, &amp;sep_response);</div>
 <div class="line">  <a class="code" href="group__doc__module__tag__common__operations.html#gab239ad62e1bc74df82b8f51f91466157">oc_set_delayed_callback</a>(NULL, &amp;handle_separate_response, 10);</div>
 <div class="line">}</div>
 <div class="ttc" id="agroup__doc__module__tag__common__operations_html_gab239ad62e1bc74df82b8f51f91466157"><div class="ttname"><a href="group__doc__module__tag__common__operations.html#gab239ad62e1bc74df82b8f51f91466157">oc_set_delayed_callback</a></div><div class="ttdeci">OC_API void oc_set_delayed_callback(void *cb_data, oc_trigger_t callback, uint16_t seconds)</div><div class="ttdoc">Schedule a callback to be invoked after a set number of seconds.</div></div>
-<div class="ttc" id="agroup__doc__module__tag__server__side_html_ga1a6752c73365b6d03a1dcfcf3d3005fc"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga1a6752c73365b6d03a1dcfcf3d3005fc">oc_set_separate_response_buffer</a></div><div class="ttdeci">void oc_set_separate_response_buffer(oc_separate_response_t *handle)</div><div class="ttdoc">Set a response buffer for holding the response payload.</div></div>
-<div class="ttc" id="agroup__doc__module__tag__server__side_html_gab8e08bb0d0476a29ecd562f02e7ec61e"><div class="ttname"><a href="group__doc__module__tag__server__side.html#gab8e08bb0d0476a29ecd562f02e7ec61e">oc_send_separate_response</a></div><div class="ttdeci">void oc_send_separate_response(oc_separate_response_t *handle, oc_status_t response_code)</div><div class="ttdoc">Called to send the deferred response to a GET, PUT, POST or DELETE request.</div></div>
-<div class="ttc" id="agroup__doc__module__tag__server__side_html_gad7cae396843a07b955e6d588291645c7"><div class="ttname"><a href="group__doc__module__tag__server__side.html#gad7cae396843a07b955e6d588291645c7">oc_indicate_separate_response</a></div><div class="ttdeci">void oc_indicate_separate_response(oc_request_t *request, oc_separate_response_t *response)</div><div class="ttdoc">Respond to an incoming request asynchronously.</div></div>
+<div class="ttc" id="agroup__doc__module__tag__server__side_html_ga343c242e058df94730944d5b106d0b5f"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga343c242e058df94730944d5b106d0b5f">oc_send_separate_response</a></div><div class="ttdeci">OC_API void oc_send_separate_response(oc_separate_response_t *handle, oc_status_t response_code)</div><div class="ttdoc">Called to send the deferred response to a GET, PUT, POST or DELETE request.</div></div>
+<div class="ttc" id="agroup__doc__module__tag__server__side_html_ga4ff7fda738dd6a36ab3b32cf47ff8148"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga4ff7fda738dd6a36ab3b32cf47ff8148">oc_indicate_separate_response</a></div><div class="ttdeci">OC_API void oc_indicate_separate_response(oc_request_t *request, oc_separate_response_t *response)</div><div class="ttdoc">Respond to an incoming request asynchronously.</div></div>
+<div class="ttc" id="agroup__doc__module__tag__server__side_html_gab749fb66961a18c0341bc00f134793d2"><div class="ttname"><a href="group__doc__module__tag__server__side.html#gab749fb66961a18c0341bc00f134793d2">oc_set_separate_response_buffer</a></div><div class="ttdeci">OC_API void oc_set_separate_response_buffer(oc_separate_response_t *handle)</div><div class="ttdoc">Set a response buffer for holding the response payload.</div></div>
 <div class="ttc" id="aoc__rep_8h_html_a5a0a8355dd2a54e03bf9c8b65b7a8436"><div class="ttname"><a href="oc__rep_8h.html#a5a0a8355dd2a54e03bf9c8b65b7a8436">oc_rep_start_root_object</a></div><div class="ttdeci">#define oc_rep_start_root_object()</div><div class="ttdoc">This macro has been replaced with oc_rep_begin_root_object.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:557</div></div>
 <div class="ttc" id="aoc__rep_8h_html_a9fea833e16965d2200342ae3c8deef35"><div class="ttname"><a href="oc__rep_8h.html#a9fea833e16965d2200342ae3c8deef35">oc_rep_set_boolean</a></div><div class="ttdeci">#define oc_rep_set_boolean(object, key, value)</div><div class="ttdoc">Add an boolean value to the cbor object under the key name Example:</div><div class="ttdef"><b>Definition:</b> oc_rep.h:383</div></div>
 <div class="ttc" id="aoc__rep_8h_html_ab3a74cd8010eb2b4798b6f38cea3c487"><div class="ttname"><a href="oc__rep_8h.html#ab3a74cd8010eb2b4798b6f38cea3c487">oc_rep_end_root_object</a></div><div class="ttdeci">#define oc_rep_end_root_object()</div><div class="ttdoc">End the root object.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:574</div></div>
@@ -695,20 +729,20 @@ false </dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__doc__module__tag__server__side.html#ga1a6752c73365b6d03a1dcfcf3d3005fc" title="Set a response buffer for holding the response payload.">oc_set_separate_response_buffer</a> </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__doc__module__tag__server__side.html#gab749fb66961a18c0341bc00f134793d2" title="Set a response buffer for holding the response payload.">oc_set_separate_response_buffer</a> </dd>
 <dd>
-<a class="el" href="group__doc__module__tag__server__side.html#gab8e08bb0d0476a29ecd562f02e7ec61e" title="Called to send the deferred response to a GET, PUT, POST or DELETE request.">oc_send_separate_response</a> </dd></dl>
+<a class="el" href="group__doc__module__tag__server__side.html#ga343c242e058df94730944d5b106d0b5f" title="Called to send the deferred response to a GET, PUT, POST or DELETE request.">oc_send_separate_response</a> </dd></dl>
 
 </div>
 </div>
-<a id="ga5f33d43ecb0adf38a04d499ecf6b8ea3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5f33d43ecb0adf38a04d499ecf6b8ea3">&#9670;&nbsp;</a></span>oc_init_query_iterator()</h2>
+<a id="ga8a59c5e273ba776c6154fc3f7bed2093"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8a59c5e273ba776c6154fc3f7bed2093">&#9670;&nbsp;</a></span>oc_init_query_iterator()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oc_init_query_iterator </td>
+          <td class="memname">OC_API void oc_init_query_iterator </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -718,18 +752,18 @@ false </dd></dl>
 </div><div class="memdoc">
 
 <p>This resets the query iterator to the start of the URI query parameter. </p>
-<p>This is used together with <a class="el" href="group__doc__module__tag__server__side.html#ga1e26e072f25a51224bbe38a5d0bb9b16" title="Iterate though the URI query parameters for a specific key.">oc_iterate_query_get_values()</a> or <a class="el" href="group__doc__module__tag__server__side.html#ga1bb22fcc031f05d4749aa3415d02c1b0" title="Iterate through the URI query parameters and get each key=value pair.">oc_iterate_query()</a> to iterate through query parameter of a URI that are part of an <code><a class="el" href="structoc__request__t.html" title="request information structure">oc_request_t</a></code> </p>
+<p>This is used together with <a class="el" href="group__doc__module__tag__server__side.html#ga31e1e89e2efd82d6913fe7a5c838f867" title="Iterate though the URI query parameters for a specific key.">oc_iterate_query_get_values()</a> or <a class="el" href="group__doc__module__tag__server__side.html#gaeb7378e985142c77d74589f46ce55357" title="Iterate through the URI query parameters and get each key=value pair.">oc_iterate_query()</a> to iterate through query parameter of a URI that are part of an <code><a class="el" href="structoc__request__t.html" title="request information structure">oc_request_t</a></code> </p>
 
 </div>
 </div>
-<a id="ga1bb22fcc031f05d4749aa3415d02c1b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1bb22fcc031f05d4749aa3415d02c1b0">&#9670;&nbsp;</a></span>oc_iterate_query()</h2>
+<a id="gaeb7378e985142c77d74589f46ce55357"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeb7378e985142c77d74589f46ce55357">&#9670;&nbsp;</a></span>oc_iterate_query()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int oc_iterate_query </td>
+          <td class="memname">OC_API int oc_iterate_query </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structoc__request__t.html">oc_request_t</a> *&#160;</td>
           <td class="paramname"><em>request</em>, </td>
@@ -767,17 +801,17 @@ false </dd></dl>
 </div><div class="memdoc">
 
 <p>Iterate through the URI query parameters and get each key=value pair. </p>
-<p>Before calling <a class="el" href="group__doc__module__tag__server__side.html#ga1bb22fcc031f05d4749aa3415d02c1b0" title="Iterate through the URI query parameters and get each key=value pair.">oc_iterate_query()</a> the first time <a class="el" href="group__doc__module__tag__server__side.html#ga5f33d43ecb0adf38a04d499ecf6b8ea3" title="This resets the query iterator to the start of the URI query parameter.">oc_init_query_iterator()</a> must be called to reset the query iterator to the first query parameter.</p>
+<p>Before calling <a class="el" href="group__doc__module__tag__server__side.html#gaeb7378e985142c77d74589f46ce55357" title="Iterate through the URI query parameters and get each key=value pair.">oc_iterate_query()</a> the first time <a class="el" href="group__doc__module__tag__server__side.html#ga8a59c5e273ba776c6154fc3f7bed2093" title="This resets the query iterator to the start of the URI query parameter.">oc_init_query_iterator()</a> must be called to reset the query iterator to the first query parameter.</p>
 <dl class="section note"><dt>Note</dt><dd>the char pointers returned are pointing to the string location in the query string. Do not rely on a nul terminator to find the end of the string since there may be additional query parameters.</dd></dl>
 <p>Example: </p><div class="fragment"><div class="line"><span class="keywordtype">char</span> *value = NULL;</div>
 <div class="line"><span class="keywordtype">int</span> value_len = -1;</div>
 <div class="line"><span class="keywordtype">char</span> *key</div>
-<div class="line"><a class="code" href="group__doc__module__tag__server__side.html#ga5f33d43ecb0adf38a04d499ecf6b8ea3">oc_init_query_iterator</a>();</div>
-<div class="line"><span class="keywordflow">while</span> (<a class="code" href="group__doc__module__tag__server__side.html#ga1bb22fcc031f05d4749aa3415d02c1b0">oc_iterate_query</a>(request, &amp;key, &amp;key_len, &amp;value, &amp;value_len) &gt; 0) {</div>
+<div class="line"><a class="code" href="group__doc__module__tag__server__side.html#ga8a59c5e273ba776c6154fc3f7bed2093">oc_init_query_iterator</a>();</div>
+<div class="line"><span class="keywordflow">while</span> (<a class="code" href="group__doc__module__tag__server__side.html#gaeb7378e985142c77d74589f46ce55357">oc_iterate_query</a>(request, &amp;key, &amp;key_len, &amp;value, &amp;value_len) &gt; 0) {</div>
 <div class="line">  printf(<span class="stringliteral">&quot;%.*s = %.*s\n&quot;</span>, key_len, key, query_value_len, query_value);</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__doc__module__tag__server__side_html_ga1bb22fcc031f05d4749aa3415d02c1b0"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga1bb22fcc031f05d4749aa3415d02c1b0">oc_iterate_query</a></div><div class="ttdeci">int oc_iterate_query(const oc_request_t *request, const char **key, size_t *key_len, const char **value, size_t *value_len)</div><div class="ttdoc">Iterate through the URI query parameters and get each key=value pair.</div></div>
-<div class="ttc" id="agroup__doc__module__tag__server__side_html_ga5f33d43ecb0adf38a04d499ecf6b8ea3"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga5f33d43ecb0adf38a04d499ecf6b8ea3">oc_init_query_iterator</a></div><div class="ttdeci">void oc_init_query_iterator(void)</div><div class="ttdoc">This resets the query iterator to the start of the URI query parameter.</div></div>
+<div class="ttc" id="agroup__doc__module__tag__server__side_html_ga8a59c5e273ba776c6154fc3f7bed2093"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga8a59c5e273ba776c6154fc3f7bed2093">oc_init_query_iterator</a></div><div class="ttdeci">OC_API void oc_init_query_iterator(void)</div><div class="ttdoc">This resets the query iterator to the start of the URI query parameter.</div></div>
+<div class="ttc" id="agroup__doc__module__tag__server__side_html_gaeb7378e985142c77d74589f46ce55357"><div class="ttname"><a href="group__doc__module__tag__server__side.html#gaeb7378e985142c77d74589f46ce55357">oc_iterate_query</a></div><div class="ttdeci">OC_API int oc_iterate_query(const oc_request_t *request, const char **key, size_t *key_len, const char **value, size_t *value_len)</div><div class="ttdoc">Iterate through the URI query parameters and get each key=value pair.</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">request</td><td>the <a class="el" href="structoc__request__t.html" title="request information structure">oc_request_t</a> that contains the query parameters </td></tr>
@@ -796,14 +830,14 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="ga1e26e072f25a51224bbe38a5d0bb9b16"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1e26e072f25a51224bbe38a5d0bb9b16">&#9670;&nbsp;</a></span>oc_iterate_query_get_values()</h2>
+<a id="ga31e1e89e2efd82d6913fe7a5c838f867"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga31e1e89e2efd82d6913fe7a5c838f867">&#9670;&nbsp;</a></span>oc_iterate_query_get_values()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool oc_iterate_query_get_values </td>
+          <td class="memname">OC_API bool oc_iterate_query_get_values </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structoc__request__t.html">oc_request_t</a> *&#160;</td>
           <td class="paramname"><em>request</em>, </td>
@@ -835,21 +869,21 @@ false </dd></dl>
 </div><div class="memdoc">
 
 <p>Iterate though the URI query parameters for a specific key. </p>
-<p>Before calling <a class="el" href="group__doc__module__tag__server__side.html#ga1e26e072f25a51224bbe38a5d0bb9b16" title="Iterate though the URI query parameters for a specific key.">oc_iterate_query_get_values()</a> the first time <a class="el" href="group__doc__module__tag__server__side.html#ga5f33d43ecb0adf38a04d499ecf6b8ea3" title="This resets the query iterator to the start of the URI query parameter.">oc_init_query_iterator()</a> must be called to reset the query iterator to the first query parameter.</p>
+<p>Before calling <a class="el" href="group__doc__module__tag__server__side.html#ga31e1e89e2efd82d6913fe7a5c838f867" title="Iterate though the URI query parameters for a specific key.">oc_iterate_query_get_values()</a> the first time <a class="el" href="group__doc__module__tag__server__side.html#ga8a59c5e273ba776c6154fc3f7bed2093" title="This resets the query iterator to the start of the URI query parameter.">oc_init_query_iterator()</a> must be called to reset the query iterator to the first query parameter.</p>
 <dl class="section note"><dt>Note</dt><dd>The char pointer returned is pointing to the string location in the query string. Do not rely on a nul terminator to find the end of the string since there may be additional query parameters.</dd></dl>
 <p>Example: </p><div class="fragment"><div class="line"><span class="keywordtype">bool</span> more_query_params = <span class="keyword">false</span>;</div>
 <div class="line"><span class="keyword">const</span> <span class="keywordtype">char</span>* expected_value = <span class="stringliteral">&quot;world&quot;</span></div>
 <div class="line"><span class="keywordtype">char</span> *value = NULL;</div>
 <div class="line"><span class="keywordtype">int</span> value_len = -1;</div>
-<div class="line"><a class="code" href="group__doc__module__tag__server__side.html#ga5f33d43ecb0adf38a04d499ecf6b8ea3">oc_init_query_iterator</a>();</div>
+<div class="line"><a class="code" href="group__doc__module__tag__server__side.html#ga8a59c5e273ba776c6154fc3f7bed2093">oc_init_query_iterator</a>();</div>
 <div class="line"><span class="keywordflow">do</span> {</div>
-<div class="line">more_query_params = <a class="code" href="group__doc__module__tag__server__side.html#ga1e26e072f25a51224bbe38a5d0bb9b16">oc_iterate_query_get_values</a>(request, <span class="stringliteral">&quot;hello&quot;</span>,</div>
+<div class="line">more_query_params = <a class="code" href="group__doc__module__tag__server__side.html#ga31e1e89e2efd82d6913fe7a5c838f867">oc_iterate_query_get_values</a>(request, <span class="stringliteral">&quot;hello&quot;</span>,</div>
 <div class="line">                                                &amp;value, &amp;value_len);</div>
 <div class="line">  <span class="keywordflow">if</span> (rt_len &gt; 0) {</div>
 <div class="line">    printf(<span class="stringliteral">&quot;Found %s = %.*s\n&quot;</span>, <span class="stringliteral">&quot;hello&quot;</span>, value_len, value);</div>
 <div class="line">  }</div>
 <div class="line">} <span class="keywordflow">while</span> (more_query_params);</div>
-<div class="ttc" id="agroup__doc__module__tag__server__side_html_ga1e26e072f25a51224bbe38a5d0bb9b16"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga1e26e072f25a51224bbe38a5d0bb9b16">oc_iterate_query_get_values</a></div><div class="ttdeci">bool oc_iterate_query_get_values(const oc_request_t *request, const char *key, const char **value, int *value_len)</div><div class="ttdoc">Iterate though the URI query parameters for a specific key.</div></div>
+<div class="ttc" id="agroup__doc__module__tag__server__side_html_ga31e1e89e2efd82d6913fe7a5c838f867"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga31e1e89e2efd82d6913fe7a5c838f867">oc_iterate_query_get_values</a></div><div class="ttdeci">OC_API bool oc_iterate_query_get_values(const oc_request_t *request, const char *key, const char **value, int *value_len)</div><div class="ttdoc">Iterate though the URI query parameters for a specific key.</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">request</td><td>the <a class="el" href="structoc__request__t.html" title="request information structure">oc_request_t</a> that contains the query parameters (cannot be NULL) </td></tr>
@@ -863,14 +897,14 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="ga617ddc7eec68117e14bb4e1bf9f867cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga617ddc7eec68117e14bb4e1bf9f867cc">&#9670;&nbsp;</a></span>oc_new_resource()</h2>
+<a id="ga598543a2daa27b984c61ebc697299a1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga598543a2daa27b984c61ebc697299a1a">&#9670;&nbsp;</a></span>oc_new_resource()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structoc__resource__s.html">oc_resource_t</a>* oc_new_resource </td>
+          <td class="memname">OC_API <a class="el" href="structoc__resource__s.html">oc_resource_t</a>* oc_new_resource </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>name</em>, </td>
@@ -903,36 +937,36 @@ false </dd></dl>
 
 <p>Allocate and populate a new oc_resource_t. </p>
 <p>Resources are the primary interface between code and real world devices.</p>
-<p>Each resource has a Uniform Resource Identifier (URI) that identifies it. All resources <b>must</b> specify one or more Resource Types to be considered a valid resource. The number of Resource Types is specified by the <code>num_resource_types</code> the actual Resource Types are added later using the <a class="el" href="group__doc__module__tag__server__side.html#gab17128fac474655e423d58b7e008e95a" title="Add a Resource Type &quot;rt&quot; property to the resource.">oc_resource_bind_resource_type()</a> function.</p>
+<p>Each resource has a Uniform Resource Identifier (URI) that identifies it. All resources <b>must</b> specify one or more Resource Types to be considered a valid resource. The number of Resource Types is specified by the <code>num_resource_types</code> the actual Resource Types are added later using the <a class="el" href="group__doc__module__tag__server__side.html#gab9f7a22c21390172f26a2148cbe2780c" title="Add a Resource Type &quot;rt&quot; property to the resource.">oc_resource_bind_resource_type()</a> function.</p>
 <p>The resource is populated with a default interface OC_IF_BASELINE.</p>
 <p>Many properties associated with a resource are set or modified after the new resource has been created.</p>
-<p>The resource is not added to the device till <a class="el" href="group__doc__module__tag__server__side.html#ga8cef7c8b4cfdde5cbd79aace72172d41" title="Add a resource to the IoTivity stack.">oc_add_resource()</a> is called.</p>
+<p>The resource is not added to the device till <a class="el" href="group__doc__module__tag__server__side.html#ga0892739628f3fe0f73a16ce827346009" title="Add a resource to the IoTivity stack.">oc_add_resource()</a> is called.</p>
 <p>Example: </p><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> register_resources(<span class="keywordtype">void</span>)</div>
 <div class="line">{</div>
-<div class="line">  <a class="code" href="structoc__resource__s.html">oc_resource_t</a> *bswitch = <a class="code" href="group__doc__module__tag__server__side.html#ga617ddc7eec68117e14bb4e1bf9f867cc">oc_new_resource</a>(<span class="stringliteral">&quot;light switch&quot;</span>, <span class="stringliteral">&quot;/switch&quot;</span>, 1, 0);</div>
-<div class="line">  <a class="code" href="group__doc__module__tag__server__side.html#gab17128fac474655e423d58b7e008e95a">oc_resource_bind_resource_type</a>(bswitch, <span class="stringliteral">&quot;oic.r.switch.binary&quot;</span>);</div>
-<div class="line">  <a class="code" href="group__doc__module__tag__server__side.html#gacc374cc9a8acc977db8f9f27dc3c593c">oc_resource_bind_resource_interface</a>(bswitch, <a class="code" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2a5e082b6f36e0a90aa92fcd0c2c1af871">OC_IF_A</a>);</div>
-<div class="line">  <a class="code" href="group__doc__module__tag__server__side.html#ga8fc917cb0185f7471b58355d6f400777">oc_resource_set_default_interface</a>(bswitch, <a class="code" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2a5e082b6f36e0a90aa92fcd0c2c1af871">OC_IF_A</a>);</div>
-<div class="line">  <a class="code" href="group__doc__module__tag__server__side.html#gad20b61d7925c4ca727476987d8e2fe3d">oc_resource_set_observable</a>(bswitch, <span class="keyword">true</span>);</div>
-<div class="line">  <a class="code" href="group__doc__module__tag__server__side.html#ga4c3f04fa5089c82be3e9eb7339ae8f58">oc_resource_set_discoverable</a>(bswitch, <span class="keyword">true</span>);</div>
-<div class="line">  <a class="code" href="group__doc__module__tag__server__side.html#gaf8ac0f8a7d9fc45bab26b132cc9346e6">oc_resource_set_request_handler</a>(bswitch, <a class="code" href="oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26ad4da05d28f48b07625a227c6dcf33071">OC_GET</a>, get_switch, NULL);</div>
-<div class="line">  <a class="code" href="group__doc__module__tag__server__side.html#gaf8ac0f8a7d9fc45bab26b132cc9346e6">oc_resource_set_request_handler</a>(bswitch, <a class="code" href="oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26a2a3c53df3082c04b8e49ebaca236529b">OC_POST</a>, post_switch, NULL);</div>
-<div class="line">  <a class="code" href="group__doc__module__tag__server__side.html#gaf8ac0f8a7d9fc45bab26b132cc9346e6">oc_resource_set_request_handler</a>(bswitch, <a class="code" href="oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26ab26f49981643265201d4cbdad57a9d88">OC_PUT</a>, put_switch, NULL);</div>
-<div class="line">  <a class="code" href="group__doc__module__tag__server__side.html#ga8cef7c8b4cfdde5cbd79aace72172d41">oc_add_resource</a>(bswitch);</div>
+<div class="line">  <a class="code" href="structoc__resource__s.html">oc_resource_t</a> *bswitch = <a class="code" href="group__doc__module__tag__server__side.html#ga598543a2daa27b984c61ebc697299a1a">oc_new_resource</a>(<span class="stringliteral">&quot;light switch&quot;</span>, <span class="stringliteral">&quot;/switch&quot;</span>, 1, 0);</div>
+<div class="line">  <a class="code" href="group__doc__module__tag__server__side.html#gab9f7a22c21390172f26a2148cbe2780c">oc_resource_bind_resource_type</a>(bswitch, <span class="stringliteral">&quot;oic.r.switch.binary&quot;</span>);</div>
+<div class="line">  <a class="code" href="group__doc__module__tag__server__side.html#ga433d9220c49817bd94768eb2c7aa277f">oc_resource_bind_resource_interface</a>(bswitch, <a class="code" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2a5e082b6f36e0a90aa92fcd0c2c1af871">OC_IF_A</a>);</div>
+<div class="line">  <a class="code" href="group__doc__module__tag__server__side.html#ga0afb75a82a2d070012aa1f37dba180c0">oc_resource_set_default_interface</a>(bswitch, <a class="code" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2a5e082b6f36e0a90aa92fcd0c2c1af871">OC_IF_A</a>);</div>
+<div class="line">  <a class="code" href="group__doc__module__tag__server__side.html#ga06f7fc9fe08f00ddc1b237efcbf9463b">oc_resource_set_observable</a>(bswitch, <span class="keyword">true</span>);</div>
+<div class="line">  <a class="code" href="group__doc__module__tag__server__side.html#gace53890abda2c8db4cedff36d6ce2219">oc_resource_set_discoverable</a>(bswitch, <span class="keyword">true</span>);</div>
+<div class="line">  <a class="code" href="group__doc__module__tag__server__side.html#gae67885704a684b474a581921f0bc64f7">oc_resource_set_request_handler</a>(bswitch, <a class="code" href="oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26ad4da05d28f48b07625a227c6dcf33071">OC_GET</a>, get_switch, NULL);</div>
+<div class="line">  <a class="code" href="group__doc__module__tag__server__side.html#gae67885704a684b474a581921f0bc64f7">oc_resource_set_request_handler</a>(bswitch, <a class="code" href="oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26a2a3c53df3082c04b8e49ebaca236529b">OC_POST</a>, post_switch, NULL);</div>
+<div class="line">  <a class="code" href="group__doc__module__tag__server__side.html#gae67885704a684b474a581921f0bc64f7">oc_resource_set_request_handler</a>(bswitch, <a class="code" href="oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26ab26f49981643265201d4cbdad57a9d88">OC_PUT</a>, put_switch, NULL);</div>
+<div class="line">  <a class="code" href="group__doc__module__tag__server__side.html#ga0892739628f3fe0f73a16ce827346009">oc_add_resource</a>(bswitch);</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__doc__module__tag__server__side_html_ga4c3f04fa5089c82be3e9eb7339ae8f58"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga4c3f04fa5089c82be3e9eb7339ae8f58">oc_resource_set_discoverable</a></div><div class="ttdeci">void oc_resource_set_discoverable(oc_resource_t *resource, bool state)</div><div class="ttdoc">Specify if a resource can be found using OCF discover mechanisms.</div></div>
-<div class="ttc" id="agroup__doc__module__tag__server__side_html_ga617ddc7eec68117e14bb4e1bf9f867cc"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga617ddc7eec68117e14bb4e1bf9f867cc">oc_new_resource</a></div><div class="ttdeci">oc_resource_t * oc_new_resource(const char *name, const char *uri, uint8_t num_resource_types, size_t device)</div><div class="ttdoc">Allocate and populate a new oc_resource_t.</div></div>
-<div class="ttc" id="agroup__doc__module__tag__server__side_html_ga8cef7c8b4cfdde5cbd79aace72172d41"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga8cef7c8b4cfdde5cbd79aace72172d41">oc_add_resource</a></div><div class="ttdeci">bool oc_add_resource(oc_resource_t *resource)</div><div class="ttdoc">Add a resource to the IoTivity stack.</div></div>
-<div class="ttc" id="agroup__doc__module__tag__server__side_html_ga8fc917cb0185f7471b58355d6f400777"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga8fc917cb0185f7471b58355d6f400777">oc_resource_set_default_interface</a></div><div class="ttdeci">void oc_resource_set_default_interface(oc_resource_t *resource, oc_interface_mask_t iface_mask)</div><div class="ttdoc">Select the default interface.</div></div>
-<div class="ttc" id="agroup__doc__module__tag__server__side_html_gab17128fac474655e423d58b7e008e95a"><div class="ttname"><a href="group__doc__module__tag__server__side.html#gab17128fac474655e423d58b7e008e95a">oc_resource_bind_resource_type</a></div><div class="ttdeci">void oc_resource_bind_resource_type(oc_resource_t *resource, const char *type)</div><div class="ttdoc">Add a Resource Type &quot;rt&quot; property to the resource.</div></div>
-<div class="ttc" id="agroup__doc__module__tag__server__side_html_gacc374cc9a8acc977db8f9f27dc3c593c"><div class="ttname"><a href="group__doc__module__tag__server__side.html#gacc374cc9a8acc977db8f9f27dc3c593c">oc_resource_bind_resource_interface</a></div><div class="ttdeci">void oc_resource_bind_resource_interface(oc_resource_t *resource, oc_interface_mask_t iface_mask)</div><div class="ttdoc">Add the supported interface(s) to the resource.</div></div>
-<div class="ttc" id="agroup__doc__module__tag__server__side_html_gad20b61d7925c4ca727476987d8e2fe3d"><div class="ttname"><a href="group__doc__module__tag__server__side.html#gad20b61d7925c4ca727476987d8e2fe3d">oc_resource_set_observable</a></div><div class="ttdeci">void oc_resource_set_observable(oc_resource_t *resource, bool state)</div><div class="ttdoc">Specify that a resource should notify clients when a property has been modified.</div></div>
-<div class="ttc" id="agroup__doc__module__tag__server__side_html_gaf8ac0f8a7d9fc45bab26b132cc9346e6"><div class="ttname"><a href="group__doc__module__tag__server__side.html#gaf8ac0f8a7d9fc45bab26b132cc9346e6">oc_resource_set_request_handler</a></div><div class="ttdeci">void oc_resource_set_request_handler(oc_resource_t *resource, oc_method_t method, oc_request_callback_t callback, void *user_data)</div><div class="ttdoc">Specify a request_callback for GET, PUT, POST, and DELETE methods.</div></div>
+<div class="ttc" id="agroup__doc__module__tag__server__side_html_ga06f7fc9fe08f00ddc1b237efcbf9463b"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga06f7fc9fe08f00ddc1b237efcbf9463b">oc_resource_set_observable</a></div><div class="ttdeci">OC_API void oc_resource_set_observable(oc_resource_t *resource, bool state)</div><div class="ttdoc">Specify that a resource should notify clients when a property has been modified.</div></div>
+<div class="ttc" id="agroup__doc__module__tag__server__side_html_ga0892739628f3fe0f73a16ce827346009"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga0892739628f3fe0f73a16ce827346009">oc_add_resource</a></div><div class="ttdeci">OC_API bool oc_add_resource(oc_resource_t *resource)</div><div class="ttdoc">Add a resource to the IoTivity stack.</div></div>
+<div class="ttc" id="agroup__doc__module__tag__server__side_html_ga0afb75a82a2d070012aa1f37dba180c0"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga0afb75a82a2d070012aa1f37dba180c0">oc_resource_set_default_interface</a></div><div class="ttdeci">OC_API void oc_resource_set_default_interface(oc_resource_t *resource, oc_interface_mask_t iface_mask)</div><div class="ttdoc">Select the default interface.</div></div>
+<div class="ttc" id="agroup__doc__module__tag__server__side_html_ga433d9220c49817bd94768eb2c7aa277f"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga433d9220c49817bd94768eb2c7aa277f">oc_resource_bind_resource_interface</a></div><div class="ttdeci">OC_API void oc_resource_bind_resource_interface(oc_resource_t *resource, oc_interface_mask_t iface_mask)</div><div class="ttdoc">Add the supported interface(s) to the resource.</div></div>
+<div class="ttc" id="agroup__doc__module__tag__server__side_html_ga598543a2daa27b984c61ebc697299a1a"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga598543a2daa27b984c61ebc697299a1a">oc_new_resource</a></div><div class="ttdeci">OC_API oc_resource_t * oc_new_resource(const char *name, const char *uri, uint8_t num_resource_types, size_t device)</div><div class="ttdoc">Allocate and populate a new oc_resource_t.</div></div>
+<div class="ttc" id="agroup__doc__module__tag__server__side_html_gab9f7a22c21390172f26a2148cbe2780c"><div class="ttname"><a href="group__doc__module__tag__server__side.html#gab9f7a22c21390172f26a2148cbe2780c">oc_resource_bind_resource_type</a></div><div class="ttdeci">OC_API void oc_resource_bind_resource_type(oc_resource_t *resource, const char *type)</div><div class="ttdoc">Add a Resource Type &quot;rt&quot; property to the resource.</div></div>
+<div class="ttc" id="agroup__doc__module__tag__server__side_html_gace53890abda2c8db4cedff36d6ce2219"><div class="ttname"><a href="group__doc__module__tag__server__side.html#gace53890abda2c8db4cedff36d6ce2219">oc_resource_set_discoverable</a></div><div class="ttdeci">OC_API void oc_resource_set_discoverable(oc_resource_t *resource, bool state)</div><div class="ttdoc">Specify if a resource can be found using OCF discover mechanisms.</div></div>
+<div class="ttc" id="agroup__doc__module__tag__server__side_html_gae67885704a684b474a581921f0bc64f7"><div class="ttname"><a href="group__doc__module__tag__server__side.html#gae67885704a684b474a581921f0bc64f7">oc_resource_set_request_handler</a></div><div class="ttdeci">OC_API void oc_resource_set_request_handler(oc_resource_t *resource, oc_method_t method, oc_request_callback_t callback, void *user_data)</div><div class="ttdoc">Specify a request_callback for GET, PUT, POST, and DELETE methods.</div></div>
 <div class="ttc" id="aoc__ri_8h_html_a39c56d2b01f08f13d65daaf3354b6b26a2a3c53df3082c04b8e49ebaca236529b"><div class="ttname"><a href="oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26a2a3c53df3082c04b8e49ebaca236529b">OC_POST</a></div><div class="ttdeci">@ OC_POST</div><div class="ttdoc">POST.</div><div class="ttdef"><b>Definition:</b> oc_ri.h:44</div></div>
 <div class="ttc" id="aoc__ri_8h_html_a39c56d2b01f08f13d65daaf3354b6b26ab26f49981643265201d4cbdad57a9d88"><div class="ttname"><a href="oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26ab26f49981643265201d4cbdad57a9d88">OC_PUT</a></div><div class="ttdeci">@ OC_PUT</div><div class="ttdoc">PUT.</div><div class="ttdef"><b>Definition:</b> oc_ri.h:45</div></div>
 <div class="ttc" id="aoc__ri_8h_html_a39c56d2b01f08f13d65daaf3354b6b26ad4da05d28f48b07625a227c6dcf33071"><div class="ttname"><a href="oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26ad4da05d28f48b07625a227c6dcf33071">OC_GET</a></div><div class="ttdeci">@ OC_GET</div><div class="ttdoc">GET.</div><div class="ttdef"><b>Definition:</b> oc_ri.h:43</div></div>
 <div class="ttc" id="aoc__ri_8h_html_a95fa27c60f90b8e3b976f4ca5f04aab2a5e082b6f36e0a90aa92fcd0c2c1af871"><div class="ttname"><a href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2a5e082b6f36e0a90aa92fcd0c2c1af871">OC_IF_A</a></div><div class="ttdeci">@ OC_IF_A</div><div class="ttdoc">oic.if.a</div><div class="ttdef"><b>Definition:</b> oc_ri.h:193</div></div>
-<div class="ttc" id="astructoc__resource__s_html"><div class="ttname"><a href="structoc__resource__s.html">oc_resource_s</a></div><div class="ttdoc">resource structure</div><div class="ttdef"><b>Definition:</b> oc_ri.h:329</div></div>
+<div class="ttc" id="astructoc__resource__s_html"><div class="ttname"><a href="structoc__resource__s.html">oc_resource_s</a></div><div class="ttdoc">resource structure</div><div class="ttdef"><b>Definition:</b> oc_ri.h:330</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>the name of the new resource this will set the property <code>n</code> </td></tr>
@@ -942,30 +976,30 @@ false </dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__doc__module__tag__server__side.html#gacc374cc9a8acc977db8f9f27dc3c593c" title="Add the supported interface(s) to the resource.">oc_resource_bind_resource_interface</a> </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__doc__module__tag__server__side.html#ga433d9220c49817bd94768eb2c7aa277f" title="Add the supported interface(s) to the resource.">oc_resource_bind_resource_interface</a> </dd>
 <dd>
-<a class="el" href="group__doc__module__tag__server__side.html#ga8fc917cb0185f7471b58355d6f400777" title="Select the default interface.">oc_resource_set_default_interface</a> </dd>
+<a class="el" href="group__doc__module__tag__server__side.html#ga0afb75a82a2d070012aa1f37dba180c0" title="Select the default interface.">oc_resource_set_default_interface</a> </dd>
 <dd>
-<a class="el" href="group__doc__module__tag__server__side.html#gab17128fac474655e423d58b7e008e95a" title="Add a Resource Type &quot;rt&quot; property to the resource.">oc_resource_bind_resource_type</a> </dd>
+<a class="el" href="group__doc__module__tag__server__side.html#gab9f7a22c21390172f26a2148cbe2780c" title="Add a Resource Type &quot;rt&quot; property to the resource.">oc_resource_bind_resource_type</a> </dd>
 <dd>
-<a class="el" href="group__doc__module__tag__server__side.html#ga84e32551f9d7097a63a7a9410e170a01" title="Helper function used when responding to a GET request to add Common Properties to a GET response.">oc_process_baseline_interface</a> </dd>
+<a class="el" href="group__doc__module__tag__server__side.html#ga3a3ad9191b27d5bdce0f09b1b35c75d1" title="Helper function used when responding to a GET request to add Common Properties to a GET response.">oc_process_baseline_interface</a> </dd>
 <dd>
-<a class="el" href="group__doc__module__tag__server__side.html#ga4c3f04fa5089c82be3e9eb7339ae8f58" title="Specify if a resource can be found using OCF discover mechanisms.">oc_resource_set_discoverable</a> </dd>
+<a class="el" href="group__doc__module__tag__server__side.html#gace53890abda2c8db4cedff36d6ce2219" title="Specify if a resource can be found using OCF discover mechanisms.">oc_resource_set_discoverable</a> </dd>
 <dd>
-<a class="el" href="group__doc__module__tag__server__side.html#gac8cdb7e511c08982d790c323d8db7c6e" title="The resource will periodically notify observing clients of is property values.">oc_resource_set_periodic_observable</a> </dd>
+<a class="el" href="group__doc__module__tag__server__side.html#ga77ab584f4c2a8902a46b31bd06ab573f" title="The resource will periodically notify observing clients of is property values.">oc_resource_set_periodic_observable</a> </dd>
 <dd>
-<a class="el" href="group__doc__module__tag__server__side.html#gaf8ac0f8a7d9fc45bab26b132cc9346e6" title="Specify a request_callback for GET, PUT, POST, and DELETE methods.">oc_resource_set_request_handler</a> </dd></dl>
+<a class="el" href="group__doc__module__tag__server__side.html#gae67885704a684b474a581921f0bc64f7" title="Specify a request_callback for GET, PUT, POST, and DELETE methods.">oc_resource_set_request_handler</a> </dd></dl>
 
 </div>
 </div>
-<a id="ga43ac6a6fc039b94df00768d69577a9ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga43ac6a6fc039b94df00768d69577a9ed">&#9670;&nbsp;</a></span>oc_notify_observers()</h2>
+<a id="ga961def38ceea35a2191e1071ab9e0989"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga961def38ceea35a2191e1071ab9e0989">&#9670;&nbsp;</a></span>oc_notify_observers()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int oc_notify_observers </td>
+          <td class="memname">OC_API int oc_notify_observers </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
           <td class="paramname"><em>resource</em></td><td>)</td>
@@ -990,14 +1024,14 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="ga24e8975d42a239215ee94219967d3853"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga24e8975d42a239215ee94219967d3853">&#9670;&nbsp;</a></span>oc_notify_observers_delayed()</h2>
+<a id="ga4c8b481e3ecb6708a17fc2f91d6e4a28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4c8b481e3ecb6708a17fc2f91d6e4a28">&#9670;&nbsp;</a></span>oc_notify_observers_delayed()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oc_notify_observers_delayed </td>
+          <td class="memname">OC_API void oc_notify_observers_delayed </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
           <td class="paramname"><em>resource</em>, </td>
@@ -1028,14 +1062,14 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="ga946ffe7104c26ee52fc67d5d0e385795"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga946ffe7104c26ee52fc67d5d0e385795">&#9670;&nbsp;</a></span>oc_notify_observers_delayed_ms()</h2>
+<a id="gaf356531673c5009829bf8b0e51ff6049"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf356531673c5009829bf8b0e51ff6049">&#9670;&nbsp;</a></span>oc_notify_observers_delayed_ms()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oc_notify_observers_delayed_ms </td>
+          <td class="memname">OC_API void oc_notify_observers_delayed_ms </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
           <td class="paramname"><em>resource</em>, </td>
@@ -1066,14 +1100,14 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="ga84e32551f9d7097a63a7a9410e170a01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga84e32551f9d7097a63a7a9410e170a01">&#9670;&nbsp;</a></span>oc_process_baseline_interface()</h2>
+<a id="ga3a3ad9191b27d5bdce0f09b1b35c75d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3a3ad9191b27d5bdce0f09b1b35c75d1">&#9670;&nbsp;</a></span>oc_process_baseline_interface()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oc_process_baseline_interface </td>
+          <td class="memname">OC_API void oc_process_baseline_interface </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
           <td class="paramname"><em>resource</em></td><td>)</td>
@@ -1092,7 +1126,7 @@ false </dd></dl>
 <div class="line">  <a class="code" href="oc__rep_8h.html#a5a0a8355dd2a54e03bf9c8b65b7a8436">oc_rep_start_root_object</a>();</div>
 <div class="line">  <span class="keywordflow">switch</span> (iface_mask) {</div>
 <div class="line">  <span class="keywordflow">case</span> <a class="code" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2a0b202e1b14f62e68613fc6b31b26defe">OC_IF_BASELINE</a>:</div>
-<div class="line">    <a class="code" href="group__doc__module__tag__server__side.html#ga84e32551f9d7097a63a7a9410e170a01">oc_process_baseline_interface</a>(resource);</div>
+<div class="line">    <a class="code" href="group__doc__module__tag__server__side.html#ga3a3ad9191b27d5bdce0f09b1b35c75d1">oc_process_baseline_interface</a>(resource);</div>
 <div class="line">  <span class="comment">// fall through</span></div>
 <div class="line">  <span class="keywordflow">case</span> <a class="code" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2a5e082b6f36e0a90aa92fcd0c2c1af871">OC_IF_A</a>:</div>
 <div class="line">    <a class="code" href="oc__rep_8h.html#a9fea833e16965d2200342ae3c8deef35">oc_rep_set_boolean</a>(root, value, bswitch_state);</div>
@@ -1101,10 +1135,10 @@ false </dd></dl>
 <div class="line">    <span class="keywordflow">break</span>;</div>
 <div class="line">  }</div>
 <div class="line">  <a class="code" href="oc__rep_8h.html#ab3a74cd8010eb2b4798b6f38cea3c487">oc_rep_end_root_object</a>();</div>
-<div class="line">  <a class="code" href="group__doc__module__tag__server__side.html#ga64b2ca53e56b0878149faff19c24c21f">oc_send_response</a>(request, <a class="code" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38a483d03ac6df269eb49b2ca709372889b">OC_STATUS_OK</a>);</div>
+<div class="line">  <a class="code" href="group__doc__module__tag__server__side.html#ga91d407466fa75640e48ed64031db1578">oc_send_response</a>(request, <a class="code" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38a483d03ac6df269eb49b2ca709372889b">OC_STATUS_OK</a>);</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__doc__module__tag__server__side_html_ga64b2ca53e56b0878149faff19c24c21f"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga64b2ca53e56b0878149faff19c24c21f">oc_send_response</a></div><div class="ttdeci">void oc_send_response(oc_request_t *request, oc_status_t response_code)</div><div class="ttdoc">Called after the response to a GET, PUT, POST or DELETE call has been prepared completed.</div></div>
-<div class="ttc" id="agroup__doc__module__tag__server__side_html_ga84e32551f9d7097a63a7a9410e170a01"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga84e32551f9d7097a63a7a9410e170a01">oc_process_baseline_interface</a></div><div class="ttdeci">void oc_process_baseline_interface(const oc_resource_t *resource)</div><div class="ttdoc">Helper function used when responding to a GET request to add Common Properties to a GET response.</div></div>
+<div class="ttc" id="agroup__doc__module__tag__server__side_html_ga3a3ad9191b27d5bdce0f09b1b35c75d1"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga3a3ad9191b27d5bdce0f09b1b35c75d1">oc_process_baseline_interface</a></div><div class="ttdeci">OC_API void oc_process_baseline_interface(const oc_resource_t *resource)</div><div class="ttdoc">Helper function used when responding to a GET request to add Common Properties to a GET response.</div></div>
+<div class="ttc" id="agroup__doc__module__tag__server__side_html_ga91d407466fa75640e48ed64031db1578"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga91d407466fa75640e48ed64031db1578">oc_send_response</a></div><div class="ttdeci">OC_API void oc_send_response(oc_request_t *request, oc_status_t response_code)</div><div class="ttdoc">Called after the response to a GET, PUT, POST or DELETE call has been prepared completed.</div></div>
 <div class="ttc" id="aoc__ri_8h_html_a95fa27c60f90b8e3b976f4ca5f04aab2a0b202e1b14f62e68613fc6b31b26defe"><div class="ttname"><a href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2a0b202e1b14f62e68613fc6b31b26defe">OC_IF_BASELINE</a></div><div class="ttdeci">@ OC_IF_BASELINE</div><div class="ttdoc">oic.if.baseline</div><div class="ttdef"><b>Definition:</b> oc_ri.h:188</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1115,14 +1149,14 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="gab3991a8929db3766a9475ff4fb1279f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab3991a8929db3766a9475ff4fb1279f8">&#9670;&nbsp;</a></span>oc_query_value_exists()</h2>
+<a id="gad3c24454e04dcf1170e5364090ff14df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad3c24454e04dcf1170e5364090ff14df">&#9670;&nbsp;</a></span>oc_query_value_exists()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int oc_query_value_exists </td>
+          <td class="memname">OC_API int oc_query_value_exists </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structoc__request__t.html">oc_request_t</a> *&#160;</td>
           <td class="paramname"><em>request</em>, </td>
@@ -1157,14 +1191,14 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="gacc374cc9a8acc977db8f9f27dc3c593c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacc374cc9a8acc977db8f9f27dc3c593c">&#9670;&nbsp;</a></span>oc_resource_bind_resource_interface()</h2>
+<a id="ga433d9220c49817bd94768eb2c7aa277f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga433d9220c49817bd94768eb2c7aa277f">&#9670;&nbsp;</a></span>oc_resource_bind_resource_interface()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oc_resource_bind_resource_interface </td>
+          <td class="memname">OC_API void oc_resource_bind_resource_interface </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
           <td class="paramname"><em>resource</em>, </td>
@@ -1206,18 +1240,18 @@ false </dd></dl>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2" title="interface masks">oc_interface_mask_t</a> </dd>
 <dd>
-<a class="el" href="group__doc__module__tag__server__side.html#ga8fc917cb0185f7471b58355d6f400777" title="Select the default interface.">oc_resource_set_default_interface</a> </dd></dl>
+<a class="el" href="group__doc__module__tag__server__side.html#ga0afb75a82a2d070012aa1f37dba180c0" title="Select the default interface.">oc_resource_set_default_interface</a> </dd></dl>
 
 </div>
 </div>
-<a id="gab17128fac474655e423d58b7e008e95a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab17128fac474655e423d58b7e008e95a">&#9670;&nbsp;</a></span>oc_resource_bind_resource_type()</h2>
+<a id="gab9f7a22c21390172f26a2148cbe2780c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab9f7a22c21390172f26a2148cbe2780c">&#9670;&nbsp;</a></span>oc_resource_bind_resource_type()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oc_resource_bind_resource_type </td>
+          <td class="memname">OC_API void oc_resource_bind_resource_type </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
           <td class="paramname"><em>resource</em>, </td>
@@ -1237,9 +1271,9 @@ false </dd></dl>
 </div><div class="memdoc">
 
 <p>Add a Resource Type "rt" property to the resource. </p>
-<p>All resources require at least one Resource Type. The number of Resource Types the resource contains is declared when the resource it created using <a class="el" href="group__doc__module__tag__server__side.html#ga617ddc7eec68117e14bb4e1bf9f867cc" title="Allocate and populate a new oc_resource_t.">oc_new_resource()</a> function.</p>
+<p>All resources require at least one Resource Type. The number of Resource Types the resource contains is declared when the resource it created using <a class="el" href="group__doc__module__tag__server__side.html#ga598543a2daa27b984c61ebc697299a1a" title="Allocate and populate a new oc_resource_t.">oc_new_resource()</a> function.</p>
 <p>Resource Types use a dot "." naming scheme e.g. <code>oic.r.switch.binary</code>. Resource Types starting with <code>oic</code> are reserved for a OCF defined Resource Types. Developers are strongly encouraged to try and use an OCF defined Resource Type vs. creating their own. A repository of OCF defined resources can be found on <a href="https://github.com/openconnectivityfoundation/IoTDataModels">https://github.com/openconnectivityfoundation/IoTDataModels</a>.</p>
-<p>Multi-value "rt" Resource means a resource with multiple Resource Types. i.e. <a class="el" href="group__doc__module__tag__server__side.html#gab17128fac474655e423d58b7e008e95a" title="Add a Resource Type &quot;rt&quot; property to the resource.">oc_resource_bind_resource_type()</a> is called multiple times for a single resource. When using a Mulit-value Resource the different resources properties must not conflict.</p>
+<p>Multi-value "rt" Resource means a resource with multiple Resource Types. i.e. <a class="el" href="group__doc__module__tag__server__side.html#gab9f7a22c21390172f26a2148cbe2780c" title="Add a Resource Type &quot;rt&quot; property to the resource.">oc_resource_bind_resource_type()</a> is called multiple times for a single resource. When using a Mulit-value Resource the different resources properties must not conflict.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">resource</td><td>the resource that the Resource Type will be set on </td></tr>
@@ -1247,9 +1281,9 @@ false </dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__doc__module__tag__server__side.html#ga617ddc7eec68117e14bb4e1bf9f867cc" title="Allocate and populate a new oc_resource_t.">oc_new_resource</a> </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__doc__module__tag__server__side.html#ga598543a2daa27b984c61ebc697299a1a" title="Allocate and populate a new oc_resource_t.">oc_new_resource</a> </dd>
 <dd>
-<a class="el" href="group__doc__module__tag__server__side.html#ga0cdcfd9676beaa7368cc9677277279a8" title="Add a Resource Type &quot;rt&quot; property to the an /oic/d resource.">oc_device_bind_resource_type</a> </dd></dl>
+<a class="el" href="group__doc__module__tag__server__side.html#gaffe316025d61724b1957740f5cb061dd" title="Add a Resource Type &quot;rt&quot; property to the an /oic/d resource.">oc_device_bind_resource_type</a> </dd></dl>
 
 </div>
 </div>
@@ -1277,18 +1311,18 @@ false </dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__doc__module__tag__server__side.html#ga617ddc7eec68117e14bb4e1bf9f867cc" title="Allocate and populate a new oc_resource_t.">oc_new_resource</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__doc__module__tag__server__side.html#ga598543a2daa27b984c61ebc697299a1a" title="Allocate and populate a new oc_resource_t.">oc_new_resource</a> </dd></dl>
 
 </div>
 </div>
-<a id="ga8fc917cb0185f7471b58355d6f400777"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8fc917cb0185f7471b58355d6f400777">&#9670;&nbsp;</a></span>oc_resource_set_default_interface()</h2>
+<a id="ga0afb75a82a2d070012aa1f37dba180c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0afb75a82a2d070012aa1f37dba180c0">&#9670;&nbsp;</a></span>oc_resource_set_default_interface()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oc_resource_set_default_interface </td>
+          <td class="memname">OC_API void oc_resource_set_default_interface </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
           <td class="paramname"><em>resource</em>, </td>
@@ -1308,7 +1342,7 @@ false </dd></dl>
 </div><div class="memdoc">
 
 <p>Select the default interface. </p>
-<p>The default interface must be one of the resources specified in the <a class="el" href="group__doc__module__tag__server__side.html#gacc374cc9a8acc977db8f9f27dc3c593c" title="Add the supported interface(s) to the resource.">oc_resource_bind_resource_interface()</a> function.</p>
+<p>The default interface must be one of the resources specified in the <a class="el" href="group__doc__module__tag__server__side.html#ga433d9220c49817bd94768eb2c7aa277f" title="Add the supported interface(s) to the resource.">oc_resource_bind_resource_interface()</a> function.</p>
 <p>If a request to the resource comes in and the interface is not specified then the default interface will be used to service the request.</p>
 <p>If the default interface is not set then the OC_IF_BASELINE will be used by the stack.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -1321,14 +1355,14 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="ga4c3f04fa5089c82be3e9eb7339ae8f58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4c3f04fa5089c82be3e9eb7339ae8f58">&#9670;&nbsp;</a></span>oc_resource_set_discoverable()</h2>
+<a id="gace53890abda2c8db4cedff36d6ce2219"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gace53890abda2c8db4cedff36d6ce2219">&#9670;&nbsp;</a></span>oc_resource_set_discoverable()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oc_resource_set_discoverable </td>
+          <td class="memname">OC_API void oc_resource_set_discoverable </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
           <td class="paramname"><em>resource</em>, </td>
@@ -1355,18 +1389,18 @@ false </dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__doc__module__tag__server__side.html#ga617ddc7eec68117e14bb4e1bf9f867cc" title="Allocate and populate a new oc_resource_t.">oc_new_resource</a> for example code using this function </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__doc__module__tag__server__side.html#ga598543a2daa27b984c61ebc697299a1a" title="Allocate and populate a new oc_resource_t.">oc_new_resource</a> for example code using this function </dd></dl>
 
 </div>
 </div>
-<a id="gad20b61d7925c4ca727476987d8e2fe3d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad20b61d7925c4ca727476987d8e2fe3d">&#9670;&nbsp;</a></span>oc_resource_set_observable()</h2>
+<a id="ga06f7fc9fe08f00ddc1b237efcbf9463b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga06f7fc9fe08f00ddc1b237efcbf9463b">&#9670;&nbsp;</a></span>oc_resource_set_observable()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oc_resource_set_observable </td>
+          <td class="memname">OC_API void oc_resource_set_observable </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
           <td class="paramname"><em>resource</em>, </td>
@@ -1394,20 +1428,20 @@ false </dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__doc__module__tag__server__side.html#ga617ddc7eec68117e14bb4e1bf9f867cc" title="Allocate and populate a new oc_resource_t.">oc_new_resource</a> to see example code using this function </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__doc__module__tag__server__side.html#ga598543a2daa27b984c61ebc697299a1a" title="Allocate and populate a new oc_resource_t.">oc_new_resource</a> to see example code using this function </dd>
 <dd>
-<a class="el" href="group__doc__module__tag__server__side.html#gac8cdb7e511c08982d790c323d8db7c6e" title="The resource will periodically notify observing clients of is property values.">oc_resource_set_periodic_observable</a> </dd></dl>
+<a class="el" href="group__doc__module__tag__server__side.html#ga77ab584f4c2a8902a46b31bd06ab573f" title="The resource will periodically notify observing clients of is property values.">oc_resource_set_periodic_observable</a> </dd></dl>
 
 </div>
 </div>
-<a id="gac8cdb7e511c08982d790c323d8db7c6e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac8cdb7e511c08982d790c323d8db7c6e">&#9670;&nbsp;</a></span>oc_resource_set_periodic_observable()</h2>
+<a id="ga77ab584f4c2a8902a46b31bd06ab573f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga77ab584f4c2a8902a46b31bd06ab573f">&#9670;&nbsp;</a></span>oc_resource_set_periodic_observable()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oc_resource_set_periodic_observable </td>
+          <td class="memname">OC_API void oc_resource_set_periodic_observable </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
           <td class="paramname"><em>resource</em>, </td>
@@ -1427,7 +1461,7 @@ false </dd></dl>
 </div><div class="memdoc">
 
 <p>The resource will periodically notify observing clients of is property values. </p>
-<p>The <a class="el" href="group__doc__module__tag__server__side.html#gad20b61d7925c4ca727476987d8e2fe3d" title="Specify that a resource should notify clients when a property has been modified.">oc_resource_set_observable()</a> function can be used to turn off a periodic observable resource.</p>
+<p>The <a class="el" href="group__doc__module__tag__server__side.html#ga06f7fc9fe08f00ddc1b237efcbf9463b" title="Specify that a resource should notify clients when a property has been modified.">oc_resource_set_observable()</a> function can be used to turn off a periodic observable resource.</p>
 <p>Setting a <code>seconds</code> frequency of zero <code>0</code> is invalid and will result in an invalid resource.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1439,14 +1473,14 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="gaf9028094981175854c699f6da4a34131"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf9028094981175854c699f6da4a34131">&#9670;&nbsp;</a></span>oc_resource_set_properties_cbs()</h2>
+<a id="ga044346b9b3fa39566b3c5d701704aab9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga044346b9b3fa39566b3c5d701704aab9">&#9670;&nbsp;</a></span>oc_resource_set_properties_cbs()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oc_resource_set_properties_cbs </td>
+          <td class="memname">OC_API void oc_resource_set_properties_cbs </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
           <td class="paramname"><em>resource</em>, </td>
@@ -1497,14 +1531,14 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="gaf2cb26b72d6454326767573219e96219"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf2cb26b72d6454326767573219e96219">&#9670;&nbsp;</a></span>oc_resource_set_pushable()</h2>
+<a id="gaa532c4183fedfa742415d44ec2256366"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa532c4183fedfa742415d44ec2256366">&#9670;&nbsp;</a></span>oc_resource_set_pushable()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OC_API void oc_resource_set_pushable </td>
+          <td class="memname">OC_API OC_API void oc_resource_set_pushable </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
           <td class="paramname"><em>resource</em>, </td>
@@ -1534,14 +1568,14 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="gaf8ac0f8a7d9fc45bab26b132cc9346e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf8ac0f8a7d9fc45bab26b132cc9346e6">&#9670;&nbsp;</a></span>oc_resource_set_request_handler()</h2>
+<a id="gae67885704a684b474a581921f0bc64f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae67885704a684b474a581921f0bc64f7">&#9670;&nbsp;</a></span>oc_resource_set_request_handler()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oc_resource_set_request_handler </td>
+          <td class="memname">OC_API void oc_resource_set_request_handler </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
           <td class="paramname"><em>resource</em>, </td>
@@ -1590,18 +1624,18 @@ false </dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__doc__module__tag__server__side.html#ga617ddc7eec68117e14bb4e1bf9f867cc" title="Allocate and populate a new oc_resource_t.">oc_new_resource</a> to see example code using this function </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__doc__module__tag__server__side.html#ga598543a2daa27b984c61ebc697299a1a" title="Allocate and populate a new oc_resource_t.">oc_new_resource</a> to see example code using this function </dd></dl>
 
 </div>
 </div>
-<a id="ga1f9849f29f1230a59608b9ced28d2ca3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1f9849f29f1230a59608b9ced28d2ca3">&#9670;&nbsp;</a></span>oc_resource_tag_func_desc()</h2>
+<a id="ga65a815bb462e64369f36717b552c29a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga65a815bb462e64369f36717b552c29a7">&#9670;&nbsp;</a></span>oc_resource_tag_func_desc()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oc_resource_tag_func_desc </td>
+          <td class="memname">OC_API void oc_resource_tag_func_desc </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
           <td class="paramname"><em>resource</em>, </td>
@@ -1631,14 +1665,14 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="gad572fe8e6e6e13bccfd08afb116fcfc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad572fe8e6e6e13bccfd08afb116fcfc4">&#9670;&nbsp;</a></span>oc_resource_tag_locn()</h2>
+<a id="gad43ea2f435db5ad734637bbeae5cc616"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad43ea2f435db5ad734637bbeae5cc616">&#9670;&nbsp;</a></span>oc_resource_tag_locn()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oc_resource_tag_locn </td>
+          <td class="memname">OC_API void oc_resource_tag_locn </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
           <td class="paramname"><em>resource</em>, </td>
@@ -1668,14 +1702,14 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="ga1dfed6e958cc30bcfb3f6d9354717766"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1dfed6e958cc30bcfb3f6d9354717766">&#9670;&nbsp;</a></span>oc_resource_tag_pos_desc()</h2>
+<a id="ga9200cdaa1b6d8510d3c3b1e4c82122d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9200cdaa1b6d8510d3c3b1e4c82122d6">&#9670;&nbsp;</a></span>oc_resource_tag_pos_desc()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oc_resource_tag_pos_desc </td>
+          <td class="memname">OC_API void oc_resource_tag_pos_desc </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
           <td class="paramname"><em>resource</em>, </td>
@@ -1705,14 +1739,14 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="ga61f5b9d101ea41bf333e2ba140b7b44e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga61f5b9d101ea41bf333e2ba140b7b44e">&#9670;&nbsp;</a></span>oc_resource_tag_pos_rel()</h2>
+<a id="gaba1099be637f4acb91a1cde08555762e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaba1099be637f4acb91a1cde08555762e">&#9670;&nbsp;</a></span>oc_resource_tag_pos_rel()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oc_resource_tag_pos_rel </td>
+          <td class="memname">OC_API void oc_resource_tag_pos_rel </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
           <td class="paramname"><em>resource</em>, </td>
@@ -1756,14 +1790,14 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="gadcfcce0aa1c740c40c85905b5f1e561a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadcfcce0aa1c740c40c85905b5f1e561a">&#9670;&nbsp;</a></span>oc_send_diagnostic_message()</h2>
+<a id="ga66de4068b4ad9ed854767ac7935675d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga66de4068b4ad9ed854767ac7935675d9">&#9670;&nbsp;</a></span>oc_send_diagnostic_message()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oc_send_diagnostic_message </td>
+          <td class="memname">OC_API void oc_send_diagnostic_message </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structoc__request__t.html">oc_request_t</a> *&#160;</td>
           <td class="paramname"><em>request</em>, </td>
@@ -1807,14 +1841,14 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="ga64b2ca53e56b0878149faff19c24c21f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga64b2ca53e56b0878149faff19c24c21f">&#9670;&nbsp;</a></span>oc_send_response()</h2>
+<a id="ga91d407466fa75640e48ed64031db1578"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga91d407466fa75640e48ed64031db1578">&#9670;&nbsp;</a></span>oc_send_response()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oc_send_response </td>
+          <td class="memname">OC_API void oc_send_response </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structoc__request__t.html">oc_request_t</a> *&#160;</td>
           <td class="paramname"><em>request</em>, </td>
@@ -1835,6 +1869,7 @@ false </dd></dl>
 
 <p>Called after the response to a GET, PUT, POST or DELETE call has been prepared completed. </p>
 <p>The function oc_send_response is called at the end of a oc_request_callback_t to inform the caller about the status of the requested action.</p>
+<dl class="section note"><dt>Note</dt><dd>This function just calls oc_send_response_with_callback with trigger_cb set to false.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">request</td><td>the request being responded to </td></tr>
@@ -1844,20 +1879,22 @@ false </dd></dl>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__ri_8h.html#aca4fa152ba1f8d2cd7639bf5c8276dbe" title="request callback">oc_request_callback_t</a> </dd>
 <dd>
-<a class="el" href="group__doc__module__tag__server__side.html#gabbee24e2e7b99e6e657c0fd07ceb1db9" title="Ignore the request.">oc_ignore_request</a> </dd>
+<a class="el" href="group__doc__module__tag__server__side.html#gac0df2122d5bce50e3742fa76031b44fd" title="Ignore the request.">oc_ignore_request</a> </dd>
 <dd>
-<a class="el" href="group__doc__module__tag__server__side.html#gad7cae396843a07b955e6d588291645c7" title="Respond to an incoming request asynchronously.">oc_indicate_separate_response</a> </dd></dl>
+<a class="el" href="group__doc__module__tag__server__side.html#ga4ff7fda738dd6a36ab3b32cf47ff8148" title="Respond to an incoming request asynchronously.">oc_indicate_separate_response</a> </dd>
+<dd>
+<a class="el" href="group__doc__module__tag__server__side.html#ga939b73579fc2e84cbf03df7cbf988cde" title="Called after the response to a GET, PUT, POST or DELETE call has been prepared completed.">oc_send_response_with_callback</a> </dd></dl>
 
 </div>
 </div>
-<a id="gab8b2f6fcf1ccbe750079af98f167a834"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab8b2f6fcf1ccbe750079af98f167a834">&#9670;&nbsp;</a></span>oc_send_response_raw()</h2>
+<a id="ga78e8a185e657c88d5e93ed3cc08132c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga78e8a185e657c88d5e93ed3cc08132c0">&#9670;&nbsp;</a></span>oc_send_response_raw()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oc_send_response_raw </td>
+          <td class="memname">OC_API void oc_send_response_raw </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structoc__request__t.html">oc_request_t</a> *&#160;</td>
           <td class="paramname"><em>request</em>, </td>
@@ -1908,14 +1945,65 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="gab8e08bb0d0476a29ecd562f02e7ec61e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab8e08bb0d0476a29ecd562f02e7ec61e">&#9670;&nbsp;</a></span>oc_send_separate_response()</h2>
+<a id="ga939b73579fc2e84cbf03df7cbf988cde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga939b73579fc2e84cbf03df7cbf988cde">&#9670;&nbsp;</a></span>oc_send_response_with_callback()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oc_send_separate_response </td>
+          <td class="memname">OC_API void oc_send_response_with_callback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structoc__request__t.html">oc_request_t</a> *&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38">oc_status_t</a>&#160;</td>
+          <td class="paramname"><em>response_code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>trigger_cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called after the response to a GET, PUT, POST or DELETE call has been prepared completed. </p>
+<p>The function oc_send_response is called at the end of a oc_request_callback_t to inform the caller about the status of the requested action.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">request</td><td>the request being responded to </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">response_code</td><td>the status of the response </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">trigger_cb</td><td>if true, the send response callback will be triggered</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>For libraries it is recommended to set trigger_cb to true to allow modify the response body.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__ri_8h.html#aca4fa152ba1f8d2cd7639bf5c8276dbe" title="request callback">oc_request_callback_t</a> </dd>
+<dd>
+<a class="el" href="group__doc__module__tag__server__side.html#gac0df2122d5bce50e3742fa76031b44fd" title="Ignore the request.">oc_ignore_request</a> </dd>
+<dd>
+<a class="el" href="group__doc__module__tag__server__side.html#ga4ff7fda738dd6a36ab3b32cf47ff8148" title="Respond to an incoming request asynchronously.">oc_indicate_separate_response</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga343c242e058df94730944d5b106d0b5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga343c242e058df94730944d5b106d0b5f">&#9670;&nbsp;</a></span>oc_send_separate_response()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OC_API void oc_send_separate_response </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="oc__ri_8h.html#aa8574b4921b4ecdddd325a4634bec426">oc_separate_response_t</a> *&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
@@ -1938,29 +2026,29 @@ false </dd></dl>
 <p>The function oc_send_separate_response is called to initiate transfer of the response.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>instance of the internal struct that was passed to <a class="el" href="group__doc__module__tag__server__side.html#gad7cae396843a07b955e6d588291645c7" title="Respond to an incoming request asynchronously.">oc_indicate_separate_response()</a> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>instance of the internal struct that was passed to <a class="el" href="group__doc__module__tag__server__side.html#ga4ff7fda738dd6a36ab3b32cf47ff8148" title="Respond to an incoming request asynchronously.">oc_indicate_separate_response()</a> </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">response_code</td><td>the status of the response</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__doc__module__tag__server__side.html#gad7cae396843a07b955e6d588291645c7" title="Respond to an incoming request asynchronously.">oc_indicate_separate_response</a> </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__doc__module__tag__server__side.html#ga4ff7fda738dd6a36ab3b32cf47ff8148" title="Respond to an incoming request asynchronously.">oc_indicate_separate_response</a> </dd>
 <dd>
-<a class="el" href="group__doc__module__tag__server__side.html#gab8e08bb0d0476a29ecd562f02e7ec61e" title="Called to send the deferred response to a GET, PUT, POST or DELETE request.">oc_send_separate_response</a> </dd>
+<a class="el" href="group__doc__module__tag__server__side.html#ga343c242e058df94730944d5b106d0b5f" title="Called to send the deferred response to a GET, PUT, POST or DELETE request.">oc_send_separate_response</a> </dd>
 <dd>
-<a class="el" href="group__doc__module__tag__server__side.html#ga64b2ca53e56b0878149faff19c24c21f" title="Called after the response to a GET, PUT, POST or DELETE call has been prepared completed.">oc_send_response</a> </dd>
+<a class="el" href="group__doc__module__tag__server__side.html#ga91d407466fa75640e48ed64031db1578" title="Called after the response to a GET, PUT, POST or DELETE call has been prepared completed.">oc_send_response</a> </dd>
 <dd>
-<a class="el" href="group__doc__module__tag__server__side.html#gabbee24e2e7b99e6e657c0fd07ceb1db9" title="Ignore the request.">oc_ignore_request</a> </dd></dl>
+<a class="el" href="group__doc__module__tag__server__side.html#gac0df2122d5bce50e3742fa76031b44fd" title="Ignore the request.">oc_ignore_request</a> </dd></dl>
 
 </div>
 </div>
-<a id="ga1497c8c36b39a1c9cca7972caa40a92c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1497c8c36b39a1c9cca7972caa40a92c">&#9670;&nbsp;</a></span>oc_set_con_write_cb()</h2>
+<a id="ga3f0e0da6b118401756cdbb542c985996"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3f0e0da6b118401756cdbb542c985996">&#9670;&nbsp;</a></span>oc_set_con_write_cb()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oc_set_con_write_cb </td>
+          <td class="memname">OC_API void oc_set_con_write_cb </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__doc__module__tag__server__side.html#ga3eaefb66d2e5bf5009aeac9d8276e065">oc_con_write_cb_t</a>&#160;</td>
           <td class="paramname"><em>callback</em></td><td>)</td>
@@ -1980,14 +2068,41 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="ga1a6752c73365b6d03a1dcfcf3d3005fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1a6752c73365b6d03a1dcfcf3d3005fc">&#9670;&nbsp;</a></span>oc_set_separate_response_buffer()</h2>
+<a id="ga6b891acc8a993f828b0fa626e036b9ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6b891acc8a993f828b0fa626e036b9ac">&#9670;&nbsp;</a></span>oc_set_send_response_callback()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oc_set_separate_response_buffer </td>
+          <td class="memname">OC_API void oc_set_send_response_callback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__doc__module__tag__server__side.html#ga81109e81a7c40aaa290298e9411ed95d">oc_send_response_cb_t</a>&#160;</td>
+          <td class="paramname"><em>cb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the send response callback function. </p>
+<dl class="section note"><dt>Note</dt><dd>This function is not thread safe. It should be called before <a class="el" href="oc__api_8h.html#a97c9701d622686581b1053784e3c1431" title="Register and call handler functions responsible for controlling the IoTivity-lite stack.">oc_main_init()</a>.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cb</td><td>that will be triggered by oc_send_response_with_callback when the trigger_cb is true. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gab749fb66961a18c0341bc00f134793d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab749fb66961a18c0341bc00f134793d2">&#9670;&nbsp;</a></span>oc_set_separate_response_buffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OC_API void oc_set_separate_response_buffer </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="oc__ri_8h.html#aa8574b4921b4ecdddd325a4634bec426">oc_separate_response_t</a> *&#160;</td>
           <td class="paramname"><em>handle</em></td><td>)</td>
@@ -1997,16 +2112,16 @@ false </dd></dl>
 </div><div class="memdoc">
 
 <p>Set a response buffer for holding the response payload. </p>
-<p>When a deferred response is ready, pass in the same <code>oc_separate_response_t</code> that was handed to <a class="el" href="group__doc__module__tag__server__side.html#gad7cae396843a07b955e6d588291645c7" title="Respond to an incoming request asynchronously.">oc_indicate_separate_response()</a> for delaying the initial response.</p>
+<p>When a deferred response is ready, pass in the same <code>oc_separate_response_t</code> that was handed to <a class="el" href="group__doc__module__tag__server__side.html#ga4ff7fda738dd6a36ab3b32cf47ff8148" title="Respond to an incoming request asynchronously.">oc_indicate_separate_response()</a> for delaying the initial response.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>instance of the oc_separate_response_t that was passed to the <a class="el" href="group__doc__module__tag__server__side.html#gad7cae396843a07b955e6d588291645c7" title="Respond to an incoming request asynchronously.">oc_indicate_separate_response()</a> function</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>instance of the oc_separate_response_t that was passed to the <a class="el" href="group__doc__module__tag__server__side.html#ga4ff7fda738dd6a36ab3b32cf47ff8148" title="Respond to an incoming request asynchronously.">oc_indicate_separate_response()</a> function</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__doc__module__tag__server__side.html#gad7cae396843a07b955e6d588291645c7" title="Respond to an incoming request asynchronously.">oc_indicate_separate_response</a> </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__doc__module__tag__server__side.html#ga4ff7fda738dd6a36ab3b32cf47ff8148" title="Respond to an incoming request asynchronously.">oc_indicate_separate_response</a> </dd>
 <dd>
-<a class="el" href="group__doc__module__tag__server__side.html#gab8e08bb0d0476a29ecd562f02e7ec61e" title="Called to send the deferred response to a GET, PUT, POST or DELETE request.">oc_send_separate_response</a> </dd></dl>
+<a class="el" href="group__doc__module__tag__server__side.html#ga343c242e058df94730944d5b106d0b5f" title="Called to send the deferred response to a GET, PUT, POST or DELETE request.">oc_send_separate_response</a> </dd></dl>
 
 </div>
 </div>
@@ -2015,7 +2130,7 @@ false </dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon May 8 2023 08:29:28 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue May 9 2023 04:40:33 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -153,6 +153,7 @@ var oc__ri_8h =
       [ "OC_TRANSACTION_TIMEOUT", "oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38a1246eb95891a582686ead917590eaa12", null ],
       [ "OC_CANCELLED", "oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38ac64c2ce9394949a9836e80dad4545c60", null ]
     ] ],
+    [ "oc_method_to_str", "oc__ri_8h.html#a11f34e52d92dd08e02fb9b00ee591e88", null ],
     [ "oc_ri_add_resource", "oc__ri_8h.html#a1481c68aff7317781a4af49dd53289ea", null ],
     [ "oc_ri_add_timed_event_callback_ticks", "oc__ri_8h.html#a1ce65e738f997897e1fa07dc06d90d4e", null ],
     [ "oc_ri_alloc_resource", "oc__ri_8h.html#a7147ccded944c339e039abb43e485619", null ],
@@ -172,6 +173,6 @@ var oc__ri_8h =
     [ "oc_ri_remove_timed_event_callback", "oc__ri_8h.html#ab1c22615d84a88b3ef75b0ca9008b70c", null ],
     [ "oc_ri_remove_timed_event_callback_by_filter", "oc__ri_8h.html#adafb68ec0009578949c018a07f204c26", null ],
     [ "oc_ri_shutdown", "oc__ri_8h.html#af50fe1e19e0b2607dd2b3ac1db93668e", null ],
-    [ "oc_status_code", "oc__ri_8h.html#a8bc80a7833566d791556f311e514e722", null ],
+    [ "oc_status_code", "oc__ri_8h.html#ab9915122ed5df29708495d6f29880d8c", null ],
     [ "oc_status_to_str", "oc__ri_8h.html#abf3a3fb70d2be6bbcd2d2f74affcb080", null ]
 ];

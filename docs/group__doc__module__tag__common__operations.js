@@ -9,5 +9,5 @@ var group__doc__module__tag__common__operations =
     [ "oc_set_delayed_callback", "group__doc__module__tag__common__operations.html#gab239ad62e1bc74df82b8f51f91466157", null ],
     [ "oc_set_delayed_callback_ms", "group__doc__module__tag__common__operations.html#ga9fdce010e251adf9dd34d1efb6279f12", null ],
     [ "oc_set_delayed_callback_ms_v1", "group__doc__module__tag__common__operations.html#ga86154e349470e80af5637322b58d9f1a", null ],
-    [ "oc_set_immutable_device_identifier", "group__doc__module__tag__common__operations.html#ga627d0770c9a32e85077200765ccc18f2", null ]
+    [ "oc_set_immutable_device_identifier", "group__doc__module__tag__common__operations.html#ga0b0a4f3bd4c523934e22c7bb8f3314a9", null ]
 ];
