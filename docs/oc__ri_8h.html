@@ -99,6 +99,7 @@ $(document).ready(function(){initNavTree('oc__ri_8h.html',''); initResizable(); 
 <code>#include &quot;<a class="el" href="oc__uuid_8h.html">oc_uuid.h</a>&quot;</code><br />
 <code>#include &quot;util/oc_etimer.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__features_8h.html">util/oc_features.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="oc__compiler_8h.html">util/oc_compiler.h</a>&quot;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -175,6 +176,9 @@ typedef struct <a class="el" href="structoc__resource__s.html">oc_resource_s</a>
 <tr class="memitem:ae8fe862afa6ce9613ed8b33c1a9e4546"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structoc__response__t.html">oc_response_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#ae8fe862afa6ce9613ed8b33c1a9e4546">oc_response_t</a></td></tr>
 <tr class="memdesc:ae8fe862afa6ce9613ed8b33c1a9e4546"><td class="mdescLeft">&#160;</td><td class="mdescRight">response type  <a href="oc__ri_8h.html#ae8fe862afa6ce9613ed8b33c1a9e4546">More...</a><br /></td></tr>
 <tr class="separator:ae8fe862afa6ce9613ed8b33c1a9e4546"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad66c4823ae99acc1added3a03d3a6687"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#ad66c4823ae99acc1added3a03d3a6687">oc_ri_delete_resource_cb_t</a>) (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
+<tr class="memdesc:ad66c4823ae99acc1added3a03d3a6687"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback invoked on resource before it is deleted by oc_delayed_delete_resource.  <a href="oc__ri_8h.html#ad66c4823ae99acc1added3a03d3a6687">More...</a><br /></td></tr>
+<tr class="separator:ad66c4823ae99acc1added3a03d3a6687"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac53a2923da1e036f62cb84da82d1c8c3"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#ac53a2923da1e036f62cb84da82d1c8c3">oc_ri_timed_event_filter_t</a>) (const void *cb_data, const void *filter_data)</td></tr>
 <tr class="memdesc:ac53a2923da1e036f62cb84da82d1c8c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filtering function used to match scheduled timed events by context data.  <a href="oc__ri_8h.html#ac53a2923da1e036f62cb84da82d1c8c3">More...</a><br /></td></tr>
 <tr class="separator:ac53a2923da1e036f62cb84da82d1c8c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -367,63 +371,57 @@ Functions</h2></td></tr>
 <tr class="memitem:a11f34e52d92dd08e02fb9b00ee591e88"><td class="memItemLeft" align="right" valign="top">OC_API const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a11f34e52d92dd08e02fb9b00ee591e88">oc_method_to_str</a> (<a class="el" href="oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26">oc_method_t</a> method)</td></tr>
 <tr class="memdesc:a11f34e52d92dd08e02fb9b00ee591e88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert method to string.  <a href="oc__ri_8h.html#a11f34e52d92dd08e02fb9b00ee591e88">More...</a><br /></td></tr>
 <tr class="separator:a11f34e52d92dd08e02fb9b00ee591e88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1481c68aff7317781a4af49dd53289ea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a1481c68aff7317781a4af49dd53289ea">oc_ri_add_resource</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
-<tr class="memdesc:a1481c68aff7317781a4af49dd53289ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">add resource to the system  <a href="oc__ri_8h.html#a1481c68aff7317781a4af49dd53289ea">More...</a><br /></td></tr>
-<tr class="separator:a1481c68aff7317781a4af49dd53289ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ce65e738f997897e1fa07dc06d90d4e"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a1ce65e738f997897e1fa07dc06d90d4e">oc_ri_add_timed_event_callback_ticks</a> (void *cb_data, oc_trigger_t event_callback, oc_clock_time_t ticks)</td></tr>
-<tr class="memdesc:a1ce65e738f997897e1fa07dc06d90d4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">add timed event callback  <a href="oc__ri_8h.html#a1ce65e738f997897e1fa07dc06d90d4e">More...</a><br /></td></tr>
-<tr class="separator:a1ce65e738f997897e1fa07dc06d90d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7147ccded944c339e039abb43e485619"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a7147ccded944c339e039abb43e485619">oc_ri_alloc_resource</a> (void)</td></tr>
-<tr class="memdesc:a7147ccded944c339e039abb43e485619"><td class="mdescLeft">&#160;</td><td class="mdescRight">allocate a resource structure  <a href="oc__ri_8h.html#a7147ccded944c339e039abb43e485619">More...</a><br /></td></tr>
-<tr class="separator:a7147ccded944c339e039abb43e485619"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bd8b3d42654b9209dd1a51f468005c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a8bd8b3d42654b9209dd1a51f468005c4">oc_ri_dealloc_resource</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
-<tr class="memdesc:a8bd8b3d42654b9209dd1a51f468005c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">deallocate a resource structure  <a href="oc__ri_8h.html#a8bd8b3d42654b9209dd1a51f468005c4">More...</a><br /></td></tr>
-<tr class="separator:a8bd8b3d42654b9209dd1a51f468005c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a441e6c2103a50c5fc16933739ff0b6c1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a441e6c2103a50c5fc16933739ff0b6c1">oc_ri_delete_resource</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
-<tr class="memdesc:a441e6c2103a50c5fc16933739ff0b6c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove the resource from the list of application resources  <a href="oc__ri_8h.html#a441e6c2103a50c5fc16933739ff0b6c1">More...</a><br /></td></tr>
-<tr class="separator:a441e6c2103a50c5fc16933739ff0b6c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ba4762ae0434f521a5e73e0a63dc8d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a2ba4762ae0434f521a5e73e0a63dc8d8">oc_ri_free_resource_properties</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
-<tr class="memdesc:a2ba4762ae0434f521a5e73e0a63dc8d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">free the properties of the resource  <a href="oc__ri_8h.html#a2ba4762ae0434f521a5e73e0a63dc8d8">More...</a><br /></td></tr>
-<tr class="separator:a2ba4762ae0434f521a5e73e0a63dc8d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a357838f68418d6ad53877e7c11d2a838"><td class="memItemLeft" align="right" valign="top">OC_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a357838f68418d6ad53877e7c11d2a838">oc_ri_add_resource</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
+<tr class="memdesc:a357838f68418d6ad53877e7c11d2a838"><td class="mdescLeft">&#160;</td><td class="mdescRight">add resource to the system  <a href="oc__ri_8h.html#a357838f68418d6ad53877e7c11d2a838">More...</a><br /></td></tr>
+<tr class="separator:a357838f68418d6ad53877e7c11d2a838"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1017a03cded7501fc4b52cadbe0eded4"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a1017a03cded7501fc4b52cadbe0eded4">oc_ri_add_timed_event_callback_ticks</a> (void *cb_data, oc_trigger_t event_callback, oc_clock_time_t ticks) OC_NONNULL(2)</td></tr>
+<tr class="memdesc:a1017a03cded7501fc4b52cadbe0eded4"><td class="mdescLeft">&#160;</td><td class="mdescRight">add timed event callback  <a href="oc__ri_8h.html#a1017a03cded7501fc4b52cadbe0eded4">More...</a><br /></td></tr>
+<tr class="separator:a1017a03cded7501fc4b52cadbe0eded4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec64ea3cbb66d5afc56ecfab7e070909"><td class="memItemLeft" align="right" valign="top">OC_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#aec64ea3cbb66d5afc56ecfab7e070909">oc_ri_delete_resource</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
+<tr class="memdesc:aec64ea3cbb66d5afc56ecfab7e070909"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove the resource from the list of application resources  <a href="oc__ri_8h.html#aec64ea3cbb66d5afc56ecfab7e070909">More...</a><br /></td></tr>
+<tr class="separator:aec64ea3cbb66d5afc56ecfab7e070909"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3e169480a3cd53f3f69b2e60ddb4427"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#ab3e169480a3cd53f3f69b2e60ddb4427">oc_ri_get_app_resource_by_uri</a> (const char *uri, size_t uri_len, size_t device)</td></tr>
-<tr class="memdesc:ab3e169480a3cd53f3f69b2e60ddb4427"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the resource by uri and device indes  <a href="oc__ri_8h.html#ab3e169480a3cd53f3f69b2e60ddb4427">More...</a><br /></td></tr>
+<tr class="memdesc:ab3e169480a3cd53f3f69b2e60ddb4427"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the resource by uri and device index  <a href="oc__ri_8h.html#ab3e169480a3cd53f3f69b2e60ddb4427">More...</a><br /></td></tr>
 <tr class="separator:ab3e169480a3cd53f3f69b2e60ddb4427"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a830f565772c7fb4c14e1d8a737b8ff70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a830f565772c7fb4c14e1d8a737b8ff70">oc_ri_get_app_resources</a> (void)</td></tr>
 <tr class="memdesc:a830f565772c7fb4c14e1d8a737b8ff70"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve list of resources  <a href="oc__ri_8h.html#a830f565772c7fb4c14e1d8a737b8ff70">More...</a><br /></td></tr>
 <tr class="separator:a830f565772c7fb4c14e1d8a737b8ff70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02df23437398110e7c24ef479260e17b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a02df23437398110e7c24ef479260e17b">oc_ri_get_interface_mask</a> (const char *iface, size_t if_len)</td></tr>
-<tr class="memdesc:a02df23437398110e7c24ef479260e17b"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the interface mask from the interface name  <a href="oc__ri_8h.html#a02df23437398110e7c24ef479260e17b">More...</a><br /></td></tr>
-<tr class="separator:a02df23437398110e7c24ef479260e17b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dd6fa36cbdffb7854cbeb6d1356b2dc"><td class="memItemLeft" align="right" valign="top">OC_API <a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a5dd6fa36cbdffb7854cbeb6d1356b2dc">oc_ri_get_interface_mask</a> (const char *iface, size_t iface_len) OC_NONNULL()</td></tr>
+<tr class="memdesc:a5dd6fa36cbdffb7854cbeb6d1356b2dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the interface mask from the interface name  <a href="oc__ri_8h.html#a5dd6fa36cbdffb7854cbeb6d1356b2dc">More...</a><br /></td></tr>
+<tr class="separator:a5dd6fa36cbdffb7854cbeb6d1356b2dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23e9812ac2bc574103178d95ef84c872"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a23e9812ac2bc574103178d95ef84c872">oc_ri_get_query_nth_key_value</a> (const char *query, size_t query_len, const char **key, size_t *key_len, const char **value, size_t *value_len, size_t n)</td></tr>
 <tr class="memdesc:a23e9812ac2bc574103178d95ef84c872"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the query value at the nth position  <a href="oc__ri_8h.html#a23e9812ac2bc574103178d95ef84c872">More...</a><br /></td></tr>
 <tr class="separator:a23e9812ac2bc574103178d95ef84c872"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e71507c8e64d0d010c18c18e9593d39"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a8e71507c8e64d0d010c18c18e9593d39">oc_ri_get_query_value</a> (const char *query, size_t query_len, const char *key, const char **value)</td></tr>
 <tr class="memdesc:a8e71507c8e64d0d010c18c18e9593d39"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the value of the query parameter "key"  <a href="oc__ri_8h.html#a8e71507c8e64d0d010c18c18e9593d39">More...</a><br /></td></tr>
 <tr class="separator:a8e71507c8e64d0d010c18c18e9593d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace8b4ee604a5ec9ebef8fe3a2101e370"><td class="memItemLeft" align="right" valign="top">OC_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#ace8b4ee604a5ec9ebef8fe3a2101e370">oc_ri_has_timed_event_callback</a> (const void *cb_data, oc_trigger_t event_callback, bool ignore_cb_data)</td></tr>
-<tr class="memdesc:ace8b4ee604a5ec9ebef8fe3a2101e370"><td class="mdescLeft">&#160;</td><td class="mdescRight">check if the timed event callback already exists.  <a href="oc__ri_8h.html#ace8b4ee604a5ec9ebef8fe3a2101e370">More...</a><br /></td></tr>
-<tr class="separator:ace8b4ee604a5ec9ebef8fe3a2101e370"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8703351e3156d5419ff7cc485400c9eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a8703351e3156d5419ff7cc485400c9eb">oc_ri_init</a> (void)</td></tr>
-<tr class="memdesc:a8703351e3156d5419ff7cc485400c9eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialize the resource implementation handler  <a href="oc__ri_8h.html#a8703351e3156d5419ff7cc485400c9eb">More...</a><br /></td></tr>
-<tr class="separator:a8703351e3156d5419ff7cc485400c9eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad62d3a3655a9333595b44337bfef7f3a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#ad62d3a3655a9333595b44337bfef7f3a">oc_ri_is_app_resource_valid</a> (const <a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
-<tr class="memdesc:ad62d3a3655a9333595b44337bfef7f3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the resource is valid  <a href="oc__ri_8h.html#ad62d3a3655a9333595b44337bfef7f3a">More...</a><br /></td></tr>
-<tr class="separator:ad62d3a3655a9333595b44337bfef7f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac55d359c61a434feea9f57542b9612a9"><td class="memItemLeft" align="right" valign="top">OC_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#ac55d359c61a434feea9f57542b9612a9">oc_ri_has_timed_event_callback</a> (const void *cb_data, oc_trigger_t event_callback, bool ignore_cb_data) OC_NONNULL(2)</td></tr>
+<tr class="memdesc:ac55d359c61a434feea9f57542b9612a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">check if the timed event callback already exists.  <a href="oc__ri_8h.html#ac55d359c61a434feea9f57542b9612a9">More...</a><br /></td></tr>
+<tr class="separator:ac55d359c61a434feea9f57542b9612a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61b236bcb0192135365ec2952e76c8fa"><td class="memItemLeft" align="right" valign="top">OC_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a61b236bcb0192135365ec2952e76c8fa">oc_ri_is_app_resource_to_be_deleted</a> (const <a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
+<tr class="memdesc:a61b236bcb0192135365ec2952e76c8fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the resource has been scheduled to by deleted by oc_delayed_delete_resource.  <a href="oc__ri_8h.html#a61b236bcb0192135365ec2952e76c8fa">More...</a><br /></td></tr>
+<tr class="separator:a61b236bcb0192135365ec2952e76c8fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad07095e749780196e5d539156db4468d"><td class="memItemLeft" align="right" valign="top">OC_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#ad07095e749780196e5d539156db4468d">oc_ri_is_app_resource_valid</a> (const <a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
+<tr class="memdesc:ad07095e749780196e5d539156db4468d"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if the resource is valid  <a href="oc__ri_8h.html#ad07095e749780196e5d539156db4468d">More...</a><br /></td></tr>
+<tr class="separator:ad07095e749780196e5d539156db4468d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01438e359af2a8b7db7835f76843e1db"><td class="memItemLeft" align="right" valign="top">OC_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a01438e359af2a8b7db7835f76843e1db">oc_ri_on_delete_resource_add_callback</a> (<a class="el" href="oc__ri_8h.html#ad66c4823ae99acc1added3a03d3a6687">oc_ri_delete_resource_cb_t</a> cb) OC_NONNULL()</td></tr>
+<tr class="memdesc:a01438e359af2a8b7db7835f76843e1db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add to the global list of callbacks invoked by oc_delayed_delete_resource before each resource is deleted.  <a href="oc__ri_8h.html#a01438e359af2a8b7db7835f76843e1db">More...</a><br /></td></tr>
+<tr class="separator:a01438e359af2a8b7db7835f76843e1db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae91e606518ac79c1c36ab0cece57b277"><td class="memItemLeft" align="right" valign="top">OC_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#ae91e606518ac79c1c36ab0cece57b277">oc_ri_on_delete_resource_remove_callback</a> (<a class="el" href="oc__ri_8h.html#ad66c4823ae99acc1added3a03d3a6687">oc_ri_delete_resource_cb_t</a> cb) OC_NONNULL()</td></tr>
+<tr class="memdesc:ae91e606518ac79c1c36ab0cece57b277"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove callback from the list of callbacks invoked by oc_delayed_delete_resource.  <a href="oc__ri_8h.html#ae91e606518ac79c1c36ab0cece57b277">More...</a><br /></td></tr>
+<tr class="separator:ae91e606518ac79c1c36ab0cece57b277"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d6859298de1d6033ec3d91f5d6e9be9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a0d6859298de1d6033ec3d91f5d6e9be9">oc_ri_query_exists</a> (const char *query, size_t query_len, const char *key)</td></tr>
 <tr class="memdesc:a0d6859298de1d6033ec3d91f5d6e9be9"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if key exist in query  <a href="oc__ri_8h.html#a0d6859298de1d6033ec3d91f5d6e9be9">More...</a><br /></td></tr>
 <tr class="separator:a0d6859298de1d6033ec3d91f5d6e9be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4986689628b7095abbd58472bcb9cd7e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a4986689628b7095abbd58472bcb9cd7e">oc_ri_query_nth_key_exists</a> (const char *query, size_t query_len, const char **key, size_t *key_len, size_t n)</td></tr>
 <tr class="memdesc:a4986689628b7095abbd58472bcb9cd7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">check if the nth key exists  <a href="oc__ri_8h.html#a4986689628b7095abbd58472bcb9cd7e">More...</a><br /></td></tr>
 <tr class="separator:a4986689628b7095abbd58472bcb9cd7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1c22615d84a88b3ef75b0ca9008b70c"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#ab1c22615d84a88b3ef75b0ca9008b70c">oc_ri_remove_timed_event_callback</a> (const void *cb_data, oc_trigger_t event_callback)</td></tr>
-<tr class="memdesc:ab1c22615d84a88b3ef75b0ca9008b70c"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove the timed event callback  <a href="oc__ri_8h.html#ab1c22615d84a88b3ef75b0ca9008b70c">More...</a><br /></td></tr>
-<tr class="separator:ab1c22615d84a88b3ef75b0ca9008b70c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adafb68ec0009578949c018a07f204c26"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#adafb68ec0009578949c018a07f204c26">oc_ri_remove_timed_event_callback_by_filter</a> (oc_trigger_t cb, <a class="el" href="oc__ri_8h.html#ac53a2923da1e036f62cb84da82d1c8c3">oc_ri_timed_event_filter_t</a> filter, const void *filter_data, bool match_all, <a class="el" href="oc__ri_8h.html#a41f1ba7b8bc314d1f6bb1bb35a4b16ce">oc_ri_timed_event_on_delete_t</a> on_delete)</td></tr>
-<tr class="memdesc:adafb68ec0009578949c018a07f204c26"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove the timed event callback by filter  <a href="oc__ri_8h.html#adafb68ec0009578949c018a07f204c26">More...</a><br /></td></tr>
-<tr class="separator:adafb68ec0009578949c018a07f204c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af50fe1e19e0b2607dd2b3ac1db93668e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#af50fe1e19e0b2607dd2b3ac1db93668e">oc_ri_shutdown</a> (void)</td></tr>
-<tr class="memdesc:af50fe1e19e0b2607dd2b3ac1db93668e"><td class="mdescLeft">&#160;</td><td class="mdescRight">shut down the resource implementation handler  <a href="oc__ri_8h.html#af50fe1e19e0b2607dd2b3ac1db93668e">More...</a><br /></td></tr>
-<tr class="separator:af50fe1e19e0b2607dd2b3ac1db93668e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28069f2aba30996992b28e4ca3748880"><td class="memItemLeft" align="right" valign="top">OC_API void OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a28069f2aba30996992b28e4ca3748880">oc_ri_remove_timed_event_callback</a> (const void *cb_data, oc_trigger_t event_callback) OC_NONNULL(2)</td></tr>
+<tr class="memdesc:a28069f2aba30996992b28e4ca3748880"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove the timed event callback  <a href="oc__ri_8h.html#a28069f2aba30996992b28e4ca3748880">More...</a><br /></td></tr>
+<tr class="separator:a28069f2aba30996992b28e4ca3748880"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49f87cac1fa4c474a82fe6f5443f7d62"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a49f87cac1fa4c474a82fe6f5443f7d62">oc_ri_remove_timed_event_callback_by_filter</a> (oc_trigger_t cb, <a class="el" href="oc__ri_8h.html#ac53a2923da1e036f62cb84da82d1c8c3">oc_ri_timed_event_filter_t</a> filter, const void *filter_data, bool match_all, <a class="el" href="oc__ri_8h.html#a41f1ba7b8bc314d1f6bb1bb35a4b16ce">oc_ri_timed_event_on_delete_t</a> on_delete) OC_NONNULL(1</td></tr>
+<tr class="memdesc:a49f87cac1fa4c474a82fe6f5443f7d62"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove the timed event callback by filter  <a href="oc__ri_8h.html#a49f87cac1fa4c474a82fe6f5443f7d62">More...</a><br /></td></tr>
+<tr class="separator:a49f87cac1fa4c474a82fe6f5443f7d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9915122ed5df29708495d6f29880d8c"><td class="memItemLeft" align="right" valign="top">OC_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#ab9915122ed5df29708495d6f29880d8c">oc_status_code</a> (<a class="el" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38">oc_status_t</a> key)</td></tr>
 <tr class="memdesc:ab9915122ed5df29708495d6f29880d8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert the status code to integer  <a href="oc__ri_8h.html#ab9915122ed5df29708495d6f29880d8c">More...</a><br /></td></tr>
 <tr class="separator:ab9915122ed5df29708495d6f29880d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -629,6 +627,28 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ad66c4823ae99acc1added3a03d3a6687"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad66c4823ae99acc1added3a03d3a6687">&#9670;&nbsp;</a></span>oc_ri_delete_resource_cb_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* oc_ri_delete_resource_cb_t) (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback invoked on resource before it is deleted by oc_delayed_delete_resource. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">resource</td><td>Resource to be deleted </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ac53a2923da1e036f62cb84da82d1c8c3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac53a2923da1e036f62cb84da82d1c8c3">&#9670;&nbsp;</a></span>oc_ri_timed_event_filter_t</h2>
 
@@ -649,7 +669,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__ri_8h.html#adafb68ec0009578949c018a07f204c26" title="remove the timed event callback by filter">oc_ri_remove_timed_event_callback_by_filter</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__ri_8h.html#a49f87cac1fa4c474a82fe6f5443f7d62" title="remove the timed event callback by filter">oc_ri_remove_timed_event_callback_by_filter</a> </dd></dl>
 
 </div>
 </div>
@@ -667,7 +687,7 @@ Functions</h2></td></tr>
 
 <p>Function invoked with timed event context data before the timed event is deallocated. </p>
 <dl class="section note"><dt>Note</dt><dd>Expected use case is for a dynamically allocated context to be deallocated by this callback.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__ri_8h.html#adafb68ec0009578949c018a07f204c26" title="remove the timed event callback by filter">oc_ri_remove_timed_event_callback_by_filter</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__ri_8h.html#a49f87cac1fa4c474a82fe6f5443f7d62" title="remove the timed event callback by filter">oc_ri_remove_timed_event_callback_by_filter</a> </dd></dl>
 
 </div>
 </div>
@@ -1003,14 +1023,14 @@ Empty string for an invalid log level value </dd></dl>
 
 </div>
 </div>
-<a id="a1481c68aff7317781a4af49dd53289ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1481c68aff7317781a4af49dd53289ea">&#9670;&nbsp;</a></span>oc_ri_add_resource()</h2>
+<a id="a357838f68418d6ad53877e7c11d2a838"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a357838f68418d6ad53877e7c11d2a838">&#9670;&nbsp;</a></span>oc_ri_add_resource()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool oc_ri_add_resource </td>
+          <td class="memname">OC_API bool oc_ri_add_resource </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
           <td class="paramname"><em>resource</em></td><td>)</td>
@@ -1032,8 +1052,8 @@ false failure </dd></dl>
 
 </div>
 </div>
-<a id="a1ce65e738f997897e1fa07dc06d90d4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ce65e738f997897e1fa07dc06d90d4e">&#9670;&nbsp;</a></span>oc_ri_add_timed_event_callback_ticks()</h2>
+<a id="a1017a03cded7501fc4b52cadbe0eded4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1017a03cded7501fc4b52cadbe0eded4">&#9670;&nbsp;</a></span>oc_ri_add_timed_event_callback_ticks()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1068,7 +1088,7 @@ false failure </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cb_data</td><td>the timed event callback info </td></tr>
-    <tr><td class="paramname">event_callback</td><td>the callback </td></tr>
+    <tr><td class="paramname">event_callback</td><td>the callback (cannot be NULL) </td></tr>
     <tr><td class="paramname">ticks</td><td>time in ticks </td></tr>
   </table>
   </dd>
@@ -1076,61 +1096,14 @@ false failure </dd></dl>
 
 </div>
 </div>
-<a id="a7147ccded944c339e039abb43e485619"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7147ccded944c339e039abb43e485619">&#9670;&nbsp;</a></span>oc_ri_alloc_resource()</h2>
+<a id="aec64ea3cbb66d5afc56ecfab7e070909"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec64ea3cbb66d5afc56ecfab7e070909">&#9670;&nbsp;</a></span>oc_ri_delete_resource()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structoc__resource__s.html">oc_resource_t</a>* oc_ri_alloc_resource </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>allocate a resource structure </p>
-<dl class="section return"><dt>Returns</dt><dd>oc_resource_t* </dd></dl>
-
-</div>
-</div>
-<a id="a8bd8b3d42654b9209dd1a51f468005c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8bd8b3d42654b9209dd1a51f468005c4">&#9670;&nbsp;</a></span>oc_ri_dealloc_resource()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void oc_ri_dealloc_resource </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
-          <td class="paramname"><em>resource</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>deallocate a resource structure </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">resource</td><td>the resource to be deallocated </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a441e6c2103a50c5fc16933739ff0b6c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a441e6c2103a50c5fc16933739ff0b6c1">&#9670;&nbsp;</a></span>oc_ri_delete_resource()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool oc_ri_delete_resource </td>
+          <td class="memname">OC_API bool oc_ri_delete_resource </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
           <td class="paramname"><em>resource</em></td><td>)</td>
@@ -1149,32 +1122,6 @@ false failure </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>true success </dd>
 <dd>
 false failure </dd></dl>
-
-</div>
-</div>
-<a id="a2ba4762ae0434f521a5e73e0a63dc8d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ba4762ae0434f521a5e73e0a63dc8d8">&#9670;&nbsp;</a></span>oc_ri_free_resource_properties()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void oc_ri_free_resource_properties </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
-          <td class="paramname"><em>resource</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>free the properties of the resource </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">resource</td><td>the resource </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -1210,7 +1157,7 @@ false failure </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>retrieve the resource by uri and device indes </p>
+<p>retrieve the resource by uri and device index </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">uri</td><td>the uri of the resource </td></tr>
@@ -1244,14 +1191,14 @@ false failure </dd></dl>
 
 </div>
 </div>
-<a id="a02df23437398110e7c24ef479260e17b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02df23437398110e7c24ef479260e17b">&#9670;&nbsp;</a></span>oc_ri_get_interface_mask()</h2>
+<a id="a5dd6fa36cbdffb7854cbeb6d1356b2dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dd6fa36cbdffb7854cbeb6d1356b2dc">&#9670;&nbsp;</a></span>oc_ri_get_interface_mask()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a> oc_ri_get_interface_mask </td>
+          <td class="memname">OC_API <a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a> oc_ri_get_interface_mask </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>iface</em>, </td>
@@ -1260,7 +1207,7 @@ false failure </dd></dl>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>if_len</em>&#160;</td>
+          <td class="paramname"><em>iface_len</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1273,12 +1220,14 @@ false failure </dd></dl>
 <p>retrieve the interface mask from the interface name </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">iface</td><td>the interface (e.g. "if=oic.if.s") </td></tr>
-    <tr><td class="paramname">if_len</td><td>the interface lenght </td></tr>
+    <tr><td class="paramname">iface</td><td>the interface string (e.g. "oic.if.s", cannot be NULL) </td></tr>
+    <tr><td class="paramname">iface_len</td><td>length of the interface string </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>oc_interface_mask_t the mask value of the interface </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on failure </dd>
+<dd>
+oc_interface_mask_t the mask value of the interface </dd></dl>
 
 </div>
 </div>
@@ -1409,8 +1358,8 @@ int -1 on failure </dd></dl>
 
 </div>
 </div>
-<a id="ace8b4ee604a5ec9ebef8fe3a2101e370"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace8b4ee604a5ec9ebef8fe3a2101e370">&#9670;&nbsp;</a></span>oc_ri_has_timed_event_callback()</h2>
+<a id="ac55d359c61a434feea9f57542b9612a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac55d359c61a434feea9f57542b9612a9">&#9670;&nbsp;</a></span>oc_ri_has_timed_event_callback()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1446,7 +1395,7 @@ int -1 on failure </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cb_data</td><td>the timed event callback info </td></tr>
-    <tr><td class="paramname">event_callback</td><td>the callback </td></tr>
+    <tr><td class="paramname">event_callback</td><td>the callback (cannot be NULL) </td></tr>
     <tr><td class="paramname">ignore_cb_data</td><td>don't compare the timed event callback info pointers </td></tr>
   </table>
   </dd>
@@ -1457,34 +1406,45 @@ false otherwise </dd></dl>
 
 </div>
 </div>
-<a id="a8703351e3156d5419ff7cc485400c9eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8703351e3156d5419ff7cc485400c9eb">&#9670;&nbsp;</a></span>oc_ri_init()</h2>
+<a id="a61b236bcb0192135365ec2952e76c8fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61b236bcb0192135365ec2952e76c8fa">&#9670;&nbsp;</a></span>oc_ri_is_app_resource_to_be_deleted()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oc_ri_init </td>
+          <td class="memname">OC_API bool oc_ri_is_app_resource_to_be_deleted </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
+          <td class="paramname"><em>resource</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>initialize the resource implementation handler </p>
+<p>Check if the resource has been scheduled to by deleted by oc_delayed_delete_resource. </p>
+<p>Such resource should not be used.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">resource</td><td>resource to be checked </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true resource is about to be deleted </dd>
+<dd>
+false otherwise</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__doc__module__tag__server__side.html#ga64204cf4775391bb168147df708cbab0" title="Schedule a callback to remove a resource.">oc_delayed_delete_resource</a> </dd></dl>
 
 </div>
 </div>
-<a id="ad62d3a3655a9333595b44337bfef7f3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad62d3a3655a9333595b44337bfef7f3a">&#9670;&nbsp;</a></span>oc_ri_is_app_resource_valid()</h2>
+<a id="ad07095e749780196e5d539156db4468d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad07095e749780196e5d539156db4468d">&#9670;&nbsp;</a></span>oc_ri_is_app_resource_valid()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool oc_ri_is_app_resource_valid </td>
+          <td class="memname">OC_API bool oc_ri_is_app_resource_valid </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
           <td class="paramname"><em>resource</em></td><td>)</td>
@@ -1503,6 +1463,64 @@ false otherwise </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>true valid </dd>
 <dd>
 false not valid </dd></dl>
+
+</div>
+</div>
+<a id="a01438e359af2a8b7db7835f76843e1db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01438e359af2a8b7db7835f76843e1db">&#9670;&nbsp;</a></span>oc_ri_on_delete_resource_add_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OC_API bool oc_ri_on_delete_resource_add_callback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="oc__ri_8h.html#ad66c4823ae99acc1added3a03d3a6687">oc_ri_delete_resource_cb_t</a>&#160;</td>
+          <td class="paramname"><em>cb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add to the global list of callbacks invoked by oc_delayed_delete_resource before each resource is deleted. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cb</td><td>the callback to be added (cannot be NULL) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true on success </dd>
+<dd>
+false on error </dd></dl>
+
+</div>
+</div>
+<a id="ae91e606518ac79c1c36ab0cece57b277"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae91e606518ac79c1c36ab0cece57b277">&#9670;&nbsp;</a></span>oc_ri_on_delete_resource_remove_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OC_API bool oc_ri_on_delete_resource_remove_callback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="oc__ri_8h.html#ad66c4823ae99acc1added3a03d3a6687">oc_ri_delete_resource_cb_t</a>&#160;</td>
+          <td class="paramname"><em>cb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove callback from the list of callbacks invoked by oc_delayed_delete_resource. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cb</td><td>the callback to be removed (cannot be NULL) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true callback was found and removed </dd>
+<dd>
+false callback was not found </dd></dl>
 
 </div>
 </div>
@@ -1610,14 +1628,14 @@ false not valid </dd></dl>
 
 </div>
 </div>
-<a id="ab1c22615d84a88b3ef75b0ca9008b70c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1c22615d84a88b3ef75b0ca9008b70c">&#9670;&nbsp;</a></span>oc_ri_remove_timed_event_callback()</h2>
+<a id="a28069f2aba30996992b28e4ca3748880"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28069f2aba30996992b28e4ca3748880">&#9670;&nbsp;</a></span>oc_ri_remove_timed_event_callback()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OC_API void oc_ri_remove_timed_event_callback </td>
+          <td class="memname">OC_API void OC_API void oc_ri_remove_timed_event_callback </td>
           <td>(</td>
           <td class="paramtype">const void *&#160;</td>
           <td class="paramname"><em>cb_data</em>, </td>
@@ -1647,8 +1665,8 @@ false not valid </dd></dl>
 
 </div>
 </div>
-<a id="adafb68ec0009578949c018a07f204c26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adafb68ec0009578949c018a07f204c26">&#9670;&nbsp;</a></span>oc_ri_remove_timed_event_callback_by_filter()</h2>
+<a id="a49f87cac1fa4c474a82fe6f5443f7d62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49f87cac1fa4c474a82fe6f5443f7d62">&#9670;&nbsp;</a></span>oc_ri_remove_timed_event_callback_by_filter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1694,7 +1712,7 @@ false not valid </dd></dl>
 <p>remove the timed event callback by filter </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cb</td><td>timed event callback </td></tr>
+    <tr><td class="paramname">cb</td><td>timed event callback (cannot be NULL) </td></tr>
     <tr><td class="paramname">filter</td><td>filtering function (cannot be NULL) </td></tr>
     <tr><td class="paramname">filter_data</td><td>user data provided to the filtering function </td></tr>
     <tr><td class="paramname">match_all</td><td>iterate over all timed events (otherwise the iteration will stop after the first match) </td></tr>
@@ -1704,26 +1722,6 @@ false not valid </dd></dl>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>if the matched timed event is currently being processed then the <code>on_delete</code> callback will be invoked when the processing is finished. So it might occurr some time after the call to oc_ri_remove_timed_event_callback_by_filter has finished.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__ri_8h.html#ac53a2923da1e036f62cb84da82d1c8c3" title="Filtering function used to match scheduled timed events by context data.">oc_ri_timed_event_filter_t</a> </dd></dl>
-
-</div>
-</div>
-<a id="af50fe1e19e0b2607dd2b3ac1db93668e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af50fe1e19e0b2607dd2b3ac1db93668e">&#9670;&nbsp;</a></span>oc_ri_shutdown()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void oc_ri_shutdown </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>shut down the resource implementation handler </p>
 
 </div>
 </div>
@@ -1789,7 +1787,7 @@ Empty string for an invalid log level value </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__ri_8h.html">oc_ri.h</a></li>
-    <li class="footer">Generated on Tue May 9 2023 12:56:02 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu May 11 2023 23:28:14 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

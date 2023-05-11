@@ -145,6 +145,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga9510bd2b010e00aa38f2318eb3eb493e"><td class="memItemLeft" align="right" valign="top">OC_API oc_link_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__collections.html#ga9510bd2b010e00aa38f2318eb3eb493e">oc_new_link</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
 <tr class="memdesc:ga9510bd2b010e00aa38f2318eb3eb493e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new link for collections with the specified resource.  <a href="group__doc__module__tag__collections.html#ga9510bd2b010e00aa38f2318eb3eb493e">More...</a><br /></td></tr>
 <tr class="separator:ga9510bd2b010e00aa38f2318eb3eb493e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga044346b9b3fa39566b3c5d701704aab9"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__collections.html#ga044346b9b3fa39566b3c5d701704aab9">oc_resource_set_properties_cbs</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, <a class="el" href="oc__ri_8h.html#ad13e620d8765af96f28937e52f817726">oc_get_properties_cb_t</a> get_properties, void *get_props_user_data, <a class="el" href="oc__ri_8h.html#ad38ea7c0a6833931d8bfe8094c5100e4">oc_set_properties_cb_t</a> set_properties, void *set_props_user_data)</td></tr>
+<tr class="memdesc:ga044346b9b3fa39566b3c5d701704aab9"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the callback properties for set properties and get properties  <a href="group__doc__module__tag__collections.html#ga044346b9b3fa39566b3c5d701704aab9">More...</a><br /></td></tr>
+<tr class="separator:ga044346b9b3fa39566b3c5d701704aab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Optional group of functions to support OCF compliant collections. </p>
@@ -687,7 +690,65 @@ false </dd></dl>
 <dd>
 <a class="el" href="group__doc__module__tag__collections.html#gaf21b77a90b9b841e5c6653431c076f85" title="Adds the link to the collection.">oc_collection_add_link</a> </dd>
 <dd>
-<a class="el" href="group__doc__module__tag__server__side.html#ga598543a2daa27b984c61ebc697299a1a" title="Allocate and populate a new oc_resource_t.">oc_new_resource</a> </dd></dl>
+<a class="el" href="group__doc__module__tag__server__side.html#ga754324e0a16c43099454931f3e16eed8" title="Allocate and populate a new oc_resource_t.">oc_new_resource</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga044346b9b3fa39566b3c5d701704aab9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga044346b9b3fa39566b3c5d701704aab9">&#9670;&nbsp;</a></span>oc_resource_set_properties_cbs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OC_API void oc_resource_set_properties_cbs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
+          <td class="paramname"><em>resource</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="oc__ri_8h.html#ad13e620d8765af96f28937e52f817726">oc_get_properties_cb_t</a>&#160;</td>
+          <td class="paramname"><em>get_properties</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>get_props_user_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="oc__ri_8h.html#ad38ea7c0a6833931d8bfe8094c5100e4">oc_set_properties_cb_t</a>&#160;</td>
+          <td class="paramname"><em>set_properties</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>set_props_user_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>sets the callback properties for set properties and get properties </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">resource</td><td>the resource for the callback data </td></tr>
+    <tr><td class="paramname">get_properties</td><td>callback function for retrieving the properties </td></tr>
+    <tr><td class="paramname">get_props_user_data</td><td>the user data for the get_properties callback function </td></tr>
+    <tr><td class="paramname">set_properties</td><td>callback function for setting the properties </td></tr>
+    <tr><td class="paramname">set_props_user_data</td><td>the user data for the set_properties callback function </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -696,7 +757,7 @@ false </dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue May 9 2023 12:56:02 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu May 11 2023 23:28:14 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

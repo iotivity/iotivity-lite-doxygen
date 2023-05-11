@@ -15,5 +15,6 @@ var group__doc__module__tag__collections =
     [ "oc_link_add_link_param", "group__doc__module__tag__collections.html#ga7075e3e71861cf6aa38d6d9ce25a0221", null ],
     [ "oc_link_add_rel", "group__doc__module__tag__collections.html#gadc9adaef2b2eca5dd68d332617b4a649", null ],
     [ "oc_new_collection", "group__doc__module__tag__collections.html#ga56bc58d09c00fc0d6a25787b00066c5e", null ],
-    [ "oc_new_link", "group__doc__module__tag__collections.html#ga9510bd2b010e00aa38f2318eb3eb493e", null ]
+    [ "oc_new_link", "group__doc__module__tag__collections.html#ga9510bd2b010e00aa38f2318eb3eb493e", null ],
+    [ "oc_resource_set_properties_cbs", "group__doc__module__tag__collections.html#ga044346b9b3fa39566b3c5d701704aab9", null ]
 ];
