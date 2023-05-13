@@ -1,5 +1,7 @@
 var NAVTREEINDEX5 =
 {
+"oc__ri_8h.html#a61b236bcb0192135365ec2952e76c8fa":[4,0,36,44],
+"oc__ri_8h.html#a63f96c05b779dfc1ebcfe0722946ceaa":[4,0,36,29],
 "oc__ri_8h.html#a63f96c05b779dfc1ebcfe0722946ceaaa012ebe25609e38f0dfae84a8b66b2562":[4,0,36,29,0],
 "oc__ri_8h.html#a63f96c05b779dfc1ebcfe0722946ceaaae683cd6d281ea182358dedaacde8e3f9":[4,0,36,29,1],
 "oc__ri_8h.html#a830f565772c7fb4c14e1d8a737b8ff70":[4,0,36,39],
@@ -247,7 +249,5 @@ var NAVTREEINDEX5 =
 "structoc__etimer.html#aa696bfcee49d827e26a479f3782ccdd8":[2,5,0,2],
 "structoc__etimer.html#aef721d85a7d4f5c40786d0555a6aa40e":[2,5,0,0],
 "structoc__event__callback__s.html":[3,0,10],
-"structoc__event__callback__s.html#a3815ba1a8133ced2806062ef9c2e422a":[3,0,10,2],
-"structoc__event__callback__s.html#a735984d41155bc1032e09bece8f8d66d":[3,0,10,1],
-"structoc__event__callback__s.html#a809520e8cffa4e0238a226f1fb0cb079":[3,0,10,0]
+"structoc__event__callback__s.html#a3815ba1a8133ced2806062ef9c2e422a":[3,0,10,2]
 };

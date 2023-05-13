@@ -163,6 +163,9 @@ struct oc_process *&#160;</td><td class="memItemRight" valign="bottom"><b>oc_pro
 <tr class="separator:ga3a0ef7ca0d57f22dae68947068366320"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Functions called from application programs</h2></td></tr>
+<tr class="memitem:ga969d3cd5887e3791cbffac358eac7708"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__process.html#ga969d3cd5887e3791cbffac358eac7708">oc_process_drop_event_t</a>) (oc_process_event_t ev, oc_process_data_t data, const void *user_data)</td></tr>
+<tr class="memdesc:ga969d3cd5887e3791cbffac358eac7708"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is responsible for determining whether an event should be removed from the event queue of a given process.  <a href="group__process.html#ga969d3cd5887e3791cbffac358eac7708">More...</a><br /></td></tr>
+<tr class="separator:ga969d3cd5887e3791cbffac358eac7708"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab1429b9b456ada218da8bae86fea1f16"><td class="memItemLeft" align="right" valign="top"><a id="gab1429b9b456ada218da8bae86fea1f16"></a>
 struct oc_process *&#160;</td><td class="memItemRight" valign="bottom"><b>oc_process_current</b></td></tr>
 <tr class="separator:gab1429b9b456ada218da8bae86fea1f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,6 +175,9 @@ struct oc_process *&#160;</td><td class="memItemRight" valign="bottom"><b>oc_pro
 <tr class="memitem:ga30bf1fb1c5d07b5aab9b17306210c71a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__process.html#ga30bf1fb1c5d07b5aab9b17306210c71a">oc_process_post</a> (struct oc_process *p, oc_process_event_t ev, oc_process_data_t data)</td></tr>
 <tr class="memdesc:ga30bf1fb1c5d07b5aab9b17306210c71a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Post an asynchronous event.  <a href="group__process.html#ga30bf1fb1c5d07b5aab9b17306210c71a">More...</a><br /></td></tr>
 <tr class="separator:ga30bf1fb1c5d07b5aab9b17306210c71a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4b72e9eb3df3ff58fc1ebdbdfe942067"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__process.html#ga4b72e9eb3df3ff58fc1ebdbdfe942067">oc_process_drop</a> (const struct oc_process *p, <a class="el" href="group__process.html#ga969d3cd5887e3791cbffac358eac7708">oc_process_drop_event_t</a> drop_event, const void *user_data)</td></tr>
+<tr class="memdesc:ga4b72e9eb3df3ff58fc1ebdbdfe942067"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drop events from a process' event queue.  <a href="group__process.html#ga4b72e9eb3df3ff58fc1ebdbdfe942067">More...</a><br /></td></tr>
+<tr class="separator:ga4b72e9eb3df3ff58fc1ebdbdfe942067"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3a010c759a7a28d189d9582d75a94913"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__process.html#ga3a010c759a7a28d189d9582d75a94913">oc_process_post_synch</a> (struct oc_process *p, oc_process_event_t ev, oc_process_data_t data)</td></tr>
 <tr class="memdesc:ga3a010c759a7a28d189d9582d75a94913"><td class="mdescLeft">&#160;</td><td class="mdescRight">Post a synchronous event to a process.  <a href="group__process.html#ga3a010c759a7a28d189d9582d75a94913">More...</a><br /></td></tr>
 <tr class="separator:ga3a010c759a7a28d189d9582d75a94913"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -351,15 +357,15 @@ struct oc_process *&#160;</td><td class="memItemRight" valign="bottom"><b>oc_pro
 <b>Value:</b><div class="fragment"><div class="line">  {                                                                            \</div>
 <div class="line">    struct oc_process *tmp_current = <a class="code" href="group__process.html#gaff9569e85389aace755620f479c7d1d7">OC_PROCESS_CURRENT</a>();                     \</div>
 <div class="line">    oc_process_current = p;</div>
-<div class="ttc" id="agroup__process_html_gaff9569e85389aace755620f479c7d1d7"><div class="ttname"><a href="group__process.html#gaff9569e85389aace755620f479c7d1d7">OC_PROCESS_CURRENT</a></div><div class="ttdeci">#define OC_PROCESS_CURRENT()</div><div class="ttdoc">Get a pointer to the currently running process.</div><div class="ttdef"><b>Definition:</b> oc_process.h:406</div></div>
+<div class="ttc" id="agroup__process_html_gaff9569e85389aace755620f479c7d1d7"><div class="ttname"><a href="group__process.html#gaff9569e85389aace755620f479c7d1d7">OC_PROCESS_CURRENT</a></div><div class="ttdeci">#define OC_PROCESS_CURRENT()</div><div class="ttdoc">Get a pointer to the currently running process.</div><div class="ttdef"><b>Definition:</b> oc_process.h:430</div></div>
 </div><!-- fragment -->
 <p>Switch context to another process. </p>
 <p>This function switch context to the specified process and executes the code as if run by that process. Typical use of this function is to switch context in services, called by other processes. Each <a class="el" href="group__process.html#gacac44970a16ca348cd38898893f6339b" title="Switch context to another process.">OC_PROCESS_CONTEXT_BEGIN()</a> must be followed by the <a class="el" href="group__process.html#ga5f75ab9577a42cb7a4bed542916c3683" title="End a context switch.">OC_PROCESS_CONTEXT_END()</a> macro to end the context switch.</p>
 <p>Example: </p><div class="fragment"><div class="line"><a class="code" href="group__process.html#gacac44970a16ca348cd38898893f6339b">OC_PROCESS_CONTEXT_BEGIN</a>(&amp;test_process);</div>
 <div class="line">etimer_set(&amp;timer, CLOCK_SECOND);</div>
 <div class="line"><a class="code" href="group__process.html#ga5f75ab9577a42cb7a4bed542916c3683">OC_PROCESS_CONTEXT_END</a>(&amp;test_process);</div>
-<div class="ttc" id="agroup__process_html_ga5f75ab9577a42cb7a4bed542916c3683"><div class="ttname"><a href="group__process.html#ga5f75ab9577a42cb7a4bed542916c3683">OC_PROCESS_CONTEXT_END</a></div><div class="ttdeci">#define OC_PROCESS_CONTEXT_END(p)</div><div class="ttdoc">End a context switch.</div><div class="ttdef"><b>Definition:</b> oc_process.h:445</div></div>
-<div class="ttc" id="agroup__process_html_gacac44970a16ca348cd38898893f6339b"><div class="ttname"><a href="group__process.html#gacac44970a16ca348cd38898893f6339b">OC_PROCESS_CONTEXT_BEGIN</a></div><div class="ttdeci">#define OC_PROCESS_CONTEXT_BEGIN(p)</div><div class="ttdoc">Switch context to another process.</div><div class="ttdef"><b>Definition:</b> oc_process.h:430</div></div>
+<div class="ttc" id="agroup__process_html_ga5f75ab9577a42cb7a4bed542916c3683"><div class="ttname"><a href="group__process.html#ga5f75ab9577a42cb7a4bed542916c3683">OC_PROCESS_CONTEXT_END</a></div><div class="ttdeci">#define OC_PROCESS_CONTEXT_END(p)</div><div class="ttdoc">End a context switch.</div><div class="ttdef"><b>Definition:</b> oc_process.h:469</div></div>
+<div class="ttc" id="agroup__process_html_gacac44970a16ca348cd38898893f6339b"><div class="ttname"><a href="group__process.html#gacac44970a16ca348cd38898893f6339b">OC_PROCESS_CONTEXT_BEGIN</a></div><div class="ttdeci">#define OC_PROCESS_CONTEXT_BEGIN(p)</div><div class="ttdoc">Switch context to another process.</div><div class="ttdef"><b>Definition:</b> oc_process.h:454</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p</td><td>The process to use as context</td></tr>
@@ -789,6 +795,32 @@ struct oc_process *&#160;</td><td class="memItemRight" valign="bottom"><b>oc_pro
 
 </div>
 </div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="ga969d3cd5887e3791cbffac358eac7708"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga969d3cd5887e3791cbffac358eac7708">&#9670;&nbsp;</a></span>oc_process_drop_event_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef bool(* oc_process_drop_event_t) (oc_process_event_t ev, oc_process_data_t data, const void *user_data)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function is responsible for determining whether an event should be removed from the event queue of a given process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ev</td><td>The event to be dropped. </td></tr>
+    <tr><td class="paramname">data</td><td>The auxiliary data to be sent with the event </td></tr>
+    <tr><td class="paramname">user_data</td><td>Data to be passed to the drop_event function. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true Drop the event. </dd></dl>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga56a730c348749244c8d408deb521d3a2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga56a730c348749244c8d408deb521d3a2">&#9670;&nbsp;</a></span>oc_process_alloc_event()</h2>
@@ -812,6 +844,51 @@ struct oc_process *&#160;</td><td class="memItemRight" valign="bottom"><b>oc_pro
         allocates one such event number.
 </pre> </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>There currently is no way to deallocate an allocated event number. </dd></dl>
+
+</div>
+</div>
+<a id="ga4b72e9eb3df3ff58fc1ebdbdfe942067"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4b72e9eb3df3ff58fc1ebdbdfe942067">&#9670;&nbsp;</a></span>oc_process_drop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_process_drop </td>
+          <td>(</td>
+          <td class="paramtype">const struct oc_process *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__process.html#ga969d3cd5887e3791cbffac358eac7708">oc_process_drop_event_t</a>&#160;</td>
+          <td class="paramname"><em>drop_event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>user_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Drop events from a process' event queue. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>A pointer to the process' process structure. </td></tr>
+    <tr><td class="paramname">drop_event</td><td>function to determine if an event should be dropped. </td></tr>
+    <tr><td class="paramname">user_data</td><td>Data to be passed to the drop_event function. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int Number of events dropped. </dd></dl>
 
 </div>
 </div>
@@ -1110,7 +1187,7 @@ false otherwise </dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu May 11 2023 23:28:14 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat May 13 2023 11:06:02 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
