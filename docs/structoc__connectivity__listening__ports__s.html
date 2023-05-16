@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>IoTivity-Lite: oc_sec_certs_data_t Struct Reference</title>
+<title>IoTivity-Lite: oc_connectivity_listening_ports_s Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('structoc__sec__certs__data__t.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('structoc__connectivity__listening__ports__s.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -84,68 +84,88 @@ $(document).ready(function(){initNavTree('structoc__sec__certs__data__t.html',''
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">oc_sec_certs_data_t Struct Reference</div>  </div>
+<div class="title">oc_connectivity_listening_ports_s Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Selected certificate data used for verification.  
- <a href="structoc__sec__certs__data__t.html#details">More...</a></p>
+<p>The structure includes flags that can be used to disable listening on certain IP interfaces.  
+ <a href="structoc__connectivity__listening__ports__s.html#details">More...</a></p>
 
-<p><code>#include &lt;oc_cred.h&gt;</code></p>
+<p><code>#include &lt;oc_api.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a349c5ecd89031b4cf963b77c0e9cdddd"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__sec__certs__data__t.html#a349c5ecd89031b4cf963b77c0e9cdddd">valid_from</a></td></tr>
-<tr class="memdesc:a349c5ecd89031b4cf963b77c0e9cdddd"><td class="mdescLeft">&#160;</td><td class="mdescRight">UNIX timestamp (UTC +0000) from which the certificate is valid.  <a href="structoc__sec__certs__data__t.html#a349c5ecd89031b4cf963b77c0e9cdddd">More...</a><br /></td></tr>
-<tr class="separator:a349c5ecd89031b4cf963b77c0e9cdddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afabc34d000235716bf2e5adcc01d60d9"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__sec__certs__data__t.html#afabc34d000235716bf2e5adcc01d60d9">valid_to</a></td></tr>
-<tr class="memdesc:afabc34d000235716bf2e5adcc01d60d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">UNIX timestamp (UTC +0000) to which the certificate is valid.  <a href="structoc__sec__certs__data__t.html#afabc34d000235716bf2e5adcc01d60d9">More...</a><br /></td></tr>
-<tr class="separator:afabc34d000235716bf2e5adcc01d60d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a534c5c7d28b7c3c292b05a1f5f930750"><td class="memItemLeft" align="right" valign="top">oc_connectivity_listening_port_flags_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__connectivity__listening__ports__s.html#a534c5c7d28b7c3c292b05a1f5f930750">flags</a></td></tr>
+<tr class="memdesc:a534c5c7d28b7c3c292b05a1f5f930750"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags for the listening ports.  <a href="structoc__connectivity__listening__ports__s.html#a534c5c7d28b7c3c292b05a1f5f930750">More...</a><br /></td></tr>
+<tr class="separator:a534c5c7d28b7c3c292b05a1f5f930750"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e0798404bf2cf5dabb84c5ba9a4f236"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__connectivity__listening__ports__s.html#a8e0798404bf2cf5dabb84c5ba9a4f236">port</a></td></tr>
+<tr class="memdesc:a8e0798404bf2cf5dabb84c5ba9a4f236"><td class="mdescLeft">&#160;</td><td class="mdescRight">The IPv6 port for unsecure connections.  <a href="structoc__connectivity__listening__ports__s.html#a8e0798404bf2cf5dabb84c5ba9a4f236">More...</a><br /></td></tr>
+<tr class="separator:a8e0798404bf2cf5dabb84c5ba9a4f236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6ea9ae23ca1599e2c74cc030bf6021d"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__connectivity__listening__ports__s.html#ab6ea9ae23ca1599e2c74cc030bf6021d">secure_port</a></td></tr>
+<tr class="memdesc:ab6ea9ae23ca1599e2c74cc030bf6021d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The IPv6 port for secure connections.  <a href="structoc__connectivity__listening__ports__s.html#ab6ea9ae23ca1599e2c74cc030bf6021d">More...</a><br /></td></tr>
+<tr class="separator:ab6ea9ae23ca1599e2c74cc030bf6021d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Selected certificate data used for verification. </p>
+<div class="textblock"><p>The structure includes flags that can be used to disable listening on certain IP interfaces. </p>
+<p>If a port is set to 0, the system will determine which port to open by default. On the other hand, if a port is specified, the stack will open that particular port. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="a349c5ecd89031b4cf963b77c0e9cdddd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a349c5ecd89031b4cf963b77c0e9cdddd">&#9670;&nbsp;</a></span>valid_from</h2>
+<a id="a534c5c7d28b7c3c292b05a1f5f930750"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a534c5c7d28b7c3c292b05a1f5f930750">&#9670;&nbsp;</a></span>flags</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t valid_from</td>
+          <td class="memname">oc_connectivity_listening_port_flags_t flags</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>UNIX timestamp (UTC +0000) from which the certificate is valid. </p>
+<p>Flags for the listening ports. </p>
 
 </div>
 </div>
-<a id="afabc34d000235716bf2e5adcc01d60d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afabc34d000235716bf2e5adcc01d60d9">&#9670;&nbsp;</a></span>valid_to</h2>
+<a id="a8e0798404bf2cf5dabb84c5ba9a4f236"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e0798404bf2cf5dabb84c5ba9a4f236">&#9670;&nbsp;</a></span>port</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t valid_to</td>
+          <td class="memname">uint16_t port</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>UNIX timestamp (UTC +0000) to which the certificate is valid. </p>
+<p>The IPv6 port for unsecure connections. </p>
+
+</div>
+</div>
+<a id="ab6ea9ae23ca1599e2c74cc030bf6021d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6ea9ae23ca1599e2c74cc030bf6021d">&#9670;&nbsp;</a></span>secure_port</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t secure_port</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The IPv6 port for secure connections. </p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="oc__cred_8h.html">oc_cred.h</a></li>
+<li><a class="el" href="oc__api_8h.html">oc_api.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="structoc__sec__certs__data__t.html">oc_sec_certs_data_t</a></li>
+    <li class="navelem"><a class="el" href="structoc__connectivity__listening__ports__s.html">oc_connectivity_listening_ports_s</a></li>
     <li class="footer">Generated on Tue May 16 2023 10:47:55 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

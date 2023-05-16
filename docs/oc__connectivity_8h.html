@@ -156,12 +156,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a1d559666b450aef41dd704952e4a7e96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__connectivity_8h.html#a1d559666b450aef41dd704952e4a7e96">oc_connectivity_get_endpoints</a> (size_t device)</td></tr>
 <tr class="memdesc:a1d559666b450aef41dd704952e4a7e96"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve list of endpoints for the device  <a href="oc__connectivity_8h.html#a1d559666b450aef41dd704952e4a7e96">More...</a><br /></td></tr>
 <tr class="separator:a1d559666b450aef41dd704952e4a7e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2d899d0971e0b47c21a02b818dc4696"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__connectivity_8h.html#ab2d899d0971e0b47c21a02b818dc4696">oc_connectivity_init</a> (size_t device)</td></tr>
-<tr class="memdesc:ab2d899d0971e0b47c21a02b818dc4696"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialize the connectivity (e.g.  <a href="oc__connectivity_8h.html#ab2d899d0971e0b47c21a02b818dc4696">More...</a><br /></td></tr>
-<tr class="separator:ab2d899d0971e0b47c21a02b818dc4696"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa737faed9576af48ccf1ae2fc51f655f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__connectivity_8h.html#aa737faed9576af48ccf1ae2fc51f655f">oc_connectivity_shutdown</a> (size_t device)</td></tr>
-<tr class="memdesc:aa737faed9576af48ccf1ae2fc51f655f"><td class="mdescLeft">&#160;</td><td class="mdescRight">shut down the connectivity for device at device index  <a href="oc__connectivity_8h.html#aa737faed9576af48ccf1ae2fc51f655f">More...</a><br /></td></tr>
-<tr class="separator:aa737faed9576af48ccf1ae2fc51f655f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17fcc4b1fd577de08c171d3ece534e33"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__connectivity_8h.html#a17fcc4b1fd577de08c171d3ece534e33">oc_dns_lookup</a> (const char *domain, oc_string_t *addr, <a class="el" href="oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78">transport_flags</a> flags)</td></tr>
 <tr class="memdesc:a17fcc4b1fd577de08c171d3ece534e33"><td class="mdescLeft">&#160;</td><td class="mdescRight">dns look up  <a href="oc__connectivity_8h.html#a17fcc4b1fd577de08c171d3ece534e33">More...</a><br /></td></tr>
 <tr class="separator:a17fcc4b1fd577de08c171d3ece534e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -259,60 +253,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>oc_endpoint_t* list of endpoints </dd></dl>
-
-</div>
-</div>
-<a id="ab2d899d0971e0b47c21a02b818dc4696"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab2d899d0971e0b47c21a02b818dc4696">&#9670;&nbsp;</a></span>oc_connectivity_init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int oc_connectivity_init </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>initialize the connectivity (e.g. </p>
-<p>open sockets) for the device</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">device</td><td>the device index </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>int 0 = success </dd></dl>
-
-</div>
-</div>
-<a id="aa737faed9576af48ccf1ae2fc51f655f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa737faed9576af48ccf1ae2fc51f655f">&#9670;&nbsp;</a></span>oc_connectivity_shutdown()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void oc_connectivity_shutdown </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>device</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>shut down the connectivity for device at device index </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">device</td><td>the device index </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -518,7 +458,7 @@ OC_TCP_SOCKET_STATE_CONNECTING TCP connection is waiting to be established </dd>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_651562d8bf6cfd3e81eff5b570d7df50.html">port</a></li><li class="navelem"><a class="el" href="oc__connectivity_8h.html">oc_connectivity.h</a></li>
-    <li class="footer">Generated on Sat May 13 2023 11:06:02 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue May 16 2023 10:47:55 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

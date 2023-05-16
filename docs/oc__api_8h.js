@@ -1,5 +1,6 @@
 var oc__api_8h =
 [
+    [ "oc_connectivity_listening_ports_s", "structoc__connectivity__listening__ports__s.html", "structoc__connectivity__listening__ports__s" ],
     [ "oc_handler_t", "structoc__handler__t.html", "structoc__handler__t" ],
     [ "oc_activate_interrupt_handler", "group__doc__module__tag__common__operations.html#ga00dc2d96600f8d2c62e7432485553a58", null ],
     [ "oc_define_interrupt_handler", "group__doc__module__tag__common__operations.html#gaeb1bc0db28fff85367807c1319d12312", null ],
@@ -7,7 +8,11 @@ var oc__api_8h =
     [ "oc_set_custom_platform_property", "oc__api_8h.html#a9a4f40914dd68e17b88345bcce756666", null ],
     [ "oc_signal_interrupt_handler", "group__doc__module__tag__common__operations.html#gacc171987eec30ecc99d34857af3c02d3", null ],
     [ "oc_add_device_cb_t", "oc__api_8h.html#a57a741fa2165d561ffc7faf0f084cd69", null ],
+    [ "oc_add_new_device_t", "oc__api_8h.html#a66dda2994359bb0c92f4df9b77ee5ece", null ],
     [ "oc_con_write_cb_t", "group__doc__module__tag__server__side.html#ga3eaefb66d2e5bf5009aeac9d8276e065", null ],
+    [ "oc_connectivity_listening_port_flags_t", "oc__api_8h.html#acbf6fbabc990ad58b163d48d247c4c2e", null ],
+    [ "oc_connectivity_listening_ports_t", "oc__api_8h.html#a63358b04034c09b3502e937fc3b1e875", null ],
+    [ "oc_connectivity_ports_t", "oc__api_8h.html#ae5569c262da7ddbd774a6a5d835196c0", null ],
     [ "oc_factory_presets_cb_t", "oc__api_8h.html#af0b944acc98a497365efbc1d1c9aa32e", null ],
     [ "oc_init_platform_cb_t", "oc__api_8h.html#a4de70c3cf9243e3a672332894e441135", null ],
     [ "oc_ownership_status_cb_t", "oc__api_8h.html#a91c3c40bc00b2b107948a55a969fc0c9", null ],
@@ -16,8 +21,14 @@ var oc__api_8h =
     [ "oc_resource_get_instance_t", "group__doc__module__tag__collections.html#gabd4df858d188b26542c6bfc7a8759084", null ],
     [ "oc_select_oxms_cb_t", "oc__api_8h.html#af0251fdbc9015fae0e14ff8c8b70cf7d", null ],
     [ "oc_send_response_cb_t", "group__doc__module__tag__server__side.html#ga81109e81a7c40aaa290298e9411ed95d", null ],
+    [ "oc_connectivity_listening_port_flags_e", "oc__api_8h.html#a0a87e847fb0272d80cec59eacf8117d8", [
+      [ "OC_CONNECTIVITY_DISABLE_IPV6_PORT", "oc__api_8h.html#a0a87e847fb0272d80cec59eacf8117d8a18e1f8cb7f5b0917e12bc0df0e3f2f2a", null ],
+      [ "OC_CONNECTIVITY_DISABLE_SECURE_IPV6_PORT", "oc__api_8h.html#a0a87e847fb0272d80cec59eacf8117d8ab9c181ff67c413f3b8b064a1d187a1fa", null ],
+      [ "OC_CONNECTIVITY_DISABLE_ALL_PORTS", "oc__api_8h.html#a0a87e847fb0272d80cec59eacf8117d8a949c61ca38fb766f32dc033ab64bccb2", null ]
+    ] ],
     [ "oc_add_collection", "group__doc__module__tag__collections.html#gad05699c7bb0638672e4f6e27ae97ceb4", null ],
     [ "oc_add_device", "oc__api_8h.html#a2b23ecff2ff19a44e263173547a052bd", null ],
+    [ "oc_add_device_v1", "oc__api_8h.html#a4b60d9962907358bbd7bb424fd61e851", null ],
     [ "oc_add_ownership_status_cb", "oc__api_8h.html#a1e2567f5c6bfdb9e5d8d879ddfb3ac7e", null ],
     [ "oc_add_resource", "group__doc__module__tag__server__side.html#ga0892739628f3fe0f73a16ce827346009", null ],
     [ "oc_close_session", "group__doc__module__tag__client__state.html#gaef7a875c5709374b7182cff82d9e6750", null ],
