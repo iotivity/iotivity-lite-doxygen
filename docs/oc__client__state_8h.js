@@ -16,15 +16,13 @@ var oc__client__state_8h =
       [ "HIGH_QOS", "oc__client__state_8h.html#a172718f11f1a33ce09cd1222bcbe5920a907f366721888a6d73bbb40b272b0189", null ],
       [ "LOW_QOS", "oc__client__state_8h.html#a172718f11f1a33ce09cd1222bcbe5920acc1327122ac76887e8ffae7f519a85f7", null ]
     ] ],
-    [ "oc_ri_alloc_client_cb", "oc__client__state_8h.html#a313beb5ac1b4aaa51c2e38ad94829f33", null ],
+    [ "oc_ri_alloc_client_cb", "oc__client__state_8h.html#aceab18ff0aebe067bf7fb1f2072eb3b8", null ],
     [ "oc_ri_find_client_cb_by_mid", "oc__client__state_8h.html#a37581fc662e5c9cecf258875b4429ca2", null ],
-    [ "oc_ri_find_client_cb_by_token", "oc__client__state_8h.html#a321000f991affa327b9af8ab2c005110", null ],
+    [ "oc_ri_find_client_cb_by_token", "oc__client__state_8h.html#a68c7975aadb2d9ae5b04d9de0b0d8676", null ],
     [ "oc_ri_free_client_cbs_by_endpoint", "oc__client__state_8h.html#a9e9c7dd3f291b1a3601cf0b427b15333", null ],
     [ "oc_ri_free_client_cbs_by_endpoint_v1", "oc__client__state_8h.html#a71da0c7c205d5f436ae5dccef966b262", null ],
     [ "oc_ri_free_client_cbs_by_mid", "oc__client__state_8h.html#ad0beae9abbf2dec29f7437b815f96c71", null ],
     [ "oc_ri_free_client_cbs_by_mid_v1", "oc__client__state_8h.html#a009f9692c8102e38dd125fcc9e32a2a2", null ],
-    [ "oc_ri_get_client_cb", "oc__client__state_8h.html#a15c6564400999bcac6848ead117988e6", null ],
-    [ "oc_ri_invoke_client_cb", "oc__client__state_8h.html#a72b5c4671ceac7ba12d1966ab8ab0482", null ],
-    [ "oc_ri_is_client_cb_valid", "oc__client__state_8h.html#a3954708d64c17fa0c937d22371e991eb", null ],
-    [ "oc_ri_process_discovery_payload", "oc__client__state_8h.html#a8137320b5b9c4262532c23b8f33160af", null ]
+    [ "oc_ri_get_client_cb", "oc__client__state_8h.html#a11c66bc5d7d3c29b5a199feec9736b54", null ],
+    [ "oc_ri_is_client_cb_valid", "oc__client__state_8h.html#a3954708d64c17fa0c937d22371e991eb", null ]
 ];

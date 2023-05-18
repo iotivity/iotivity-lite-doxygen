@@ -154,6 +154,7 @@ var oc__ri_8h =
       [ "OC_TRANSACTION_TIMEOUT", "oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38a1246eb95891a582686ead917590eaa12", null ],
       [ "OC_CANCELLED", "oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38ac64c2ce9394949a9836e80dad4545c60", null ]
     ] ],
+    [ "oc_coap_status_to_status", "oc__ri_8h.html#a041f67471949700cefd69d016ff6a4f9", null ],
     [ "oc_method_to_str", "oc__ri_8h.html#a11f34e52d92dd08e02fb9b00ee591e88", null ],
     [ "oc_ri_add_resource", "oc__ri_8h.html#a357838f68418d6ad53877e7c11d2a838", null ],
     [ "oc_ri_add_timed_event_callback_ticks", "oc__ri_8h.html#a1017a03cded7501fc4b52cadbe0eded4", null ],

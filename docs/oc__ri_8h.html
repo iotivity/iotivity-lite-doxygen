@@ -91,7 +91,8 @@ $(document).ready(function(){initNavTree('oc__ri_8h.html',''); initResizable(); 
 <div class="title">oc_ri.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;oc_config.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;messaging/coap/constants.h&quot;</code><br />
+<code>#include &quot;oc_config.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__endpoint_8h.html">oc_endpoint.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__enums_8h.html">oc_enums.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__export_8h.html">oc_export.h</a>&quot;</code><br />
@@ -368,6 +369,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a041f67471949700cefd69d016ff6a4f9"><td class="memItemLeft" align="right" valign="top">OC_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a041f67471949700cefd69d016ff6a4f9">oc_coap_status_to_status</a> (coap_status_t status)</td></tr>
+<tr class="memdesc:a041f67471949700cefd69d016ff6a4f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert the CoAP status code to status code  <a href="oc__ri_8h.html#a041f67471949700cefd69d016ff6a4f9">More...</a><br /></td></tr>
+<tr class="separator:a041f67471949700cefd69d016ff6a4f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11f34e52d92dd08e02fb9b00ee591e88"><td class="memItemLeft" align="right" valign="top">OC_API const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a11f34e52d92dd08e02fb9b00ee591e88">oc_method_to_str</a> (<a class="el" href="oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26">oc_method_t</a> method)</td></tr>
 <tr class="memdesc:a11f34e52d92dd08e02fb9b00ee591e88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert method to string.  <a href="oc__ri_8h.html#a11f34e52d92dd08e02fb9b00ee591e88">More...</a><br /></td></tr>
 <tr class="separator:a11f34e52d92dd08e02fb9b00ee591e88"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -423,7 +427,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a49f87cac1fa4c474a82fe6f5443f7d62"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove the timed event callback by filter  <a href="oc__ri_8h.html#a49f87cac1fa4c474a82fe6f5443f7d62">More...</a><br /></td></tr>
 <tr class="separator:a49f87cac1fa4c474a82fe6f5443f7d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9915122ed5df29708495d6f29880d8c"><td class="memItemLeft" align="right" valign="top">OC_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#ab9915122ed5df29708495d6f29880d8c">oc_status_code</a> (<a class="el" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38">oc_status_t</a> key)</td></tr>
-<tr class="memdesc:ab9915122ed5df29708495d6f29880d8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert the status code to integer  <a href="oc__ri_8h.html#ab9915122ed5df29708495d6f29880d8c">More...</a><br /></td></tr>
+<tr class="memdesc:ab9915122ed5df29708495d6f29880d8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert the status code to CoAP status code  <a href="oc__ri_8h.html#ab9915122ed5df29708495d6f29880d8c">More...</a><br /></td></tr>
 <tr class="separator:ab9915122ed5df29708495d6f29880d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf3a3fb70d2be6bbcd2d2f74affcb080"><td class="memItemLeft" align="right" valign="top">OC_API const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#abf3a3fb70d2be6bbcd2d2f74affcb080">oc_status_to_str</a> (<a class="el" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38">oc_status_t</a> key)</td></tr>
 <tr class="memdesc:abf3a3fb70d2be6bbcd2d2f74affcb080"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the status code to string.  <a href="oc__ri_8h.html#abf3a3fb70d2be6bbcd2d2f74affcb080">More...</a><br /></td></tr>
@@ -999,6 +1003,35 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a041f67471949700cefd69d016ff6a4f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a041f67471949700cefd69d016ff6a4f9">&#9670;&nbsp;</a></span>oc_coap_status_to_status()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OC_API int oc_coap_status_to_status </td>
+          <td>(</td>
+          <td class="paramtype">coap_status_t&#160;</td>
+          <td class="paramname"><em>status</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>convert the CoAP status code to status code </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">status</td><td>CoAP status code </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>-1 on failure </dd>
+<dd>
+status code (oc_status_t) on success </dd></dl>
+
+</div>
+</div>
 <a id="a11f34e52d92dd08e02fb9b00ee591e88"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a11f34e52d92dd08e02fb9b00ee591e88">&#9670;&nbsp;</a></span>oc_method_to_str()</h2>
 
@@ -1741,14 +1774,16 @@ false callback was not found </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>convert the status code to integer </p>
+<p>convert the status code to CoAP status code </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">key</td><td>the application level key of the code </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>int the CoAP status code </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>-1 on failure </dd>
+<dd>
+CoAP status code (coap_status_t) on success </dd></dl>
 
 </div>
 </div>
@@ -1787,7 +1822,7 @@ Empty string for an invalid log level value </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__ri_8h.html">oc_ri.h</a></li>
-    <li class="footer">Generated on Tue May 16 2023 10:47:55 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu May 18 2023 09:45:05 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
