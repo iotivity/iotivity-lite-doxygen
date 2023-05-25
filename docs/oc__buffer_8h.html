@@ -95,14 +95,11 @@ $(document).ready(function(){initNavTree('oc__buffer_8h.html',''); initResizable
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a37e19865062c4b33fced542a50cb0a7c"><td class="memItemLeft" align="right" valign="top">oc_message_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__buffer_8h.html#a37e19865062c4b33fced542a50cb0a7c">oc_allocate_message</a> (void)</td></tr>
-<tr class="memdesc:a37e19865062c4b33fced542a50cb0a7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">function to allocate a message  <a href="oc__buffer_8h.html#a37e19865062c4b33fced542a50cb0a7c">More...</a><br /></td></tr>
+<tr class="memdesc:a37e19865062c4b33fced542a50cb0a7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">function to allocate an incoming message  <a href="oc__buffer_8h.html#a37e19865062c4b33fced542a50cb0a7c">More...</a><br /></td></tr>
 <tr class="separator:a37e19865062c4b33fced542a50cb0a7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25c34e4e33b154eff1c96692862ec982"><td class="memItemLeft" align="right" valign="top">oc_message_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__buffer_8h.html#a25c34e4e33b154eff1c96692862ec982">oc_allocate_message_from_pool</a> (struct oc_memb *pool)</td></tr>
 <tr class="memdesc:a25c34e4e33b154eff1c96692862ec982"><td class="mdescLeft">&#160;</td><td class="mdescRight">allocate message from specific memory pool  <a href="oc__buffer_8h.html#a25c34e4e33b154eff1c96692862ec982">More...</a><br /></td></tr>
 <tr class="separator:a25c34e4e33b154eff1c96692862ec982"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad063099ce73e72a42fd8f49d4d4acc65"><td class="memItemLeft" align="right" valign="top">oc_message_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__buffer_8h.html#ad063099ce73e72a42fd8f49d4d4acc65">oc_internal_allocate_outgoing_message</a> (void)</td></tr>
-<tr class="memdesc:ad063099ce73e72a42fd8f49d4d4acc65"><td class="mdescLeft">&#160;</td><td class="mdescRight">allocate message internal function  <a href="oc__buffer_8h.html#ad063099ce73e72a42fd8f49d4d4acc65">More...</a><br /></td></tr>
-<tr class="separator:ad063099ce73e72a42fd8f49d4d4acc65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a450d1cd16892e07f3d449cd69f04eb47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__buffer_8h.html#a450d1cd16892e07f3d449cd69f04eb47">oc_message_add_ref</a> (oc_message_t *message)</td></tr>
 <tr class="memdesc:a450d1cd16892e07f3d449cd69f04eb47"><td class="mdescLeft">&#160;</td><td class="mdescRight">add reference (for tracking in use)  <a href="oc__buffer_8h.html#a450d1cd16892e07f3d449cd69f04eb47">More...</a><br /></td></tr>
 <tr class="separator:a450d1cd16892e07f3d449cd69f04eb47"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,7 +113,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a562bd0a27e90eed697101bbc3c238bdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">send (CoAP) message  <a href="oc__buffer_8h.html#a562bd0a27e90eed697101bbc3c238bdd">More...</a><br /></td></tr>
 <tr class="separator:a562bd0a27e90eed697101bbc3c238bdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a555babb368089969d3354870b3770246"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__buffer_8h.html#a555babb368089969d3354870b3770246">oc_set_buffers_avail_cb</a> (oc_memb_buffers_avail_callback_t cb)</td></tr>
-<tr class="memdesc:a555babb368089969d3354870b3770246"><td class="mdescLeft">&#160;</td><td class="mdescRight">set callback for memory availability  <a href="oc__buffer_8h.html#a555babb368089969d3354870b3770246">More...</a><br /></td></tr>
+<tr class="memdesc:a555babb368089969d3354870b3770246"><td class="mdescLeft">&#160;</td><td class="mdescRight">set callback for memory availability of incoming message buffers  <a href="oc__buffer_8h.html#a555babb368089969d3354870b3770246">More...</a><br /></td></tr>
 <tr class="separator:a555babb368089969d3354870b3770246"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -136,7 +133,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>function to allocate a message </p>
+<p>function to allocate an incoming message </p>
 <dl class="section return"><dt>Returns</dt><dd>oc_message_t* the allocated message </dd></dl>
 
 </div>
@@ -165,27 +162,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>oc_message_t* the message </dd></dl>
-
-</div>
-</div>
-<a id="ad063099ce73e72a42fd8f49d4d4acc65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad063099ce73e72a42fd8f49d4d4acc65">&#9670;&nbsp;</a></span>oc_internal_allocate_outgoing_message()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">oc_message_t* oc_internal_allocate_outgoing_message </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>allocate message internal function </p>
-<dl class="section return"><dt>Returns</dt><dd>oc_message_t* the CoAP message </dd></dl>
 
 </div>
 </div>
@@ -309,7 +285,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>set callback for memory availability </p>
+<p>set callback for memory availability of incoming message buffers </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cb</td><td>the callback </td></tr>
@@ -325,7 +301,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__buffer_8h.html">oc_buffer.h</a></li>
-    <li class="footer">Generated on Thu May 18 2023 09:45:05 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu May 25 2023 10:49:20 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

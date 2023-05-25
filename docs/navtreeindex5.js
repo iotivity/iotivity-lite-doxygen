@@ -1,6 +1,5 @@
 var NAVTREEINDEX5 =
 {
-"oc__ri_8h.html#a4939e040b70ea8c4ba21504206f3b77a":[4,0,36,26],
 "oc__ri_8h.html#a4986689628b7095abbd58472bcb9cd7e":[4,0,36,50],
 "oc__ri_8h.html#a49f87cac1fa4c474a82fe6f5443f7d62":[4,0,36,52],
 "oc__ri_8h.html#a4e6fe6ae768f87ff05d7d6696da225f8":[4,0,36,7],
@@ -249,5 +248,6 @@ var NAVTREEINDEX5 =
 "structoc__endpoint__t.html#a0ad043071ccc7a261d79a759dc9c6f0c":[3,0,9,7],
 "structoc__endpoint__t.html#a18be4bf9ba594ce74ae1f3a4c75dbbe0":[3,0,9,0],
 "structoc__endpoint__t.html#a1ba8c58bf27a2a88350f0fd5795baace":[3,0,9,8],
-"structoc__endpoint__t.html#a7b41eb7427f5ee6375dfbddf8e699acb":[3,0,9,1]
+"structoc__endpoint__t.html#a7b41eb7427f5ee6375dfbddf8e699acb":[3,0,9,1],
+"structoc__endpoint__t.html#a94c514bd73ebe068bc95f3c0b33dceda":[3,0,9,2]
 };
