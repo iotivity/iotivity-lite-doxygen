@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['protothread_20semaphores_1969',['Protothread semaphores',['../group__ptsem.html',1,'']]],
-  ['protothreads_1970',['Protothreads',['../group__pt.html',1,'']]]
+  ['server_20side_1932',['Server side',['../group__doc__module__tag__server__side.html',1,'']]]
 ];

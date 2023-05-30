@@ -9,7 +9,7 @@ var indexSectionsWithContent =
   6: "ot",
   7: "acdghilmnostv",
   8: "do",
-  9: "acelmpst",
+  9: "aclmpst",
   10: "di"
 };
 

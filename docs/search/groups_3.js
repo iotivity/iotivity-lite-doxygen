@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['linked_20list_20library_1966',['Linked list library',['../group__list.html',1,'']]],
-  ['local_20continuations_1967',['Local continuations',['../group__lc.html',1,'']]]
+  ['memory_20block_20management_20functions_1929',['Memory block management functions',['../group__memb.html',1,'']]]
 ];

@@ -98,16 +98,13 @@ $(document).ready(function(){initNavTree('oc__ri_8h.html',''); initResizable(); 
 <code>#include &quot;<a class="el" href="oc__export_8h.html">oc_export.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__rep_8h.html">oc_rep.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__uuid_8h.html">oc_uuid.h</a>&quot;</code><br />
-<code>#include &quot;util/oc_etimer.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="oc__clock_8h.html">port/oc_clock.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__features_8h.html">util/oc_features.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__compiler_8h.html">util/oc_compiler.h</a>&quot;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__event__callback__s.html">oc_event_callback_s</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">event callback  <a href="structoc__event__callback__s.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__properties__cb__t.html">oc_properties_cb_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">properties callback structure  <a href="structoc__properties__cb__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,9 +138,6 @@ Typedefs</h2></td></tr>
 <tr class="memitem:aaeea17ea80036310d62e43ef1fb2714e"><td class="memItemLeft" align="right" valign="top"><a id="aaeea17ea80036310d62e43ef1fb2714e"></a>
 typedef struct oc_collection_s&#160;</td><td class="memItemRight" valign="bottom"><b>oc_collection_t</b></td></tr>
 <tr class="separator:aaeea17ea80036310d62e43ef1fb2714e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b3dc0c2e5cbb134f0f5ef73b7f4e7c7"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structoc__event__callback__s.html">oc_event_callback_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a8b3dc0c2e5cbb134f0f5ef73b7f4e7c7">oc_event_callback_t</a></td></tr>
-<tr class="memdesc:a8b3dc0c2e5cbb134f0f5ef73b7f4e7c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">event callback  <a href="oc__ri_8h.html#a8b3dc0c2e5cbb134f0f5ef73b7f4e7c7">More...</a><br /></td></tr>
-<tr class="separator:a8b3dc0c2e5cbb134f0f5ef73b7f4e7c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad13e620d8765af96f28937e52f817726"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#ad13e620d8765af96f28937e52f817726">oc_get_properties_cb_t</a>) (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *, <a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a>, void *)</td></tr>
 <tr class="memdesc:ad13e620d8765af96f28937e52f817726"><td class="mdescLeft">&#160;</td><td class="mdescRight">get properties callback  <a href="oc__ri_8h.html#ad13e620d8765af96f28937e52f817726">More...</a><br /></td></tr>
 <tr class="separator:ad13e620d8765af96f28937e52f817726"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -487,22 +481,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="a8b3dc0c2e5cbb134f0f5ef73b7f4e7c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b3dc0c2e5cbb134f0f5ef73b7f4e7c7">&#9670;&nbsp;</a></span>oc_event_callback_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef struct <a class="el" href="structoc__event__callback__s.html">oc_event_callback_s</a> <a class="el" href="oc__ri_8h.html#a8b3dc0c2e5cbb134f0f5ef73b7f4e7c7">oc_event_callback_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>event callback </p>
-
-</div>
-</div>
 <a id="ad13e620d8765af96f28937e52f817726"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad13e620d8765af96f28937e52f817726">&#9670;&nbsp;</a></span>oc_get_properties_cb_t</h2>
 
@@ -1822,7 +1800,7 @@ Empty string for an invalid log level value </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__ri_8h.html">oc_ri.h</a></li>
-    <li class="footer">Generated on Tue May 30 2023 16:28:01 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue May 30 2023 23:24:46 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

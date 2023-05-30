@@ -1,6 +1,5 @@
 var oc__ri_8h =
 [
-    [ "oc_event_callback_s", "structoc__event__callback__s.html", "structoc__event__callback__s" ],
     [ "oc_properties_cb_t", "structoc__properties__cb__t.html", "structoc__properties__cb__t" ],
     [ "oc_request_handler_s", "structoc__request__handler__s.html", "structoc__request__handler__s" ],
     [ "oc_request_t", "structoc__request__t.html", "structoc__request__t" ],
@@ -9,7 +8,6 @@ var oc__ri_8h =
     [ "OC_NUM_CORE_RESOURCES_PER_DEVICE", "oc__ri_8h.html#a0122290e3f56dba478d442c5c6681860", null ],
     [ "oc_ri_add_timed_event_callback_seconds", "oc__ri_8h.html#a4e6fe6ae768f87ff05d7d6696da225f8", null ],
     [ "oc_collection_t", "oc__ri_8h.html#aaeea17ea80036310d62e43ef1fb2714e", null ],
-    [ "oc_event_callback_t", "oc__ri_8h.html#a8b3dc0c2e5cbb134f0f5ef73b7f4e7c7", null ],
     [ "oc_get_properties_cb_t", "oc__ri_8h.html#ad13e620d8765af96f28937e52f817726", null ],
     [ "oc_link_t", "oc__ri_8h.html#a0c0cf4983494ee97927016dcd4af1d79", null ],
     [ "oc_payload_callback_t", "oc__ri_8h.html#ab3356150f36167cd5b5aa73bd23bc854", null ],

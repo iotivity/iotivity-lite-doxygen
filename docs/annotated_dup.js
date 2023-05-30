@@ -10,8 +10,6 @@ var annotated_dup =
     [ "oc_cred_data_t", "structoc__cred__data__t.html", "structoc__cred__data__t" ],
     [ "oc_device_info_t", "structoc__device__info__t.html", "structoc__device__info__t" ],
     [ "oc_endpoint_t", "structoc__endpoint__t.html", "structoc__endpoint__t" ],
-    [ "oc_etimer", "structoc__etimer.html", "structoc__etimer" ],
-    [ "oc_event_callback_s", "structoc__event__callback__s.html", "structoc__event__callback__s" ],
     [ "oc_handler_t", "structoc__handler__t.html", "structoc__handler__t" ],
     [ "oc_ipv4_addr_t", "structoc__ipv4__addr__t.html", "structoc__ipv4__addr__t" ],
     [ "oc_ipv6_addr_t", "structoc__ipv6__addr__t.html", "structoc__ipv6__addr__t" ],
@@ -27,6 +25,5 @@ var annotated_dup =
     [ "oc_sec_acl_s", "structoc__sec__acl__s.html", "structoc__sec__acl__s" ],
     [ "oc_sec_certs_data_t", "structoc__sec__certs__data__t.html", "structoc__sec__certs__data__t" ],
     [ "oc_sec_cred_t", "structoc__sec__cred__t.html", "structoc__sec__cred__t" ],
-    [ "oc_sec_creds_t", "structoc__sec__creds__t.html", "structoc__sec__creds__t" ],
-    [ "oc_timer", "structoc__timer.html", "structoc__timer" ]
+    [ "oc_sec_creds_t", "structoc__sec__creds__t.html", "structoc__sec__creds__t" ]
 ];
