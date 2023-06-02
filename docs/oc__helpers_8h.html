@@ -262,8 +262,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_oc_string_array_add_
 <tr class="memitem:a4714b1fd5cf0a681ec4d17f436c44497"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a4714b1fd5cf0a681ec4d17f436c44497">oc_copy_string</a> (oc_string_t *dst, const oc_string_t *src)</td></tr>
 <tr class="memdesc:a4714b1fd5cf0a681ec4d17f436c44497"><td class="mdescLeft">&#160;</td><td class="mdescRight">copy ocstring  <a href="oc__helpers_8h.html#a4714b1fd5cf0a681ec4d17f436c44497">More...</a><br /></td></tr>
 <tr class="separator:a4714b1fd5cf0a681ec4d17f436c44497"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9170160c3afc735c8adf574d00d20c8c"><td class="memItemLeft" align="right" valign="top"><a id="a9170160c3afc735c8adf574d00d20c8c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_join_string_array</b> (oc_string_array_t *ocstringarray, oc_string_t *ocstring)</td></tr>
+<tr class="memitem:a9170160c3afc735c8adf574d00d20c8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a9170160c3afc735c8adf574d00d20c8c">oc_join_string_array</a> (oc_string_array_t *ocstringarray, oc_string_t *ocstring)</td></tr>
+<tr class="memdesc:a9170160c3afc735c8adf574d00d20c8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Join a string array into a single string using ' ' as a delimiter.  <a href="oc__helpers_8h.html#a9170160c3afc735c8adf574d00d20c8c">More...</a><br /></td></tr>
 <tr class="separator:a9170160c3afc735c8adf574d00d20c8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ae2f9f772a06747062dce2d63067065"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a5ae2f9f772a06747062dce2d63067065">oc_set_string</a> (oc_string_t *dst, const char *str, size_t str_len)</td></tr>
 <tr class="memdesc:a5ae2f9f772a06747062dce2d63067065"><td class="mdescLeft">&#160;</td><td class="mdescRight">reset ocstring contents  <a href="oc__helpers_8h.html#a5ae2f9f772a06747062dce2d63067065">More...</a><br /></td></tr>
@@ -992,6 +992,43 @@ int -1 on failure </dd></dl>
 
 </div>
 </div>
+<a id="a9170160c3afc735c8adf574d00d20c8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9170160c3afc735c8adf574d00d20c8c">&#9670;&nbsp;</a></span>oc_join_string_array()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oc_join_string_array </td>
+          <td>(</td>
+          <td class="paramtype">oc_string_array_t *&#160;</td>
+          <td class="paramname"><em>ocstringarray</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">oc_string_t *&#160;</td>
+          <td class="paramname"><em>ocstring</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Join a string array into a single string using ' ' as a delimiter. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ocstringarray</td><td>string array (cannot be NULL) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">ocstring</td><td>output string (cannot be NULL), function allocates the oc_string_t, the caller must then deallocate it </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a5ae2f9f772a06747062dce2d63067065"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5ae2f9f772a06747062dce2d63067065">&#9670;&nbsp;</a></span>oc_set_string()</h2>
 
@@ -1042,7 +1079,7 @@ int -1 on failure </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__helpers_8h.html">oc_helpers.h</a></li>
-    <li class="footer">Generated on Tue May 30 2023 23:24:46 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Jun 2 2023 23:01:47 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

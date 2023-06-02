@@ -11,9 +11,11 @@ var oc__swupdate_8h =
       [ "OC_SWUPDATE_RESULT_UNSUPPORTED_PROT", "oc__swupdate_8h.html#a8148bdcecd49211d73ad6fe2d6eb2c39a602d14f5323e7071038b734bfb1f844a", null ],
       [ "OC_SWUPDATE_RESULT_UPGRADE_FAIL", "oc__swupdate_8h.html#a8148bdcecd49211d73ad6fe2d6eb2c39a1227723c2e0025c54b2fb07bb3036856", null ]
     ] ],
-    [ "oc_swupdate_notify_done", "oc__swupdate_8h.html#a3fb6e4a2c3b0f1858efbbe290131789b", null ],
-    [ "oc_swupdate_notify_downloaded", "oc__swupdate_8h.html#a0a317514a7a002a1c2f3e96975d8b0e0", null ],
-    [ "oc_swupdate_notify_new_version_available", "oc__swupdate_8h.html#a38b6ea006c4815cda2bdbd015b5a08ef", null ],
-    [ "oc_swupdate_notify_upgrading", "oc__swupdate_8h.html#ae97d4ea5eadaac56bd5c99a96497bbd5", null ],
-    [ "oc_swupdate_set_impl", "oc__swupdate_8h.html#a46e55765e915217b11f63652773a6288", null ]
+    [ "oc_swupdate_dump", "oc__swupdate_8h.html#a455d3878ba11788be7f9959acdc558de", null ],
+    [ "oc_swupdate_load", "oc__swupdate_8h.html#aa2f38eeea9eb0de1a2babddde6685f72", null ],
+    [ "oc_swupdate_notify_done", "oc__swupdate_8h.html#a71fb1eb0918bffb63061c4514554a4f4", null ],
+    [ "oc_swupdate_notify_downloaded", "oc__swupdate_8h.html#aeef02339f44ce14af9e784bf578dd3a0", null ],
+    [ "oc_swupdate_notify_new_version_available", "oc__swupdate_8h.html#afddc88b1100ad53272f6311cbf743780", null ],
+    [ "oc_swupdate_notify_upgrading", "oc__swupdate_8h.html#a874aac0615420ec09523e215bca121d8", null ],
+    [ "oc_swupdate_set_impl", "oc__swupdate_8h.html#a527600e0b3eb3a9af9638f26df38599a", null ]
 ];
