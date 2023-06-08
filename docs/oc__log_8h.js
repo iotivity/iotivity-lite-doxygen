@@ -1,5 +1,6 @@
 var oc__log_8h =
 [
+    [ "OC_IPADDR_BUFF_SIZE", "oc__log_8h.html#abec3ed44d7b15b026625eae3fd0c9a01", null ],
     [ "OC_LOG_LEVEL_DEBUG_MACRO", "oc__log_8h.html#a6c74a5c1647dffc04dd57db11bf01fd2", null ],
     [ "OC_LOG_LEVEL_DISABLED_MACRO", "oc__log_8h.html#aa562b08b172feca88497a043c4fae524", null ],
     [ "OC_LOG_LEVEL_ERROR_MACRO", "oc__log_8h.html#af107ba9bcb556f8e3c45caf033456334", null ],
@@ -8,6 +9,13 @@ var oc__log_8h =
     [ "OC_LOG_LEVEL_NOTICE_MACRO", "oc__log_8h.html#aec86d0cd0ca5e132da9859e8fcb8a7a8", null ],
     [ "OC_LOG_LEVEL_TRACE_MACRO", "oc__log_8h.html#ab735a295d3e3a47d64a2820f523bb357", null ],
     [ "OC_LOG_LEVEL_WARNING_MACRO", "oc__log_8h.html#ad832b955ac77039dcf9443a0cf87f681", null ],
+    [ "OC_PRINT_ENDPOINT_ADDR", "oc__log_8h.html#a5c8ca6f90d31ded3e946e2363cd00d55", null ],
+    [ "OC_PRINTF", "oc__log_8h.html#a727f840cbb25fd31676ea073054824c1", null ],
+    [ "OC_PRINTipaddr", "oc__log_8h.html#ac3fa4a5e40c217830b3d00c900d9fd14", null ],
+    [ "OC_PRINTipaddr_local", "oc__log_8h.html#a5425ef1ef892a78a846ffbb831c7690b", null ],
+    [ "OC_SNPRINT_ENDPOINT_ADDR", "oc__log_8h.html#a1115c045f94b1e75b9f46ffea23b1ca1", null ],
+    [ "OC_SNPRINTF", "oc__log_8h.html#a3373fa8e600aa48da5e3e72c296a5d3f", null ],
+    [ "OC_SNPRINTFipaddr", "oc__log_8h.html#a50e9112adef413c6e200260be9c23483", null ],
     [ "OC_NONNULL", "oc__log_8h.html#af1be784ef6446e663bf13d4fe74eaa5b", null ],
     [ "oc_print_log_fn_t", "oc__log_8h.html#a19ab34b5cdfe3f9925de7418bca9af4e", null ],
     [ "oc_log_component_t", "oc__log_8h.html#a51c20822e2ed76081cd103d806e1984f", [

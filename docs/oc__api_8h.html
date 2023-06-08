@@ -679,14 +679,14 @@ Functions</h2></td></tr>
 <div class="line">  <span class="keywordtype">char</span> cert[8192];</div>
 <div class="line">  <span class="keywordtype">size_t</span> cert_len = 8192;</div>
 <div class="line">  <span class="keywordflow">if</span> (read_pem(<span class="stringliteral">&quot;pki_certs/ee.pem&quot;</span>, cert, &amp;cert_len) &lt; 0) {</div>
-<div class="line">    PRINT(<span class="stringliteral">&quot;ERROR: unable to read certificates\n&quot;</span>);</div>
+<div class="line">    OC_PRINTF(<span class="stringliteral">&quot;ERROR: unable to read certificates\n&quot;</span>);</div>
 <div class="line">    <span class="keywordflow">return</span>;</div>
 <div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordtype">char</span> key[4096];</div>
 <div class="line">  <span class="keywordtype">size_t</span> key_len = 4096;</div>
 <div class="line">  <span class="keywordflow">if</span> (read_pem(<span class="stringliteral">&quot;pki_certs/key.pem&quot;</span>, key, &amp;key_len) &lt; 0) {</div>
-<div class="line">    PRINT(<span class="stringliteral">&quot;ERROR: unable to read private key&quot;</span>);</div>
+<div class="line">    OC_PRINTF(<span class="stringliteral">&quot;ERROR: unable to read private key&quot;</span>);</div>
 <div class="line">    <span class="keywordflow">return</span>;</div>
 <div class="line">  }</div>
 <div class="line"> </div>
@@ -694,13 +694,13 @@ Functions</h2></td></tr>
 <div class="line">cert_len, (<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *)key, key_len);</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">if</span> (ee_credid &lt; 0) {</div>
-<div class="line">    PRINT(<span class="stringliteral">&quot;ERROR installing manufacturer EE cert\n&quot;</span>);</div>
+<div class="line">    OC_PRINTF(<span class="stringliteral">&quot;ERROR installing manufacturer EE cert\n&quot;</span>);</div>
 <div class="line">    <span class="keywordflow">return</span>;</div>
 <div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  cert_len = 8192;</div>
 <div class="line">  <span class="keywordflow">if</span> (read_pem(<span class="stringliteral">&quot;pki_certs/subca1.pem&quot;</span>, cert, &amp;cert_len) &lt; 0) {</div>
-<div class="line">    PRINT(<span class="stringliteral">&quot;ERROR: unable to read certificates\n&quot;</span>);</div>
+<div class="line">    OC_PRINTF(<span class="stringliteral">&quot;ERROR: unable to read certificates\n&quot;</span>);</div>
 <div class="line">    <span class="keywordflow">return</span>;</div>
 <div class="line">  }</div>
 <div class="line"> </div>
@@ -708,20 +708,20 @@ Functions</h2></td></tr>
 <div class="line">    0, ee_credid, (<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *)cert, cert_len);</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">if</span> (subca_credid &lt; 0) {</div>
-<div class="line">    PRINT(<span class="stringliteral">&quot;ERROR installing intermediate CA cert\n&quot;</span>);</div>
+<div class="line">    OC_PRINTF(<span class="stringliteral">&quot;ERROR installing intermediate CA cert\n&quot;</span>);</div>
 <div class="line">    <span class="keywordflow">return</span>;</div>
 <div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  cert_len = 8192;</div>
 <div class="line">  <span class="keywordflow">if</span> (read_pem(<span class="stringliteral">&quot;pki_certs/rootca1.pem&quot;</span>, cert, &amp;cert_len) &lt; 0) {</div>
-<div class="line">    PRINT(<span class="stringliteral">&quot;ERROR: unable to read certificates\n&quot;</span>);</div>
+<div class="line">    OC_PRINTF(<span class="stringliteral">&quot;ERROR: unable to read certificates\n&quot;</span>);</div>
 <div class="line">    <span class="keywordflow">return</span>;</div>
 <div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordtype">int</span> rootca_credid =</div>
 <div class="line">    <a class="code" href="oc__pki_8h.html#a0955c5ab3d9f103a440adf48b47e6ff3">oc_pki_add_mfg_trust_anchor</a>(0, (<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *)cert, cert_len);</div>
 <div class="line">  <span class="keywordflow">if</span> (rootca_credid &lt; 0) {</div>
-<div class="line">    PRINT(<span class="stringliteral">&quot;ERROR installing root cert\n&quot;</span>);</div>
+<div class="line">    OC_PRINTF(<span class="stringliteral">&quot;ERROR installing root cert\n&quot;</span>);</div>
 <div class="line">    <span class="keywordflow">return</span>;</div>
 <div class="line">  }</div>
 <div class="line"> </div>
@@ -844,7 +844,7 @@ Functions</h2></td></tr>
 <div class="line">*data)</div>
 <div class="line">{</div>
 <div class="line"> (void)data;</div>
-<div class="line"> PRINT(<span class="stringliteral">&quot;\n\nRandom PIN: %.*s\n\n&quot;</span>, (<span class="keywordtype">int</span>)pin_len, pin);</div>
+<div class="line"> OC_PRINTF(<span class="stringliteral">&quot;\n\nRandom PIN: %.*s\n\n&quot;</span>, (<span class="keywordtype">int</span>)pin_len, pin);</div>
 <div class="line">}</div>
 <div class="line"><span class="preprocessor">#endif </span><span class="comment">// OC_SECURITY</span></div>
 <div class="line"> </div>
@@ -1621,7 +1621,7 @@ Use of this function requires building with OC_SECURITY defined.</dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__api_8h.html">oc_api.h</a></li>
-    <li class="footer">Generated on Tue Jun 6 2023 13:58:08 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Jun 8 2023 11:05:15 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

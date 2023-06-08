@@ -97,9 +97,14 @@ $(document).ready(function(){initNavTree('oc__log_8h.html',''); initResizable();
 <code>#include &quot;<a class="el" href="oc__compiler_8h.html">util/oc_compiler.h</a>&quot;</code><br />
 <code>#include &lt;stddef.h&gt;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:abec3ed44d7b15b026625eae3fd0c9a01"><td class="memItemLeft" align="right" valign="top"><a id="abec3ed44d7b15b026625eae3fd0c9a01"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>OC_IPADDR_BUFF_SIZE</b>&#160;&#160;&#160;  64</td></tr>
+<tr class="separator:abec3ed44d7b15b026625eae3fd0c9a01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c74a5c1647dffc04dd57db11bf01fd2"><td class="memItemLeft" align="right" valign="top"><a id="a6c74a5c1647dffc04dd57db11bf01fd2"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>OC_LOG_LEVEL_DEBUG_MACRO</b>&#160;&#160;&#160;(7)</td></tr>
 <tr class="separator:a6c74a5c1647dffc04dd57db11bf01fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,6 +129,26 @@ Macros</h2></td></tr>
 <tr class="memitem:ad832b955ac77039dcf9443a0cf87f681"><td class="memItemLeft" align="right" valign="top"><a id="ad832b955ac77039dcf9443a0cf87f681"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>OC_LOG_LEVEL_WARNING_MACRO</b>&#160;&#160;&#160;(4)</td></tr>
 <tr class="separator:ad832b955ac77039dcf9443a0cf87f681"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c8ca6f90d31ded3e946e2363cd00d55"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>OC_PRINT_ENDPOINT_ADDR</b>(endpoint,  addr_memb)</td></tr>
+<tr class="separator:a5c8ca6f90d31ded3e946e2363cd00d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a727f840cbb25fd31676ea073054824c1"><td class="memItemLeft" align="right" valign="top"><a id="a727f840cbb25fd31676ea073054824c1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>OC_PRINTF</b>(...)&#160;&#160;&#160;printf(__VA_ARGS__)</td></tr>
+<tr class="separator:a727f840cbb25fd31676ea073054824c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3fa4a5e40c217830b3d00c900d9fd14"><td class="memItemLeft" align="right" valign="top"><a id="ac3fa4a5e40c217830b3d00c900d9fd14"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>OC_PRINTipaddr</b>(endpoint)&#160;&#160;&#160;OC_PRINT_ENDPOINT_ADDR(endpoint, addr)</td></tr>
+<tr class="separator:ac3fa4a5e40c217830b3d00c900d9fd14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5425ef1ef892a78a846ffbb831c7690b"><td class="memItemLeft" align="right" valign="top"><a id="a5425ef1ef892a78a846ffbb831c7690b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>OC_PRINTipaddr_local</b>(endpoint)&#160;&#160;&#160;  OC_PRINT_ENDPOINT_ADDR(endpoint, addr_local)</td></tr>
+<tr class="separator:a5425ef1ef892a78a846ffbb831c7690b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1115c045f94b1e75b9f46ffea23b1ca1"><td class="memItemLeft" align="right" valign="top"><a id="a1115c045f94b1e75b9f46ffea23b1ca1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>OC_SNPRINT_ENDPOINT_ADDR</b>(str,  size,  endpoint,  addr_memb)</td></tr>
+<tr class="separator:a1115c045f94b1e75b9f46ffea23b1ca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3373fa8e600aa48da5e3e72c296a5d3f"><td class="memItemLeft" align="right" valign="top"><a id="a3373fa8e600aa48da5e3e72c296a5d3f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>OC_SNPRINTF</b>(...)&#160;&#160;&#160;snprintf(__VA_ARGS__)</td></tr>
+<tr class="separator:a3373fa8e600aa48da5e3e72c296a5d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50e9112adef413c6e200260be9c23483"><td class="memItemLeft" align="right" valign="top"><a id="a50e9112adef413c6e200260be9c23483"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>OC_SNPRINTFipaddr</b>(str,  size,  endpoint)&#160;&#160;&#160;  OC_SNPRINT_ENDPOINT_ADDR(str, size, endpoint, addr)</td></tr>
+<tr class="separator:a50e9112adef413c6e200260be9c23483"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -176,7 +201,43 @@ Functions</h2></td></tr>
 <div class="textblock"><p>OCF public log functions. </p>
 <p>Allow to set log callback function and level.</p>
 <dl class="section author"><dt>Author</dt><dd>Jozef Kralik, Daniel Adam </dd></dl>
-</div><h2 class="groupheader">Typedef Documentation</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a5c8ca6f90d31ded3e946e2363cd00d55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c8ca6f90d31ded3e946e2363cd00d55">&#9670;&nbsp;</a></span>OC_PRINT_ENDPOINT_ADDR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OC_PRINT_ENDPOINT_ADDR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">endpoint, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">addr_memb&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                         \</div>
+<div class="line">    char _oc_log_ipaddr_buff[OC_IPADDR_BUFF_SIZE];                             \</div>
+<div class="line">    memset(_oc_log_ipaddr_buff, 0, OC_IPADDR_BUFF_SIZE);                       \</div>
+<div class="line">    OC_SNPRINT_ENDPOINT_ADDR(_oc_log_ipaddr_buff, OC_IPADDR_BUFF_SIZE,         \</div>
+<div class="line">                             endpoint, addr_memb);                             \</div>
+<div class="line">    OC_PRINTF(<span class="stringliteral">&quot;%s&quot;</span>, _oc_log_ipaddr_buff);                                      \</div>
+<div class="line">  } <span class="keywordflow">while</span> (0)</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
 <a id="a19ab34b5cdfe3f9925de7418bca9af4e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a19ab34b5cdfe3f9925de7418bca9af4e">&#9670;&nbsp;</a></span>oc_print_log_fn_t</h2>
 
@@ -399,7 +460,7 @@ Empty string for an invalid log level value </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__log_8h.html">oc_log.h</a></li>
-    <li class="footer">Generated on Tue Jun 6 2023 13:58:08 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Jun 8 2023 11:05:15 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
