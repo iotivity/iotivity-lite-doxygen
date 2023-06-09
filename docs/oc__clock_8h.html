@@ -88,35 +88,40 @@ $(document).ready(function(){initNavTree('oc__clock_8h.html',''); initResizable(
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="oc__clock__util_8h.html">oc_clock_util.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="oc__export_8h.html">oc_export.h</a>&quot;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a4caefe772a4121e0f6414ba01d5ae589"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__clock_8h.html#a4caefe772a4121e0f6414ba01d5ae589">oc_clock_init</a> (void)</td></tr>
-<tr class="memdesc:a4caefe772a4121e0f6414ba01d5ae589"><td class="mdescLeft">&#160;</td><td class="mdescRight">A second, measured in system clock time.  <a href="oc__clock_8h.html#a4caefe772a4121e0f6414ba01d5ae589">More...</a><br /></td></tr>
-<tr class="separator:a4caefe772a4121e0f6414ba01d5ae589"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcc5d195008d3e7152c48cd3a4cac54f"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__clock_8h.html#adcc5d195008d3e7152c48cd3a4cac54f">oc_clock_seconds</a> (void)</td></tr>
-<tr class="memdesc:adcc5d195008d3e7152c48cd3a4cac54f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current value of the platform seconds.  <a href="oc__clock_8h.html#adcc5d195008d3e7152c48cd3a4cac54f">More...</a><br /></td></tr>
-<tr class="separator:adcc5d195008d3e7152c48cd3a4cac54f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5518eafc90948c3b95c2fe6630fa392a"><td class="memItemLeft" align="right" valign="top">oc_clock_time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__clock_8h.html#a5518eafc90948c3b95c2fe6630fa392a">oc_clock_time</a> (void)</td></tr>
-<tr class="memdesc:a5518eafc90948c3b95c2fe6630fa392a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current clock time.  <a href="oc__clock_8h.html#a5518eafc90948c3b95c2fe6630fa392a">More...</a><br /></td></tr>
-<tr class="separator:a5518eafc90948c3b95c2fe6630fa392a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a176be95e4179cd47fc2f5b1d99556633"><td class="memItemLeft" align="right" valign="top">oc_clock_time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__clock_8h.html#a176be95e4179cd47fc2f5b1d99556633">oc_clock_time_monotonic</a> (void)</td></tr>
-<tr class="memdesc:a176be95e4179cd47fc2f5b1d99556633"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current monotonic clock time.  <a href="oc__clock_8h.html#a176be95e4179cd47fc2f5b1d99556633">More...</a><br /></td></tr>
-<tr class="separator:a176be95e4179cd47fc2f5b1d99556633"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bf6973bad0f8494b06d8204a4879433"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__clock_8h.html#a5bf6973bad0f8494b06d8204a4879433">oc_clock_wait</a> (oc_clock_time_t t)</td></tr>
-<tr class="memdesc:a5bf6973bad0f8494b06d8204a4879433"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for a given number of ticks.  <a href="oc__clock_8h.html#a5bf6973bad0f8494b06d8204a4879433">More...</a><br /></td></tr>
-<tr class="separator:a5bf6973bad0f8494b06d8204a4879433"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56943f5cb84e37de98a4c2d88d8f6549"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__clock_8h.html#a56943f5cb84e37de98a4c2d88d8f6549">oc_clock_init</a> (void)</td></tr>
+<tr class="memdesc:a56943f5cb84e37de98a4c2d88d8f6549"><td class="mdescLeft">&#160;</td><td class="mdescRight">A second, measured in system clock time.  <a href="oc__clock_8h.html#a56943f5cb84e37de98a4c2d88d8f6549">More...</a><br /></td></tr>
+<tr class="separator:a56943f5cb84e37de98a4c2d88d8f6549"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf0a1767302acb87515383f606103ea9"><td class="memItemLeft" align="right" valign="top">OC_API unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__clock_8h.html#abf0a1767302acb87515383f606103ea9">oc_clock_seconds</a> (void)</td></tr>
+<tr class="memdesc:abf0a1767302acb87515383f606103ea9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current value of the platform seconds.  <a href="oc__clock_8h.html#abf0a1767302acb87515383f606103ea9">More...</a><br /></td></tr>
+<tr class="separator:abf0a1767302acb87515383f606103ea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c7e171089f6b70e92906a868399c3e9"><td class="memItemLeft" align="right" valign="top">OC_API oc_clock_time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__clock_8h.html#a8c7e171089f6b70e92906a868399c3e9">oc_clock_time</a> (void)</td></tr>
+<tr class="memdesc:a8c7e171089f6b70e92906a868399c3e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current clock time.  <a href="oc__clock_8h.html#a8c7e171089f6b70e92906a868399c3e9">More...</a><br /></td></tr>
+<tr class="separator:a8c7e171089f6b70e92906a868399c3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a0aa7374e010e15099d339aeb8b5780"><td class="memItemLeft" align="right" valign="top">OC_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__clock_8h.html#a2a0aa7374e010e15099d339aeb8b5780">oc_clock_time_has_monotonic_clock</a> (void)</td></tr>
+<tr class="memdesc:a2a0aa7374e010e15099d339aeb8b5780"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the platform supports a monotonic clock.  <a href="oc__clock_8h.html#a2a0aa7374e010e15099d339aeb8b5780">More...</a><br /></td></tr>
+<tr class="separator:a2a0aa7374e010e15099d339aeb8b5780"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fb0bdfe3e7bdc1d504f364c67732ef7"><td class="memItemLeft" align="right" valign="top">OC_API oc_clock_time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__clock_8h.html#a1fb0bdfe3e7bdc1d504f364c67732ef7">oc_clock_time_monotonic</a> (void)</td></tr>
+<tr class="memdesc:a1fb0bdfe3e7bdc1d504f364c67732ef7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current monotonic clock time.  <a href="oc__clock_8h.html#a1fb0bdfe3e7bdc1d504f364c67732ef7">More...</a><br /></td></tr>
+<tr class="separator:a1fb0bdfe3e7bdc1d504f364c67732ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af75aface8452e258de01b86915310a00"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__clock_8h.html#af75aface8452e258de01b86915310a00">oc_clock_wait</a> (oc_clock_time_t t)</td></tr>
+<tr class="memdesc:af75aface8452e258de01b86915310a00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for a given number of ticks.  <a href="oc__clock_8h.html#af75aface8452e258de01b86915310a00">More...</a><br /></td></tr>
+<tr class="separator:af75aface8452e258de01b86915310a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a4caefe772a4121e0f6414ba01d5ae589"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4caefe772a4121e0f6414ba01d5ae589">&#9670;&nbsp;</a></span>oc_clock_init()</h2>
+<a id="a56943f5cb84e37de98a4c2d88d8f6549"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56943f5cb84e37de98a4c2d88d8f6549">&#9670;&nbsp;</a></span>oc_clock_init()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oc_clock_init </td>
+          <td class="memname">OC_API void oc_clock_init </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -131,14 +136,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="adcc5d195008d3e7152c48cd3a4cac54f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adcc5d195008d3e7152c48cd3a4cac54f">&#9670;&nbsp;</a></span>oc_clock_seconds()</h2>
+<a id="abf0a1767302acb87515383f606103ea9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf0a1767302acb87515383f606103ea9">&#9670;&nbsp;</a></span>oc_clock_seconds()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned long oc_clock_seconds </td>
+          <td class="memname">OC_API unsigned long oc_clock_seconds </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -153,14 +158,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a5518eafc90948c3b95c2fe6630fa392a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5518eafc90948c3b95c2fe6630fa392a">&#9670;&nbsp;</a></span>oc_clock_time()</h2>
+<a id="a8c7e171089f6b70e92906a868399c3e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c7e171089f6b70e92906a868399c3e9">&#9670;&nbsp;</a></span>oc_clock_time()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">oc_clock_time_t oc_clock_time </td>
+          <td class="memname">OC_API oc_clock_time_t oc_clock_time </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -175,14 +180,37 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a176be95e4179cd47fc2f5b1d99556633"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a176be95e4179cd47fc2f5b1d99556633">&#9670;&nbsp;</a></span>oc_clock_time_monotonic()</h2>
+<a id="a2a0aa7374e010e15099d339aeb8b5780"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a0aa7374e010e15099d339aeb8b5780">&#9670;&nbsp;</a></span>oc_clock_time_has_monotonic_clock()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">oc_clock_time_t oc_clock_time_monotonic </td>
+          <td class="memname">OC_API bool oc_clock_time_has_monotonic_clock </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if the platform supports a monotonic clock. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the platform supports a monotonic clock </dd>
+<dd>
+false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a1fb0bdfe3e7bdc1d504f364c67732ef7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fb0bdfe3e7bdc1d504f364c67732ef7">&#9670;&nbsp;</a></span>oc_clock_time_monotonic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OC_API oc_clock_time_t oc_clock_time_monotonic </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -193,18 +221,22 @@ Functions</h2></td></tr>
 
 <p>Get the current monotonic clock time. </p>
 <p>This could be the number of seconds since startup, or since a standard epoch. This time is guaranteed to be monotonic, and not effected by any changes in system.</p>
-<dl class="section return"><dt>Returns</dt><dd>The current clock monotonic time, measured in system ticks. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The current clock monotonic time, measured in system ticks.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>If the platform does not support a monotonic clock, this function returns the same value as <a class="el" href="oc__clock_8h.html#a8c7e171089f6b70e92906a868399c3e9" title="Get the current clock time.">oc_clock_time()</a>.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__clock_8h.html#a2a0aa7374e010e15099d339aeb8b5780" title="Check if the platform supports a monotonic clock.">oc_clock_time_has_monotonic_clock()</a> </dd>
+<dd>
+<a class="el" href="oc__clock_8h.html#a8c7e171089f6b70e92906a868399c3e9" title="Get the current clock time.">oc_clock_time()</a> </dd></dl>
 
 </div>
 </div>
-<a id="a5bf6973bad0f8494b06d8204a4879433"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5bf6973bad0f8494b06d8204a4879433">&#9670;&nbsp;</a></span>oc_clock_wait()</h2>
+<a id="af75aface8452e258de01b86915310a00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af75aface8452e258de01b86915310a00">&#9670;&nbsp;</a></span>oc_clock_wait()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oc_clock_wait </td>
+          <td class="memname">OC_API void oc_clock_wait </td>
           <td>(</td>
           <td class="paramtype">oc_clock_time_t&#160;</td>
           <td class="paramname"><em>t</em></td><td>)</td>
@@ -229,7 +261,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_651562d8bf6cfd3e81eff5b570d7df50.html">port</a></li><li class="navelem"><a class="el" href="oc__clock_8h.html">oc_clock.h</a></li>
-    <li class="footer">Generated on Thu Jun 8 2023 11:05:15 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Jun 9 2023 08:09:33 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
