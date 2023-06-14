@@ -38,16 +38,16 @@ var oc__cred_8h =
       [ "OC_ENCODING_PEM", "oc__cred_8h.html#a4bf6d443c0cedb2c9ac90cc866cb28b3a275da18921a1d6ba2c66e6a30c64d202", null ],
       [ "OC_ENCODING_HANDLE", "oc__cred_8h.html#a4bf6d443c0cedb2c9ac90cc866cb28b3af4ca00125407c70759a8e930115e1f27", null ]
     ] ],
-    [ "oc_cred_credtype_string", "oc__cred_8h.html#a26e9cb43ab6232b815f05b59aa5737e1", null ],
-    [ "oc_cred_parse_credusage", "oc__cred_8h.html#a1e2d61d2fb927052a0696c6f4b0f6d87", null ],
-    [ "oc_cred_parse_encoding", "oc__cred_8h.html#a14b7cce2e2c07c0f2230903670d14523", null ],
-    [ "oc_cred_read_credusage", "oc__cred_8h.html#a84ab483f442588a72ed1d34e3fd2caf6", null ],
-    [ "oc_cred_read_encoding", "oc__cred_8h.html#a4a52d32f77145d659172e23cde403e63", null ],
-    [ "oc_cred_verify_certificate_chain", "oc__cred_8h.html#ad4813eacf50d1f236e319f5d71c8396e", null ],
-    [ "oc_sec_apply_cred", "oc__cred_8h.html#aa337bfc613c59c4403e70e2baadaad99", null ],
-    [ "oc_sec_cred_clear", "oc__cred_8h.html#aaf52ad19671d50a2642ad269b470c5ce", null ],
-    [ "oc_sec_get_cred_by_credid", "oc__cred_8h.html#a8151d8c3647369d047541fe36389545d", null ],
-    [ "oc_sec_get_creds", "oc__cred_8h.html#a9925d7a29e2a6edcd28c2ce6ac6defdf", null ],
-    [ "oc_sec_remove_cred", "oc__cred_8h.html#a5c0638033225ac8e9589ed896d30e3ec", null ],
-    [ "oc_sec_remove_cred_by_credid", "oc__cred_8h.html#a80d03c4bf42972fefbc7516643348c56", null ]
+    [ "oc_cred_credtype_string", "oc__cred_8h.html#afbb1b89e693f03e1fe588a4ba1d75488", null ],
+    [ "oc_cred_parse_credusage", "oc__cred_8h.html#a841bd5c031fa41e8b53b53d742ea0b61", null ],
+    [ "oc_cred_parse_encoding", "oc__cred_8h.html#a57a489be910a7c9e405d3cdfc21e6ebf", null ],
+    [ "oc_cred_read_credusage", "oc__cred_8h.html#ab26cf422c4d90369c577341faacced7b", null ],
+    [ "oc_cred_read_encoding", "oc__cred_8h.html#aebd296a2739e512916377e608c31d41b", null ],
+    [ "oc_cred_verify_certificate_chain", "oc__cred_8h.html#a2d2e2751fe8020c7a2486458896534ae", null ],
+    [ "oc_sec_apply_cred", "oc__cred_8h.html#a26bdff71a94947075ec033720a5a66a0", null ],
+    [ "oc_sec_cred_clear", "oc__cred_8h.html#a13fe73c32f0ad04ac0531674f4e5cf76", null ],
+    [ "oc_sec_get_cred_by_credid", "oc__cred_8h.html#afcda6ed54b0e99fffe9647f2cfad64c3", null ],
+    [ "oc_sec_get_creds", "oc__cred_8h.html#a534a268a16ad1fa637d6f5a055fd0421", null ],
+    [ "oc_sec_remove_cred", "oc__cred_8h.html#ad619753a9b077344d675d1fc17ead34d", null ],
+    [ "oc_sec_remove_cred_by_credid", "oc__cred_8h.html#a7f91b3cb255509c5deb4d77e0916ef33", null ]
 ];

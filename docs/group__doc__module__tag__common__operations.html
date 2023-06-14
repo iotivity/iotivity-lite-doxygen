@@ -103,27 +103,27 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga416e8c968e8345b984f0585ac38d5c8e"><td class="memItemLeft" align="right" valign="top">OC_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__common__operations.html#ga416e8c968e8345b984f0585ac38d5c8e">oc_has_delayed_callback</a> (void *cb_data, oc_trigger_t callback, bool ignore_cb_data)</td></tr>
-<tr class="memdesc:ga416e8c968e8345b984f0585ac38d5c8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if given delayed callback has already been scheduled.  <a href="group__doc__module__tag__common__operations.html#ga416e8c968e8345b984f0585ac38d5c8e">More...</a><br /></td></tr>
-<tr class="separator:ga416e8c968e8345b984f0585ac38d5c8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf0a19f95a097b7bdd451d89264bfbd80"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__common__operations.html#gaf0a19f95a097b7bdd451d89264bfbd80">oc_remove_delayed_callback</a> (void *cb_data, oc_trigger_t callback)</td></tr>
-<tr class="memdesc:gaf0a19f95a097b7bdd451d89264bfbd80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel a scheduled delayed callback.  <a href="group__doc__module__tag__common__operations.html#gaf0a19f95a097b7bdd451d89264bfbd80">More...</a><br /></td></tr>
-<tr class="separator:gaf0a19f95a097b7bdd451d89264bfbd80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5b1b876b615c11a182ac82586dec1517"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__common__operations.html#ga5b1b876b615c11a182ac82586dec1517">oc_remove_delayed_callback_by_filter</a> (oc_trigger_t cb, <a class="el" href="oc__ri_8h.html#ac53a2923da1e036f62cb84da82d1c8c3">oc_ri_timed_event_filter_t</a> filter, const void *filter_data, bool match_all, <a class="el" href="oc__ri_8h.html#a41f1ba7b8bc314d1f6bb1bb35a4b16ce">oc_ri_timed_event_on_delete_t</a> on_delete)</td></tr>
-<tr class="memdesc:ga5b1b876b615c11a182ac82586dec1517"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel a scheduled delayed callback by matching it by the provided filtering function.  <a href="group__doc__module__tag__common__operations.html#ga5b1b876b615c11a182ac82586dec1517">More...</a><br /></td></tr>
-<tr class="separator:ga5b1b876b615c11a182ac82586dec1517"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab239ad62e1bc74df82b8f51f91466157"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__common__operations.html#gab239ad62e1bc74df82b8f51f91466157">oc_set_delayed_callback</a> (void *cb_data, oc_trigger_t callback, uint16_t seconds)</td></tr>
-<tr class="memdesc:gab239ad62e1bc74df82b8f51f91466157"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule a callback to be invoked after a set number of seconds.  <a href="group__doc__module__tag__common__operations.html#gab239ad62e1bc74df82b8f51f91466157">More...</a><br /></td></tr>
-<tr class="separator:gab239ad62e1bc74df82b8f51f91466157"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9fdce010e251adf9dd34d1efb6279f12"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__common__operations.html#ga9fdce010e251adf9dd34d1efb6279f12">oc_set_delayed_callback_ms</a> (void *cb_data, oc_trigger_t callback, uint16_t milliseconds) OC_DEPRECATED(&quot;replaced by <a class="el" href="group__doc__module__tag__common__operations.html#ga86154e349470e80af5637322b58d9f1a">oc_set_delayed_callback_ms_v1</a> in v2.2.5.4&quot;)</td></tr>
-<tr class="memdesc:ga9fdce010e251adf9dd34d1efb6279f12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule a callback to be invoked after a set number of milliseconds.  <a href="group__doc__module__tag__common__operations.html#ga9fdce010e251adf9dd34d1efb6279f12">More...</a><br /></td></tr>
-<tr class="separator:ga9fdce010e251adf9dd34d1efb6279f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga86154e349470e80af5637322b58d9f1a"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__common__operations.html#ga86154e349470e80af5637322b58d9f1a">oc_set_delayed_callback_ms_v1</a> (void *cb_data, oc_trigger_t callback, uint64_t milliseconds)</td></tr>
-<tr class="memdesc:ga86154e349470e80af5637322b58d9f1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule a callback to be invoked after a set number of milliseconds.  <a href="group__doc__module__tag__common__operations.html#ga86154e349470e80af5637322b58d9f1a">More...</a><br /></td></tr>
-<tr class="separator:ga86154e349470e80af5637322b58d9f1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0b0a4f3bd4c523934e22c7bb8f3314a9"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__common__operations.html#ga0b0a4f3bd4c523934e22c7bb8f3314a9">oc_set_immutable_device_identifier</a> (size_t device, const oc_uuid_t *piid)</td></tr>
-<tr class="memdesc:ga0b0a4f3bd4c523934e22c7bb8f3314a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the immutable device identifier.  <a href="group__doc__module__tag__common__operations.html#ga0b0a4f3bd4c523934e22c7bb8f3314a9">More...</a><br /></td></tr>
-<tr class="separator:ga0b0a4f3bd4c523934e22c7bb8f3314a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga64b9f2692bf69bc1bd817edcc35fc711"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__common__operations.html#ga64b9f2692bf69bc1bd817edcc35fc711">oc_has_delayed_callback</a> (void *cb_data, oc_trigger_t callback, bool ignore_cb_data)</td></tr>
+<tr class="memdesc:ga64b9f2692bf69bc1bd817edcc35fc711"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if given delayed callback has already been scheduled.  <a href="group__doc__module__tag__common__operations.html#ga64b9f2692bf69bc1bd817edcc35fc711">More...</a><br /></td></tr>
+<tr class="separator:ga64b9f2692bf69bc1bd817edcc35fc711"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf8cac4f44a0020db72b7b9800191a430"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__common__operations.html#gaf8cac4f44a0020db72b7b9800191a430">oc_remove_delayed_callback</a> (void *cb_data, oc_trigger_t callback)</td></tr>
+<tr class="memdesc:gaf8cac4f44a0020db72b7b9800191a430"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel a scheduled delayed callback.  <a href="group__doc__module__tag__common__operations.html#gaf8cac4f44a0020db72b7b9800191a430">More...</a><br /></td></tr>
+<tr class="separator:gaf8cac4f44a0020db72b7b9800191a430"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeed0c2a86b0258918a18fb7b97874024"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__common__operations.html#gaeed0c2a86b0258918a18fb7b97874024">oc_remove_delayed_callback_by_filter</a> (oc_trigger_t cb, <a class="el" href="oc__ri_8h.html#ac53a2923da1e036f62cb84da82d1c8c3">oc_ri_timed_event_filter_t</a> filter, const void *filter_data, bool match_all, <a class="el" href="oc__ri_8h.html#a41f1ba7b8bc314d1f6bb1bb35a4b16ce">oc_ri_timed_event_on_delete_t</a> on_delete)</td></tr>
+<tr class="memdesc:gaeed0c2a86b0258918a18fb7b97874024"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel a scheduled delayed callback by matching it by the provided filtering function.  <a href="group__doc__module__tag__common__operations.html#gaeed0c2a86b0258918a18fb7b97874024">More...</a><br /></td></tr>
+<tr class="separator:gaeed0c2a86b0258918a18fb7b97874024"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga976b85e9312419b62f4ed0993bf548f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__common__operations.html#ga976b85e9312419b62f4ed0993bf548f6">oc_set_delayed_callback</a> (void *cb_data, oc_trigger_t callback, uint16_t seconds)</td></tr>
+<tr class="memdesc:ga976b85e9312419b62f4ed0993bf548f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule a callback to be invoked after a set number of seconds.  <a href="group__doc__module__tag__common__operations.html#ga976b85e9312419b62f4ed0993bf548f6">More...</a><br /></td></tr>
+<tr class="separator:ga976b85e9312419b62f4ed0993bf548f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae76210c8d70ce8fcf23d4fb66627bdd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__common__operations.html#gae76210c8d70ce8fcf23d4fb66627bdd4">oc_set_delayed_callback_ms</a> (void *cb_data, oc_trigger_t callback, uint16_t milliseconds) 1(&quot;replaced by <a class="el" href="group__doc__module__tag__common__operations.html#ga8e4d2c25f36e8b47e6b42f00d405e734">oc_set_delayed_callback_ms_v1</a> in v2.2.5.4&quot;)</td></tr>
+<tr class="memdesc:gae76210c8d70ce8fcf23d4fb66627bdd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule a callback to be invoked after a set number of milliseconds.  <a href="group__doc__module__tag__common__operations.html#gae76210c8d70ce8fcf23d4fb66627bdd4">More...</a><br /></td></tr>
+<tr class="separator:gae76210c8d70ce8fcf23d4fb66627bdd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8e4d2c25f36e8b47e6b42f00d405e734"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__common__operations.html#ga8e4d2c25f36e8b47e6b42f00d405e734">oc_set_delayed_callback_ms_v1</a> (void *cb_data, oc_trigger_t callback, uint64_t milliseconds)</td></tr>
+<tr class="memdesc:ga8e4d2c25f36e8b47e6b42f00d405e734"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule a callback to be invoked after a set number of milliseconds.  <a href="group__doc__module__tag__common__operations.html#ga8e4d2c25f36e8b47e6b42f00d405e734">More...</a><br /></td></tr>
+<tr class="separator:ga8e4d2c25f36e8b47e6b42f00d405e734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga627d0770c9a32e85077200765ccc18f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__common__operations.html#ga627d0770c9a32e85077200765ccc18f2">oc_set_immutable_device_identifier</a> (size_t device, const oc_uuid_t *piid)</td></tr>
+<tr class="memdesc:ga627d0770c9a32e85077200765ccc18f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the immutable device identifier.  <a href="group__doc__module__tag__common__operations.html#ga627d0770c9a32e85077200765ccc18f2">More...</a><br /></td></tr>
+<tr class="separator:ga627d0770c9a32e85077200765ccc18f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -206,14 +206,14 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga416e8c968e8345b984f0585ac38d5c8e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga416e8c968e8345b984f0585ac38d5c8e">&#9670;&nbsp;</a></span>oc_has_delayed_callback()</h2>
+<a id="ga64b9f2692bf69bc1bd817edcc35fc711"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga64b9f2692bf69bc1bd817edcc35fc711">&#9670;&nbsp;</a></span>oc_has_delayed_callback()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OC_API bool oc_has_delayed_callback </td>
+          <td class="memname">bool oc_has_delayed_callback </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>cb_data</em>, </td>
@@ -254,14 +254,14 @@ false otherwise </dd></dl>
 
 </div>
 </div>
-<a id="gaf0a19f95a097b7bdd451d89264bfbd80"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf0a19f95a097b7bdd451d89264bfbd80">&#9670;&nbsp;</a></span>oc_remove_delayed_callback()</h2>
+<a id="gaf8cac4f44a0020db72b7b9800191a430"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf8cac4f44a0020db72b7b9800191a430">&#9670;&nbsp;</a></span>oc_remove_delayed_callback()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OC_API void oc_remove_delayed_callback </td>
+          <td class="memname">void oc_remove_delayed_callback </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>cb_data</em>, </td>
@@ -283,7 +283,7 @@ false otherwise </dd></dl>
 <p>Cancel a scheduled delayed callback. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">cb_data</td><td>the user defined context pointer that was passed to the <a class="el" href="group__doc__module__tag__common__operations.html#gab239ad62e1bc74df82b8f51f91466157" title="Schedule a callback to be invoked after a set number of seconds.">oc_set_delayed_callback()</a> function </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cb_data</td><td>the user defined context pointer that was passed to the <a class="el" href="group__doc__module__tag__common__operations.html#ga976b85e9312419b62f4ed0993bf548f6" title="Schedule a callback to be invoked after a set number of seconds.">oc_set_delayed_callback()</a> function </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>the delayed callback that is being removed </td></tr>
   </table>
   </dd>
@@ -291,14 +291,14 @@ false otherwise </dd></dl>
 
 </div>
 </div>
-<a id="ga5b1b876b615c11a182ac82586dec1517"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5b1b876b615c11a182ac82586dec1517">&#9670;&nbsp;</a></span>oc_remove_delayed_callback_by_filter()</h2>
+<a id="gaeed0c2a86b0258918a18fb7b97874024"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeed0c2a86b0258918a18fb7b97874024">&#9670;&nbsp;</a></span>oc_remove_delayed_callback_by_filter()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OC_API void oc_remove_delayed_callback_by_filter </td>
+          <td class="memname">void oc_remove_delayed_callback_by_filter </td>
           <td>(</td>
           <td class="paramtype">oc_trigger_t&#160;</td>
           <td class="paramname"><em>cb</em>, </td>
@@ -353,14 +353,14 @@ false otherwise </dd></dl>
 
 </div>
 </div>
-<a id="gab239ad62e1bc74df82b8f51f91466157"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab239ad62e1bc74df82b8f51f91466157">&#9670;&nbsp;</a></span>oc_set_delayed_callback()</h2>
+<a id="ga976b85e9312419b62f4ed0993bf548f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga976b85e9312419b62f4ed0993bf548f6">&#9670;&nbsp;</a></span>oc_set_delayed_callback()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OC_API void oc_set_delayed_callback </td>
+          <td class="memname">void oc_set_delayed_callback </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>cb_data</em>, </td>
@@ -397,14 +397,14 @@ false otherwise </dd></dl>
 
 </div>
 </div>
-<a id="ga9fdce010e251adf9dd34d1efb6279f12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9fdce010e251adf9dd34d1efb6279f12">&#9670;&nbsp;</a></span>oc_set_delayed_callback_ms()</h2>
+<a id="gae76210c8d70ce8fcf23d4fb66627bdd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae76210c8d70ce8fcf23d4fb66627bdd4">&#9670;&nbsp;</a></span>oc_set_delayed_callback_ms()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OC_API void oc_set_delayed_callback_ms </td>
+          <td class="memname">void oc_set_delayed_callback_ms </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>cb_data</em>, </td>
@@ -442,14 +442,14 @@ false otherwise </dd></dl>
 
 </div>
 </div>
-<a id="ga86154e349470e80af5637322b58d9f1a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga86154e349470e80af5637322b58d9f1a">&#9670;&nbsp;</a></span>oc_set_delayed_callback_ms_v1()</h2>
+<a id="ga8e4d2c25f36e8b47e6b42f00d405e734"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8e4d2c25f36e8b47e6b42f00d405e734">&#9670;&nbsp;</a></span>oc_set_delayed_callback_ms_v1()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OC_API void oc_set_delayed_callback_ms_v1 </td>
+          <td class="memname">void oc_set_delayed_callback_ms_v1 </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>cb_data</em>, </td>
@@ -486,14 +486,14 @@ false otherwise </dd></dl>
 
 </div>
 </div>
-<a id="ga0b0a4f3bd4c523934e22c7bb8f3314a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0b0a4f3bd4c523934e22c7bb8f3314a9">&#9670;&nbsp;</a></span>oc_set_immutable_device_identifier()</h2>
+<a id="ga627d0770c9a32e85077200765ccc18f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga627d0770c9a32e85077200765ccc18f2">&#9670;&nbsp;</a></span>oc_set_immutable_device_identifier()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OC_API void oc_set_immutable_device_identifier </td>
+          <td class="memname">void oc_set_immutable_device_identifier </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -530,7 +530,7 @@ false otherwise </dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jun 12 2023 10:56:59 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Jun 14 2023 08:08:51 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

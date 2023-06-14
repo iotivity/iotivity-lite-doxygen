@@ -26,12 +26,12 @@ var oc__acl_8h =
       [ "OC_ACE_WC_ALL_SECURED", "oc__acl_8h.html#a1e7d2ee5709877a0e75a8e048e17df1fa7a9d72599e3ecc53301b6b0b9dcf2b8a", null ],
       [ "OC_ACE_WC_ALL_PUBLIC", "oc__acl_8h.html#a1e7d2ee5709877a0e75a8e048e17df1fa2001231471c769e94a8a9a96d134e24d", null ]
     ] ],
-    [ "oc_resource_set_access_in_RFOTM", "oc__acl_8h.html#ab050d71282b1024e44cdb5f9f8b2da17", null ],
-    [ "oc_sec_acl_add_bootstrap_acl", "oc__acl_8h.html#abd975f8a09517681f2ad1947dc850fbb", null ],
-    [ "oc_sec_acl_clear", "oc__acl_8h.html#a76c8509b26f9b855023ae93207443d03", null ],
-    [ "oc_sec_apply_acl", "oc__acl_8h.html#a47d298f865c98d63b3adacb072699455", null ],
-    [ "oc_sec_get_ace_by_aceid", "oc__acl_8h.html#ae7df0da1db57051dc3ca52f1be3f388a", null ],
-    [ "oc_sec_get_acl", "oc__acl_8h.html#a5dfed8d8872d4cd41d1937010238bb80", null ],
-    [ "oc_sec_remove_ace", "oc__acl_8h.html#a64108ae5adef3157642dc4836a178e44", null ],
-    [ "oc_sec_remove_ace_by_aceid", "oc__acl_8h.html#ae2a28176d054cc1794e22458c0871741", null ]
+    [ "oc_resource_set_access_in_RFOTM", "oc__acl_8h.html#a97df99c5794fca43211a6d4c65e04823", null ],
+    [ "oc_sec_acl_add_bootstrap_acl", "oc__acl_8h.html#ad051787e27f6044d4af7bb7bd0952c87", null ],
+    [ "oc_sec_acl_clear", "oc__acl_8h.html#a4d1d96c2cdc3f99d1bc18650bae64335", null ],
+    [ "oc_sec_apply_acl", "oc__acl_8h.html#ad4a616965926bf7ce8ef4560bc17b4f3", null ],
+    [ "oc_sec_get_ace_by_aceid", "oc__acl_8h.html#a275d094f7d4f83838b188ecbb4fb9372", null ],
+    [ "oc_sec_get_acl", "oc__acl_8h.html#a3ec26d37afab73a5e670ff897a883a3e", null ],
+    [ "oc_sec_remove_ace", "oc__acl_8h.html#a62c27daccd65b6c72c4dcf9a5c4dc563", null ],
+    [ "oc_sec_remove_ace_by_aceid", "oc__acl_8h.html#aff7300a6335f95f58f72249e0fd5030b", null ]
 ];

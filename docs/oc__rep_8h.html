@@ -143,11 +143,11 @@ Macros</h2></td></tr>
 <tr class="memdesc:abb10733a8be4dc0e1330f16b0742fd38"><td class="mdescLeft">&#160;</td><td class="mdescRight">End the array object.  <a href="oc__rep_8h.html#abb10733a8be4dc0e1330f16b0742fd38">More...</a><br /></td></tr>
 <tr class="separator:abb10733a8be4dc0e1330f16b0742fd38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae45cd2285cb29fd892a0a706eda61eb1"><td class="memItemLeft" align="right" valign="top"><a id="ae45cd2285cb29fd892a0a706eda61eb1"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_rep_end_links_array</b>()&#160;&#160;&#160;  g_err |= <a class="el" href="oc__rep_8h.html#a953695c61c35cc1be2a55e411b98fbd1">oc_rep_encoder_close_container</a>(<a class="el" href="oc__rep_8h.html#a14b8ae2a87ac6e98a16a853504d07224">oc_rep_get_encoder</a>(), &amp;links_array)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_rep_end_links_array</b>()&#160;&#160;&#160;  g_err |= <a class="el" href="oc__rep_8h.html#a953695c61c35cc1be2a55e411b98fbd1">oc_rep_encoder_close_container</a>(<a class="el" href="oc__rep_8h.html#a3a20a91f64e4fe3a87627b37c20b007d">oc_rep_get_encoder</a>(), &amp;links_array)</td></tr>
 <tr class="separator:ae45cd2285cb29fd892a0a706eda61eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7eb248d870f4d8a9b9529c1d559019b9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_rep_end_object</b>(parent,  key)</td></tr>
 <tr class="separator:a7eb248d870f4d8a9b9529c1d559019b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3a74cd8010eb2b4798b6f38cea3c487"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#ab3a74cd8010eb2b4798b6f38cea3c487">oc_rep_end_root_object</a>()&#160;&#160;&#160;  g_err |= <a class="el" href="oc__rep_8h.html#a953695c61c35cc1be2a55e411b98fbd1">oc_rep_encoder_close_container</a>(<a class="el" href="oc__rep_8h.html#a14b8ae2a87ac6e98a16a853504d07224">oc_rep_get_encoder</a>(), &amp;root_map)</td></tr>
+<tr class="memitem:ab3a74cd8010eb2b4798b6f38cea3c487"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#ab3a74cd8010eb2b4798b6f38cea3c487">oc_rep_end_root_object</a>()&#160;&#160;&#160;  g_err |= <a class="el" href="oc__rep_8h.html#a953695c61c35cc1be2a55e411b98fbd1">oc_rep_encoder_close_container</a>(<a class="el" href="oc__rep_8h.html#a3a20a91f64e4fe3a87627b37c20b007d">oc_rep_get_encoder</a>(), &amp;root_map)</td></tr>
 <tr class="memdesc:ab3a74cd8010eb2b4798b6f38cea3c487"><td class="mdescLeft">&#160;</td><td class="mdescRight">End the root object.  <a href="oc__rep_8h.html#ab3a74cd8010eb2b4798b6f38cea3c487">More...</a><br /></td></tr>
 <tr class="separator:ab3a74cd8010eb2b4798b6f38cea3c487"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a624f3b7ef4a837df5fb9103ac9da3b2c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a624f3b7ef4a837df5fb9103ac9da3b2c">oc_rep_object</a>(name)&#160;&#160;&#160;&amp;name##_map</td></tr>
@@ -296,9 +296,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_parse_rep</b> (cons
 <tr class="memitem:a2ba3982977b6c6a572e7fa43bc1e6acf"><td class="memItemLeft" align="right" valign="top">CborError&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a2ba3982977b6c6a572e7fa43bc1e6acf">oc_rep_encode_null</a> (CborEncoder *encoder)</td></tr>
 <tr class="memdesc:a2ba3982977b6c6a572e7fa43bc1e6acf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode a NULL value.  <a href="oc__rep_8h.html#a2ba3982977b6c6a572e7fa43bc1e6acf">More...</a><br /></td></tr>
 <tr class="separator:a2ba3982977b6c6a572e7fa43bc1e6acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abadcaeed713bdb6a3b7a6ace7939f4b7"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#abadcaeed713bdb6a3b7a6ace7939f4b7">oc_rep_encode_raw</a> (const uint8_t *data, size_t len)</td></tr>
-<tr class="memdesc:abadcaeed713bdb6a3b7a6ace7939f4b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode raw data to the global encoder, as if it was already encoded.  <a href="oc__rep_8h.html#abadcaeed713bdb6a3b7a6ace7939f4b7">More...</a><br /></td></tr>
-<tr class="separator:abadcaeed713bdb6a3b7a6ace7939f4b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c612fc4c4cd2ca886f535cad577720f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a9c612fc4c4cd2ca886f535cad577720f">oc_rep_encode_raw</a> (const uint8_t *data, size_t len)</td></tr>
+<tr class="memdesc:a9c612fc4c4cd2ca886f535cad577720f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode raw data to the global encoder, as if it was already encoded.  <a href="oc__rep_8h.html#a9c612fc4c4cd2ca886f535cad577720f">More...</a><br /></td></tr>
+<tr class="separator:a9c612fc4c4cd2ca886f535cad577720f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae973d1717cb83afd0cda4b0c8808c385"><td class="memItemLeft" align="right" valign="top">CborError&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#ae973d1717cb83afd0cda4b0c8808c385">oc_rep_encode_text_string</a> (CborEncoder *encoder, const char *string, size_t length)</td></tr>
 <tr class="memdesc:ae973d1717cb83afd0cda4b0c8808c385"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode a C-string.  <a href="oc__rep_8h.html#ae973d1717cb83afd0cda4b0c8808c385">More...</a><br /></td></tr>
 <tr class="separator:ae973d1717cb83afd0cda4b0c8808c385"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -314,75 +314,75 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_parse_rep</b> (cons
 <tr class="memitem:a2da8010e1ed3f60cbc3e606996761597"><td class="memItemLeft" align="right" valign="top">CborError&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a2da8010e1ed3f60cbc3e606996761597">oc_rep_encoder_create_map</a> (CborEncoder *encoder, CborEncoder *mapEncoder, size_t length)</td></tr>
 <tr class="memdesc:a2da8010e1ed3f60cbc3e606996761597"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode the beginning of a map.  <a href="oc__rep_8h.html#a2da8010e1ed3f60cbc3e606996761597">More...</a><br /></td></tr>
 <tr class="separator:a2da8010e1ed3f60cbc3e606996761597"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acaf9d2314939009efa7e7593cb50afe1"><td class="memItemLeft" align="right" valign="top">OC_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#acaf9d2314939009efa7e7593cb50afe1">oc_rep_get_bool</a> (const oc_rep_t *rep, const char *key, bool *value)</td></tr>
-<tr class="memdesc:acaf9d2314939009efa7e7593cb50afe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a boolean value from an <code>oc_rep_t</code>  <a href="oc__rep_8h.html#acaf9d2314939009efa7e7593cb50afe1">More...</a><br /></td></tr>
-<tr class="separator:acaf9d2314939009efa7e7593cb50afe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60c596b26ca206a956e6fd8090da2b76"><td class="memItemLeft" align="right" valign="top">OC_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a60c596b26ca206a956e6fd8090da2b76">oc_rep_get_bool_array</a> (const oc_rep_t *rep, const char *key, bool **value, size_t *size)</td></tr>
-<tr class="memdesc:a60c596b26ca206a956e6fd8090da2b76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read an boolean array value from an <code>oc_rep_t</code>  <a href="oc__rep_8h.html#a60c596b26ca206a956e6fd8090da2b76">More...</a><br /></td></tr>
-<tr class="separator:a60c596b26ca206a956e6fd8090da2b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf6421aa94861f849361145a16d62e77"><td class="memItemLeft" align="right" valign="top">OC_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#adf6421aa94861f849361145a16d62e77">oc_rep_get_byte_string</a> (const oc_rep_t *rep, const char *key, char **value, size_t *size)</td></tr>
-<tr class="memdesc:adf6421aa94861f849361145a16d62e77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a byte string value from an <code>oc_rep_t</code>  <a href="oc__rep_8h.html#adf6421aa94861f849361145a16d62e77">More...</a><br /></td></tr>
-<tr class="separator:adf6421aa94861f849361145a16d62e77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dfe5fc69c16647bf7c70ffe4578905d"><td class="memItemLeft" align="right" valign="top">OC_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a2dfe5fc69c16647bf7c70ffe4578905d">oc_rep_get_byte_string_array</a> (const oc_rep_t *rep, const char *key, oc_string_array_t *value, size_t *size)</td></tr>
-<tr class="memdesc:a2dfe5fc69c16647bf7c70ffe4578905d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read an byte string array value from an <code>oc_rep_t</code>  <a href="oc__rep_8h.html#a2dfe5fc69c16647bf7c70ffe4578905d">More...</a><br /></td></tr>
-<tr class="separator:a2dfe5fc69c16647bf7c70ffe4578905d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2a6595bec656be3eda87e27f9ca0f0b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#ac2a6595bec656be3eda87e27f9ca0f0b">oc_rep_get_bool</a> (const oc_rep_t *rep, const char *key, bool *value)</td></tr>
+<tr class="memdesc:ac2a6595bec656be3eda87e27f9ca0f0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a boolean value from an <code>oc_rep_t</code>  <a href="oc__rep_8h.html#ac2a6595bec656be3eda87e27f9ca0f0b">More...</a><br /></td></tr>
+<tr class="separator:ac2a6595bec656be3eda87e27f9ca0f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e91deab9b5585f5b2b6591cb31466ce"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a0e91deab9b5585f5b2b6591cb31466ce">oc_rep_get_bool_array</a> (const oc_rep_t *rep, const char *key, bool **value, size_t *size)</td></tr>
+<tr class="memdesc:a0e91deab9b5585f5b2b6591cb31466ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read an boolean array value from an <code>oc_rep_t</code>  <a href="oc__rep_8h.html#a0e91deab9b5585f5b2b6591cb31466ce">More...</a><br /></td></tr>
+<tr class="separator:a0e91deab9b5585f5b2b6591cb31466ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ed7a90192ace86fd6ecae3f367c81a7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a1ed7a90192ace86fd6ecae3f367c81a7">oc_rep_get_byte_string</a> (const oc_rep_t *rep, const char *key, char **value, size_t *size)</td></tr>
+<tr class="memdesc:a1ed7a90192ace86fd6ecae3f367c81a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a byte string value from an <code>oc_rep_t</code>  <a href="oc__rep_8h.html#a1ed7a90192ace86fd6ecae3f367c81a7">More...</a><br /></td></tr>
+<tr class="separator:a1ed7a90192ace86fd6ecae3f367c81a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb8e9e2044b64aeaf1df52b76d9f1d9c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#aeb8e9e2044b64aeaf1df52b76d9f1d9c">oc_rep_get_byte_string_array</a> (const oc_rep_t *rep, const char *key, oc_string_array_t *value, size_t *size)</td></tr>
+<tr class="memdesc:aeb8e9e2044b64aeaf1df52b76d9f1d9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read an byte string array value from an <code>oc_rep_t</code>  <a href="oc__rep_8h.html#aeb8e9e2044b64aeaf1df52b76d9f1d9c">More...</a><br /></td></tr>
+<tr class="separator:aeb8e9e2044b64aeaf1df52b76d9f1d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd633419c3a6cbf5b8ab636242e0861f"><td class="memItemLeft" align="right" valign="top">CborError&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#acd633419c3a6cbf5b8ab636242e0861f">oc_rep_get_cbor_errno</a> (void)</td></tr>
 <tr class="memdesc:acd633419c3a6cbf5b8ab636242e0861f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called after any <code>oc_rep_set_*</code>, <code>oc_rep_start_*</code>, <code>oc_rep_begin_*</code>, <code>oc_rep_end_*</code>, <code>oc_rep_add_*</code>, <code>oc_rep_open_*</code>, and <code>oc_rep_close_*</code> macros to check if an error occurred while executing the commands.  <a href="oc__rep_8h.html#acd633419c3a6cbf5b8ab636242e0861f">More...</a><br /></td></tr>
 <tr class="separator:acd633419c3a6cbf5b8ab636242e0861f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80e7c8943bc17f233529c2d8af27a806"><td class="memItemLeft" align="right" valign="top">OC_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a80e7c8943bc17f233529c2d8af27a806">oc_rep_get_double</a> (const oc_rep_t *rep, const char *key, double *value)</td></tr>
-<tr class="memdesc:a80e7c8943bc17f233529c2d8af27a806"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a double value from an <code>oc_rep_t</code>  <a href="oc__rep_8h.html#a80e7c8943bc17f233529c2d8af27a806">More...</a><br /></td></tr>
-<tr class="separator:a80e7c8943bc17f233529c2d8af27a806"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2af43fff828d6d5041b4a78de3b70d19"><td class="memItemLeft" align="right" valign="top">OC_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a2af43fff828d6d5041b4a78de3b70d19">oc_rep_get_double_array</a> (const oc_rep_t *rep, const char *key, double **value, size_t *size)</td></tr>
-<tr class="memdesc:a2af43fff828d6d5041b4a78de3b70d19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read an double array value from an <code>oc_rep_t</code>  <a href="oc__rep_8h.html#a2af43fff828d6d5041b4a78de3b70d19">More...</a><br /></td></tr>
-<tr class="separator:a2af43fff828d6d5041b4a78de3b70d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b3cb3804f3857db0249a8ca4e96f24c"><td class="memItemLeft" align="right" valign="top">OC_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a0b3cb3804f3857db0249a8ca4e96f24c">oc_rep_get_encoded_payload_size</a> (void)</td></tr>
-<tr class="memdesc:a0b3cb3804f3857db0249a8ca4e96f24c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the size of the cbor encoded data.  <a href="oc__rep_8h.html#a0b3cb3804f3857db0249a8ca4e96f24c">More...</a><br /></td></tr>
-<tr class="separator:a0b3cb3804f3857db0249a8ca4e96f24c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14b8ae2a87ac6e98a16a853504d07224"><td class="memItemLeft" align="right" valign="top">OC_API CborEncoder *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a14b8ae2a87ac6e98a16a853504d07224">oc_rep_get_encoder</a> (void)</td></tr>
-<tr class="memdesc:a14b8ae2a87ac6e98a16a853504d07224"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the global cbor encoder.  <a href="oc__rep_8h.html#a14b8ae2a87ac6e98a16a853504d07224">More...</a><br /></td></tr>
-<tr class="separator:a14b8ae2a87ac6e98a16a853504d07224"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b32bf32cb9a7dbb9620e3899773873b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a0b32bf32cb9a7dbb9620e3899773873b">oc_rep_get_double</a> (const oc_rep_t *rep, const char *key, double *value)</td></tr>
+<tr class="memdesc:a0b32bf32cb9a7dbb9620e3899773873b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a double value from an <code>oc_rep_t</code>  <a href="oc__rep_8h.html#a0b32bf32cb9a7dbb9620e3899773873b">More...</a><br /></td></tr>
+<tr class="separator:a0b32bf32cb9a7dbb9620e3899773873b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28f978bdade14b9b7c056fac785d8f27"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a28f978bdade14b9b7c056fac785d8f27">oc_rep_get_double_array</a> (const oc_rep_t *rep, const char *key, double **value, size_t *size)</td></tr>
+<tr class="memdesc:a28f978bdade14b9b7c056fac785d8f27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read an double array value from an <code>oc_rep_t</code>  <a href="oc__rep_8h.html#a28f978bdade14b9b7c056fac785d8f27">More...</a><br /></td></tr>
+<tr class="separator:a28f978bdade14b9b7c056fac785d8f27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc472350fc7fefff703ba225791d5333"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#acc472350fc7fefff703ba225791d5333">oc_rep_get_encoded_payload_size</a> (void)</td></tr>
+<tr class="memdesc:acc472350fc7fefff703ba225791d5333"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the size of the cbor encoded data.  <a href="oc__rep_8h.html#acc472350fc7fefff703ba225791d5333">More...</a><br /></td></tr>
+<tr class="separator:acc472350fc7fefff703ba225791d5333"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a20a91f64e4fe3a87627b37c20b007d"><td class="memItemLeft" align="right" valign="top">CborEncoder *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a3a20a91f64e4fe3a87627b37c20b007d">oc_rep_get_encoder</a> (void)</td></tr>
+<tr class="memdesc:a3a20a91f64e4fe3a87627b37c20b007d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the global cbor encoder.  <a href="oc__rep_8h.html#a3a20a91f64e4fe3a87627b37c20b007d">More...</a><br /></td></tr>
+<tr class="separator:a3a20a91f64e4fe3a87627b37c20b007d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a701d638e52f93819f35a57d798abe54b"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a701d638e52f93819f35a57d798abe54b">oc_rep_get_encoder_buf</a> (void)</td></tr>
 <tr class="memdesc:a701d638e52f93819f35a57d798abe54b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the buffer pointer at the start of the encoded cbor data.  <a href="oc__rep_8h.html#a701d638e52f93819f35a57d798abe54b">More...</a><br /></td></tr>
 <tr class="separator:a701d638e52f93819f35a57d798abe54b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cb15118ac6d8dd4e9f368b87b2fd080"><td class="memItemLeft" align="right" valign="top">OC_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a5cb15118ac6d8dd4e9f368b87b2fd080">oc_rep_get_encoder_buffer_size</a> (void)</td></tr>
-<tr class="memdesc:a5cb15118ac6d8dd4e9f368b87b2fd080"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the size of the encoder buffer.  <a href="oc__rep_8h.html#a5cb15118ac6d8dd4e9f368b87b2fd080">More...</a><br /></td></tr>
-<tr class="separator:a5cb15118ac6d8dd4e9f368b87b2fd080"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80bb44cdd3f969974f0c27e9be2cbd18"><td class="memItemLeft" align="right" valign="top">OC_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a80bb44cdd3f969974f0c27e9be2cbd18">oc_rep_get_int</a> (const oc_rep_t *rep, const char *key, int64_t *value)</td></tr>
-<tr class="memdesc:a80bb44cdd3f969974f0c27e9be2cbd18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read an integer from an <code>oc_rep_t</code>  <a href="oc__rep_8h.html#a80bb44cdd3f969974f0c27e9be2cbd18">More...</a><br /></td></tr>
-<tr class="separator:a80bb44cdd3f969974f0c27e9be2cbd18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6e9bfdc0ec286f2e44ad390cfb9224d"><td class="memItemLeft" align="right" valign="top">OC_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#aa6e9bfdc0ec286f2e44ad390cfb9224d">oc_rep_get_int_array</a> (const oc_rep_t *rep, const char *key, int64_t **value, size_t *size)</td></tr>
-<tr class="memdesc:aa6e9bfdc0ec286f2e44ad390cfb9224d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read an integer array value from an <code>oc_rep_t</code>  <a href="oc__rep_8h.html#aa6e9bfdc0ec286f2e44ad390cfb9224d">More...</a><br /></td></tr>
-<tr class="separator:aa6e9bfdc0ec286f2e44ad390cfb9224d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2ec87e5b9d082aa60cd3cb9d6576854"><td class="memItemLeft" align="right" valign="top">OC_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#ac2ec87e5b9d082aa60cd3cb9d6576854">oc_rep_get_object</a> (const oc_rep_t *rep, const char *key, oc_rep_t **value)</td></tr>
-<tr class="memdesc:ac2ec87e5b9d082aa60cd3cb9d6576854"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a object value from an <code>oc_rep_t</code>  <a href="oc__rep_8h.html#ac2ec87e5b9d082aa60cd3cb9d6576854">More...</a><br /></td></tr>
-<tr class="separator:ac2ec87e5b9d082aa60cd3cb9d6576854"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a104d451e6b3b051e2b131372afac35e7"><td class="memItemLeft" align="right" valign="top">OC_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a104d451e6b3b051e2b131372afac35e7">oc_rep_get_object_array</a> (const oc_rep_t *rep, const char *key, oc_rep_t **value)</td></tr>
-<tr class="memdesc:a104d451e6b3b051e2b131372afac35e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a object array value from an <code>oc_rep_t</code>  <a href="oc__rep_8h.html#a104d451e6b3b051e2b131372afac35e7">More...</a><br /></td></tr>
-<tr class="separator:a104d451e6b3b051e2b131372afac35e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a793613f1cc4efd2e1371d48283921480"><td class="memItemLeft" align="right" valign="top">OC_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a793613f1cc4efd2e1371d48283921480">oc_rep_get_string</a> (const oc_rep_t *rep, const char *key, char **value, size_t *size)</td></tr>
-<tr class="memdesc:a793613f1cc4efd2e1371d48283921480"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a text string value from an <code>oc_rep_t</code>  <a href="oc__rep_8h.html#a793613f1cc4efd2e1371d48283921480">More...</a><br /></td></tr>
-<tr class="separator:a793613f1cc4efd2e1371d48283921480"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90612b9bc136553ae5405dd318c2020d"><td class="memItemLeft" align="right" valign="top">OC_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a90612b9bc136553ae5405dd318c2020d">oc_rep_get_string_array</a> (const oc_rep_t *rep, const char *key, oc_string_array_t *value, size_t *size)</td></tr>
-<tr class="memdesc:a90612b9bc136553ae5405dd318c2020d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a string array value from an <code>oc_rep_t</code>  <a href="oc__rep_8h.html#a90612b9bc136553ae5405dd318c2020d">More...</a><br /></td></tr>
-<tr class="separator:a90612b9bc136553ae5405dd318c2020d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accc25502ad4375e57068d8c72416428b"><td class="memItemLeft" align="right" valign="top">OC_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#accc25502ad4375e57068d8c72416428b">oc_rep_is_null</a> (const oc_rep_t *rep, const char *key, bool *is_null)</td></tr>
-<tr class="memdesc:accc25502ad4375e57068d8c72416428b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check for a null value from an <code>oc_rep_t</code>  <a href="oc__rep_8h.html#accc25502ad4375e57068d8c72416428b">More...</a><br /></td></tr>
-<tr class="separator:accc25502ad4375e57068d8c72416428b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39e4c27812305c01d9dae318005a313f"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a39e4c27812305c01d9dae318005a313f">oc_rep_new</a> (uint8_t *payload, int size)</td></tr>
-<tr class="memdesc:a39e4c27812305c01d9dae318005a313f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the buffer used to hold the cbor encoded data without reallocation.  <a href="oc__rep_8h.html#a39e4c27812305c01d9dae318005a313f">More...</a><br /></td></tr>
-<tr class="separator:a39e4c27812305c01d9dae318005a313f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85f8238fc637c4564e91685c4bea7ce6"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a85f8238fc637c4564e91685c4bea7ce6">oc_rep_new_realloc</a> (uint8_t **payload, int size, int max_size)</td></tr>
-<tr class="memdesc:a85f8238fc637c4564e91685c4bea7ce6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the buffer used to hold the cbor encoded data with reallocation.  <a href="oc__rep_8h.html#a85f8238fc637c4564e91685c4bea7ce6">More...</a><br /></td></tr>
-<tr class="separator:a85f8238fc637c4564e91685c4bea7ce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab70a4f2386669c40b3300b361c843302"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#ab70a4f2386669c40b3300b361c843302">oc_rep_get_encoder_buffer_size</a> (void)</td></tr>
+<tr class="memdesc:ab70a4f2386669c40b3300b361c843302"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the size of the encoder buffer.  <a href="oc__rep_8h.html#ab70a4f2386669c40b3300b361c843302">More...</a><br /></td></tr>
+<tr class="separator:ab70a4f2386669c40b3300b361c843302"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e3ff480e9410cf7e2140f46ef25dc71"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a8e3ff480e9410cf7e2140f46ef25dc71">oc_rep_get_int</a> (const oc_rep_t *rep, const char *key, int64_t *value)</td></tr>
+<tr class="memdesc:a8e3ff480e9410cf7e2140f46ef25dc71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read an integer from an <code>oc_rep_t</code>  <a href="oc__rep_8h.html#a8e3ff480e9410cf7e2140f46ef25dc71">More...</a><br /></td></tr>
+<tr class="separator:a8e3ff480e9410cf7e2140f46ef25dc71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff67241f479aa4005bf9307dc9584741"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#aff67241f479aa4005bf9307dc9584741">oc_rep_get_int_array</a> (const oc_rep_t *rep, const char *key, int64_t **value, size_t *size)</td></tr>
+<tr class="memdesc:aff67241f479aa4005bf9307dc9584741"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read an integer array value from an <code>oc_rep_t</code>  <a href="oc__rep_8h.html#aff67241f479aa4005bf9307dc9584741">More...</a><br /></td></tr>
+<tr class="separator:aff67241f479aa4005bf9307dc9584741"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25a72c36dca09c6e6d7363e33bbe2a0d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a25a72c36dca09c6e6d7363e33bbe2a0d">oc_rep_get_object</a> (const oc_rep_t *rep, const char *key, oc_rep_t **value)</td></tr>
+<tr class="memdesc:a25a72c36dca09c6e6d7363e33bbe2a0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a object value from an <code>oc_rep_t</code>  <a href="oc__rep_8h.html#a25a72c36dca09c6e6d7363e33bbe2a0d">More...</a><br /></td></tr>
+<tr class="separator:a25a72c36dca09c6e6d7363e33bbe2a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41727406671fa604337c77a9383fdc3b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a41727406671fa604337c77a9383fdc3b">oc_rep_get_object_array</a> (const oc_rep_t *rep, const char *key, oc_rep_t **value)</td></tr>
+<tr class="memdesc:a41727406671fa604337c77a9383fdc3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a object array value from an <code>oc_rep_t</code>  <a href="oc__rep_8h.html#a41727406671fa604337c77a9383fdc3b">More...</a><br /></td></tr>
+<tr class="separator:a41727406671fa604337c77a9383fdc3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfb16b76e18e2fe5e7325de665e922e4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#abfb16b76e18e2fe5e7325de665e922e4">oc_rep_get_string</a> (const oc_rep_t *rep, const char *key, char **value, size_t *size)</td></tr>
+<tr class="memdesc:abfb16b76e18e2fe5e7325de665e922e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a text string value from an <code>oc_rep_t</code>  <a href="oc__rep_8h.html#abfb16b76e18e2fe5e7325de665e922e4">More...</a><br /></td></tr>
+<tr class="separator:abfb16b76e18e2fe5e7325de665e922e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12bc7983f928f4f5f67c4d9c6e86b906"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a12bc7983f928f4f5f67c4d9c6e86b906">oc_rep_get_string_array</a> (const oc_rep_t *rep, const char *key, oc_string_array_t *value, size_t *size)</td></tr>
+<tr class="memdesc:a12bc7983f928f4f5f67c4d9c6e86b906"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a string array value from an <code>oc_rep_t</code>  <a href="oc__rep_8h.html#a12bc7983f928f4f5f67c4d9c6e86b906">More...</a><br /></td></tr>
+<tr class="separator:a12bc7983f928f4f5f67c4d9c6e86b906"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e105ec4297b3b163f776749587a0b71"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a3e105ec4297b3b163f776749587a0b71">oc_rep_is_null</a> (const oc_rep_t *rep, const char *key, bool *is_null)</td></tr>
+<tr class="memdesc:a3e105ec4297b3b163f776749587a0b71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check for a null value from an <code>oc_rep_t</code>  <a href="oc__rep_8h.html#a3e105ec4297b3b163f776749587a0b71">More...</a><br /></td></tr>
+<tr class="separator:a3e105ec4297b3b163f776749587a0b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8035d3fe8ba6534aeb4d783ca929e768"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a8035d3fe8ba6534aeb4d783ca929e768">oc_rep_new</a> (uint8_t *payload, int size)</td></tr>
+<tr class="memdesc:a8035d3fe8ba6534aeb4d783ca929e768"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the buffer used to hold the cbor encoded data without reallocation.  <a href="oc__rep_8h.html#a8035d3fe8ba6534aeb4d783ca929e768">More...</a><br /></td></tr>
+<tr class="separator:a8035d3fe8ba6534aeb4d783ca929e768"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38ab99a016682168968a0798b87e012c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a38ab99a016682168968a0798b87e012c">oc_rep_new_realloc</a> (uint8_t **payload, int size, int max_size)</td></tr>
+<tr class="memdesc:a38ab99a016682168968a0798b87e012c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the buffer used to hold the cbor encoded data with reallocation.  <a href="oc__rep_8h.html#a38ab99a016682168968a0798b87e012c">More...</a><br /></td></tr>
+<tr class="separator:a38ab99a016682168968a0798b87e012c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10f1c1b950123516185b8b7944873937"><td class="memItemLeft" align="right" valign="top"><a id="a10f1c1b950123516185b8b7944873937"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_rep_set_pool</b> (struct oc_memb *rep_objects_pool)</td></tr>
 <tr class="separator:a10f1c1b950123516185b8b7944873937"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc22e10eb48e0d0f0f279cdee768430f"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#abc22e10eb48e0d0f0f279cdee768430f">oc_rep_shrink_encoder_buf</a> (uint8_t *buf)</td></tr>
 <tr class="memdesc:abc22e10eb48e0d0f0f279cdee768430f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shrink the buffer pointer to length of encoded cbor data.  <a href="oc__rep_8h.html#abc22e10eb48e0d0f0f279cdee768430f">More...</a><br /></td></tr>
 <tr class="separator:abc22e10eb48e0d0f0f279cdee768430f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f6afcc297a377439c4cde4d2bc74822"><td class="memItemLeft" align="right" valign="top">OC_API size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a9f6afcc297a377439c4cde4d2bc74822">oc_rep_to_json</a> (const oc_rep_t *rep, char *buf, size_t buf_size, bool pretty_print)</td></tr>
-<tr class="memdesc:a9f6afcc297a377439c4cde4d2bc74822"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert an oc_rep_t to JSON encoded string.  <a href="oc__rep_8h.html#a9f6afcc297a377439c4cde4d2bc74822">More...</a><br /></td></tr>
-<tr class="separator:a9f6afcc297a377439c4cde4d2bc74822"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92ccb8ba4f7bada141e7971d9239454d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a92ccb8ba4f7bada141e7971d9239454d">oc_rep_to_json</a> (const oc_rep_t *rep, char *buf, size_t buf_size, bool pretty_print)</td></tr>
+<tr class="memdesc:a92ccb8ba4f7bada141e7971d9239454d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert an oc_rep_t to JSON encoded string.  <a href="oc__rep_8h.html#a92ccb8ba4f7bada141e7971d9239454d">More...</a><br /></td></tr>
+<tr class="separator:a92ccb8ba4f7bada141e7971d9239454d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -803,10 +803,10 @@ CborEncoder&#160;</td><td class="memItemRight" valign="bottom"><b>root_map</b></
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  g_err |= <a class="code" href="oc__rep_8h.html#a28f725aa3b133f97e23a66e368a17194">oc_rep_encoder_create_array</a>(<a class="code" href="oc__rep_8h.html#a14b8ae2a87ac6e98a16a853504d07224">oc_rep_get_encoder</a>(), &amp;links_array,     \</div>
+<b>Value:</b><div class="fragment"><div class="line">  g_err |= <a class="code" href="oc__rep_8h.html#a28f725aa3b133f97e23a66e368a17194">oc_rep_encoder_create_array</a>(<a class="code" href="oc__rep_8h.html#a3a20a91f64e4fe3a87627b37c20b007d">oc_rep_get_encoder</a>(), &amp;links_array,     \</div>
 <div class="line">                                       CborIndefiniteLength)</div>
-<div class="ttc" id="aoc__rep_8h_html_a14b8ae2a87ac6e98a16a853504d07224"><div class="ttname"><a href="oc__rep_8h.html#a14b8ae2a87ac6e98a16a853504d07224">oc_rep_get_encoder</a></div><div class="ttdeci">OC_API CborEncoder * oc_rep_get_encoder(void)</div><div class="ttdoc">Get the global cbor encoder.</div></div>
 <div class="ttc" id="aoc__rep_8h_html_a28f725aa3b133f97e23a66e368a17194"><div class="ttname"><a href="oc__rep_8h.html#a28f725aa3b133f97e23a66e368a17194">oc_rep_encoder_create_array</a></div><div class="ttdeci">CborError oc_rep_encoder_create_array(CborEncoder *encoder, CborEncoder *arrayEncoder, size_t length)</div><div class="ttdoc">Encode the beginning of an array.</div></div>
+<div class="ttc" id="aoc__rep_8h_html_a3a20a91f64e4fe3a87627b37c20b007d"><div class="ttname"><a href="oc__rep_8h.html#a3a20a91f64e4fe3a87627b37c20b007d">oc_rep_get_encoder</a></div><div class="ttdeci">CborEncoder * oc_rep_get_encoder(void)</div><div class="ttdoc">Get the global cbor encoder.</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -857,7 +857,7 @@ CborEncoder&#160;</td><td class="memItemRight" valign="bottom"><b>root_map</b></
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  g_err |= <a class="code" href="oc__rep_8h.html#a2da8010e1ed3f60cbc3e606996761597">oc_rep_encoder_create_map</a>(<a class="code" href="oc__rep_8h.html#a14b8ae2a87ac6e98a16a853504d07224">oc_rep_get_encoder</a>(), &amp;root_map,          \</div>
+<b>Value:</b><div class="fragment"><div class="line">  g_err |= <a class="code" href="oc__rep_8h.html#a2da8010e1ed3f60cbc3e606996761597">oc_rep_encoder_create_map</a>(<a class="code" href="oc__rep_8h.html#a3a20a91f64e4fe3a87627b37c20b007d">oc_rep_get_encoder</a>(), &amp;root_map,          \</div>
 <div class="line">                                     CborIndefiniteLength)</div>
 </div><!-- fragment -->
 <p>Begin the root object. </p>
@@ -1011,7 +1011,7 @@ CborEncoder&#160;</td><td class="memItemRight" valign="bottom"><b>root_map</b></
           <td class="memname">#define oc_rep_end_root_object</td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;  g_err |= <a class="el" href="oc__rep_8h.html#a953695c61c35cc1be2a55e411b98fbd1">oc_rep_encoder_close_container</a>(<a class="el" href="oc__rep_8h.html#a14b8ae2a87ac6e98a16a853504d07224">oc_rep_get_encoder</a>(), &amp;root_map)</td>
+          <td>&#160;&#160;&#160;  g_err |= <a class="el" href="oc__rep_8h.html#a953695c61c35cc1be2a55e411b98fbd1">oc_rep_encoder_close_container</a>(<a class="el" href="oc__rep_8h.html#a3a20a91f64e4fe3a87627b37c20b007d">oc_rep_get_encoder</a>(), &amp;root_map)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1375,7 +1375,7 @@ CborEncoder&#160;</td><td class="memItemRight" valign="bottom"><b>root_map</b></
 <div class="line"><a class="code" href="oc__rep_8h.html#a9fea833e16965d2200342ae3c8deef35">oc_rep_set_boolean</a>(root, door_open, <span class="keyword">false</span>);</div>
 <div class="line"><a class="code" href="oc__rep_8h.html#ab3a74cd8010eb2b4798b6f38cea3c487">oc_rep_end_root_object</a>();</div>
 <div class="ttc" id="aoc__rep_8h_html_ac0fa5f5a963bc4a00bd9dd1e050064d7"><div class="ttname"><a href="oc__rep_8h.html#ac0fa5f5a963bc4a00bd9dd1e050064d7">oc_rep_begin_root_object</a></div><div class="ttdeci">#define oc_rep_begin_root_object()</div><div class="ttdoc">Begin the root object.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:565</div></div>
-</div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__rep_8h.html#acaf9d2314939009efa7e7593cb50afe1" title="Read a boolean value from an oc_rep_t">oc_rep_get_bool</a> </dd></dl>
+</div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__rep_8h.html#ac2a6595bec656be3eda87e27f9ca0f0b" title="Read a boolean value from an oc_rep_t">oc_rep_get_bool</a> </dd></dl>
 
 </div>
 </div>
@@ -1599,7 +1599,7 @@ CborEncoder&#160;</td><td class="memItemRight" valign="bottom"><b>root_map</b></
 </pre><p> The following code could be used: </p><div class="fragment"><div class="line"><a class="code" href="oc__rep_8h.html#ac0fa5f5a963bc4a00bd9dd1e050064d7">oc_rep_begin_root_object</a>();</div>
 <div class="line"><a class="code" href="oc__rep_8h.html#aef1a23bf7d770f5d304ff07b15ef65ce">oc_rep_set_int</a>(root, power, 42);</div>
 <div class="line"><a class="code" href="oc__rep_8h.html#ab3a74cd8010eb2b4798b6f38cea3c487">oc_rep_end_root_object</a>();</div>
-</div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__rep_8h.html#a80bb44cdd3f969974f0c27e9be2cbd18" title="Read an integer from an oc_rep_t">oc_rep_get_int</a> </dd></dl>
+</div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__rep_8h.html#a8e3ff480e9410cf7e2140f46ef25dc71" title="Read an integer from an oc_rep_t">oc_rep_get_int</a> </dd></dl>
 
 </div>
 </div>
@@ -1746,7 +1746,7 @@ CborEncoder&#160;</td><td class="memItemRight" valign="bottom"><b>root_map</b></
 <div class="line"><a class="code" href="oc__rep_8h.html#a74f95fe42177e3c12b1f250595b76b39">oc_rep_set_null</a>(root, nothing);</div>
 <div class="line"><a class="code" href="oc__rep_8h.html#ab3a74cd8010eb2b4798b6f38cea3c487">oc_rep_end_root_object</a>();</div>
 <div class="ttc" id="aoc__rep_8h_html_a74f95fe42177e3c12b1f250595b76b39"><div class="ttname"><a href="oc__rep_8h.html#a74f95fe42177e3c12b1f250595b76b39">oc_rep_set_null</a></div><div class="ttdeci">#define oc_rep_set_null(object, key)</div><div class="ttdoc">Add an null value to the cbor object under the key name Example:</div><div class="ttdef"><b>Definition:</b> oc_rep.h:462</div></div>
-</div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__rep_8h.html#accc25502ad4375e57068d8c72416428b" title="Check for a null value from an oc_rep_t">oc_rep_is_null</a> </dd></dl>
+</div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__rep_8h.html#a3e105ec4297b3b163f776749587a0b71" title="Check for a null value from an oc_rep_t">oc_rep_is_null</a> </dd></dl>
 
 </div>
 </div>
@@ -2339,14 +2339,14 @@ oc_rep_end_object </dd></dl>
 
 </div>
 </div>
-<a id="abadcaeed713bdb6a3b7a6ace7939f4b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abadcaeed713bdb6a3b7a6ace7939f4b7">&#9670;&nbsp;</a></span>oc_rep_encode_raw()</h2>
+<a id="a9c612fc4c4cd2ca886f535cad577720f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c612fc4c4cd2ca886f535cad577720f">&#9670;&nbsp;</a></span>oc_rep_encode_raw()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OC_API void oc_rep_encode_raw </td>
+          <td class="memname">void oc_rep_encode_raw </td>
           <td>(</td>
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><em>data</em>, </td>
@@ -2596,14 +2596,14 @@ oc_rep_end_object </dd></dl>
 
 </div>
 </div>
-<a id="acaf9d2314939009efa7e7593cb50afe1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acaf9d2314939009efa7e7593cb50afe1">&#9670;&nbsp;</a></span>oc_rep_get_bool()</h2>
+<a id="ac2a6595bec656be3eda87e27f9ca0f0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2a6595bec656be3eda87e27f9ca0f0b">&#9670;&nbsp;</a></span>oc_rep_get_bool()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OC_API bool oc_rep_get_bool </td>
+          <td class="memname">bool oc_rep_get_bool </td>
           <td>(</td>
           <td class="paramtype">const oc_rep_t *&#160;</td>
           <td class="paramname"><em>rep</em>, </td>
@@ -2630,11 +2630,11 @@ oc_rep_end_object </dd></dl>
 
 <p>Read a boolean value from an <code>oc_rep_t</code> </p>
 <p>Example: </p><div class="fragment"><div class="line">    <span class="keywordtype">bool</span> door_open_flag = <span class="keyword">false</span>;</div>
-<div class="line">    <span class="keywordflow">if</span>( <span class="keyword">true</span> == <a class="code" href="oc__rep_8h.html#acaf9d2314939009efa7e7593cb50afe1">oc_rep_get_bool</a>(rep, <span class="stringliteral">&quot;door_open&quot;</span>, &amp;door_open_flag)) {</div>
+<div class="line">    <span class="keywordflow">if</span>( <span class="keyword">true</span> == <a class="code" href="oc__rep_8h.html#ac2a6595bec656be3eda87e27f9ca0f0b">oc_rep_get_bool</a>(rep, <span class="stringliteral">&quot;door_open&quot;</span>, &amp;door_open_flag)) {</div>
 <div class="line">        printf(<span class="stringliteral">&quot;The door is open : %s\n&quot;</span>, (door_open_flag) ? <span class="stringliteral">&quot;true&quot;</span> :</div>
 <div class="line"><span class="stringliteral">&quot;false&quot;</span>);</div>
 <div class="line">    }</div>
-<div class="ttc" id="aoc__rep_8h_html_acaf9d2314939009efa7e7593cb50afe1"><div class="ttname"><a href="oc__rep_8h.html#acaf9d2314939009efa7e7593cb50afe1">oc_rep_get_bool</a></div><div class="ttdeci">OC_API bool oc_rep_get_bool(const oc_rep_t *rep, const char *key, bool *value)</div><div class="ttdoc">Read a boolean value from an oc_rep_t</div></div>
+<div class="ttc" id="aoc__rep_8h_html_ac2a6595bec656be3eda87e27f9ca0f0b"><div class="ttname"><a href="oc__rep_8h.html#ac2a6595bec656be3eda87e27f9ca0f0b">oc_rep_get_bool</a></div><div class="ttdeci">bool oc_rep_get_bool(const oc_rep_t *rep, const char *key, bool *value)</div><div class="ttdoc">Read a boolean value from an oc_rep_t</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rep</td><td>oc_rep_t to read boolean value from </td></tr>
@@ -2648,14 +2648,14 @@ oc_rep_end_object </dd></dl>
 
 </div>
 </div>
-<a id="a60c596b26ca206a956e6fd8090da2b76"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60c596b26ca206a956e6fd8090da2b76">&#9670;&nbsp;</a></span>oc_rep_get_bool_array()</h2>
+<a id="a0e91deab9b5585f5b2b6591cb31466ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e91deab9b5585f5b2b6591cb31466ce">&#9670;&nbsp;</a></span>oc_rep_get_bool_array()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OC_API bool oc_rep_get_bool_array </td>
+          <td class="memname">bool oc_rep_get_bool_array </td>
           <td>(</td>
           <td class="paramtype">const oc_rep_t *&#160;</td>
           <td class="paramname"><em>rep</em>, </td>
@@ -2689,10 +2689,10 @@ oc_rep_end_object </dd></dl>
 <p>Read an boolean array value from an <code>oc_rep_t</code> </p>
 <p>Example: </p><div class="fragment"><div class="line"><span class="keywordtype">bool</span>* flip_out = 0;</div>
 <div class="line"><span class="keywordtype">size_t</span> flip_len;</div>
-<div class="line"><span class="keywordflow">if</span>( <span class="keyword">true</span> == <a class="code" href="oc__rep_8h.html#a60c596b26ca206a956e6fd8090da2b76">oc_rep_get_bool_array</a>(rep, <span class="stringliteral">&quot;flip&quot;</span>, &amp;flip_out, &amp;flip_len)) {</div>
+<div class="line"><span class="keywordflow">if</span>( <span class="keyword">true</span> == <a class="code" href="oc__rep_8h.html#a0e91deab9b5585f5b2b6591cb31466ce">oc_rep_get_bool_array</a>(rep, <span class="stringliteral">&quot;flip&quot;</span>, &amp;flip_out, &amp;flip_len)) {</div>
 <div class="line">    <span class="comment">// flip_out can now be used</span></div>
 <div class="line">}</div>
-<div class="ttc" id="aoc__rep_8h_html_a60c596b26ca206a956e6fd8090da2b76"><div class="ttname"><a href="oc__rep_8h.html#a60c596b26ca206a956e6fd8090da2b76">oc_rep_get_bool_array</a></div><div class="ttdeci">OC_API bool oc_rep_get_bool_array(const oc_rep_t *rep, const char *key, bool **value, size_t *size)</div><div class="ttdoc">Read an boolean array value from an oc_rep_t</div></div>
+<div class="ttc" id="aoc__rep_8h_html_a0e91deab9b5585f5b2b6591cb31466ce"><div class="ttname"><a href="oc__rep_8h.html#a0e91deab9b5585f5b2b6591cb31466ce">oc_rep_get_bool_array</a></div><div class="ttdeci">bool oc_rep_get_bool_array(const oc_rep_t *rep, const char *key, bool **value, size_t *size)</div><div class="ttdoc">Read an boolean array value from an oc_rep_t</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rep</td><td>oc_rep_t to boolean array value from </td></tr>
@@ -2707,14 +2707,14 @@ oc_rep_end_object </dd></dl>
 
 </div>
 </div>
-<a id="adf6421aa94861f849361145a16d62e77"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf6421aa94861f849361145a16d62e77">&#9670;&nbsp;</a></span>oc_rep_get_byte_string()</h2>
+<a id="a1ed7a90192ace86fd6ecae3f367c81a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ed7a90192ace86fd6ecae3f367c81a7">&#9670;&nbsp;</a></span>oc_rep_get_byte_string()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OC_API bool oc_rep_get_byte_string </td>
+          <td class="memname">bool oc_rep_get_byte_string </td>
           <td>(</td>
           <td class="paramtype">const oc_rep_t *&#160;</td>
           <td class="paramname"><em>rep</em>, </td>
@@ -2748,11 +2748,11 @@ oc_rep_end_object </dd></dl>
 <p>Read a byte string value from an <code>oc_rep_t</code> </p>
 <p>Example: </p><div class="fragment"><div class="line">    <span class="keywordtype">char</span>* byte_string_out = NULL;</div>
 <div class="line">    <span class="keywordtype">size_t</span> str_len;</div>
-<div class="line">    <span class="keywordflow">if</span>( <span class="keyword">true</span> == <a class="code" href="oc__rep_8h.html#adf6421aa94861f849361145a16d62e77">oc_rep_get_byte_string</a>(rep, <span class="stringliteral">&quot;byte_string_key&quot;</span>,</div>
+<div class="line">    <span class="keywordflow">if</span>( <span class="keyword">true</span> == <a class="code" href="oc__rep_8h.html#a1ed7a90192ace86fd6ecae3f367c81a7">oc_rep_get_byte_string</a>(rep, <span class="stringliteral">&quot;byte_string_key&quot;</span>,</div>
 <div class="line">&amp;byte_string_out, &amp;str_len)) {</div>
 <div class="line">        <span class="comment">// byte_string_out can be used</span></div>
 <div class="line">    }</div>
-<div class="ttc" id="aoc__rep_8h_html_adf6421aa94861f849361145a16d62e77"><div class="ttname"><a href="oc__rep_8h.html#adf6421aa94861f849361145a16d62e77">oc_rep_get_byte_string</a></div><div class="ttdeci">OC_API bool oc_rep_get_byte_string(const oc_rep_t *rep, const char *key, char **value, size_t *size)</div><div class="ttdoc">Read a byte string value from an oc_rep_t</div></div>
+<div class="ttc" id="aoc__rep_8h_html_a1ed7a90192ace86fd6ecae3f367c81a7"><div class="ttname"><a href="oc__rep_8h.html#a1ed7a90192ace86fd6ecae3f367c81a7">oc_rep_get_byte_string</a></div><div class="ttdeci">bool oc_rep_get_byte_string(const oc_rep_t *rep, const char *key, char **value, size_t *size)</div><div class="ttdoc">Read a byte string value from an oc_rep_t</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rep</td><td>oc_rep_t to read byte string value from </td></tr>
@@ -2767,14 +2767,14 @@ oc_rep_end_object </dd></dl>
 
 </div>
 </div>
-<a id="a2dfe5fc69c16647bf7c70ffe4578905d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2dfe5fc69c16647bf7c70ffe4578905d">&#9670;&nbsp;</a></span>oc_rep_get_byte_string_array()</h2>
+<a id="aeb8e9e2044b64aeaf1df52b76d9f1d9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb8e9e2044b64aeaf1df52b76d9f1d9c">&#9670;&nbsp;</a></span>oc_rep_get_byte_string_array()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OC_API bool oc_rep_get_byte_string_array </td>
+          <td class="memname">bool oc_rep_get_byte_string_array </td>
           <td>(</td>
           <td class="paramtype">const oc_rep_t *&#160;</td>
           <td class="paramname"><em>rep</em>, </td>
@@ -2808,7 +2808,7 @@ oc_rep_end_object </dd></dl>
 <p>Read an byte string array value from an <code>oc_rep_t</code> </p>
 <p>Example: </p><div class="fragment"><div class="line">    oc_string_array_t barray_out;</div>
 <div class="line">    <span class="keywordtype">size_t</span> barray_len;</div>
-<div class="line">    <span class="keywordflow">if</span>( <span class="keyword">true</span> == <a class="code" href="oc__rep_8h.html#a2dfe5fc69c16647bf7c70ffe4578905d">oc_rep_get_byte_string_array</a>(rep,</div>
+<div class="line">    <span class="keywordflow">if</span>( <span class="keyword">true</span> == <a class="code" href="oc__rep_8h.html#aeb8e9e2044b64aeaf1df52b76d9f1d9c">oc_rep_get_byte_string_array</a>(rep,</div>
 <div class="line">                                             <span class="stringliteral">&quot;barray&quot;</span>,</div>
 <div class="line">                                             &amp;barray_out,</div>
 <div class="line">                                             &amp;barray_len)) {</div>
@@ -2819,7 +2819,7 @@ oc_rep_end_object </dd></dl>
 <div class="line">            <span class="comment">// access the individual byte string</span></div>
 <div class="line">        }</div>
 <div class="line">    }</div>
-<div class="ttc" id="aoc__rep_8h_html_a2dfe5fc69c16647bf7c70ffe4578905d"><div class="ttname"><a href="oc__rep_8h.html#a2dfe5fc69c16647bf7c70ffe4578905d">oc_rep_get_byte_string_array</a></div><div class="ttdeci">OC_API bool oc_rep_get_byte_string_array(const oc_rep_t *rep, const char *key, oc_string_array_t *value, size_t *size)</div><div class="ttdoc">Read an byte string array value from an oc_rep_t</div></div>
+<div class="ttc" id="aoc__rep_8h_html_aeb8e9e2044b64aeaf1df52b76d9f1d9c"><div class="ttname"><a href="oc__rep_8h.html#aeb8e9e2044b64aeaf1df52b76d9f1d9c">oc_rep_get_byte_string_array</a></div><div class="ttdeci">bool oc_rep_get_byte_string_array(const oc_rep_t *rep, const char *key, oc_string_array_t *value, size_t *size)</div><div class="ttdoc">Read an byte string array value from an oc_rep_t</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rep</td><td>oc_rep_t to byte string array value from </td></tr>
@@ -2860,14 +2860,14 @@ oc_byte_string_array_get_item_size </dd></dl>
 
 </div>
 </div>
-<a id="a80e7c8943bc17f233529c2d8af27a806"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80e7c8943bc17f233529c2d8af27a806">&#9670;&nbsp;</a></span>oc_rep_get_double()</h2>
+<a id="a0b32bf32cb9a7dbb9620e3899773873b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b32bf32cb9a7dbb9620e3899773873b">&#9670;&nbsp;</a></span>oc_rep_get_double()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OC_API bool oc_rep_get_double </td>
+          <td class="memname">bool oc_rep_get_double </td>
           <td>(</td>
           <td class="paramtype">const oc_rep_t *&#160;</td>
           <td class="paramname"><em>rep</em>, </td>
@@ -2894,10 +2894,10 @@ oc_byte_string_array_get_item_size </dd></dl>
 
 <p>Read a double value from an <code>oc_rep_t</code> </p>
 <p>Example: </p><div class="fragment"><div class="line"><span class="keywordtype">double</span> pi_out = 0;</div>
-<div class="line"><span class="keywordflow">if</span>( <span class="keyword">true</span> == <a class="code" href="oc__rep_8h.html#a80e7c8943bc17f233529c2d8af27a806">oc_rep_get_double</a>(rep, <span class="stringliteral">&quot;pi&quot;</span>, &amp;pi_out)) {</div>
+<div class="line"><span class="keywordflow">if</span>( <span class="keyword">true</span> == <a class="code" href="oc__rep_8h.html#a0b32bf32cb9a7dbb9620e3899773873b">oc_rep_get_double</a>(rep, <span class="stringliteral">&quot;pi&quot;</span>, &amp;pi_out)) {</div>
 <div class="line">    printf(<span class="stringliteral">&quot;The the value for &#39;pi&#39; is : %f\n&quot;</span>, pi_out);</div>
 <div class="line">}</div>
-<div class="ttc" id="aoc__rep_8h_html_a80e7c8943bc17f233529c2d8af27a806"><div class="ttname"><a href="oc__rep_8h.html#a80e7c8943bc17f233529c2d8af27a806">oc_rep_get_double</a></div><div class="ttdeci">OC_API bool oc_rep_get_double(const oc_rep_t *rep, const char *key, double *value)</div><div class="ttdoc">Read a double value from an oc_rep_t</div></div>
+<div class="ttc" id="aoc__rep_8h_html_a0b32bf32cb9a7dbb9620e3899773873b"><div class="ttname"><a href="oc__rep_8h.html#a0b32bf32cb9a7dbb9620e3899773873b">oc_rep_get_double</a></div><div class="ttdeci">bool oc_rep_get_double(const oc_rep_t *rep, const char *key, double *value)</div><div class="ttdoc">Read a double value from an oc_rep_t</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rep</td><td>oc_rep_t to read double value from </td></tr>
@@ -2911,14 +2911,14 @@ oc_byte_string_array_get_item_size </dd></dl>
 
 </div>
 </div>
-<a id="a2af43fff828d6d5041b4a78de3b70d19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2af43fff828d6d5041b4a78de3b70d19">&#9670;&nbsp;</a></span>oc_rep_get_double_array()</h2>
+<a id="a28f978bdade14b9b7c056fac785d8f27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28f978bdade14b9b7c056fac785d8f27">&#9670;&nbsp;</a></span>oc_rep_get_double_array()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OC_API bool oc_rep_get_double_array </td>
+          <td class="memname">bool oc_rep_get_double_array </td>
           <td>(</td>
           <td class="paramtype">const oc_rep_t *&#160;</td>
           <td class="paramname"><em>rep</em>, </td>
@@ -2952,13 +2952,13 @@ oc_byte_string_array_get_item_size </dd></dl>
 <p>Read an double array value from an <code>oc_rep_t</code> </p>
 <p>Example: </p><div class="fragment"><div class="line"><span class="keywordtype">double</span>* math_constants_out = 0;</div>
 <div class="line"><span class="keywordtype">size_t</span> math_constants_len;</div>
-<div class="line"><span class="keywordflow">if</span>( <span class="keyword">true</span> == <a class="code" href="oc__rep_8h.html#a2af43fff828d6d5041b4a78de3b70d19">oc_rep_get_double_array</a>(rep,</div>
+<div class="line"><span class="keywordflow">if</span>( <span class="keyword">true</span> == <a class="code" href="oc__rep_8h.html#a28f978bdade14b9b7c056fac785d8f27">oc_rep_get_double_array</a>(rep,</div>
 <div class="line">                                    <span class="stringliteral">&quot;math_constants&quot;</span>,</div>
 <div class="line">                                    &amp;math_constants_out,</div>
 <div class="line">                                    &amp;math_constants_len)) {</div>
 <div class="line">    <span class="comment">// math_constants_out can now be used</span></div>
 <div class="line">}</div>
-<div class="ttc" id="aoc__rep_8h_html_a2af43fff828d6d5041b4a78de3b70d19"><div class="ttname"><a href="oc__rep_8h.html#a2af43fff828d6d5041b4a78de3b70d19">oc_rep_get_double_array</a></div><div class="ttdeci">OC_API bool oc_rep_get_double_array(const oc_rep_t *rep, const char *key, double **value, size_t *size)</div><div class="ttdoc">Read an double array value from an oc_rep_t</div></div>
+<div class="ttc" id="aoc__rep_8h_html_a28f978bdade14b9b7c056fac785d8f27"><div class="ttname"><a href="oc__rep_8h.html#a28f978bdade14b9b7c056fac785d8f27">oc_rep_get_double_array</a></div><div class="ttdeci">bool oc_rep_get_double_array(const oc_rep_t *rep, const char *key, double **value, size_t *size)</div><div class="ttdoc">Read an double array value from an oc_rep_t</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rep</td><td>oc_rep_t to double array value from </td></tr>
@@ -2973,14 +2973,14 @@ oc_byte_string_array_get_item_size </dd></dl>
 
 </div>
 </div>
-<a id="a0b3cb3804f3857db0249a8ca4e96f24c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b3cb3804f3857db0249a8ca4e96f24c">&#9670;&nbsp;</a></span>oc_rep_get_encoded_payload_size()</h2>
+<a id="acc472350fc7fefff703ba225791d5333"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc472350fc7fefff703ba225791d5333">&#9670;&nbsp;</a></span>oc_rep_get_encoded_payload_size()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OC_API int oc_rep_get_encoded_payload_size </td>
+          <td class="memname">int oc_rep_get_encoded_payload_size </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -2996,18 +2996,18 @@ oc_byte_string_array_get_item_size </dd></dl>
 <li>returns -1 if the cbor encoded data will not fit in the oc_rep_t payload</li>
 </ul>
 </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__rep_8h.html#a39e4c27812305c01d9dae318005a313f" title="Initialize the buffer used to hold the cbor encoded data without reallocation.">oc_rep_new</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__rep_8h.html#a8035d3fe8ba6534aeb4d783ca929e768" title="Initialize the buffer used to hold the cbor encoded data without reallocation.">oc_rep_new</a> </dd></dl>
 
 </div>
 </div>
-<a id="a14b8ae2a87ac6e98a16a853504d07224"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14b8ae2a87ac6e98a16a853504d07224">&#9670;&nbsp;</a></span>oc_rep_get_encoder()</h2>
+<a id="a3a20a91f64e4fe3a87627b37c20b007d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a20a91f64e4fe3a87627b37c20b007d">&#9670;&nbsp;</a></span>oc_rep_get_encoder()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OC_API CborEncoder* oc_rep_get_encoder </td>
+          <td class="memname">CborEncoder* oc_rep_get_encoder </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -3044,14 +3044,14 @@ oc_byte_string_array_get_item_size </dd></dl>
 
 </div>
 </div>
-<a id="a5cb15118ac6d8dd4e9f368b87b2fd080"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5cb15118ac6d8dd4e9f368b87b2fd080">&#9670;&nbsp;</a></span>oc_rep_get_encoder_buffer_size()</h2>
+<a id="ab70a4f2386669c40b3300b361c843302"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab70a4f2386669c40b3300b361c843302">&#9670;&nbsp;</a></span>oc_rep_get_encoder_buffer_size()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OC_API int oc_rep_get_encoder_buffer_size </td>
+          <td class="memname">int oc_rep_get_encoder_buffer_size </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -3065,18 +3065,18 @@ oc_byte_string_array_get_item_size </dd></dl>
 <li>the size of the encoder buffer.</li>
 </ul>
 </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__rep_8h.html#a85f8238fc637c4564e91685c4bea7ce6" title="Initialize the buffer used to hold the cbor encoded data with reallocation.">oc_rep_new_realloc</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__rep_8h.html#a38ab99a016682168968a0798b87e012c" title="Initialize the buffer used to hold the cbor encoded data with reallocation.">oc_rep_new_realloc</a> </dd></dl>
 
 </div>
 </div>
-<a id="a80bb44cdd3f969974f0c27e9be2cbd18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80bb44cdd3f969974f0c27e9be2cbd18">&#9670;&nbsp;</a></span>oc_rep_get_int()</h2>
+<a id="a8e3ff480e9410cf7e2140f46ef25dc71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e3ff480e9410cf7e2140f46ef25dc71">&#9670;&nbsp;</a></span>oc_rep_get_int()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OC_API bool oc_rep_get_int </td>
+          <td class="memname">bool oc_rep_get_int </td>
           <td>(</td>
           <td class="paramtype">const oc_rep_t *&#160;</td>
           <td class="paramname"><em>rep</em>, </td>
@@ -3103,11 +3103,11 @@ oc_byte_string_array_get_item_size </dd></dl>
 
 <p>Read an integer from an <code>oc_rep_t</code> </p>
 <p>Example: </p><div class="fragment"><div class="line">        <span class="keywordtype">int</span> ultimate_answer_out = 0;</div>
-<div class="line">        <span class="keywordflow">if</span>( <span class="keyword">true</span> == <a class="code" href="oc__rep_8h.html#a80bb44cdd3f969974f0c27e9be2cbd18">oc_rep_get_int</a>(rep, <span class="stringliteral">&quot;ultimate_answer&quot;</span>,</div>
+<div class="line">        <span class="keywordflow">if</span>( <span class="keyword">true</span> == <a class="code" href="oc__rep_8h.html#a8e3ff480e9410cf7e2140f46ef25dc71">oc_rep_get_int</a>(rep, <span class="stringliteral">&quot;ultimate_answer&quot;</span>,</div>
 <div class="line">&amp;ultimate_answer_out)) {</div>
 <div class="line">            printf(<span class="stringliteral">&quot;The ultimate answer is : %d\n&quot;</span>, ultimate_answer_out);</div>
 <div class="line">        }</div>
-<div class="ttc" id="aoc__rep_8h_html_a80bb44cdd3f969974f0c27e9be2cbd18"><div class="ttname"><a href="oc__rep_8h.html#a80bb44cdd3f969974f0c27e9be2cbd18">oc_rep_get_int</a></div><div class="ttdeci">OC_API bool oc_rep_get_int(const oc_rep_t *rep, const char *key, int64_t *value)</div><div class="ttdoc">Read an integer from an oc_rep_t</div></div>
+<div class="ttc" id="aoc__rep_8h_html_a8e3ff480e9410cf7e2140f46ef25dc71"><div class="ttname"><a href="oc__rep_8h.html#a8e3ff480e9410cf7e2140f46ef25dc71">oc_rep_get_int</a></div><div class="ttdeci">bool oc_rep_get_int(const oc_rep_t *rep, const char *key, int64_t *value)</div><div class="ttdoc">Read an integer from an oc_rep_t</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rep</td><td>oc_rep_t to read int value from </td></tr>
@@ -3121,14 +3121,14 @@ oc_byte_string_array_get_item_size </dd></dl>
 
 </div>
 </div>
-<a id="aa6e9bfdc0ec286f2e44ad390cfb9224d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6e9bfdc0ec286f2e44ad390cfb9224d">&#9670;&nbsp;</a></span>oc_rep_get_int_array()</h2>
+<a id="aff67241f479aa4005bf9307dc9584741"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff67241f479aa4005bf9307dc9584741">&#9670;&nbsp;</a></span>oc_rep_get_int_array()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OC_API bool oc_rep_get_int_array </td>
+          <td class="memname">bool oc_rep_get_int_array </td>
           <td>(</td>
           <td class="paramtype">const oc_rep_t *&#160;</td>
           <td class="paramname"><em>rep</em>, </td>
@@ -3162,10 +3162,10 @@ oc_byte_string_array_get_item_size </dd></dl>
 <p>Read an integer array value from an <code>oc_rep_t</code> </p>
 <p>Example: </p><div class="fragment"><div class="line"><span class="keywordtype">int</span>* fib_out = 0;</div>
 <div class="line"><span class="keywordtype">size_t</span> fib_len;</div>
-<div class="line"><span class="keywordflow">if</span>( <span class="keyword">true</span> == <a class="code" href="oc__rep_8h.html#aa6e9bfdc0ec286f2e44ad390cfb9224d">oc_rep_get_int_array</a>(rep, <span class="stringliteral">&quot;fibonacci&quot;</span>, &amp;fib_out, &amp;fib_len)) {</div>
+<div class="line"><span class="keywordflow">if</span>( <span class="keyword">true</span> == <a class="code" href="oc__rep_8h.html#aff67241f479aa4005bf9307dc9584741">oc_rep_get_int_array</a>(rep, <span class="stringliteral">&quot;fibonacci&quot;</span>, &amp;fib_out, &amp;fib_len)) {</div>
 <div class="line">    <span class="comment">// fib_out can now be used</span></div>
 <div class="line">}</div>
-<div class="ttc" id="aoc__rep_8h_html_aa6e9bfdc0ec286f2e44ad390cfb9224d"><div class="ttname"><a href="oc__rep_8h.html#aa6e9bfdc0ec286f2e44ad390cfb9224d">oc_rep_get_int_array</a></div><div class="ttdeci">OC_API bool oc_rep_get_int_array(const oc_rep_t *rep, const char *key, int64_t **value, size_t *size)</div><div class="ttdoc">Read an integer array value from an oc_rep_t</div></div>
+<div class="ttc" id="aoc__rep_8h_html_aff67241f479aa4005bf9307dc9584741"><div class="ttname"><a href="oc__rep_8h.html#aff67241f479aa4005bf9307dc9584741">oc_rep_get_int_array</a></div><div class="ttdeci">bool oc_rep_get_int_array(const oc_rep_t *rep, const char *key, int64_t **value, size_t *size)</div><div class="ttdoc">Read an integer array value from an oc_rep_t</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rep</td><td>oc_rep_t to integer array value from </td></tr>
@@ -3180,14 +3180,14 @@ oc_byte_string_array_get_item_size </dd></dl>
 
 </div>
 </div>
-<a id="ac2ec87e5b9d082aa60cd3cb9d6576854"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2ec87e5b9d082aa60cd3cb9d6576854">&#9670;&nbsp;</a></span>oc_rep_get_object()</h2>
+<a id="a25a72c36dca09c6e6d7363e33bbe2a0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25a72c36dca09c6e6d7363e33bbe2a0d">&#9670;&nbsp;</a></span>oc_rep_get_object()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OC_API bool oc_rep_get_object </td>
+          <td class="memname">bool oc_rep_get_object </td>
           <td>(</td>
           <td class="paramtype">const oc_rep_t *&#160;</td>
           <td class="paramname"><em>rep</em>, </td>
@@ -3214,20 +3214,20 @@ oc_byte_string_array_get_item_size </dd></dl>
 
 <p>Read a object value from an <code>oc_rep_t</code> </p>
 <p>Example: </p><div class="fragment"><div class="line">oc_rep_t * my_object_out = NULL;</div>
-<div class="line"><span class="keywordflow">if</span> ( <span class="keyword">true</span> == <a class="code" href="oc__rep_8h.html#ac2ec87e5b9d082aa60cd3cb9d6576854">oc_rep_get_object</a>(rep, <span class="stringliteral">&quot;my_object&quot;</span>, &amp;my_object_out)) {</div>
+<div class="line"><span class="keywordflow">if</span> ( <span class="keyword">true</span> == <a class="code" href="oc__rep_8h.html#a25a72c36dca09c6e6d7363e33bbe2a0d">oc_rep_get_object</a>(rep, <span class="stringliteral">&quot;my_object&quot;</span>, &amp;my_object_out)) {</div>
 <div class="line">    <span class="keywordtype">int</span> a_out;</div>
-<div class="line">    <span class="keywordflow">if</span> (<a class="code" href="oc__rep_8h.html#a80bb44cdd3f969974f0c27e9be2cbd18">oc_rep_get_int</a>(my_object_out, <span class="stringliteral">&quot;a&quot;</span>, &amp;a_out))</div>
+<div class="line">    <span class="keywordflow">if</span> (<a class="code" href="oc__rep_8h.html#a8e3ff480e9410cf7e2140f46ef25dc71">oc_rep_get_int</a>(my_object_out, <span class="stringliteral">&quot;a&quot;</span>, &amp;a_out))</div>
 <div class="line">        printf(<span class="stringliteral">&quot;a = %d\n&quot;</span>, a_out);</div>
 <div class="line">    <span class="keywordtype">bool</span> b_out = <span class="keyword">true</span>;</div>
-<div class="line">    <span class="keywordflow">if</span> (<a class="code" href="oc__rep_8h.html#acaf9d2314939009efa7e7593cb50afe1">oc_rep_get_bool</a>(my_object_out, <span class="stringliteral">&quot;b&quot;</span>, &amp;b_out))</div>
+<div class="line">    <span class="keywordflow">if</span> (<a class="code" href="oc__rep_8h.html#ac2a6595bec656be3eda87e27f9ca0f0b">oc_rep_get_bool</a>(my_object_out, <span class="stringliteral">&quot;b&quot;</span>, &amp;b_out))</div>
 <div class="line">        printf(<span class="stringliteral">&quot;b = %s\n&quot;</span>, (b_out) ? <span class="stringliteral">&quot;true&quot;</span> : <span class="stringliteral">&quot;false&quot;</span>);</div>
 <div class="line">    <span class="keywordtype">char</span> * c_out = NULL;</div>
 <div class="line">    <span class="keywordtype">size_t</span> c_out_size = 0;</div>
-<div class="line">    <span class="keywordflow">if</span> (<a class="code" href="oc__rep_8h.html#a793613f1cc4efd2e1371d48283921480">oc_rep_get_string</a>(my_object_out, <span class="stringliteral">&quot;c&quot;</span>, &amp;c_out, &amp;c_out_size))</div>
+<div class="line">    <span class="keywordflow">if</span> (<a class="code" href="oc__rep_8h.html#abfb16b76e18e2fe5e7325de665e922e4">oc_rep_get_string</a>(my_object_out, <span class="stringliteral">&quot;c&quot;</span>, &amp;c_out, &amp;c_out_size))</div>
 <div class="line">        printf(<span class="stringliteral">&quot;c = %s\n&quot;</span>, c_cout);</div>
 <div class="line">}</div>
-<div class="ttc" id="aoc__rep_8h_html_a793613f1cc4efd2e1371d48283921480"><div class="ttname"><a href="oc__rep_8h.html#a793613f1cc4efd2e1371d48283921480">oc_rep_get_string</a></div><div class="ttdeci">OC_API bool oc_rep_get_string(const oc_rep_t *rep, const char *key, char **value, size_t *size)</div><div class="ttdoc">Read a text string value from an oc_rep_t</div></div>
-<div class="ttc" id="aoc__rep_8h_html_ac2ec87e5b9d082aa60cd3cb9d6576854"><div class="ttname"><a href="oc__rep_8h.html#ac2ec87e5b9d082aa60cd3cb9d6576854">oc_rep_get_object</a></div><div class="ttdeci">OC_API bool oc_rep_get_object(const oc_rep_t *rep, const char *key, oc_rep_t **value)</div><div class="ttdoc">Read a object value from an oc_rep_t</div></div>
+<div class="ttc" id="aoc__rep_8h_html_a25a72c36dca09c6e6d7363e33bbe2a0d"><div class="ttname"><a href="oc__rep_8h.html#a25a72c36dca09c6e6d7363e33bbe2a0d">oc_rep_get_object</a></div><div class="ttdeci">bool oc_rep_get_object(const oc_rep_t *rep, const char *key, oc_rep_t **value)</div><div class="ttdoc">Read a object value from an oc_rep_t</div></div>
+<div class="ttc" id="aoc__rep_8h_html_abfb16b76e18e2fe5e7325de665e922e4"><div class="ttname"><a href="oc__rep_8h.html#abfb16b76e18e2fe5e7325de665e922e4">oc_rep_get_string</a></div><div class="ttdeci">bool oc_rep_get_string(const oc_rep_t *rep, const char *key, char **value, size_t *size)</div><div class="ttdoc">Read a text string value from an oc_rep_t</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rep</td><td>oc_rep_t to read object value from </td></tr>
@@ -3241,14 +3241,14 @@ oc_byte_string_array_get_item_size </dd></dl>
 
 </div>
 </div>
-<a id="a104d451e6b3b051e2b131372afac35e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a104d451e6b3b051e2b131372afac35e7">&#9670;&nbsp;</a></span>oc_rep_get_object_array()</h2>
+<a id="a41727406671fa604337c77a9383fdc3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41727406671fa604337c77a9383fdc3b">&#9670;&nbsp;</a></span>oc_rep_get_object_array()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OC_API bool oc_rep_get_object_array </td>
+          <td class="memname">bool oc_rep_get_object_array </td>
           <td>(</td>
           <td class="paramtype">const oc_rep_t *&#160;</td>
           <td class="paramname"><em>rep</em>, </td>
@@ -3276,24 +3276,24 @@ oc_byte_string_array_get_item_size </dd></dl>
 <p>Read a object array value from an <code>oc_rep_t</code> </p>
 <p>Calling the returned value an array is a misnomer. The value actually returned is a linked list of oc_rep_t objects. The linked list must be walked to see each item in the object array.</p>
 <p>Example: </p><div class="fragment"><div class="line">    oc_rep_t * space_2001_out = NULL;</div>
-<div class="line">    <span class="keywordflow">if</span> ( <span class="keyword">true</span> == <a class="code" href="oc__rep_8h.html#a104d451e6b3b051e2b131372afac35e7">oc_rep_get_object_array</a>(rep, <span class="stringliteral">&quot;space_2001&quot;</span>, &amp;space_2001_out))</div>
+<div class="line">    <span class="keywordflow">if</span> ( <span class="keyword">true</span> == <a class="code" href="oc__rep_8h.html#a41727406671fa604337c77a9383fdc3b">oc_rep_get_object_array</a>(rep, <span class="stringliteral">&quot;space_2001&quot;</span>, &amp;space_2001_out))</div>
 <div class="line">{</div>
 <div class="line">        <span class="keywordflow">while</span> (space_2001_out != NULL) {</div>
 <div class="line">            <span class="keywordtype">char</span> * str_out = NULL;</div>
 <div class="line">            <span class="keywordtype">size_t</span> str_out_size = 0;</div>
-<div class="line">            <span class="keywordflow">if</span> (<a class="code" href="oc__rep_8h.html#a793613f1cc4efd2e1371d48283921480">oc_rep_get_string</a>(space_2001_out-&gt;value.object,</div>
+<div class="line">            <span class="keywordflow">if</span> (<a class="code" href="oc__rep_8h.html#abfb16b76e18e2fe5e7325de665e922e4">oc_rep_get_string</a>(space_2001_out-&gt;value.object,</div>
 <div class="line">                                  <span class="stringliteral">&quot;name&quot;</span>,</div>
 <div class="line">                                  &amp;str_out,</div>
 <div class="line">                                  &amp;str_out_size))</div>
 <div class="line">                printf(<span class="stringliteral">&quot;Character Name: %s&quot;</span>, str_out);</div>
-<div class="line">            <span class="keywordflow">if</span> (<a class="code" href="oc__rep_8h.html#a793613f1cc4efd2e1371d48283921480">oc_rep_get_string</a>(space_2001_out-&gt;value.object,</div>
+<div class="line">            <span class="keywordflow">if</span> (<a class="code" href="oc__rep_8h.html#abfb16b76e18e2fe5e7325de665e922e4">oc_rep_get_string</a>(space_2001_out-&gt;value.object,</div>
 <div class="line">                                  <span class="stringliteral">&quot;job&quot;</span>,</div>
 <div class="line">                                   &amp;str_out, &amp;str_out_size))</div>
 <div class="line">                printf(<span class="stringliteral">&quot; job %s\n&quot;</span>, str_out);</div>
 <div class="line">            space_2001_out = space_2001_out-&gt;next;</div>
 <div class="line">        }</div>
 <div class="line">    }</div>
-<div class="ttc" id="aoc__rep_8h_html_a104d451e6b3b051e2b131372afac35e7"><div class="ttname"><a href="oc__rep_8h.html#a104d451e6b3b051e2b131372afac35e7">oc_rep_get_object_array</a></div><div class="ttdeci">OC_API bool oc_rep_get_object_array(const oc_rep_t *rep, const char *key, oc_rep_t **value)</div><div class="ttdoc">Read a object array value from an oc_rep_t</div></div>
+<div class="ttc" id="aoc__rep_8h_html_a41727406671fa604337c77a9383fdc3b"><div class="ttname"><a href="oc__rep_8h.html#a41727406671fa604337c77a9383fdc3b">oc_rep_get_object_array</a></div><div class="ttdeci">bool oc_rep_get_object_array(const oc_rep_t *rep, const char *key, oc_rep_t **value)</div><div class="ttdoc">Read a object array value from an oc_rep_t</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rep</td><td>oc_rep_t to read object array value from </td></tr>
@@ -3307,14 +3307,14 @@ oc_byte_string_array_get_item_size </dd></dl>
 
 </div>
 </div>
-<a id="a793613f1cc4efd2e1371d48283921480"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a793613f1cc4efd2e1371d48283921480">&#9670;&nbsp;</a></span>oc_rep_get_string()</h2>
+<a id="abfb16b76e18e2fe5e7325de665e922e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfb16b76e18e2fe5e7325de665e922e4">&#9670;&nbsp;</a></span>oc_rep_get_string()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OC_API bool oc_rep_get_string </td>
+          <td class="memname">bool oc_rep_get_string </td>
           <td>(</td>
           <td class="paramtype">const oc_rep_t *&#160;</td>
           <td class="paramname"><em>rep</em>, </td>
@@ -3348,7 +3348,7 @@ oc_byte_string_array_get_item_size </dd></dl>
 <p>Read a text string value from an <code>oc_rep_t</code> </p>
 <p>Example: </p><div class="fragment"><div class="line">    <span class="keywordtype">char</span>* greeting_out = NULL;</div>
 <div class="line">    <span class="keywordtype">size_t</span> str_len;</div>
-<div class="line">    <span class="keywordflow">if</span>( <span class="keyword">true</span> == <a class="code" href="oc__rep_8h.html#a793613f1cc4efd2e1371d48283921480">oc_rep_get_string</a>(rep, <span class="stringliteral">&quot;greeting&quot;</span>, &amp;greeting_out, &amp;str_len))</div>
+<div class="line">    <span class="keywordflow">if</span>( <span class="keyword">true</span> == <a class="code" href="oc__rep_8h.html#abfb16b76e18e2fe5e7325de665e922e4">oc_rep_get_string</a>(rep, <span class="stringliteral">&quot;greeting&quot;</span>, &amp;greeting_out, &amp;str_len))</div>
 <div class="line">{</div>
 <div class="line">        printf(<span class="stringliteral">&quot;%s\n&quot;</span>, greeting_out);</div>
 <div class="line">    }</div>
@@ -3366,14 +3366,14 @@ oc_byte_string_array_get_item_size </dd></dl>
 
 </div>
 </div>
-<a id="a90612b9bc136553ae5405dd318c2020d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90612b9bc136553ae5405dd318c2020d">&#9670;&nbsp;</a></span>oc_rep_get_string_array()</h2>
+<a id="a12bc7983f928f4f5f67c4d9c6e86b906"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12bc7983f928f4f5f67c4d9c6e86b906">&#9670;&nbsp;</a></span>oc_rep_get_string_array()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OC_API bool oc_rep_get_string_array </td>
+          <td class="memname">bool oc_rep_get_string_array </td>
           <td>(</td>
           <td class="paramtype">const oc_rep_t *&#160;</td>
           <td class="paramname"><em>rep</em>, </td>
@@ -3407,7 +3407,7 @@ oc_byte_string_array_get_item_size </dd></dl>
 <p>Read a string array value from an <code>oc_rep_t</code> </p>
 <p>Example: </p><div class="fragment"><div class="line">oc_string_array_t quotes_out;</div>
 <div class="line"><span class="keywordtype">size_t</span> quotes_len;</div>
-<div class="line"><span class="keywordflow">if</span>( <span class="keyword">true</span> == <a class="code" href="oc__rep_8h.html#a90612b9bc136553ae5405dd318c2020d">oc_rep_get_string_array</a>(rep,</div>
+<div class="line"><span class="keywordflow">if</span>( <span class="keyword">true</span> == <a class="code" href="oc__rep_8h.html#a12bc7983f928f4f5f67c4d9c6e86b906">oc_rep_get_string_array</a>(rep,</div>
 <div class="line">                                    <span class="stringliteral">&quot;quotes&quot;</span>,</div>
 <div class="line">                                    &amp;quotes_out,</div>
 <div class="line">                                    &amp;quotes_len)) {</div>
@@ -3418,7 +3418,7 @@ oc_byte_string_array_get_item_size </dd></dl>
 <div class="line">        printf(<span class="stringliteral">&quot;[%zd] %s\n&quot;</span>, i + 1, value);</div>
 <div class="line">    }</div>
 <div class="line">}</div>
-<div class="ttc" id="aoc__rep_8h_html_a90612b9bc136553ae5405dd318c2020d"><div class="ttname"><a href="oc__rep_8h.html#a90612b9bc136553ae5405dd318c2020d">oc_rep_get_string_array</a></div><div class="ttdeci">OC_API bool oc_rep_get_string_array(const oc_rep_t *rep, const char *key, oc_string_array_t *value, size_t *size)</div><div class="ttdoc">Read a string array value from an oc_rep_t</div></div>
+<div class="ttc" id="aoc__rep_8h_html_a12bc7983f928f4f5f67c4d9c6e86b906"><div class="ttname"><a href="oc__rep_8h.html#a12bc7983f928f4f5f67c4d9c6e86b906">oc_rep_get_string_array</a></div><div class="ttdeci">bool oc_rep_get_string_array(const oc_rep_t *rep, const char *key, oc_string_array_t *value, size_t *size)</div><div class="ttdoc">Read a string array value from an oc_rep_t</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rep</td><td>oc_rep_t to string array value from </td></tr>
@@ -3439,14 +3439,14 @@ oc_string_array_get_item_size </dd></dl>
 
 </div>
 </div>
-<a id="accc25502ad4375e57068d8c72416428b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#accc25502ad4375e57068d8c72416428b">&#9670;&nbsp;</a></span>oc_rep_is_null()</h2>
+<a id="a3e105ec4297b3b163f776749587a0b71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e105ec4297b3b163f776749587a0b71">&#9670;&nbsp;</a></span>oc_rep_is_null()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OC_API bool oc_rep_is_null </td>
+          <td class="memname">bool oc_rep_is_null </td>
           <td>(</td>
           <td class="paramtype">const oc_rep_t *&#160;</td>
           <td class="paramname"><em>rep</em>, </td>
@@ -3473,10 +3473,10 @@ oc_string_array_get_item_size </dd></dl>
 
 <p>Check for a null value from an <code>oc_rep_t</code> </p>
 <p>Example: </p><div class="fragment"><div class="line"><span class="keywordtype">bool</span> is_null = <span class="keyword">false</span>;</div>
-<div class="line"><span class="keywordflow">if</span>( <span class="keyword">true</span> == <a class="code" href="oc__rep_8h.html#accc25502ad4375e57068d8c72416428b">oc_rep_is_null</a>(rep, <span class="stringliteral">&quot;nothing&quot;</span>, &amp;is_null)) {</div>
+<div class="line"><span class="keywordflow">if</span>( <span class="keyword">true</span> == <a class="code" href="oc__rep_8h.html#a3e105ec4297b3b163f776749587a0b71">oc_rep_is_null</a>(rep, <span class="stringliteral">&quot;nothing&quot;</span>, &amp;is_null)) {</div>
 <div class="line">    printf(<span class="stringliteral">&quot;Nothing is: %s\n&quot;</span>, is_null ? <span class="stringliteral">&quot;null&quot;</span>: <span class="stringliteral">&quot;not null&quot;</span>);</div>
 <div class="line">}</div>
-<div class="ttc" id="aoc__rep_8h_html_accc25502ad4375e57068d8c72416428b"><div class="ttname"><a href="oc__rep_8h.html#accc25502ad4375e57068d8c72416428b">oc_rep_is_null</a></div><div class="ttdeci">OC_API bool oc_rep_is_null(const oc_rep_t *rep, const char *key, bool *is_null)</div><div class="ttdoc">Check for a null value from an oc_rep_t</div></div>
+<div class="ttc" id="aoc__rep_8h_html_a3e105ec4297b3b163f776749587a0b71"><div class="ttname"><a href="oc__rep_8h.html#a3e105ec4297b3b163f776749587a0b71">oc_rep_is_null</a></div><div class="ttdeci">bool oc_rep_is_null(const oc_rep_t *rep, const char *key, bool *is_null)</div><div class="ttdoc">Check for a null value from an oc_rep_t</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rep</td><td>oc_rep_t to check for null value </td></tr>
@@ -3490,14 +3490,14 @@ oc_string_array_get_item_size </dd></dl>
 
 </div>
 </div>
-<a id="a39e4c27812305c01d9dae318005a313f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39e4c27812305c01d9dae318005a313f">&#9670;&nbsp;</a></span>oc_rep_new()</h2>
+<a id="a8035d3fe8ba6534aeb4d783ca929e768"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8035d3fe8ba6534aeb4d783ca929e768">&#9670;&nbsp;</a></span>oc_rep_new()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OC_API void oc_rep_new </td>
+          <td class="memname">void oc_rep_new </td>
           <td>(</td>
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><em>payload</em>, </td>
@@ -3528,14 +3528,14 @@ oc_string_array_get_item_size </dd></dl>
 
 </div>
 </div>
-<a id="a85f8238fc637c4564e91685c4bea7ce6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85f8238fc637c4564e91685c4bea7ce6">&#9670;&nbsp;</a></span>oc_rep_new_realloc()</h2>
+<a id="a38ab99a016682168968a0798b87e012c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38ab99a016682168968a0798b87e012c">&#9670;&nbsp;</a></span>oc_rep_new_realloc()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OC_API void oc_rep_new_realloc </td>
+          <td class="memname">void oc_rep_new_realloc </td>
           <td>(</td>
           <td class="paramtype">uint8_t **&#160;</td>
           <td class="paramname"><em>payload</em>, </td>
@@ -3602,14 +3602,14 @@ oc_string_array_get_item_size </dd></dl>
 
 </div>
 </div>
-<a id="a9f6afcc297a377439c4cde4d2bc74822"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f6afcc297a377439c4cde4d2bc74822">&#9670;&nbsp;</a></span>oc_rep_to_json()</h2>
+<a id="a92ccb8ba4f7bada141e7971d9239454d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92ccb8ba4f7bada141e7971d9239454d">&#9670;&nbsp;</a></span>oc_rep_to_json()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OC_API size_t oc_rep_to_json </td>
+          <td class="memname">size_t oc_rep_to_json </td>
           <td>(</td>
           <td class="paramtype">const oc_rep_t *&#160;</td>
           <td class="paramname"><em>rep</em>, </td>
@@ -3656,12 +3656,12 @@ oc_string_array_get_item_size </dd></dl>
 </dl>
 <p>Example: </p><div class="fragment"><div class="line"><span class="keywordtype">char</span> * json;</div>
 <div class="line"><span class="keywordtype">size_t</span> json_size;</div>
-<div class="line">json_size = <a class="code" href="oc__rep_8h.html#a9f6afcc297a377439c4cde4d2bc74822">oc_rep_to_json</a>(rep, NULL, 0, <span class="keyword">true</span>);</div>
+<div class="line">json_size = <a class="code" href="oc__rep_8h.html#a92ccb8ba4f7bada141e7971d9239454d">oc_rep_to_json</a>(rep, NULL, 0, <span class="keyword">true</span>);</div>
 <div class="line">json = (<span class="keywordtype">char</span> *)malloc(json_size + 1);</div>
-<div class="line"><a class="code" href="oc__rep_8h.html#a9f6afcc297a377439c4cde4d2bc74822">oc_rep_to_json</a>(rep, json, json_size + 1, <span class="keyword">true</span>);</div>
+<div class="line"><a class="code" href="oc__rep_8h.html#a92ccb8ba4f7bada141e7971d9239454d">oc_rep_to_json</a>(rep, json, json_size + 1, <span class="keyword">true</span>);</div>
 <div class="line">printf(<span class="stringliteral">&quot;%s&quot;</span>, rep);</div>
 <div class="line">free(json);</div>
-<div class="ttc" id="aoc__rep_8h_html_a9f6afcc297a377439c4cde4d2bc74822"><div class="ttname"><a href="oc__rep_8h.html#a9f6afcc297a377439c4cde4d2bc74822">oc_rep_to_json</a></div><div class="ttdeci">OC_API size_t oc_rep_to_json(const oc_rep_t *rep, char *buf, size_t buf_size, bool pretty_print)</div><div class="ttdoc">Convert an oc_rep_t to JSON encoded string.</div></div>
+<div class="ttc" id="aoc__rep_8h_html_a92ccb8ba4f7bada141e7971d9239454d"><div class="ttname"><a href="oc__rep_8h.html#a92ccb8ba4f7bada141e7971d9239454d">oc_rep_to_json</a></div><div class="ttdeci">size_t oc_rep_to_json(const oc_rep_t *rep, char *buf, size_t buf_size, bool pretty_print)</div><div class="ttdoc">Convert an oc_rep_t to JSON encoded string.</div></div>
 </div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>the number of characters printed (excluding the null byte used to end output to strings). </dd></dl>
 
 </div>
@@ -3672,7 +3672,7 @@ oc_string_array_get_item_size </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__rep_8h.html">oc_rep.h</a></li>
-    <li class="footer">Generated on Mon Jun 12 2023 10:56:59 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Jun 14 2023 08:08:51 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

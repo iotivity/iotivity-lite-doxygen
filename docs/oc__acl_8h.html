@@ -159,30 +159,30 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab050d71282b1024e44cdb5f9f8b2da17"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__acl_8h.html#ab050d71282b1024e44cdb5f9f8b2da17">oc_resource_set_access_in_RFOTM</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, bool state, <a class="el" href="oc__enums_8h.html#afd8b98696c9f44d51d07404d414421c5">oc_ace_permissions_t</a> permission)</td></tr>
-<tr class="memdesc:ab050d71282b1024e44cdb5f9f8b2da17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify if a resource is accessible in RFOTM state.  <a href="oc__acl_8h.html#ab050d71282b1024e44cdb5f9f8b2da17">More...</a><br /></td></tr>
-<tr class="separator:ab050d71282b1024e44cdb5f9f8b2da17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd975f8a09517681f2ad1947dc850fbb"><td class="memItemLeft" align="right" valign="top">OC_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__acl_8h.html#abd975f8a09517681f2ad1947dc850fbb">oc_sec_acl_add_bootstrap_acl</a> (size_t device)</td></tr>
-<tr class="memdesc:abd975f8a09517681f2ad1947dc850fbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add initial access control list for core resources of a device.  <a href="oc__acl_8h.html#abd975f8a09517681f2ad1947dc850fbb">More...</a><br /></td></tr>
-<tr class="separator:abd975f8a09517681f2ad1947dc850fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76c8509b26f9b855023ae93207443d03"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__acl_8h.html#a76c8509b26f9b855023ae93207443d03">oc_sec_acl_clear</a> (size_t device, <a class="el" href="oc__acl_8h.html#a20dc76c511992e4f8ac839099c9584cc">oc_sec_ace_filter_t</a> filter, void *user_data)</td></tr>
-<tr class="memdesc:a76c8509b26f9b855023ae93207443d03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove access control entries matching filter from given device.  <a href="oc__acl_8h.html#a76c8509b26f9b855023ae93207443d03">More...</a><br /></td></tr>
-<tr class="separator:a76c8509b26f9b855023ae93207443d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47d298f865c98d63b3adacb072699455"><td class="memItemLeft" align="right" valign="top">OC_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__acl_8h.html#a47d298f865c98d63b3adacb072699455">oc_sec_apply_acl</a> (const oc_rep_t *rep, size_t device, <a class="el" href="oc__acl_8h.html#adb8058ec4ee722ac6999e712a3e21863">oc_sec_on_apply_acl_cb_t</a> on_apply_ace_cb, void *on_apply_ace_data)</td></tr>
-<tr class="memdesc:a47d298f865c98d63b3adacb072699455"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse payload and add/update access control list.  <a href="oc__acl_8h.html#a47d298f865c98d63b3adacb072699455">More...</a><br /></td></tr>
-<tr class="separator:a47d298f865c98d63b3adacb072699455"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7df0da1db57051dc3ca52f1be3f388a"><td class="memItemLeft" align="right" valign="top">OC_API <a class="el" href="structoc__sec__ace__t.html">oc_sec_ace_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__acl_8h.html#ae7df0da1db57051dc3ca52f1be3f388a">oc_sec_get_ace_by_aceid</a> (int aceid, size_t device)</td></tr>
-<tr class="memdesc:ae7df0da1db57051dc3ca52f1be3f388a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get access control entry with given aceid from given device.  <a href="oc__acl_8h.html#ae7df0da1db57051dc3ca52f1be3f388a">More...</a><br /></td></tr>
-<tr class="separator:ae7df0da1db57051dc3ca52f1be3f388a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5dfed8d8872d4cd41d1937010238bb80"><td class="memItemLeft" align="right" valign="top">OC_API <a class="el" href="oc__acl_8h.html#a485c09b9417208265dc2eed110bd9c82">oc_sec_acl_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__acl_8h.html#a5dfed8d8872d4cd41d1937010238bb80">oc_sec_get_acl</a> (size_t device)</td></tr>
-<tr class="memdesc:a5dfed8d8872d4cd41d1937010238bb80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get access control list of a device.  <a href="oc__acl_8h.html#a5dfed8d8872d4cd41d1937010238bb80">More...</a><br /></td></tr>
-<tr class="separator:a5dfed8d8872d4cd41d1937010238bb80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64108ae5adef3157642dc4836a178e44"><td class="memItemLeft" align="right" valign="top">OC_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__acl_8h.html#a64108ae5adef3157642dc4836a178e44">oc_sec_remove_ace</a> (<a class="el" href="structoc__sec__ace__t.html">oc_sec_ace_t</a> *ace, size_t device)</td></tr>
-<tr class="memdesc:a64108ae5adef3157642dc4836a178e44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove access control entry from given device.  <a href="oc__acl_8h.html#a64108ae5adef3157642dc4836a178e44">More...</a><br /></td></tr>
-<tr class="separator:a64108ae5adef3157642dc4836a178e44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2a28176d054cc1794e22458c0871741"><td class="memItemLeft" align="right" valign="top">OC_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__acl_8h.html#ae2a28176d054cc1794e22458c0871741">oc_sec_remove_ace_by_aceid</a> (int aceid, size_t device)</td></tr>
-<tr class="memdesc:ae2a28176d054cc1794e22458c0871741"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove access control entry with aceid from given device.  <a href="oc__acl_8h.html#ae2a28176d054cc1794e22458c0871741">More...</a><br /></td></tr>
-<tr class="separator:ae2a28176d054cc1794e22458c0871741"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97df99c5794fca43211a6d4c65e04823"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__acl_8h.html#a97df99c5794fca43211a6d4c65e04823">oc_resource_set_access_in_RFOTM</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, bool state, <a class="el" href="oc__enums_8h.html#afd8b98696c9f44d51d07404d414421c5">oc_ace_permissions_t</a> permission)</td></tr>
+<tr class="memdesc:a97df99c5794fca43211a6d4c65e04823"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify if a resource is accessible in RFOTM state.  <a href="oc__acl_8h.html#a97df99c5794fca43211a6d4c65e04823">More...</a><br /></td></tr>
+<tr class="separator:a97df99c5794fca43211a6d4c65e04823"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad051787e27f6044d4af7bb7bd0952c87"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__acl_8h.html#ad051787e27f6044d4af7bb7bd0952c87">oc_sec_acl_add_bootstrap_acl</a> (size_t device)</td></tr>
+<tr class="memdesc:ad051787e27f6044d4af7bb7bd0952c87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add initial access control list for core resources of a device.  <a href="oc__acl_8h.html#ad051787e27f6044d4af7bb7bd0952c87">More...</a><br /></td></tr>
+<tr class="separator:ad051787e27f6044d4af7bb7bd0952c87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d1d96c2cdc3f99d1bc18650bae64335"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__acl_8h.html#a4d1d96c2cdc3f99d1bc18650bae64335">oc_sec_acl_clear</a> (size_t device, <a class="el" href="oc__acl_8h.html#a20dc76c511992e4f8ac839099c9584cc">oc_sec_ace_filter_t</a> filter, void *user_data)</td></tr>
+<tr class="memdesc:a4d1d96c2cdc3f99d1bc18650bae64335"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove access control entries matching filter from given device.  <a href="oc__acl_8h.html#a4d1d96c2cdc3f99d1bc18650bae64335">More...</a><br /></td></tr>
+<tr class="separator:a4d1d96c2cdc3f99d1bc18650bae64335"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4a616965926bf7ce8ef4560bc17b4f3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__acl_8h.html#ad4a616965926bf7ce8ef4560bc17b4f3">oc_sec_apply_acl</a> (const oc_rep_t *rep, size_t device, <a class="el" href="oc__acl_8h.html#adb8058ec4ee722ac6999e712a3e21863">oc_sec_on_apply_acl_cb_t</a> on_apply_ace_cb, void *on_apply_ace_data)</td></tr>
+<tr class="memdesc:ad4a616965926bf7ce8ef4560bc17b4f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse payload and add/update access control list.  <a href="oc__acl_8h.html#ad4a616965926bf7ce8ef4560bc17b4f3">More...</a><br /></td></tr>
+<tr class="separator:ad4a616965926bf7ce8ef4560bc17b4f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a275d094f7d4f83838b188ecbb4fb9372"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoc__sec__ace__t.html">oc_sec_ace_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__acl_8h.html#a275d094f7d4f83838b188ecbb4fb9372">oc_sec_get_ace_by_aceid</a> (int aceid, size_t device)</td></tr>
+<tr class="memdesc:a275d094f7d4f83838b188ecbb4fb9372"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get access control entry with given aceid from given device.  <a href="oc__acl_8h.html#a275d094f7d4f83838b188ecbb4fb9372">More...</a><br /></td></tr>
+<tr class="separator:a275d094f7d4f83838b188ecbb4fb9372"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ec26d37afab73a5e670ff897a883a3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="oc__acl_8h.html#a485c09b9417208265dc2eed110bd9c82">oc_sec_acl_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__acl_8h.html#a3ec26d37afab73a5e670ff897a883a3e">oc_sec_get_acl</a> (size_t device)</td></tr>
+<tr class="memdesc:a3ec26d37afab73a5e670ff897a883a3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get access control list of a device.  <a href="oc__acl_8h.html#a3ec26d37afab73a5e670ff897a883a3e">More...</a><br /></td></tr>
+<tr class="separator:a3ec26d37afab73a5e670ff897a883a3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62c27daccd65b6c72c4dcf9a5c4dc563"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__acl_8h.html#a62c27daccd65b6c72c4dcf9a5c4dc563">oc_sec_remove_ace</a> (<a class="el" href="structoc__sec__ace__t.html">oc_sec_ace_t</a> *ace, size_t device)</td></tr>
+<tr class="memdesc:a62c27daccd65b6c72c4dcf9a5c4dc563"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove access control entry from given device.  <a href="oc__acl_8h.html#a62c27daccd65b6c72c4dcf9a5c4dc563">More...</a><br /></td></tr>
+<tr class="separator:a62c27daccd65b6c72c4dcf9a5c4dc563"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff7300a6335f95f58f72249e0fd5030b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__acl_8h.html#aff7300a6335f95f58f72249e0fd5030b">oc_sec_remove_ace_by_aceid</a> (int aceid, size_t device)</td></tr>
+<tr class="memdesc:aff7300a6335f95f58f72249e0fd5030b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove access control entry with aceid from given device.  <a href="oc__acl_8h.html#aff7300a6335f95f58f72249e0fd5030b">More...</a><br /></td></tr>
+<tr class="separator:aff7300a6335f95f58f72249e0fd5030b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a2a072aa75b749c3bf40379d78c9e73a6"></a>
@@ -372,14 +372,14 @@ false otherwise </dd></dl>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ab050d71282b1024e44cdb5f9f8b2da17"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab050d71282b1024e44cdb5f9f8b2da17">&#9670;&nbsp;</a></span>oc_resource_set_access_in_RFOTM()</h2>
+<a id="a97df99c5794fca43211a6d4c65e04823"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97df99c5794fca43211a6d4c65e04823">&#9670;&nbsp;</a></span>oc_resource_set_access_in_RFOTM()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OC_API void oc_resource_set_access_in_RFOTM </td>
+          <td class="memname">void oc_resource_set_access_in_RFOTM </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
           <td class="paramname"><em>resource</em>, </td>
@@ -416,14 +416,14 @@ false otherwise </dd></dl>
 
 </div>
 </div>
-<a id="abd975f8a09517681f2ad1947dc850fbb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd975f8a09517681f2ad1947dc850fbb">&#9670;&nbsp;</a></span>oc_sec_acl_add_bootstrap_acl()</h2>
+<a id="ad051787e27f6044d4af7bb7bd0952c87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad051787e27f6044d4af7bb7bd0952c87">&#9670;&nbsp;</a></span>oc_sec_acl_add_bootstrap_acl()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OC_API bool oc_sec_acl_add_bootstrap_acl </td>
+          <td class="memname">bool oc_sec_acl_add_bootstrap_acl </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>device</em></td><td>)</td>
@@ -445,14 +445,14 @@ false On failure </dd></dl>
 
 </div>
 </div>
-<a id="a76c8509b26f9b855023ae93207443d03"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76c8509b26f9b855023ae93207443d03">&#9670;&nbsp;</a></span>oc_sec_acl_clear()</h2>
+<a id="a4d1d96c2cdc3f99d1bc18650bae64335"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d1d96c2cdc3f99d1bc18650bae64335">&#9670;&nbsp;</a></span>oc_sec_acl_clear()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OC_API void oc_sec_acl_clear </td>
+          <td class="memname">void oc_sec_acl_clear </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -489,14 +489,14 @@ false On failure </dd></dl>
 
 </div>
 </div>
-<a id="a47d298f865c98d63b3adacb072699455"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47d298f865c98d63b3adacb072699455">&#9670;&nbsp;</a></span>oc_sec_apply_acl()</h2>
+<a id="ad4a616965926bf7ce8ef4560bc17b4f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4a616965926bf7ce8ef4560bc17b4f3">&#9670;&nbsp;</a></span>oc_sec_apply_acl()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OC_API int oc_sec_apply_acl </td>
+          <td class="memname">int oc_sec_apply_acl </td>
           <td>(</td>
           <td class="paramtype">const oc_rep_t *&#160;</td>
           <td class="paramname"><em>rep</em>, </td>
@@ -543,14 +543,14 @@ false On failure </dd></dl>
 
 </div>
 </div>
-<a id="ae7df0da1db57051dc3ca52f1be3f388a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7df0da1db57051dc3ca52f1be3f388a">&#9670;&nbsp;</a></span>oc_sec_get_ace_by_aceid()</h2>
+<a id="a275d094f7d4f83838b188ecbb4fb9372"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a275d094f7d4f83838b188ecbb4fb9372">&#9670;&nbsp;</a></span>oc_sec_get_ace_by_aceid()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OC_API <a class="el" href="structoc__sec__ace__t.html">oc_sec_ace_t</a>* oc_sec_get_ace_by_aceid </td>
+          <td class="memname"><a class="el" href="structoc__sec__ace__t.html">oc_sec_ace_t</a>* oc_sec_get_ace_by_aceid </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>aceid</em>, </td>
@@ -581,14 +581,14 @@ false On failure </dd></dl>
 
 </div>
 </div>
-<a id="a5dfed8d8872d4cd41d1937010238bb80"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5dfed8d8872d4cd41d1937010238bb80">&#9670;&nbsp;</a></span>oc_sec_get_acl()</h2>
+<a id="a3ec26d37afab73a5e670ff897a883a3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ec26d37afab73a5e670ff897a883a3e">&#9670;&nbsp;</a></span>oc_sec_get_acl()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OC_API <a class="el" href="oc__acl_8h.html#a485c09b9417208265dc2eed110bd9c82">oc_sec_acl_t</a>* oc_sec_get_acl </td>
+          <td class="memname"><a class="el" href="oc__acl_8h.html#a485c09b9417208265dc2eed110bd9c82">oc_sec_acl_t</a>* oc_sec_get_acl </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>device</em></td><td>)</td>
@@ -608,14 +608,14 @@ false On failure </dd></dl>
 
 </div>
 </div>
-<a id="a64108ae5adef3157642dc4836a178e44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64108ae5adef3157642dc4836a178e44">&#9670;&nbsp;</a></span>oc_sec_remove_ace()</h2>
+<a id="a62c27daccd65b6c72c4dcf9a5c4dc563"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62c27daccd65b6c72c4dcf9a5c4dc563">&#9670;&nbsp;</a></span>oc_sec_remove_ace()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OC_API void oc_sec_remove_ace </td>
+          <td class="memname">void oc_sec_remove_ace </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structoc__sec__ace__t.html">oc_sec_ace_t</a> *&#160;</td>
           <td class="paramname"><em>ace</em>, </td>
@@ -645,14 +645,14 @@ false On failure </dd></dl>
 
 </div>
 </div>
-<a id="ae2a28176d054cc1794e22458c0871741"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2a28176d054cc1794e22458c0871741">&#9670;&nbsp;</a></span>oc_sec_remove_ace_by_aceid()</h2>
+<a id="aff7300a6335f95f58f72249e0fd5030b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff7300a6335f95f58f72249e0fd5030b">&#9670;&nbsp;</a></span>oc_sec_remove_ace_by_aceid()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OC_API bool oc_sec_remove_ace_by_aceid </td>
+          <td class="memname">bool oc_sec_remove_ace_by_aceid </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>aceid</em>, </td>
@@ -691,7 +691,7 @@ false Otherwise </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__acl_8h.html">oc_acl.h</a></li>
-    <li class="footer">Generated on Mon Jun 12 2023 10:56:59 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Jun 14 2023 08:08:51 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

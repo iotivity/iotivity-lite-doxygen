@@ -43,7 +43,6 @@ var files_dup =
     [ "oc_sp.h", "oc__sp_8h.html", "oc__sp_8h" ],
     [ "oc_storage.h", "oc__storage_8h.html", "oc__storage_8h" ],
     [ "oc_store.h", "oc__store_8h.html", "oc__store_8h" ],
-    [ "oc_swupdate.h", "oc__swupdate_8h.html", "oc__swupdate_8h" ],
     [ "oc_uuid.h", "oc__uuid_8h.html", "oc__uuid_8h" ],
     [ "plgd_time.h", "plgd__time_8h.html", "plgd__time_8h" ],
     [ "pt-sem.h", "pt-sem_8h.html", "pt-sem_8h" ],

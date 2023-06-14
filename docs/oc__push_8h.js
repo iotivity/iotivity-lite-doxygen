@@ -9,7 +9,7 @@ var oc__push_8h =
     [ "PUSHRECEIVERS_RESOURCE_TYPE", "oc__push_8h.html#a26ae01d979e963ab16619142a9aaa753", null ],
     [ "oc_on_push_arrived_t", "oc__push_8h.html#a2b21b70e1a5fbafaca7ffdc60f163e24", null ],
     [ "oc_pushd_resource_rep_t", "oc__push_8h.html#ae6492141a7ebcd0ac9c10699c8970362", null ],
-    [ "oc_print_pushd_resource", "oc__push_8h.html#a3748f2cb9382b64f94a40cc74e341758", null ],
-    [ "oc_resource_state_changed", "oc__push_8h.html#ae0ad53f4f24b309ca8a2fac3df443b08", null ],
-    [ "oc_set_on_push_arrived", "oc__push_8h.html#a4b8f291564f8e6dd7e535acedb08cc63", null ]
+    [ "oc_print_pushd_resource", "oc__push_8h.html#a4a73d0eb724e26b8f3287aab104e2c11", null ],
+    [ "oc_resource_state_changed", "oc__push_8h.html#a16cb0233e23c0ee2fc03362feae52aae", null ],
+    [ "oc_set_on_push_arrived", "oc__push_8h.html#a250e893091e5dc9b63fb77cda5e4c032", null ]
 ];

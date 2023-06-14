@@ -397,10 +397,10 @@ oc_obt_provision_role_wilecard_ace </dd>
 <div class="line">  <span class="keywordtype">char</span> *di = NULL, *n = NULL;</div>
 <div class="line">  <span class="keywordtype">size_t</span> di_len = 0, n_len = 0;</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> (<a class="code" href="oc__rep_8h.html#a793613f1cc4efd2e1371d48283921480">oc_rep_get_string</a>(rep, <span class="stringliteral">&quot;di&quot;</span>, &amp;di, &amp;di_len)) {</div>
+<div class="line">  <span class="keywordflow">if</span> (<a class="code" href="oc__rep_8h.html#abfb16b76e18e2fe5e7325de665e922e4">oc_rep_get_string</a>(rep, <span class="stringliteral">&quot;di&quot;</span>, &amp;di, &amp;di_len)) {</div>
 <div class="line">    printf(<span class="stringliteral">&quot;Device id: %s\n&quot;</span>, di);</div>
 <div class="line">  }</div>
-<div class="line">  <span class="keywordflow">if</span> (<a class="code" href="oc__rep_8h.html#a793613f1cc4efd2e1371d48283921480">oc_rep_get_string</a>(rep, <span class="stringliteral">&quot;n&quot;</span>, &amp;n, &amp;n_len)) {</div>
+<div class="line">  <span class="keywordflow">if</span> (<a class="code" href="oc__rep_8h.html#abfb16b76e18e2fe5e7325de665e922e4">oc_rep_get_string</a>(rep, <span class="stringliteral">&quot;n&quot;</span>, &amp;n, &amp;n_len)) {</div>
 <div class="line">    printf(<span class="stringliteral">&quot;Device name: %s\n&quot;</span>, n);</div>
 <div class="line">  }</div>
 <div class="line">}</div>
@@ -410,7 +410,7 @@ oc_obt_provision_role_wilecard_ace </dd>
 <div class="line">{</div>
 <div class="line">  (void)data;</div>
 <div class="line">  <span class="keywordtype">char</span> di[<a class="code" href="oc__uuid_8h.html#a4e556e036773181af67e69a454667f31">OC_UUID_LEN</a>];</div>
-<div class="line">  <a class="code" href="oc__uuid_8h.html#a037b0d0c259bb3f75eae6a13e0c09793">oc_uuid_to_str</a>(uuid, di, <a class="code" href="oc__uuid_8h.html#a4e556e036773181af67e69a454667f31">OC_UUID_LEN</a>);</div>
+<div class="line">  <a class="code" href="oc__uuid_8h.html#a7d4d2022d88046a760b50c1f242c4b5e">oc_uuid_to_str</a>(uuid, di, <a class="code" href="oc__uuid_8h.html#a4e556e036773181af67e69a454667f31">OC_UUID_LEN</a>);</div>
 <div class="line">  <a class="code" href="structoc__endpoint__t.html">oc_endpoint_t</a> *ep = eps;</div>
 <div class="line"> </div>
 <div class="line">  printf(<span class="stringliteral">&quot;\nDiscovered unowned device: %s at:\n&quot;</span>, di);</div>
@@ -420,16 +420,16 @@ oc_obt_provision_role_wilecard_ace </dd>
 <div class="line">    eps = eps-&gt;<a class="code" href="structoc__endpoint__t.html#ab649dfd671bd7ffa4accef34548fc893">next</a>;</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  <a class="code" href="group__doc__module__tag__client__state.html#ga090b5a3a988ef475b056d2b2e0e37b60">oc_do_get</a>(<span class="stringliteral">&quot;/oic/d&quot;</span>, ep, NULL, &amp;get_device, <a class="code" href="oc__client__state_8h.html#a172718f11f1a33ce09cd1222bcbe5920a907f366721888a6d73bbb40b272b0189">HIGH_QOS</a>, NULL);</div>
+<div class="line">  <a class="code" href="group__doc__module__tag__client__state.html#gaf2a71f2f7302f5df4a3243d6d2b76f9a">oc_do_get</a>(<span class="stringliteral">&quot;/oic/d&quot;</span>, ep, NULL, &amp;get_device, <a class="code" href="oc__client__state_8h.html#a172718f11f1a33ce09cd1222bcbe5920a907f366721888a6d73bbb40b272b0189">HIGH_QOS</a>, NULL);</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><a class="code" href="oc__obt_8h.html#abbadaf06decd3bf24d99d6720d0123c5">oc_obt_discover_unowned_devices</a>(unowned_device_cb, NULL);</div>
-<div class="ttc" id="agroup__doc__module__tag__client__state_html_ga090b5a3a988ef475b056d2b2e0e37b60"><div class="ttname"><a href="group__doc__module__tag__client__state.html#ga090b5a3a988ef475b056d2b2e0e37b60">oc_do_get</a></div><div class="ttdeci">OC_API bool oc_do_get(const char *uri, const oc_endpoint_t *endpoint, const char *query, oc_response_handler_t handler, oc_qos_t qos, void *user_data)</div><div class="ttdoc">Issue a GET request to obtain the current value of all properties a resource.</div></div>
+<div class="ttc" id="agroup__doc__module__tag__client__state_html_gaf2a71f2f7302f5df4a3243d6d2b76f9a"><div class="ttname"><a href="group__doc__module__tag__client__state.html#gaf2a71f2f7302f5df4a3243d6d2b76f9a">oc_do_get</a></div><div class="ttdeci">bool oc_do_get(const char *uri, const oc_endpoint_t *endpoint, const char *query, oc_response_handler_t handler, oc_qos_t qos, void *user_data)</div><div class="ttdoc">Issue a GET request to obtain the current value of all properties a resource.</div></div>
 <div class="ttc" id="aoc__client__state_8h_html_a172718f11f1a33ce09cd1222bcbe5920a907f366721888a6d73bbb40b272b0189"><div class="ttname"><a href="oc__client__state_8h.html#a172718f11f1a33ce09cd1222bcbe5920a907f366721888a6d73bbb40b272b0189">HIGH_QOS</a></div><div class="ttdeci">@ HIGH_QOS</div><div class="ttdoc">confirmable messages</div><div class="ttdef"><b>Definition:</b> oc_client_state.h:49</div></div>
 <div class="ttc" id="aoc__obt_8h_html_abbadaf06decd3bf24d99d6720d0123c5"><div class="ttname"><a href="oc__obt_8h.html#abbadaf06decd3bf24d99d6720d0123c5">oc_obt_discover_unowned_devices</a></div><div class="ttdeci">int oc_obt_discover_unowned_devices(oc_obt_discovery_cb_t cb, void *data)</div><div class="ttdoc">Discover all unowned devices.</div></div>
-<div class="ttc" id="aoc__rep_8h_html_a793613f1cc4efd2e1371d48283921480"><div class="ttname"><a href="oc__rep_8h.html#a793613f1cc4efd2e1371d48283921480">oc_rep_get_string</a></div><div class="ttdeci">OC_API bool oc_rep_get_string(const oc_rep_t *rep, const char *key, char **value, size_t *size)</div><div class="ttdoc">Read a text string value from an oc_rep_t</div></div>
-<div class="ttc" id="aoc__uuid_8h_html_a037b0d0c259bb3f75eae6a13e0c09793"><div class="ttname"><a href="oc__uuid_8h.html#a037b0d0c259bb3f75eae6a13e0c09793">oc_uuid_to_str</a></div><div class="ttdeci">OC_API void oc_uuid_to_str(const oc_uuid_t *uuid, char *buffer, size_t buflen)</div><div class="ttdoc">Convert the 128 bit oc_uuid_t to a string representation.</div></div>
+<div class="ttc" id="aoc__rep_8h_html_abfb16b76e18e2fe5e7325de665e922e4"><div class="ttname"><a href="oc__rep_8h.html#abfb16b76e18e2fe5e7325de665e922e4">oc_rep_get_string</a></div><div class="ttdeci">bool oc_rep_get_string(const oc_rep_t *rep, const char *key, char **value, size_t *size)</div><div class="ttdoc">Read a text string value from an oc_rep_t</div></div>
 <div class="ttc" id="aoc__uuid_8h_html_a4e556e036773181af67e69a454667f31"><div class="ttname"><a href="oc__uuid_8h.html#a4e556e036773181af67e69a454667f31">OC_UUID_LEN</a></div><div class="ttdeci">#define OC_UUID_LEN</div><div class="ttdoc">The length of a UUID string.</div><div class="ttdef"><b>Definition:</b> oc_uuid.h:44</div></div>
+<div class="ttc" id="aoc__uuid_8h_html_a7d4d2022d88046a760b50c1f242c4b5e"><div class="ttname"><a href="oc__uuid_8h.html#a7d4d2022d88046a760b50c1f242c4b5e">oc_uuid_to_str</a></div><div class="ttdeci">void oc_uuid_to_str(const oc_uuid_t *uuid, char *buffer, size_t buflen)</div><div class="ttdoc">Convert the 128 bit oc_uuid_t to a string representation.</div></div>
 <div class="ttc" id="astructoc__client__response__t_html"><div class="ttname"><a href="structoc__client__response__t.html">oc_client_response_t</a></div><div class="ttdoc">Client response information.</div><div class="ttdef"><b>Definition:</b> oc_client_state.h:58</div></div>
 <div class="ttc" id="astructoc__client__response__t_html_a4e7476f42ae4af489a46e6d05b8e4727"><div class="ttname"><a href="structoc__client__response__t.html#a4e7476f42ae4af489a46e6d05b8e4727">oc_client_response_t::payload</a></div><div class="ttdeci">oc_rep_t * payload</div><div class="ttdoc">response payload, interpreted as cbor</div><div class="ttdef"><b>Definition:</b> oc_client_state.h:59</div></div>
 <div class="ttc" id="astructoc__endpoint__t_html"><div class="ttname"><a href="structoc__endpoint__t.html">oc_endpoint_t</a></div><div class="ttdoc">the endpoint information</div><div class="ttdef"><b>Definition:</b> oc_endpoint.h:90</div></div>
@@ -909,7 +909,7 @@ oc_obt_provision_role_wilecard_ace </dd>
 <div class="line">reset_device_cb(oc_uuid_t *uuid, <span class="keywordtype">int</span> status, <span class="keywordtype">void</span> *data)</div>
 <div class="line">{</div>
 <div class="line">  <span class="keywordtype">char</span> di[<a class="code" href="oc__uuid_8h.html#a4e556e036773181af67e69a454667f31">OC_UUID_LEN</a>];</div>
-<div class="line">  <a class="code" href="oc__uuid_8h.html#a037b0d0c259bb3f75eae6a13e0c09793">oc_uuid_to_str</a>(uuid, di, <a class="code" href="oc__uuid_8h.html#a4e556e036773181af67e69a454667f31">OC_UUID_LEN</a>);</div>
+<div class="line">  <a class="code" href="oc__uuid_8h.html#a7d4d2022d88046a760b50c1f242c4b5e">oc_uuid_to_str</a>(uuid, di, <a class="code" href="oc__uuid_8h.html#a4e556e036773181af67e69a454667f31">OC_UUID_LEN</a>);</div>
 <div class="line">  <span class="keywordflow">if</span> (status &gt;= 0) {</div>
 <div class="line">    printf(<span class="stringliteral">&quot;Successfully performed hard RESET to device %s\n&quot;</span>, di);</div>
 <div class="line">  } <span class="keywordflow">else</span> {</div>
@@ -1022,7 +1022,7 @@ oc_obt_provision_role_wilecard_ace </dd>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>the oc_obt_discovery_cb_t that will be called for each discovered device </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>context pointer that is passed to the oc_obt_discovery_cb_t the pointer must be a valid pointer till after <a class="el" href="oc__api_8h.html#a97c9701d622686581b1053784e3c1431" title="Register and call handler functions responsible for controlling the IoTivity-lite stack.">oc_main_init()</a> call completes. The context pointer must be valid for DISCOVERY_CB_PERIOD seconds after oc_obt_discover_unowned_devices returns.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>context pointer that is passed to the oc_obt_discovery_cb_t the pointer must be a valid pointer till after <a class="el" href="oc__api_8h.html#ae6522fdfeed62a92193214ee99dfc47c" title="Register and call handler functions responsible for controlling the IoTivity-lite stack.">oc_main_init()</a> call completes. The context pointer must be valid for DISCOVERY_CB_PERIOD seconds after oc_obt_discover_unowned_devices returns.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1066,7 +1066,7 @@ oc_obt_provision_role_wilecard_ace </dd>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>the oc_obt_discovery_cb_t that will be called for each discovered device </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>context pointer that is passed to the oc_obt_discovery_cb_t the pointer must be a valid pointer till after <a class="el" href="oc__api_8h.html#a97c9701d622686581b1053784e3c1431" title="Register and call handler functions responsible for controlling the IoTivity-lite stack.">oc_main_init()</a> call completes. The context pointer must be valid for DISCOVERY_CB_PERIOD seconds after oc_obt_discover_unowned_devices returns.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>context pointer that is passed to the oc_obt_discovery_cb_t the pointer must be a valid pointer till after <a class="el" href="oc__api_8h.html#ae6522fdfeed62a92193214ee99dfc47c" title="Register and call handler functions responsible for controlling the IoTivity-lite stack.">oc_main_init()</a> call completes. The context pointer must be valid for DISCOVERY_CB_PERIOD seconds after oc_obt_discover_unowned_devices returns.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1110,7 +1110,7 @@ oc_obt_provision_role_wilecard_ace </dd>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>the oc_obt_discovery_cb_t that will be called for each discovered device </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>context pointer that is passed to the oc_obt_discovery_cb_t the pointer must be a valid pointer till after <a class="el" href="oc__api_8h.html#a97c9701d622686581b1053784e3c1431" title="Register and call handler functions responsible for controlling the IoTivity-lite stack.">oc_main_init()</a> call completes. The context pointer must be valid for DISCOVERY_CB_PERIOD seconds after oc_obt_discover_unowned_devices returns.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>context pointer that is passed to the oc_obt_discovery_cb_t the pointer must be a valid pointer till after <a class="el" href="oc__api_8h.html#ae6522fdfeed62a92193214ee99dfc47c" title="Register and call handler functions responsible for controlling the IoTivity-lite stack.">oc_main_init()</a> call completes. The context pointer must be valid for DISCOVERY_CB_PERIOD seconds after oc_obt_discover_unowned_devices returns.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1155,7 +1155,7 @@ oc_obt_provision_role_wilecard_ace </dd>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>the oc_obt_discovery_cb_t that will be called for each discovered device </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>context pointer that is passed to the oc_obt_discovery_cb_t the pointer must be a valid pointer till after <a class="el" href="oc__api_8h.html#a97c9701d622686581b1053784e3c1431" title="Register and call handler functions responsible for controlling the IoTivity-lite stack.">oc_main_init()</a> call completes. The context pointer must be valid for DISCOVERY_CB_PERIOD seconds after the oc_obt_discover_unowned_devices function returns.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>context pointer that is passed to the oc_obt_discovery_cb_t the pointer must be a valid pointer till after <a class="el" href="oc__api_8h.html#ae6522fdfeed62a92193214ee99dfc47c" title="Register and call handler functions responsible for controlling the IoTivity-lite stack.">oc_main_init()</a> call completes. The context pointer must be valid for DISCOVERY_CB_PERIOD seconds after the oc_obt_discover_unowned_devices function returns.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1199,7 +1199,7 @@ oc_obt_provision_role_wilecard_ace </dd>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>the oc_obt_discovery_cb_t that will be called for each discovered device </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>context pointer that is passed to the oc_obt_discovery_cb_t the pointer must be a valid pointer till after <a class="el" href="oc__api_8h.html#a97c9701d622686581b1053784e3c1431" title="Register and call handler functions responsible for controlling the IoTivity-lite stack.">oc_main_init()</a> call completes. The context pointer must be valid for DISCOVERY_CB_PERIOD seconds after oc_obt_discover_unowned_devices returns.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>context pointer that is passed to the oc_obt_discovery_cb_t the pointer must be a valid pointer till after <a class="el" href="oc__api_8h.html#ae6522fdfeed62a92193214ee99dfc47c" title="Register and call handler functions responsible for controlling the IoTivity-lite stack.">oc_main_init()</a> call completes. The context pointer must be valid for DISCOVERY_CB_PERIOD seconds after oc_obt_discover_unowned_devices returns.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1243,7 +1243,7 @@ oc_obt_provision_role_wilecard_ace </dd>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">cb</td><td>the oc_obt_discovery_cb_t that will be called for each discovered device </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>context pointer that is passed to the oc_obt_discovery_cb_t the pointer must be a valid pointer till after <a class="el" href="oc__api_8h.html#a97c9701d622686581b1053784e3c1431" title="Register and call handler functions responsible for controlling the IoTivity-lite stack.">oc_main_init()</a> call completes. The context pointer must be valid for DISCOVERY_CB_PERIOD seconds after oc_obt_discover_unowned_devices returns.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>context pointer that is passed to the oc_obt_discovery_cb_t the pointer must be a valid pointer till after <a class="el" href="oc__api_8h.html#ae6522fdfeed62a92193214ee99dfc47c" title="Register and call handler functions responsible for controlling the IoTivity-lite stack.">oc_main_init()</a> call completes. The context pointer must be valid for DISCOVERY_CB_PERIOD seconds after oc_obt_discover_unowned_devices returns.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1382,11 +1382,11 @@ oc_obt_provision_role_wilecard_ace </dd>
 <p>example: </p><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">int</span></div>
 <div class="line"> app_init(<span class="keywordtype">void</span>)</div>
 <div class="line"> {</div>
-<div class="line">   <span class="keywordtype">int</span> ret = <a class="code" href="oc__api_8h.html#ab3debdd607df379d65f76b7e5c876dbd">oc_init_platform</a>(<span class="stringliteral">&quot;OCF&quot;</span>, NULL, NULL);</div>
-<div class="line">   ret |= <a class="code" href="oc__api_8h.html#a2b23ecff2ff19a44e263173547a052bd">oc_add_device</a>(<span class="stringliteral">&quot;/oic/d&quot;</span>, <span class="stringliteral">&quot;oic.d.dots&quot;</span>, <span class="stringliteral">&quot;OBT&quot;</span>, <span class="stringliteral">&quot;ocf.2.0.5&quot;</span>,</div>
+<div class="line">   <span class="keywordtype">int</span> ret = <a class="code" href="oc__api_8h.html#abc05e63942a1093f807213220841c54b">oc_init_platform</a>(<span class="stringliteral">&quot;OCF&quot;</span>, NULL, NULL);</div>
+<div class="line">   ret |= <a class="code" href="oc__api_8h.html#a5aa72dd8d7d03ff826801b1d7d67ec68">oc_add_device</a>(<span class="stringliteral">&quot;/oic/d&quot;</span>, <span class="stringliteral">&quot;oic.d.dots&quot;</span>, <span class="stringliteral">&quot;OBT&quot;</span>, <span class="stringliteral">&quot;ocf.2.0.5&quot;</span>,</div>
 <div class="line">                        <span class="stringliteral">&quot;ocf.res.1.0.0,ocf.sh.1.0.0&quot;</span>, NULL, NULL);</div>
-<div class="line">   <a class="code" href="group__doc__module__tag__server__side.html#gaffe316025d61724b1957740f5cb061dd">oc_device_bind_resource_type</a>(0, <span class="stringliteral">&quot;oic.d.ams&quot;</span>);</div>
-<div class="line">   <a class="code" href="group__doc__module__tag__server__side.html#gaffe316025d61724b1957740f5cb061dd">oc_device_bind_resource_type</a>(0, <span class="stringliteral">&quot;oic.d.cms&quot;</span>);</div>
+<div class="line">   <a class="code" href="group__doc__module__tag__server__side.html#ga0cdcfd9676beaa7368cc9677277279a8">oc_device_bind_resource_type</a>(0, <span class="stringliteral">&quot;oic.d.ams&quot;</span>);</div>
+<div class="line">   <a class="code" href="group__doc__module__tag__server__side.html#ga0cdcfd9676beaa7368cc9677277279a8">oc_device_bind_resource_type</a>(0, <span class="stringliteral">&quot;oic.d.cms&quot;</span>);</div>
 <div class="line">   <span class="keywordflow">return</span> ret;</div>
 <div class="line"> }</div>
 <div class="line"> </div>
@@ -1408,12 +1408,12 @@ oc_obt_provision_role_wilecard_ace </dd>
 <div class="line"><span class="preprocessor">#ifdef OC_STORAGE</span></div>
 <div class="line">  <a class="code" href="oc__storage_8h.html#ae529493bca3a501922f23e3d7701ff05">oc_storage_config</a>(<span class="stringliteral">&quot;./onboarding_tool_creds&quot;</span>);</div>
 <div class="line"><span class="preprocessor">#endif </span><span class="comment">// OC_STORAGE</span></div>
-<div class="line">  <span class="keywordflow">if</span> (<a class="code" href="oc__api_8h.html#a97c9701d622686581b1053784e3c1431">oc_main_init</a>(&amp;handler) &lt; 0)</div>
+<div class="line">  <span class="keywordflow">if</span> (<a class="code" href="oc__api_8h.html#ae6522fdfeed62a92193214ee99dfc47c">oc_main_init</a>(&amp;handler) &lt; 0)</div>
 <div class="line">    <span class="keywordflow">return</span> init;</div>
-<div class="ttc" id="agroup__doc__module__tag__server__side_html_gaffe316025d61724b1957740f5cb061dd"><div class="ttname"><a href="group__doc__module__tag__server__side.html#gaffe316025d61724b1957740f5cb061dd">oc_device_bind_resource_type</a></div><div class="ttdeci">OC_API void oc_device_bind_resource_type(size_t device, const char *type)</div><div class="ttdoc">Add a Resource Type &quot;rt&quot; property to the an /oic/d resource.</div></div>
-<div class="ttc" id="aoc__api_8h_html_a2b23ecff2ff19a44e263173547a052bd"><div class="ttname"><a href="oc__api_8h.html#a2b23ecff2ff19a44e263173547a052bd">oc_add_device</a></div><div class="ttdeci">OC_API int oc_add_device(const char *uri, const char *rt, const char *name, const char *spec_version, const char *data_model_version, oc_add_device_cb_t add_device_cb, void *data)</div><div class="ttdoc">Add an ocf device to the the stack.</div></div>
-<div class="ttc" id="aoc__api_8h_html_a97c9701d622686581b1053784e3c1431"><div class="ttname"><a href="oc__api_8h.html#a97c9701d622686581b1053784e3c1431">oc_main_init</a></div><div class="ttdeci">OC_API int oc_main_init(const oc_handler_t *handler)</div><div class="ttdoc">Register and call handler functions responsible for controlling the IoTivity-lite stack.</div></div>
-<div class="ttc" id="aoc__api_8h_html_ab3debdd607df379d65f76b7e5c876dbd"><div class="ttname"><a href="oc__api_8h.html#ab3debdd607df379d65f76b7e5c876dbd">oc_init_platform</a></div><div class="ttdeci">OC_API int oc_init_platform(const char *mfg_name, oc_init_platform_cb_t init_platform_cb, void *data)</div><div class="ttdoc">Initialize the platform.</div></div>
+<div class="ttc" id="agroup__doc__module__tag__server__side_html_ga0cdcfd9676beaa7368cc9677277279a8"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga0cdcfd9676beaa7368cc9677277279a8">oc_device_bind_resource_type</a></div><div class="ttdeci">void oc_device_bind_resource_type(size_t device, const char *type)</div><div class="ttdoc">Add a Resource Type &quot;rt&quot; property to the an /oic/d resource.</div></div>
+<div class="ttc" id="aoc__api_8h_html_a5aa72dd8d7d03ff826801b1d7d67ec68"><div class="ttname"><a href="oc__api_8h.html#a5aa72dd8d7d03ff826801b1d7d67ec68">oc_add_device</a></div><div class="ttdeci">int oc_add_device(const char *uri, const char *rt, const char *name, const char *spec_version, const char *data_model_version, oc_add_device_cb_t add_device_cb, void *data)</div><div class="ttdoc">Add an ocf device to the the stack.</div></div>
+<div class="ttc" id="aoc__api_8h_html_abc05e63942a1093f807213220841c54b"><div class="ttname"><a href="oc__api_8h.html#abc05e63942a1093f807213220841c54b">oc_init_platform</a></div><div class="ttdeci">int oc_init_platform(const char *mfg_name, oc_init_platform_cb_t init_platform_cb, void *data)</div><div class="ttdoc">Initialize the platform.</div></div>
+<div class="ttc" id="aoc__api_8h_html_ae6522fdfeed62a92193214ee99dfc47c"><div class="ttname"><a href="oc__api_8h.html#ae6522fdfeed62a92193214ee99dfc47c">oc_main_init</a></div><div class="ttdeci">int oc_main_init(const oc_handler_t *handler)</div><div class="ttdoc">Register and call handler functions responsible for controlling the IoTivity-lite stack.</div></div>
 <div class="ttc" id="aoc__obt_8h_html_a97556ae3073fdfd4d12713431c458f56"><div class="ttname"><a href="oc__obt_8h.html#a97556ae3073fdfd4d12713431c458f56">oc_obt_init</a></div><div class="ttdeci">int oc_obt_init(void)</div><div class="ttdoc">Initialize the IoTivity stack so it can be used as an onboarding tool (OBT)</div></div>
 <div class="ttc" id="aoc__storage_8h_html_ae529493bca3a501922f23e3d7701ff05"><div class="ttname"><a href="oc__storage_8h.html#ae529493bca3a501922f23e3d7701ff05">oc_storage_config</a></div><div class="ttdeci">int oc_storage_config(const char *store)</div><div class="ttdoc">open the storage</div></div>
 <div class="ttc" id="astructoc__handler__t_html"><div class="ttname"><a href="structoc__handler__t.html">oc_handler_t</a></div><div class="ttdoc">Call back handlers that are invoked in response to oc_main_init()</div><div class="ttdef"><b>Definition:</b> oc_api.h:57</div></div>
@@ -1640,7 +1640,7 @@ oc_obt_provision_role_wilecard_ace </dd>
 <div class="line">otm_just_works_cb(oc_uuid_t *uuid, <span class="keywordtype">int</span> status, <span class="keywordtype">void</span> *data)</div>
 <div class="line">{</div>
 <div class="line">  <span class="keywordtype">char</span> di[<a class="code" href="oc__uuid_8h.html#a4e556e036773181af67e69a454667f31">OC_UUID_LEN</a>];</div>
-<div class="line">  <a class="code" href="oc__uuid_8h.html#a037b0d0c259bb3f75eae6a13e0c09793">oc_uuid_to_str</a>(uuid, di, <a class="code" href="oc__uuid_8h.html#a4e556e036773181af67e69a454667f31">OC_UUID_LEN</a>);</div>
+<div class="line">  <a class="code" href="oc__uuid_8h.html#a7d4d2022d88046a760b50c1f242c4b5e">oc_uuid_to_str</a>(uuid, di, <a class="code" href="oc__uuid_8h.html#a4e556e036773181af67e69a454667f31">OC_UUID_LEN</a>);</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">if</span> (status &gt;= 0) {</div>
 <div class="line">    printf(<span class="stringliteral">&quot;Successfully performed OTM on device with UUID %s\n&quot;</span>, di);</div>
@@ -1722,7 +1722,7 @@ oc_obt_provision_role_wilecard_ace </dd>
 <div class="line">otm_rdp_cb(oc_uuid_t *uuid, <span class="keywordtype">int</span> status, <span class="keywordtype">void</span> *data)</div>
 <div class="line">{</div>
 <div class="line">  <span class="keywordtype">char</span> di[<a class="code" href="oc__uuid_8h.html#a4e556e036773181af67e69a454667f31">OC_UUID_LEN</a>];</div>
-<div class="line">  <a class="code" href="oc__uuid_8h.html#a037b0d0c259bb3f75eae6a13e0c09793">oc_uuid_to_str</a>(uuid, di, <a class="code" href="oc__uuid_8h.html#a4e556e036773181af67e69a454667f31">OC_UUID_LEN</a>);</div>
+<div class="line">  <a class="code" href="oc__uuid_8h.html#a7d4d2022d88046a760b50c1f242c4b5e">oc_uuid_to_str</a>(uuid, di, <a class="code" href="oc__uuid_8h.html#a4e556e036773181af67e69a454667f31">OC_UUID_LEN</a>);</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">if</span> (status &gt;= 0) {</div>
 <div class="line">    printf(<span class="stringliteral">&quot;Successfully performed OTM on device %s\n&quot;</span>, di);</div>
@@ -1735,7 +1735,7 @@ oc_obt_provision_role_wilecard_ace </dd>
 <div class="line">random_pin_cb(oc_uuid_t *uuid, <span class="keywordtype">int</span> status, <span class="keywordtype">void</span> *data)</div>
 <div class="line">{</div>
 <div class="line">  <span class="keywordtype">char</span> di[<a class="code" href="oc__uuid_8h.html#a4e556e036773181af67e69a454667f31">OC_UUID_LEN</a>];</div>
-<div class="line">  <a class="code" href="oc__uuid_8h.html#a037b0d0c259bb3f75eae6a13e0c09793">oc_uuid_to_str</a>(uuid, di, <a class="code" href="oc__uuid_8h.html#a4e556e036773181af67e69a454667f31">OC_UUID_LEN</a>);</div>
+<div class="line">  <a class="code" href="oc__uuid_8h.html#a7d4d2022d88046a760b50c1f242c4b5e">oc_uuid_to_str</a>(uuid, di, <a class="code" href="oc__uuid_8h.html#a4e556e036773181af67e69a454667f31">OC_UUID_LEN</a>);</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">if</span> (status &gt;= 0) {</div>
 <div class="line">    printf(<span class="stringliteral">&quot;Successfully requested device %s to generate a Random PIN\n&quot;</span>,</div>
@@ -1786,7 +1786,7 @@ oc_obt_provision_role_wilecard_ace </dd>
 <dd>
 <a class="el" href="oc__obt_8h.html#a780ab900ff1c0cd98da487d307023b6a" title="Callback invoked to report the status resulting from many of the onboarding tools actions on a device...">oc_obt_device_status_cb_t</a> </dd>
 <dd>
-<a class="el" href="oc__api_8h.html#a3ee55546d6ae0cbc422cdc298731ef1e" title="Set the random pin callback for Random PIN Ownership Transfer Method (OTM)">oc_set_random_pin_callback</a> </dd>
+<a class="el" href="oc__api_8h.html#a5f6ce300fbf84e2181b1ee0040567756" title="Set the random pin callback for Random PIN Ownership Transfer Method (OTM)">oc_set_random_pin_callback</a> </dd>
 <dd>
 <a class="el" href="oc__api_8h.html#ac450472adae9e5c6941663559d6a7150" title="Callback invoked when an onboarding client requests device ownership via the Random PIN Ownership Tra...">oc_random_pin_cb_t</a> </dd></dl>
 
@@ -1835,7 +1835,7 @@ oc_obt_provision_role_wilecard_ace </dd>
 <div class="line">provision_ace2_cb(oc_uuid_t *uuid, <span class="keywordtype">int</span> status, <span class="keywordtype">void</span> *data)</div>
 <div class="line">{</div>
 <div class="line">  <span class="keywordtype">char</span> di[<a class="code" href="oc__uuid_8h.html#a4e556e036773181af67e69a454667f31">OC_UUID_LEN</a>];</div>
-<div class="line">  <a class="code" href="oc__uuid_8h.html#a037b0d0c259bb3f75eae6a13e0c09793">oc_uuid_to_str</a>(uuid, di, <a class="code" href="oc__uuid_8h.html#a4e556e036773181af67e69a454667f31">OC_UUID_LEN</a>);</div>
+<div class="line">  <a class="code" href="oc__uuid_8h.html#a7d4d2022d88046a760b50c1f242c4b5e">oc_uuid_to_str</a>(uuid, di, <a class="code" href="oc__uuid_8h.html#a4e556e036773181af67e69a454667f31">OC_UUID_LEN</a>);</div>
 <div class="line">  <span class="keywordflow">if</span> (status &gt;= 0) {</div>
 <div class="line">    printf(<span class="stringliteral">&quot;Successfully provisioned ACE to device %s\n&quot;</span>, di);</div>
 <div class="line">  } <span class="keywordflow">else</span> {</div>
@@ -2362,7 +2362,7 @@ oc_obt_provision_role_wilecard_ace </dd>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__api_8h.html#a3ee55546d6ae0cbc422cdc298731ef1e" title="Set the random pin callback for Random PIN Ownership Transfer Method (OTM)">oc_set_random_pin_callback</a> </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__api_8h.html#a5f6ce300fbf84e2181b1ee0040567756" title="Set the random pin callback for Random PIN Ownership Transfer Method (OTM)">oc_set_random_pin_callback</a> </dd>
 <dd>
 <a class="el" href="oc__api_8h.html#ac450472adae9e5c6941663559d6a7150" title="Callback invoked when an onboarding client requests device ownership via the Random PIN Ownership Tra...">oc_random_pin_cb_t</a> </dd>
 <dd>
@@ -2376,7 +2376,7 @@ oc_obt_provision_role_wilecard_ace </dd>
 <dd>
 <a class="el" href="oc__obt_8h.html#a780ab900ff1c0cd98da487d307023b6a" title="Callback invoked to report the status resulting from many of the onboarding tools actions on a device...">oc_obt_device_status_cb_t</a> </dd>
 <dd>
-<a class="el" href="oc__api_8h.html#a3ee55546d6ae0cbc422cdc298731ef1e" title="Set the random pin callback for Random PIN Ownership Transfer Method (OTM)">oc_set_random_pin_callback</a> </dd>
+<a class="el" href="oc__api_8h.html#a5f6ce300fbf84e2181b1ee0040567756" title="Set the random pin callback for Random PIN Ownership Transfer Method (OTM)">oc_set_random_pin_callback</a> </dd>
 <dd>
 <a class="el" href="oc__api_8h.html#ac450472adae9e5c6941663559d6a7150" title="Callback invoked when an onboarding client requests device ownership via the Random PIN Ownership Tra...">oc_random_pin_cb_t</a> </dd></dl>
 </li>
@@ -2708,7 +2708,7 @@ oc_obt_provision_role_wilecard_ace </dd>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__obt_8h.html">oc_obt.h</a></li>
-    <li class="footer">Generated on Mon Jun 12 2023 10:56:59 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Jun 14 2023 08:08:51 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

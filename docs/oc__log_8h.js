@@ -16,8 +16,8 @@ var oc__log_8h =
     [ "OC_SNPRINT_ENDPOINT_ADDR", "oc__log_8h.html#a1115c045f94b1e75b9f46ffea23b1ca1", null ],
     [ "OC_SNPRINTF", "oc__log_8h.html#a3373fa8e600aa48da5e3e72c296a5d3f", null ],
     [ "OC_SNPRINTFipaddr", "oc__log_8h.html#a50e9112adef413c6e200260be9c23483", null ],
-    [ "OC_NONNULL", "oc__log_8h.html#af1be784ef6446e663bf13d4fe74eaa5b", null ],
-    [ "oc_print_log_fn_t", "oc__log_8h.html#a19ab34b5cdfe3f9925de7418bca9af4e", null ],
+    [ "oc_log_set_function", "oc__log_8h.html#a9a433aa12f9f8732311371d957d04a1e", null ],
+    [ "oc_print_log_fn_t", "oc__log_8h.html#a5bec6abdf7d1ca29ca373345003aa219", null ],
     [ "oc_log_component_t", "oc__log_8h.html#a51c20822e2ed76081cd103d806e1984f", [
       [ "OC_LOG_COMPONENT_DEFAULT", "oc__log_8h.html#a51c20822e2ed76081cd103d806e1984fa86d1b63ed043b4c72ad9bdd7b84383b7", null ]
     ] ],
@@ -30,9 +30,8 @@ var oc__log_8h =
       [ "OC_LOG_LEVEL_DEBUG", "oc__log_8h.html#abf655f01c4ec91ee48607f5441c45df9af27109afdaacfdb66fb5948a86e03675", null ],
       [ "OC_LOG_LEVEL_TRACE", "oc__log_8h.html#abf655f01c4ec91ee48607f5441c45df9ab6dfd07f3e0182841ac8de2cad36dbd1", null ]
     ] ],
-    [ "oc_log_component_name", "oc__log_8h.html#ac47fea1c4fd3a8293a0022c72c518e89", null ],
-    [ "oc_log_get_level", "oc__log_8h.html#a6cadc4d2b6ef015084f669736b56ca76", null ],
-    [ "oc_log_level_to_label", "oc__log_8h.html#a4a3fe1eb490914dbe14027f16d8c0fce", null ],
-    [ "oc_log_set_function", "oc__log_8h.html#ac837959830378e8f68dbf5343777d9a2", null ],
-    [ "oc_log_set_level", "oc__log_8h.html#a7e7ce64f812e071f9a52a4b6b31880b0", null ]
+    [ "oc_log_component_name", "oc__log_8h.html#a311b75ac104d928b5b4be653bce0e4dc", null ],
+    [ "oc_log_get_level", "oc__log_8h.html#adee58eb4b82e19ac88132fa26db9e754", null ],
+    [ "oc_log_level_to_label", "oc__log_8h.html#a7df37b2c0c1c8a28b18b0dded3f810c2", null ],
+    [ "oc_log_set_level", "oc__log_8h.html#a29facd39577ae2174b94911b29534e12", null ]
 ];

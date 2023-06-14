@@ -12,7 +12,7 @@ var oc__core__res_8h =
     [ "oc_core_get_num_devices", "oc__core__res_8h.html#aa7dc2c2f7072ae6c305e404ddd8b204f", null ],
     [ "oc_core_get_platform_info", "oc__core__res_8h.html#adaf7f631c7ddea5e0e6e8bd50495a160", null ],
     [ "oc_core_get_resource_by_index", "oc__core__res_8h.html#afdf03e702cf42d39a4cf97fe0139a073", null ],
-    [ "oc_core_get_resource_by_uri", "oc__core__res_8h.html#a314e04c4b9a7ebf96d3abfc2c10124bc", null ],
+    [ "oc_core_get_resource_by_uri", "oc__core__res_8h.html#ad1190e8503e5fac15b8a4f84b23946bc", null ],
     [ "oc_core_is_DCR", "oc__core__res_8h.html#a5308cef52443fd78acd2a0768243a446", null ],
     [ "oc_core_is_SVR", "oc__core__res_8h.html#adcfdf872f1bc5b45214e0d112e544576", null ],
     [ "oc_core_is_vertical_resource", "oc__core__res_8h.html#ae13c44607776eac24d60ffd14905fc1d", null ],

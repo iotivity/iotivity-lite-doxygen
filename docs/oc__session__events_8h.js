@@ -7,5 +7,5 @@ var oc__session__events_8h =
       [ "OC_SESSION_CONNECTED", "oc__session__events_8h.html#ac8a484b47be856384dd3d86390f04367adabda0024c60381a2685003932beb6eb", null ],
       [ "OC_SESSION_DISCONNECTED", "oc__session__events_8h.html#ac8a484b47be856384dd3d86390f04367a2e40e6d7ba847f7230352c35ecbc443b", null ]
     ] ],
-    [ "oc_session_events_set_event_delay", "oc__session__events_8h.html#af9cab4739ad58f230bd27a8142dbba47", null ]
+    [ "oc_session_events_set_event_delay", "oc__session__events_8h.html#a588463b2d953a3d1820a6f72666ff11d", null ]
 ];
