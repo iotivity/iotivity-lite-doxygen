@@ -172,7 +172,7 @@ Data Fields</h2></td></tr>
 <p>Note: Callback is only invoked when OC_SERVER macro is defined.</p>
 <p>Example: </p><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="structoc__handler__t.html#a30a0125aaf993cd9975c700c3a86d5fb">register_resources</a>(<span class="keywordtype">void</span>)</div>
 <div class="line">{</div>
-<div class="line">  <a class="code" href="structoc__resource__s.html">oc_resource_t</a> *bswitch = <a class="code" href="group__doc__module__tag__server__side.html#ga271dfda470f3ae8a051f6dc17c6333c6">oc_new_resource</a>(NULL, <span class="stringliteral">&quot;/switch&quot;</span>, 1, 0);</div>
+<div class="line">  <a class="code" href="structoc__resource__s.html">oc_resource_t</a> *bswitch = <a class="code" href="group__doc__module__tag__server__side.html#ga617ddc7eec68117e14bb4e1bf9f867cc">oc_new_resource</a>(NULL, <span class="stringliteral">&quot;/switch&quot;</span>, 1, 0);</div>
 <div class="line">  <a class="code" href="group__doc__module__tag__server__side.html#gab17128fac474655e423d58b7e008e95a">oc_resource_bind_resource_type</a>(bswitch, <span class="stringliteral">&quot;oic.r.switch.binary&quot;</span>);</div>
 <div class="line">  <a class="code" href="group__doc__module__tag__server__side.html#gacc374cc9a8acc977db8f9f27dc3c593c">oc_resource_bind_resource_interface</a>(bswitch, <a class="code" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2a5e082b6f36e0a90aa92fcd0c2c1af871">OC_IF_A</a>);</div>
 <div class="line">  <a class="code" href="group__doc__module__tag__server__side.html#ga8fc917cb0185f7471b58355d6f400777">oc_resource_set_default_interface</a>(bswitch, <a class="code" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2a5e082b6f36e0a90aa92fcd0c2c1af871">OC_IF_A</a>);</div>
@@ -182,8 +182,8 @@ Data Fields</h2></td></tr>
 <div class="line">  <a class="code" href="group__doc__module__tag__server__side.html#gaf8ac0f8a7d9fc45bab26b132cc9346e6">oc_resource_set_request_handler</a>(bswitch, <a class="code" href="oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26a2a3c53df3082c04b8e49ebaca236529b">OC_POST</a>, post_switch, NULL);</div>
 <div class="line">  <a class="code" href="group__doc__module__tag__server__side.html#ga8cef7c8b4cfdde5cbd79aace72172d41">oc_add_resource</a>(bswitch);</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__doc__module__tag__server__side_html_ga271dfda470f3ae8a051f6dc17c6333c6"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga271dfda470f3ae8a051f6dc17c6333c6">oc_new_resource</a></div><div class="ttdeci">oc_resource_t * oc_new_resource(const char *name, const char *uri, uint8_t num_resource_types, size_t device) 1(2)</div><div class="ttdoc">Allocate and populate a new oc_resource_t.</div></div>
 <div class="ttc" id="agroup__doc__module__tag__server__side_html_ga4c3f04fa5089c82be3e9eb7339ae8f58"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga4c3f04fa5089c82be3e9eb7339ae8f58">oc_resource_set_discoverable</a></div><div class="ttdeci">void oc_resource_set_discoverable(oc_resource_t *resource, bool state)</div><div class="ttdoc">Specify if a resource can be found using OCF discover mechanisms.</div></div>
+<div class="ttc" id="agroup__doc__module__tag__server__side_html_ga617ddc7eec68117e14bb4e1bf9f867cc"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga617ddc7eec68117e14bb4e1bf9f867cc">oc_new_resource</a></div><div class="ttdeci">oc_resource_t * oc_new_resource(const char *name, const char *uri, uint8_t num_resource_types, size_t device)</div><div class="ttdoc">Allocate and populate a new oc_resource_t.</div></div>
 <div class="ttc" id="agroup__doc__module__tag__server__side_html_ga8cef7c8b4cfdde5cbd79aace72172d41"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga8cef7c8b4cfdde5cbd79aace72172d41">oc_add_resource</a></div><div class="ttdeci">bool oc_add_resource(oc_resource_t *resource)</div><div class="ttdoc">Add a resource to the IoTivity stack.</div></div>
 <div class="ttc" id="agroup__doc__module__tag__server__side_html_ga8fc917cb0185f7471b58355d6f400777"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga8fc917cb0185f7471b58355d6f400777">oc_resource_set_default_interface</a></div><div class="ttdeci">void oc_resource_set_default_interface(oc_resource_t *resource, oc_interface_mask_t iface_mask)</div><div class="ttdoc">Select the default interface.</div></div>
 <div class="ttc" id="agroup__doc__module__tag__server__side_html_gab17128fac474655e423d58b7e008e95a"><div class="ttname"><a href="group__doc__module__tag__server__side.html#gab17128fac474655e423d58b7e008e95a">oc_resource_bind_resource_type</a></div><div class="ttdeci">void oc_resource_bind_resource_type(oc_resource_t *resource, const char *type)</div><div class="ttdoc">Add a Resource Type &quot;rt&quot; property to the resource.</div></div>
@@ -197,7 +197,7 @@ Data Fields</h2></td></tr>
 <div class="ttc" id="astructoc__resource__s_html"><div class="ttname"><a href="structoc__resource__s.html">oc_resource_s</a></div><div class="ttdoc">resource structure</div><div class="ttdef"><b>Definition:</b> oc_ri.h:333</div></div>
 </div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="structoc__handler__t.html#a857eaefcde68aba9fe0d2170a660fdfb" title="Device initialization callback that is invoked to initialize the platform and device(s).">init</a> </dd>
 <dd>
-<a class="el" href="group__doc__module__tag__server__side.html#ga271dfda470f3ae8a051f6dc17c6333c6" title="Allocate and populate a new oc_resource_t.">oc_new_resource</a> </dd>
+<a class="el" href="group__doc__module__tag__server__side.html#ga617ddc7eec68117e14bb4e1bf9f867cc" title="Allocate and populate a new oc_resource_t.">oc_new_resource</a> </dd>
 <dd>
 <a class="el" href="group__doc__module__tag__server__side.html#gacc374cc9a8acc977db8f9f27dc3c593c" title="Add the supported interface(s) to the resource.">oc_resource_bind_resource_interface</a> </dd>
 <dd>
@@ -265,7 +265,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Function to signal the event loop so that incomming events are being processed. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__api_8h.html#a2762f261d1f2e78a1169bcba2089ba7f" title="Poll to process tasks.">oc_main_poll</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__api_8h.html#ad146ae2ebe285109e6c3a7fdc193bd6e" title="Poll to process tasks.">oc_main_poll</a> </dd></dl>
 
 </div>
 </div>
@@ -278,7 +278,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structoc__handler__t.html">oc_handler_t</a></li>
-    <li class="footer">Generated on Wed Jun 14 2023 08:08:52 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Jun 15 2023 14:40:22 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -25,9 +25,9 @@ var group__swupdate =
     [ "oc_swupdate_dump", "group__swupdate.html#gaa42725e6ff24a515f8712eddaa65678f", null ],
     [ "oc_swupdate_load", "group__swupdate.html#gad946e004b5f23e86626717a87e60241d", null ],
     [ "oc_swupdate_notify_done", "group__swupdate.html#ga3fb6e4a2c3b0f1858efbbe290131789b", null ],
-    [ "oc_swupdate_notify_downloaded", "group__swupdate.html#ga737b7c48a3cabba8830288a8cac36b73", null ],
-    [ "oc_swupdate_notify_new_version_available", "group__swupdate.html#gaa0f3537d438249e9e96e618ccdc32bfd", null ],
-    [ "oc_swupdate_notify_upgrading", "group__swupdate.html#ga4bf6b7d83f7525dca7326e944599d244", null ],
+    [ "oc_swupdate_notify_downloaded", "group__swupdate.html#ga0a317514a7a002a1c2f3e96975d8b0e0", null ],
+    [ "oc_swupdate_notify_new_version_available", "group__swupdate.html#ga38b6ea006c4815cda2bdbd015b5a08ef", null ],
+    [ "oc_swupdate_notify_upgrading", "group__swupdate.html#gae97d4ea5eadaac56bd5c99a96497bbd5", null ],
     [ "oc_swupdate_set_impl", "group__swupdate.html#ga46e55765e915217b11f63652773a6288", null ],
-    [ "oc_swupdate_validate_update", "group__swupdate.html#gaa88603f68c8ce9f2846eaee87a43fadd", null ]
+    [ "oc_swupdate_validate_update", "group__swupdate.html#ga877ad661888b373c4b137e4e60feaf05", null ]
 ];

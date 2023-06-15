@@ -16,7 +16,7 @@ var group__doc__module__tag__server__side =
     [ "oc_init_query_iterator", "group__doc__module__tag__server__side.html#ga5f33d43ecb0adf38a04d499ecf6b8ea3", null ],
     [ "oc_iterate_query", "group__doc__module__tag__server__side.html#ga1bb22fcc031f05d4749aa3415d02c1b0", null ],
     [ "oc_iterate_query_get_values", "group__doc__module__tag__server__side.html#ga1e26e072f25a51224bbe38a5d0bb9b16", null ],
-    [ "oc_new_resource", "group__doc__module__tag__server__side.html#ga271dfda470f3ae8a051f6dc17c6333c6", null ],
+    [ "oc_new_resource", "group__doc__module__tag__server__side.html#ga617ddc7eec68117e14bb4e1bf9f867cc", null ],
     [ "oc_notify_observers", "group__doc__module__tag__server__side.html#ga43ac6a6fc039b94df00768d69577a9ed", null ],
     [ "oc_notify_observers_delayed", "group__doc__module__tag__server__side.html#ga24e8975d42a239215ee94219967d3853", null ],
     [ "oc_notify_observers_delayed_ms", "group__doc__module__tag__server__side.html#ga946ffe7104c26ee52fc67d5d0e385795", null ],

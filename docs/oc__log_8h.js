@@ -16,8 +16,7 @@ var oc__log_8h =
     [ "OC_SNPRINT_ENDPOINT_ADDR", "oc__log_8h.html#a1115c045f94b1e75b9f46ffea23b1ca1", null ],
     [ "OC_SNPRINTF", "oc__log_8h.html#a3373fa8e600aa48da5e3e72c296a5d3f", null ],
     [ "OC_SNPRINTFipaddr", "oc__log_8h.html#a50e9112adef413c6e200260be9c23483", null ],
-    [ "oc_log_set_function", "oc__log_8h.html#a9a433aa12f9f8732311371d957d04a1e", null ],
-    [ "oc_print_log_fn_t", "oc__log_8h.html#a5bec6abdf7d1ca29ca373345003aa219", null ],
+    [ "oc_print_log_fn_t", "oc__log_8h.html#aa923f01b85ef950b37f59d28bc6a897c", null ],
     [ "oc_log_component_t", "oc__log_8h.html#a51c20822e2ed76081cd103d806e1984f", [
       [ "OC_LOG_COMPONENT_DEFAULT", "oc__log_8h.html#a51c20822e2ed76081cd103d806e1984fa86d1b63ed043b4c72ad9bdd7b84383b7", null ]
     ] ],
@@ -33,5 +32,6 @@ var oc__log_8h =
     [ "oc_log_component_name", "oc__log_8h.html#a311b75ac104d928b5b4be653bce0e4dc", null ],
     [ "oc_log_get_level", "oc__log_8h.html#adee58eb4b82e19ac88132fa26db9e754", null ],
     [ "oc_log_level_to_label", "oc__log_8h.html#a7df37b2c0c1c8a28b18b0dded3f810c2", null ],
+    [ "oc_log_set_function", "oc__log_8h.html#a4a0d6821ea8b9575c986b523f8f7cb45", null ],
     [ "oc_log_set_level", "oc__log_8h.html#a29facd39577ae2174b94911b29534e12", null ]
 ];

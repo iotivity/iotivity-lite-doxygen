@@ -127,12 +127,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga6c18872090327bcae4281b3eb02cd7d7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__time__synchronization.html#ga6c18872090327bcae4281b3eb02cd7d7">plgd_time_fetch</a> (plgd_time_fetch_config_t fetch, unsigned *flags)</td></tr>
 <tr class="memdesc:ga6c18872090327bcae4281b3eb02cd7d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch time from an endpoint by a GET request.  <a href="group__time__synchronization.html#ga6c18872090327bcae4281b3eb02cd7d7">More...</a><br /></td></tr>
 <tr class="separator:ga6c18872090327bcae4281b3eb02cd7d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga27039979fa2e1da86e8e4bf1176112ee"><td class="memItemLeft" align="right" valign="top">plgd_time_fetch_config_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__time__synchronization.html#ga27039979fa2e1da86e8e4bf1176112ee">plgd_time_fetch_config</a> (const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint, const char *uri, <a class="el" href="group__time__synchronization.html#ga082ac5a8844ef7d2fa2bcc7ac3a02edb">plgd_time_on_fetch_fn_t</a> on_fetch, void *on_fetch_data, uint16_t timeout, int selected_identity_credid, bool disable_time_verification) 1(1</td></tr>
-<tr class="memdesc:ga27039979fa2e1da86e8e4bf1176112ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience wrapper to create plgd_time_fetch_config_t with default \ verification function.  <a href="group__time__synchronization.html#ga27039979fa2e1da86e8e4bf1176112ee">More...</a><br /></td></tr>
-<tr class="separator:ga27039979fa2e1da86e8e4bf1176112ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1e5493a34147bea3c9930793303b94a2"><td class="memItemLeft" align="right" valign="top">plgd_time_fetch_config_t plgd_time_fetch_config_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__time__synchronization.html#ga1e5493a34147bea3c9930793303b94a2">plgd_time_fetch_config_with_custom_verification</a> (const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint, const char *uri, <a class="el" href="group__time__synchronization.html#ga082ac5a8844ef7d2fa2bcc7ac3a02edb">plgd_time_on_fetch_fn_t</a> on_fetch, void *on_fetch_data, uint16_t timeout, int selected_identity_credid, <a class="el" href="oc__pki_8h.html#a96373a3f65a5a29bafab923471f8aa3a">oc_pki_verify_certificate_cb_t</a> verify, oc_pki_user_data_t verify_data) 1(1</td></tr>
-<tr class="memdesc:ga1e5493a34147bea3c9930793303b94a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience wrapper to create plgd_time_fetch_config_t with a custom verification function.  <a href="group__time__synchronization.html#ga1e5493a34147bea3c9930793303b94a2">More...</a><br /></td></tr>
-<tr class="separator:ga1e5493a34147bea3c9930793303b94a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafd53fdbfacbe0452615577b19de92efb"><td class="memItemLeft" align="right" valign="top">plgd_time_fetch_config_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__time__synchronization.html#gafd53fdbfacbe0452615577b19de92efb">plgd_time_fetch_config</a> (const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint, const char *uri, <a class="el" href="group__time__synchronization.html#ga082ac5a8844ef7d2fa2bcc7ac3a02edb">plgd_time_on_fetch_fn_t</a> on_fetch, void *on_fetch_data, uint16_t timeout, int selected_identity_credid, bool disable_time_verification)</td></tr>
+<tr class="memdesc:gafd53fdbfacbe0452615577b19de92efb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience wrapper to create plgd_time_fetch_config_t with default \ verification function.  <a href="group__time__synchronization.html#gafd53fdbfacbe0452615577b19de92efb">More...</a><br /></td></tr>
+<tr class="separator:gafd53fdbfacbe0452615577b19de92efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e8cb463c1bfeffb927e408d03f4f605"><td class="memItemLeft" align="right" valign="top">plgd_time_fetch_config_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__time__synchronization.html#ga1e8cb463c1bfeffb927e408d03f4f605">plgd_time_fetch_config_with_custom_verification</a> (const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint, const char *uri, <a class="el" href="group__time__synchronization.html#ga082ac5a8844ef7d2fa2bcc7ac3a02edb">plgd_time_on_fetch_fn_t</a> on_fetch, void *on_fetch_data, uint16_t timeout, int selected_identity_credid, <a class="el" href="oc__pki_8h.html#a96373a3f65a5a29bafab923471f8aa3a">oc_pki_verify_certificate_cb_t</a> verify, oc_pki_user_data_t verify_data)</td></tr>
+<tr class="memdesc:ga1e8cb463c1bfeffb927e408d03f4f605"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience wrapper to create plgd_time_fetch_config_t with a custom verification function.  <a href="group__time__synchronization.html#ga1e8cb463c1bfeffb927e408d03f4f605">More...</a><br /></td></tr>
+<tr class="separator:ga1e8cb463c1bfeffb927e408d03f4f605"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga79f3b02796bf9fe4664ebf9b83d1361c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__time__synchronization.html#ga79f3b02796bf9fe4664ebf9b83d1361c">plgd_time_is_active</a> (void)</td></tr>
 <tr class="memdesc:ga79f3b02796bf9fe4664ebf9b83d1361c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plgd time is active (ie it is set to a valid, non-zero value).  <a href="group__time__synchronization.html#ga79f3b02796bf9fe4664ebf9b83d1361c">More...</a><br /></td></tr>
 <tr class="separator:ga79f3b02796bf9fe4664ebf9b83d1361c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -349,8 +349,8 @@ plgd_time_fetch_flags_t </dd>
 
 </div>
 </div>
-<a id="ga27039979fa2e1da86e8e4bf1176112ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga27039979fa2e1da86e8e4bf1176112ee">&#9670;&nbsp;</a></span>plgd_time_fetch_config()</h2>
+<a id="gafd53fdbfacbe0452615577b19de92efb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafd53fdbfacbe0452615577b19de92efb">&#9670;&nbsp;</a></span>plgd_time_fetch_config()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -409,14 +409,14 @@ plgd_time_fetch_flags_t </dd>
 
 </div>
 </div>
-<a id="ga1e5493a34147bea3c9930793303b94a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1e5493a34147bea3c9930793303b94a2">&#9670;&nbsp;</a></span>plgd_time_fetch_config_with_custom_verification()</h2>
+<a id="ga1e8cb463c1bfeffb927e408d03f4f605"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1e8cb463c1bfeffb927e408d03f4f605">&#9670;&nbsp;</a></span>plgd_time_fetch_config_with_custom_verification()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">plgd_time_fetch_config_t plgd_time_fetch_config_t plgd_time_fetch_config_with_custom_verification </td>
+          <td class="memname">plgd_time_fetch_config_t plgd_time_fetch_config_with_custom_verification </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *&#160;</td>
           <td class="paramname"><em>endpoint</em>, </td>
@@ -639,7 +639,7 @@ false otherwise</dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Jun 14 2023 08:08:52 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Jun 15 2023 14:40:22 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
