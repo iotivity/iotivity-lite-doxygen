@@ -36,6 +36,7 @@ var oc__rep_8h =
     [ "oc_rep_set_object", "oc__rep_8h.html#aa40ef72174872181f7a28edce8aa18e0", null ],
     [ "oc_rep_set_string_array", "oc__rep_8h.html#ad89e47d54be293ed09821ad9515b3c0e", null ],
     [ "oc_rep_set_text_string", "oc__rep_8h.html#a0d03ba29dc294529f479e75e82f4eb78", null ],
+    [ "oc_rep_set_text_string_v1", "oc__rep_8h.html#af9b0d33d98247ece5c153021ad582dc4", null ],
     [ "oc_rep_set_uint", "oc__rep_8h.html#a722eb5b9eb21c85cdcececb6c32de918", null ],
     [ "oc_rep_set_value_boolean", "oc__rep_8h.html#a9c3be19eacf970ee046497e695f9ea53", null ],
     [ "oc_rep_set_value_byte_string", "oc__rep_8h.html#acfa9cd8c30739ea13784e03fe8fb258b", null ],
