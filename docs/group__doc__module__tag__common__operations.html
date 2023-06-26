@@ -103,12 +103,12 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga64b9f2692bf69bc1bd817edcc35fc711"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__common__operations.html#ga64b9f2692bf69bc1bd817edcc35fc711">oc_has_delayed_callback</a> (void *cb_data, oc_trigger_t callback, bool ignore_cb_data)</td></tr>
-<tr class="memdesc:ga64b9f2692bf69bc1bd817edcc35fc711"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if given delayed callback has already been scheduled.  <a href="group__doc__module__tag__common__operations.html#ga64b9f2692bf69bc1bd817edcc35fc711">More...</a><br /></td></tr>
-<tr class="separator:ga64b9f2692bf69bc1bd817edcc35fc711"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf8cac4f44a0020db72b7b9800191a430"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__common__operations.html#gaf8cac4f44a0020db72b7b9800191a430">oc_remove_delayed_callback</a> (void *cb_data, oc_trigger_t callback)</td></tr>
-<tr class="memdesc:gaf8cac4f44a0020db72b7b9800191a430"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel a scheduled delayed callback.  <a href="group__doc__module__tag__common__operations.html#gaf8cac4f44a0020db72b7b9800191a430">More...</a><br /></td></tr>
-<tr class="separator:gaf8cac4f44a0020db72b7b9800191a430"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac363801b6f625fe43ae46f815e5abedd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__common__operations.html#gac363801b6f625fe43ae46f815e5abedd">oc_has_delayed_callback</a> (const void *cb_data, oc_trigger_t callback, bool ignore_cb_data)</td></tr>
+<tr class="memdesc:gac363801b6f625fe43ae46f815e5abedd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if given delayed callback has already been scheduled.  <a href="group__doc__module__tag__common__operations.html#gac363801b6f625fe43ae46f815e5abedd">More...</a><br /></td></tr>
+<tr class="separator:gac363801b6f625fe43ae46f815e5abedd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae4f1d9fed0f903d5a0199aaa973a1a4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__common__operations.html#gae4f1d9fed0f903d5a0199aaa973a1a4e">oc_remove_delayed_callback</a> (const void *cb_data, oc_trigger_t callback)</td></tr>
+<tr class="memdesc:gae4f1d9fed0f903d5a0199aaa973a1a4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel a scheduled delayed callback.  <a href="group__doc__module__tag__common__operations.html#gae4f1d9fed0f903d5a0199aaa973a1a4e">More...</a><br /></td></tr>
+<tr class="separator:gae4f1d9fed0f903d5a0199aaa973a1a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaeed0c2a86b0258918a18fb7b97874024"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__common__operations.html#gaeed0c2a86b0258918a18fb7b97874024">oc_remove_delayed_callback_by_filter</a> (oc_trigger_t cb, <a class="el" href="oc__ri_8h.html#ac53a2923da1e036f62cb84da82d1c8c3">oc_ri_timed_event_filter_t</a> filter, const void *filter_data, bool match_all, <a class="el" href="oc__ri_8h.html#a41f1ba7b8bc314d1f6bb1bb35a4b16ce">oc_ri_timed_event_on_delete_t</a> on_delete)</td></tr>
 <tr class="memdesc:gaeed0c2a86b0258918a18fb7b97874024"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel a scheduled delayed callback by matching it by the provided filtering function.  <a href="group__doc__module__tag__common__operations.html#gaeed0c2a86b0258918a18fb7b97874024">More...</a><br /></td></tr>
 <tr class="separator:gaeed0c2a86b0258918a18fb7b97874024"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,13 +169,13 @@ Functions</h2></td></tr>
 <div class="line">    (void)data;                                                                \</div>
 <div class="line">    OC_PROCESS_POLLHANDLER(name##_interrupt_x_handler());                      \</div>
 <div class="line">    OC_PROCESS_BEGIN();                                                        \</div>
-<div class="line">    while (<a class="code" href="group__process.html#gac28bc723f39c8c32e62cf40eff31e423">oc_process_is_running</a>(&amp;(name##_interrupt_x))) {                     \</div>
+<div class="line">    while (<a class="code" href="group__process.html#gaf1ac9aea33fd05e179998dd7715583cc">oc_process_is_running</a>(&amp;(name##_interrupt_x))) {                     \</div>
 <div class="line">      OC_PROCESS_YIELD();                                                      \</div>
 <div class="line">    }                                                                          \</div>
 <div class="line">    OC_PROCESS_END();                                                          \</div>
 <div class="line">  }                                                                            \</div>
 <div class="line">  void name##_interrupt_x_handler(<span class="keywordtype">void</span>)</div>
-<div class="ttc" id="agroup__process_html_gac28bc723f39c8c32e62cf40eff31e423"><div class="ttname"><a href="group__process.html#gac28bc723f39c8c32e62cf40eff31e423">oc_process_is_running</a></div><div class="ttdeci">int oc_process_is_running(struct oc_process *p)</div><div class="ttdoc">Check if a process is running.</div></div>
+<div class="ttc" id="agroup__process_html_gaf1ac9aea33fd05e179998dd7715583cc"><div class="ttname"><a href="group__process.html#gaf1ac9aea33fd05e179998dd7715583cc">oc_process_is_running</a></div><div class="ttdeci">int oc_process_is_running(const struct oc_process *p)</div><div class="ttdoc">Check if a process is running.</div></div>
 </div><!-- fragment -->
 <p>define the interrupt handler </p>
 
@@ -206,8 +206,8 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga64b9f2692bf69bc1bd817edcc35fc711"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga64b9f2692bf69bc1bd817edcc35fc711">&#9670;&nbsp;</a></span>oc_has_delayed_callback()</h2>
+<a id="gac363801b6f625fe43ae46f815e5abedd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac363801b6f625fe43ae46f815e5abedd">&#9670;&nbsp;</a></span>oc_has_delayed_callback()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -215,7 +215,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">bool oc_has_delayed_callback </td>
           <td>(</td>
-          <td class="paramtype">void *&#160;</td>
+          <td class="paramtype">const void *&#160;</td>
           <td class="paramname"><em>cb_data</em>, </td>
         </tr>
         <tr>
@@ -254,8 +254,8 @@ false otherwise </dd></dl>
 
 </div>
 </div>
-<a id="gaf8cac4f44a0020db72b7b9800191a430"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf8cac4f44a0020db72b7b9800191a430">&#9670;&nbsp;</a></span>oc_remove_delayed_callback()</h2>
+<a id="gae4f1d9fed0f903d5a0199aaa973a1a4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae4f1d9fed0f903d5a0199aaa973a1a4e">&#9670;&nbsp;</a></span>oc_remove_delayed_callback()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -263,7 +263,7 @@ false otherwise </dd></dl>
         <tr>
           <td class="memname">void oc_remove_delayed_callback </td>
           <td>(</td>
-          <td class="paramtype">void *&#160;</td>
+          <td class="paramtype">const void *&#160;</td>
           <td class="paramname"><em>cb_data</em>, </td>
         </tr>
         <tr>
@@ -530,7 +530,7 @@ false otherwise </dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jun 23 2023 13:34:36 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 26 2023 07:27:23 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
