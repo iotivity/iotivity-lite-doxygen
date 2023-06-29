@@ -8,7 +8,7 @@ var searchData=
   ['init_96',['init',['../structoc__handler__t.html#a857eaefcde68aba9fe0d2170a660fdfb',1,'oc_handler_t']]],
   ['init_5fplatform_5fcb_97',['init_platform_cb',['../structoc__platform__info__t.html#a5c1f98ebf57c76a495ad7e274ad97491',1,'oc_platform_info_t']]],
   ['interface_5fevent_5fhandler_5ft_98',['interface_event_handler_t',['../oc__network__events_8h.html#acf84b55c3b10e0a5a7cfff4329008b90',1,'oc_network_events.h']]],
-  ['interface_5findex_99',['interface_index',['../structoc__endpoint__t.html#ae86afaa4df8c3f253d0f526b9540e1e8',1,'oc_endpoint_t']]],
+  ['interface_5findex_99',['interface_index',['../structoc__endpoint__t.html#ac26edbdb4bb5bab4a406ec807db4e4e4',1,'oc_endpoint_t']]],
   ['interfaces_100',['interfaces',['../structoc__ace__res__t.html#a68c97e7ff73ecf882e2b4a126a5c6faa',1,'oc_ace_res_t::interfaces()'],['../structoc__resource__s.html#a68c97e7ff73ecf882e2b4a126a5c6faa',1,'oc_resource_s::interfaces()']]],
   ['iotivity_2dlite_20api_101',['IoTivity-Lite API',['../index.html',1,'']]],
   ['ipv4_102',['IPV4',['../oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78acfc4c1053c60b6cc2a7776c60969f31f',1,'oc_endpoint.h']]],

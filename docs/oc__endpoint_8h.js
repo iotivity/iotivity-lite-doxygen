@@ -29,7 +29,7 @@ var oc__endpoint_8h =
     [ "oc_endpoint_list_copy", "oc__endpoint_8h.html#a12e5cb8672de5428d84b5e8b82988df8", null ],
     [ "oc_endpoint_list_free", "oc__endpoint_8h.html#aaf2fdb7dff0b7bd9d209bc7ba306904b", null ],
     [ "oc_endpoint_set_di", "oc__endpoint_8h.html#a23a8eeb9820fae0ea8a28b7cdd980050", null ],
-    [ "oc_endpoint_set_local_address", "oc__endpoint_8h.html#af055cc72d372ead0c5b58f60896c064f", null ],
+    [ "oc_endpoint_set_local_address", "oc__endpoint_8h.html#ab1cde28809d4868866ab23df047fd8e2", null ],
     [ "oc_endpoint_string_parse_path", "oc__endpoint_8h.html#a54edc0ea5f6bf111e0a24d13ff26b156", null ],
     [ "oc_endpoint_to_string", "oc__endpoint_8h.html#a0b56350db360ea2e2c46abb649384132", null ],
     [ "oc_free_endpoint", "oc__endpoint_8h.html#aef7806ac74d70ffd0e986dd08b66a3e7", null ],
