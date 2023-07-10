@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"structoc__device__info__t.html#afce58c82d138d2ed2d62dcbd3b3f02eb":[3,0,8,6],
 "structoc__endpoint__t.html":[3,0,9],
 "structoc__endpoint__t.html#a0942a0902616fd2591dc585d2193e323":[3,0,9,4],
 "structoc__endpoint__t.html#a0ad043071ccc7a261d79a759dc9c6f0c":[3,0,9,7],
