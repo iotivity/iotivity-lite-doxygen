@@ -8,8 +8,7 @@ var oc__ri_8h =
     [ "OC_NUM_CORE_RESOURCES_PER_DEVICE", "oc__ri_8h.html#a0122290e3f56dba478d442c5c6681860", null ],
     [ "oc_ri_add_timed_event_callback_seconds", "oc__ri_8h.html#a4e6fe6ae768f87ff05d7d6696da225f8", null ],
     [ "oc_collection_t", "oc__ri_8h.html#aaeea17ea80036310d62e43ef1fb2714e", null ],
-    [ "oc_get_properties_cb_t", "oc__ri_8h.html#ad13e620d8765af96f28937e52f817726", null ],
-    [ "oc_link_t", "oc__ri_8h.html#a0c0cf4983494ee97927016dcd4af1d79", null ],
+    [ "oc_get_properties_cb_t", "oc__ri_8h.html#af1dcc98c0f48619b5fe54ae5254285f6", null ],
     [ "oc_payload_callback_t", "oc__ri_8h.html#ab3356150f36167cd5b5aa73bd23bc854", null ],
     [ "oc_properties_cb_t", "oc__ri_8h.html#ac3508ca00139d64f25fb3af2ab967f9d", null ],
     [ "oc_request_callback_t", "oc__ri_8h.html#aca4fa152ba1f8d2cd7639bf5c8276dbe", null ],
@@ -23,7 +22,7 @@ var oc__ri_8h =
     [ "oc_ri_timed_event_filter_t", "oc__ri_8h.html#ac53a2923da1e036f62cb84da82d1c8c3", null ],
     [ "oc_ri_timed_event_on_delete_t", "oc__ri_8h.html#a41f1ba7b8bc314d1f6bb1bb35a4b16ce", null ],
     [ "oc_separate_response_t", "oc__ri_8h.html#aa8574b4921b4ecdddd325a4634bec426", null ],
-    [ "oc_set_properties_cb_t", "oc__ri_8h.html#ad38ea7c0a6833931d8bfe8094c5100e4", null ],
+    [ "oc_set_properties_cb_t", "oc__ri_8h.html#ac52d90bf7c0c740d4c72ee0e34ca5678", null ],
     [ "oc_trigger_t", "oc__ri_8h.html#a4939e040b70ea8c4ba21504206f3b77a", null ],
     [ "oc_content_format_t", "oc__ri_8h.html#a83161604a805e3a951254864d16a714f", [
       [ "TEXT_PLAIN", "oc__ri_8h.html#a83161604a805e3a951254864d16a714fa01abe8b1134f6dcd8a242afa0522ed20", null ],

@@ -1,6 +1,5 @@
 var group__doc__module__tag__server__side =
 [
-    [ "Collection Support", "group__doc__module__tag__collections.html", "group__doc__module__tag__collections" ],
     [ "oc_con_write_cb_t", "group__doc__module__tag__server__side.html#ga3eaefb66d2e5bf5009aeac9d8276e065", null ],
     [ "oc_send_response_cb_t", "group__doc__module__tag__server__side.html#ga81109e81a7c40aaa290298e9411ed95d", null ],
     [ "oc_add_resource", "group__doc__module__tag__server__side.html#ga8cef7c8b4cfdde5cbd79aace72172d41", null ],

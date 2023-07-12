@@ -85,7 +85,7 @@ $(document).ready(function(){initNavTree('globals_func_o.html',''); initResizabl
 
 <h3><a id="index_o"></a>- o -</h3><ul>
 <li>oc_add_collection()
-: <a class="el" href="group__doc__module__tag__collections.html#ga80b00ed34f2fe3db8f580136c124fcda">oc_api.h</a>
+: <a class="el" href="group__doc__module__tag__collections.html#ga80b00ed34f2fe3db8f580136c124fcda">oc_collection.h</a>
 </li>
 <li>oc_add_device()
 : <a class="el" href="oc__api_8h.html#a5aa72dd8d7d03ff826801b1d7d67ec68">oc_api.h</a>
@@ -176,6 +176,9 @@ $(document).ready(function(){initNavTree('globals_func_o.html',''); initResizabl
 </li>
 <li>oc_blockwise_scrub_buffers_for_client_cb()
 : <a class="el" href="oc__blockwise_8h.html#aa1970f26ed119c8769fe8dbb37f225b5">oc_blockwise.h</a>
+</li>
+<li>oc_check_if_collection()
+: <a class="el" href="group__doc__module__tag__collections.html#gad90e3dbb05945f79dba5f837a9b50f37">oc_collection.h</a>
 </li>
 <li>oc_clock_encode_time_rfc3339()
 : <a class="el" href="oc__clock__util_8h.html#aa5254553d996a0291ada3b55b67c9de6">oc_clock_util.h</a>
@@ -271,25 +274,25 @@ $(document).ready(function(){initNavTree('globals_func_o.html',''); initResizabl
 : <a class="el" href="oc__ri_8h.html#a40f5d9d8f4c1c0eeb2db66e071946a1a">oc_ri.h</a>
 </li>
 <li>oc_collection_add_link()
-: <a class="el" href="group__doc__module__tag__collections.html#ga6a9ecdee57240345da72c313816d1222">oc_api.h</a>
+: <a class="el" href="group__doc__module__tag__collections.html#ga6a9ecdee57240345da72c313816d1222">oc_collection.h</a>
 </li>
 <li>oc_collection_add_mandatory_rt()
-: <a class="el" href="group__doc__module__tag__collections.html#ga7bb4d71ec25a70bb5589d4e0779ed10d">oc_api.h</a>
+: <a class="el" href="group__doc__module__tag__collections.html#ga7bb4d71ec25a70bb5589d4e0779ed10d">oc_collection.h</a>
 </li>
 <li>oc_collection_add_supported_rt()
-: <a class="el" href="group__doc__module__tag__collections.html#gab38e8990085bdd2fee9a4f6b33277ca3">oc_api.h</a>
+: <a class="el" href="group__doc__module__tag__collections.html#gab38e8990085bdd2fee9a4f6b33277ca3">oc_collection.h</a>
 </li>
 <li>oc_collection_get_collections()
-: <a class="el" href="group__doc__module__tag__collections.html#gaec556c907f4579bc98b77a389e11c8b2">oc_api.h</a>
+: <a class="el" href="group__doc__module__tag__collections.html#gaec556c907f4579bc98b77a389e11c8b2">oc_collection.h</a>
 </li>
 <li>oc_collection_get_links()
-: <a class="el" href="group__doc__module__tag__collections.html#gaa42bc380835480c2f8c0bbb36afe3d5b">oc_api.h</a>
+: <a class="el" href="group__doc__module__tag__collections.html#gaa42bc380835480c2f8c0bbb36afe3d5b">oc_collection.h</a>
 </li>
 <li>oc_collection_remove_link()
-: <a class="el" href="group__doc__module__tag__collections.html#ga8e7bf04fbe26dd511433fccaec808ba5">oc_api.h</a>
+: <a class="el" href="group__doc__module__tag__collections.html#ga26f7c3b5172c635769a9afe533e4c58d">oc_collection.h</a>
 </li>
 <li>oc_collections_add_rt_factory()
-: <a class="el" href="group__doc__module__tag__collections.html#ga93ee63ad8ffe46aac86fdb0d2c29517d">oc_api.h</a>
+: <a class="el" href="group__doc__module__tag__collections.html#ga93ee63ad8ffe46aac86fdb0d2c29517d">oc_collection.h</a>
 </li>
 <li>oc_concat_strings()
 : <a class="el" href="oc__helpers_8h.html#abea070fa12fb10b3d8ad0f15405413bc">oc_helpers.h</a>
@@ -367,10 +370,7 @@ $(document).ready(function(){initNavTree('globals_func_o.html',''); initResizabl
 : <a class="el" href="group__doc__module__tag__server__side.html#gabb337e93d0191bd886fb66c872d80f2c">oc_api.h</a>
 </li>
 <li>oc_delete_collection()
-: <a class="el" href="group__doc__module__tag__collections.html#gad71cbab4922733b98c278e942ef9f749">oc_api.h</a>
-</li>
-<li>oc_delete_link()
-: <a class="el" href="group__doc__module__tag__collections.html#ga0fde42ca7451b515a445c3247acccbb5">oc_api.h</a>
+: <a class="el" href="group__doc__module__tag__collections.html#gad71cbab4922733b98c278e942ef9f749">oc_collection.h</a>
 </li>
 <li>oc_delete_resource()
 : <a class="el" href="group__doc__module__tag__server__side.html#ga8be722cad423befa951a60f518e6f3b2">oc_api.h</a>
@@ -495,11 +495,17 @@ $(document).ready(function(){initNavTree('globals_func_o.html',''); initResizabl
 <li>oc_get_block_size()
 : <a class="el" href="oc__buffer__settings_8h.html#a2d9adeaa04bd249c62d9354e338c0ea2">oc_buffer_settings.h</a>
 </li>
+<li>oc_get_collection_by_uri()
+: <a class="el" href="group__doc__module__tag__collections.html#ga76add668e73ffeac807ad78776779b14">oc_collection.h</a>
+</li>
 <li>oc_get_con_res_announced()
 : <a class="el" href="oc__api_8h.html#a81431be6c5b5bfa9949bf4b0fcd4b644">oc_api.h</a>
 </li>
 <li>oc_get_diagnostic_message()
 : <a class="el" href="group__doc__module__tag__server__side.html#ga7376142521e76079732029aafc2ba8be">oc_api.h</a>
+</li>
+<li>oc_get_link_by_uri()
+: <a class="el" href="group__doc__module__tag__collections.html#gab399eb0562f956545644fb6cd0a0fa1a">oc_collection.h</a>
 </li>
 <li>oc_get_max_app_data_size()
 : <a class="el" href="oc__buffer__settings_8h.html#af5c1976a08fda4dace2f903182bb9fa5">oc_buffer_settings.h</a>
@@ -555,12 +561,6 @@ $(document).ready(function(){initNavTree('globals_func_o.html',''); initResizabl
 <li>oc_join_string_array()
 : <a class="el" href="oc__helpers_8h.html#a9170160c3afc735c8adf574d00d20c8c">oc_helpers.h</a>
 </li>
-<li>oc_link_add_link_param()
-: <a class="el" href="group__doc__module__tag__collections.html#gaa5eac589eff762c4010554ebe0570b78">oc_api.h</a>
-</li>
-<li>oc_link_add_rel()
-: <a class="el" href="group__doc__module__tag__collections.html#ga3414d119ce8f0952f3f9cbb2797d3bf3">oc_api.h</a>
-</li>
 <li>oc_log_component_name()
 : <a class="el" href="oc__log_8h.html#a311b75ac104d928b5b4be653bce0e4dc">oc_log.h</a>
 </li>
@@ -598,13 +598,10 @@ $(document).ready(function(){initNavTree('globals_func_o.html',''); initResizabl
 : <a class="el" href="oc__ri_8h.html#a5441f67b701d7704968f8bbe90b3ac19">oc_ri.h</a>
 </li>
 <li>oc_new_collection()
-: <a class="el" href="group__doc__module__tag__collections.html#ga0c961214569feae0005677b211a1adf5">oc_api.h</a>
+: <a class="el" href="group__doc__module__tag__collections.html#ga0c961214569feae0005677b211a1adf5">oc_collection.h</a>
 </li>
 <li>oc_new_endpoint()
 : <a class="el" href="oc__endpoint_8h.html#a88dae151cb9ce2e28cf32a63e0e5a803">oc_endpoint.h</a>
-</li>
-<li>oc_new_link()
-: <a class="el" href="group__doc__module__tag__collections.html#ga3c3efa1e33185f408cd99ad515a9c23e">oc_api.h</a>
 </li>
 <li>oc_new_resource()
 : <a class="el" href="group__doc__module__tag__server__side.html#ga617ddc7eec68117e14bb4e1bf9f867cc">oc_api.h</a>
@@ -958,7 +955,7 @@ $(document).ready(function(){initNavTree('globals_func_o.html',''); initResizabl
 : <a class="el" href="group__doc__module__tag__server__side.html#gac8cdb7e511c08982d790c323d8db7c6e">oc_api.h</a>
 </li>
 <li>oc_resource_set_properties_cbs()
-: <a class="el" href="group__doc__module__tag__collections.html#gaf9028094981175854c699f6da4a34131">oc_api.h</a>
+: <a class="el" href="group__doc__module__tag__collections.html#gaf9028094981175854c699f6da4a34131">oc_collection.h</a>
 </li>
 <li>oc_resource_set_pushable()
 : <a class="el" href="group__doc__module__tag__server__side.html#ga10141eaa0a8819f6c7e7eb22109a7881">oc_api.h</a>
@@ -1317,7 +1314,7 @@ $(document).ready(function(){initNavTree('globals_func_o.html',''); initResizabl
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jul 10 2023 06:53:13 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Jul 12 2023 20:41:14 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

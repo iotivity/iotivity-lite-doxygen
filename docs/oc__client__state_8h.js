@@ -5,8 +5,8 @@ var oc__client__state_8h =
     [ "oc_client_response_t", "structoc__client__response__t.html", "structoc__client__response__t" ],
     [ "oc_client_cb_t", "oc__client__state_8h.html#a6ae3d9f971c173ac0bc218e81d72746b", null ],
     [ "oc_client_handler_t", "oc__client__state_8h.html#a86a7712879d069005b2b51a31a8074c1", null ],
-    [ "oc_discovery_all_handler_t", "oc__client__state_8h.html#ad0e8cd636823e22b2730c313b456b379", null ],
-    [ "oc_discovery_handler_t", "oc__client__state_8h.html#a4d5394353a67d4186ead8cd6d68fa168", null ],
+    [ "oc_discovery_all_handler_t", "oc__client__state_8h.html#af8f929c346d4b6934a7d16d1a37d30d2", null ],
+    [ "oc_discovery_handler_t", "oc__client__state_8h.html#a1d1f88c87456daec342c87372f31216f", null ],
     [ "oc_response_handler_t", "oc__client__state_8h.html#ab93155ce23b0cb02c7c7d71b5c251486", null ],
     [ "oc_discovery_flags_t", "oc__client__state_8h.html#a983b138b2c42a68570ba23e19deb19b3", [
       [ "OC_STOP_DISCOVERY", "oc__client__state_8h.html#a983b138b2c42a68570ba23e19deb19b3afb9e0389577f8dde325ec0e2d131edec", null ],

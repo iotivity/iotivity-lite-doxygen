@@ -85,7 +85,7 @@ $(document).ready(function(){initNavTree('group__doc__module__tag__collections.h
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Collection Support<div class="ingroups"><a class="el" href="group__doc__module__tag__server__side.html">Server side</a></div></div>  </div>
+<div class="title">Collection Support</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -97,15 +97,18 @@ Typedefs</h2></td></tr>
 <tr class="memitem:gab130607248507d452563e8521f6b34ab"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__collections.html#gab130607248507d452563e8521f6b34ab">oc_resource_free_instance_t</a>) (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *)</td></tr>
 <tr class="memdesc:gab130607248507d452563e8521f6b34ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback invoked to delete an resource.  <a href="group__doc__module__tag__collections.html#gab130607248507d452563e8521f6b34ab">More...</a><br /></td></tr>
 <tr class="separator:gab130607248507d452563e8521f6b34ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabd4df858d188b26542c6bfc7a8759084"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structoc__resource__s.html">oc_resource_t</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__collections.html#gabd4df858d188b26542c6bfc7a8759084">oc_resource_get_instance_t</a>) (const char *, oc_string_array_t *, <a class="el" href="oc__ri_8h.html#aab06afb6391b17826f3af7d1a6227a4b">oc_resource_properties_t</a>, <a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a>, size_t)</td></tr>
-<tr class="memdesc:gabd4df858d188b26542c6bfc7a8759084"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback invoked to retrieve an resource.  <a href="group__doc__module__tag__collections.html#gabd4df858d188b26542c6bfc7a8759084">More...</a><br /></td></tr>
-<tr class="separator:gabd4df858d188b26542c6bfc7a8759084"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga16b6b6531c11a224dd100e7127716843"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structoc__resource__s.html">oc_resource_t</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__collections.html#ga16b6b6531c11a224dd100e7127716843">oc_resource_get_instance_t</a>) (const char *, const oc_string_array_t *, <a class="el" href="oc__ri_8h.html#aab06afb6391b17826f3af7d1a6227a4b">oc_resource_properties_t</a>, <a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a>, size_t)</td></tr>
+<tr class="memdesc:ga16b6b6531c11a224dd100e7127716843"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback invoked to retrieve an resource.  <a href="group__doc__module__tag__collections.html#ga16b6b6531c11a224dd100e7127716843">More...</a><br /></td></tr>
+<tr class="separator:ga16b6b6531c11a224dd100e7127716843"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga80b00ed34f2fe3db8f580136c124fcda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__collections.html#ga80b00ed34f2fe3db8f580136c124fcda">oc_add_collection</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *collection)</td></tr>
 <tr class="memdesc:ga80b00ed34f2fe3db8f580136c124fcda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a collection to the list of collections.  <a href="group__doc__module__tag__collections.html#ga80b00ed34f2fe3db8f580136c124fcda">More...</a><br /></td></tr>
 <tr class="separator:ga80b00ed34f2fe3db8f580136c124fcda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad90e3dbb05945f79dba5f837a9b50f37"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__collections.html#gad90e3dbb05945f79dba5f837a9b50f37">oc_check_if_collection</a> (const <a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
+<tr class="memdesc:gad90e3dbb05945f79dba5f837a9b50f37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if resource is a global collection.  <a href="group__doc__module__tag__collections.html#gad90e3dbb05945f79dba5f837a9b50f37">More...</a><br /></td></tr>
+<tr class="separator:gad90e3dbb05945f79dba5f837a9b50f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6a9ecdee57240345da72c313816d1222"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__collections.html#ga6a9ecdee57240345da72c313816d1222">oc_collection_add_link</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *collection, oc_link_t *link)</td></tr>
 <tr class="memdesc:ga6a9ecdee57240345da72c313816d1222"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the link to the collection.  <a href="group__doc__module__tag__collections.html#ga6a9ecdee57240345da72c313816d1222">More...</a><br /></td></tr>
 <tr class="separator:ga6a9ecdee57240345da72c313816d1222"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,31 +124,25 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa42bc380835480c2f8c0bbb36afe3d5b"><td class="memItemLeft" align="right" valign="top">oc_link_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__collections.html#gaa42bc380835480c2f8c0bbb36afe3d5b">oc_collection_get_links</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *collection)</td></tr>
 <tr class="memdesc:gaa42bc380835480c2f8c0bbb36afe3d5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the list of links belonging to this collection.  <a href="group__doc__module__tag__collections.html#gaa42bc380835480c2f8c0bbb36afe3d5b">More...</a><br /></td></tr>
 <tr class="separator:gaa42bc380835480c2f8c0bbb36afe3d5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8e7bf04fbe26dd511433fccaec808ba5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__collections.html#ga8e7bf04fbe26dd511433fccaec808ba5">oc_collection_remove_link</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *collection, oc_link_t *link)</td></tr>
-<tr class="memdesc:ga8e7bf04fbe26dd511433fccaec808ba5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a link from the collection.  <a href="group__doc__module__tag__collections.html#ga8e7bf04fbe26dd511433fccaec808ba5">More...</a><br /></td></tr>
-<tr class="separator:ga8e7bf04fbe26dd511433fccaec808ba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga93ee63ad8ffe46aac86fdb0d2c29517d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__collections.html#ga93ee63ad8ffe46aac86fdb0d2c29517d">oc_collections_add_rt_factory</a> (const char *rt, <a class="el" href="group__doc__module__tag__collections.html#gabd4df858d188b26542c6bfc7a8759084">oc_resource_get_instance_t</a> get_instance, <a class="el" href="group__doc__module__tag__collections.html#gab130607248507d452563e8521f6b34ab">oc_resource_free_instance_t</a> free_instance)</td></tr>
+<tr class="memitem:ga26f7c3b5172c635769a9afe533e4c58d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__collections.html#ga26f7c3b5172c635769a9afe533e4c58d">oc_collection_remove_link</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *collection, const oc_link_t *link)</td></tr>
+<tr class="memdesc:ga26f7c3b5172c635769a9afe533e4c58d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a link from the collection.  <a href="group__doc__module__tag__collections.html#ga26f7c3b5172c635769a9afe533e4c58d">More...</a><br /></td></tr>
+<tr class="separator:ga26f7c3b5172c635769a9afe533e4c58d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga93ee63ad8ffe46aac86fdb0d2c29517d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__collections.html#ga93ee63ad8ffe46aac86fdb0d2c29517d">oc_collections_add_rt_factory</a> (const char *rt, <a class="el" href="group__doc__module__tag__collections.html#ga16b6b6531c11a224dd100e7127716843">oc_resource_get_instance_t</a> get_instance, <a class="el" href="group__doc__module__tag__collections.html#gab130607248507d452563e8521f6b34ab">oc_resource_free_instance_t</a> free_instance)</td></tr>
 <tr class="memdesc:ga93ee63ad8ffe46aac86fdb0d2c29517d"><td class="mdescLeft">&#160;</td><td class="mdescRight">adds the resource type factory  <a href="group__doc__module__tag__collections.html#ga93ee63ad8ffe46aac86fdb0d2c29517d">More...</a><br /></td></tr>
 <tr class="separator:ga93ee63ad8ffe46aac86fdb0d2c29517d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad71cbab4922733b98c278e942ef9f749"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__collections.html#gad71cbab4922733b98c278e942ef9f749">oc_delete_collection</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *collection)</td></tr>
 <tr class="memdesc:gad71cbab4922733b98c278e942ef9f749"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes the specified collection.  <a href="group__doc__module__tag__collections.html#gad71cbab4922733b98c278e942ef9f749">More...</a><br /></td></tr>
 <tr class="separator:gad71cbab4922733b98c278e942ef9f749"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0fde42ca7451b515a445c3247acccbb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__collections.html#ga0fde42ca7451b515a445c3247acccbb5">oc_delete_link</a> (oc_link_t *link)</td></tr>
-<tr class="memdesc:ga0fde42ca7451b515a445c3247acccbb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes the link.  <a href="group__doc__module__tag__collections.html#ga0fde42ca7451b515a445c3247acccbb5">More...</a><br /></td></tr>
-<tr class="separator:ga0fde42ca7451b515a445c3247acccbb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa5eac589eff762c4010554ebe0570b78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__collections.html#gaa5eac589eff762c4010554ebe0570b78">oc_link_add_link_param</a> (oc_link_t *link, const char *key, const char *value)</td></tr>
-<tr class="memdesc:gaa5eac589eff762c4010554ebe0570b78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a link parameter with specified key and value.  <a href="group__doc__module__tag__collections.html#gaa5eac589eff762c4010554ebe0570b78">More...</a><br /></td></tr>
-<tr class="separator:gaa5eac589eff762c4010554ebe0570b78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3414d119ce8f0952f3f9cbb2797d3bf3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__collections.html#ga3414d119ce8f0952f3f9cbb2797d3bf3">oc_link_add_rel</a> (oc_link_t *link, const char *rel)</td></tr>
-<tr class="memdesc:ga3414d119ce8f0952f3f9cbb2797d3bf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a relation to the link.  <a href="group__doc__module__tag__collections.html#ga3414d119ce8f0952f3f9cbb2797d3bf3">More...</a><br /></td></tr>
-<tr class="separator:ga3414d119ce8f0952f3f9cbb2797d3bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga76add668e73ffeac807ad78776779b14"><td class="memItemLeft" align="right" valign="top">oc_collection_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__collections.html#ga76add668e73ffeac807ad78776779b14">oc_get_collection_by_uri</a> (const char *uri_path, size_t uri_path_len, size_t device)</td></tr>
+<tr class="memdesc:ga76add668e73ffeac807ad78776779b14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a collection in the global collection by its URI.  <a href="group__doc__module__tag__collections.html#ga76add668e73ffeac807ad78776779b14">More...</a><br /></td></tr>
+<tr class="separator:ga76add668e73ffeac807ad78776779b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab399eb0562f956545644fb6cd0a0fa1a"><td class="memItemLeft" align="right" valign="top">oc_link_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__collections.html#gab399eb0562f956545644fb6cd0a0fa1a">oc_get_link_by_uri</a> (oc_collection_t *collection, const char *uri_path, size_t uri_path_len)</td></tr>
+<tr class="memdesc:gab399eb0562f956545644fb6cd0a0fa1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a link from a collection by its URI.  <a href="group__doc__module__tag__collections.html#gab399eb0562f956545644fb6cd0a0fa1a">More...</a><br /></td></tr>
+<tr class="separator:gab399eb0562f956545644fb6cd0a0fa1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0c961214569feae0005677b211a1adf5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__collections.html#ga0c961214569feae0005677b211a1adf5">oc_new_collection</a> (const char *name, const char *uri, uint8_t num_resource_types, size_t device)</td></tr>
 <tr class="memdesc:ga0c961214569feae0005677b211a1adf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new empty collection.  <a href="group__doc__module__tag__collections.html#ga0c961214569feae0005677b211a1adf5">More...</a><br /></td></tr>
 <tr class="separator:ga0c961214569feae0005677b211a1adf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3c3efa1e33185f408cd99ad515a9c23e"><td class="memItemLeft" align="right" valign="top">oc_link_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__collections.html#ga3c3efa1e33185f408cd99ad515a9c23e">oc_new_link</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
-<tr class="memdesc:ga3c3efa1e33185f408cd99ad515a9c23e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new link for collections with the specified resource.  <a href="group__doc__module__tag__collections.html#ga3c3efa1e33185f408cd99ad515a9c23e">More...</a><br /></td></tr>
-<tr class="separator:ga3c3efa1e33185f408cd99ad515a9c23e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf9028094981175854c699f6da4a34131"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__collections.html#gaf9028094981175854c699f6da4a34131">oc_resource_set_properties_cbs</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, <a class="el" href="oc__ri_8h.html#ad13e620d8765af96f28937e52f817726">oc_get_properties_cb_t</a> get_properties, void *get_props_user_data, <a class="el" href="oc__ri_8h.html#ad38ea7c0a6833931d8bfe8094c5100e4">oc_set_properties_cb_t</a> set_properties, void *set_props_user_data)</td></tr>
+<tr class="memitem:gaf9028094981175854c699f6da4a34131"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__collections.html#gaf9028094981175854c699f6da4a34131">oc_resource_set_properties_cbs</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, <a class="el" href="oc__ri_8h.html#af1dcc98c0f48619b5fe54ae5254285f6">oc_get_properties_cb_t</a> get_properties, void *get_props_user_data, <a class="el" href="oc__ri_8h.html#ac52d90bf7c0c740d4c72ee0e34ca5678">oc_set_properties_cb_t</a> set_properties, void *set_props_user_data)</td></tr>
 <tr class="memdesc:gaf9028094981175854c699f6da4a34131"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the callback properties for set properties and get properties  <a href="group__doc__module__tag__collections.html#gaf9028094981175854c699f6da4a34131">More...</a><br /></td></tr>
 <tr class="separator:gaf9028094981175854c699f6da4a34131"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -168,14 +165,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gabd4df858d188b26542c6bfc7a8759084"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabd4df858d188b26542c6bfc7a8759084">&#9670;&nbsp;</a></span>oc_resource_get_instance_t</h2>
+<a id="ga16b6b6531c11a224dd100e7127716843"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga16b6b6531c11a224dd100e7127716843">&#9670;&nbsp;</a></span>oc_resource_get_instance_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="structoc__resource__s.html">oc_resource_t</a>*(* oc_resource_get_instance_t) (const char *, oc_string_array_t *, <a class="el" href="oc__ri_8h.html#aab06afb6391b17826f3af7d1a6227a4b">oc_resource_properties_t</a>, <a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a>, size_t)</td>
+          <td class="memname">typedef <a class="el" href="structoc__resource__s.html">oc_resource_t</a>*(* oc_resource_get_instance_t) (const char *, const oc_string_array_t *, <a class="el" href="oc__ri_8h.html#aab06afb6391b17826f3af7d1a6227a4b">oc_resource_properties_t</a>, <a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a>, size_t)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -215,6 +212,26 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="gad90e3dbb05945f79dba5f837a9b50f37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad90e3dbb05945f79dba5f837a9b50f37">&#9670;&nbsp;</a></span>oc_check_if_collection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool oc_check_if_collection </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
+          <td class="paramname"><em>resource</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if resource is a global collection. </p>
+
+</div>
+</div>
 <a id="ga6a9ecdee57240345da72c313816d1222"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga6a9ecdee57240345da72c313816d1222">&#9670;&nbsp;</a></span>oc_collection_add_link()</h2>
 
@@ -249,9 +266,9 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__doc__module__tag__collections.html#ga3c3efa1e33185f408cd99ad515a9c23e" title="Creates a new link for collections with the specified resource.">oc_new_link</a> </dd>
+<dl class="section see"><dt>See also</dt><dd>oc_new_link </dd>
 <dd>
-<a class="el" href="group__doc__module__tag__collections.html#ga8e7bf04fbe26dd511433fccaec808ba5" title="Removes a link from the collection.">oc_collection_remove_link</a> </dd></dl>
+<a class="el" href="group__doc__module__tag__collections.html#ga26f7c3b5172c635769a9afe533e4c58d" title="Removes a link from the collection.">oc_collection_remove_link</a> </dd></dl>
 
 </div>
 </div>
@@ -283,10 +300,11 @@ Functions</h2></td></tr>
 
 <p>Add a mandatory Resource Type to a collection. </p>
 <p>This will be come the "rts-m" property of the collection. The "rts-m" property is an array of Resource Types that are mandatory to be exposed with in an array of Links exposed by the collection.</p>
+<dl class="section note"><dt>Note</dt><dd>adding a mandatory Resource Type multiple times will fail</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">collection</td><td>the collection the the Resource Type will be added to </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">rt</td><td>the mandatory Resource Type being added to the collection</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">collection</td><td>the collection the the Resource Type will be added to (cannot be NULL) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rt</td><td>the mandatory Resource Type being added to the collection (cannot be NULL)</td></tr>
   </table>
   </dd>
 </dl>
@@ -322,10 +340,11 @@ Functions</h2></td></tr>
 
 <p>Add a supported Resource Type to a collection. </p>
 <p>This will become the "rts" property of the collection. The "rts" property is an array of Resource Types that are supported within an array of Links exposed by the collection.</p>
+<dl class="section note"><dt>Note</dt><dd>adding a supported Resource Type multiple times will fail</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">collection</td><td>the collection the the Resource Type will be added to </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">rt</td><td>the supported Resource Type being added to the collection</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">collection</td><td>the collection the the Resource Type will be added to (cannot be NULL) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rt</td><td>the supported Resource Type being added to the collection (cannot be NULL)</td></tr>
   </table>
   </dd>
 </dl>
@@ -382,8 +401,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga8e7bf04fbe26dd511433fccaec808ba5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8e7bf04fbe26dd511433fccaec808ba5">&#9670;&nbsp;</a></span>oc_collection_remove_link()</h2>
+<a id="ga26f7c3b5172c635769a9afe533e4c58d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga26f7c3b5172c635769a9afe533e4c58d">&#9670;&nbsp;</a></span>oc_collection_remove_link()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -397,7 +416,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">oc_link_t *&#160;</td>
+          <td class="paramtype">const oc_link_t *&#160;</td>
           <td class="paramname"><em>link</em>&#160;</td>
         </tr>
         <tr>
@@ -434,7 +453,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__doc__module__tag__collections.html#gabd4df858d188b26542c6bfc7a8759084">oc_resource_get_instance_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__doc__module__tag__collections.html#ga16b6b6531c11a224dd100e7127716843">oc_resource_get_instance_t</a>&#160;</td>
           <td class="paramname"><em>get_instance</em>, </td>
         </tr>
         <tr>
@@ -493,60 +512,33 @@ false </dd></dl>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__doc__module__tag__collections.html#gaa42bc380835480c2f8c0bbb36afe3d5b" title="Returns the list of links belonging to this collection.">oc_collection_get_links</a> </dd>
 <dd>
-<a class="el" href="group__doc__module__tag__collections.html#ga0fde42ca7451b515a445c3247acccbb5" title="Deletes the link.">oc_delete_link</a> </dd></dl>
+oc_delete_link </dd></dl>
 
 </div>
 </div>
-<a id="ga0fde42ca7451b515a445c3247acccbb5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0fde42ca7451b515a445c3247acccbb5">&#9670;&nbsp;</a></span>oc_delete_link()</h2>
+<a id="ga76add668e73ffeac807ad78776779b14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga76add668e73ffeac807ad78776779b14">&#9670;&nbsp;</a></span>oc_get_collection_by_uri()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oc_delete_link </td>
+          <td class="memname">oc_collection_t* oc_get_collection_by_uri </td>
           <td>(</td>
-          <td class="paramtype">oc_link_t *&#160;</td>
-          <td class="paramname"><em>link</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Deletes the link. </p>
-<dl class="section note"><dt>Note</dt><dd>The function neither removes the resource set on this link nor does it remove it from any collection.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">link</td><td>The link to delete. The function does nothing, if the parameter is NULL </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="gaa5eac589eff762c4010554ebe0570b78"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa5eac589eff762c4010554ebe0570b78">&#9670;&nbsp;</a></span>oc_link_add_link_param()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void oc_link_add_link_param </td>
-          <td>(</td>
-          <td class="paramtype">oc_link_t *&#160;</td>
-          <td class="paramname"><em>link</em>, </td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>uri_path</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>uri_path_len</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>device</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -556,35 +548,44 @@ false </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Adds a link parameter with specified key and value. </p>
+<p>Find a collection in the global collection by its URI. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">link</td><td>Link to which to add a link parameter. Must not be NULL </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>Key to identify the link parameter. Must not be NULL </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>Link parameter value. Must not be NULL </td></tr>
+    <tr><td class="paramname">uri_path</td><td>the URI path of the collection (with or without the leading slash) </td></tr>
+    <tr><td class="paramname">uri_path_len</td><td>the length of the URI path </td></tr>
+    <tr><td class="paramname">device</td><td>device index</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>the collection if found </dd>
+<dd>
+NULL otherwise </dd></dl>
 
 </div>
 </div>
-<a id="ga3414d119ce8f0952f3f9cbb2797d3bf3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3414d119ce8f0952f3f9cbb2797d3bf3">&#9670;&nbsp;</a></span>oc_link_add_rel()</h2>
+<a id="gab399eb0562f956545644fb6cd0a0fa1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab399eb0562f956545644fb6cd0a0fa1a">&#9670;&nbsp;</a></span>oc_get_link_by_uri()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void oc_link_add_rel </td>
+          <td class="memname">oc_link_t* oc_get_link_by_uri </td>
           <td>(</td>
-          <td class="paramtype">oc_link_t *&#160;</td>
-          <td class="paramname"><em>link</em>, </td>
+          <td class="paramtype">oc_collection_t *&#160;</td>
+          <td class="paramname"><em>collection</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>rel</em>&#160;</td>
+          <td class="paramname"><em>uri_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>uri_path_len</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -594,14 +595,18 @@ false </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Adds a relation to the link. </p>
+<p>Get a link from a collection by its URI. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">link</td><td>Link to add the relation to. Must not be NULL </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">rel</td><td>Relation to add. Must not be NULL </td></tr>
+    <tr><td class="paramname">collection</td><td>collection to search </td></tr>
+    <tr><td class="paramname">uri_path</td><td>the URI path of the link (with or without the leading slash) </td></tr>
+    <tr><td class="paramname">uri_path_len</td><td>the length of the URI path </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>oc_link_t* the link if found </dd>
+<dd>
+NULL otherwise </dd></dl>
 
 </div>
 </div>
@@ -662,38 +667,6 @@ false </dd></dl>
 
 </div>
 </div>
-<a id="ga3c3efa1e33185f408cd99ad515a9c23e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3c3efa1e33185f408cd99ad515a9c23e">&#9670;&nbsp;</a></span>oc_new_link()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">oc_link_t* oc_new_link </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
-          <td class="paramname"><em>resource</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Creates a new link for collections with the specified resource. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">resource</td><td>Resource to set in the link. The resource is not copied. Must not be NULL</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The created link or NULL if out of memory or resource is NULL.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__doc__module__tag__collections.html#ga0fde42ca7451b515a445c3247acccbb5" title="Deletes the link.">oc_delete_link</a> </dd>
-<dd>
-<a class="el" href="group__doc__module__tag__collections.html#ga6a9ecdee57240345da72c313816d1222" title="Adds the link to the collection.">oc_collection_add_link</a> </dd>
-<dd>
-<a class="el" href="group__doc__module__tag__server__side.html#ga617ddc7eec68117e14bb4e1bf9f867cc" title="Allocate and populate a new oc_resource_t.">oc_new_resource</a> </dd></dl>
-
-</div>
-</div>
 <a id="gaf9028094981175854c699f6da4a34131"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaf9028094981175854c699f6da4a34131">&#9670;&nbsp;</a></span>oc_resource_set_properties_cbs()</h2>
 
@@ -709,7 +682,7 @@ false </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="oc__ri_8h.html#ad13e620d8765af96f28937e52f817726">oc_get_properties_cb_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="oc__ri_8h.html#af1dcc98c0f48619b5fe54ae5254285f6">oc_get_properties_cb_t</a>&#160;</td>
           <td class="paramname"><em>get_properties</em>, </td>
         </tr>
         <tr>
@@ -721,7 +694,7 @@ false </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="oc__ri_8h.html#ad38ea7c0a6833931d8bfe8094c5100e4">oc_set_properties_cb_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="oc__ri_8h.html#ac52d90bf7c0c740d4c72ee0e34ca5678">oc_set_properties_cb_t</a>&#160;</td>
           <td class="paramname"><em>set_properties</em>, </td>
         </tr>
         <tr>
@@ -757,7 +730,7 @@ false </dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jul 10 2023 06:53:13 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Jul 12 2023 20:41:14 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -138,12 +138,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:aaeea17ea80036310d62e43ef1fb2714e"><td class="memItemLeft" align="right" valign="top"><a id="aaeea17ea80036310d62e43ef1fb2714e"></a>
 typedef struct oc_collection_s&#160;</td><td class="memItemRight" valign="bottom"><b>oc_collection_t</b></td></tr>
 <tr class="separator:aaeea17ea80036310d62e43ef1fb2714e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad13e620d8765af96f28937e52f817726"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#ad13e620d8765af96f28937e52f817726">oc_get_properties_cb_t</a>) (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *, <a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a>, void *)</td></tr>
-<tr class="memdesc:ad13e620d8765af96f28937e52f817726"><td class="mdescLeft">&#160;</td><td class="mdescRight">get properties callback  <a href="oc__ri_8h.html#ad13e620d8765af96f28937e52f817726">More...</a><br /></td></tr>
-<tr class="separator:ad13e620d8765af96f28937e52f817726"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c0cf4983494ee97927016dcd4af1d79"><td class="memItemLeft" align="right" valign="top"><a id="a0c0cf4983494ee97927016dcd4af1d79"></a>
-typedef struct oc_link_s&#160;</td><td class="memItemRight" valign="bottom"><b>oc_link_t</b></td></tr>
-<tr class="separator:a0c0cf4983494ee97927016dcd4af1d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1dcc98c0f48619b5fe54ae5254285f6"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#af1dcc98c0f48619b5fe54ae5254285f6">oc_get_properties_cb_t</a>) (const <a class="el" href="structoc__resource__s.html">oc_resource_t</a> *, <a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a>, void *)</td></tr>
+<tr class="memdesc:af1dcc98c0f48619b5fe54ae5254285f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">get properties callback  <a href="oc__ri_8h.html#af1dcc98c0f48619b5fe54ae5254285f6">More...</a><br /></td></tr>
+<tr class="separator:af1dcc98c0f48619b5fe54ae5254285f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3356150f36167cd5b5aa73bd23bc854"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#ab3356150f36167cd5b5aa73bd23bc854">oc_payload_callback_t</a>) (void)</td></tr>
 <tr class="memdesc:ab3356150f36167cd5b5aa73bd23bc854"><td class="mdescLeft">&#160;</td><td class="mdescRight">application should define this callback which builds updated contents of pushable Resource  <a href="oc__ri_8h.html#ab3356150f36167cd5b5aa73bd23bc854">More...</a><br /></td></tr>
 <tr class="separator:ab3356150f36167cd5b5aa73bd23bc854"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -183,9 +180,9 @@ typedef struct <a class="el" href="structoc__resource__s.html">oc_resource_s</a>
 <tr class="memitem:aa8574b4921b4ecdddd325a4634bec426"><td class="memItemLeft" align="right" valign="top">typedef struct oc_separate_response_s&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#aa8574b4921b4ecdddd325a4634bec426">oc_separate_response_t</a></td></tr>
 <tr class="memdesc:aa8574b4921b4ecdddd325a4634bec426"><td class="mdescLeft">&#160;</td><td class="mdescRight">seperate response type  <a href="oc__ri_8h.html#aa8574b4921b4ecdddd325a4634bec426">More...</a><br /></td></tr>
 <tr class="separator:aa8574b4921b4ecdddd325a4634bec426"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad38ea7c0a6833931d8bfe8094c5100e4"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#ad38ea7c0a6833931d8bfe8094c5100e4">oc_set_properties_cb_t</a>) (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *, oc_rep_t *, void *)</td></tr>
-<tr class="memdesc:ad38ea7c0a6833931d8bfe8094c5100e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">set properties callback  <a href="oc__ri_8h.html#ad38ea7c0a6833931d8bfe8094c5100e4">More...</a><br /></td></tr>
-<tr class="separator:ad38ea7c0a6833931d8bfe8094c5100e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac52d90bf7c0c740d4c72ee0e34ca5678"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#ac52d90bf7c0c740d4c72ee0e34ca5678">oc_set_properties_cb_t</a>) (const <a class="el" href="structoc__resource__s.html">oc_resource_t</a> *, const oc_rep_t *, void *)</td></tr>
+<tr class="memdesc:ac52d90bf7c0c740d4c72ee0e34ca5678"><td class="mdescLeft">&#160;</td><td class="mdescRight">set properties callback  <a href="oc__ri_8h.html#ac52d90bf7c0c740d4c72ee0e34ca5678">More...</a><br /></td></tr>
+<tr class="separator:ac52d90bf7c0c740d4c72ee0e34ca5678"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4939e040b70ea8c4ba21504206f3b77a"><td class="memItemLeft" align="right" valign="top"><a id="a4939e040b70ea8c4ba21504206f3b77a"></a>
 typedef oc_event_callback_retval_t(*&#160;</td><td class="memItemRight" valign="bottom"><b>oc_trigger_t</b>) (void *)</td></tr>
 <tr class="separator:a4939e040b70ea8c4ba21504206f3b77a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -479,14 +476,14 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="ad13e620d8765af96f28937e52f817726"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad13e620d8765af96f28937e52f817726">&#9670;&nbsp;</a></span>oc_get_properties_cb_t</h2>
+<a id="af1dcc98c0f48619b5fe54ae5254285f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1dcc98c0f48619b5fe54ae5254285f6">&#9670;&nbsp;</a></span>oc_get_properties_cb_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* oc_get_properties_cb_t) (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *, <a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a>, void *)</td>
+          <td class="memname">typedef void(* oc_get_properties_cb_t) (const <a class="el" href="structoc__resource__s.html">oc_resource_t</a> *, <a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a>, void *)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -687,14 +684,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad38ea7c0a6833931d8bfe8094c5100e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad38ea7c0a6833931d8bfe8094c5100e4">&#9670;&nbsp;</a></span>oc_set_properties_cb_t</h2>
+<a id="ac52d90bf7c0c740d4c72ee0e34ca5678"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac52d90bf7c0c740d4c72ee0e34ca5678">&#9670;&nbsp;</a></span>oc_set_properties_cb_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef bool(* oc_set_properties_cb_t) (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *, oc_rep_t *, void *)</td>
+          <td class="memname">typedef bool(* oc_set_properties_cb_t) (const <a class="el" href="structoc__resource__s.html">oc_resource_t</a> *, const oc_rep_t *, void *)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1798,7 +1795,7 @@ Empty string for an invalid log level value </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__ri_8h.html">oc_ri.h</a></li>
-    <li class="footer">Generated on Mon Jul 10 2023 06:53:13 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Jul 12 2023 20:41:14 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

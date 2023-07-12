@@ -3,6 +3,7 @@ var modules =
     [ "Asserting roles", "group__doc__module__tag__asserting__roles.html", "group__doc__module__tag__asserting__roles" ],
     [ "Client side", "group__doc__module__tag__client__state.html", "group__doc__module__tag__client__state" ],
     [ "Clock library", "group__clock.html", null ],
+    [ "Collection Support", "group__doc__module__tag__collections.html", "group__doc__module__tag__collections" ],
     [ "Common operations", "group__doc__module__tag__common__operations.html", "group__doc__module__tag__common__operations" ],
     [ "Contiki processes", "group__process.html", "group__process" ],
     [ "Linked list library", "group__list.html", "group__list" ],
