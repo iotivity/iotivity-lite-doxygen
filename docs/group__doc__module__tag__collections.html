@@ -104,8 +104,10 @@ Typedefs</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga80b00ed34f2fe3db8f580136c124fcda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__collections.html#ga80b00ed34f2fe3db8f580136c124fcda">oc_add_collection</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *collection)</td></tr>
-<tr class="memdesc:ga80b00ed34f2fe3db8f580136c124fcda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a collection to the list of collections.  <a href="group__doc__module__tag__collections.html#ga80b00ed34f2fe3db8f580136c124fcda">More...</a><br /></td></tr>
 <tr class="separator:ga80b00ed34f2fe3db8f580136c124fcda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacc7c2fdff2bf725ead1b109ec9c76945"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__collections.html#gacc7c2fdff2bf725ead1b109ec9c76945">oc_add_collection_v1</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *collection)</td></tr>
+<tr class="memdesc:gacc7c2fdff2bf725ead1b109ec9c76945"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a collection to the list of collections.  <a href="group__doc__module__tag__collections.html#gacc7c2fdff2bf725ead1b109ec9c76945">More...</a><br /></td></tr>
+<tr class="separator:gacc7c2fdff2bf725ead1b109ec9c76945"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad90e3dbb05945f79dba5f837a9b50f37"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__collections.html#gad90e3dbb05945f79dba5f837a9b50f37">oc_check_if_collection</a> (const <a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
 <tr class="memdesc:gad90e3dbb05945f79dba5f837a9b50f37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if resource is a global collection.  <a href="group__doc__module__tag__collections.html#gad90e3dbb05945f79dba5f837a9b50f37">More...</a><br /></td></tr>
 <tr class="separator:gad90e3dbb05945f79dba5f837a9b50f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,6 +192,25 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void oc_add_collection </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
+          <td class="paramname"><em>collection</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated:</a></b></dt><dd>replaced by oc_add_collection_v1 in v2.2.5.7 </dd></dl>
+
+</div>
+</div>
+<a id="gacc7c2fdff2bf725ead1b109ec9c76945"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacc7c2fdff2bf725ead1b109ec9c76945">&#9670;&nbsp;</a></span>oc_add_collection_v1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool oc_add_collection_v1 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
           <td class="paramname"><em>collection</em></td><td>)</td>
@@ -369,7 +390,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets all known collections. </p>
-<dl class="section return"><dt>Returns</dt><dd>All collections that have been added via <a class="el" href="group__doc__module__tag__collections.html#ga80b00ed34f2fe3db8f580136c124fcda" title="Adds a collection to the list of collections.">oc_add_collection()</a>. The collections are not copied. Returns NULL if there are no collections. Collections created only via <a class="el" href="group__doc__module__tag__collections.html#ga0c961214569feae0005677b211a1adf5" title="Creates a new empty collection.">oc_new_collection()</a> but not added will not be returned by this function. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>All collections that have been added via <a class="el" href="group__doc__module__tag__collections.html#ga80b00ed34f2fe3db8f580136c124fcda">oc_add_collection()</a>. The collections are not copied. Returns NULL if there are no collections. Collections created only via <a class="el" href="group__doc__module__tag__collections.html#ga0c961214569feae0005677b211a1adf5" title="Creates a new empty collection.">oc_new_collection()</a> but not added will not be returned by this function. </dd></dl>
 
 </div>
 </div>
@@ -650,7 +671,7 @@ NULL otherwise </dd></dl>
 
 <p>Creates a new empty collection. </p>
 <p>The collection is created with interfaces <code>OC_IF_BASELINE</code>, <code>OC_IF_LL</code> (also default) and <code>OC_IF_B</code>. Initially it is neither discoverable nor observable.</p>
-<p>The function only allocates the collection. Use <a class="el" href="group__doc__module__tag__collections.html#ga80b00ed34f2fe3db8f580136c124fcda" title="Adds a collection to the list of collections.">oc_add_collection()</a> after the setup of the collection is complete.</p>
+<p>The function only allocates the collection. Use <a class="el" href="group__doc__module__tag__collections.html#ga80b00ed34f2fe3db8f580136c124fcda">oc_add_collection()</a> after the setup of the collection is complete.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>name of the collection </td></tr>
@@ -661,7 +682,7 @@ NULL otherwise </dd></dl>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the new collection (actually <code>oc_collection_t *</code>) or NULL if out of memory.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__doc__module__tag__collections.html#ga80b00ed34f2fe3db8f580136c124fcda" title="Adds a collection to the list of collections.">oc_add_collection</a> </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__doc__module__tag__collections.html#ga80b00ed34f2fe3db8f580136c124fcda">oc_add_collection</a> </dd>
 <dd>
 <a class="el" href="group__doc__module__tag__collections.html#ga6a9ecdee57240345da72c313816d1222" title="Adds the link to the collection.">oc_collection_add_link</a> </dd></dl>
 
@@ -730,7 +751,7 @@ NULL otherwise </dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Jul 19 2023 07:56:47 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jul 22 2023 13:07:25 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -94,9 +94,9 @@ $(document).ready(function(){initNavTree('group__doc__module__tag__server__side.
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga3eaefb66d2e5bf5009aeac9d8276e065"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga3eaefb66d2e5bf5009aeac9d8276e065">oc_con_write_cb_t</a>) (size_t device_index, oc_rep_t *rep)</td></tr>
-<tr class="memdesc:ga3eaefb66d2e5bf5009aeac9d8276e065"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for change notifications from the oic.wk.con resource.  <a href="group__doc__module__tag__server__side.html#ga3eaefb66d2e5bf5009aeac9d8276e065">More...</a><br /></td></tr>
-<tr class="separator:ga3eaefb66d2e5bf5009aeac9d8276e065"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga417cac9fe4cf1c70e7b1b6eba5eb3b3b"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga417cac9fe4cf1c70e7b1b6eba5eb3b3b">oc_con_write_cb_t</a>) (size_t device_index, const oc_rep_t *rep)</td></tr>
+<tr class="memdesc:ga417cac9fe4cf1c70e7b1b6eba5eb3b3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for change notifications from the oic.wk.con resource.  <a href="group__doc__module__tag__server__side.html#ga417cac9fe4cf1c70e7b1b6eba5eb3b3b">More...</a><br /></td></tr>
+<tr class="separator:ga417cac9fe4cf1c70e7b1b6eba5eb3b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga81109e81a7c40aaa290298e9411ed95d"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga81109e81a7c40aaa290298e9411ed95d">oc_send_response_cb_t</a>) (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request, <a class="el" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38">oc_status_t</a> response_code)</td></tr>
 <tr class="memdesc:ga81109e81a7c40aaa290298e9411ed95d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function is triggered by oc_send_response before the response is set.  <a href="group__doc__module__tag__server__side.html#ga81109e81a7c40aaa290298e9411ed95d">More...</a><br /></td></tr>
 <tr class="separator:ga81109e81a7c40aaa290298e9411ed95d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -214,7 +214,7 @@ Functions</h2></td></tr>
 <tr class="memitem:gab8e08bb0d0476a29ecd562f02e7ec61e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gab8e08bb0d0476a29ecd562f02e7ec61e">oc_send_separate_response</a> (<a class="el" href="oc__ri_8h.html#aa8574b4921b4ecdddd325a4634bec426">oc_separate_response_t</a> *handle, <a class="el" href="oc__ri_8h.html#a068a1c38013c32d65427aeed54503a38">oc_status_t</a> response_code)</td></tr>
 <tr class="memdesc:gab8e08bb0d0476a29ecd562f02e7ec61e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called to send the deferred response to a GET, PUT, POST or DELETE request.  <a href="group__doc__module__tag__server__side.html#gab8e08bb0d0476a29ecd562f02e7ec61e">More...</a><br /></td></tr>
 <tr class="separator:gab8e08bb0d0476a29ecd562f02e7ec61e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1497c8c36b39a1c9cca7972caa40a92c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga1497c8c36b39a1c9cca7972caa40a92c">oc_set_con_write_cb</a> (<a class="el" href="group__doc__module__tag__server__side.html#ga3eaefb66d2e5bf5009aeac9d8276e065">oc_con_write_cb_t</a> callback)</td></tr>
+<tr class="memitem:ga1497c8c36b39a1c9cca7972caa40a92c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga1497c8c36b39a1c9cca7972caa40a92c">oc_set_con_write_cb</a> (<a class="el" href="group__doc__module__tag__server__side.html#ga417cac9fe4cf1c70e7b1b6eba5eb3b3b">oc_con_write_cb_t</a> callback)</td></tr>
 <tr class="memdesc:ga1497c8c36b39a1c9cca7972caa40a92c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the callback to receive change notifications for the <code>oic.wk.con</code> resource.  <a href="group__doc__module__tag__server__side.html#ga1497c8c36b39a1c9cca7972caa40a92c">More...</a><br /></td></tr>
 <tr class="separator:ga1497c8c36b39a1c9cca7972caa40a92c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga72afbe3c6b47589064da706576c98a93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga72afbe3c6b47589064da706576c98a93">oc_set_send_response_callback</a> (<a class="el" href="group__doc__module__tag__server__side.html#ga81109e81a7c40aaa290298e9411ed95d">oc_send_response_cb_t</a> cb)</td></tr>
@@ -227,14 +227,14 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Optional group of functions OCF server support. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="ga3eaefb66d2e5bf5009aeac9d8276e065"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3eaefb66d2e5bf5009aeac9d8276e065">&#9670;&nbsp;</a></span>oc_con_write_cb_t</h2>
+<a id="ga417cac9fe4cf1c70e7b1b6eba5eb3b3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga417cac9fe4cf1c70e7b1b6eba5eb3b3b">&#9670;&nbsp;</a></span>oc_con_write_cb_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* oc_con_write_cb_t) (size_t device_index, oc_rep_t *rep)</td>
+          <td class="memname">typedef void(* oc_con_write_cb_t) (size_t device_index, const oc_rep_t *rep)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1982,7 +1982,7 @@ false </dd></dl>
         <tr>
           <td class="memname">void oc_set_con_write_cb </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__doc__module__tag__server__side.html#ga3eaefb66d2e5bf5009aeac9d8276e065">oc_con_write_cb_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__doc__module__tag__server__side.html#ga417cac9fe4cf1c70e7b1b6eba5eb3b3b">oc_con_write_cb_t</a>&#160;</td>
           <td class="paramname"><em>callback</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2062,7 +2062,7 @@ false </dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Jul 19 2023 07:56:47 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jul 22 2023 13:07:25 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

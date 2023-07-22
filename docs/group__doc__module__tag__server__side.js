@@ -1,6 +1,6 @@
 var group__doc__module__tag__server__side =
 [
-    [ "oc_con_write_cb_t", "group__doc__module__tag__server__side.html#ga3eaefb66d2e5bf5009aeac9d8276e065", null ],
+    [ "oc_con_write_cb_t", "group__doc__module__tag__server__side.html#ga417cac9fe4cf1c70e7b1b6eba5eb3b3b", null ],
     [ "oc_send_response_cb_t", "group__doc__module__tag__server__side.html#ga81109e81a7c40aaa290298e9411ed95d", null ],
     [ "oc_add_resource", "group__doc__module__tag__server__side.html#ga8cef7c8b4cfdde5cbd79aace72172d41", null ],
     [ "oc_delayed_delete_resource", "group__doc__module__tag__server__side.html#gabb337e93d0191bd886fb66c872d80f2c", null ],

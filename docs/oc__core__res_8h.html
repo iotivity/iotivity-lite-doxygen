@@ -138,8 +138,11 @@ Functions</h2></td></tr>
 <tr class="memdesc:afdf03e702cf42d39a4cf97fe0139a073"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the resource by type (e.g.  <a href="oc__core__res_8h.html#afdf03e702cf42d39a4cf97fe0139a073">More...</a><br /></td></tr>
 <tr class="separator:afdf03e702cf42d39a4cf97fe0139a073"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f16b93c49240e6e11224b6a92a29fb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a0f16b93c49240e6e11224b6a92a29fb5">oc_core_get_resource_by_uri</a> (const char *uri, size_t device)</td></tr>
-<tr class="memdesc:a0f16b93c49240e6e11224b6a92a29fb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the resource by uri  <a href="oc__core__res_8h.html#a0f16b93c49240e6e11224b6a92a29fb5">More...</a><br /></td></tr>
+<tr class="memdesc:a0f16b93c49240e6e11224b6a92a29fb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve a core resource by uri  <a href="oc__core__res_8h.html#a0f16b93c49240e6e11224b6a92a29fb5">More...</a><br /></td></tr>
 <tr class="separator:a0f16b93c49240e6e11224b6a92a29fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a460dd5d618df254d2caa7698b41599c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a460dd5d618df254d2caa7698b41599c8">oc_core_get_resource_by_uri_v1</a> (const char *uri, size_t uri_len, size_t device)</td></tr>
+<tr class="memdesc:a460dd5d618df254d2caa7698b41599c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve a core resource by uri  <a href="oc__core__res_8h.html#a460dd5d618df254d2caa7698b41599c8">More...</a><br /></td></tr>
+<tr class="separator:a460dd5d618df254d2caa7698b41599c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5308cef52443fd78acd2a0768243a446"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__core__res_8h.html#a5308cef52443fd78acd2a0768243a446">oc_core_is_DCR</a> (const <a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, size_t device)</td></tr>
 <tr class="memdesc:a5308cef52443fd78acd2a0768243a446"><td class="mdescLeft">&#160;</td><td class="mdescRight">determine if a resource is a Device Configuration Resource  <a href="oc__core__res_8h.html#a5308cef52443fd78acd2a0768243a446">More...</a><br /></td></tr>
 <tr class="separator:a5308cef52443fd78acd2a0768243a446"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -406,10 +409,48 @@ NULL on failure </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>retrieve the resource by uri </p>
+<p>retrieve a core resource by uri </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000007">Deprecated:</a></b></dt><dd>replaced by replaced by oc_core_get_resource_by_uri_v1 in v2.2.5.7 </dd></dl>
+
+</div>
+</div>
+<a id="a460dd5d618df254d2caa7698b41599c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a460dd5d618df254d2caa7698b41599c8">&#9670;&nbsp;</a></span>oc_core_get_resource_by_uri_v1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structoc__resource__s.html">oc_resource_t</a>* oc_core_get_resource_by_uri_v1 </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>uri</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>uri_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>device</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>retrieve a core resource by uri </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">uri</td><td>the uri (cannot be NULL) </td></tr>
+    <tr><td class="paramname">uri_len</td><td>the length of the uri </td></tr>
     <tr><td class="paramname">device</td><td>the device index </td></tr>
   </table>
   </dd>
@@ -573,7 +614,7 @@ false : is not a vertical resource </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__core__res_8h.html">oc_core_res.h</a></li>
-    <li class="footer">Generated on Wed Jul 19 2023 07:56:47 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jul 22 2023 13:07:25 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -3,6 +3,7 @@ var oc__collection_8h =
     [ "oc_resource_free_instance_t", "group__doc__module__tag__collections.html#gab130607248507d452563e8521f6b34ab", null ],
     [ "oc_resource_get_instance_t", "group__doc__module__tag__collections.html#ga16b6b6531c11a224dd100e7127716843", null ],
     [ "oc_add_collection", "group__doc__module__tag__collections.html#ga80b00ed34f2fe3db8f580136c124fcda", null ],
+    [ "oc_add_collection_v1", "group__doc__module__tag__collections.html#gacc7c2fdff2bf725ead1b109ec9c76945", null ],
     [ "oc_check_if_collection", "group__doc__module__tag__collections.html#gad90e3dbb05945f79dba5f837a9b50f37", null ],
     [ "oc_collection_add_link", "group__doc__module__tag__collections.html#ga6a9ecdee57240345da72c313816d1222", null ],
     [ "oc_collection_add_mandatory_rt", "group__doc__module__tag__collections.html#ga7bb4d71ec25a70bb5589d4e0779ed10d", null ],

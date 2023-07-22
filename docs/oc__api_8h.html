@@ -145,9 +145,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a66dda2994359bb0c92f4df9b77ee5ece"><td class="memItemLeft" align="right" valign="top"><a id="a66dda2994359bb0c92f4df9b77ee5ece"></a>
 typedef struct oc_add_new_device_s&#160;</td><td class="memItemRight" valign="bottom"><b>oc_add_new_device_t</b></td></tr>
 <tr class="separator:a66dda2994359bb0c92f4df9b77ee5ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3eaefb66d2e5bf5009aeac9d8276e065"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga3eaefb66d2e5bf5009aeac9d8276e065">oc_con_write_cb_t</a>) (size_t device_index, oc_rep_t *rep)</td></tr>
-<tr class="memdesc:ga3eaefb66d2e5bf5009aeac9d8276e065"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for change notifications from the oic.wk.con resource.  <a href="group__doc__module__tag__server__side.html#ga3eaefb66d2e5bf5009aeac9d8276e065">More...</a><br /></td></tr>
-<tr class="separator:ga3eaefb66d2e5bf5009aeac9d8276e065"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga417cac9fe4cf1c70e7b1b6eba5eb3b3b"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga417cac9fe4cf1c70e7b1b6eba5eb3b3b">oc_con_write_cb_t</a>) (size_t device_index, const oc_rep_t *rep)</td></tr>
+<tr class="memdesc:ga417cac9fe4cf1c70e7b1b6eba5eb3b3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for change notifications from the oic.wk.con resource.  <a href="group__doc__module__tag__server__side.html#ga417cac9fe4cf1c70e7b1b6eba5eb3b3b">More...</a><br /></td></tr>
+<tr class="separator:ga417cac9fe4cf1c70e7b1b6eba5eb3b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbf6fbabc990ad58b163d48d247c4c2e"><td class="memItemLeft" align="right" valign="top"><a id="acbf6fbabc990ad58b163d48d247c4c2e"></a>
 typedef enum <a class="el" href="oc__api_8h.html#a0a87e847fb0272d80cec59eacf8117d8">oc_connectivity_listening_port_flags_e</a>&#160;</td><td class="memItemRight" valign="bottom"><b>oc_connectivity_listening_port_flags_t</b></td></tr>
 <tr class="separator:acbf6fbabc990ad58b163d48d247c4c2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -429,7 +429,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a89adceaff6ab9df8d74bbbc1121693a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__api_8h.html#a89adceaff6ab9df8d74bbbc1121693a1">oc_set_con_res_announced</a> (bool announce)</td></tr>
 <tr class="memdesc:a89adceaff6ab9df8d74bbbc1121693a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether the oic.wk.con resource is announced.  <a href="oc__api_8h.html#a89adceaff6ab9df8d74bbbc1121693a1">More...</a><br /></td></tr>
 <tr class="separator:a89adceaff6ab9df8d74bbbc1121693a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1497c8c36b39a1c9cca7972caa40a92c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga1497c8c36b39a1c9cca7972caa40a92c">oc_set_con_write_cb</a> (<a class="el" href="group__doc__module__tag__server__side.html#ga3eaefb66d2e5bf5009aeac9d8276e065">oc_con_write_cb_t</a> callback)</td></tr>
+<tr class="memitem:ga1497c8c36b39a1c9cca7972caa40a92c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga1497c8c36b39a1c9cca7972caa40a92c">oc_set_con_write_cb</a> (<a class="el" href="group__doc__module__tag__server__side.html#ga417cac9fe4cf1c70e7b1b6eba5eb3b3b">oc_con_write_cb_t</a> callback)</td></tr>
 <tr class="memdesc:ga1497c8c36b39a1c9cca7972caa40a92c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the callback to receive change notifications for the <code>oic.wk.con</code> resource.  <a href="group__doc__module__tag__server__side.html#ga1497c8c36b39a1c9cca7972caa40a92c">More...</a><br /></td></tr>
 <tr class="separator:ga1497c8c36b39a1c9cca7972caa40a92c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga976b85e9312419b62f4ed0993bf548f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__common__operations.html#ga976b85e9312419b62f4ed0993bf548f6">oc_set_delayed_callback</a> (void *cb_data, oc_trigger_t callback, uint16_t seconds)</td></tr>
@@ -1596,7 +1596,7 @@ Use of this function requires building with OC_SECURITY defined.</dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__api_8h.html">oc_api.h</a></li>
-    <li class="footer">Generated on Wed Jul 19 2023 07:56:47 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Jul 22 2023 13:07:25 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

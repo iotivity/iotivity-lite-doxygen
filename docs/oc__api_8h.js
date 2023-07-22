@@ -9,7 +9,7 @@ var oc__api_8h =
     [ "oc_signal_interrupt_handler", "group__doc__module__tag__common__operations.html#gacc171987eec30ecc99d34857af3c02d3", null ],
     [ "oc_add_device_cb_t", "oc__api_8h.html#a57a741fa2165d561ffc7faf0f084cd69", null ],
     [ "oc_add_new_device_t", "oc__api_8h.html#a66dda2994359bb0c92f4df9b77ee5ece", null ],
-    [ "oc_con_write_cb_t", "group__doc__module__tag__server__side.html#ga3eaefb66d2e5bf5009aeac9d8276e065", null ],
+    [ "oc_con_write_cb_t", "group__doc__module__tag__server__side.html#ga417cac9fe4cf1c70e7b1b6eba5eb3b3b", null ],
     [ "oc_connectivity_listening_port_flags_t", "oc__api_8h.html#acbf6fbabc990ad58b163d48d247c4c2e", null ],
     [ "oc_connectivity_listening_ports_t", "oc__api_8h.html#a63358b04034c09b3502e937fc3b1e875", null ],
     [ "oc_connectivity_ports_t", "oc__api_8h.html#ae5569c262da7ddbd774a6a5d835196c0", null ],
