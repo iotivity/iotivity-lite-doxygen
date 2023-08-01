@@ -107,6 +107,7 @@ $(document).ready(function(){initNavTree('oc__api_8h.html',''); initResizable();
 <code>#include &quot;<a class="el" href="oc__storage_8h.html">port/oc_storage.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__compiler_8h.html">util/oc_compiler.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__features_8h.html">util/oc_features.h</a>&quot;</code><br />
+<code>#include &quot;util/oc_process.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__collection_8h.html">oc_collection.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__client__state_8h.html">oc_client_state.h</a>&quot;</code><br />
 </div><table class="memberdecls">
@@ -342,6 +343,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga946ffe7104c26ee52fc67d5d0e385795"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga946ffe7104c26ee52fc67d5d0e385795">oc_notify_observers_delayed_ms</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, uint16_t milliseconds)</td></tr>
 <tr class="memdesc:ga946ffe7104c26ee52fc67d5d0e385795"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule notify all observers to invoke after a set number of milliseconds.  <a href="group__doc__module__tag__server__side.html#ga946ffe7104c26ee52fc67d5d0e385795">More...</a><br /></td></tr>
 <tr class="separator:ga946ffe7104c26ee52fc67d5d0e385795"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4fd62da6afaa7587a84381bb5c71e01d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga4fd62da6afaa7587a84381bb5c71e01d">oc_notify_resource_changed</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
+<tr class="memdesc:ga4fd62da6afaa7587a84381bb5c71e01d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify all relevant mechanisms of a change to a given resource.  <a href="group__doc__module__tag__server__side.html#ga4fd62da6afaa7587a84381bb5c71e01d">More...</a><br /></td></tr>
+<tr class="separator:ga4fd62da6afaa7587a84381bb5c71e01d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga84e32551f9d7097a63a7a9410e170a01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga84e32551f9d7097a63a7a9410e170a01">oc_process_baseline_interface</a> (const <a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
 <tr class="memdesc:ga84e32551f9d7097a63a7a9410e170a01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function used when responding to a GET request to add Common Properties to a GET response.  <a href="group__doc__module__tag__server__side.html#ga84e32551f9d7097a63a7a9410e170a01">More...</a><br /></td></tr>
 <tr class="separator:ga84e32551f9d7097a63a7a9410e170a01"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -579,7 +583,7 @@ Functions</h2></td></tr>
 <div class="line">                       <span class="stringliteral">&quot;ocf.res.1.0.0&quot;</span>, set_device_custom_property, NULL);</div>
 <div class="line">  <span class="keywordflow">return</span> ret;</div>
 <div class="line">}</div>
-<div class="ttc" id="aoc__api_8h_html_a07db38d877a6ecbeb92ba881925f09c3"><div class="ttname"><a href="oc__api_8h.html#a07db38d877a6ecbeb92ba881925f09c3">oc_set_custom_device_property</a></div><div class="ttdeci">#define oc_set_custom_device_property(prop, value)</div><div class="ttdoc">Set custom device property.</div><div class="ttdef"><b>Definition:</b> oc_api.h:573</div></div>
+<div class="ttc" id="aoc__api_8h_html_a07db38d877a6ecbeb92ba881925f09c3"><div class="ttname"><a href="oc__api_8h.html#a07db38d877a6ecbeb92ba881925f09c3">oc_set_custom_device_property</a></div><div class="ttdeci">#define oc_set_custom_device_property(prop, value)</div><div class="ttdoc">Set custom device property.</div><div class="ttdef"><b>Definition:</b> oc_api.h:574</div></div>
 <div class="ttc" id="aoc__api_8h_html_a5aa72dd8d7d03ff826801b1d7d67ec68"><div class="ttname"><a href="oc__api_8h.html#a5aa72dd8d7d03ff826801b1d7d67ec68">oc_add_device</a></div><div class="ttdeci">int oc_add_device(const char *uri, const char *rt, const char *name, const char *spec_version, const char *data_model_version, oc_add_device_cb_t add_device_cb, void *data)</div><div class="ttdoc">Add an ocf device to the the stack.</div></div>
 <div class="ttc" id="aoc__api_8h_html_abc05e63942a1093f807213220841c54b"><div class="ttname"><a href="oc__api_8h.html#abc05e63942a1093f807213220841c54b">oc_init_platform</a></div><div class="ttdeci">int oc_init_platform(const char *mfg_name, oc_init_platform_cb_t init_platform_cb, void *data)</div><div class="ttdoc">Initialize the platform.</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
@@ -741,7 +745,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="stringliteral">&quot;oic.d.light&quot;</span>, <span class="stringliteral">&quot;My light&quot;</span>, <span class="stringliteral">&quot;ocf.1.0.0&quot;</span>, <span class="stringliteral">&quot;ocf.res.1.0.0&quot;</span>, NULL, NULL); <span class="keywordflow">return</span></div>
 <div class="line">ret;</div>
 <div class="line">}</div>
-<div class="ttc" id="aoc__api_8h_html_a9a4f40914dd68e17b88345bcce756666"><div class="ttname"><a href="oc__api_8h.html#a9a4f40914dd68e17b88345bcce756666">oc_set_custom_platform_property</a></div><div class="ttdeci">#define oc_set_custom_platform_property(prop, value)</div><div class="ttdoc">Set custom platform property.</div><div class="ttdef"><b>Definition:</b> oc_api.h:613</div></div>
+<div class="ttc" id="aoc__api_8h_html_a9a4f40914dd68e17b88345bcce756666"><div class="ttname"><a href="oc__api_8h.html#a9a4f40914dd68e17b88345bcce756666">oc_set_custom_platform_property</a></div><div class="ttdeci">#define oc_set_custom_platform_property(prop, value)</div><div class="ttdoc">Set custom platform property.</div><div class="ttdef"><b>Definition:</b> oc_api.h:614</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>context pointer that comes from the <a class="el" href="oc__api_8h.html#a5aa72dd8d7d03ff826801b1d7d67ec68" title="Add an ocf device to the the stack.">oc_add_device()</a> function</td></tr>
@@ -1596,7 +1600,7 @@ Use of this function requires building with OC_SECURITY defined.</dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__api_8h.html">oc_api.h</a></li>
-    <li class="footer">Generated on Mon Jul 24 2023 08:55:23 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Aug 1 2023 07:17:25 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

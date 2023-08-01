@@ -154,6 +154,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga946ffe7104c26ee52fc67d5d0e385795"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga946ffe7104c26ee52fc67d5d0e385795">oc_notify_observers_delayed_ms</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, uint16_t milliseconds)</td></tr>
 <tr class="memdesc:ga946ffe7104c26ee52fc67d5d0e385795"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule notify all observers to invoke after a set number of milliseconds.  <a href="group__doc__module__tag__server__side.html#ga946ffe7104c26ee52fc67d5d0e385795">More...</a><br /></td></tr>
 <tr class="separator:ga946ffe7104c26ee52fc67d5d0e385795"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4fd62da6afaa7587a84381bb5c71e01d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga4fd62da6afaa7587a84381bb5c71e01d">oc_notify_resource_changed</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
+<tr class="memdesc:ga4fd62da6afaa7587a84381bb5c71e01d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify all relevant mechanisms of a change to a given resource.  <a href="group__doc__module__tag__server__side.html#ga4fd62da6afaa7587a84381bb5c71e01d">More...</a><br /></td></tr>
+<tr class="separator:ga4fd62da6afaa7587a84381bb5c71e01d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga84e32551f9d7097a63a7a9410e170a01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga84e32551f9d7097a63a7a9410e170a01">oc_process_baseline_interface</a> (const <a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
 <tr class="memdesc:ga84e32551f9d7097a63a7a9410e170a01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function used when responding to a GET request to add Common Properties to a GET response.  <a href="group__doc__module__tag__server__side.html#ga84e32551f9d7097a63a7a9410e170a01">More...</a><br /></td></tr>
 <tr class="separator:ga84e32551f9d7097a63a7a9410e170a01"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -302,7 +305,7 @@ The callee shall not block for too long as the stack is blocked during the invoc
 <p>The resource will be validated then added to the stack.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">resource</td><td>the resource to add to the stack</td></tr>
+    <tr><td class="paramname">resource</td><td>the resource to add to the stack</td></tr>
   </table>
   </dd>
 </dl>
@@ -333,7 +336,7 @@ The callee shall not block for too long as the stack is blocked during the invoc
 <p>Schedule a callback to remove a resource. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">resource</td><td>the resource to delete </td></tr>
+    <tr><td class="paramname">resource</td><td>the resource to delete </td></tr>
   </table>
   </dd>
 </dl>
@@ -361,7 +364,7 @@ The callee shall not block for too long as the stack is blocked during the invoc
 <p>This will free the memory associated with the resource.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">resource</td><td>the resource to delete</td></tr>
+    <tr><td class="paramname">resource</td><td>the resource to delete</td></tr>
   </table>
   </dd>
 </dl>
@@ -403,8 +406,8 @@ The callee shall not block for too long as the stack is blocked during the invoc
 <p>This function can be used to bind a new Resource Type to a logical device's <code>/oic/d</code> resource.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">device</td><td>index of a logical device </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>the Resource type to add to the Resource Type "rt" property (cannot be NULL) </td></tr>
+    <tr><td class="paramname">device</td><td>index of a logical device </td></tr>
+    <tr><td class="paramname">type</td><td>the Resource type to add to the Resource Type "rt" property (cannot be NULL) </td></tr>
   </table>
   </dd>
 </dl>
@@ -495,7 +498,7 @@ false </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">request</td><td>the <a class="el" href="structoc__request__t.html" title="request information structure">oc_request_t</a> that contains the query parameters </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>the key being searched for </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>the key being searched for (cannot be NULL) </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">value</td><td>pointer to the value string assigned to the key</td></tr>
   </table>
   </dd>
@@ -804,9 +807,9 @@ false </dd></dl>
 <div class="ttc" id="agroup__doc__module__tag__server__side_html_ga5f33d43ecb0adf38a04d499ecf6b8ea3"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga5f33d43ecb0adf38a04d499ecf6b8ea3">oc_init_query_iterator</a></div><div class="ttdeci">void oc_init_query_iterator(void)</div><div class="ttdoc">This resets the query iterator to the start of the URI query parameter.</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">request</td><td>the <a class="el" href="structoc__request__t.html" title="request information structure">oc_request_t</a> that contains the query parameters </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">key</td><td>pointer to the location of the the key of the key=value pair </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">key_len</td><td>the length of the key string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">request</td><td>the <a class="el" href="structoc__request__t.html" title="request information structure">oc_request_t</a> that contains the query parameters (cannot be NULL) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">key</td><td>pointer to the location of the the key of the key=value pair (cannot be NULL) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">key_len</td><td>the length of the key string (cannot be NULL) </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">value</td><td>pointer the location of the value string assigned to the key=value pair </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">value_len</td><td>the length of the value string</td></tr>
   </table>
@@ -1002,7 +1005,7 @@ false </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>no need to call oc_notify_observers about resource changes that result from a PUT, or POST oc_request_callback_t.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">resource</td><td>the oc_resource_t that has a modified property</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">resource</td><td>the oc_resource_t that has a modified property (cannot be NULL)</td></tr>
   </table>
   </dd>
 </dl>
@@ -1044,7 +1047,7 @@ false </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>no need to call oc_notify_observers about resource changes that result from a PUT, or POST oc_request_callback_t.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">resource</td><td>the oc_resource_t that has a modified property </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">resource</td><td>the oc_resource_t that has a modified property (cannot be NULL) </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">seconds</td><td>the number of seconds to wait till the callback is invoked </td></tr>
   </table>
   </dd>
@@ -1082,8 +1085,34 @@ false </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>no need to call oc_notify_observers about resource changes that result from a PUT, or POST oc_request_callback_t.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">resource</td><td>the oc_resource_t that has a modified property </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">resource</td><td>the oc_resource_t that has a modified property (cannot be NULL) </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">milliseconds</td><td>the number of milliseconds to wait till the callback is invoked </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga4fd62da6afaa7587a84381bb5c71e01d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4fd62da6afaa7587a84381bb5c71e01d">&#9670;&nbsp;</a></span>oc_notify_resource_changed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oc_notify_resource_changed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td>
+          <td class="paramname"><em>resource</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Notify all relevant mechanisms of a change to a given resource. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">resource</td><td>resource that has a modified property (cannot be NULL) </td></tr>
   </table>
   </dd>
 </dl>
@@ -1132,7 +1161,7 @@ false </dd></dl>
 <div class="ttc" id="aoc__ri_8h_html_a95fa27c60f90b8e3b976f4ca5f04aab2a0b202e1b14f62e68613fc6b31b26defe"><div class="ttname"><a href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2a0b202e1b14f62e68613fc6b31b26defe">OC_IF_BASELINE</a></div><div class="ttdeci">@ OC_IF_BASELINE</div><div class="ttdoc">oic.if.baseline</div><div class="ttdef"><b>Definition:</b> oc_ri.h:190</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">resource</td><td>the resource the baseline Common Properties will be read from to respond to the GET request (cannot be NULL) </td></tr>
+    <tr><td class="paramname">resource</td><td>the resource the baseline Common Properties will be read from to respond to the GET request (cannot be NULL) </td></tr>
   </table>
   </dd>
 </dl>
@@ -1169,7 +1198,7 @@ false </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">request</td><td>the <a class="el" href="structoc__request__t.html" title="request information structure">oc_request_t</a> that contains the query parameters </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>the key being searched for</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>the key being searched for (cannot be NULL)</td></tr>
   </table>
   </dd>
 </dl>
@@ -1223,8 +1252,8 @@ false </dd></dl>
 <p>The read-only and sensor are also very similar in general a sensor value is read directly or indirectly from a real world sensor.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">resource</td><td>the resource that the interface(s) will be added to </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">iface_mask</td><td>a bitwise ORed list of all interfaces supported by the resource. </td></tr>
+    <tr><td class="paramname">resource</td><td>the resource that the interface(s) will be added to (cannot be NULL) </td></tr>
+    <tr><td class="paramname">iface_mask</td><td>a bitwise ORed list of all interfaces supported by the resource. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1266,8 +1295,8 @@ false </dd></dl>
 <p>Multi-value "rt" Resource means a resource with multiple Resource Types. i.e. <a class="el" href="group__doc__module__tag__server__side.html#gab17128fac474655e423d58b7e008e95a" title="Add a Resource Type &quot;rt&quot; property to the resource.">oc_resource_bind_resource_type()</a> is called multiple times for a single resource. When using a Mulit-value Resource the different resources properties must not conflict.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">resource</td><td>the resource that the Resource Type will be set on </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>the Resource Type to add to the Resource Type "rt" property</td></tr>
+    <tr><td class="paramname">resource</td><td>the resource that the Resource Type will be set on (cannot be NULL) </td></tr>
+    <tr><td class="paramname">type</td><td>the Resource Type to add to the Resource Type "rt" property (cannot be NULL)</td></tr>
   </table>
   </dd>
 </dl>
@@ -1297,7 +1326,7 @@ false </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>While the resource may advertise unsecured endpoints, the resource shall remain inaccessible until the hosting device is configured with an anon-clear Access Control Entry (ACE).</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">resource</td><td>the resource to make public</td></tr>
+    <tr><td class="paramname">resource</td><td>the resource to make public (cannot be NULL)</td></tr>
   </table>
   </dd>
 </dl>
@@ -1337,8 +1366,8 @@ false </dd></dl>
 <p>If the default interface is not set then the OC_IF_BASELINE will be used by the stack.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">resource</td><td>the resource that the default interface will be set on </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">iface_mask</td><td>a single interface that will will be used as the default interface </td></tr>
+    <tr><td class="paramname">resource</td><td>the resource that the default interface will be set on (cannot be NULL) </td></tr>
+    <tr><td class="paramname">iface_mask</td><td>a single interface that will will be used as the default interface </td></tr>
   </table>
   </dd>
 </dl>
@@ -1374,8 +1403,8 @@ false </dd></dl>
 <p>Specify if a resource can be found using OCF discover mechanisms. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">resource</td><td>to specify as discoverable or non-discoverable </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">state</td><td>if true the resource will be discoverable if false the resource will be non-discoverable</td></tr>
+    <tr><td class="paramname">resource</td><td>to specify as discoverable or non-discoverable (cannot be NULL) </td></tr>
+    <tr><td class="paramname">state</td><td>if true the resource will be discoverable if false the resource will be non-discoverable</td></tr>
   </table>
   </dd>
 </dl>
@@ -1413,8 +1442,8 @@ false </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>this function can be used to make a periodic observable resource unobservable.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">resource</td><td>the resource to specify the observability </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">state</td><td>true to make resource observable, false to make resource unobservable</td></tr>
+    <tr><td class="paramname">resource</td><td>the resource to specify the observability (cannot be NULL) </td></tr>
+    <tr><td class="paramname">state</td><td>true to make resource observable, false to make resource unobservable</td></tr>
   </table>
   </dd>
 </dl>
@@ -1455,8 +1484,8 @@ false </dd></dl>
 <p>Setting a <code>seconds</code> frequency of zero <code>0</code> is invalid and will result in an invalid resource.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">resource</td><td>the resource to specify the periodic observability </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">seconds</td><td>the frequency in seconds that the resource will send out an notification of is property values. </td></tr>
+    <tr><td class="paramname">resource</td><td>the resource to specify the periodic observability (cannot be NULL) </td></tr>
+    <tr><td class="paramname">seconds</td><td>the frequency in seconds that the resource will send out an notification of is property values. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1492,8 +1521,8 @@ false </dd></dl>
 <p>Specify if a resource can be pushable. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">resource</td><td>to specify as pushable or non-pushable </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">state</td><td>if true the resource will be pushable if false the resource will be non-pushable </td></tr>
+    <tr><td class="paramname">resource</td><td>to specify as pushable or non-pushable (cannot be NULL) </td></tr>
+    <tr><td class="paramname">state</td><td>if true the resource will be pushable if false the resource will be non-pushable </td></tr>
   </table>
   </dd>
 </dl>
@@ -1549,10 +1578,10 @@ false </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Some methods may never by invoked based on the resources Interface as well as the provisioning permissions of the client.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">resource</td><td>the resource the callback handler will be registered to </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">method</td><td>specify if type method the callback is responsible for handling </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">callback</td><td>the callback handler that will be invoked when a the method is called on the resource. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">user_data</td><td>context pointer that is passed to the oc_request_callback_t. The pointer must remain valid as long as the resource exists.</td></tr>
+    <tr><td class="paramname">resource</td><td>the resource the callback handler will be registered to (cannot be NULL) </td></tr>
+    <tr><td class="paramname">method</td><td>specify if type method the callback is responsible for handling </td></tr>
+    <tr><td class="paramname">callback</td><td>the callback handler that will be invoked when a the method is called on the resource. </td></tr>
+    <tr><td class="paramname">user_data</td><td>context pointer that is passed to the oc_request_callback_t. The pointer must remain valid as long as the resource exists.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1589,7 +1618,7 @@ false </dd></dl>
 <p>Sets the tag value for the relatvie position "tag_func_rel" tag. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">resource</td><td>the resource to apply the tag too. </td></tr>
+    <tr><td class="paramname">resource</td><td>the resource to apply the tag too (cannot be NULL). </td></tr>
     <tr><td class="paramname">func</td><td>the function description </td></tr>
   </table>
   </dd>
@@ -1626,7 +1655,7 @@ false </dd></dl>
 <p>sets the value of the "tag_locn" tag </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">resource</td><td>the resource to apply the tag too. </td></tr>
+    <tr><td class="paramname">resource</td><td>the resource to apply the tag too (cannot be NULL). </td></tr>
     <tr><td class="paramname">locn</td><td>the location </td></tr>
   </table>
   </dd>
@@ -1663,7 +1692,7 @@ false </dd></dl>
 <p>Sets the tag value for tag "tag-pos-desc" on the resource. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">resource</td><td>the resource </td></tr>
+    <tr><td class="paramname">resource</td><td>the resource (cannot be NULL) </td></tr>
     <tr><td class="paramname">pos</td><td>the descriptive text for the tag </td></tr>
   </table>
   </dd>
@@ -1712,7 +1741,7 @@ false </dd></dl>
 <p>Sets the value for the relative position "tag-pos-rel" tag. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">resource</td><td>the resource to apply the tag too. </td></tr>
+    <tr><td class="paramname">resource</td><td>the resource to apply the tag too (cannot be NULL). </td></tr>
     <tr><td class="paramname">x</td><td>the x value in 3D space </td></tr>
     <tr><td class="paramname">y</td><td>the y value in 3D space </td></tr>
     <tr><td class="paramname">z</td><td>the z value in 3D space </td></tr>
@@ -2062,7 +2091,7 @@ false </dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jul 24 2023 08:55:23 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Aug 1 2023 07:17:25 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

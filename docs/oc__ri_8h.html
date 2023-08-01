@@ -1298,8 +1298,8 @@ oc_interface_mask_t the mask value of the interface </dd></dl>
   <table class="params">
     <tr><td class="paramdir"></td><td class="paramname">query</td><td>the input query </td></tr>
     <tr><td class="paramdir"></td><td class="paramname">query_len</td><td>the query length </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">key</td><td>the key </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">key_len</td><td>the length of the key </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">key</td><td>the key (cannot be NULL) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">key_len</td><td>the length of the key (cannot be NULL) </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">value</td><td>the value belonging to the key </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">value_len</td><td>the length of the value </td></tr>
     <tr><td class="paramdir"></td><td class="paramname">n</td><td>the position to query </td></tr>
@@ -1355,7 +1355,7 @@ int -1 on failure </dd></dl>
   <table class="params">
     <tr><td class="paramname">query</td><td>the input query </td></tr>
     <tr><td class="paramname">query_len</td><td>the query lenght </td></tr>
-    <tr><td class="paramname">key</td><td>the wanted key </td></tr>
+    <tr><td class="paramname">key</td><td>the wanted key (cannot be NULL) </td></tr>
     <tr><td class="paramname">value</td><td>the returned value </td></tr>
   </table>
   </dd>
@@ -1567,7 +1567,7 @@ false callback was not found </dd></dl>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">query</td><td>the query to inspect </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">query_len</td><td>the lenght of the query </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>the key to be checked if exist, key is null terminated </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>the key to be checked if exist, key is null terminated (cannot be NULL) </td></tr>
   </table>
   </dd>
 </dl>
@@ -1624,8 +1624,8 @@ false callback was not found </dd></dl>
   <table class="params">
     <tr><td class="paramname">query</td><td>the query to inspect </td></tr>
     <tr><td class="paramname">query_len</td><td>the lenght of the query </td></tr>
-    <tr><td class="paramname">key</td><td>the key to be checked if exist, key is not null terminated </td></tr>
-    <tr><td class="paramname">key_len</td><td>the key length </td></tr>
+    <tr><td class="paramname">key</td><td>the key to be checked if exist, key is not null terminated (cannot be NULL) </td></tr>
+    <tr><td class="paramname">key_len</td><td>the key length (cannot be NULL) </td></tr>
     <tr><td class="paramname">n</td><td>index of the key </td></tr>
   </table>
   </dd>
@@ -1795,7 +1795,7 @@ Empty string for an invalid log level value </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__ri_8h.html">oc_ri.h</a></li>
-    <li class="footer">Generated on Mon Jul 24 2023 08:55:23 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Aug 1 2023 07:17:25 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
