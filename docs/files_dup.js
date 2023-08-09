@@ -8,7 +8,6 @@ var files_dup =
     [ "oc_assert.h", "oc__assert_8h.html", "oc__assert_8h" ],
     [ "oc_atomic.h", "oc__atomic_8h.html", "oc__atomic_8h" ],
     [ "oc_base64.h", "oc__base64_8h.html", "oc__base64_8h" ],
-    [ "oc_blockwise.h", "oc__blockwise_8h.html", "oc__blockwise_8h" ],
     [ "oc_buffer.h", "oc__buffer_8h.html", "oc__buffer_8h" ],
     [ "oc_buffer_settings.h", "oc__buffer__settings_8h.html", "oc__buffer__settings_8h" ],
     [ "oc_certs.h", "oc__certs_8h.html", "oc__certs_8h" ],
