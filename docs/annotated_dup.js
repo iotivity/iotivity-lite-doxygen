@@ -20,7 +20,6 @@ var annotated_dup =
     [ "oc_request_handler_s", "structoc__request__handler__s.html", "structoc__request__handler__s" ],
     [ "oc_request_t", "structoc__request__t.html", "structoc__request__t" ],
     [ "oc_resource_s", "structoc__resource__s.html", "structoc__resource__s" ],
-    [ "oc_response_t", "structoc__response__t.html", "structoc__response__t" ],
     [ "oc_sec_ace_t", "structoc__sec__ace__t.html", "structoc__sec__ace__t" ],
     [ "oc_sec_acl_s", "structoc__sec__acl__s.html", "structoc__sec__acl__s" ],
     [ "oc_sec_certs_data_t", "structoc__sec__certs__data__t.html", "structoc__sec__certs__data__t" ],
