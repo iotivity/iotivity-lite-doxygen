@@ -18,7 +18,8 @@ var oc__log_8h =
     [ "OC_SNPRINTFipaddr", "oc__log_8h.html#a50e9112adef413c6e200260be9c23483", null ],
     [ "oc_print_log_fn_t", "oc__log_8h.html#aa923f01b85ef950b37f59d28bc6a897c", null ],
     [ "oc_log_component_t", "oc__log_8h.html#a51c20822e2ed76081cd103d806e1984f", [
-      [ "OC_LOG_COMPONENT_DEFAULT", "oc__log_8h.html#a51c20822e2ed76081cd103d806e1984fa86d1b63ed043b4c72ad9bdd7b84383b7", null ]
+      [ "OC_LOG_COMPONENT_DEFAULT", "oc__log_8h.html#a51c20822e2ed76081cd103d806e1984fa86d1b63ed043b4c72ad9bdd7b84383b7", null ],
+      [ "OC_LOG_COMPONENT_CLOUD", "oc__log_8h.html#a51c20822e2ed76081cd103d806e1984fa8406e0e0a70d85ceeea844662c9613dd", null ]
     ] ],
     [ "oc_log_level_t", "oc__log_8h.html#abf655f01c4ec91ee48607f5441c45df9", [
       [ "OC_LOG_LEVEL_DISABLED", "oc__log_8h.html#abf655f01c4ec91ee48607f5441c45df9a61a0af6662f07a2b17f0f56e2c08a19e", null ],

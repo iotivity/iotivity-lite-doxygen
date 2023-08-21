@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['handler_1518',['handler',['../structoc__client__cb__t.html#a4faf01c32b64a470a54e72e14dc5a5b7',1,'oc_client_cb_t']]],
-  ['href_1519',['href',['../structoc__ace__res__t.html#ab1362d114a97516fc2bd625e4c03560d',1,'oc_ace_res_t']]]
+  ['handler_1519',['handler',['../structoc__client__cb__t.html#a4faf01c32b64a470a54e72e14dc5a5b7',1,'oc_client_cb_t']]],
+  ['href_1520',['href',['../structoc__ace__res__t.html#ab1362d114a97516fc2bd625e4c03560d',1,'oc_ace_res_t']]]
 ];

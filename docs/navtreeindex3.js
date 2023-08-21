@@ -218,6 +218,7 @@ var NAVTREEINDEX3 =
 "oc__log_8h.html#a4a0d6821ea8b9575c986b523f8f7cb45":[4,0,26,22],
 "oc__log_8h.html#a50e9112adef413c6e200260be9c23483":[4,0,26,15],
 "oc__log_8h.html#a51c20822e2ed76081cd103d806e1984f":[4,0,26,17],
+"oc__log_8h.html#a51c20822e2ed76081cd103d806e1984fa8406e0e0a70d85ceeea844662c9613dd":[4,0,26,17,1],
 "oc__log_8h.html#a51c20822e2ed76081cd103d806e1984fa86d1b63ed043b4c72ad9bdd7b84383b7":[4,0,26,17,0],
 "oc__log_8h.html#a5425ef1ef892a78a846ffbb831c7690b":[4,0,26,12],
 "oc__log_8h.html#a5c8ca6f90d31ded3e946e2363cd00d55":[4,0,26,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "oc__network__events_8h.html#abdd165be6caa5026d18f49473b31aa2da122b034cb4a6bb20b5f1770c2095793d":[4,0,27,1,0],
 "oc__network__events_8h.html#abdd165be6caa5026d18f49473b31aa2dadd6d38b84666ccf8cc15615199773d77":[4,0,27,1,1],
 "oc__network__events_8h.html#acf84b55c3b10e0a5a7cfff4329008b90":[4,0,27,0],
-"oc__network__monitor_8h.html":[4,0,28],
-"oc__network__monitor_8h.html#a0ac3cb2396e0fb65fd831437ffaf37d6":[4,0,28,1]
+"oc__network__monitor_8h.html":[4,0,28]
 };
