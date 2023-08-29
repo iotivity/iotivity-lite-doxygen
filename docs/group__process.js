@@ -24,7 +24,6 @@ var group__process =
     [ "oc_process_alloc_event", "group__process.html#ga56a730c348749244c8d408deb521d3a2", null ],
     [ "oc_process_drop", "group__process.html#ga4b72e9eb3df3ff58fc1ebdbdfe942067", null ],
     [ "oc_process_exit", "group__process.html#ga1d95e58a5420bd337dee7eb814c4c981", null ],
-    [ "oc_process_is_closing_all_tls_sessions", "group__process.html#ga4e4e6672d79210acefd109285c28b81d", null ],
     [ "oc_process_is_running", "group__process.html#gaf1ac9aea33fd05e179998dd7715583cc", null ],
     [ "oc_process_nevents", "group__process.html#ga768de50b2b7e49338dc0e329490f4aa7", null ],
     [ "oc_process_poll", "group__process.html#ga61c50b3910129d8870a4c4c4c44b1a00", null ],
