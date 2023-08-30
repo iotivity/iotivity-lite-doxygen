@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"oc__ri_8h.html#a63f96c05b779dfc1ebcfe0722946ceaa":[4,0,34,23],
 "oc__ri_8h.html#a63f96c05b779dfc1ebcfe0722946ceaaa012ebe25609e38f0dfae84a8b66b2562":[4,0,34,23,0],
 "oc__ri_8h.html#a63f96c05b779dfc1ebcfe0722946ceaaae683cd6d281ea182358dedaacde8e3f9":[4,0,34,23,1],
 "oc__ri_8h.html#a830f565772c7fb4c14e1d8a737b8ff70":[4,0,34,34],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "structoc__platform__info__t.html#af8e573c743c9640018fbea887401e3f7":[3,0,14,3],
 "structoc__properties__cb__t.html":[3,0,15],
 "structoc__properties__cb__t.html#a0f53d287ac7c064d1a49d4bd93ca1cb9":[3,0,15,3],
-"structoc__properties__cb__t.html#a5abe1cd20fc23833ae74446915215a60":[3,0,15,1],
-"structoc__properties__cb__t.html#a921b61997f374d9a2fa59f42fdfcd31b":[3,0,15,2]
+"structoc__properties__cb__t.html#a5abe1cd20fc23833ae74446915215a60":[3,0,15,1]
 };

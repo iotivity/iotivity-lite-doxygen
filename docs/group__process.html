@@ -212,6 +212,9 @@ struct oc_process *&#160;</td><td class="memItemRight" valign="bottom"><b>oc_pro
 <tr class="memitem:ga768de50b2b7e49338dc0e329490f4aa7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__process.html#ga768de50b2b7e49338dc0e329490f4aa7">oc_process_nevents</a> (void)</td></tr>
 <tr class="memdesc:ga768de50b2b7e49338dc0e329490f4aa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of events waiting to be processed.  <a href="group__process.html#ga768de50b2b7e49338dc0e329490f4aa7">More...</a><br /></td></tr>
 <tr class="separator:ga768de50b2b7e49338dc0e329490f4aa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4e4e6672d79210acefd109285c28b81d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__process.html#ga4e4e6672d79210acefd109285c28b81d">oc_process_is_closing_all_tls_sessions</a> (void)</td></tr>
+<tr class="memdesc:ga4e4e6672d79210acefd109285c28b81d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if closing of all tls sessions is currently scheduled by the process.  <a href="group__process.html#ga4e4e6672d79210acefd109285c28b81d">More...</a><br /></td></tr>
+<tr class="separator:ga4e4e6672d79210acefd109285c28b81d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Return values</h2></td></tr>
 <tr class="memitem:ga085a197e421c2a655d287975c531e478"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__process.html#ga085a197e421c2a655d287975c531e478">OC_PROCESS_ERR_OK</a>&#160;&#160;&#160;0</td></tr>
@@ -919,6 +922,29 @@ struct oc_process *&#160;</td><td class="memItemRight" valign="bottom"><b>oc_pro
 
 </div>
 </div>
+<a id="ga4e4e6672d79210acefd109285c28b81d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4e4e6672d79210acefd109285c28b81d">&#9670;&nbsp;</a></span>oc_process_is_closing_all_tls_sessions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool oc_process_is_closing_all_tls_sessions </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if closing of all tls sessions is currently scheduled by the process. </p>
+<dl class="section return"><dt>Returns</dt><dd>true closing of all tls is sessions is scheduled by the process </dd>
+<dd>
+false otherwise </dd></dl>
+
+</div>
+</div>
 <a id="gaf1ac9aea33fd05e179998dd7715583cc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaf1ac9aea33fd05e179998dd7715583cc">&#9670;&nbsp;</a></span>oc_process_is_running()</h2>
 
@@ -1161,7 +1187,7 @@ struct oc_process *&#160;</td><td class="memItemRight" valign="bottom"><b>oc_pro
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Aug 29 2023 19:43:15 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Aug 30 2023 09:23:03 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
