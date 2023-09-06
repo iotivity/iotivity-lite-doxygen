@@ -322,6 +322,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ae6522fdfeed62a92193214ee99dfc47c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__api_8h.html#ae6522fdfeed62a92193214ee99dfc47c">oc_main_init</a> (const <a class="el" href="structoc__handler__t.html">oc_handler_t</a> *handler)</td></tr>
 <tr class="memdesc:ae6522fdfeed62a92193214ee99dfc47c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register and call handler functions responsible for controlling the IoTivity-lite stack.  <a href="oc__api_8h.html#ae6522fdfeed62a92193214ee99dfc47c">More...</a><br /></td></tr>
 <tr class="separator:ae6522fdfeed62a92193214ee99dfc47c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5cd91992b060e291b9584352efbc8cb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__api_8h.html#ad5cd91992b060e291b9584352efbc8cb">oc_main_needs_poll</a> (void)</td></tr>
+<tr class="memdesc:ad5cd91992b060e291b9584352efbc8cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if process polling was requested.  <a href="oc__api_8h.html#ad5cd91992b060e291b9584352efbc8cb">More...</a><br /></td></tr>
+<tr class="separator:ad5cd91992b060e291b9584352efbc8cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad146ae2ebe285109e6c3a7fdc193bd6e"><td class="memItemLeft" align="right" valign="top">oc_clock_time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__api_8h.html#ad146ae2ebe285109e6c3a7fdc193bd6e">oc_main_poll</a> (void)</td></tr>
 <tr class="memdesc:ad146ae2ebe285109e6c3a7fdc193bd6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poll to process tasks.  <a href="oc__api_8h.html#ad146ae2ebe285109e6c3a7fdc193bd6e">More...</a><br /></td></tr>
 <tr class="separator:ad146ae2ebe285109e6c3a7fdc193bd6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -583,7 +586,7 @@ Functions</h2></td></tr>
 <div class="line">                       <span class="stringliteral">&quot;ocf.res.1.0.0&quot;</span>, set_device_custom_property, NULL);</div>
 <div class="line">  <span class="keywordflow">return</span> ret;</div>
 <div class="line">}</div>
-<div class="ttc" id="aoc__api_8h_html_a07db38d877a6ecbeb92ba881925f09c3"><div class="ttname"><a href="oc__api_8h.html#a07db38d877a6ecbeb92ba881925f09c3">oc_set_custom_device_property</a></div><div class="ttdeci">#define oc_set_custom_device_property(prop, value)</div><div class="ttdoc">Set custom device property.</div><div class="ttdef"><b>Definition:</b> oc_api.h:574</div></div>
+<div class="ttc" id="aoc__api_8h_html_a07db38d877a6ecbeb92ba881925f09c3"><div class="ttname"><a href="oc__api_8h.html#a07db38d877a6ecbeb92ba881925f09c3">oc_set_custom_device_property</a></div><div class="ttdeci">#define oc_set_custom_device_property(prop, value)</div><div class="ttdoc">Set custom device property.</div><div class="ttdef"><b>Definition:</b> oc_api.h:587</div></div>
 <div class="ttc" id="aoc__api_8h_html_a5aa72dd8d7d03ff826801b1d7d67ec68"><div class="ttname"><a href="oc__api_8h.html#a5aa72dd8d7d03ff826801b1d7d67ec68">oc_add_device</a></div><div class="ttdeci">int oc_add_device(const char *uri, const char *rt, const char *name, const char *spec_version, const char *data_model_version, oc_add_device_cb_t add_device_cb, void *data)</div><div class="ttdoc">Add an ocf device to the the stack.</div></div>
 <div class="ttc" id="aoc__api_8h_html_abc05e63942a1093f807213220841c54b"><div class="ttname"><a href="oc__api_8h.html#abc05e63942a1093f807213220841c54b">oc_init_platform</a></div><div class="ttdeci">int oc_init_platform(const char *mfg_name, oc_init_platform_cb_t init_platform_cb, void *data)</div><div class="ttdoc">Initialize the platform.</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
@@ -745,7 +748,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="stringliteral">&quot;oic.d.light&quot;</span>, <span class="stringliteral">&quot;My light&quot;</span>, <span class="stringliteral">&quot;ocf.1.0.0&quot;</span>, <span class="stringliteral">&quot;ocf.res.1.0.0&quot;</span>, NULL, NULL); <span class="keywordflow">return</span></div>
 <div class="line">ret;</div>
 <div class="line">}</div>
-<div class="ttc" id="aoc__api_8h_html_a9a4f40914dd68e17b88345bcce756666"><div class="ttname"><a href="oc__api_8h.html#a9a4f40914dd68e17b88345bcce756666">oc_set_custom_platform_property</a></div><div class="ttdeci">#define oc_set_custom_platform_property(prop, value)</div><div class="ttdoc">Set custom platform property.</div><div class="ttdef"><b>Definition:</b> oc_api.h:614</div></div>
+<div class="ttc" id="aoc__api_8h_html_a9a4f40914dd68e17b88345bcce756666"><div class="ttname"><a href="oc__api_8h.html#a9a4f40914dd68e17b88345bcce756666">oc_set_custom_platform_property</a></div><div class="ttdeci">#define oc_set_custom_platform_property(prop, value)</div><div class="ttdoc">Set custom platform property.</div><div class="ttdef"><b>Definition:</b> oc_api.h:627</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>context pointer that comes from the <a class="el" href="oc__api_8h.html#a5aa72dd8d7d03ff826801b1d7d67ec68" title="Add an ocf device to the the stack.">oc_add_device()</a> function</td></tr>
@@ -1216,6 +1219,32 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ad5cd91992b060e291b9584352efbc8cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5cd91992b060e291b9584352efbc8cb">&#9670;&nbsp;</a></span>oc_main_needs_poll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool oc_main_needs_poll </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if process polling was requested. </p>
+<dl class="section return"><dt>Returns</dt><dd>true A polling of processes was requested by a call to oc_process_poll and oc_main_poll_v1 should be called. </dd>
+<dd>
+false Otherwise</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__api_8h.html#ad146ae2ebe285109e6c3a7fdc193bd6e" title="Poll to process tasks.">oc_main_poll</a> </dd>
+<dd>
+<a class="el" href="group__process.html#ga61c50b3910129d8870a4c4c4c44b1a00" title="Request a process to be polled.">oc_process_poll</a> </dd></dl>
+
+</div>
+</div>
 <a id="ad146ae2ebe285109e6c3a7fdc193bd6e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad146ae2ebe285109e6c3a7fdc193bd6e">&#9670;&nbsp;</a></span>oc_main_poll()</h2>
 
@@ -1600,7 +1629,7 @@ Use of this function requires building with OC_SECURITY defined.</dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__api_8h.html">oc_api.h</a></li>
-    <li class="footer">Generated on Tue Sep 5 2023 16:13:34 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 6 2023 13:00:33 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

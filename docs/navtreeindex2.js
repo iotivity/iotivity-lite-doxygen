@@ -1,5 +1,7 @@
 var NAVTREEINDEX2 =
 {
+"oc__buffer__settings_8h.html":[4,0,9],
+"oc__buffer__settings_8h.html#a1279de769040b9559bf5d205df7d59c9":[4,0,9,6],
 "oc__buffer__settings_8h.html#a1a0598b2bd3d052a4260859224f1264d":[4,0,9,3],
 "oc__buffer__settings_8h.html#a1cbba88d9366853d950ff7bd4dfa6bd4":[4,0,9,2],
 "oc__buffer__settings_8h.html#a2d9adeaa04bd249c62d9354e338c0ea2":[4,0,9,0],
@@ -104,13 +106,14 @@ var NAVTREEINDEX2 =
 "oc__cloud_8h.html#afc503e0c5bc0cdc2a519400845d8f03e":[4,0,14,13],
 "oc__collection_8h.html":[4,0,15],
 "oc__compiler_8h.html":[4,0,16],
-"oc__compiler_8h.html#a150dcfd720541dddbe629a725a0c87ef":[4,0,16,6],
+"oc__compiler_8h.html#a150dcfd720541dddbe629a725a0c87ef":[4,0,16,7],
 "oc__compiler_8h.html#a82eeac98c49f941b14b94262a982c0a7":[4,0,16,2],
-"oc__compiler_8h.html#aa4a49a2fcb7e84bf256328fa4e67a478":[4,0,16,5],
+"oc__compiler_8h.html#aa4a49a2fcb7e84bf256328fa4e67a478":[4,0,16,6],
 "oc__compiler_8h.html#aabb9ebcbbb38e06947ad53bdc435a5ab":[4,0,16,1],
 "oc__compiler_8h.html#ab451b7887f0732d67b28c97bd705f948":[4,0,16,0],
+"oc__compiler_8h.html#abdf711b59ebcd40b2a0feabef4b67e57":[4,0,16,4],
 "oc__compiler_8h.html#ac6c2a7995ec8d4e21503941acf7114d9":[4,0,16,3],
-"oc__compiler_8h.html#adabbda288d1d57f6083b4fa06e532dd8":[4,0,16,4],
+"oc__compiler_8h.html#adabbda288d1d57f6083b4fa06e532dd8":[4,0,16,5],
 "oc__connectivity_8h.html":[4,0,17],
 "oc__connectivity_8h.html#a17fcc4b1fd577de08c171d3ece534e33":[4,0,17,10],
 "oc__connectivity_8h.html#a1ba597b6a772e787cb53155cfbcb7354":[4,0,17,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX2 =
 "oc__enums_8h.html#a2a2e721367a0c1e572142ab3366a1272a1dc223468eb671badb2382ace2ba40f4":[4,0,21,4,51],
 "oc__enums_8h.html#a2a2e721367a0c1e572142ab3366a1272a20e31ed67ff7506a28d19904b8c2df6d":[4,0,21,4,27],
 "oc__enums_8h.html#a2a2e721367a0c1e572142ab3366a1272a22f2ab0dcdd205685b507be1c7a9028b":[4,0,21,4,40],
-"oc__enums_8h.html#a2a2e721367a0c1e572142ab3366a1272a25c0eab0d49f7686b4cc382f1d4c7992":[4,0,21,4,18],
-"oc__enums_8h.html#a2a2e721367a0c1e572142ab3366a1272a26f0b38b09ba49ff30a39b7a020fbec8":[4,0,21,4,4],
-"oc__enums_8h.html#a2a2e721367a0c1e572142ab3366a1272a2a3e6e5dde671fb86a6242bc53c75876":[4,0,21,4,30],
-"oc__enums_8h.html#a2a2e721367a0c1e572142ab3366a1272a2d081fb0004375cc698bbd4d65e223ca":[4,0,21,4,61]
+"oc__enums_8h.html#a2a2e721367a0c1e572142ab3366a1272a25c0eab0d49f7686b4cc382f1d4c7992":[4,0,21,4,18]
 };
