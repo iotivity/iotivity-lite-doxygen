@@ -31,6 +31,7 @@ var oc__endpoint_8h =
     [ "oc_endpoint_set_di", "oc__endpoint_8h.html#a23a8eeb9820fae0ea8a28b7cdd980050", null ],
     [ "oc_endpoint_set_local_address", "oc__endpoint_8h.html#ab1cde28809d4868866ab23df047fd8e2", null ],
     [ "oc_endpoint_string_parse_path", "oc__endpoint_8h.html#a54edc0ea5f6bf111e0a24d13ff26b156", null ],
+    [ "oc_endpoint_to_cstring", "oc__endpoint_8h.html#a681b4dbebc4bb92f7b50f0ffc6de5be9", null ],
     [ "oc_endpoint_to_string", "oc__endpoint_8h.html#a0b56350db360ea2e2c46abb649384132", null ],
     [ "oc_free_endpoint", "oc__endpoint_8h.html#aef7806ac74d70ffd0e986dd08b66a3e7", null ],
     [ "oc_ipv6_endpoint_is_link_local", "oc__endpoint_8h.html#a1d9bd91e6ff396dee0b9941b27086e5a", null ],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"structoc__platform__info__t.html#af8e573c743c9640018fbea887401e3f7":[3,0,14,3],
 "structoc__properties__cb__t.html":[3,0,15],
 "structoc__properties__cb__t.html#a0f53d287ac7c064d1a49d4bd93ca1cb9":[3,0,15,3],
 "structoc__properties__cb__t.html#a5abe1cd20fc23833ae74446915215a60":[3,0,15,1],

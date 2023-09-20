@@ -176,7 +176,7 @@ Macros</h2></td></tr>
 <tr class="memitem:a41251afd98b8794639301a9ef99e67be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a41251afd98b8794639301a9ef99e67be">oc_new_string_array</a>(ocstringarray,  size)&#160;&#160;&#160;  (<a class="el" href="oc__helpers_8h.html#a79bd60028e1af917dc8f05239e2f23bc">_oc_alloc_string_array</a>(ocstringarray, size))</td></tr>
 <tr class="memdesc:a41251afd98b8794639301a9ef99e67be"><td class="mdescLeft">&#160;</td><td class="mdescRight">new oc string array  <a href="oc__helpers_8h.html#a41251afd98b8794639301a9ef99e67be">More...</a><br /></td></tr>
 <tr class="separator:a41251afd98b8794639301a9ef99e67be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bd70ca9b1f0250da0e76740ce99f7b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a5bd70ca9b1f0250da0e76740ce99f7b4">oc_string</a>(ocstring)&#160;&#160;&#160;(oc_cast(ocstring, char))</td></tr>
+<tr class="memitem:a5bd70ca9b1f0250da0e76740ce99f7b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a5bd70ca9b1f0250da0e76740ce99f7b4">oc_string</a>(ocstring)&#160;&#160;&#160;((char *)(ocstring).ptr)</td></tr>
 <tr class="memdesc:a5bd70ca9b1f0250da0e76740ce99f7b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">cast oc_string to string  <a href="oc__helpers_8h.html#a5bd70ca9b1f0250da0e76740ce99f7b4">More...</a><br /></td></tr>
 <tr class="separator:a5bd70ca9b1f0250da0e76740ce99f7b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69d33d24dca94f49cf13d757c9934402"><td class="memItemLeft" align="right" valign="top"><a id="a69d33d24dca94f49cf13d757c9934402"></a>
@@ -568,7 +568,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_oc_string_array_add_
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">ocstring</td><td>)</td>
-          <td>&#160;&#160;&#160;(oc_cast(ocstring, char))</td>
+          <td>&#160;&#160;&#160;((char *)(ocstring).ptr)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1080,7 +1080,7 @@ int -1 on failure </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__helpers_8h.html">oc_helpers.h</a></li>
-    <li class="footer">Generated on Tue Sep 19 2023 16:51:11 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 20 2023 10:44:19 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

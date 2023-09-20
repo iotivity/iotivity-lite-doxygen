@@ -94,6 +94,7 @@ $(document).ready(function(){initNavTree('oc__endpoint_8h.html',''); initResizab
 <div class="textblock"><code>#include &quot;<a class="el" href="oc__export_8h.html">oc_export.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__helpers_8h.html">oc_helpers.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__uuid_8h.html">oc_uuid.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="oc__compiler_8h.html">util/oc_compiler.h</a>&quot;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -172,11 +173,14 @@ Functions</h2></td></tr>
 <tr class="memdesc:a23a8eeb9820fae0ea8a28b7cdd980050"><td class="mdescLeft">&#160;</td><td class="mdescRight">set device identifier (di) for the endpoint  <a href="oc__endpoint_8h.html#a23a8eeb9820fae0ea8a28b7cdd980050">More...</a><br /></td></tr>
 <tr class="separator:a23a8eeb9820fae0ea8a28b7cdd980050"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1cde28809d4868866ab23df047fd8e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__endpoint_8h.html#ab1cde28809d4868866ab23df047fd8e2">oc_endpoint_set_local_address</a> (<a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *ep, unsigned interface_index)</td></tr>
-<tr class="memdesc:ab1cde28809d4868866ab23df047fd8e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">set interface index on the endpoint  <a href="oc__endpoint_8h.html#ab1cde28809d4868866ab23df047fd8e2">More...</a><br /></td></tr>
+<tr class="memdesc:ab1cde28809d4868866ab23df047fd8e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">set local address on endpoint from the first device endpoint with matching flags and interface index  <a href="oc__endpoint_8h.html#ab1cde28809d4868866ab23df047fd8e2">More...</a><br /></td></tr>
 <tr class="separator:ab1cde28809d4868866ab23df047fd8e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54edc0ea5f6bf111e0a24d13ff26b156"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__endpoint_8h.html#a54edc0ea5f6bf111e0a24d13ff26b156">oc_endpoint_string_parse_path</a> (const oc_string_t *endpoint_str, oc_string_t *path)</td></tr>
 <tr class="memdesc:a54edc0ea5f6bf111e0a24d13ff26b156"><td class="mdescLeft">&#160;</td><td class="mdescRight">parse path component (ie.  <a href="oc__endpoint_8h.html#a54edc0ea5f6bf111e0a24d13ff26b156">More...</a><br /></td></tr>
 <tr class="separator:a54edc0ea5f6bf111e0a24d13ff26b156"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a681b4dbebc4bb92f7b50f0ffc6de5be9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__endpoint_8h.html#a681b4dbebc4bb92f7b50f0ffc6de5be9">oc_endpoint_to_cstring</a> (const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint, char *buffer, size_t buffer_size)</td></tr>
+<tr class="memdesc:a681b4dbebc4bb92f7b50f0ffc6de5be9"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert the endpoint to a human readable string (e.g.  <a href="oc__endpoint_8h.html#a681b4dbebc4bb92f7b50f0ffc6de5be9">More...</a><br /></td></tr>
+<tr class="separator:a681b4dbebc4bb92f7b50f0ffc6de5be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b56350db360ea2e2c46abb649384132"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__endpoint_8h.html#a0b56350db360ea2e2c46abb649384132">oc_endpoint_to_string</a> (const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint, oc_string_t *endpoint_str)</td></tr>
 <tr class="memdesc:a0b56350db360ea2e2c46abb649384132"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert the endpoint to a human readable string (e.g.  <a href="oc__endpoint_8h.html#a0b56350db360ea2e2c46abb649384132">More...</a><br /></td></tr>
 <tr class="separator:a0b56350db360ea2e2c46abb649384132"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -234,8 +238,8 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">  <a class="code" href="structoc__endpoint__t.html">oc_endpoint_t</a> __name__ = { .<a class="code" href="structoc__endpoint__t.html#a0942a0902616fd2591dc585d2193e323">flags</a> = __flags__,                               \</div>
 <div class="line">                             .addr.ipv4 = { .port = __port__,                  \</div>
 <div class="line">                                            .address = { __VA_ARGS__ } } }</div>
-<div class="ttc" id="astructoc__endpoint__t_html"><div class="ttname"><a href="structoc__endpoint__t.html">oc_endpoint_t</a></div><div class="ttdoc">the endpoint information</div><div class="ttdef"><b>Definition:</b> oc_endpoint.h:90</div></div>
-<div class="ttc" id="astructoc__endpoint__t_html_a0942a0902616fd2591dc585d2193e323"><div class="ttname"><a href="structoc__endpoint__t.html#a0942a0902616fd2591dc585d2193e323">oc_endpoint_t::flags</a></div><div class="ttdeci">transport_flags flags</div><div class="ttdoc">the transport flags</div><div class="ttdef"><b>Definition:</b> oc_endpoint.h:93</div></div>
+<div class="ttc" id="astructoc__endpoint__t_html"><div class="ttname"><a href="structoc__endpoint__t.html">oc_endpoint_t</a></div><div class="ttdoc">the endpoint information</div><div class="ttdef"><b>Definition:</b> oc_endpoint.h:91</div></div>
+<div class="ttc" id="astructoc__endpoint__t_html_a0942a0902616fd2591dc585d2193e323"><div class="ttname"><a href="structoc__endpoint__t.html#a0942a0902616fd2591dc585d2193e323">oc_endpoint_t::flags</a></div><div class="ttdeci">transport_flags flags</div><div class="ttdoc">the transport flags</div><div class="ttdef"><b>Definition:</b> oc_endpoint.h:94</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -523,10 +527,13 @@ false otherwise </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dst</td><td>destination list of endpoints (cannot be NULL) </td></tr>
-    <tr><td class="paramname">src</td><td>source list of endpoints </td></tr>
+    <tr><td class="paramname">src</td><td>source list of endpoints</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success </dd>
+<dd>
+-1 on failure </dd></dl>
 
 </div>
 </div>
@@ -619,11 +626,11 @@ false otherwise </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>set interface index on the endpoint </p>
+<p>set local address on endpoint from the first device endpoint with matching flags and interface index </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ep</td><td>the endpoint (cannot be NULL) </td></tr>
-    <tr><td class="paramname">interface_index</td><td>the interface index </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">ep</td><td>the endpoint (cannot be NULL) </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">interface_index</td><td>the interface index </td></tr>
   </table>
   </dd>
 </dl>
@@ -660,7 +667,7 @@ false otherwise </dd></dl>
 <p>the part after the first '/') of a uri</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">endpoint_str</td><td>uri to parse </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">endpoint_str</td><td>uri to parse </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">path</td><td>output variable </td></tr>
   </table>
   </dd>
@@ -668,6 +675,52 @@ false otherwise </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success </dd>
 <dd>
 -1 on failure </dd></dl>
+
+</div>
+</div>
+<a id="a681b4dbebc4bb92f7b50f0ffc6de5be9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a681b4dbebc4bb92f7b50f0ffc6de5be9">&#9670;&nbsp;</a></span>oc_endpoint_to_cstring()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_endpoint_to_cstring </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *&#160;</td>
+          <td class="paramname"><em>endpoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>buffer_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>convert the endpoint to a human readable string (e.g. </p>
+<p>"coaps://[fe::22]:1234")</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">endpoint</td><td>the endpoint (cannot be NULL) </td></tr>
+    <tr><td class="paramname">buffer</td><td>output buffer (cannot be NULL) </td></tr>
+    <tr><td class="paramname">buffer_size</td><td>size of output buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>number of written bytes, -1 for error </dd></dl>
 
 </div>
 </div>
@@ -698,7 +751,7 @@ false otherwise </dd></dl>
 </div><div class="memdoc">
 
 <p>convert the endpoint to a human readable string (e.g. </p>
-<p>"coaps://[fe::22]:/")</p>
+<p>"coaps://[fe::22]:1234")</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">endpoint</td><td>the endpoint </td></tr>
@@ -835,7 +888,7 @@ false otherwise </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__endpoint_8h.html">oc_endpoint.h</a></li>
-    <li class="footer">Generated on Tue Sep 19 2023 16:51:11 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Sep 20 2023 10:44:19 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
