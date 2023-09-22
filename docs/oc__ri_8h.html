@@ -379,6 +379,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a8e71507c8e64d0d010c18c18e9593d39"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a8e71507c8e64d0d010c18c18e9593d39">oc_ri_get_query_value</a> (const char *query, size_t query_len, const char *key, const char **value)</td></tr>
 <tr class="memdesc:a8e71507c8e64d0d010c18c18e9593d39"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the value of the query parameter "key"  <a href="oc__ri_8h.html#a8e71507c8e64d0d010c18c18e9593d39">More...</a><br /></td></tr>
 <tr class="separator:a8e71507c8e64d0d010c18c18e9593d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae08e622d8eddbc22d8b37e062aff483b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#ae08e622d8eddbc22d8b37e062aff483b">oc_ri_get_query_value_v1</a> (const char *query, size_t query_len, const char *key, size_t key_len, const char **value)</td></tr>
+<tr class="memdesc:ae08e622d8eddbc22d8b37e062aff483b"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the value of the query parameter "key"  <a href="oc__ri_8h.html#ae08e622d8eddbc22d8b37e062aff483b">More...</a><br /></td></tr>
+<tr class="separator:ae08e622d8eddbc22d8b37e062aff483b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a027c12af41fd57bae85a25c3cd2b3c94"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a027c12af41fd57bae85a25c3cd2b3c94">oc_ri_has_timed_event_callback</a> (const void *cb_data, oc_trigger_t event_callback, bool ignore_cb_data)</td></tr>
 <tr class="memdesc:a027c12af41fd57bae85a25c3cd2b3c94"><td class="mdescLeft">&#160;</td><td class="mdescRight">check if the timed event callback already exists.  <a href="oc__ri_8h.html#a027c12af41fd57bae85a25c3cd2b3c94">More...</a><br /></td></tr>
 <tr class="separator:a027c12af41fd57bae85a25c3cd2b3c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -395,8 +398,11 @@ Functions</h2></td></tr>
 <tr class="memdesc:afb849b9fa4642a67d13d86380e45c010"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove callback from the list of callbacks invoked by oc_delayed_delete_resource.  <a href="oc__ri_8h.html#afb849b9fa4642a67d13d86380e45c010">More...</a><br /></td></tr>
 <tr class="separator:afb849b9fa4642a67d13d86380e45c010"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d6859298de1d6033ec3d91f5d6e9be9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a0d6859298de1d6033ec3d91f5d6e9be9">oc_ri_query_exists</a> (const char *query, size_t query_len, const char *key)</td></tr>
-<tr class="memdesc:a0d6859298de1d6033ec3d91f5d6e9be9"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks if key exist in query  <a href="oc__ri_8h.html#a0d6859298de1d6033ec3d91f5d6e9be9">More...</a><br /></td></tr>
+<tr class="memdesc:a0d6859298de1d6033ec3d91f5d6e9be9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if key exist in query.  <a href="oc__ri_8h.html#a0d6859298de1d6033ec3d91f5d6e9be9">More...</a><br /></td></tr>
 <tr class="separator:a0d6859298de1d6033ec3d91f5d6e9be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f669c8be4bd09b22b265b15882d46d2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a4f669c8be4bd09b22b265b15882d46d2">oc_ri_query_exists_v1</a> (const char *query, size_t query_len, const char *key, size_t key_len)</td></tr>
+<tr class="memdesc:a4f669c8be4bd09b22b265b15882d46d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if key exist in query.  <a href="oc__ri_8h.html#a4f669c8be4bd09b22b265b15882d46d2">More...</a><br /></td></tr>
+<tr class="separator:a4f669c8be4bd09b22b265b15882d46d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4986689628b7095abbd58472bcb9cd7e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__ri_8h.html#a4986689628b7095abbd58472bcb9cd7e">oc_ri_query_nth_key_exists</a> (const char *query, size_t query_len, const char **key, size_t *key_len, size_t n)</td></tr>
 <tr class="memdesc:a4986689628b7095abbd58472bcb9cd7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">check if the nth key exists  <a href="oc__ri_8h.html#a4986689628b7095abbd58472bcb9cd7e">More...</a><br /></td></tr>
 <tr class="separator:a4986689628b7095abbd58472bcb9cd7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1142,7 +1148,7 @@ false failure </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">uri</td><td>the uri of the resource </td></tr>
-    <tr><td class="paramname">uri_len</td><td>the lenght of the uri </td></tr>
+    <tr><td class="paramname">uri_len</td><td>the length of the uri </td></tr>
     <tr><td class="paramname">device</td><td>the device index </td></tr>
   </table>
   </dd>
@@ -1277,7 +1283,7 @@ oc_interface_mask_t the mask value of the interface </dd></dl>
     <tr><td class="paramdir">[out]</td><td class="paramname">key_len</td><td>the length of the key (cannot be NULL) </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">value</td><td>the value belonging to the key </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">value_len</td><td>the length of the value </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">n</td><td>the position to query </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">n</td><td>the position to query (must be &gt; 0) </td></tr>
   </table>
   </dd>
 </dl>
@@ -1326,16 +1332,68 @@ int -1 on failure </dd></dl>
 </div><div class="memdoc">
 
 <p>retrieve the value of the query parameter "key" </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000015">Deprecated:</a></b></dt><dd>replaced by oc_ri_get_query_value_v1 in v2.2.5.9 </dd></dl>
+
+</div>
+</div>
+<a id="ae08e622d8eddbc22d8b37e062aff483b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae08e622d8eddbc22d8b37e062aff483b">&#9670;&nbsp;</a></span>oc_ri_get_query_value_v1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_ri_get_query_value_v1 </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>query</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>query_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>key_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char **&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>retrieve the value of the query parameter "key" </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">query</td><td>the input query </td></tr>
-    <tr><td class="paramname">query_len</td><td>the query lenght </td></tr>
+    <tr><td class="paramname">query_len</td><td>the query length </td></tr>
     <tr><td class="paramname">key</td><td>the wanted key (cannot be NULL) </td></tr>
+    <tr><td class="paramname">key_len</td><td>the length of the wanted key </td></tr>
     <tr><td class="paramname">value</td><td>the returned value </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>int the lenght of the value </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>-1 if the key is not found </dd>
+<dd>
+the length of the value </dd></dl>
 
 </div>
 </div>
@@ -1537,16 +1595,61 @@ false callback was not found </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>checks if key exist in query </p>
+<p>Checks if key exist in query. </p>
+<dl class="section return"><dt>Returns</dt><dd>-1 if key does not exist</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000016">Deprecated:</a></b></dt><dd>replaced by oc_ri_query_exists_v1 in v2.2.5.9 </dd></dl>
+
+</div>
+</div>
+<a id="a4f669c8be4bd09b22b265b15882d46d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f669c8be4bd09b22b265b15882d46d2">&#9670;&nbsp;</a></span>oc_ri_query_exists_v1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool oc_ri_query_exists_v1 </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>query</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>query_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>key_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if key exist in query. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">query</td><td>the query to inspect </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">query_len</td><td>the lenght of the query </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>the key to be checked if exist, key is null terminated (cannot be NULL) </td></tr>
+    <tr><td class="paramname">query</td><td>the query to inspect </td></tr>
+    <tr><td class="paramname">query_len</td><td>the length of the query </td></tr>
+    <tr><td class="paramname">key</td><td>the key to be checked if exist, key is null terminated (cannot be NULL) </td></tr>
+    <tr><td class="paramname">key_len</td><td>the key length </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>int -1 = not exists </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if key exists </dd></dl>
 
 </div>
 </div>
@@ -1598,14 +1701,16 @@ false callback was not found </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">query</td><td>the query to inspect </td></tr>
-    <tr><td class="paramname">query_len</td><td>the lenght of the query </td></tr>
+    <tr><td class="paramname">query_len</td><td>the length of the query </td></tr>
     <tr><td class="paramname">key</td><td>the key to be checked if exist, key is not null terminated (cannot be NULL) </td></tr>
     <tr><td class="paramname">key_len</td><td>the key length (cannot be NULL) </td></tr>
-    <tr><td class="paramname">n</td><td>index of the key </td></tr>
+    <tr><td class="paramname">n</td><td>index of the key (must be &gt; 0) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>int -1 = not exists </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>-1 if key does not exist </dd>
+<dd>
+&gt;= 0 if key exists and the value is the position of the next key in the query or query_len if it is the last key </dd></dl>
 
 </div>
 </div>
@@ -1770,7 +1875,7 @@ Empty string for an invalid log level value </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__ri_8h.html">oc_ri.h</a></li>
-    <li class="footer">Generated on Wed Sep 20 2023 10:44:19 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Sep 22 2023 14:06:53 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

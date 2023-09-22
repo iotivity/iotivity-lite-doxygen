@@ -1,5 +1,13 @@
 var NAVTREEINDEX6 =
 {
+"structoc__ipv6__addr__t.html#ae4879450c8041e3ab7fd9d958557f826":[3,0,12,0],
+"structoc__le__addr__t.html":[3,0,13],
+"structoc__le__addr__t.html#a1d127017fb298b889f4ba24752d08b8e":[3,0,13,1],
+"structoc__le__addr__t.html#a3859a5a24fa98fcde6ab0e29800d2318":[3,0,13,0],
+"structoc__platform__info__t.html":[3,0,14],
+"structoc__platform__info__t.html#a36a79f70b8fc2377193e9fbdedcea6c9":[3,0,14,2],
+"structoc__platform__info__t.html#a5c1f98ebf57c76a495ad7e274ad97491":[3,0,14,1],
+"structoc__platform__info__t.html#a735984d41155bc1032e09bece8f8d66d":[3,0,14,0],
 "structoc__platform__info__t.html#af8e573c743c9640018fbea887401e3f7":[3,0,14,3],
 "structoc__properties__cb__t.html":[3,0,15],
 "structoc__properties__cb__t.html#a0f53d287ac7c064d1a49d4bd93ca1cb9":[3,0,15,3],

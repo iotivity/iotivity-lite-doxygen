@@ -121,6 +121,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga7b1a6e27279dc11c72dd8afe4a4a0e40"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga7b1a6e27279dc11c72dd8afe4a4a0e40">oc_get_query_value</a> (const <a class="el" href="structoc__request__t.html">oc_request_t</a> *request, const char *key, const char **value)</td></tr>
 <tr class="memdesc:ga7b1a6e27279dc11c72dd8afe4a4a0e40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the start of the value in a URL query parameter key=value pair.  <a href="group__doc__module__tag__server__side.html#ga7b1a6e27279dc11c72dd8afe4a4a0e40">More...</a><br /></td></tr>
 <tr class="separator:ga7b1a6e27279dc11c72dd8afe4a4a0e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga86be75f1b6474c8f467f27e02538d872"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga86be75f1b6474c8f467f27e02538d872">oc_get_query_value_v1</a> (const <a class="el" href="structoc__request__t.html">oc_request_t</a> *request, const char *key, size_t key_len, const char **value)</td></tr>
+<tr class="memdesc:ga86be75f1b6474c8f467f27e02538d872"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the start of the value in a URL query parameter key=value pair.  <a href="group__doc__module__tag__server__side.html#ga86be75f1b6474c8f467f27e02538d872">More...</a><br /></td></tr>
+<tr class="separator:ga86be75f1b6474c8f467f27e02538d872"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa98ea4e09b9b92ff5c6912d089f12ff2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gaa98ea4e09b9b92ff5c6912d089f12ff2">oc_get_request_payload_raw</a> (const <a class="el" href="structoc__request__t.html">oc_request_t</a> *request, const uint8_t **payload, size_t *size, <a class="el" href="oc__ri_8h.html#a83161604a805e3a951254864d16a714f">oc_content_format_t</a> *content_format)</td></tr>
 <tr class="memdesc:gaa98ea4e09b9b92ff5c6912d089f12ff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve the payload from the request, no processing  <a href="group__doc__module__tag__server__side.html#gaa98ea4e09b9b92ff5c6912d089f12ff2">More...</a><br /></td></tr>
 <tr class="separator:gaa98ea4e09b9b92ff5c6912d089f12ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,6 +145,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga1e26e072f25a51224bbe38a5d0bb9b16"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga1e26e072f25a51224bbe38a5d0bb9b16">oc_iterate_query_get_values</a> (const <a class="el" href="structoc__request__t.html">oc_request_t</a> *request, const char *key, const char **value, int *value_len)</td></tr>
 <tr class="memdesc:ga1e26e072f25a51224bbe38a5d0bb9b16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate though the URI query parameters for a specific key.  <a href="group__doc__module__tag__server__side.html#ga1e26e072f25a51224bbe38a5d0bb9b16">More...</a><br /></td></tr>
 <tr class="separator:ga1e26e072f25a51224bbe38a5d0bb9b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4117983339376e96494650127848e13a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga4117983339376e96494650127848e13a">oc_iterate_query_get_values_v1</a> (const <a class="el" href="structoc__request__t.html">oc_request_t</a> *request, const char *key, size_t key_len, const char **value, int *value_len)</td></tr>
+<tr class="memdesc:ga4117983339376e96494650127848e13a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate though the URI query parameters for a specific key.  <a href="group__doc__module__tag__server__side.html#ga4117983339376e96494650127848e13a">More...</a><br /></td></tr>
+<tr class="separator:ga4117983339376e96494650127848e13a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga617ddc7eec68117e14bb4e1bf9f867cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoc__resource__s.html">oc_resource_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga617ddc7eec68117e14bb4e1bf9f867cc">oc_new_resource</a> (const char *name, const char *uri, uint8_t num_resource_types, size_t device)</td></tr>
 <tr class="memdesc:ga617ddc7eec68117e14bb4e1bf9f867cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate and populate a new oc_resource_t.  <a href="group__doc__module__tag__server__side.html#ga617ddc7eec68117e14bb4e1bf9f867cc">More...</a><br /></td></tr>
 <tr class="separator:ga617ddc7eec68117e14bb4e1bf9f867cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,6 +169,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gab3991a8929db3766a9475ff4fb1279f8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gab3991a8929db3766a9475ff4fb1279f8">oc_query_value_exists</a> (const <a class="el" href="structoc__request__t.html">oc_request_t</a> *request, const char *key)</td></tr>
 <tr class="memdesc:gab3991a8929db3766a9475ff4fb1279f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a query parameter 'key' exist in the URL query parameter.  <a href="group__doc__module__tag__server__side.html#gab3991a8929db3766a9475ff4fb1279f8">More...</a><br /></td></tr>
 <tr class="separator:gab3991a8929db3766a9475ff4fb1279f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga195945dd2811c51517c3941db208d1fe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga195945dd2811c51517c3941db208d1fe">oc_query_value_exists_v1</a> (const <a class="el" href="structoc__request__t.html">oc_request_t</a> *request, const char *key, size_t key_len)</td></tr>
+<tr class="memdesc:ga195945dd2811c51517c3941db208d1fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a query parameter 'key' exist in the URL query parameter.  <a href="group__doc__module__tag__server__side.html#ga195945dd2811c51517c3941db208d1fe">More...</a><br /></td></tr>
+<tr class="separator:ga195945dd2811c51517c3941db208d1fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacc374cc9a8acc977db8f9f27dc3c593c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gacc374cc9a8acc977db8f9f27dc3c593c">oc_resource_bind_resource_interface</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource, <a class="el" href="oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2">oc_interface_mask_t</a> iface_mask)</td></tr>
 <tr class="memdesc:gacc374cc9a8acc977db8f9f27dc3c593c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the supported interface(s) to the resource.  <a href="group__doc__module__tag__server__side.html#gacc374cc9a8acc977db8f9f27dc3c593c">More...</a><br /></td></tr>
 <tr class="separator:gacc374cc9a8acc977db8f9f27dc3c593c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -494,11 +503,55 @@ false </dd></dl>
 </div><div class="memdoc">
 
 <p>Get a pointer to the start of the value in a URL query parameter key=value pair. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>replaced by oc_get_query_value_v1 in v2.2.5.9 </dd></dl>
+
+</div>
+</div>
+<a id="ga86be75f1b6474c8f467f27e02538d872"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga86be75f1b6474c8f467f27e02538d872">&#9670;&nbsp;</a></span>oc_get_query_value_v1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_get_query_value_v1 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structoc__request__t.html">oc_request_t</a> *&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>key_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char **&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a pointer to the start of the value in a URL query parameter key=value pair. </p>
 <dl class="section note"><dt>Note</dt><dd>The char pointer returned is pointing to the string location in the query string. Do not rely on a nul terminator to find the end of the string since there may be additional query parameters.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">request</td><td>the <a class="el" href="structoc__request__t.html" title="request information structure">oc_request_t</a> that contains the query parameters </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>the key being searched for (cannot be NULL) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td>the length of the key </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">value</td><td>pointer to the value string assigned to the key</td></tr>
   </table>
   </dd>
@@ -862,25 +915,75 @@ false </dd></dl>
 </div><div class="memdoc">
 
 <p>Iterate though the URI query parameters for a specific key. </p>
-<p>Before calling <a class="el" href="group__doc__module__tag__server__side.html#ga1e26e072f25a51224bbe38a5d0bb9b16" title="Iterate though the URI query parameters for a specific key.">oc_iterate_query_get_values()</a> the first time <a class="el" href="group__doc__module__tag__server__side.html#ga5f33d43ecb0adf38a04d499ecf6b8ea3" title="This resets the query iterator to the start of the URI query parameter.">oc_init_query_iterator()</a> must be called to reset the query iterator to the first query parameter.</p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>replaced by oc_iterate_query_get_values_v1 in v2.2.5.9 </dd></dl>
+
+</div>
+</div>
+<a id="ga4117983339376e96494650127848e13a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4117983339376e96494650127848e13a">&#9670;&nbsp;</a></span>oc_iterate_query_get_values_v1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool oc_iterate_query_get_values_v1 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structoc__request__t.html">oc_request_t</a> *&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>key_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char **&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>value_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Iterate though the URI query parameters for a specific key. </p>
+<p>Before calling <a class="el" href="group__doc__module__tag__server__side.html#ga4117983339376e96494650127848e13a" title="Iterate though the URI query parameters for a specific key.">oc_iterate_query_get_values_v1()</a> the first time <a class="el" href="group__doc__module__tag__server__side.html#ga5f33d43ecb0adf38a04d499ecf6b8ea3" title="This resets the query iterator to the start of the URI query parameter.">oc_init_query_iterator()</a> must be called to reset the query iterator to the first query parameter.</p>
 <dl class="section note"><dt>Note</dt><dd>The char pointer returned is pointing to the string location in the query string. Do not rely on a nul terminator to find the end of the string since there may be additional query parameters.</dd></dl>
 <p>Example: </p><div class="fragment"><div class="line"><span class="keywordtype">bool</span> more_query_params = <span class="keyword">false</span>;</div>
-<div class="line"><span class="keyword">const</span> <span class="keywordtype">char</span>* expected_value = <span class="stringliteral">&quot;world&quot;</span></div>
-<div class="line"><span class="keywordtype">char</span> *value = NULL;</div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">char</span>* expected_value = <span class="stringliteral">&quot;world&quot;</span>;</div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">char</span> *value = NULL;</div>
 <div class="line"><span class="keywordtype">int</span> value_len = -1;</div>
 <div class="line"><a class="code" href="group__doc__module__tag__server__side.html#ga5f33d43ecb0adf38a04d499ecf6b8ea3">oc_init_query_iterator</a>();</div>
 <div class="line"><span class="keywordflow">do</span> {</div>
-<div class="line">more_query_params = <a class="code" href="group__doc__module__tag__server__side.html#ga1e26e072f25a51224bbe38a5d0bb9b16">oc_iterate_query_get_values</a>(request, <span class="stringliteral">&quot;hello&quot;</span>,</div>
-<div class="line">                                                &amp;value, &amp;value_len);</div>
+<div class="line">  more_query_params = <a class="code" href="group__doc__module__tag__server__side.html#ga4117983339376e96494650127848e13a">oc_iterate_query_get_values_v1</a>(request, <span class="stringliteral">&quot;hello&quot;</span>,</div>
+<div class="line">                        strlen(<span class="stringliteral">&quot;hello&quot;</span>), &amp;value, &amp;value_len);</div>
 <div class="line">  <span class="keywordflow">if</span> (rt_len &gt; 0) {</div>
 <div class="line">    printf(<span class="stringliteral">&quot;Found %s = %.*s\n&quot;</span>, <span class="stringliteral">&quot;hello&quot;</span>, value_len, value);</div>
 <div class="line">  }</div>
 <div class="line">} <span class="keywordflow">while</span> (more_query_params);</div>
-<div class="ttc" id="agroup__doc__module__tag__server__side_html_ga1e26e072f25a51224bbe38a5d0bb9b16"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga1e26e072f25a51224bbe38a5d0bb9b16">oc_iterate_query_get_values</a></div><div class="ttdeci">bool oc_iterate_query_get_values(const oc_request_t *request, const char *key, const char **value, int *value_len)</div><div class="ttdoc">Iterate though the URI query parameters for a specific key.</div></div>
+<div class="ttc" id="agroup__doc__module__tag__server__side_html_ga4117983339376e96494650127848e13a"><div class="ttname"><a href="group__doc__module__tag__server__side.html#ga4117983339376e96494650127848e13a">oc_iterate_query_get_values_v1</a></div><div class="ttdeci">bool oc_iterate_query_get_values_v1(const oc_request_t *request, const char *key, size_t key_len, const char **value, int *value_len)</div><div class="ttdoc">Iterate though the URI query parameters for a specific key.</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">request</td><td>the <a class="el" href="structoc__request__t.html" title="request information structure">oc_request_t</a> that contains the query parameters (cannot be NULL) </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>the key being searched for (cannot be NULL) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key_len</td><td>the length of the key </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">value</td><td>pointer to the value string for to the key=value pair (cannot be NULL) </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">value_len</td><td>the length of the value string (cannot be NULL)</td></tr>
   </table>
@@ -1195,18 +1298,57 @@ false </dd></dl>
 </div><div class="memdoc">
 
 <p>Checks if a query parameter 'key' exist in the URL query parameter. </p>
+<dl class="section return"><dt>Returns</dt><dd>1 if the key exist in the query parameter </dd>
+<dd>
+-1 if the key does not exist in the query parameter</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>replaced by oc_query_value_exists_v1 in v2.2.5.9 </dd></dl>
+
+</div>
+</div>
+<a id="ga195945dd2811c51517c3941db208d1fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga195945dd2811c51517c3941db208d1fe">&#9670;&nbsp;</a></span>oc_query_value_exists_v1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool oc_query_value_exists_v1 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structoc__request__t.html">oc_request_t</a> *&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>key_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if a query parameter 'key' exist in the URL query parameter. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">request</td><td>the <a class="el" href="structoc__request__t.html" title="request information structure">oc_request_t</a> that contains the query parameters </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>the key being searched for (cannot be NULL)</td></tr>
+    <tr><td class="paramname">request</td><td>the <a class="el" href="structoc__request__t.html" title="request information structure">oc_request_t</a> that contains the query parameters </td></tr>
+    <tr><td class="paramname">key</td><td>the key being searched for (cannot be NULL) </td></tr>
+    <tr><td class="paramname">key_len</td><td>the length of the key</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><ul>
-<li>1 exist</li>
-<li>-1 does not exist </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the key exist in the query parameter </dd>
+<dd>
+false if the key does not exist in the query parameter </dd></dl>
 
 </div>
 </div>
@@ -1794,7 +1936,7 @@ false </dd></dl>
   <table class="params">
     <tr><td class="paramname">request</td><td>the request </td></tr>
     <tr><td class="paramname">msg</td><td>the message in ascii </td></tr>
-    <tr><td class="paramname">msg_len</td><td>the lenght of the message </td></tr>
+    <tr><td class="paramname">msg_len</td><td>the length of the message </td></tr>
     <tr><td class="paramname">response_code</td><td>the coap response code </td></tr>
   </table>
   </dd>
@@ -2091,7 +2233,7 @@ false </dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Sep 20 2023 10:44:19 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Sep 22 2023 14:06:53 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
