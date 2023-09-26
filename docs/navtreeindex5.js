@@ -1,5 +1,10 @@
 var NAVTREEINDEX5 =
 {
+"oc__ri_8h.html#a377f6fe7f13467c59da3592659fa4fda":[4,0,34,42],
+"oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26":[4,0,34,25],
+"oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26a2a3c53df3082c04b8e49ebaca236529b":[4,0,34,25,1],
+"oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26a9800dfa57c853c51126729992b12509c":[4,0,34,25,3],
+"oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26ab26f49981643265201d4cbdad57a9d88":[4,0,34,25,2],
 "oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26ad4da05d28f48b07625a227c6dcf33071":[4,0,34,25,0],
 "oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26af48dbf543c8bb3581c65919bd6c0d8f9":[4,0,34,25,4],
 "oc__ri_8h.html#a40f5d9d8f4c1c0eeb2db66e071946a1a":[4,0,34,28],
@@ -244,10 +249,5 @@ var NAVTREEINDEX5 =
 "structoc__handler__t.html#a30a0125aaf993cd9975c700c3a86d5fb":[3,0,10,1],
 "structoc__handler__t.html#a857eaefcde68aba9fe0d2170a660fdfb":[3,0,10,0],
 "structoc__handler__t.html#a919d218b198dc7286a98d486aab5d91b":[3,0,10,2],
-"structoc__handler__t.html#af83a0573a13366c40f8b85fb359d24e8":[3,0,10,3],
-"structoc__ipv4__addr__t.html":[3,0,11],
-"structoc__ipv4__addr__t.html#a8e0798404bf2cf5dabb84c5ba9a4f236":[3,0,11,1],
-"structoc__ipv4__addr__t.html#addf23a7962e43c9ba2ed54c76bd937d3":[3,0,11,0],
-"structoc__ipv6__addr__t.html":[3,0,12],
-"structoc__ipv6__addr__t.html#a8e0798404bf2cf5dabb84c5ba9a4f236":[3,0,12,1]
+"structoc__handler__t.html#af83a0573a13366c40f8b85fb359d24e8":[3,0,10,3]
 };
