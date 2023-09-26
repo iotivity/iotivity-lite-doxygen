@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26ad4da05d28f48b07625a227c6dcf33071":[4,0,34,25,0],
 "oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26af48dbf543c8bb3581c65919bd6c0d8f9":[4,0,34,25,4],
 "oc__ri_8h.html#a40f5d9d8f4c1c0eeb2db66e071946a1a":[4,0,34,28],
 "oc__ri_8h.html#a41f1ba7b8bc314d1f6bb1bb35a4b16ce":[4,0,34,17],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "structoc__ipv4__addr__t.html#a8e0798404bf2cf5dabb84c5ba9a4f236":[3,0,11,1],
 "structoc__ipv4__addr__t.html#addf23a7962e43c9ba2ed54c76bd937d3":[3,0,11,0],
 "structoc__ipv6__addr__t.html":[3,0,12],
-"structoc__ipv6__addr__t.html#a8e0798404bf2cf5dabb84c5ba9a4f236":[3,0,12,1],
-"structoc__ipv6__addr__t.html#aad9c61920b7ad19972cb4d83d1180eea":[3,0,12,2]
+"structoc__ipv6__addr__t.html#a8e0798404bf2cf5dabb84c5ba9a4f236":[3,0,12,1]
 };
