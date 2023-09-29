@@ -82,23 +82,45 @@ $(document).ready(function(){initNavTree('oc__base64_8h.html',''); initResizable
 
 <div class="header">
   <div class="summary">
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">oc_base64.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="oc__compiler_8h.html">util/oc_compiler.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="oc__export_8h.html">oc_export.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="oc__compiler_8h.html">util/oc_compiler.h</a>&quot;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
 <code>#include &lt;stddef.h&gt;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a1593784d360ab37c02281e8687338bed"><td class="memItemLeft" align="right" valign="top"><a id="a1593784d360ab37c02281e8687338bed"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>oc_base64_encoding_t</b> { <b>OC_BASE64_ENCODING_STD</b>
+, <b>OC_BASE64_ENCODING_URL</b>
+ }</td></tr>
+<tr class="separator:a1593784d360ab37c02281e8687338bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ae2a29fa32e9e60cd25d61cb172bf947d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__base64_8h.html#ae2a29fa32e9e60cd25d61cb172bf947d">oc_base64_decode</a> (uint8_t *str, size_t len)</td></tr>
 <tr class="memdesc:ae2a29fa32e9e60cd25d61cb172bf947d"><td class="mdescLeft">&#160;</td><td class="mdescRight">In place decoding of base 64 string.  <a href="oc__base64_8h.html#ae2a29fa32e9e60cd25d61cb172bf947d">More...</a><br /></td></tr>
 <tr class="separator:ae2a29fa32e9e60cd25d61cb172bf947d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb1fbf0dddca75caddedf73704d133f5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__base64_8h.html#aeb1fbf0dddca75caddedf73704d133f5">oc_base64_encode</a> (const uint8_t *input, size_t input_len, uint8_t *output_buffer, size_t output_buffer_len)</td></tr>
-<tr class="memdesc:aeb1fbf0dddca75caddedf73704d133f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">encode byte buffer to base64 string.  <a href="oc__base64_8h.html#aeb1fbf0dddca75caddedf73704d133f5">More...</a><br /></td></tr>
-<tr class="separator:aeb1fbf0dddca75caddedf73704d133f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7985d2ac0a8fb454f1d4feadb50250cf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__base64_8h.html#a7985d2ac0a8fb454f1d4feadb50250cf">oc_base64_decode_v1</a> (oc_base64_encoding_t encoding, bool padding, const uint8_t *input, size_t input_size, uint8_t *output_buffer, size_t output_buffer_size)</td></tr>
+<tr class="memdesc:a7985d2ac0a8fb454f1d4feadb50250cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decode a base64 array to a byte array.  <a href="oc__base64_8h.html#a7985d2ac0a8fb454f1d4feadb50250cf">More...</a><br /></td></tr>
+<tr class="separator:a7985d2ac0a8fb454f1d4feadb50250cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a7b52bf1ccc130931dbd8e69eac218c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__base64_8h.html#a5a7b52bf1ccc130931dbd8e69eac218c">oc_base64_decoded_output_size</a> (const uint8_t *input, size_t input_size, bool padding)</td></tr>
+<tr class="memdesc:a5a7b52bf1ccc130931dbd8e69eac218c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the size of the output buffer required to store a decoded base64 array.  <a href="oc__base64_8h.html#a5a7b52bf1ccc130931dbd8e69eac218c">More...</a><br /></td></tr>
+<tr class="separator:a5a7b52bf1ccc130931dbd8e69eac218c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a173c65c6055ff7607056fa74cf512c50"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__base64_8h.html#a173c65c6055ff7607056fa74cf512c50">oc_base64_encode</a> (const uint8_t *input, size_t input_size, uint8_t *output_buffer, size_t output_buffer_size)</td></tr>
+<tr class="memdesc:a173c65c6055ff7607056fa74cf512c50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode byte buffer to base64 string.  <a href="oc__base64_8h.html#a173c65c6055ff7607056fa74cf512c50">More...</a><br /></td></tr>
+<tr class="separator:a173c65c6055ff7607056fa74cf512c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ff46ae11929bf46088a5ec14de5fa4c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__base64_8h.html#a7ff46ae11929bf46088a5ec14de5fa4c">oc_base64_encode_v1</a> (oc_base64_encoding_t encoding, bool padding, const uint8_t *input, size_t input_size, uint8_t *output_buffer, size_t output_buffer_size)</td></tr>
+<tr class="memdesc:a7ff46ae11929bf46088a5ec14de5fa4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode byte buffer to base64 string.  <a href="oc__base64_8h.html#a7ff46ae11929bf46088a5ec14de5fa4c">More...</a><br /></td></tr>
+<tr class="separator:a7ff46ae11929bf46088a5ec14de5fa4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf19a63fa0c1ca35d19f254a5b564554"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__base64_8h.html#adf19a63fa0c1ca35d19f254a5b564554">oc_base64_encoded_output_size</a> (size_t size, bool padding)</td></tr>
+<tr class="memdesc:adf19a63fa0c1ca35d19f254a5b564554"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the size of the output buffer required to encode a byte array to base64.  <a href="oc__base64_8h.html#adf19a63fa0c1ca35d19f254a5b564554">More...</a><br /></td></tr>
+<tr class="separator:adf19a63fa0c1ca35d19f254a5b564554"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ae2a29fa32e9e60cd25d61cb172bf947d"></a>
@@ -145,8 +167,123 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aeb1fbf0dddca75caddedf73704d133f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb1fbf0dddca75caddedf73704d133f5">&#9670;&nbsp;</a></span>oc_base64_encode()</h2>
+<a id="a7985d2ac0a8fb454f1d4feadb50250cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7985d2ac0a8fb454f1d4feadb50250cf">&#9670;&nbsp;</a></span>oc_base64_decode_v1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_base64_decode_v1 </td>
+          <td>(</td>
+          <td class="paramtype">oc_base64_encoding_t&#160;</td>
+          <td class="paramname"><em>encoding</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>padding</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>input_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>output_buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>output_buffer_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Decode a base64 array to a byte array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">encoding</td><td>type of encoding to use </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">padding</td><td>true if the input array is padded with '=' characters at the end </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">input</td><td>pointer to base64 encoded string </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">input_size</td><td>size of base64 encoded string </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">output_buffer</td><td>buffer to hold the decoded byte array </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">output_buffer_size</td><td>size of the output_buffer</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>-1 on failure </dd>
+<dd>
+&gt;=0 the size of the decoded byte array on success </dd></dl>
+
+</div>
+</div>
+<a id="a5a7b52bf1ccc130931dbd8e69eac218c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a7b52bf1ccc130931dbd8e69eac218c">&#9670;&nbsp;</a></span>oc_base64_decoded_output_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_base64_decoded_output_size </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>input_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>padding</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculate the size of the output buffer required to store a decoded base64 array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>input base64-encoded array </td></tr>
+    <tr><td class="paramname">input_size</td><td>size of the input base64-encoded array </td></tr>
+    <tr><td class="paramname">padding</td><td>true if the input array is padded with '=' characters at the end</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>-1 if the input array is not a valid base64-encoded array </dd>
+<dd>
+size of the output buffer required to decode the input array </dd></dl>
+
+</div>
+</div>
+<a id="a173c65c6055ff7607056fa74cf512c50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a173c65c6055ff7607056fa74cf512c50">&#9670;&nbsp;</a></span>oc_base64_encode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -161,7 +298,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>input_len</em>, </td>
+          <td class="paramname"><em>input_size</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -173,7 +310,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>output_buffer_len</em>&#160;</td>
+          <td class="paramname"><em>output_buffer_size</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -183,7 +320,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>encode byte buffer to base64 string. </p>
+<p>Encode byte buffer to base64 string. </p>
 <p>The base64 encoder does not NUL terminate its output. User the return value to add '\0' to the end of the string.</p>
 <p>Output is uint8_t casting is needed to use value as a string.</p>
 <p>Example:</p>
@@ -191,9 +328,9 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">input</td><td>pointer to input byte array to be encoded </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">input_len</td><td>size of input byte array </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">input_size</td><td>size of input byte array </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">output_buffer</td><td>buffer to hold the base 64 encoded string </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">output_buffer_len</td><td>size of the output_buffer</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">output_buffer_size</td><td>size of the output_buffer</td></tr>
   </table>
   </dd>
 </dl>
@@ -205,13 +342,122 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a7ff46ae11929bf46088a5ec14de5fa4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ff46ae11929bf46088a5ec14de5fa4c">&#9670;&nbsp;</a></span>oc_base64_encode_v1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_base64_encode_v1 </td>
+          <td>(</td>
+          <td class="paramtype">oc_base64_encoding_t&#160;</td>
+          <td class="paramname"><em>encoding</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>padding</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>input_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>output_buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>output_buffer_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Encode byte buffer to base64 string. </p>
+<p>The base64 encoder does not NUL terminate its output. User the return value to add '\0' to the end of the string.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">encoding</td><td>type of encoding to use </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">padding</td><td>true if padding should be used </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">input</td><td>pointer to input byte array to be encoded </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">input_size</td><td>size of input byte array </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">output_buffer</td><td>buffer to hold the base 64 encoded string </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">output_buffer_size</td><td>size of the output_buffer</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>the size of the base64 encoded string</li>
+<li><code>-1</code> if the output buffer provided was not large enough </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="adf19a63fa0c1ca35d19f254a5b564554"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf19a63fa0c1ca35d19f254a5b564554">&#9670;&nbsp;</a></span>oc_base64_encoded_output_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t oc_base64_encoded_output_size </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>padding</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculate the size of the output buffer required to encode a byte array to base64. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>size of the input byte array </td></tr>
+    <tr><td class="paramname">padding</td><td>true if padding should be used</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>size of the output buffer required to encode the input byte array </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__base64_8h.html">oc_base64.h</a></li>
-    <li class="footer">Generated on Tue Sep 26 2023 23:26:40 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Sep 29 2023 18:27:25 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
