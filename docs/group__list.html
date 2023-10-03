@@ -105,7 +105,7 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>OC_LIST_CONCAT2</b>(s1,  s2)&#160;&#160;&#160;s1##s2</td></tr>
 <tr class="separator:ga9448eb0c5cefcb06ae578701816156ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac5adac996f9b2194fa69f7b2fcb5bcc4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__list.html#gac5adac996f9b2194fa69f7b2fcb5bcc4">OC_LIST_LOCAL</a>(name)</td></tr>
-<tr class="memdesc:gac5adac996f9b2194fa69f7b2fcb5bcc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-static version of OC_LIST.  <a href="group__list.html#gac5adac996f9b2194fa69f7b2fcb5bcc4">More...</a><br /></td></tr>
+<tr class="memdesc:gac5adac996f9b2194fa69f7b2fcb5bcc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare a linked list with a local scope.  <a href="group__list.html#gac5adac996f9b2194fa69f7b2fcb5bcc4">More...</a><br /></td></tr>
 <tr class="separator:gac5adac996f9b2194fa69f7b2fcb5bcc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga76b8dbfd0e5b154f2bf41121a2c4ef1c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__list.html#ga76b8dbfd0e5b154f2bf41121a2c4ef1c">OC_LIST_STRUCT</a>(name)</td></tr>
 <tr class="memdesc:ga76b8dbfd0e5b154f2bf41121a2c4ef1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare a linked list inside a structure declaraction.  <a href="group__list.html#ga76b8dbfd0e5b154f2bf41121a2c4ef1c">More...</a><br /></td></tr>
@@ -122,44 +122,47 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga56a78dc442427062b123b5bad86fd218"><td class="memItemLeft" align="right" valign="top"><a id="ga56a78dc442427062b123b5bad86fd218"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_list_add</b> (<a class="el" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a> list, void *item)</td></tr>
+<tr class="memitem:ga56a78dc442427062b123b5bad86fd218"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__list.html#ga56a78dc442427062b123b5bad86fd218">oc_list_add</a> (<a class="el" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a> list, void *item)</td></tr>
+<tr class="memdesc:ga56a78dc442427062b123b5bad86fd218"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an item at the end of a list.  <a href="group__list.html#ga56a78dc442427062b123b5bad86fd218">More...</a><br /></td></tr>
 <tr class="separator:ga56a78dc442427062b123b5bad86fd218"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga295b95b2d7b5bfaf8709762a0d24d0ef"><td class="memItemLeft" align="right" valign="top"><a id="ga295b95b2d7b5bfaf8709762a0d24d0ef"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><b>oc_list_chop</b> (<a class="el" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a> list)</td></tr>
+<tr class="memitem:ga295b95b2d7b5bfaf8709762a0d24d0ef"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__list.html#ga295b95b2d7b5bfaf8709762a0d24d0ef">oc_list_chop</a> (<a class="el" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a> list)</td></tr>
+<tr class="memdesc:ga295b95b2d7b5bfaf8709762a0d24d0ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the last object on the list.  <a href="group__list.html#ga295b95b2d7b5bfaf8709762a0d24d0ef">More...</a><br /></td></tr>
 <tr class="separator:ga295b95b2d7b5bfaf8709762a0d24d0ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga184b38bdf1a2a10e36cc8b379aae549c"><td class="memItemLeft" align="right" valign="top"><a id="ga184b38bdf1a2a10e36cc8b379aae549c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_list_copy</b> (<a class="el" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a> dest, <a class="el" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a> src)</td></tr>
+<tr class="memitem:ga184b38bdf1a2a10e36cc8b379aae549c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__list.html#ga184b38bdf1a2a10e36cc8b379aae549c">oc_list_copy</a> (<a class="el" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a> dest, <a class="el" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a> src)</td></tr>
+<tr class="memdesc:ga184b38bdf1a2a10e36cc8b379aae549c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Duplicate a list.  <a href="group__list.html#ga184b38bdf1a2a10e36cc8b379aae549c">More...</a><br /></td></tr>
 <tr class="separator:ga184b38bdf1a2a10e36cc8b379aae549c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4a9169502803e01f19c119acab5e29df"><td class="memItemLeft" align="right" valign="top"><a id="ga4a9169502803e01f19c119acab5e29df"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><b>oc_list_head</b> (<a class="el" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a> list)</td></tr>
+<tr class="memitem:gad80e0c44acd7c7359f9fc235cea9a0d6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__list.html#gad80e0c44acd7c7359f9fc235cea9a0d6">oc_list_has_item</a> (<a class="el" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a> list, const void *item)</td></tr>
+<tr class="memdesc:gad80e0c44acd7c7359f9fc235cea9a0d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a list contains a specific item.  <a href="group__list.html#gad80e0c44acd7c7359f9fc235cea9a0d6">More...</a><br /></td></tr>
+<tr class="separator:gad80e0c44acd7c7359f9fc235cea9a0d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4a9169502803e01f19c119acab5e29df"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__list.html#ga4a9169502803e01f19c119acab5e29df">oc_list_head</a> (<a class="el" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a> list)</td></tr>
+<tr class="memdesc:ga4a9169502803e01f19c119acab5e29df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the first element of a list.  <a href="group__list.html#ga4a9169502803e01f19c119acab5e29df">More...</a><br /></td></tr>
 <tr class="separator:ga4a9169502803e01f19c119acab5e29df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga66ed6d3f9d7a616011c8a7058ae0cd33"><td class="memItemLeft" align="right" valign="top"><a id="ga66ed6d3f9d7a616011c8a7058ae0cd33"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_list_init</b> (<a class="el" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a> list)</td></tr>
+<tr class="memitem:ga66ed6d3f9d7a616011c8a7058ae0cd33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__list.html#ga66ed6d3f9d7a616011c8a7058ae0cd33">oc_list_init</a> (<a class="el" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a> list)</td></tr>
+<tr class="memdesc:ga66ed6d3f9d7a616011c8a7058ae0cd33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a list.  <a href="group__list.html#ga66ed6d3f9d7a616011c8a7058ae0cd33">More...</a><br /></td></tr>
 <tr class="separator:ga66ed6d3f9d7a616011c8a7058ae0cd33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0a9ee9c9d5093bbbba53a4a91bd05b2d"><td class="memItemLeft" align="right" valign="top"><a id="ga0a9ee9c9d5093bbbba53a4a91bd05b2d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_list_insert</b> (<a class="el" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a> list, void *previtem, void *newitem)</td></tr>
+<tr class="memitem:ga0a9ee9c9d5093bbbba53a4a91bd05b2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__list.html#ga0a9ee9c9d5093bbbba53a4a91bd05b2d">oc_list_insert</a> (<a class="el" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a> list, void *previtem, void *newitem)</td></tr>
+<tr class="memdesc:ga0a9ee9c9d5093bbbba53a4a91bd05b2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert an item after a specified item on the list.  <a href="group__list.html#ga0a9ee9c9d5093bbbba53a4a91bd05b2d">More...</a><br /></td></tr>
 <tr class="separator:ga0a9ee9c9d5093bbbba53a4a91bd05b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga93a42c4fb08311f75153a0535acc8f8c"><td class="memItemLeft" align="right" valign="top"><a id="ga93a42c4fb08311f75153a0535acc8f8c"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><b>oc_list_item_next</b> (void *item)</td></tr>
+<tr class="memitem:ga93a42c4fb08311f75153a0535acc8f8c"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__list.html#ga93a42c4fb08311f75153a0535acc8f8c">oc_list_item_next</a> (void *item)</td></tr>
+<tr class="memdesc:ga93a42c4fb08311f75153a0535acc8f8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next item following this item.  <a href="group__list.html#ga93a42c4fb08311f75153a0535acc8f8c">More...</a><br /></td></tr>
 <tr class="separator:ga93a42c4fb08311f75153a0535acc8f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabecfd0aa6ede8b76f72807e0cd6c34ad"><td class="memItemLeft" align="right" valign="top"><a id="gabecfd0aa6ede8b76f72807e0cd6c34ad"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_list_length</b> (<a class="el" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a> list)</td></tr>
+<tr class="memitem:gabecfd0aa6ede8b76f72807e0cd6c34ad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__list.html#gabecfd0aa6ede8b76f72807e0cd6c34ad">oc_list_length</a> (<a class="el" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a> list)</td></tr>
+<tr class="memdesc:gabecfd0aa6ede8b76f72807e0cd6c34ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the length of a list.  <a href="group__list.html#gabecfd0aa6ede8b76f72807e0cd6c34ad">More...</a><br /></td></tr>
 <tr class="separator:gabecfd0aa6ede8b76f72807e0cd6c34ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga65796940963b89beeea6eac07014851f"><td class="memItemLeft" align="right" valign="top"><a id="ga65796940963b89beeea6eac07014851f"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><b>oc_list_pop</b> (<a class="el" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a> list)</td></tr>
+<tr class="memitem:ga65796940963b89beeea6eac07014851f"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__list.html#ga65796940963b89beeea6eac07014851f">oc_list_pop</a> (<a class="el" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a> list)</td></tr>
+<tr class="memdesc:ga65796940963b89beeea6eac07014851f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the first object on a list.  <a href="group__list.html#ga65796940963b89beeea6eac07014851f">More...</a><br /></td></tr>
 <tr class="separator:ga65796940963b89beeea6eac07014851f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac7051799b25b9803ebb298f3ce4d3bc4"><td class="memItemLeft" align="right" valign="top"><a id="gac7051799b25b9803ebb298f3ce4d3bc4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_list_push</b> (<a class="el" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a> list, void *item)</td></tr>
+<tr class="memitem:gac7051799b25b9803ebb298f3ce4d3bc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__list.html#gac7051799b25b9803ebb298f3ce4d3bc4">oc_list_push</a> (<a class="el" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a> list, void *item)</td></tr>
+<tr class="memdesc:gac7051799b25b9803ebb298f3ce4d3bc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an item to the start of the list.  <a href="group__list.html#gac7051799b25b9803ebb298f3ce4d3bc4">More...</a><br /></td></tr>
 <tr class="separator:gac7051799b25b9803ebb298f3ce4d3bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8338b6b0e1a5e358dd922550c139d5ed"><td class="memItemLeft" align="right" valign="top"><a id="ga8338b6b0e1a5e358dd922550c139d5ed"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_list_remove</b> (<a class="el" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a> list, const void *item)</td></tr>
+<tr class="memitem:ga8338b6b0e1a5e358dd922550c139d5ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__list.html#ga8338b6b0e1a5e358dd922550c139d5ed">oc_list_remove</a> (<a class="el" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a> list, const void *item)</td></tr>
+<tr class="memdesc:ga8338b6b0e1a5e358dd922550c139d5ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a specific element from a list.  <a href="group__list.html#ga8338b6b0e1a5e358dd922550c139d5ed">More...</a><br /></td></tr>
 <tr class="separator:ga8338b6b0e1a5e358dd922550c139d5ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga53520d592f216e14a838fc99cb7a51ad"><td class="memItemLeft" align="right" valign="top"><a id="ga53520d592f216e14a838fc99cb7a51ad"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><b>oc_list_remove2</b> (<a class="el" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a> list, const void *item)</td></tr>
+<tr class="memitem:ga53520d592f216e14a838fc99cb7a51ad"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__list.html#ga53520d592f216e14a838fc99cb7a51ad">oc_list_remove2</a> (<a class="el" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a> list, const void *item)</td></tr>
+<tr class="memdesc:ga53520d592f216e14a838fc99cb7a51ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a specific element from a list and return a pointer to the removed item.  <a href="group__list.html#ga53520d592f216e14a838fc99cb7a51ad">More...</a><br /></td></tr>
 <tr class="separator:ga53520d592f216e14a838fc99cb7a51ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae314481d928cc23a1e8ccb74bc30dd54"><td class="memItemLeft" align="right" valign="top"><a id="gae314481d928cc23a1e8ccb74bc30dd54"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><b>oc_list_tail</b> (<a class="el" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a> list)</td></tr>
+<tr class="memitem:gae314481d928cc23a1e8ccb74bc30dd54"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__list.html#gae314481d928cc23a1e8ccb74bc30dd54">oc_list_tail</a> (<a class="el" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a> list)</td></tr>
+<tr class="memdesc:gae314481d928cc23a1e8ccb74bc30dd54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the tail of a list.  <a href="group__list.html#gae314481d928cc23a1e8ccb74bc30dd54">More...</a><br /></td></tr>
 <tr class="separator:gae314481d928cc23a1e8ccb74bc30dd54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -185,7 +188,7 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><b>oc_list_tail</b> (<
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keyword">static</span> <span class="keywordtype">void</span> *OC_LIST_CONCAT(name, _list) = NULL;                             \</div>
 <div class="line">  static <a class="code" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a> name = &amp;OC_LIST_CONCAT(name, _list)</div>
-<div class="ttc" id="agroup__list_html_ga4443b2e60d06420b0884a384cc257dad"><div class="ttname"><a href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a></div><div class="ttdeci">void ** oc_list_t</div><div class="ttdoc">The linked list type.</div><div class="ttdef"><b>Definition:</b> oc_list.h:133</div></div>
+<div class="ttc" id="agroup__list_html_ga4443b2e60d06420b0884a384cc257dad"><div class="ttname"><a href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a></div><div class="ttdeci">void ** oc_list_t</div><div class="ttdoc">The linked list type.</div><div class="ttdef"><b>Definition:</b> oc_list.h:138</div></div>
 </div><!-- fragment -->
 <p>Declare a linked list. </p>
 <p>This macro declares a linked list with the specified <code>type</code>. The type <b>must</b> be a structure (<code>struct</code>) with its first element being a pointer. This pointer is used by the linked list library to form the linked lists.</p>
@@ -217,7 +220,7 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><b>oc_list_tail</b> (<
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keywordtype">void</span> *OC_LIST_CONCAT(name, _list) = NULL;                                    \</div>
 <div class="line">  oc_list_t name = &amp;OC_LIST_CONCAT(name, _list)</div>
 </div><!-- fragment -->
-<p>Non-static version of OC_LIST. </p>
+<p>Declare a linked list with a local scope. </p>
 
 </div>
 </div>
@@ -312,12 +315,509 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><b>oc_list_tail</b> (<
 
 </div>
 </div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ga56a78dc442427062b123b5bad86fd218"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga56a78dc442427062b123b5bad86fd218">&#9670;&nbsp;</a></span>oc_list_add()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oc_list_add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a>&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>item</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add an item at the end of a list. </p>
+<p>This function adds an item to the end of the list.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>The list. </td></tr>
+    <tr><td class="paramname">item</td><td>A pointer to the item to be added.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__list.html#gac7051799b25b9803ebb298f3ce4d3bc4" title="Add an item to the start of the list.">oc_list_push()</a> </dd>
+<dd>
+<a class="el" href="group__list.html#ga0a9ee9c9d5093bbbba53a4a91bd05b2d" title="Insert an item after a specified item on the list.">oc_list_insert()</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga295b95b2d7b5bfaf8709762a0d24d0ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga295b95b2d7b5bfaf8709762a0d24d0ef">&#9670;&nbsp;</a></span>oc_list_chop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* oc_list_chop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a>&#160;</td>
+          <td class="paramname"><em>list</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove the last object on the list. </p>
+<p>This function removes the last object on the list and returns it.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>The list </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The removed object </dd></dl>
+
+</div>
+</div>
+<a id="ga184b38bdf1a2a10e36cc8b379aae549c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga184b38bdf1a2a10e36cc8b379aae549c">&#9670;&nbsp;</a></span>oc_list_copy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oc_list_copy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a>&#160;</td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a>&#160;</td>
+          <td class="paramname"><em>src</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Duplicate a list. </p>
+<p>This function duplicates a list by copying the list reference, but not the elements.</p>
+<dl class="section note"><dt>Note</dt><dd>This function does <b>not</b> copy the elements of the list, but merely duplicates the pointer to the first element of the list.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dest</td><td>The destination list. </td></tr>
+    <tr><td class="paramname">src</td><td>The source list. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gad80e0c44acd7c7359f9fc235cea9a0d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad80e0c44acd7c7359f9fc235cea9a0d6">&#9670;&nbsp;</a></span>oc_list_has_item()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool oc_list_has_item </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a>&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>item</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if a list contains a specific item. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>The list. </td></tr>
+    <tr><td class="paramname">item</td><td>The item to check for.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the list contains the item </dd>
+<dd>
+False if the list does not contain the item </dd></dl>
+
+</div>
+</div>
+<a id="ga4a9169502803e01f19c119acab5e29df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4a9169502803e01f19c119acab5e29df">&#9670;&nbsp;</a></span>oc_list_head()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* oc_list_head </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a>&#160;</td>
+          <td class="paramname"><em>list</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a pointer to the first element of a list. </p>
+<p>This function returns a pointer to the first element of the list. The element will <b>not</b> be removed from the list.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>The list. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the first element on the list.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__list.html#gae314481d928cc23a1e8ccb74bc30dd54" title="Get the tail of a list.">oc_list_tail()</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga66ed6d3f9d7a616011c8a7058ae0cd33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga66ed6d3f9d7a616011c8a7058ae0cd33">&#9670;&nbsp;</a></span>oc_list_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oc_list_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a>&#160;</td>
+          <td class="paramname"><em>list</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize a list. </p>
+<p>This function initalizes a list. The list will be empty after this function has been called.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>The list to be initialized.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__list.html#gae4b0feb17178cce2651492e95ba6787b" title="Declare a linked list.">OC_LIST()</a> </dd>
+<dd>
+<a class="el" href="group__list.html#gac5adac996f9b2194fa69f7b2fcb5bcc4" title="Declare a linked list with a local scope.">OC_LIST_LOCAL()</a> </dd>
+<dd>
+<a class="el" href="group__list.html#ga76b8dbfd0e5b154f2bf41121a2c4ef1c" title="Declare a linked list inside a structure declaraction.">OC_LIST_STRUCT()</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga0a9ee9c9d5093bbbba53a4a91bd05b2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0a9ee9c9d5093bbbba53a4a91bd05b2d">&#9670;&nbsp;</a></span>oc_list_insert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oc_list_insert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a>&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>previtem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>newitem</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Insert an item after a specified item on the list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>The list </td></tr>
+    <tr><td class="paramname">previtem</td><td>The item after which the new item should be inserted </td></tr>
+    <tr><td class="paramname">newitem</td><td>The new item that is to be inserted </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section author"><dt>Author</dt><dd>Adam Dunkels <pre class="fragment">        This function inserts an item right after a specified
+        item on the list. This function is useful when using
+        the list module to ordered lists.
+
+        If previtem is NULL, the new item is placed at the
+        start of the list.
+</pre> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__list.html#ga56a78dc442427062b123b5bad86fd218" title="Add an item at the end of a list.">oc_list_add()</a> </dd>
+<dd>
+<a class="el" href="group__list.html#gac7051799b25b9803ebb298f3ce4d3bc4" title="Add an item to the start of the list.">oc_list_push()</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga93a42c4fb08311f75153a0535acc8f8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga93a42c4fb08311f75153a0535acc8f8c">&#9670;&nbsp;</a></span>oc_list_item_next()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* oc_list_item_next </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the next item following this item. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">item</td><td>A list item </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A next item on the list <pre class="fragment">        This function takes a list item and returns the next
+        item on the list, or NULL if there are no more items on
+        the list. This function is used when iterating through
+        lists.
+</pre> </dd></dl>
+
+</div>
+</div>
+<a id="gabecfd0aa6ede8b76f72807e0cd6c34ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabecfd0aa6ede8b76f72807e0cd6c34ad">&#9670;&nbsp;</a></span>oc_list_length()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_list_length </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a>&#160;</td>
+          <td class="paramname"><em>list</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the length of a list. </p>
+<p>This function counts the number of elements on a specified list.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>The list. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The length of the list. </dd></dl>
+
+</div>
+</div>
+<a id="ga65796940963b89beeea6eac07014851f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga65796940963b89beeea6eac07014851f">&#9670;&nbsp;</a></span>oc_list_pop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* oc_list_pop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a>&#160;</td>
+          <td class="paramname"><em>list</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove the first object on a list. </p>
+<p>This function removes the first object on the list and returns a pointer to it.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>The list. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the removed element of list. </dd></dl>
+
+</div>
+</div>
+<a id="gac7051799b25b9803ebb298f3ce4d3bc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac7051799b25b9803ebb298f3ce4d3bc4">&#9670;&nbsp;</a></span>oc_list_push()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oc_list_push </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a>&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>item</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add an item to the start of the list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>The list. </td></tr>
+    <tr><td class="paramname">item</td><td>A pointer to the item to be added.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__list.html#ga56a78dc442427062b123b5bad86fd218" title="Add an item at the end of a list.">oc_list_add()</a> </dd>
+<dd>
+<a class="el" href="group__list.html#ga0a9ee9c9d5093bbbba53a4a91bd05b2d" title="Insert an item after a specified item on the list.">oc_list_insert()</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga8338b6b0e1a5e358dd922550c139d5ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8338b6b0e1a5e358dd922550c139d5ed">&#9670;&nbsp;</a></span>oc_list_remove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oc_list_remove </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a>&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>item</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove a specific element from a list. </p>
+<p>This function removes a specified element from the list.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>The list. </td></tr>
+    <tr><td class="paramname">item</td><td>The item that is to be removed from the list. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga53520d592f216e14a838fc99cb7a51ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga53520d592f216e14a838fc99cb7a51ad">&#9670;&nbsp;</a></span>oc_list_remove2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* oc_list_remove2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a>&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>item</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove a specific element from a list and return a pointer to the removed item. </p>
+<p>This function removes a specified element from the list.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>The list. </td></tr>
+    <tr><td class="paramname">item</td><td>The item that is to be removed from the list. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the removed element of list. </dd></dl>
+
+</div>
+</div>
+<a id="gae314481d928cc23a1e8ccb74bc30dd54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae314481d928cc23a1e8ccb74bc30dd54">&#9670;&nbsp;</a></span>oc_list_tail()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* oc_list_tail </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__list.html#ga4443b2e60d06420b0884a384cc257dad">oc_list_t</a>&#160;</td>
+          <td class="paramname"><em>list</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the tail of a list. </p>
+<p>This function returns a pointer to the elements following the first element of a list. No elements are removed by this function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>The list </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the element after the first element on the list.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__list.html#ga4a9169502803e01f19c119acab5e29df" title="Get a pointer to the first element of a list.">oc_list_head()</a> </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Sep 29 2023 22:29:07 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Oct 3 2023 20:42:38 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
