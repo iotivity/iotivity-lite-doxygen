@@ -50,7 +50,11 @@ var oc__rep_8h =
     [ "oc_rep_start_links_array", "oc__rep_8h.html#a80107e65fd13463ace8f8ca0075079d6", null ],
     [ "oc_rep_start_object", "oc__rep_8h.html#a03e1c7e8c9147805c70757e1799d1768", null ],
     [ "oc_rep_start_root_object", "oc__rep_8h.html#a5a0a8355dd2a54e03bf9c8b65b7a8436", null ],
+    [ "oc_rep_encoder_type_t", "oc__rep_8h.html#a785bd439869f00daa40cb03c602d7f21", null ],
     [ "oc_rep_t", "oc__rep_8h.html#acc9813f3e8eb5e0b62db8f13ca3ffb96", null ],
+    [ "oc_rep_encoder_type_t", "oc__rep_8h.html#ac56f420fc7c93714ab4d2995adc256aa", [
+      [ "OC_REP_CBOR_ENCODER", "oc__rep_8h.html#ac56f420fc7c93714ab4d2995adc256aaaceb8e78fa613d20e7256f8d3120c4ffc", null ]
+    ] ],
     [ "oc_rep_value_type_t", "oc__rep_8h.html#a514288f5ab16855778b0f2845362b590", [
       [ "OC_REP_NIL", "oc__rep_8h.html#a514288f5ab16855778b0f2845362b590a69b104020ca2a697dea1f1976b4bb30d", null ],
       [ "OC_REP_INT", "oc__rep_8h.html#a514288f5ab16855778b0f2845362b590ab90878aa7ef56fa3c6d3acb4eb38a7bf", null ],
@@ -82,6 +86,8 @@ var oc__rep_8h =
     [ "oc_rep_encoder_close_container", "oc__rep_8h.html#a953695c61c35cc1be2a55e411b98fbd1", null ],
     [ "oc_rep_encoder_create_array", "oc__rep_8h.html#a28f725aa3b133f97e23a66e368a17194", null ],
     [ "oc_rep_encoder_create_map", "oc__rep_8h.html#a2da8010e1ed3f60cbc3e606996761597", null ],
+    [ "oc_rep_encoder_get_type", "oc__rep_8h.html#a5159c20f1022ebabd9eda37e90961411", null ],
+    [ "oc_rep_encoder_set_type", "oc__rep_8h.html#a3d04b1a8b649c9d150ac1d3e6045b743", null ],
     [ "oc_rep_get_bool", "oc__rep_8h.html#ac2a6595bec656be3eda87e27f9ca0f0b", null ],
     [ "oc_rep_get_bool_array", "oc__rep_8h.html#a0e91deab9b5585f5b2b6591cb31466ce", null ],
     [ "oc_rep_get_byte_string", "oc__rep_8h.html#a1ed7a90192ace86fd6ecae3f367c81a7", null ],

@@ -1,5 +1,12 @@
 var NAVTREEINDEX6 =
 {
+"structoc__connectivity__listening__ports__s.html#a8e0798404bf2cf5dabb84c5ba9a4f236":[3,0,6,1],
+"structoc__connectivity__listening__ports__s.html#ab6ea9ae23ca1599e2c74cc030bf6021d":[3,0,6,2],
+"structoc__cred__data__t.html":[3,0,7],
+"structoc__cred__data__t.html#a270c8a83a2564fbedc5aa19be79143bd":[3,0,7,0],
+"structoc__cred__data__t.html#a7452b9ae3dd3407188d233990bd00f88":[3,0,7,1],
+"structoc__device__info__t.html":[3,0,8],
+"structoc__device__info__t.html#a0377fc7c3515160001ef8484f689292a":[3,0,8,4],
 "structoc__device__info__t.html#a166cce7286659ef193d310d9efd8c1ad":[3,0,8,5],
 "structoc__device__info__t.html#a735984d41155bc1032e09bece8f8d66d":[3,0,8,1],
 "structoc__device__info__t.html#aa7e71d0ef5bb9848723bd81d7414ceaa":[3,0,8,0],

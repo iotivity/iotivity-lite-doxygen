@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['asserting_20roles_1988',['Asserting roles',['../group__doc__module__tag__asserting__roles.html',1,'']]]
+  ['asserting_20roles_1996',['Asserting roles',['../group__doc__module__tag__asserting__roles.html',1,'']]]
 ];
