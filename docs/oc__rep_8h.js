@@ -87,7 +87,7 @@ var oc__rep_8h =
     [ "oc_rep_encoder_create_array", "oc__rep_8h.html#a28f725aa3b133f97e23a66e368a17194", null ],
     [ "oc_rep_encoder_create_map", "oc__rep_8h.html#a2da8010e1ed3f60cbc3e606996761597", null ],
     [ "oc_rep_encoder_get_type", "oc__rep_8h.html#a5159c20f1022ebabd9eda37e90961411", null ],
-    [ "oc_rep_encoder_set_type", "oc__rep_8h.html#a3d04b1a8b649c9d150ac1d3e6045b743", null ],
+    [ "oc_rep_encoder_set_type", "oc__rep_8h.html#a927937d40a3acdaa6c5286b7a55d1b00", null ],
     [ "oc_rep_get_bool", "oc__rep_8h.html#ac2a6595bec656be3eda87e27f9ca0f0b", null ],
     [ "oc_rep_get_bool_array", "oc__rep_8h.html#a0e91deab9b5585f5b2b6591cb31466ce", null ],
     [ "oc_rep_get_byte_string", "oc__rep_8h.html#a1ed7a90192ace86fd6ecae3f367c81a7", null ],

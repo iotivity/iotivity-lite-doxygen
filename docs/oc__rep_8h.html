@@ -338,9 +338,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_parse_rep</b> (cons
 <tr class="memitem:a5159c20f1022ebabd9eda37e90961411"><td class="memItemLeft" align="right" valign="top">oc_rep_encoder_type_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a5159c20f1022ebabd9eda37e90961411">oc_rep_encoder_get_type</a> (void)</td></tr>
 <tr class="memdesc:a5159c20f1022ebabd9eda37e90961411"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encoder type used to encode the response payloads.  <a href="oc__rep_8h.html#a5159c20f1022ebabd9eda37e90961411">More...</a><br /></td></tr>
 <tr class="separator:a5159c20f1022ebabd9eda37e90961411"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d04b1a8b649c9d150ac1d3e6045b743"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a3d04b1a8b649c9d150ac1d3e6045b743">oc_rep_encoder_set_type</a> (oc_rep_encoder_type_t encoder_type)</td></tr>
-<tr class="memdesc:a3d04b1a8b649c9d150ac1d3e6045b743"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the encoder type used to encode the response payloads.  <a href="oc__rep_8h.html#a3d04b1a8b649c9d150ac1d3e6045b743">More...</a><br /></td></tr>
-<tr class="separator:a3d04b1a8b649c9d150ac1d3e6045b743"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a927937d40a3acdaa6c5286b7a55d1b00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a927937d40a3acdaa6c5286b7a55d1b00">oc_rep_encoder_set_type</a> (oc_rep_encoder_type_t type)</td></tr>
+<tr class="memdesc:a927937d40a3acdaa6c5286b7a55d1b00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the global encoder used to encode the response payloads.  <a href="oc__rep_8h.html#a927937d40a3acdaa6c5286b7a55d1b00">More...</a><br /></td></tr>
+<tr class="separator:a927937d40a3acdaa6c5286b7a55d1b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2a6595bec656be3eda87e27f9ca0f0b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#ac2a6595bec656be3eda87e27f9ca0f0b">oc_rep_get_bool</a> (const oc_rep_t *rep, const char *key, bool *value)</td></tr>
 <tr class="memdesc:ac2a6595bec656be3eda87e27f9ca0f0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a boolean value from an <code>oc_rep_t</code>  <a href="oc__rep_8h.html#ac2a6595bec656be3eda87e27f9ca0f0b">More...</a><br /></td></tr>
 <tr class="separator:ac2a6595bec656be3eda87e27f9ca0f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2751,8 +2751,8 @@ oc_rep_end_object </dd></dl>
 
 </div>
 </div>
-<a id="a3d04b1a8b649c9d150ac1d3e6045b743"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d04b1a8b649c9d150ac1d3e6045b743">&#9670;&nbsp;</a></span>oc_rep_encoder_set_type()</h2>
+<a id="a927937d40a3acdaa6c5286b7a55d1b00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a927937d40a3acdaa6c5286b7a55d1b00">&#9670;&nbsp;</a></span>oc_rep_encoder_set_type()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2761,16 +2761,16 @@ oc_rep_end_object </dd></dl>
           <td class="memname">void oc_rep_encoder_set_type </td>
           <td>(</td>
           <td class="paramtype">oc_rep_encoder_type_t&#160;</td>
-          <td class="paramname"><em>encoder_type</em></td><td>)</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set the encoder type used to encode the response payloads. </p>
+<p>Set the global encoder used to encode the response payloads. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">encoder_type</td><td>encoder type </td></tr>
+    <tr><td class="paramname">type</td><td>encoder type </td></tr>
   </table>
   </dd>
 </dl>
@@ -3921,7 +3921,7 @@ oc_string_array_get_item_size </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__rep_8h.html">oc_rep.h</a></li>
-    <li class="footer">Generated on Thu Oct 19 2023 14:26:24 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Oct 19 2023 16:12:12 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
