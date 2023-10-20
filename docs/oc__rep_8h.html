@@ -191,7 +191,7 @@ Macros</h2></td></tr>
 <tr class="memitem:a1c427ed64acbea872676ee9e4195476d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a1c427ed64acbea872676ee9e4195476d">oc_rep_set_double_array</a>(object,  key,  values,  length)</td></tr>
 <tr class="memdesc:a1c427ed64acbea872676ee9e4195476d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a double array with <code>values</code> of <code>length</code> to the cbor <code>object</code> under the <code>key</code> name.  <a href="oc__rep_8h.html#a1c427ed64acbea872676ee9e4195476d">More...</a><br /></td></tr>
 <tr class="separator:a1c427ed64acbea872676ee9e4195476d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef1a23bf7d770f5d304ff07b15ef65ce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#aef1a23bf7d770f5d304ff07b15ef65ce">oc_rep_set_int</a>(object,  key,  value)</td></tr>
+<tr class="memitem:aef1a23bf7d770f5d304ff07b15ef65ce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#aef1a23bf7d770f5d304ff07b15ef65ce">oc_rep_set_int</a>(object,  key,  value)&#160;&#160;&#160;  g_err |= <a class="el" href="oc__rep_8h.html#a2c3066dfaf7b6c127f6e945377fd1568">oc_rep_object_set_int</a>(&amp;object##_map, #key, sizeof(#key) - 1, value)</td></tr>
 <tr class="memdesc:aef1a23bf7d770f5d304ff07b15ef65ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an integer <code>value</code> to the cbor <code>object</code> under the <code>key</code> name Example:  <a href="oc__rep_8h.html#aef1a23bf7d770f5d304ff07b15ef65ce">More...</a><br /></td></tr>
 <tr class="separator:aef1a23bf7d770f5d304ff07b15ef65ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd1584db7387c14e2322945c5d5391cb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#afd1584db7387c14e2322945c5d5391cb">oc_rep_set_int_array</a>(object,  key,  values,  length)</td></tr>
@@ -203,7 +203,7 @@ Macros</h2></td></tr>
 <tr class="memitem:a28f5ce1d026b3ed61a51e72ebf605bf2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a28f5ce1d026b3ed61a51e72ebf605bf2">oc_rep_set_key_v1</a>(parent,  key,  key_len)</td></tr>
 <tr class="memdesc:a28f5ce1d026b3ed61a51e72ebf605bf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alternative to oc_rep_set_key in case we know the length of the key.  <a href="oc__rep_8h.html#a28f5ce1d026b3ed61a51e72ebf605bf2">More...</a><br /></td></tr>
 <tr class="separator:a28f5ce1d026b3ed61a51e72ebf605bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74f95fe42177e3c12b1f250595b76b39"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a74f95fe42177e3c12b1f250595b76b39">oc_rep_set_null</a>(object,  key)</td></tr>
+<tr class="memitem:a74f95fe42177e3c12b1f250595b76b39"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a74f95fe42177e3c12b1f250595b76b39">oc_rep_set_null</a>(object,  key)&#160;&#160;&#160;  g_err |= <a class="el" href="oc__rep_8h.html#a5552ab84ff00c6e3bb06fc1a75f230a4">oc_rep_object_set_null</a>(&amp;object##_map, #key, sizeof(#key) - 1)</td></tr>
 <tr class="memdesc:a74f95fe42177e3c12b1f250595b76b39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an null <code>value</code> to the cbor <code>object</code> under the <code>key</code> name Example:  <a href="oc__rep_8h.html#a74f95fe42177e3c12b1f250595b76b39">More...</a><br /></td></tr>
 <tr class="separator:a74f95fe42177e3c12b1f250595b76b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa40ef72174872181f7a28edce8aa18e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#aa40ef72174872181f7a28edce8aa18e0">oc_rep_set_object</a>(object,  key)&#160;&#160;&#160;<a class="el" href="oc__rep_8h.html#a1a916a18e6e203784a1b581ba1fbe97c">oc_rep_open_object</a>(object, key)</td></tr>
@@ -218,7 +218,7 @@ Macros</h2></td></tr>
 <tr class="memitem:af9b0d33d98247ece5c153021ad582dc4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#af9b0d33d98247ece5c153021ad582dc4">oc_rep_set_text_string_v1</a>(object,  key,  value,  value_len)</td></tr>
 <tr class="memdesc:af9b0d33d98247ece5c153021ad582dc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alternative to oc_rep_set_text_string in case we know the length of the value.  <a href="oc__rep_8h.html#af9b0d33d98247ece5c153021ad582dc4">More...</a><br /></td></tr>
 <tr class="separator:af9b0d33d98247ece5c153021ad582dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a722eb5b9eb21c85cdcececb6c32de918"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a722eb5b9eb21c85cdcececb6c32de918">oc_rep_set_uint</a>(object,  key,  value)</td></tr>
+<tr class="memitem:a722eb5b9eb21c85cdcececb6c32de918"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a722eb5b9eb21c85cdcececb6c32de918">oc_rep_set_uint</a>(object,  key,  value)&#160;&#160;&#160;  g_err |= <a class="el" href="oc__rep_8h.html#a87a9ea0097253688f6444f345850c836">oc_rep_object_set_uint</a>(&amp;object##_map, #key, sizeof(#key) - 1, value)</td></tr>
 <tr class="memdesc:a722eb5b9eb21c85cdcececb6c32de918"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an unsigned integer <code>value</code> to the cbor <code>object</code> under the <code>key</code> name Example:  <a href="oc__rep_8h.html#a722eb5b9eb21c85cdcececb6c32de918">More...</a><br /></td></tr>
 <tr class="separator:a722eb5b9eb21c85cdcececb6c32de918"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c3be19eacf970ee046497e695f9ea53"><td class="memItemLeft" align="right" valign="top"><a id="a9c3be19eacf970ee046497e695f9ea53"></a>
@@ -290,15 +290,6 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9af4fb4adfd8934cca013889fd77856f"><td class="memItemLeft" align="right" valign="top"><a id="a9af4fb4adfd8934cca013889fd77856f"></a>
-oc_rep_t *&#160;</td><td class="memItemRight" valign="bottom"><b>oc_alloc_rep</b> (void)</td></tr>
-<tr class="separator:a9af4fb4adfd8934cca013889fd77856f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac436f2afde99d2f44f14e666fd318b39"><td class="memItemLeft" align="right" valign="top"><a id="ac436f2afde99d2f44f14e666fd318b39"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_free_rep</b> (oc_rep_t *rep)</td></tr>
-<tr class="separator:ac436f2afde99d2f44f14e666fd318b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab483b822db5fec4c156b91353f730845"><td class="memItemLeft" align="right" valign="top"><a id="ab483b822db5fec4c156b91353f730845"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_parse_rep</b> (const uint8_t *payload, size_t payload_size, oc_rep_t **value_list)</td></tr>
-<tr class="separator:ab483b822db5fec4c156b91353f730845"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a817587b89b1489e0ada6933713cae0af"><td class="memItemLeft" align="right" valign="top">CborError&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a817587b89b1489e0ada6933713cae0af">oc_rep_encode_boolean</a> (CborEncoder *encoder, bool value)</td></tr>
 <tr class="memdesc:a817587b89b1489e0ada6933713cae0af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode a boolean value.  <a href="oc__rep_8h.html#a817587b89b1489e0ada6933713cae0af">More...</a><br /></td></tr>
 <tr class="separator:a817587b89b1489e0ada6933713cae0af"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -350,9 +341,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_parse_rep</b> (cons
 <tr class="memitem:a1ed7a90192ace86fd6ecae3f367c81a7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a1ed7a90192ace86fd6ecae3f367c81a7">oc_rep_get_byte_string</a> (const oc_rep_t *rep, const char *key, char **value, size_t *size)</td></tr>
 <tr class="memdesc:a1ed7a90192ace86fd6ecae3f367c81a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a byte string value from an <code>oc_rep_t</code>  <a href="oc__rep_8h.html#a1ed7a90192ace86fd6ecae3f367c81a7">More...</a><br /></td></tr>
 <tr class="separator:a1ed7a90192ace86fd6ecae3f367c81a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb8e9e2044b64aeaf1df52b76d9f1d9c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#aeb8e9e2044b64aeaf1df52b76d9f1d9c">oc_rep_get_byte_string_array</a> (const oc_rep_t *rep, const char *key, <a class="el" href="structoc__mmem.html">oc_string_array_t</a> *value, size_t *size)</td></tr>
-<tr class="memdesc:aeb8e9e2044b64aeaf1df52b76d9f1d9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read an byte string array value from an <code>oc_rep_t</code>  <a href="oc__rep_8h.html#aeb8e9e2044b64aeaf1df52b76d9f1d9c">More...</a><br /></td></tr>
-<tr class="separator:aeb8e9e2044b64aeaf1df52b76d9f1d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68d6334756d4a3eeae00a3a4774d6df5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a68d6334756d4a3eeae00a3a4774d6df5">oc_rep_get_byte_string_array</a> (const oc_rep_t *rep, const char *key, <a class="el" href="structoc__mmem.html">oc_byte_string_array_t</a> *value, size_t *size)</td></tr>
+<tr class="memdesc:a68d6334756d4a3eeae00a3a4774d6df5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read an byte string array value from an <code>oc_rep_t</code>  <a href="oc__rep_8h.html#a68d6334756d4a3eeae00a3a4774d6df5">More...</a><br /></td></tr>
+<tr class="separator:a68d6334756d4a3eeae00a3a4774d6df5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd633419c3a6cbf5b8ab636242e0861f"><td class="memItemLeft" align="right" valign="top">CborError&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#acd633419c3a6cbf5b8ab636242e0861f">oc_rep_get_cbor_errno</a> (void)</td></tr>
 <tr class="memdesc:acd633419c3a6cbf5b8ab636242e0861f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called after any <code>oc_rep_set_*</code>, <code>oc_rep_start_*</code>, <code>oc_rep_begin_*</code>, <code>oc_rep_end_*</code>, <code>oc_rep_add_*</code>, <code>oc_rep_open_*</code>, and <code>oc_rep_close_*</code> macros to check if an error occurred while executing the commands.  <a href="oc__rep_8h.html#acd633419c3a6cbf5b8ab636242e0861f">More...</a><br /></td></tr>
 <tr class="separator:acd633419c3a6cbf5b8ab636242e0861f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -407,9 +398,30 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_parse_rep</b> (cons
 <tr class="memitem:ac0e830680f21233d87ec34c35befdda3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#ac0e830680f21233d87ec34c35befdda3">oc_rep_new_v1</a> (uint8_t *payload, size_t size)</td></tr>
 <tr class="memdesc:ac0e830680f21233d87ec34c35befdda3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the buffer used to hold the cbor encoded data without reallocation.  <a href="oc__rep_8h.html#ac0e830680f21233d87ec34c35befdda3">More...</a><br /></td></tr>
 <tr class="separator:ac0e830680f21233d87ec34c35befdda3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10f1c1b950123516185b8b7944873937"><td class="memItemLeft" align="right" valign="top"><a id="a10f1c1b950123516185b8b7944873937"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>oc_rep_set_pool</b> (struct oc_memb *rep_objects_pool)</td></tr>
-<tr class="separator:a10f1c1b950123516185b8b7944873937"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1b76d46f7a5c747447dda1d62d3bdb6"><td class="memItemLeft" align="right" valign="top">CborError&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#ac1b76d46f7a5c747447dda1d62d3bdb6">oc_rep_object_set_boolean</a> (CborEncoder *object, const char *key, size_t key_len, bool value)</td></tr>
+<tr class="memdesc:ac1b76d46f7a5c747447dda1d62d3bdb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an boolean <code>value</code> to the cbor <code>object</code> under the <code>key</code> name.  <a href="oc__rep_8h.html#ac1b76d46f7a5c747447dda1d62d3bdb6">More...</a><br /></td></tr>
+<tr class="separator:ac1b76d46f7a5c747447dda1d62d3bdb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae32c63cbd51be08b40468e42d122ef11"><td class="memItemLeft" align="right" valign="top">CborError&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#ae32c63cbd51be08b40468e42d122ef11">oc_rep_object_set_byte_string</a> (CborEncoder *object, const char *key, size_t key_len, const uint8_t *value, size_t length)</td></tr>
+<tr class="memdesc:ae32c63cbd51be08b40468e42d122ef11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an byte array <code>value</code> to the cbor <code>object</code> under the <code>key</code> name.  <a href="oc__rep_8h.html#ae32c63cbd51be08b40468e42d122ef11">More...</a><br /></td></tr>
+<tr class="separator:ae32c63cbd51be08b40468e42d122ef11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42ebfce0ebf1069d77fdeccd6aa3e047"><td class="memItemLeft" align="right" valign="top">CborError&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a42ebfce0ebf1069d77fdeccd6aa3e047">oc_rep_object_set_double</a> (CborEncoder *object, const char *key, size_t key_len, double value)</td></tr>
+<tr class="memdesc:a42ebfce0ebf1069d77fdeccd6aa3e047"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a double <code>value</code> to the cbor <code>object</code> under the <code>key</code> name.  <a href="oc__rep_8h.html#a42ebfce0ebf1069d77fdeccd6aa3e047">More...</a><br /></td></tr>
+<tr class="separator:a42ebfce0ebf1069d77fdeccd6aa3e047"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c3066dfaf7b6c127f6e945377fd1568"><td class="memItemLeft" align="right" valign="top">CborError&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a2c3066dfaf7b6c127f6e945377fd1568">oc_rep_object_set_int</a> (CborEncoder *object, const char *key, size_t key_len, int64_t value)</td></tr>
+<tr class="memdesc:a2c3066dfaf7b6c127f6e945377fd1568"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an integer <code>value</code> to the cbor <code>object</code> under the <code>key</code> name.  <a href="oc__rep_8h.html#a2c3066dfaf7b6c127f6e945377fd1568">More...</a><br /></td></tr>
+<tr class="separator:a2c3066dfaf7b6c127f6e945377fd1568"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5552ab84ff00c6e3bb06fc1a75f230a4"><td class="memItemLeft" align="right" valign="top">CborError&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a5552ab84ff00c6e3bb06fc1a75f230a4">oc_rep_object_set_null</a> (CborEncoder *object, const char *key, size_t key_len)</td></tr>
+<tr class="memdesc:a5552ab84ff00c6e3bb06fc1a75f230a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an integer <code>value</code> to the cbor <code>object</code> under the <code>key</code> name.  <a href="oc__rep_8h.html#a5552ab84ff00c6e3bb06fc1a75f230a4">More...</a><br /></td></tr>
+<tr class="separator:a5552ab84ff00c6e3bb06fc1a75f230a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88a9040a9268a2e2a1b2dee7433bb3ee"><td class="memItemLeft" align="right" valign="top">CborError&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a88a9040a9268a2e2a1b2dee7433bb3ee">oc_rep_object_set_string_array</a> (CborEncoder *object, const char *key, size_t key_len, const <a class="el" href="structoc__mmem.html">oc_string_array_t</a> *array)</td></tr>
+<tr class="memdesc:a88a9040a9268a2e2a1b2dee7433bb3ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a string array using an oc_string_array_t as <code>values</code> to the cbor <code>object</code> under the <code>key</code> name.  <a href="oc__rep_8h.html#a88a9040a9268a2e2a1b2dee7433bb3ee">More...</a><br /></td></tr>
+<tr class="separator:a88a9040a9268a2e2a1b2dee7433bb3ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e57ddc44c32d50d8161c3e553b9b85f"><td class="memItemLeft" align="right" valign="top">CborError&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a0e57ddc44c32d50d8161c3e553b9b85f">oc_rep_object_set_text_string</a> (CborEncoder *object, const char *key, size_t key_len, const char *value, size_t length)</td></tr>
+<tr class="memdesc:a0e57ddc44c32d50d8161c3e553b9b85f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an string <code>value</code> to the cbor <code>object</code> under the <code>key</code> name.  <a href="oc__rep_8h.html#a0e57ddc44c32d50d8161c3e553b9b85f">More...</a><br /></td></tr>
+<tr class="separator:a0e57ddc44c32d50d8161c3e553b9b85f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87a9ea0097253688f6444f345850c836"><td class="memItemLeft" align="right" valign="top">CborError&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a87a9ea0097253688f6444f345850c836">oc_rep_object_set_uint</a> (CborEncoder *object, const char *key, size_t key_len, uint64_t value)</td></tr>
+<tr class="memdesc:a87a9ea0097253688f6444f345850c836"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an unsigned integer <code>value</code> to the cbor <code>object</code> under the <code>key</code> name.  <a href="oc__rep_8h.html#a87a9ea0097253688f6444f345850c836">More...</a><br /></td></tr>
+<tr class="separator:a87a9ea0097253688f6444f345850c836"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc22e10eb48e0d0f0f279cdee768430f"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#abc22e10eb48e0d0f0f279cdee768430f">oc_rep_shrink_encoder_buf</a> (uint8_t *buf)</td></tr>
 <tr class="memdesc:abc22e10eb48e0d0f0f279cdee768430f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shrink the buffer pointer to length of encoded cbor data.  <a href="oc__rep_8h.html#abc22e10eb48e0d0f0f279cdee768430f">More...</a><br /></td></tr>
 <tr class="separator:abc22e10eb48e0d0f0f279cdee768430f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -486,11 +498,11 @@ CborEncoder&#160;</td><td class="memItemRight" valign="bottom"><b>root_map</b></
 <div class="line">}</div>
 <div class="line"><a class="code" href="oc__rep_8h.html#a7e527bf16bb49040536c85232c0e1846">oc_rep_close_array</a>(root, flip);</div>
 <div class="line"><a class="code" href="oc__rep_8h.html#ab3a74cd8010eb2b4798b6f38cea3c487">oc_rep_end_root_object</a>();</div>
-<div class="ttc" id="aoc__rep_8h_html_a06dcf677863a85a333797045b0ec305a"><div class="ttname"><a href="oc__rep_8h.html#a06dcf677863a85a333797045b0ec305a">oc_rep_add_boolean</a></div><div class="ttdeci">#define oc_rep_add_boolean(parent, value)</div><div class="ttdoc">Add an bool value to a parent array.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:789</div></div>
-<div class="ttc" id="aoc__rep_8h_html_a5a0a8355dd2a54e03bf9c8b65b7a8436"><div class="ttname"><a href="oc__rep_8h.html#a5a0a8355dd2a54e03bf9c8b65b7a8436">oc_rep_start_root_object</a></div><div class="ttdeci">#define oc_rep_start_root_object()</div><div class="ttdoc">This macro has been replaced with oc_rep_begin_root_object.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:562</div></div>
-<div class="ttc" id="aoc__rep_8h_html_a7e527bf16bb49040536c85232c0e1846"><div class="ttname"><a href="oc__rep_8h.html#a7e527bf16bb49040536c85232c0e1846">oc_rep_close_array</a></div><div class="ttdeci">#define oc_rep_close_array(parent, key)</div><div class="ttdoc">Close the array object.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:849</div></div>
-<div class="ttc" id="aoc__rep_8h_html_ab3a74cd8010eb2b4798b6f38cea3c487"><div class="ttname"><a href="oc__rep_8h.html#ab3a74cd8010eb2b4798b6f38cea3c487">oc_rep_end_root_object</a></div><div class="ttdeci">#define oc_rep_end_root_object()</div><div class="ttdoc">End the root object.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:579</div></div>
-<div class="ttc" id="aoc__rep_8h_html_ad5d9fc3d44ef0e2123c734b9044b83e6"><div class="ttname"><a href="oc__rep_8h.html#ad5d9fc3d44ef0e2123c734b9044b83e6">oc_rep_open_array</a></div><div class="ttdeci">#define oc_rep_open_array(parent, key)</div><div class="ttdoc">Open a cbor array object belonging to parent object under the key name.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:839</div></div>
+<div class="ttc" id="aoc__rep_8h_html_a06dcf677863a85a333797045b0ec305a"><div class="ttname"><a href="oc__rep_8h.html#a06dcf677863a85a333797045b0ec305a">oc_rep_add_boolean</a></div><div class="ttdeci">#define oc_rep_add_boolean(parent, value)</div><div class="ttdoc">Add an bool value to a parent array.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:808</div></div>
+<div class="ttc" id="aoc__rep_8h_html_a5a0a8355dd2a54e03bf9c8b65b7a8436"><div class="ttname"><a href="oc__rep_8h.html#a5a0a8355dd2a54e03bf9c8b65b7a8436">oc_rep_start_root_object</a></div><div class="ttdeci">#define oc_rep_start_root_object()</div><div class="ttdoc">This macro has been replaced with oc_rep_begin_root_object.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:581</div></div>
+<div class="ttc" id="aoc__rep_8h_html_a7e527bf16bb49040536c85232c0e1846"><div class="ttname"><a href="oc__rep_8h.html#a7e527bf16bb49040536c85232c0e1846">oc_rep_close_array</a></div><div class="ttdeci">#define oc_rep_close_array(parent, key)</div><div class="ttdoc">Close the array object.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:868</div></div>
+<div class="ttc" id="aoc__rep_8h_html_ab3a74cd8010eb2b4798b6f38cea3c487"><div class="ttname"><a href="oc__rep_8h.html#ab3a74cd8010eb2b4798b6f38cea3c487">oc_rep_end_root_object</a></div><div class="ttdeci">#define oc_rep_end_root_object()</div><div class="ttdoc">End the root object.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:598</div></div>
+<div class="ttc" id="aoc__rep_8h_html_ad5d9fc3d44ef0e2123c734b9044b83e6"><div class="ttname"><a href="oc__rep_8h.html#ad5d9fc3d44ef0e2123c734b9044b83e6">oc_rep_open_array</a></div><div class="ttdeci">#define oc_rep_open_array(parent, key)</div><div class="ttdoc">Open a cbor array object belonging to parent object under the key name.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:858</div></div>
 </div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__rep_8h.html#ad5d9fc3d44ef0e2123c734b9044b83e6" title="Open a cbor array object belonging to parent object under the key name.">oc_rep_open_array</a> </dd>
 <dd>
 <a class="el" href="oc__rep_8h.html#a7e527bf16bb49040536c85232c0e1846" title="Close the array object.">oc_rep_close_array</a> </dd>
@@ -550,7 +562,7 @@ CborEncoder&#160;</td><td class="memItemRight" valign="bottom"><b>root_map</b></
 <div class="line"><a class="code" href="oc__rep_8h.html#ae1d755ceaf2c00d443d7cacfe05b71c9">oc_rep_add_byte_string</a>(barray, ba3, <span class="keyword">sizeof</span>(ba3));</div>
 <div class="line"><a class="code" href="oc__rep_8h.html#a7e527bf16bb49040536c85232c0e1846">oc_rep_close_array</a>(root, barray);</div>
 <div class="line"><a class="code" href="oc__rep_8h.html#ab3a74cd8010eb2b4798b6f38cea3c487">oc_rep_end_root_object</a>();</div>
-<div class="ttc" id="aoc__rep_8h_html_ae1d755ceaf2c00d443d7cacfe05b71c9"><div class="ttname"><a href="oc__rep_8h.html#ae1d755ceaf2c00d443d7cacfe05b71c9">oc_rep_add_byte_string</a></div><div class="ttdeci">#define oc_rep_add_byte_string(parent, value, value_len)</div><div class="ttdoc">Add a byte string value to a parent array.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:615</div></div>
+<div class="ttc" id="aoc__rep_8h_html_ae1d755ceaf2c00d443d7cacfe05b71c9"><div class="ttname"><a href="oc__rep_8h.html#ae1d755ceaf2c00d443d7cacfe05b71c9">oc_rep_add_byte_string</a></div><div class="ttdeci">#define oc_rep_add_byte_string(parent, value, value_len)</div><div class="ttdoc">Add a byte string value to a parent array.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:634</div></div>
 </div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__rep_8h.html#ad5d9fc3d44ef0e2123c734b9044b83e6" title="Open a cbor array object belonging to parent object under the key name.">oc_rep_open_array</a> </dd>
 <dd>
 <a class="el" href="oc__rep_8h.html#a7e527bf16bb49040536c85232c0e1846" title="Close the array object.">oc_rep_close_array</a> </dd></dl>
@@ -600,7 +612,7 @@ CborEncoder&#160;</td><td class="memItemRight" valign="bottom"><b>root_map</b></
 <div class="line">    }</div>
 <div class="line">    <a class="code" href="oc__rep_8h.html#a7e527bf16bb49040536c85232c0e1846">oc_rep_close_array</a>(root, math_constants);</div>
 <div class="line">    <a class="code" href="oc__rep_8h.html#ab3a74cd8010eb2b4798b6f38cea3c487">oc_rep_end_root_object</a>();</div>
-<div class="ttc" id="aoc__rep_8h_html_a98e74dc3c29be8f7c052e78e0e841684"><div class="ttname"><a href="oc__rep_8h.html#a98e74dc3c29be8f7c052e78e0e841684">oc_rep_add_double</a></div><div class="ttdeci">#define oc_rep_add_double(parent, value)</div><div class="ttdoc">Add an double value to a parent array.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:714</div></div>
+<div class="ttc" id="aoc__rep_8h_html_a98e74dc3c29be8f7c052e78e0e841684"><div class="ttname"><a href="oc__rep_8h.html#a98e74dc3c29be8f7c052e78e0e841684">oc_rep_add_double</a></div><div class="ttdeci">#define oc_rep_add_double(parent, value)</div><div class="ttdoc">Add an double value to a parent array.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:733</div></div>
 </div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__rep_8h.html#ad5d9fc3d44ef0e2123c734b9044b83e6" title="Open a cbor array object belonging to parent object under the key name.">oc_rep_open_array</a> </dd>
 <dd>
 <a class="el" href="oc__rep_8h.html#a7e527bf16bb49040536c85232c0e1846" title="Close the array object.">oc_rep_close_array</a> </dd>
@@ -650,7 +662,7 @@ CborEncoder&#160;</td><td class="memItemRight" valign="bottom"><b>root_map</b></
 <div class="line">}</div>
 <div class="line"><a class="code" href="oc__rep_8h.html#a7e527bf16bb49040536c85232c0e1846">oc_rep_close_array</a>(root, fibonacci);</div>
 <div class="line"><a class="code" href="oc__rep_8h.html#ab3a74cd8010eb2b4798b6f38cea3c487">oc_rep_end_root_object</a>();</div>
-<div class="ttc" id="aoc__rep_8h_html_a119c06f20d5a46a8c65caef3a3a50890"><div class="ttname"><a href="oc__rep_8h.html#a119c06f20d5a46a8c65caef3a3a50890">oc_rep_add_int</a></div><div class="ttdeci">#define oc_rep_add_int(parent, value)</div><div class="ttdoc">Add an int value to a parent array.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:752</div></div>
+<div class="ttc" id="aoc__rep_8h_html_a119c06f20d5a46a8c65caef3a3a50890"><div class="ttname"><a href="oc__rep_8h.html#a119c06f20d5a46a8c65caef3a3a50890">oc_rep_add_int</a></div><div class="ttdeci">#define oc_rep_add_int(parent, value)</div><div class="ttdoc">Add an int value to a parent array.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:771</div></div>
 </div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__rep_8h.html#ad5d9fc3d44ef0e2123c734b9044b83e6" title="Open a cbor array object belonging to parent object under the key name.">oc_rep_open_array</a> </dd>
 <dd>
 <a class="el" href="oc__rep_8h.html#a7e527bf16bb49040536c85232c0e1846" title="Close the array object.">oc_rep_close_array</a> </dd>
@@ -713,7 +725,7 @@ CborEncoder&#160;</td><td class="memItemRight" valign="bottom"><b>root_map</b></
 <div class="line">    <a class="code" href="oc__rep_8h.html#a5b0ebb49d43ac8b4495257a83b7015a6">oc_rep_add_text_string</a>(quotes, str3);</div>
 <div class="line">    <a class="code" href="oc__rep_8h.html#a7e527bf16bb49040536c85232c0e1846">oc_rep_close_array</a>(root, quotes);</div>
 <div class="line">    <a class="code" href="oc__rep_8h.html#ab3a74cd8010eb2b4798b6f38cea3c487">oc_rep_end_root_object</a>();</div>
-<div class="ttc" id="aoc__rep_8h_html_a5b0ebb49d43ac8b4495257a83b7015a6"><div class="ttname"><a href="oc__rep_8h.html#a5b0ebb49d43ac8b4495257a83b7015a6">oc_rep_add_text_string</a></div><div class="ttdeci">#define oc_rep_add_text_string(parent, value)</div><div class="ttdoc">Add a text string value to a parent array.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:668</div></div>
+<div class="ttc" id="aoc__rep_8h_html_a5b0ebb49d43ac8b4495257a83b7015a6"><div class="ttname"><a href="oc__rep_8h.html#a5b0ebb49d43ac8b4495257a83b7015a6">oc_rep_add_text_string</a></div><div class="ttdeci">#define oc_rep_add_text_string(parent, value)</div><div class="ttdoc">Add a text string value to a parent array.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:687</div></div>
 </div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__rep_8h.html#ad5d9fc3d44ef0e2123c734b9044b83e6" title="Open a cbor array object belonging to parent object under the key name.">oc_rep_open_array</a> </dd>
 <dd>
 <a class="el" href="oc__rep_8h.html#a7e527bf16bb49040536c85232c0e1846" title="Close the array object.">oc_rep_close_array</a> </dd></dl>
@@ -828,9 +840,9 @@ CborEncoder&#160;</td><td class="memItemRight" valign="bottom"><b>root_map</b></
 <div class="line"><a class="code" href="oc__rep_8h.html#abb10733a8be4dc0e1330f16b0742fd38">oc_rep_end_array</a>(<a class="code" href="oc__rep_8h.html#a624f3b7ef4a837df5fb9103ac9da3b2c">oc_rep_object</a>(root), fibonacci);</div>
 <div class="line"><a class="code" href="oc__rep_8h.html#ab3a74cd8010eb2b4798b6f38cea3c487">oc_rep_end_root_object</a>();</div>
 <div class="ttc" id="aoc__rep_8h_html_a624f3b7ef4a837df5fb9103ac9da3b2c"><div class="ttname"><a href="oc__rep_8h.html#a624f3b7ef4a837df5fb9103ac9da3b2c">oc_rep_object</a></div><div class="ttdeci">#define oc_rep_object(name)</div><div class="ttdoc">Get a pointer to the cbor object with the given name</div><div class="ttdef"><b>Definition:</b> oc_rep.h:282</div></div>
-<div class="ttc" id="aoc__rep_8h_html_abb10733a8be4dc0e1330f16b0742fd38"><div class="ttname"><a href="oc__rep_8h.html#abb10733a8be4dc0e1330f16b0742fd38">oc_rep_end_array</a></div><div class="ttdeci">#define oc_rep_end_array(parent, name)</div><div class="ttdoc">End the array object.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:542</div></div>
-<div class="ttc" id="aoc__rep_8h_html_adae6023690eb725d310aa1323cb3e061"><div class="ttname"><a href="oc__rep_8h.html#adae6023690eb725d310aa1323cb3e061">oc_rep_set_key</a></div><div class="ttdeci">#define oc_rep_set_key(parent, key)</div><div class="ttdoc">End users are very unlikely to use this macro.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:815</div></div>
-<div class="ttc" id="aoc__rep_8h_html_aefb31d9673deb6fa2725ffdb669c490c"><div class="ttname"><a href="oc__rep_8h.html#aefb31d9673deb6fa2725ffdb669c490c">oc_rep_begin_array</a></div><div class="ttdeci">#define oc_rep_begin_array(parent, name)</div><div class="ttdoc">This macro is unlikely to be used by outside the IoTivity-lite library.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:527</div></div>
+<div class="ttc" id="aoc__rep_8h_html_abb10733a8be4dc0e1330f16b0742fd38"><div class="ttname"><a href="oc__rep_8h.html#abb10733a8be4dc0e1330f16b0742fd38">oc_rep_end_array</a></div><div class="ttdeci">#define oc_rep_end_array(parent, name)</div><div class="ttdoc">End the array object.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:561</div></div>
+<div class="ttc" id="aoc__rep_8h_html_adae6023690eb725d310aa1323cb3e061"><div class="ttname"><a href="oc__rep_8h.html#adae6023690eb725d310aa1323cb3e061">oc_rep_set_key</a></div><div class="ttdeci">#define oc_rep_set_key(parent, key)</div><div class="ttdoc">End users are very unlikely to use this macro.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:834</div></div>
+<div class="ttc" id="aoc__rep_8h_html_aefb31d9673deb6fa2725ffdb669c490c"><div class="ttname"><a href="oc__rep_8h.html#aefb31d9673deb6fa2725ffdb669c490c">oc_rep_begin_array</a></div><div class="ttdeci">#define oc_rep_begin_array(parent, name)</div><div class="ttdoc">This macro is unlikely to be used by outside the IoTivity-lite library.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:546</div></div>
 </div><!-- fragment --><p>See oc_rep_add_int to see an example using the recommended way to do the same thing using <code>oc_rep_open_array</code> and <code>oc_rep_close_array</code> instead.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__rep_8h.html#adae6023690eb725d310aa1323cb3e061" title="End users are very unlikely to use this macro.">oc_rep_set_key</a> </dd>
 <dd>
@@ -1152,10 +1164,10 @@ CborEncoder&#160;</td><td class="memItemRight" valign="bottom"><b>root_map</b></
 <div class="line"> </div>
 <div class="line"><a class="code" href="oc__rep_8h.html#a7e527bf16bb49040536c85232c0e1846">oc_rep_close_array</a>(root, space2001);</div>
 <div class="line"><a class="code" href="oc__rep_8h.html#ab3a74cd8010eb2b4798b6f38cea3c487">oc_rep_end_root_object</a>();</div>
-<div class="ttc" id="aoc__rep_8h_html_a0d03ba29dc294529f479e75e82f4eb78"><div class="ttname"><a href="oc__rep_8h.html#a0d03ba29dc294529f479e75e82f4eb78">oc_rep_set_text_string</a></div><div class="ttdeci">#define oc_rep_set_text_string(object, key, value)</div><div class="ttdoc">Add an string value to the cbor object under the key name Example:</div><div class="ttdef"><b>Definition:</b> oc_rep.h:417</div></div>
-<div class="ttc" id="aoc__rep_8h_html_a1ee96a784db9ea9f8cd09adc52f5085e"><div class="ttname"><a href="oc__rep_8h.html#a1ee96a784db9ea9f8cd09adc52f5085e">oc_rep_object_array_begin_item</a></div><div class="ttdeci">#define oc_rep_object_array_begin_item(key)</div><div class="ttdoc">Begin a cbor object for an array of cbor objects.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:920</div></div>
-<div class="ttc" id="aoc__rep_8h_html_a3ecb90befc748f97df0e7fcd2b65508f"><div class="ttname"><a href="oc__rep_8h.html#a3ecb90befc748f97df0e7fcd2b65508f">oc_rep_set_array</a></div><div class="ttdeci">#define oc_rep_set_array(object, key)</div><div class="ttdoc">This macro has been replaced with oc_rep_open_array.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:824</div></div>
-<div class="ttc" id="aoc__rep_8h_html_a58517e4f8dca656ea2b6dec63700ea6c"><div class="ttname"><a href="oc__rep_8h.html#a58517e4f8dca656ea2b6dec63700ea6c">oc_rep_object_array_end_item</a></div><div class="ttdeci">#define oc_rep_object_array_end_item(key)</div><div class="ttdoc">End the cbor object for the key array of cbor objects.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:926</div></div>
+<div class="ttc" id="aoc__rep_8h_html_a0d03ba29dc294529f479e75e82f4eb78"><div class="ttname"><a href="oc__rep_8h.html#a0d03ba29dc294529f479e75e82f4eb78">oc_rep_set_text_string</a></div><div class="ttdeci">#define oc_rep_set_text_string(object, key, value)</div><div class="ttdoc">Add an string value to the cbor object under the key name Example:</div><div class="ttdef"><b>Definition:</b> oc_rep.h:441</div></div>
+<div class="ttc" id="aoc__rep_8h_html_a1ee96a784db9ea9f8cd09adc52f5085e"><div class="ttname"><a href="oc__rep_8h.html#a1ee96a784db9ea9f8cd09adc52f5085e">oc_rep_object_array_begin_item</a></div><div class="ttdeci">#define oc_rep_object_array_begin_item(key)</div><div class="ttdoc">Begin a cbor object for an array of cbor objects.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:939</div></div>
+<div class="ttc" id="aoc__rep_8h_html_a3ecb90befc748f97df0e7fcd2b65508f"><div class="ttname"><a href="oc__rep_8h.html#a3ecb90befc748f97df0e7fcd2b65508f">oc_rep_set_array</a></div><div class="ttdeci">#define oc_rep_set_array(object, key)</div><div class="ttdoc">This macro has been replaced with oc_rep_open_array.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:843</div></div>
+<div class="ttc" id="aoc__rep_8h_html_a58517e4f8dca656ea2b6dec63700ea6c"><div class="ttname"><a href="oc__rep_8h.html#a58517e4f8dca656ea2b6dec63700ea6c">oc_rep_object_array_end_item</a></div><div class="ttdeci">#define oc_rep_object_array_end_item(key)</div><div class="ttdoc">End the cbor object for the key array of cbor objects.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:945</div></div>
 </div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__rep_8h.html#a58517e4f8dca656ea2b6dec63700ea6c" title="End the cbor object for the key array of cbor objects.">oc_rep_object_array_end_item</a> </dd></dl>
 
 </div>
@@ -1284,10 +1296,10 @@ CborEncoder&#160;</td><td class="memItemRight" valign="bottom"><b>root_map</b></
 <div class="line"><a class="code" href="oc__rep_8h.html#a0d03ba29dc294529f479e75e82f4eb78">oc_rep_set_text_string</a>(my_object, c, <span class="stringliteral">&quot;three&quot;</span>);</div>
 <div class="line"><a class="code" href="oc__rep_8h.html#a2852e55c7546b9fa9868bcb639d483f1">oc_rep_close_object</a>(root, my_object);</div>
 <div class="line"><a class="code" href="oc__rep_8h.html#ab3a74cd8010eb2b4798b6f38cea3c487">oc_rep_end_root_object</a>();</div>
-<div class="ttc" id="aoc__rep_8h_html_a2852e55c7546b9fa9868bcb639d483f1"><div class="ttname"><a href="oc__rep_8h.html#a2852e55c7546b9fa9868bcb639d483f1">oc_rep_close_object</a></div><div class="ttdeci">#define oc_rep_close_object(parent, key)</div><div class="ttdoc">Close the object.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:975</div></div>
-<div class="ttc" id="aoc__rep_8h_html_a9fea833e16965d2200342ae3c8deef35"><div class="ttname"><a href="oc__rep_8h.html#a9fea833e16965d2200342ae3c8deef35">oc_rep_set_boolean</a></div><div class="ttdeci">#define oc_rep_set_boolean(object, key, value)</div><div class="ttdoc">Add an boolean value to the cbor object under the key name Example:</div><div class="ttdef"><b>Definition:</b> oc_rep.h:385</div></div>
-<div class="ttc" id="aoc__rep_8h_html_aa40ef72174872181f7a28edce8aa18e0"><div class="ttname"><a href="oc__rep_8h.html#aa40ef72174872181f7a28edce8aa18e0">oc_rep_set_object</a></div><div class="ttdeci">#define oc_rep_set_object(object, key)</div><div class="ttdoc">This macro has been replaced with oc_rep_open_object.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:934</div></div>
-<div class="ttc" id="aoc__rep_8h_html_aef1a23bf7d770f5d304ff07b15ef65ce"><div class="ttname"><a href="oc__rep_8h.html#aef1a23bf7d770f5d304ff07b15ef65ce">oc_rep_set_int</a></div><div class="ttdeci">#define oc_rep_set_int(object, key, value)</div><div class="ttdoc">Add an integer value to the cbor object under the key name Example:</div><div class="ttdef"><b>Definition:</b> oc_rep.h:333</div></div>
+<div class="ttc" id="aoc__rep_8h_html_a2852e55c7546b9fa9868bcb639d483f1"><div class="ttname"><a href="oc__rep_8h.html#a2852e55c7546b9fa9868bcb639d483f1">oc_rep_close_object</a></div><div class="ttdeci">#define oc_rep_close_object(parent, key)</div><div class="ttdoc">Close the object.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:994</div></div>
+<div class="ttc" id="aoc__rep_8h_html_a9fea833e16965d2200342ae3c8deef35"><div class="ttname"><a href="oc__rep_8h.html#a9fea833e16965d2200342ae3c8deef35">oc_rep_set_boolean</a></div><div class="ttdeci">#define oc_rep_set_boolean(object, key, value)</div><div class="ttdoc">Add an boolean value to the cbor object under the key name Example:</div><div class="ttdef"><b>Definition:</b> oc_rep.h:414</div></div>
+<div class="ttc" id="aoc__rep_8h_html_aa40ef72174872181f7a28edce8aa18e0"><div class="ttname"><a href="oc__rep_8h.html#aa40ef72174872181f7a28edce8aa18e0">oc_rep_set_object</a></div><div class="ttdeci">#define oc_rep_set_object(object, key)</div><div class="ttdoc">This macro has been replaced with oc_rep_open_object.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:953</div></div>
+<div class="ttc" id="aoc__rep_8h_html_aef1a23bf7d770f5d304ff07b15ef65ce"><div class="ttname"><a href="oc__rep_8h.html#aef1a23bf7d770f5d304ff07b15ef65ce">oc_rep_set_int</a></div><div class="ttdeci">#define oc_rep_set_int(object, key, value)</div><div class="ttdoc">Add an integer value to the cbor object under the key name Example:</div><div class="ttdef"><b>Definition:</b> oc_rep.h:368</div></div>
 </div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__rep_8h.html#a2852e55c7546b9fa9868bcb639d483f1" title="Close the object.">oc_rep_close_object</a> </dd></dl>
 
 </div>
@@ -1389,7 +1401,7 @@ CborEncoder&#160;</td><td class="memItemRight" valign="bottom"><b>root_map</b></
 <div class="line">                      flip,</div>
 <div class="line">                      (<span class="keywordtype">int</span>)(<span class="keyword">sizeof</span>(flip)/ <span class="keyword">sizeof</span>(flip[0]) ) );</div>
 <div class="line"><a class="code" href="oc__rep_8h.html#ab3a74cd8010eb2b4798b6f38cea3c487">oc_rep_end_root_object</a>();</div>
-<div class="ttc" id="aoc__rep_8h_html_a0a7215aa69b5832cdc374778eee302d1"><div class="ttname"><a href="oc__rep_8h.html#a0a7215aa69b5832cdc374778eee302d1">oc_rep_set_bool_array</a></div><div class="ttdeci">#define oc_rep_set_bool_array(object, key, values, length)</div><div class="ttdoc">Add a boolean array with values of length to the cbor object under the key name.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:1040</div></div>
+<div class="ttc" id="aoc__rep_8h_html_a0a7215aa69b5832cdc374778eee302d1"><div class="ttname"><a href="oc__rep_8h.html#a0a7215aa69b5832cdc374778eee302d1">oc_rep_set_bool_array</a></div><div class="ttdeci">#define oc_rep_set_bool_array(object, key, values, length)</div><div class="ttdoc">Add a boolean array with values of length to the cbor object under the key name.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:1059</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -1424,10 +1436,8 @@ CborEncoder&#160;</td><td class="memItemRight" valign="bottom"><b>root_map</b></
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                         \</div>
-<div class="line">    g_err |= <a class="code" href="oc__rep_8h.html#ae973d1717cb83afd0cda4b0c8808c385">oc_rep_encode_text_string</a>(&amp;<span class="keywordtype">object</span>##_map, #key, <span class="keyword">sizeof</span>(#key) - 1); \</div>
-<div class="line">    g_err |= <a class="code" href="oc__rep_8h.html#a817587b89b1489e0ada6933713cae0af">oc_rep_encode_boolean</a>(&amp;<span class="keywordtype">object</span>##_map, value);                      \</div>
-<div class="line">  } <span class="keywordflow">while</span> (0)</div>
+<b>Value:</b><div class="fragment"><div class="line">  g_err |=                                                                     \</div>
+<div class="line">    oc_rep_object_set_boolean(&amp;<span class="keywordtype">object</span>##_map, #key, <span class="keyword">sizeof</span>(#key) - 1, value)</div>
 </div><!-- fragment -->
 <p>Add an boolean <code>value</code> to the cbor <code>object</code> under the <code>key</code> name Example: </p>
 <p>To build the an object with the following cbor value </p><pre class="fragment">{
@@ -1436,7 +1446,7 @@ CborEncoder&#160;</td><td class="memItemRight" valign="bottom"><b>root_map</b></
 </pre><p> The following code could be used: </p><div class="fragment"><div class="line"><a class="code" href="oc__rep_8h.html#ac0fa5f5a963bc4a00bd9dd1e050064d7">oc_rep_begin_root_object</a>();</div>
 <div class="line"><a class="code" href="oc__rep_8h.html#a9fea833e16965d2200342ae3c8deef35">oc_rep_set_boolean</a>(root, door_open, <span class="keyword">false</span>);</div>
 <div class="line"><a class="code" href="oc__rep_8h.html#ab3a74cd8010eb2b4798b6f38cea3c487">oc_rep_end_root_object</a>();</div>
-<div class="ttc" id="aoc__rep_8h_html_ac0fa5f5a963bc4a00bd9dd1e050064d7"><div class="ttname"><a href="oc__rep_8h.html#ac0fa5f5a963bc4a00bd9dd1e050064d7">oc_rep_begin_root_object</a></div><div class="ttdeci">#define oc_rep_begin_root_object()</div><div class="ttdoc">Begin the root object.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:570</div></div>
+<div class="ttc" id="aoc__rep_8h_html_ac0fa5f5a963bc4a00bd9dd1e050064d7"><div class="ttname"><a href="oc__rep_8h.html#ac0fa5f5a963bc4a00bd9dd1e050064d7">oc_rep_begin_root_object</a></div><div class="ttdeci">#define oc_rep_begin_root_object()</div><div class="ttdoc">Begin the root object.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:589</div></div>
 </div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__rep_8h.html#ac2a6595bec656be3eda87e27f9ca0f0b" title="Read a boolean value from an oc_rep_t">oc_rep_get_bool</a> </dd></dl>
 
 </div>
@@ -1478,11 +1488,9 @@ CborEncoder&#160;</td><td class="memItemRight" valign="bottom"><b>root_map</b></
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                         \</div>
-<div class="line">    g_err |= <a class="code" href="oc__rep_8h.html#ae973d1717cb83afd0cda4b0c8808c385">oc_rep_encode_text_string</a>(&amp;<span class="keywordtype">object</span>##_map, #key, <span class="keyword">sizeof</span>(#key) - 1); \</div>
-<div class="line">    g_err |= <a class="code" href="oc__rep_8h.html#a2e8032cc84793149297e9edeb6eb3ccc">oc_rep_encode_byte_string</a>(&amp;<span class="keywordtype">object</span>##_map, value, length);          \</div>
-<div class="line">  } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="aoc__rep_8h_html_a2e8032cc84793149297e9edeb6eb3ccc"><div class="ttname"><a href="oc__rep_8h.html#a2e8032cc84793149297e9edeb6eb3ccc">oc_rep_encode_byte_string</a></div><div class="ttdeci">CborError oc_rep_encode_byte_string(CborEncoder *encoder, const uint8_t *string, size_t length)</div><div class="ttdoc">Encode a byte string.</div></div>
+<b>Value:</b><div class="fragment"><div class="line">  g_err |= <a class="code" href="oc__rep_8h.html#ae32c63cbd51be08b40468e42d122ef11">oc_rep_object_set_byte_string</a>(&amp;<span class="keywordtype">object</span>##_map, #key,                  \</div>
+<div class="line">                                         <span class="keyword">sizeof</span>(#key) - 1, value, length)</div>
+<div class="ttc" id="aoc__rep_8h_html_ae32c63cbd51be08b40468e42d122ef11"><div class="ttname"><a href="oc__rep_8h.html#ae32c63cbd51be08b40468e42d122ef11">oc_rep_object_set_byte_string</a></div><div class="ttdeci">CborError oc_rep_object_set_byte_string(CborEncoder *object, const char *key, size_t key_len, const uint8_t *value, size_t length)</div><div class="ttdoc">Add an byte array value to the cbor object under the key name.</div></div>
 </div><!-- fragment -->
 <p>Add an byte array <code>value</code> to the cbor <code>object</code> under the <code>key</code> name Example: </p>
 <p>To build the an object with the following cbor value Note using base64 encoding in the following example string. </p><pre class="fragment">{
@@ -1494,7 +1502,7 @@ CborEncoder&#160;</td><td class="memItemRight" valign="bottom"><b>root_map</b></
 <div class="line">    <a class="code" href="oc__rep_8h.html#ab5acaac808afeaa41f1f9de954a89237">oc_rep_set_byte_string</a>(root, byte_string_key, byte_string,</div>
 <div class="line"><span class="keyword">sizeof</span>(byte_string));</div>
 <div class="line">    <a class="code" href="oc__rep_8h.html#ab3a74cd8010eb2b4798b6f38cea3c487">oc_rep_end_root_object</a>();</div>
-<div class="ttc" id="aoc__rep_8h_html_ab5acaac808afeaa41f1f9de954a89237"><div class="ttname"><a href="oc__rep_8h.html#ab5acaac808afeaa41f1f9de954a89237">oc_rep_set_byte_string</a></div><div class="ttdeci">#define oc_rep_set_byte_string(object, key, value, length)</div><div class="ttdoc">Add an byte array value to the cbor object under the key name Example:</div><div class="ttdef"><b>Definition:</b> oc_rep.h:442</div></div>
+<div class="ttc" id="aoc__rep_8h_html_ab5acaac808afeaa41f1f9de954a89237"><div class="ttname"><a href="oc__rep_8h.html#ab5acaac808afeaa41f1f9de954a89237">oc_rep_set_byte_string</a></div><div class="ttdeci">#define oc_rep_set_byte_string(object, key, value, length)</div><div class="ttdoc">Add an byte array value to the cbor object under the key name Example:</div><div class="ttdef"><b>Definition:</b> oc_rep.h:466</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -1529,11 +1537,8 @@ CborEncoder&#160;</td><td class="memItemRight" valign="bottom"><b>root_map</b></
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                         \</div>
-<div class="line">    g_err |= <a class="code" href="oc__rep_8h.html#ae973d1717cb83afd0cda4b0c8808c385">oc_rep_encode_text_string</a>(&amp;<span class="keywordtype">object</span>##_map, #key, <span class="keyword">sizeof</span>(#key) - 1); \</div>
-<div class="line">    g_err |= <a class="code" href="oc__rep_8h.html#a94e241a7186af176e7845d41efe641a9">oc_rep_encode_double</a>(&amp;<span class="keywordtype">object</span>##_map, value);                       \</div>
-<div class="line">  } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="aoc__rep_8h_html_a94e241a7186af176e7845d41efe641a9"><div class="ttname"><a href="oc__rep_8h.html#a94e241a7186af176e7845d41efe641a9">oc_rep_encode_double</a></div><div class="ttdeci">CborError oc_rep_encode_double(CborEncoder *encoder, double value)</div><div class="ttdoc">Encode a double value.</div></div>
+<b>Value:</b><div class="fragment"><div class="line">  g_err |=                                                                     \</div>
+<div class="line">    oc_rep_object_set_double(&amp;<span class="keywordtype">object</span>##_map, #key, <span class="keyword">sizeof</span>(#key) - 1, value)</div>
 </div><!-- fragment -->
 <p>Add a double <code>value</code> to the cbor <code>object</code> under the <code>key</code> name Example: </p>
 <p>To build the an object with the following cbor value </p><pre class="fragment">{
@@ -1542,7 +1547,7 @@ CborEncoder&#160;</td><td class="memItemRight" valign="bottom"><b>root_map</b></
 </pre><p> The following code could be used: </p><div class="fragment"><div class="line"><a class="code" href="oc__rep_8h.html#ac0fa5f5a963bc4a00bd9dd1e050064d7">oc_rep_begin_root_object</a>();</div>
 <div class="line"><a class="code" href="oc__rep_8h.html#a21a270cebabe71848de5ccff3a63473e">oc_rep_set_double</a>(root, pi, 3.14159);</div>
 <div class="line"><a class="code" href="oc__rep_8h.html#ab3a74cd8010eb2b4798b6f38cea3c487">oc_rep_end_root_object</a>();</div>
-<div class="ttc" id="aoc__rep_8h_html_a21a270cebabe71848de5ccff3a63473e"><div class="ttname"><a href="oc__rep_8h.html#a21a270cebabe71848de5ccff3a63473e">oc_rep_set_double</a></div><div class="ttdeci">#define oc_rep_set_double(object, key, value)</div><div class="ttdoc">Add a double value to the cbor object under the key name Example:</div><div class="ttdef"><b>Definition:</b> oc_rep.h:308</div></div>
+<div class="ttc" id="aoc__rep_8h_html_a21a270cebabe71848de5ccff3a63473e"><div class="ttname"><a href="oc__rep_8h.html#a21a270cebabe71848de5ccff3a63473e">oc_rep_set_double</a></div><div class="ttdeci">#define oc_rep_set_double(object, key, value)</div><div class="ttdoc">Add a double value to the cbor object under the key name Example:</div><div class="ttdef"><b>Definition:</b> oc_rep.h:345</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -1595,6 +1600,7 @@ CborEncoder&#160;</td><td class="memItemRight" valign="bottom"><b>root_map</b></
 <div class="line">    g_err |=                                                                   \</div>
 <div class="line">      oc_rep_encoder_close_container(&amp;<span class="keywordtype">object</span>##_map, &amp;key##_value_array);       \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
+<div class="ttc" id="aoc__rep_8h_html_a94e241a7186af176e7845d41efe641a9"><div class="ttname"><a href="oc__rep_8h.html#a94e241a7186af176e7845d41efe641a9">oc_rep_encode_double</a></div><div class="ttdeci">CborError oc_rep_encode_double(CborEncoder *encoder, double value)</div><div class="ttdoc">Encode a double value.</div></div>
 </div><!-- fragment -->
 <p>Add a double array with <code>values</code> of <code>length</code> to the cbor <code>object</code> under the <code>key</code> name. </p>
 <p>Example:</p>
@@ -1610,7 +1616,7 @@ CborEncoder&#160;</td><td class="memItemRight" valign="bottom"><b>root_map</b></
 <div class="line">                            (<span class="keywordtype">int</span>)(<span class="keyword">sizeof</span>(math_constants)/</div>
 <div class="line"><span class="keyword">sizeof</span>(math_constants[0]) ) );</div>
 <div class="line">    <a class="code" href="oc__rep_8h.html#ab3a74cd8010eb2b4798b6f38cea3c487">oc_rep_end_root_object</a>();</div>
-<div class="ttc" id="aoc__rep_8h_html_a1c427ed64acbea872676ee9e4195476d"><div class="ttname"><a href="oc__rep_8h.html#a1c427ed64acbea872676ee9e4195476d">oc_rep_set_double_array</a></div><div class="ttdeci">#define oc_rep_set_double_array(object, key, values, length)</div><div class="ttdoc">Add a double array with values of length to the cbor object under the key name.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:1079</div></div>
+<div class="ttc" id="aoc__rep_8h_html_a1c427ed64acbea872676ee9e4195476d"><div class="ttname"><a href="oc__rep_8h.html#a1c427ed64acbea872676ee9e4195476d">oc_rep_set_double_array</a></div><div class="ttdeci">#define oc_rep_set_double_array(object, key, values, length)</div><div class="ttdoc">Add a double array with values of length to the cbor object under the key name.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:1098</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -1641,16 +1647,11 @@ CborEncoder&#160;</td><td class="memItemRight" valign="bottom"><b>root_map</b></
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td>&#160;&#160;&#160;  g_err |= <a class="el" href="oc__rep_8h.html#a2c3066dfaf7b6c127f6e945377fd1568">oc_rep_object_set_int</a>(&amp;object##_map, #key, sizeof(#key) - 1, value)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                         \</div>
-<div class="line">    g_err |= <a class="code" href="oc__rep_8h.html#ae973d1717cb83afd0cda4b0c8808c385">oc_rep_encode_text_string</a>(&amp;<span class="keywordtype">object</span>##_map, #key, <span class="keyword">sizeof</span>(#key) - 1); \</div>
-<div class="line">    g_err |= <a class="code" href="oc__rep_8h.html#a9d6adc541bc0aafe27bc9b93eec4e05f">oc_rep_encode_int</a>(&amp;<span class="keywordtype">object</span>##_map, value);                          \</div>
-<div class="line">  } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="aoc__rep_8h_html_a9d6adc541bc0aafe27bc9b93eec4e05f"><div class="ttname"><a href="oc__rep_8h.html#a9d6adc541bc0aafe27bc9b93eec4e05f">oc_rep_encode_int</a></div><div class="ttdeci">CborError oc_rep_encode_int(CborEncoder *encoder, int64_t value)</div><div class="ttdoc">Encode a signed integer value.</div></div>
-</div><!-- fragment -->
+
 <p>Add an integer <code>value</code> to the cbor <code>object</code> under the <code>key</code> name Example: </p>
 <p>To build the an object with the following cbor value </p><pre class="fragment">{
   "power": 42
@@ -1712,6 +1713,7 @@ CborEncoder&#160;</td><td class="memItemRight" valign="bottom"><b>root_map</b></
 <div class="line">    g_err |=                                                                   \</div>
 <div class="line">      oc_rep_encoder_close_container(&amp;<span class="keywordtype">object</span>##_map, &amp;key##_value_array);       \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
+<div class="ttc" id="aoc__rep_8h_html_a9d6adc541bc0aafe27bc9b93eec4e05f"><div class="ttname"><a href="oc__rep_8h.html#a9d6adc541bc0aafe27bc9b93eec4e05f">oc_rep_encode_int</a></div><div class="ttdeci">CborError oc_rep_encode_int(CborEncoder *encoder, int64_t value)</div><div class="ttdoc">Encode a signed integer value.</div></div>
 </div><!-- fragment -->
 <p>Add an integer array with <code>values</code> of <code>length</code> to the cbor <code>object</code> under the <code>key</code> name. </p>
 <p>Example:</p>
@@ -1726,7 +1728,7 @@ CborEncoder&#160;</td><td class="memItemRight" valign="bottom"><b>root_map</b></
 <div class="line">                     fib,</div>
 <div class="line">                     (<span class="keywordtype">int</span>)(<span class="keyword">sizeof</span>(fib)/ <span class="keyword">sizeof</span>(fib[0]) ) );</div>
 <div class="line"><a class="code" href="oc__rep_8h.html#ab3a74cd8010eb2b4798b6f38cea3c487">oc_rep_end_root_object</a>();</div>
-<div class="ttc" id="aoc__rep_8h_html_afd1584db7387c14e2322945c5d5391cb"><div class="ttname"><a href="oc__rep_8h.html#afd1584db7387c14e2322945c5d5391cb">oc_rep_set_int_array</a></div><div class="ttdeci">#define oc_rep_set_int_array(object, key, values, length)</div><div class="ttdoc">Add an integer array with values of length to the cbor object under the key name.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:1001</div></div>
+<div class="ttc" id="aoc__rep_8h_html_afd1584db7387c14e2322945c5d5391cb"><div class="ttname"><a href="oc__rep_8h.html#afd1584db7387c14e2322945c5d5391cb">oc_rep_set_int_array</a></div><div class="ttdeci">#define oc_rep_set_int_array(object, key, values, length)</div><div class="ttdoc">Add an integer array with values of length to the cbor object under the key name.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:1020</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -1826,16 +1828,11 @@ CborEncoder&#160;</td><td class="memItemRight" valign="bottom"><b>root_map</b></
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td>&#160;&#160;&#160;  g_err |= <a class="el" href="oc__rep_8h.html#a5552ab84ff00c6e3bb06fc1a75f230a4">oc_rep_object_set_null</a>(&amp;object##_map, #key, sizeof(#key) - 1)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                         \</div>
-<div class="line">    g_err |= <a class="code" href="oc__rep_8h.html#ae973d1717cb83afd0cda4b0c8808c385">oc_rep_encode_text_string</a>(&amp;<span class="keywordtype">object</span>##_map, #key, <span class="keyword">sizeof</span>(#key) - 1); \</div>
-<div class="line">    g_err |= <a class="code" href="oc__rep_8h.html#a2ba3982977b6c6a572e7fa43bc1e6acf">oc_rep_encode_null</a>(&amp;<span class="keywordtype">object</span>##_map);                                \</div>
-<div class="line">  } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="aoc__rep_8h_html_a2ba3982977b6c6a572e7fa43bc1e6acf"><div class="ttname"><a href="oc__rep_8h.html#a2ba3982977b6c6a572e7fa43bc1e6acf">oc_rep_encode_null</a></div><div class="ttdeci">CborError oc_rep_encode_null(CborEncoder *encoder)</div><div class="ttdoc">Encode a NULL value.</div></div>
-</div><!-- fragment -->
+
 <p>Add an null <code>value</code> to the cbor <code>object</code> under the <code>key</code> name Example: </p>
 <p>To build the an object with the following cbor value </p><pre class="fragment">{
   "nothing": null
@@ -1843,7 +1840,7 @@ CborEncoder&#160;</td><td class="memItemRight" valign="bottom"><b>root_map</b></
 </pre><p> The following code could be used: </p><div class="fragment"><div class="line"><a class="code" href="oc__rep_8h.html#ac0fa5f5a963bc4a00bd9dd1e050064d7">oc_rep_begin_root_object</a>();</div>
 <div class="line"><a class="code" href="oc__rep_8h.html#a74f95fe42177e3c12b1f250595b76b39">oc_rep_set_null</a>(root, nothing);</div>
 <div class="line"><a class="code" href="oc__rep_8h.html#ab3a74cd8010eb2b4798b6f38cea3c487">oc_rep_end_root_object</a>();</div>
-<div class="ttc" id="aoc__rep_8h_html_a74f95fe42177e3c12b1f250595b76b39"><div class="ttname"><a href="oc__rep_8h.html#a74f95fe42177e3c12b1f250595b76b39">oc_rep_set_null</a></div><div class="ttdeci">#define oc_rep_set_null(object, key)</div><div class="ttdoc">Add an null value to the cbor object under the key name Example:</div><div class="ttdef"><b>Definition:</b> oc_rep.h:467</div></div>
+<div class="ttc" id="aoc__rep_8h_html_a74f95fe42177e3c12b1f250595b76b39"><div class="ttname"><a href="oc__rep_8h.html#a74f95fe42177e3c12b1f250595b76b39">oc_rep_set_null</a></div><div class="ttdeci">#define oc_rep_set_null(object, key)</div><div class="ttdoc">Add an null value to the cbor object under the key name Example:</div><div class="ttdef"><b>Definition:</b> oc_rep.h:489</div></div>
 </div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__rep_8h.html#a3e105ec4297b3b163f776749587a0b71" title="Check for a null value from an oc_rep_t">oc_rep_is_null</a> </dd></dl>
 
 </div>
@@ -1912,23 +1909,9 @@ CborEncoder&#160;</td><td class="memItemRight" valign="bottom"><b>root_map</b></
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                         \</div>
-<div class="line">    g_err |= <a class="code" href="oc__rep_8h.html#ae973d1717cb83afd0cda4b0c8808c385">oc_rep_encode_text_string</a>(&amp;<span class="keywordtype">object</span>##_map, #key, <span class="keyword">sizeof</span>(#key) - 1); \</div>
-<div class="line">    CborEncoder key##_value_array;                                             \</div>
-<div class="line">    memset(&amp;key##_value_array, 0, <span class="keyword">sizeof</span>(key##_value_array));                  \</div>
-<div class="line">    g_err |= <a class="code" href="oc__rep_8h.html#a28f725aa3b133f97e23a66e368a17194">oc_rep_encoder_create_array</a>(&amp;<span class="keywordtype">object</span>##_map, &amp;key##_value_array,    \</div>
-<div class="line">                                         CborIndefiniteLength);                \</div>
-<div class="line">    int i;                                                                     \</div>
-<div class="line">    for (i = 0; i &lt; (int)oc_string_array_get_allocated_size(values); i++) {    \</div>
-<div class="line">      if (oc_string_array_get_item_size(values, i) &gt; 0) {                      \</div>
-<div class="line">        g_err |= <a class="code" href="oc__rep_8h.html#ae973d1717cb83afd0cda4b0c8808c385">oc_rep_encode_text_string</a>(                                    \</div>
-<div class="line">          &amp;key##_value_array, oc_string_array_get_item(values, i),             \</div>
-<div class="line">          oc_string_array_get_item_size(values, i));                           \</div>
-<div class="line">      }                                                                        \</div>
-<div class="line">    }                                                                          \</div>
-<div class="line">    g_err |=                                                                   \</div>
-<div class="line">      oc_rep_encoder_close_container(&amp;<span class="keywordtype">object</span>##_map, &amp;key##_value_array);       \</div>
-<div class="line">  } <span class="keywordflow">while</span> (0)</div>
+<b>Value:</b><div class="fragment"><div class="line">  g_err |= <a class="code" href="oc__rep_8h.html#a88a9040a9268a2e2a1b2dee7433bb3ee">oc_rep_object_set_string_array</a>(&amp;<span class="keywordtype">object</span>##_map, #key,                 \</div>
+<div class="line">                                          <span class="keyword">sizeof</span>(#key) - 1, &amp;(values))</div>
+<div class="ttc" id="aoc__rep_8h_html_a88a9040a9268a2e2a1b2dee7433bb3ee"><div class="ttname"><a href="oc__rep_8h.html#a88a9040a9268a2e2a1b2dee7433bb3ee">oc_rep_object_set_string_array</a></div><div class="ttdeci">CborError oc_rep_object_set_string_array(CborEncoder *object, const char *key, size_t key_len, const oc_string_array_t *array)</div><div class="ttdoc">Add a string array using an oc_string_array_t as values to the cbor object under the key name.</div></div>
 </div><!-- fragment -->
 <p>Add a string array using an oc_string_array_t as <code>values</code> to the cbor <code>object</code> under the <code>key</code> name. </p>
 <p>Example:</p>
@@ -1962,7 +1945,7 @@ CborEncoder&#160;</td><td class="memItemRight" valign="bottom"><b>root_map</b></
 <div class="line">    <a class="code" href="oc__helpers_8h.html#a162fe587ca8222204ab2d140c54b87f2">oc_free_string_array</a>(&amp;quotes);</div>
 <div class="ttc" id="aoc__helpers_8h_html_a162fe587ca8222204ab2d140c54b87f2"><div class="ttname"><a href="oc__helpers_8h.html#a162fe587ca8222204ab2d140c54b87f2">oc_free_string_array</a></div><div class="ttdeci">#define oc_free_string_array(ocstringarray)</div><div class="ttdoc">free oc string array</div><div class="ttdef"><b>Definition:</b> oc_helpers.h:152</div></div>
 <div class="ttc" id="aoc__helpers_8h_html_a41251afd98b8794639301a9ef99e67be"><div class="ttname"><a href="oc__helpers_8h.html#a41251afd98b8794639301a9ef99e67be">oc_new_string_array</a></div><div class="ttdeci">#define oc_new_string_array(ocstringarray, size)</div><div class="ttdoc">new oc string array</div><div class="ttdef"><b>Definition:</b> oc_helpers.h:145</div></div>
-<div class="ttc" id="aoc__rep_8h_html_ad89e47d54be293ed09821ad9515b3c0e"><div class="ttname"><a href="oc__rep_8h.html#ad89e47d54be293ed09821ad9515b3c0e">oc_rep_set_string_array</a></div><div class="ttdeci">#define oc_rep_set_string_array(object, key, values)</div><div class="ttdoc">Add a string array using an oc_string_array_t as values to the cbor object under the key name.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:1140</div></div>
+<div class="ttc" id="aoc__rep_8h_html_ad89e47d54be293ed09821ad9515b3c0e"><div class="ttname"><a href="oc__rep_8h.html#ad89e47d54be293ed09821ad9515b3c0e">oc_rep_set_string_array</a></div><div class="ttdeci">#define oc_rep_set_string_array(object, key, values)</div><div class="ttdoc">Add a string array using an oc_string_array_t as values to the cbor object under the key name.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:1158</div></div>
 <div class="ttc" id="astructoc__mmem_html"><div class="ttname"><a href="structoc__mmem.html">oc_mmem</a></div><div class="ttdoc">An allocation block.</div><div class="ttdef"><b>Definition:</b> oc_mmem.h:59</div></div>
 </div><!-- fragment --><dl class="section see"><dt>See also</dt><dd>oc_string_array_t </dd>
 <dd>
@@ -2007,7 +1990,7 @@ oc_string_array_add_item </dd></dl>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  <a class="code" href="oc__rep_8h.html#af9b0d33d98247ece5c153021ad582dc4">oc_rep_set_text_string_v1</a>(<span class="keywordtype">object</span>, key, value,                                \</div>
 <div class="line">                            (value) != NULL ? strlen(value) : 0)</div>
-<div class="ttc" id="aoc__rep_8h_html_af9b0d33d98247ece5c153021ad582dc4"><div class="ttname"><a href="oc__rep_8h.html#af9b0d33d98247ece5c153021ad582dc4">oc_rep_set_text_string_v1</a></div><div class="ttdeci">#define oc_rep_set_text_string_v1(object, key, value, value_len)</div><div class="ttdoc">Alternative to oc_rep_set_text_string in case we know the length of the value.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:393</div></div>
+<div class="ttc" id="aoc__rep_8h_html_af9b0d33d98247ece5c153021ad582dc4"><div class="ttname"><a href="oc__rep_8h.html#af9b0d33d98247ece5c153021ad582dc4">oc_rep_set_text_string_v1</a></div><div class="ttdeci">#define oc_rep_set_text_string_v1(object, key, value, value_len)</div><div class="ttdoc">Alternative to oc_rep_set_text_string in case we know the length of the value.</div><div class="ttdef"><b>Definition:</b> oc_rep.h:420</div></div>
 </div><!-- fragment -->
 <p>Add an string <code>value</code> to the cbor <code>object</code> under the <code>key</code> name Example: </p>
 <p>To build the an object with the following cbor value </p><pre class="fragment">{
@@ -2056,11 +2039,9 @@ oc_string_array_add_item </dd></dl>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                         \</div>
-<div class="line">    g_err |= <a class="code" href="oc__rep_8h.html#ae973d1717cb83afd0cda4b0c8808c385">oc_rep_encode_text_string</a>(&amp;<span class="keywordtype">object</span>##_map, #key, <span class="keyword">sizeof</span>(#key) - 1); \</div>
-<div class="line">    g_err |= <a class="code" href="oc__rep_8h.html#ae973d1717cb83afd0cda4b0c8808c385">oc_rep_encode_text_string</a>(                                        \</div>
-<div class="line">      &amp;<span class="keywordtype">object</span>##_map, (value) == NULL ? <span class="stringliteral">&quot;&quot;</span> : (value), (value_len));             \</div>
-<div class="line">  } <span class="keywordflow">while</span> (0)</div>
+<b>Value:</b><div class="fragment"><div class="line">  g_err |= <a class="code" href="oc__rep_8h.html#a0e57ddc44c32d50d8161c3e553b9b85f">oc_rep_object_set_text_string</a>(&amp;<span class="keywordtype">object</span>##_map, #key,                  \</div>
+<div class="line">                                         <span class="keyword">sizeof</span>(#key) - 1, value, value_len)</div>
+<div class="ttc" id="aoc__rep_8h_html_a0e57ddc44c32d50d8161c3e553b9b85f"><div class="ttname"><a href="oc__rep_8h.html#a0e57ddc44c32d50d8161c3e553b9b85f">oc_rep_object_set_text_string</a></div><div class="ttdeci">CborError oc_rep_object_set_text_string(CborEncoder *object, const char *key, size_t key_len, const char *value, size_t length)</div><div class="ttdoc">Add an string value to the cbor object under the key name.</div></div>
 </div><!-- fragment -->
 <p>Alternative to oc_rep_set_text_string in case we know the length of the value. </p>
 
@@ -2093,16 +2074,11 @@ oc_string_array_add_item </dd></dl>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td>&#160;&#160;&#160;  g_err |= <a class="el" href="oc__rep_8h.html#a87a9ea0097253688f6444f345850c836">oc_rep_object_set_uint</a>(&amp;object##_map, #key, sizeof(#key) - 1, value)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                         \</div>
-<div class="line">    g_err |= <a class="code" href="oc__rep_8h.html#ae973d1717cb83afd0cda4b0c8808c385">oc_rep_encode_text_string</a>(&amp;<span class="keywordtype">object</span>##_map, #key, <span class="keyword">sizeof</span>(#key) - 1); \</div>
-<div class="line">    g_err |= <a class="code" href="oc__rep_8h.html#aef24d30eabb6650a92178ebbab94afa0">oc_rep_encode_uint</a>(&amp;<span class="keywordtype">object</span>##_map, value);                         \</div>
-<div class="line">  } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="aoc__rep_8h_html_aef24d30eabb6650a92178ebbab94afa0"><div class="ttname"><a href="oc__rep_8h.html#aef24d30eabb6650a92178ebbab94afa0">oc_rep_encode_uint</a></div><div class="ttdeci">CborError oc_rep_encode_uint(CborEncoder *encoder, uint64_t value)</div><div class="ttdoc">Encode an unsigned integer value.</div></div>
-</div><!-- fragment -->
+
 <p>Add an unsigned integer <code>value</code> to the cbor <code>object</code> under the <code>key</code> name Example: </p>
 <p>To build the an object with the following cbor value </p><pre class="fragment">{
   "power": 42
@@ -2110,7 +2086,7 @@ oc_string_array_add_item </dd></dl>
 </pre><p> The following code could be used: </p><div class="fragment"><div class="line"><a class="code" href="oc__rep_8h.html#ac0fa5f5a963bc4a00bd9dd1e050064d7">oc_rep_begin_root_object</a>();</div>
 <div class="line"><a class="code" href="oc__rep_8h.html#a722eb5b9eb21c85cdcececb6c32de918">oc_rep_set_uint</a>(root, power, 42);</div>
 <div class="line"><a class="code" href="oc__rep_8h.html#ab3a74cd8010eb2b4798b6f38cea3c487">oc_rep_end_root_object</a>();</div>
-<div class="ttc" id="aoc__rep_8h_html_a722eb5b9eb21c85cdcececb6c32de918"><div class="ttname"><a href="oc__rep_8h.html#a722eb5b9eb21c85cdcececb6c32de918">oc_rep_set_uint</a></div><div class="ttdeci">#define oc_rep_set_uint(object, key, value)</div><div class="ttdoc">Add an unsigned integer value to the cbor object under the key name Example:</div><div class="ttdef"><b>Definition:</b> oc_rep.h:360</div></div>
+<div class="ttc" id="aoc__rep_8h_html_a722eb5b9eb21c85cdcececb6c32de918"><div class="ttname"><a href="oc__rep_8h.html#a722eb5b9eb21c85cdcececb6c32de918">oc_rep_set_uint</a></div><div class="ttdeci">#define oc_rep_set_uint(object, key, value)</div><div class="ttdoc">Add an unsigned integer value to the cbor object under the key name Example:</div><div class="ttdef"><b>Definition:</b> oc_rep.h:392</div></div>
 </div><!-- fragment --><p> Note: when the cbor object is converted to a oc_rep_the data type will be encoded as an OC_REP_INT. There is no way for a client to know that the server sent the INT as an unsigned value. </p>
 
 </div>
@@ -2929,7 +2905,7 @@ oc_rep_end_object </dd></dl>
 <p>Read a byte string value from an <code>oc_rep_t</code> </p>
 <p>Example: </p><div class="fragment"><div class="line">    <span class="keywordtype">char</span>* byte_string_out = NULL;</div>
 <div class="line">    <span class="keywordtype">size_t</span> str_len;</div>
-<div class="line">    <span class="keywordflow">if</span>( <span class="keyword">true</span> == <a class="code" href="oc__rep_8h.html#a1ed7a90192ace86fd6ecae3f367c81a7">oc_rep_get_byte_string</a>(rep, <span class="stringliteral">&quot;byte_string_key&quot;</span>,</div>
+<div class="line">    <span class="keywordflow">if</span> (<a class="code" href="oc__rep_8h.html#a1ed7a90192ace86fd6ecae3f367c81a7">oc_rep_get_byte_string</a>(rep, <span class="stringliteral">&quot;byte_string_key&quot;</span>,</div>
 <div class="line">&amp;byte_string_out, &amp;str_len)) {</div>
 <div class="line">        <span class="comment">// byte_string_out can be used</span></div>
 <div class="line">    }</div>
@@ -2948,8 +2924,8 @@ oc_rep_end_object </dd></dl>
 
 </div>
 </div>
-<a id="aeb8e9e2044b64aeaf1df52b76d9f1d9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb8e9e2044b64aeaf1df52b76d9f1d9c">&#9670;&nbsp;</a></span>oc_rep_get_byte_string_array()</h2>
+<a id="a68d6334756d4a3eeae00a3a4774d6df5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68d6334756d4a3eeae00a3a4774d6df5">&#9670;&nbsp;</a></span>oc_rep_get_byte_string_array()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2969,7 +2945,7 @@ oc_rep_end_object </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structoc__mmem.html">oc_string_array_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structoc__mmem.html">oc_byte_string_array_t</a> *&#160;</td>
           <td class="paramname"><em>value</em>, </td>
         </tr>
         <tr>
@@ -2987,20 +2963,20 @@ oc_rep_end_object </dd></dl>
 </div><div class="memdoc">
 
 <p>Read an byte string array value from an <code>oc_rep_t</code> </p>
-<p>Example: </p><div class="fragment"><div class="line">    <a class="code" href="structoc__mmem.html">oc_string_array_t</a> barray_out;</div>
-<div class="line">    <span class="keywordtype">size_t</span> barray_len;</div>
-<div class="line">    <span class="keywordflow">if</span>( <span class="keyword">true</span> == <a class="code" href="oc__rep_8h.html#aeb8e9e2044b64aeaf1df52b76d9f1d9c">oc_rep_get_byte_string_array</a>(rep,</div>
-<div class="line">                                             <span class="stringliteral">&quot;barray&quot;</span>,</div>
-<div class="line">                                             &amp;barray_out,</div>
-<div class="line">                                             &amp;barray_len)) {</div>
-<div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; barray_len); i++) {</div>
-<div class="line">            <span class="keywordtype">char</span>* value = oc_byte_string_array_get_item(barray_out, i);</div>
-<div class="line">            <span class="keywordtype">size_t</span> value_len =oc_byte_string_array_get_item_size(barray_out,</div>
-<div class="line">i);</div>
-<div class="line">            <span class="comment">// access the individual byte string</span></div>
-<div class="line">        }</div>
-<div class="line">    }</div>
-<div class="ttc" id="aoc__rep_8h_html_aeb8e9e2044b64aeaf1df52b76d9f1d9c"><div class="ttname"><a href="oc__rep_8h.html#aeb8e9e2044b64aeaf1df52b76d9f1d9c">oc_rep_get_byte_string_array</a></div><div class="ttdeci">bool oc_rep_get_byte_string_array(const oc_rep_t *rep, const char *key, oc_string_array_t *value, size_t *size)</div><div class="ttdoc">Read an byte string array value from an oc_rep_t</div></div>
+<p>Example: </p><div class="fragment"><div class="line"><a class="code" href="structoc__mmem.html">oc_string_array_t</a> barray_out;</div>
+<div class="line"><span class="keywordtype">size_t</span> barray_len;</div>
+<div class="line"> <span class="keywordflow">if</span> (<a class="code" href="oc__rep_8h.html#a68d6334756d4a3eeae00a3a4774d6df5">oc_rep_get_byte_string_array</a>(rep, <span class="stringliteral">&quot;barray&quot;</span>, &amp;barray_out,</div>
+<div class="line">                                 &amp;barray_len)) {</div>
+<div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; barray_len)</div>
+<div class="line">    ; i++)</div>
+<div class="line">  {</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">char</span> *value = oc_byte_string_array_get_item(barray_out, i);</div>
+<div class="line">    <span class="keywordtype">size_t</span> value_len =</div>
+<div class="line">      oc_byte_string_array_get_item_size(barray_out, i);</div>
+<div class="line">    <span class="comment">// access the individual byte string</span></div>
+<div class="line">  }</div>
+<div class="line">}</div>
+<div class="ttc" id="aoc__rep_8h_html_a68d6334756d4a3eeae00a3a4774d6df5"><div class="ttname"><a href="oc__rep_8h.html#a68d6334756d4a3eeae00a3a4774d6df5">oc_rep_get_byte_string_array</a></div><div class="ttdeci">bool oc_rep_get_byte_string_array(const oc_rep_t *rep, const char *key, oc_byte_string_array_t *value, size_t *size)</div><div class="ttdoc">Read an byte string array value from an oc_rep_t</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rep</td><td>oc_rep_t to byte string array value from </td></tr>
@@ -3822,6 +3798,348 @@ oc_string_array_get_item_size </dd></dl>
 
 </div>
 </div>
+<a id="ac1b76d46f7a5c747447dda1d62d3bdb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1b76d46f7a5c747447dda1d62d3bdb6">&#9670;&nbsp;</a></span>oc_rep_object_set_boolean()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CborError oc_rep_object_set_boolean </td>
+          <td>(</td>
+          <td class="paramtype">CborEncoder *&#160;</td>
+          <td class="paramname"><em>object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>key_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add an boolean <code>value</code> to the cbor <code>object</code> under the <code>key</code> name. </p>
+
+</div>
+</div>
+<a id="ae32c63cbd51be08b40468e42d122ef11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae32c63cbd51be08b40468e42d122ef11">&#9670;&nbsp;</a></span>oc_rep_object_set_byte_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CborError oc_rep_object_set_byte_string </td>
+          <td>(</td>
+          <td class="paramtype">CborEncoder *&#160;</td>
+          <td class="paramname"><em>object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>key_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add an byte array <code>value</code> to the cbor <code>object</code> under the <code>key</code> name. </p>
+
+</div>
+</div>
+<a id="a42ebfce0ebf1069d77fdeccd6aa3e047"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42ebfce0ebf1069d77fdeccd6aa3e047">&#9670;&nbsp;</a></span>oc_rep_object_set_double()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CborError oc_rep_object_set_double </td>
+          <td>(</td>
+          <td class="paramtype">CborEncoder *&#160;</td>
+          <td class="paramname"><em>object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>key_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a double <code>value</code> to the cbor <code>object</code> under the <code>key</code> name. </p>
+
+</div>
+</div>
+<a id="a2c3066dfaf7b6c127f6e945377fd1568"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c3066dfaf7b6c127f6e945377fd1568">&#9670;&nbsp;</a></span>oc_rep_object_set_int()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CborError oc_rep_object_set_int </td>
+          <td>(</td>
+          <td class="paramtype">CborEncoder *&#160;</td>
+          <td class="paramname"><em>object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>key_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add an integer <code>value</code> to the cbor <code>object</code> under the <code>key</code> name. </p>
+
+</div>
+</div>
+<a id="a5552ab84ff00c6e3bb06fc1a75f230a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5552ab84ff00c6e3bb06fc1a75f230a4">&#9670;&nbsp;</a></span>oc_rep_object_set_null()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CborError oc_rep_object_set_null </td>
+          <td>(</td>
+          <td class="paramtype">CborEncoder *&#160;</td>
+          <td class="paramname"><em>object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>key_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add an integer <code>value</code> to the cbor <code>object</code> under the <code>key</code> name. </p>
+
+</div>
+</div>
+<a id="a88a9040a9268a2e2a1b2dee7433bb3ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88a9040a9268a2e2a1b2dee7433bb3ee">&#9670;&nbsp;</a></span>oc_rep_object_set_string_array()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CborError oc_rep_object_set_string_array </td>
+          <td>(</td>
+          <td class="paramtype">CborEncoder *&#160;</td>
+          <td class="paramname"><em>object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>key_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structoc__mmem.html">oc_string_array_t</a> *&#160;</td>
+          <td class="paramname"><em>array</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a string array using an oc_string_array_t as <code>values</code> to the cbor <code>object</code> under the <code>key</code> name. </p>
+
+</div>
+</div>
+<a id="a0e57ddc44c32d50d8161c3e553b9b85f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e57ddc44c32d50d8161c3e553b9b85f">&#9670;&nbsp;</a></span>oc_rep_object_set_text_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CborError oc_rep_object_set_text_string </td>
+          <td>(</td>
+          <td class="paramtype">CborEncoder *&#160;</td>
+          <td class="paramname"><em>object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>key_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add an string <code>value</code> to the cbor <code>object</code> under the <code>key</code> name. </p>
+
+</div>
+</div>
+<a id="a87a9ea0097253688f6444f345850c836"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87a9ea0097253688f6444f345850c836">&#9670;&nbsp;</a></span>oc_rep_object_set_uint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CborError oc_rep_object_set_uint </td>
+          <td>(</td>
+          <td class="paramtype">CborEncoder *&#160;</td>
+          <td class="paramname"><em>object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>key_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add an unsigned integer <code>value</code> to the cbor <code>object</code> under the <code>key</code> name. </p>
+
+</div>
+</div>
 <a id="abc22e10eb48e0d0f0f279cdee768430f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abc22e10eb48e0d0f0f279cdee768430f">&#9670;&nbsp;</a></span>oc_rep_shrink_encoder_buf()</h2>
 
@@ -3921,7 +4239,7 @@ oc_string_array_get_item_size </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__rep_8h.html">oc_rep.h</a></li>
-    <li class="footer">Generated on Thu Oct 19 2023 16:12:12 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Oct 20 2023 19:39:24 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
