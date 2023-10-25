@@ -10,6 +10,7 @@ var files_dup =
     [ "oc_base64.h", "oc__base64_8h.html", "oc__base64_8h" ],
     [ "oc_buffer.h", "oc__buffer_8h.html", "oc__buffer_8h" ],
     [ "oc_buffer_settings.h", "oc__buffer__settings_8h.html", "oc__buffer__settings_8h" ],
+    [ "oc_build_info.h", "oc__build__info_8h.html", "oc__build__info_8h" ],
     [ "oc_certs.h", "oc__certs_8h.html", "oc__certs_8h" ],
     [ "oc_client_state.h", "oc__client__state_8h.html", "oc__client__state_8h" ],
     [ "oc_clock.h", "oc__clock_8h.html", "oc__clock_8h" ],

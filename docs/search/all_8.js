@@ -11,6 +11,8 @@ var searchData=
   ['interface_5findex_101',['interface_index',['../structoc__endpoint__t.html#ac26edbdb4bb5bab4a406ec807db4e4e4',1,'oc_endpoint_t']]],
   ['interfaces_102',['interfaces',['../structoc__ace__res__t.html#a68c97e7ff73ecf882e2b4a126a5c6faa',1,'oc_ace_res_t::interfaces()'],['../structoc__resource__s.html#a68c97e7ff73ecf882e2b4a126a5c6faa',1,'oc_resource_s::interfaces()']]],
   ['iotivity_2dlite_20api_103',['IoTivity-Lite API',['../index.html',1,'']]],
-  ['ipv4_104',['IPV4',['../oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78acfc4c1053c60b6cc2a7776c60969f31f',1,'oc_endpoint.h']]],
-  ['ipv6_105',['IPV6',['../oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78aff712168361fe68b2bb6193df4977d3c',1,'oc_endpoint.h']]]
+  ['iotivity_5flite_5fversion_104',['IOTIVITY_LITE_VERSION',['../oc__build__info_8h.html#ad94293a1209d97811fc48e3188693165',1,'oc_build_info.h']]],
+  ['iotivity_5flite_5fversion_5fmajor_105',['IOTIVITY_LITE_VERSION_MAJOR',['../oc__build__info_8h.html#a976ff331837a72ad4e14084ceb45c5bb',1,'oc_build_info.h']]],
+  ['ipv4_106',['IPV4',['../oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78acfc4c1053c60b6cc2a7776c60969f31f',1,'oc_endpoint.h']]],
+  ['ipv6_107',['IPV6',['../oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78aff712168361fe68b2bb6193df4977d3c',1,'oc_endpoint.h']]]
 ];
