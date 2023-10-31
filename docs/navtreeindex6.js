@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"structoc__client__handler__t.html#ae13bf5ea66a212e9b085f17d748c7b98":[3,0,3,1],
 "structoc__client__response__t.html":[3,0,4],
 "structoc__client__response__t.html#a0f0c20001c3f64521f922235b6b602b5":[3,0,4,6],
 "structoc__client__response__t.html#a0f53d287ac7c064d1a49d4bd93ca1cb9":[3,0,4,8],

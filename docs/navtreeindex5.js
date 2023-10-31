@@ -209,6 +209,7 @@ var NAVTREEINDEX5 =
 "oc__store_8h.html#ae7ba774796a5ca8d0ad59f96d01098ff":[4,0,41,5],
 "oc__store_8h.html#ae8acd185468da72b585c6ec61123e7c6":[4,0,41,1],
 "oc__uuid_8h.html":[4,0,42],
+"oc__uuid_8h.html#a00eef2b9d45a4473774b3091d1335f52":[4,0,42,6],
 "oc__uuid_8h.html#a4e556e036773181af67e69a454667f31":[4,0,42,1],
 "oc__uuid_8h.html#a5f724cde730627fc1418977b4b015f42":[4,0,42,2],
 "oc__uuid_8h.html#a7d4d2022d88046a760b50c1f242c4b5e":[4,0,42,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "structoc__client__cb__t.html#abb6c979f460a5d392ad05aa6ea93a799":[3,0,2,12],
 "structoc__client__handler__t.html":[3,0,3],
 "structoc__client__handler__t.html#a5ece4b8c8e58db1221d42a6ebb5ed9ed":[3,0,3,0],
-"structoc__client__handler__t.html#aa296ddbb003b2b9adac674bd112cb414":[3,0,3,2],
-"structoc__client__handler__t.html#ae13bf5ea66a212e9b085f17d748c7b98":[3,0,3,1]
+"structoc__client__handler__t.html#aa296ddbb003b2b9adac674bd112cb414":[3,0,3,2]
 };

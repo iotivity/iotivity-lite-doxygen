@@ -120,6 +120,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a7d4d2022d88046a760b50c1f242c4b5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__uuid_8h.html#a7d4d2022d88046a760b50c1f242c4b5e">oc_uuid_to_str</a> (const oc_uuid_t *uuid, char *buffer, size_t buflen)</td></tr>
 <tr class="memdesc:a7d4d2022d88046a760b50c1f242c4b5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the 128 bit oc_uuid_t to a string representation.  <a href="oc__uuid_8h.html#a7d4d2022d88046a760b50c1f242c4b5e">More...</a><br /></td></tr>
 <tr class="separator:a7d4d2022d88046a760b50c1f242c4b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00eef2b9d45a4473774b3091d1335f52"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__uuid_8h.html#a00eef2b9d45a4473774b3091d1335f52">oc_uuid_to_str_v1</a> (const oc_uuid_t *uuid, char *buffer, size_t buflen)</td></tr>
+<tr class="memdesc:a00eef2b9d45a4473774b3091d1335f52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the 128 bit oc_uuid_t to a string representation.  <a href="oc__uuid_8h.html#a00eef2b9d45a4473774b3091d1335f52">More...</a><br /></td></tr>
+<tr class="separator:a00eef2b9d45a4473774b3091d1335f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Generate and work with UUIDs as specified in RFC 4122. </p>
@@ -304,22 +307,62 @@ false Otherwise </dd></dl>
 </div><div class="memdoc">
 
 <p>Convert the 128 bit oc_uuid_t to a string representation. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__uuid_8h.html#a00eef2b9d45a4473774b3091d1335f52" title="Convert the 128 bit oc_uuid_t to a string representation.">oc_uuid_to_str_v1</a> </dd></dl>
+
+</div>
+</div>
+<a id="a00eef2b9d45a4473774b3091d1335f52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00eef2b9d45a4473774b3091d1335f52">&#9670;&nbsp;</a></span>oc_uuid_to_str_v1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_uuid_to_str_v1 </td>
+          <td>(</td>
+          <td class="paramtype">const oc_uuid_t *&#160;</td>
+          <td class="paramname"><em>uuid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>buflen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert the 128 bit oc_uuid_t to a string representation. </p>
 <p>The string representation of the UUID will be as specified in RFC 4122.</p>
 <dl class="section note"><dt>Note</dt><dd>oc_uuid_to_str has a special case that does not conform to RFC 4122 if the first byte of oc_uuid_t is set to '*' (0x2A) this will return a string "*".</dd></dl>
 <p>Example </p><div class="fragment"><div class="line">oc_uuid_t device_uuid = { { 0 } };</div>
 <div class="line"><a class="code" href="oc__uuid_8h.html#a5f724cde730627fc1418977b4b015f42">oc_gen_uuid</a>(&amp;device_uuid);</div>
 <div class="line"><span class="keywordtype">char</span> uuid_str[<a class="code" href="oc__uuid_8h.html#a4e556e036773181af67e69a454667f31">OC_UUID_LEN</a>] = { 0 };</div>
-<div class="line"><a class="code" href="oc__uuid_8h.html#a7d4d2022d88046a760b50c1f242c4b5e">oc_uuid_to_str</a>(&amp;device_uuid, uuid_str, <a class="code" href="oc__uuid_8h.html#a4e556e036773181af67e69a454667f31">OC_UUID_LEN</a>);</div>
+<div class="line"><a class="code" href="oc__uuid_8h.html#a00eef2b9d45a4473774b3091d1335f52">oc_uuid_to_str_v1</a>(&amp;device_uuid, uuid_str, <a class="code" href="oc__uuid_8h.html#a4e556e036773181af67e69a454667f31">OC_UUID_LEN</a>);</div>
+<div class="ttc" id="aoc__uuid_8h_html_a00eef2b9d45a4473774b3091d1335f52"><div class="ttname"><a href="oc__uuid_8h.html#a00eef2b9d45a4473774b3091d1335f52">oc_uuid_to_str_v1</a></div><div class="ttdeci">int oc_uuid_to_str_v1(const oc_uuid_t *uuid, char *buffer, size_t buflen)</div><div class="ttdoc">Convert the 128 bit oc_uuid_t to a string representation.</div></div>
 <div class="ttc" id="aoc__uuid_8h_html_a4e556e036773181af67e69a454667f31"><div class="ttname"><a href="oc__uuid_8h.html#a4e556e036773181af67e69a454667f31">OC_UUID_LEN</a></div><div class="ttdeci">#define OC_UUID_LEN</div><div class="ttdoc">The length of a UUID string.</div><div class="ttdef"><b>Definition:</b> oc_uuid.h:45</div></div>
-<div class="ttc" id="aoc__uuid_8h_html_a7d4d2022d88046a760b50c1f242c4b5e"><div class="ttname"><a href="oc__uuid_8h.html#a7d4d2022d88046a760b50c1f242c4b5e">oc_uuid_to_str</a></div><div class="ttdeci">void oc_uuid_to_str(const oc_uuid_t *uuid, char *buffer, size_t buflen)</div><div class="ttdoc">Convert the 128 bit oc_uuid_t to a string representation.</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">uuid</td><td>A oc_uuid_t to convert to a string </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">buffer</td><td>A char array that will hold the string representation of the UUID </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">buflen</td><td>The size of the input buffer. Recommend always using OC_UUID_LEN for buflen. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">uuid</td><td>A oc_uuid_t to convert to a string (cannot be NULL) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">buffer</td><td>A char array that will hold the string representation of the UUID (cannot be NULL) </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">buflen</td><td>The size of the input buffer. It is recommended to always use OC_UUID_LEN for buflen.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>-1 if the buffer is too small to hold the UUID string. </dd>
+<dd>
+&gt;0 The number of characters written to the buffer, not including the terminating null character. </dd></dl>
 
 </div>
 </div>
@@ -329,7 +372,7 @@ false Otherwise </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__uuid_8h.html">oc_uuid.h</a></li>
-    <li class="footer">Generated on Thu Oct 26 2023 15:47:33 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Oct 31 2023 20:05:25 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
