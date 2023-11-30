@@ -119,6 +119,7 @@ var oc__api_8h =
     [ "oc_set_random_pin_callback", "oc__api_8h.html#a5f6ce300fbf84e2181b1ee0040567756", null ],
     [ "oc_set_select_oxms_cb", "oc__api_8h.html#aff3a70487d7851c022386df601655fb6", null ],
     [ "oc_set_send_response_callback", "group__doc__module__tag__server__side.html#ga72afbe3c6b47589064da706576c98a93", null ],
+    [ "oc_set_send_response_etag", "group__doc__module__tag__server__side.html#gabd05c86872913415c7c720ebdf1d077d", null ],
     [ "oc_set_separate_response_buffer", "group__doc__module__tag__server__side.html#ga1a6752c73365b6d03a1dcfcf3d3005fc", null ],
     [ "oc_stop_multicast", "group__doc__module__tag__client__state.html#ga14c08ecd261e6f6ce93f1d92007576b1", null ],
     [ "oc_stop_observe", "group__doc__module__tag__client__state.html#ga02d9477c9d5b135226810b71614ed0d4", null ]

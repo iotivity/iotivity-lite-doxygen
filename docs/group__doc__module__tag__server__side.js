@@ -45,5 +45,6 @@ var group__doc__module__tag__server__side =
     [ "oc_send_separate_response", "group__doc__module__tag__server__side.html#gab8e08bb0d0476a29ecd562f02e7ec61e", null ],
     [ "oc_set_con_write_cb", "group__doc__module__tag__server__side.html#ga1497c8c36b39a1c9cca7972caa40a92c", null ],
     [ "oc_set_send_response_callback", "group__doc__module__tag__server__side.html#ga72afbe3c6b47589064da706576c98a93", null ],
+    [ "oc_set_send_response_etag", "group__doc__module__tag__server__side.html#gabd05c86872913415c7c720ebdf1d077d", null ],
     [ "oc_set_separate_response_buffer", "group__doc__module__tag__server__side.html#ga1a6752c73365b6d03a1dcfcf3d3005fc", null ]
 ];

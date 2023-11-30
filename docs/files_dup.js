@@ -32,6 +32,7 @@ var files_dup =
     [ "oc_network_monitor.h", "oc__network__monitor_8h.html", "oc__network__monitor_8h" ],
     [ "oc_obt.h", "oc__obt_8h.html", "oc__obt_8h" ],
     [ "oc_pki.h", "oc__pki_8h.html", "oc__pki_8h" ],
+    [ "oc_poll_loop.h", "oc__poll__loop_8h.html", "oc__poll__loop_8h" ],
     [ "oc_push.h", "oc__push_8h.html", "oc__push_8h" ],
     [ "oc_random.h", "oc__random_8h.html", "oc__random_8h" ],
     [ "oc_rep.h", "oc__rep_8h.html", "oc__rep_8h" ],

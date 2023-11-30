@@ -232,6 +232,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga72afbe3c6b47589064da706576c98a93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga72afbe3c6b47589064da706576c98a93">oc_set_send_response_callback</a> (<a class="el" href="group__doc__module__tag__server__side.html#ga81109e81a7c40aaa290298e9411ed95d">oc_send_response_cb_t</a> cb)</td></tr>
 <tr class="memdesc:ga72afbe3c6b47589064da706576c98a93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the send response callback function.  <a href="group__doc__module__tag__server__side.html#ga72afbe3c6b47589064da706576c98a93">More...</a><br /></td></tr>
 <tr class="separator:ga72afbe3c6b47589064da706576c98a93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabd05c86872913415c7c720ebdf1d077d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#gabd05c86872913415c7c720ebdf1d077d">oc_set_send_response_etag</a> (<a class="el" href="structoc__request__t.html">oc_request_t</a> *request, const uint8_t *etag, uint8_t etag_len)</td></tr>
+<tr class="memdesc:gabd05c86872913415c7c720ebdf1d077d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the ETag for the response to a OC_GET request.  <a href="group__doc__module__tag__server__side.html#gabd05c86872913415c7c720ebdf1d077d">More...</a><br /></td></tr>
+<tr class="separator:gabd05c86872913415c7c720ebdf1d077d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1a6752c73365b6d03a1dcfcf3d3005fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__doc__module__tag__server__side.html#ga1a6752c73365b6d03a1dcfcf3d3005fc">oc_set_separate_response_buffer</a> (<a class="el" href="oc__ri_8h.html#aa8574b4921b4ecdddd325a4634bec426">oc_separate_response_t</a> *handle)</td></tr>
 <tr class="memdesc:ga1a6752c73365b6d03a1dcfcf3d3005fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a response buffer for holding the response payload.  <a href="group__doc__module__tag__server__side.html#ga1a6752c73365b6d03a1dcfcf3d3005fc">More...</a><br /></td></tr>
 <tr class="separator:ga1a6752c73365b6d03a1dcfcf3d3005fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2198,6 +2201,53 @@ false if the key does not exist in the query parameter </dd></dl>
 
 </div>
 </div>
+<a id="gabd05c86872913415c7c720ebdf1d077d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabd05c86872913415c7c720ebdf1d077d">&#9670;&nbsp;</a></span>oc_set_send_response_etag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_set_send_response_etag </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structoc__request__t.html">oc_request_t</a> *&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>etag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>etag_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the ETag for the response to a OC_GET request. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">request</td><td>the request being responded to (cannot be NULL) </td></tr>
+    <tr><td class="paramname">etag</td><td>ETag value (cannot be NULL) </td></tr>
+    <tr><td class="paramname">etag_len</td><td>length of the ETag value</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successful, </dd>
+<dd>
+-EINVAL if the request method is not OC_GET or the etag_len is longer than COAP_ETAG_LEN </dd></dl>
+
+</div>
+</div>
 <a id="ga1a6752c73365b6d03a1dcfcf3d3005fc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga1a6752c73365b6d03a1dcfcf3d3005fc">&#9670;&nbsp;</a></span>oc_set_separate_response_buffer()</h2>
 
@@ -2233,7 +2283,7 @@ false if the key does not exist in the query parameter </dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 29 2023 16:39:19 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Nov 30 2023 19:29:41 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

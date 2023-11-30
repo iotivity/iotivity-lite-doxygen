@@ -4,6 +4,8 @@ var structoc__request__t =
     [ "_payload_len", "structoc__request__t.html#ab37ead9b768f1ee00fd8b655a4309e8c", null ],
     [ "accept", "structoc__request__t.html#aa521094fc45d93804f83e0e00281e5dc", null ],
     [ "content_format", "structoc__request__t.html#a59cf0d81c2cdfeeb6f9d0d9499e19f9d", null ],
+    [ "etag", "structoc__request__t.html#a973bae646ff48991afea787b4e7fd7ae", null ],
+    [ "etag_len", "structoc__request__t.html#a93424b64d91125f085b269cf41969b8c", null ],
     [ "method", "structoc__request__t.html#aa2da7267834a20a523fd77fba7164d97", null ],
     [ "origin", "structoc__request__t.html#a423ba932267a5c6284b6a4a1f7fcf02b", null ],
     [ "query", "structoc__request__t.html#aaecae8680f3cbda9cce2259c965be214", null ],

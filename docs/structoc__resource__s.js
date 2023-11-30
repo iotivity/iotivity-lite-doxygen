@@ -4,6 +4,7 @@ var structoc__resource__s =
     [ "default_interface", "structoc__resource__s.html#a86bcf5945d4c50ddb5b5649c60958b2e", null ],
     [ "delete_handler", "structoc__resource__s.html#a6de252bfbd3fa8e86d21dfeaff4cd18a", null ],
     [ "device", "structoc__resource__s.html#a94c514bd73ebe068bc95f3c0b33dceda", null ],
+    [ "etag", "structoc__resource__s.html#a7b6ebac14a8c3514725832a599a16c43", null ],
     [ "get_handler", "structoc__resource__s.html#a7de9566976d37caea811d188d7ea7ad0", null ],
     [ "get_properties", "structoc__resource__s.html#a99698a1070518a1d190b724318f65a8b", null ],
     [ "interfaces", "structoc__resource__s.html#a68c97e7ff73ecf882e2b4a126a5c6faa", null ],

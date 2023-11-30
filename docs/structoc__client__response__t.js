@@ -6,6 +6,7 @@ var structoc__client__response__t =
     [ "code", "structoc__client__response__t.html#a65db7354001aae97f74ce1acb5c8a97a", null ],
     [ "content_format", "structoc__client__response__t.html#a59cf0d81c2cdfeeb6f9d0d9499e19f9d", null ],
     [ "endpoint", "structoc__client__response__t.html#a5d991c84650c482bda3a2a020c232953", null ],
+    [ "etag", "structoc__client__response__t.html#a1b06d4cf49af4cc220f882239acc8237", null ],
     [ "observe_option", "structoc__client__response__t.html#a0f0c20001c3f64521f922235b6b602b5", null ],
     [ "payload", "structoc__client__response__t.html#a4e7476f42ae4af489a46e6d05b8e4727", null ],
     [ "user_data", "structoc__client__response__t.html#a0f53d287ac7c064d1a49d4bd93ca1cb9", null ]

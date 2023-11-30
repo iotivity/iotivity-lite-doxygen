@@ -101,7 +101,8 @@ var oc__ri_8h =
       [ "OC_IF_CREATE", "oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2a17b3d3e09627975e3cf6235059399abf", null ],
       [ "OC_IF_W", "oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2a06a5bfe5fc584f0623bc0b78474dda92", null ],
       [ "OC_IF_STARTUP", "oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2a00480399ba440abd04780586a8b14142", null ],
-      [ "OC_IF_STARTUP_REVERT", "oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2ac7ae4e97b492bdc218b6131132e1bbf4", null ]
+      [ "OC_IF_STARTUP_REVERT", "oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2ac7ae4e97b492bdc218b6131132e1bbf4", null ],
+      [ "PLGD_IF_ETAG", "oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2a9b19af48d541cd9b79e3d30ed80b1873", null ]
     ] ],
     [ "oc_method_t", "oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26", [
       [ "OC_GET", "oc__ri_8h.html#a39c56d2b01f08f13d65daaf3354b6b26ad4da05d28f48b07625a227c6dcf33071", null ],

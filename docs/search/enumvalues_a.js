@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['secured_1954',['SECURED',['../oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78a4233d0336b2b5b9922cc2a448052c137',1,'oc_endpoint.h']]]
+  ['plgd_5fif_5fetag_1973',['PLGD_IF_ETAG',['../oc__ri_8h.html#a95fa27c60f90b8e3b976f4ca5f04aab2a9b19af48d541cd9b79e3d30ed80b1873',1,'oc_ri.h']]]
 ];
