@@ -6,6 +6,7 @@ var annotated_dup =
     [ "oc_client_handler_t", "structoc__client__handler__t.html", "structoc__client__handler__t" ],
     [ "oc_client_response_t", "structoc__client__response__t.html", "structoc__client__response__t" ],
     [ "oc_cloud_keepalive_t", "structoc__cloud__keepalive__t.html", "structoc__cloud__keepalive__t" ],
+    [ "oc_cloud_schedule_action_t", "structoc__cloud__schedule__action__t.html", "structoc__cloud__schedule__action__t" ],
     [ "oc_connectivity_listening_ports_s", "structoc__connectivity__listening__ports__s.html", "structoc__connectivity__listening__ports__s" ],
     [ "oc_cred_data_t", "structoc__cred__data__t.html", "structoc__cred__data__t" ],
     [ "oc_device_info_t", "structoc__device__info__t.html", "structoc__device__info__t" ],

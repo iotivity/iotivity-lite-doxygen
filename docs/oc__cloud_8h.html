@@ -101,6 +101,9 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__cloud__keepalive__t.html">oc_cloud_keepalive_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cloud keepalive configuration.  <a href="structoc__cloud__keepalive__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__cloud__schedule__action__t.html">oc_cloud_schedule_action_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cloud retry configuration structure.  <a href="structoc__cloud__schedule__action__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -116,6 +119,12 @@ typedef struct oc_cloud_context_t&#160;</td><td class="memItemRight" valign="bot
 <tr class="memitem:a54aa20e5605a8a73e97d2a2e0d825471"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#a54aa20e5605a8a73e97d2a2e0d825471">oc_cloud_on_keepalive_response_cb_t</a>) (bool response_received, uint64_t *next_ping, uint16_t *next_ping_timeout, void *user_data)</td></tr>
 <tr class="memdesc:a54aa20e5605a8a73e97d2a2e0d825471"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback invoked by the cloud manager when cloud change state to logged in or a keepalive response is received.  <a href="oc__cloud_8h.html#a54aa20e5605a8a73e97d2a2e0d825471">More...</a><br /></td></tr>
 <tr class="separator:a54aa20e5605a8a73e97d2a2e0d825471"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae250b21f9cbe0b7cf12b03920a4e59df"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#ae250b21f9cbe0b7cf12b03920a4e59df">oc_cloud_schedule_action_cb_t</a>) (<a class="el" href="oc__cloud_8h.html#ae7bb003f5acfc1ec1beffc9569f0cc81">oc_cloud_action_t</a> action, uint8_t retry_count, uint64_t *delay, uint16_t *timeout, void *user_data)</td></tr>
+<tr class="memdesc:ae250b21f9cbe0b7cf12b03920a4e59df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback invoked by the cloud manager when the cloud wants to schedule an action.  <a href="oc__cloud_8h.html#ae250b21f9cbe0b7cf12b03920a4e59df">More...</a><br /></td></tr>
+<tr class="separator:ae250b21f9cbe0b7cf12b03920a4e59df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab83065b7cd2192880435e738b2ca4bb8"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structoc__cloud__schedule__action__t.html">oc_cloud_schedule_action_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#ab83065b7cd2192880435e738b2ca4bb8">oc_cloud_schedule_action_t</a></td></tr>
+<tr class="memdesc:ab83065b7cd2192880435e738b2ca4bb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cloud retry configuration structure.  <a href="oc__cloud_8h.html#ab83065b7cd2192880435e738b2ca4bb8">More...</a><br /></td></tr>
+<tr class="separator:ab83065b7cd2192880435e738b2ca4bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dff8b6f801ef058df036f456ef64e68"><td class="memItemLeft" align="right" valign="top"><a id="a1dff8b6f801ef058df036f456ef64e68"></a>
 typedef struct oc_cloud_store_t&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_store_t</b></td></tr>
 <tr class="separator:a1dff8b6f801ef058df036f456ef64e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,6 +134,13 @@ typedef enum oc_cps_t&#160;</td><td class="memItemRight" valign="bottom"><b>oc_c
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:ae7bb003f5acfc1ec1beffc9569f0cc81"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#ae7bb003f5acfc1ec1beffc9569f0cc81">oc_cloud_action_t</a> { <a class="el" href="oc__cloud_8h.html#ae7bb003f5acfc1ec1beffc9569f0cc81a8ad617cae65717127de37792e4817429">OC_CLOUD_ACTION_UNKNOWN</a> = 0
+, <a class="el" href="oc__cloud_8h.html#ae7bb003f5acfc1ec1beffc9569f0cc81a1b0ec36d207b109deada0fd50909d20f">OC_CLOUD_ACTION_REGISTER</a> = 1
+, <a class="el" href="oc__cloud_8h.html#ae7bb003f5acfc1ec1beffc9569f0cc81a937af5e9f96238fac0fc0c3748de3550">OC_CLOUD_ACTION_LOGIN</a> = 2
+, <a class="el" href="oc__cloud_8h.html#ae7bb003f5acfc1ec1beffc9569f0cc81a4666029ecee33dbd2263bd77241e15b7">OC_CLOUD_ACTION_REFRESH_TOKEN</a> = 3
+ }</td></tr>
+<tr class="memdesc:ae7bb003f5acfc1ec1beffc9569f0cc81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration defining cloud actions.  <a href="oc__cloud_8h.html#ae7bb003f5acfc1ec1beffc9569f0cc81">More...</a><br /></td></tr>
+<tr class="separator:ae7bb003f5acfc1ec1beffc9569f0cc81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4aaa7e7ebe63f9ae0440ff98cacd903"><td class="memItemLeft" align="right" valign="top"><a id="ac4aaa7e7ebe63f9ae0440ff98cacd903"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_error_t</b> { <br />
 &#160;&#160;<b>CLOUD_OK</b> = 0
 , <b>CLOUD_ERROR_RESPONSE</b> = 1
@@ -163,6 +179,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a0a60ad2a21454094bbe54f90d317d650"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#a0a60ad2a21454094bbe54f90d317d650">oc_cloud_action_to_str</a> (<a class="el" href="oc__cloud_8h.html#ae7bb003f5acfc1ec1beffc9569f0cc81">oc_cloud_action_t</a> action)</td></tr>
+<tr class="memdesc:a0a60ad2a21454094bbe54f90d317d650"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert cloud action to a string representation.  <a href="oc__cloud_8h.html#a0a60ad2a21454094bbe54f90d317d650">More...</a><br /></td></tr>
+<tr class="separator:a0a60ad2a21454094bbe54f90d317d650"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af782586d01601ce903e4aad77ffeca42"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#af782586d01601ce903e4aad77ffeca42">oc_cloud_add_resource</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
 <tr class="memdesc:af782586d01601ce903e4aad77ffeca42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publish resource to cloud.  <a href="oc__cloud_8h.html#af782586d01601ce903e4aad77ffeca42">More...</a><br /></td></tr>
 <tr class="separator:af782586d01601ce903e4aad77ffeca42"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -223,6 +242,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_get_token_exp
 <tr class="memitem:aa39a484a6576b096a8c895f6eb1f2024"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#aa39a484a6576b096a8c895f6eb1f2024">oc_cloud_set_published_resources_ttl</a> (oc_cloud_context_t *ctx, uint32_t ttl)</td></tr>
 <tr class="memdesc:aa39a484a6576b096a8c895f6eb1f2024"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Time to Live value in the provided cloud context.  <a href="oc__cloud_8h.html#aa39a484a6576b096a8c895f6eb1f2024">More...</a><br /></td></tr>
 <tr class="separator:aa39a484a6576b096a8c895f6eb1f2024"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac35512e950ecaa2b82cf20def087c0b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#ac35512e950ecaa2b82cf20def087c0b3">oc_cloud_set_schedule_action</a> (oc_cloud_context_t *ctx, <a class="el" href="oc__cloud_8h.html#ae250b21f9cbe0b7cf12b03920a4e59df">oc_cloud_schedule_action_cb_t</a> on_schedule_action, void *user_data)</td></tr>
+<tr class="memdesc:ac35512e950ecaa2b82cf20def087c0b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a custom scheduler for actions in the cloud manager.  <a href="oc__cloud_8h.html#ac35512e950ecaa2b82cf20def087c0b3">More...</a><br /></td></tr>
+<tr class="separator:ac35512e950ecaa2b82cf20def087c0b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="adaa6e94d3d339e364a392045fbc78969"></a>
@@ -291,7 +313,76 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_get_token_exp
 
 </div>
 </div>
+<a id="ae250b21f9cbe0b7cf12b03920a4e59df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae250b21f9cbe0b7cf12b03920a4e59df">&#9670;&nbsp;</a></span>oc_cloud_schedule_action_cb_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef bool(* oc_cloud_schedule_action_cb_t) (<a class="el" href="oc__cloud_8h.html#ae7bb003f5acfc1ec1beffc9569f0cc81">oc_cloud_action_t</a> action, uint8_t retry_count, uint64_t *delay, uint16_t *timeout, void *user_data)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback invoked by the cloud manager when the cloud wants to schedule an action. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">action</td><td>Cloud action to schedule. </td></tr>
+    <tr><td class="paramname">retry_count</td><td>Retries count - 0 means the first attempt to perform the action. </td></tr>
+    <tr><td class="paramname">delay</td><td>Delay the action in milliseconds before executing it. </td></tr>
+    <tr><td class="paramname">timeout</td><td>Timeout in seconds for the action. </td></tr>
+    <tr><td class="paramname">user_data</td><td>User data passed from the caller.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the cloud manager should continue to schedule the action, false if the cloud manager should stop for OC_CLOUD_ACTION_REGISTER or restart for other actions. </dd></dl>
+
+</div>
+</div>
+<a id="ab83065b7cd2192880435e738b2ca4bb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab83065b7cd2192880435e738b2ca4bb8">&#9670;&nbsp;</a></span>oc_cloud_schedule_action_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structoc__cloud__schedule__action__t.html">oc_cloud_schedule_action_t</a> <a class="el" href="structoc__cloud__schedule__action__t.html">oc_cloud_schedule_action_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cloud retry configuration structure. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ae7bb003f5acfc1ec1beffc9569f0cc81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7bb003f5acfc1ec1beffc9569f0cc81">&#9670;&nbsp;</a></span>oc_cloud_action_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="oc__cloud_8h.html#ae7bb003f5acfc1ec1beffc9569f0cc81">oc_cloud_action_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enumeration defining cloud actions. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae7bb003f5acfc1ec1beffc9569f0cc81a8ad617cae65717127de37792e4817429"></a>OC_CLOUD_ACTION_UNKNOWN&#160;</td><td class="fielddoc"><p>Unknown cloud action. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae7bb003f5acfc1ec1beffc9569f0cc81a1b0ec36d207b109deada0fd50909d20f"></a>OC_CLOUD_ACTION_REGISTER&#160;</td><td class="fielddoc"><p>Cloud registration action. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae7bb003f5acfc1ec1beffc9569f0cc81a937af5e9f96238fac0fc0c3748de3550"></a>OC_CLOUD_ACTION_LOGIN&#160;</td><td class="fielddoc"><p>Cloud login action. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae7bb003f5acfc1ec1beffc9569f0cc81a4666029ecee33dbd2263bd77241e15b7"></a>OC_CLOUD_ACTION_REFRESH_TOKEN&#160;</td><td class="fielddoc"><p>Cloud token refresh action. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="a2ab39e0e37b5bf16a0b45d95bbb47dc1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2ab39e0e37b5bf16a0b45d95bbb47dc1">&#9670;&nbsp;</a></span>oc_cloud_status_t</h2>
 
@@ -309,6 +400,33 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_get_token_exp
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a0a60ad2a21454094bbe54f90d317d650"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a60ad2a21454094bbe54f90d317d650">&#9670;&nbsp;</a></span>oc_cloud_action_to_str()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* oc_cloud_action_to_str </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="oc__cloud_8h.html#ae7bb003f5acfc1ec1beffc9569f0cc81">oc_cloud_action_t</a>&#160;</td>
+          <td class="paramname"><em>action</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert cloud action to a string representation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">action</td><td>Cloud action to convert. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>const char* String representation of the cloud action. </dd></dl>
+
+</div>
+</div>
 <a id="af782586d01601ce903e4aad77ffeca42"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af782586d01601ce903e4aad77ffeca42">&#9670;&nbsp;</a></span>oc_cloud_add_resource()</h2>
 
@@ -609,6 +727,7 @@ int -1 on error </dd></dl>
 </div><div class="memdoc">
 
 <p>Restart cloud registration process with the current configuration. </p>
+<dl class="section note"><dt>Note</dt><dd>The cloud manager must be started before calling this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ctx</td><td>cloud context (cannot be NULL) </td></tr>
@@ -994,13 +1113,61 @@ int -1 on error </dd></dl>
 
 </div>
 </div>
+<a id="ac35512e950ecaa2b82cf20def087c0b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac35512e950ecaa2b82cf20def087c0b3">&#9670;&nbsp;</a></span>oc_cloud_set_schedule_action()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oc_cloud_set_schedule_action </td>
+          <td>(</td>
+          <td class="paramtype">oc_cloud_context_t *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="oc__cloud_8h.html#ae250b21f9cbe0b7cf12b03920a4e59df">oc_cloud_schedule_action_cb_t</a>&#160;</td>
+          <td class="paramname"><em>on_schedule_action</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set a custom scheduler for actions in the cloud manager. </p>
+<p>By default, the cloud manager uses its own scheduler.</p>
+<p>This function allows you to set a custom scheduler to define delay and timeout for actions.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>Cloud context to update. Must not be NULL. </td></tr>
+    <tr><td class="paramname">on_schedule_action</td><td>Callback invoked by the cloud manager when the cloud wants to schedule an action. </td></tr>
+    <tr><td class="paramname">user_data</td><td>User data passed from the caller to be provided during the callback.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>The provided cloud context (<code>ctx</code>) must not be NULL. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__cloud_8h.html#ae250b21f9cbe0b7cf12b03920a4e59df" title="Callback invoked by the cloud manager when the cloud wants to schedule an action.">oc_cloud_schedule_action_cb_t</a> </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__cloud_8h.html">oc_cloud.h</a></li>
-    <li class="footer">Generated on Fri Jan 12 2024 14:42:07 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jan 15 2024 14:41:03 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

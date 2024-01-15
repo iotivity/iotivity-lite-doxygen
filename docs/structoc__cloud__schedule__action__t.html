@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>IoTivity-Lite: oc_sec_creds_t Struct Reference</title>
+<title>IoTivity-Lite: oc_cloud_schedule_action_t Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('structoc__sec__creds__t.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('structoc__cloud__schedule__action__t.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -82,79 +82,89 @@ $(document).ready(function(){initNavTree('structoc__sec__creds__t.html',''); ini
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">oc_sec_creds_t Struct Reference</div>  </div>
+<div class="title">oc_cloud_schedule_action_t Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>credential and rowner information  
- <a href="structoc__sec__creds__t.html#details">More...</a></p>
+<p>Cloud retry configuration structure.  
+ <a href="structoc__cloud__schedule__action__t.html#details">More...</a></p>
 
-<p><code>#include &lt;oc_cred.h&gt;</code></p>
+<p><code>#include &lt;oc_cloud.h&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:aabd5d818698847fe3cf584eb3d287ca7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__sec__creds__t.html#aabd5d818698847fe3cf584eb3d287ca7">OC_LIST_STRUCT</a> (creds)</td></tr>
-<tr class="memdesc:aabd5d818698847fe3cf584eb3d287ca7"><td class="mdescLeft">&#160;</td><td class="mdescRight">list of credentials  <a href="structoc__sec__creds__t.html#aabd5d818698847fe3cf584eb3d287ca7">More...</a><br /></td></tr>
-<tr class="separator:aabd5d818698847fe3cf584eb3d287ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:af0de68e95004851d0c429f7d528a218c"><td class="memItemLeft" align="right" valign="top">oc_uuid_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__sec__creds__t.html#af0de68e95004851d0c429f7d528a218c">rowneruuid</a></td></tr>
-<tr class="memdesc:af0de68e95004851d0c429f7d528a218c"><td class="mdescLeft">&#160;</td><td class="mdescRight">row owner uuid  <a href="structoc__sec__creds__t.html#af0de68e95004851d0c429f7d528a218c">More...</a><br /></td></tr>
-<tr class="separator:af0de68e95004851d0c429f7d528a218c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c0c2fbbc3a5e3d9c3f4759ac4ac4d82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="oc__cloud_8h.html#ae250b21f9cbe0b7cf12b03920a4e59df">oc_cloud_schedule_action_cb_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__cloud__schedule__action__t.html#a3c0c2fbbc3a5e3d9c3f4759ac4ac4d82">on_schedule_action</a></td></tr>
+<tr class="memdesc:a3c0c2fbbc3a5e3d9c3f4759ac4ac4d82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback invoked to set delay and timeout for the action.  <a href="structoc__cloud__schedule__action__t.html#a3c0c2fbbc3a5e3d9c3f4759ac4ac4d82">More...</a><br /></td></tr>
+<tr class="separator:a3c0c2fbbc3a5e3d9c3f4759ac4ac4d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f1ad43d3bf79b40bc39dbb5a6c3a5ae"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__cloud__schedule__action__t.html#a7f1ad43d3bf79b40bc39dbb5a6c3a5ae">timeout</a></td></tr>
+<tr class="memdesc:a7f1ad43d3bf79b40bc39dbb5a6c3a5ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timeout for the action in seconds.  <a href="structoc__cloud__schedule__action__t.html#a7f1ad43d3bf79b40bc39dbb5a6c3a5ae">More...</a><br /></td></tr>
+<tr class="separator:a7f1ad43d3bf79b40bc39dbb5a6c3a5ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f53d287ac7c064d1a49d4bd93ca1cb9"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__cloud__schedule__action__t.html#a0f53d287ac7c064d1a49d4bd93ca1cb9">user_data</a></td></tr>
+<tr class="memdesc:a0f53d287ac7c064d1a49d4bd93ca1cb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">User data provided to the schedule action callback.  <a href="structoc__cloud__schedule__action__t.html#a0f53d287ac7c064d1a49d4bd93ca1cb9">More...</a><br /></td></tr>
+<tr class="separator:a0f53d287ac7c064d1a49d4bd93ca1cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>credential and rowner information </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aabd5d818698847fe3cf584eb3d287ca7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aabd5d818698847fe3cf584eb3d287ca7">&#9670;&nbsp;</a></span>OC_LIST_STRUCT()</h2>
+<div class="textblock"><p>Cloud retry configuration structure. </p>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a id="a3c0c2fbbc3a5e3d9c3f4759ac4ac4d82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c0c2fbbc3a5e3d9c3f4759ac4ac4d82">&#9670;&nbsp;</a></span>on_schedule_action</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">OC_LIST_STRUCT </td>
-          <td>(</td>
-          <td class="paramtype">creds&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname"><a class="el" href="oc__cloud_8h.html#ae250b21f9cbe0b7cf12b03920a4e59df">oc_cloud_schedule_action_cb_t</a> on_schedule_action</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>list of credentials </p>
+<p>Callback invoked to set delay and timeout for the action. </p>
 
 </div>
 </div>
-<h2 class="groupheader">Field Documentation</h2>
-<a id="af0de68e95004851d0c429f7d528a218c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0de68e95004851d0c429f7d528a218c">&#9670;&nbsp;</a></span>rowneruuid</h2>
+<a id="a7f1ad43d3bf79b40bc39dbb5a6c3a5ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f1ad43d3bf79b40bc39dbb5a6c3a5ae">&#9670;&nbsp;</a></span>timeout</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">oc_uuid_t rowneruuid</td>
+          <td class="memname">uint16_t timeout</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>row owner uuid </p>
+<p>Timeout for the action in seconds. </p>
+
+</div>
+</div>
+<a id="a0f53d287ac7c064d1a49d4bd93ca1cb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f53d287ac7c064d1a49d4bd93ca1cb9">&#9670;&nbsp;</a></span>user_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* user_data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>User data provided to the schedule action callback. </p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="oc__cred_8h.html">oc_cred.h</a></li>
+<li><a class="el" href="oc__cloud_8h.html">oc_cloud.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="structoc__sec__creds__t.html">oc_sec_creds_t</a></li>
+    <li class="navelem"><a class="el" href="structoc__cloud__schedule__action__t.html">oc_cloud_schedule_action_t</a></li>
     <li class="footer">Generated on Mon Jan 15 2024 14:41:03 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
