@@ -7,6 +7,7 @@ var oc__core__res_8h =
     [ "oc_device_info_t", "oc__core__res_8h.html#adbcab293f69f9abf2f518d12d43184f4", null ],
     [ "oc_platform_info_t", "oc__core__res_8h.html#a7b8a0731c685aac21e221e0ddeba75c0", null ],
     [ "oc_core_get_device_id", "oc__core__res_8h.html#a3d69c4b7ffa0fd988862fa0426cd8329", null ],
+    [ "oc_core_get_device_index", "oc__core__res_8h.html#ad970465670b239a008603b550e24fbda", null ],
     [ "oc_core_get_device_info", "oc__core__res_8h.html#abce7a2d1e8d98a3f4c0b8585121e2771", null ],
     [ "oc_core_get_latency", "oc__core__res_8h.html#ab73d2ae0cf4a7d6563d51527f0442ef7", null ],
     [ "oc_core_get_num_devices", "oc__core__res_8h.html#aa7dc2c2f7072ae6c305e404ddd8b204f", null ],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"oc__cred_8h.html#aebd296a2739e512916377e608c31d41b":[4,0,20,22],
 "oc__cred_8h.html#af766cf746fb6d10b2f502d7f4f76e29e":[4,0,20,16],
 "oc__cred_8h.html#af766cf746fb6d10b2f502d7f4f76e29ea0645874a12a48354a9a9104593e29295":[4,0,20,16,1],
 "oc__cred_8h.html#af766cf746fb6d10b2f502d7f4f76e29ea1679e65c86f471ae804a0c72de16666e":[4,0,20,16,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "oc__helpers_8h.html#a877004310f723b439d13e3c3d1b4c901":[4,0,25,10],
 "oc__helpers_8h.html#a885d05a580d7abcae59cee72cbd06a63":[4,0,25,19],
 "oc__helpers_8h.html#a8d4225a6ded52a4fa9b85445a1f2cc38":[4,0,25,27],
-"oc__helpers_8h.html#a9170160c3afc735c8adf574d00d20c8c":[4,0,25,52],
-"oc__helpers_8h.html#a9d4cd17d4100263b9f2be309d0bee2a3":[4,0,25,38]
+"oc__helpers_8h.html#a9170160c3afc735c8adf574d00d20c8c":[4,0,25,52]
 };

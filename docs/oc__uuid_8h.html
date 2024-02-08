@@ -93,6 +93,7 @@ $(document).ready(function(){initNavTree('oc__uuid_8h.html',''); initResizable()
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="oc__export_8h.html">oc_export.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__compiler_8h.html">util/oc_compiler.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="oc__features_8h.html">util/oc_features.h</a>&quot;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
 <code>#include &lt;stddef.h&gt;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
@@ -114,6 +115,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a9c0a2e4f02d3d71a1b05838c713cc35b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__uuid_8h.html#a9c0a2e4f02d3d71a1b05838c713cc35b">oc_str_to_uuid</a> (const char *str, oc_uuid_t *uuid)</td></tr>
 <tr class="memdesc:a9c0a2e4f02d3d71a1b05838c713cc35b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a UUID string representation to a 128-bit oc_uuid_t.  <a href="oc__uuid_8h.html#a9c0a2e4f02d3d71a1b05838c713cc35b">More...</a><br /></td></tr>
 <tr class="separator:a9c0a2e4f02d3d71a1b05838c713cc35b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80f15ee9484077fa9019537ba1ed05dc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__uuid_8h.html#a80f15ee9484077fa9019537ba1ed05dc">oc_uuid_is_empty</a> (oc_uuid_t uuid)</td></tr>
+<tr class="memdesc:a80f15ee9484077fa9019537ba1ed05dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the uuid is empty.  <a href="oc__uuid_8h.html#a80f15ee9484077fa9019537ba1ed05dc">More...</a><br /></td></tr>
+<tr class="separator:a80f15ee9484077fa9019537ba1ed05dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcd75b7ccb7f94e7c52597672eaf5d17"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__uuid_8h.html#abcd75b7ccb7f94e7c52597672eaf5d17">oc_uuid_is_equal</a> (oc_uuid_t first, oc_uuid_t second)</td></tr>
 <tr class="memdesc:abcd75b7ccb7f94e7c52597672eaf5d17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare two uuid values.  <a href="oc__uuid_8h.html#abcd75b7ccb7f94e7c52597672eaf5d17">More...</a><br /></td></tr>
 <tr class="separator:abcd75b7ccb7f94e7c52597672eaf5d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -234,6 +238,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a80f15ee9484077fa9019537ba1ed05dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80f15ee9484077fa9019537ba1ed05dc">&#9670;&nbsp;</a></span>oc_uuid_is_empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool oc_uuid_is_empty </td>
+          <td>(</td>
+          <td class="paramtype">oc_uuid_t&#160;</td>
+          <td class="paramname"><em>uuid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if the uuid is empty. </p>
+<p>An empty uuid is one that has all its bytes set to zero.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uuid</td><td>A uuid to be checked </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the uuid is empty </dd>
+<dd>
+false Otherwise </dd></dl>
+
+</div>
+</div>
 <a id="abcd75b7ccb7f94e7c52597672eaf5d17"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abcd75b7ccb7f94e7c52597672eaf5d17">&#9670;&nbsp;</a></span>oc_uuid_is_equal()</h2>
 
@@ -351,7 +385,7 @@ false Otherwise </dd></dl>
 <div class="line"><span class="keywordtype">char</span> uuid_str[<a class="code" href="oc__uuid_8h.html#a4e556e036773181af67e69a454667f31">OC_UUID_LEN</a>] = { 0 };</div>
 <div class="line"><a class="code" href="oc__uuid_8h.html#a00eef2b9d45a4473774b3091d1335f52">oc_uuid_to_str_v1</a>(&amp;device_uuid, uuid_str, <a class="code" href="oc__uuid_8h.html#a4e556e036773181af67e69a454667f31">OC_UUID_LEN</a>);</div>
 <div class="ttc" id="aoc__uuid_8h_html_a00eef2b9d45a4473774b3091d1335f52"><div class="ttname"><a href="oc__uuid_8h.html#a00eef2b9d45a4473774b3091d1335f52">oc_uuid_to_str_v1</a></div><div class="ttdeci">int oc_uuid_to_str_v1(const oc_uuid_t *uuid, char *buffer, size_t buflen)</div><div class="ttdoc">Convert the 128 bit oc_uuid_t to a string representation.</div></div>
-<div class="ttc" id="aoc__uuid_8h_html_a4e556e036773181af67e69a454667f31"><div class="ttname"><a href="oc__uuid_8h.html#a4e556e036773181af67e69a454667f31">OC_UUID_LEN</a></div><div class="ttdeci">#define OC_UUID_LEN</div><div class="ttdoc">The length of a UUID string.</div><div class="ttdef"><b>Definition:</b> oc_uuid.h:45</div></div>
+<div class="ttc" id="aoc__uuid_8h_html_a4e556e036773181af67e69a454667f31"><div class="ttname"><a href="oc__uuid_8h.html#a4e556e036773181af67e69a454667f31">OC_UUID_LEN</a></div><div class="ttdeci">#define OC_UUID_LEN</div><div class="ttdoc">The length of a UUID string.</div><div class="ttdef"><b>Definition:</b> oc_uuid.h:46</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir"></td><td class="paramname">uuid</td><td>A oc_uuid_t to convert to a string (cannot be NULL) </td></tr>
@@ -372,7 +406,7 @@ false Otherwise </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__uuid_8h.html">oc_uuid.h</a></li>
-    <li class="footer">Generated on Tue Feb 6 2024 08:23:51 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Feb 8 2024 15:45:26 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
