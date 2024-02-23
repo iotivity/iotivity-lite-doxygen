@@ -82,7 +82,7 @@ $(document).ready(function(){initNavTree('oc__cloud_8h.html',''); initResizable(
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
@@ -95,15 +95,15 @@ $(document).ready(function(){initNavTree('oc__cloud_8h.html',''); initResizable(
 <code>#include &quot;oc_link.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__ri_8h.html">oc_ri.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__session__events_8h.html">oc_session_events.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="oc__uuid_8h.html">oc_uuid.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="oc__compiler_8h.html">util/oc_compiler.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="oc__features_8h.html">util/oc_features.h</a>&quot;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__cloud__keepalive__t.html">oc_cloud_keepalive_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cloud keepalive configuration.  <a href="structoc__cloud__keepalive__t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__cloud__schedule__action__t.html">oc_cloud_schedule_action_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cloud retry configuration structure.  <a href="structoc__cloud__schedule__action__t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga00d5094577efd76a08d9a1ced9ebc479"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloud__servers.html#ga00d5094577efd76a08d9a1ced9ebc479">OC_ENDPOINT_MAX_ENDPOINT_URI_LENGTH</a>&#160;&#160;&#160;OC_MAX_STRING_LENGTH</td></tr>
+<tr class="memdesc:ga00d5094577efd76a08d9a1ced9ebc479"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum length of the cloud server URI.  <a href="group__cloud__servers.html#ga00d5094577efd76a08d9a1ced9ebc479">More...</a><br /></td></tr>
+<tr class="separator:ga00d5094577efd76a08d9a1ced9ebc479"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -113,21 +113,18 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a8c4ed194071f3d1a5d0427a038fe11f9"><td class="memItemLeft" align="right" valign="top"><a id="a8c4ed194071f3d1a5d0427a038fe11f9"></a>
 typedef struct oc_cloud_context_t&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_context_t</b></td></tr>
 <tr class="separator:a8c4ed194071f3d1a5d0427a038fe11f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94a049d676da80d6a4bf80d7832f9a78"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structoc__cloud__keepalive__t.html">oc_cloud_keepalive_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#a94a049d676da80d6a4bf80d7832f9a78">oc_cloud_keepalive_t</a></td></tr>
-<tr class="memdesc:a94a049d676da80d6a4bf80d7832f9a78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cloud keepalive configuration.  <a href="oc__cloud_8h.html#a94a049d676da80d6a4bf80d7832f9a78">More...</a><br /></td></tr>
-<tr class="separator:a94a049d676da80d6a4bf80d7832f9a78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadc43e50f8298bf6c9b873772237d7fa5"><td class="memItemLeft" align="right" valign="top">
+typedef struct oc_cloud_endpoint_t&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_endpoint_t</b></td></tr>
+<tr class="separator:gadc43e50f8298bf6c9b873772237d7fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7f2767850147d7696261e995611e71b1"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloud__servers.html#ga7f2767850147d7696261e995611e71b1">oc_cloud_endpoints_iterate_fn_t</a>) (oc_cloud_endpoint_t *ce, void *data)</td></tr>
+<tr class="memdesc:ga7f2767850147d7696261e995611e71b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback invoked for each endpoint address iterated by oc_cloud_servers_iterate.  <a href="group__cloud__servers.html#ga7f2767850147d7696261e995611e71b1">More...</a><br /></td></tr>
+<tr class="separator:ga7f2767850147d7696261e995611e71b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54aa20e5605a8a73e97d2a2e0d825471"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#a54aa20e5605a8a73e97d2a2e0d825471">oc_cloud_on_keepalive_response_cb_t</a>) (bool response_received, uint64_t *next_ping, uint16_t *next_ping_timeout, void *user_data)</td></tr>
 <tr class="memdesc:a54aa20e5605a8a73e97d2a2e0d825471"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback invoked by the cloud manager when cloud change state to logged in or a keepalive response is received.  <a href="oc__cloud_8h.html#a54aa20e5605a8a73e97d2a2e0d825471">More...</a><br /></td></tr>
 <tr class="separator:a54aa20e5605a8a73e97d2a2e0d825471"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae250b21f9cbe0b7cf12b03920a4e59df"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#ae250b21f9cbe0b7cf12b03920a4e59df">oc_cloud_schedule_action_cb_t</a>) (<a class="el" href="oc__cloud_8h.html#ae7bb003f5acfc1ec1beffc9569f0cc81">oc_cloud_action_t</a> action, uint8_t retry_count, uint64_t *delay, uint16_t *timeout, void *user_data)</td></tr>
 <tr class="memdesc:ae250b21f9cbe0b7cf12b03920a4e59df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback invoked by the cloud manager when the cloud wants to schedule an action.  <a href="oc__cloud_8h.html#ae250b21f9cbe0b7cf12b03920a4e59df">More...</a><br /></td></tr>
 <tr class="separator:ae250b21f9cbe0b7cf12b03920a4e59df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab83065b7cd2192880435e738b2ca4bb8"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structoc__cloud__schedule__action__t.html">oc_cloud_schedule_action_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#ab83065b7cd2192880435e738b2ca4bb8">oc_cloud_schedule_action_t</a></td></tr>
-<tr class="memdesc:ab83065b7cd2192880435e738b2ca4bb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cloud retry configuration structure.  <a href="oc__cloud_8h.html#ab83065b7cd2192880435e738b2ca4bb8">More...</a><br /></td></tr>
-<tr class="separator:ab83065b7cd2192880435e738b2ca4bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1dff8b6f801ef058df036f456ef64e68"><td class="memItemLeft" align="right" valign="top"><a id="a1dff8b6f801ef058df036f456ef64e68"></a>
-typedef struct oc_cloud_store_t&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_store_t</b></td></tr>
-<tr class="separator:a1dff8b6f801ef058df036f456ef64e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f56ab995faf8983b2bf923ac9f09de4"><td class="memItemLeft" align="right" valign="top"><a id="a9f56ab995faf8983b2bf923ac9f09de4"></a>
 typedef enum oc_cps_t&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cps_t</b></td></tr>
 <tr class="separator:a9f56ab995faf8983b2bf923ac9f09de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,12 +176,15 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0a60ad2a21454094bbe54f90d317d650"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#a0a60ad2a21454094bbe54f90d317d650">oc_cloud_action_to_str</a> (<a class="el" href="oc__cloud_8h.html#ae7bb003f5acfc1ec1beffc9569f0cc81">oc_cloud_action_t</a> action)</td></tr>
-<tr class="memdesc:a0a60ad2a21454094bbe54f90d317d650"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert cloud action to a string representation.  <a href="oc__cloud_8h.html#a0a60ad2a21454094bbe54f90d317d650">More...</a><br /></td></tr>
-<tr class="separator:a0a60ad2a21454094bbe54f90d317d650"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e831803477018aa07c169b6e877a0e8"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#a9e831803477018aa07c169b6e877a0e8">oc_cloud_action_to_str</a> (<a class="el" href="oc__cloud_8h.html#ae7bb003f5acfc1ec1beffc9569f0cc81">oc_cloud_action_t</a> action) 1</td></tr>
+<tr class="memdesc:a9e831803477018aa07c169b6e877a0e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert cloud action to a string representation.  <a href="oc__cloud_8h.html#a9e831803477018aa07c169b6e877a0e8">More...</a><br /></td></tr>
+<tr class="separator:a9e831803477018aa07c169b6e877a0e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af782586d01601ce903e4aad77ffeca42"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#af782586d01601ce903e4aad77ffeca42">oc_cloud_add_resource</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
 <tr class="memdesc:af782586d01601ce903e4aad77ffeca42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publish resource to cloud.  <a href="oc__cloud_8h.html#af782586d01601ce903e4aad77ffeca42">More...</a><br /></td></tr>
 <tr class="separator:af782586d01601ce903e4aad77ffeca42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9d4e63e6320a68855cff369d95bb3854"><td class="memItemLeft" align="right" valign="top">oc_cloud_endpoint_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloud__servers.html#ga9d4e63e6320a68855cff369d95bb3854">oc_cloud_add_server</a> (oc_cloud_context_t *ctx, const char *uri, size_t uri_len, oc_uuid_t sid)</td></tr>
+<tr class="memdesc:ga9d4e63e6320a68855cff369d95bb3854"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate and add an endpoint address to the list of cloud servers.  <a href="group__cloud__servers.html#ga9d4e63e6320a68855cff369d95bb3854">More...</a><br /></td></tr>
+<tr class="separator:ga9d4e63e6320a68855cff369d95bb3854"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace56b587071901804fc58dc8426b92ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#ace56b587071901804fc58dc8426b92ae">oc_cloud_context_clear</a> (oc_cloud_context_t *ctx, bool dump_async)</td></tr>
 <tr class="memdesc:ace56b587071901804fc58dc8426b92ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove cloud context values, disconnect, and stop the cloud manager, without releasing the context.  <a href="oc__cloud_8h.html#ace56b587071901804fc58dc8426b92ae">More...</a><br /></td></tr>
 <tr class="separator:ace56b587071901804fc58dc8426b92ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -197,15 +197,45 @@ Functions</h2></td></tr>
 <tr class="memitem:a2087d44f5b483d5f0d8ba8ff77421a50"><td class="memItemLeft" align="right" valign="top"><a id="a2087d44f5b483d5f0d8ba8ff77421a50"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_discover_resources</b> (const oc_cloud_context_t *ctx, <a class="el" href="oc__client__state_8h.html#af8f929c346d4b6934a7d16d1a37d30d2">oc_discovery_all_handler_t</a> handler, void *user_data)</td></tr>
 <tr class="separator:a2087d44f5b483d5f0d8ba8ff77421a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3df0e492a655492aee21c7b3e5020ad9"><td class="memItemLeft" align="right" valign="top">oc_uuid_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloud__servers.html#ga3df0e492a655492aee21c7b3e5020ad9">oc_cloud_endpoint_id</a> (const oc_cloud_endpoint_t *ce)</td></tr>
+<tr class="memdesc:ga3df0e492a655492aee21c7b3e5020ad9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ID of the cloud endpoint.  <a href="group__cloud__servers.html#ga3df0e492a655492aee21c7b3e5020ad9">More...</a><br /></td></tr>
+<tr class="separator:ga3df0e492a655492aee21c7b3e5020ad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6606b81ea97993900af3096d920665d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloud__servers.html#ga6606b81ea97993900af3096d920665d5">oc_cloud_endpoint_set_id</a> (oc_cloud_endpoint_t *ce, oc_uuid_t id)</td></tr>
+<tr class="memdesc:ga6606b81ea97993900af3096d920665d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the ID of the cloud endpoint.  <a href="group__cloud__servers.html#ga6606b81ea97993900af3096d920665d5">More...</a><br /></td></tr>
+<tr class="separator:ga6606b81ea97993900af3096d920665d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga52cadba3fd54fc8b46fe4f1d2fd69efa"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structoc__mmem.html">oc_string_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloud__servers.html#ga52cadba3fd54fc8b46fe4f1d2fd69efa">oc_cloud_endpoint_uri</a> (const oc_cloud_endpoint_t *ce)</td></tr>
+<tr class="memdesc:ga52cadba3fd54fc8b46fe4f1d2fd69efa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the address of the cloud endpoint.  <a href="group__cloud__servers.html#ga52cadba3fd54fc8b46fe4f1d2fd69efa">More...</a><br /></td></tr>
+<tr class="separator:ga52cadba3fd54fc8b46fe4f1d2fd69efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09b00717b1d4188b10e2a40c2ad94691"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#a09b00717b1d4188b10e2a40c2ad94691">oc_cloud_get_apn</a> (const oc_cloud_context_t *ctx)</td></tr>
+<tr class="memdesc:a09b00717b1d4188b10e2a40c2ad94691"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get authorization provider name.  <a href="oc__cloud_8h.html#a09b00717b1d4188b10e2a40c2ad94691">More...</a><br /></td></tr>
+<tr class="separator:a09b00717b1d4188b10e2a40c2ad94691"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf465e215aa226af362b4dc5c5e4a6c7"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#abf465e215aa226af362b4dc5c5e4a6c7">oc_cloud_get_at</a> (const oc_cloud_context_t *ctx)</td></tr>
+<tr class="memdesc:abf465e215aa226af362b4dc5c5e4a6c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the access token.  <a href="oc__cloud_8h.html#abf465e215aa226af362b4dc5c5e4a6c7">More...</a><br /></td></tr>
+<tr class="separator:abf465e215aa226af362b4dc5c5e4a6c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2ae64c4bd318d70673d10f010264f38"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#af2ae64c4bd318d70673d10f010264f38">oc_cloud_get_cis</a> (const oc_cloud_context_t *ctx)</td></tr>
+<tr class="memdesc:af2ae64c4bd318d70673d10f010264f38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the URL of the OCF Cloud.  <a href="oc__cloud_8h.html#af2ae64c4bd318d70673d10f010264f38">More...</a><br /></td></tr>
+<tr class="separator:af2ae64c4bd318d70673d10f010264f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83abbc37f00ba1497cecb555bb7f71b6"><td class="memItemLeft" align="right" valign="top">oc_cloud_context_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#a83abbc37f00ba1497cecb555bb7f71b6">oc_cloud_get_context</a> (size_t device)</td></tr>
 <tr class="memdesc:a83abbc37f00ba1497cecb555bb7f71b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get cloud context for device.  <a href="oc__cloud_8h.html#a83abbc37f00ba1497cecb555bb7f71b6">More...</a><br /></td></tr>
 <tr class="separator:a83abbc37f00ba1497cecb555bb7f71b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefe847bf7a33c0196e722f39ceba86e4"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#aefe847bf7a33c0196e722f39ceba86e4">oc_cloud_get_device</a> (const oc_cloud_context_t *ctx)</td></tr>
+<tr class="memdesc:aefe847bf7a33c0196e722f39ceba86e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get device index from cloud context.  <a href="oc__cloud_8h.html#aefe847bf7a33c0196e722f39ceba86e4">More...</a><br /></td></tr>
+<tr class="separator:aefe847bf7a33c0196e722f39ceba86e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab129bab5e687888cad796c92ba2c0b1f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#ab129bab5e687888cad796c92ba2c0b1f">oc_cloud_get_identity_cert_chain</a> (const oc_cloud_context_t *ctx)</td></tr>
 <tr class="memdesc:ab129bab5e687888cad796c92ba2c0b1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get selected identity certificate chain to establish TLS connection.  <a href="oc__cloud_8h.html#ab129bab5e687888cad796c92ba2c0b1f">More...</a><br /></td></tr>
 <tr class="separator:ab129bab5e687888cad796c92ba2c0b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c2b7438c86bcf26adc9eae13924e654"><td class="memItemLeft" align="right" valign="top"><a id="a1c2b7438c86bcf26adc9eae13924e654"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_get_token_expiry</b> (const oc_cloud_context_t *ctx)</td></tr>
+<tr class="memitem:a68b409e09384961557ef4aefe1783ddd"><td class="memItemLeft" align="right" valign="top">const oc_uuid_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#a68b409e09384961557ef4aefe1783ddd">oc_cloud_get_sid</a> (const oc_cloud_context_t *ctx)</td></tr>
+<tr class="memdesc:a68b409e09384961557ef4aefe1783ddd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the identity of the OCF Cloud.  <a href="oc__cloud_8h.html#a68b409e09384961557ef4aefe1783ddd">More...</a><br /></td></tr>
+<tr class="separator:a68b409e09384961557ef4aefe1783ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c2b7438c86bcf26adc9eae13924e654"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#a1c2b7438c86bcf26adc9eae13924e654">oc_cloud_get_token_expiry</a> (const oc_cloud_context_t *ctx)</td></tr>
+<tr class="memdesc:a1c2b7438c86bcf26adc9eae13924e654"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get access token expiration (in seconds).  <a href="oc__cloud_8h.html#a1c2b7438c86bcf26adc9eae13924e654">More...</a><br /></td></tr>
 <tr class="separator:a1c2b7438c86bcf26adc9eae13924e654"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21da223aaaffad216d5e610bbea0b57b"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#a21da223aaaffad216d5e610bbea0b57b">oc_cloud_get_uid</a> (const oc_cloud_context_t *ctx)</td></tr>
+<tr class="memdesc:a21da223aaaffad216d5e610bbea0b57b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the OCF Cloud User identifier.  <a href="oc__cloud_8h.html#a21da223aaaffad216d5e610bbea0b57b">More...</a><br /></td></tr>
+<tr class="separator:a21da223aaaffad216d5e610bbea0b57b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa6d0c2d165c328d345875b9d292fb20a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloud__servers.html#gaa6d0c2d165c328d345875b9d292fb20a">oc_cloud_iterate_servers</a> (const oc_cloud_context_t *ctx, <a class="el" href="group__cloud__servers.html#ga7f2767850147d7696261e995611e71b1">oc_cloud_endpoints_iterate_fn_t</a> fn, void *data)</td></tr>
+<tr class="memdesc:gaa6d0c2d165c328d345875b9d292fb20a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate over cloud servers.  <a href="group__cloud__servers.html#gaa6d0c2d165c328d345875b9d292fb20a">More...</a><br /></td></tr>
+<tr class="separator:gaa6d0c2d165c328d345875b9d292fb20a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae88aa9c13dbd2e514b0cd342dfcfe0a7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#ae88aa9c13dbd2e514b0cd342dfcfe0a7">oc_cloud_login</a> (oc_cloud_context_t *ctx, <a class="el" href="oc__cloud_8h.html#adaa6e94d3d339e364a392045fbc78969">oc_cloud_cb_t</a> cb, void *data)</td></tr>
 <tr class="memdesc:ae88aa9c13dbd2e514b0cd342dfcfe0a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send request to sign in the device to the cloud.  <a href="oc__cloud_8h.html#ae88aa9c13dbd2e514b0cd342dfcfe0a7">More...</a><br /></td></tr>
 <tr class="separator:ae88aa9c13dbd2e514b0cd342dfcfe0a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -233,6 +263,15 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_get_token_exp
 <tr class="memitem:a784e69b8cee199202ccea3ebc9449416"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#a784e69b8cee199202ccea3ebc9449416">oc_cloud_register</a> (oc_cloud_context_t *ctx, <a class="el" href="oc__cloud_8h.html#adaa6e94d3d339e364a392045fbc78969">oc_cloud_cb_t</a> cb, void *data)</td></tr>
 <tr class="memdesc:a784e69b8cee199202ccea3ebc9449416"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send request to register device to cloud.  <a href="oc__cloud_8h.html#a784e69b8cee199202ccea3ebc9449416">More...</a><br /></td></tr>
 <tr class="separator:a784e69b8cee199202ccea3ebc9449416"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga20f0cb3b6eb812959404647f6332e403"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloud__servers.html#ga20f0cb3b6eb812959404647f6332e403">oc_cloud_remove_server</a> (oc_cloud_context_t *ctx, const oc_cloud_endpoint_t *ce)</td></tr>
+<tr class="memdesc:ga20f0cb3b6eb812959404647f6332e403"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove an endpoint address from the list of cloud servers.  <a href="group__cloud__servers.html#ga20f0cb3b6eb812959404647f6332e403">More...</a><br /></td></tr>
+<tr class="separator:ga20f0cb3b6eb812959404647f6332e403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae5ea2cd1f3f907e0e80d139fb390c528"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloud__servers.html#gae5ea2cd1f3f907e0e80d139fb390c528">oc_cloud_select_server</a> (oc_cloud_context_t *ctx, const oc_cloud_endpoint_t *server)</td></tr>
+<tr class="memdesc:gae5ea2cd1f3f907e0e80d139fb390c528"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select a cloud server from the list of cloud servers.  <a href="group__cloud__servers.html#gae5ea2cd1f3f907e0e80d139fb390c528">More...</a><br /></td></tr>
+<tr class="separator:gae5ea2cd1f3f907e0e80d139fb390c528"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaffc61076d32998b21fc220690f7af5e1"><td class="memItemLeft" align="right" valign="top">const oc_cloud_endpoint_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloud__servers.html#gaffc61076d32998b21fc220690f7af5e1">oc_cloud_selected_server</a> (const oc_cloud_context_t *ctx)</td></tr>
+<tr class="memdesc:gaffc61076d32998b21fc220690f7af5e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the selected cloud server.  <a href="group__cloud__servers.html#gaffc61076d32998b21fc220690f7af5e1">More...</a><br /></td></tr>
+<tr class="separator:gaffc61076d32998b21fc220690f7af5e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1e36c7e515b2ba14145c46bbbd6c6f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#aa1e36c7e515b2ba14145c46bbbd6c6f5">oc_cloud_set_identity_cert_chain</a> (oc_cloud_context_t *ctx, int selected_identity_cred_id)</td></tr>
 <tr class="memdesc:aa1e36c7e515b2ba14145c46bbbd6c6f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set identity certificate chain to establish TLS connection.  <a href="oc__cloud_8h.html#aa1e36c7e515b2ba14145c46bbbd6c6f5">More...</a><br /></td></tr>
 <tr class="separator:aa1e36c7e515b2ba14145c46bbbd6c6f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -268,22 +307,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_get_token_exp
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a94a049d676da80d6a4bf80d7832f9a78"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94a049d676da80d6a4bf80d7832f9a78">&#9670;&nbsp;</a></span>oc_cloud_keepalive_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef struct <a class="el" href="structoc__cloud__keepalive__t.html">oc_cloud_keepalive_t</a> <a class="el" href="structoc__cloud__keepalive__t.html">oc_cloud_keepalive_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Cloud keepalive configuration. </p>
 
 </div>
 </div>
@@ -340,22 +363,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_get_token_exp
 
 </div>
 </div>
-<a id="ab83065b7cd2192880435e738b2ca4bb8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab83065b7cd2192880435e738b2ca4bb8">&#9670;&nbsp;</a></span>oc_cloud_schedule_action_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef struct <a class="el" href="structoc__cloud__schedule__action__t.html">oc_cloud_schedule_action_t</a> <a class="el" href="structoc__cloud__schedule__action__t.html">oc_cloud_schedule_action_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Cloud retry configuration structure. </p>
-
-</div>
-</div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="ae7bb003f5acfc1ec1beffc9569f0cc81"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae7bb003f5acfc1ec1beffc9569f0cc81">&#9670;&nbsp;</a></span>oc_cloud_action_t</h2>
@@ -400,8 +407,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_get_token_exp
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a0a60ad2a21454094bbe54f90d317d650"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a60ad2a21454094bbe54f90d317d650">&#9670;&nbsp;</a></span>oc_cloud_action_to_str()</h2>
+<a id="a9e831803477018aa07c169b6e877a0e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e831803477018aa07c169b6e877a0e8">&#9670;&nbsp;</a></span>oc_cloud_action_to_str()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -569,6 +576,92 @@ int -1 on error</dd></dl>
 
 </div>
 </div>
+<a id="a09b00717b1d4188b10e2a40c2ad94691"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09b00717b1d4188b10e2a40c2ad94691">&#9670;&nbsp;</a></span>oc_cloud_get_apn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* oc_cloud_get_apn </td>
+          <td>(</td>
+          <td class="paramtype">const oc_cloud_context_t *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get authorization provider name. </p>
+<p>The name of the Authorisation Provider through which access token was obtained.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>cloud context (cannot be NULL) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>auth provider ID</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><code>apn</code> property in the cloud configuration resource </dd></dl>
+
+</div>
+</div>
+<a id="abf465e215aa226af362b4dc5c5e4a6c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf465e215aa226af362b4dc5c5e4a6c7">&#9670;&nbsp;</a></span>oc_cloud_get_at()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* oc_cloud_get_at </td>
+          <td>(</td>
+          <td class="paramtype">const oc_cloud_context_t *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the access token. </p>
+<p>Access token is returned by an Authorisation Provider or an OCF Cloud.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>cloud context (cannot be NULL) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>access token</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><code>at</code> property in the cloud configuration resource </dd></dl>
+
+</div>
+</div>
+<a id="af2ae64c4bd318d70673d10f010264f38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2ae64c4bd318d70673d10f010264f38">&#9670;&nbsp;</a></span>oc_cloud_get_cis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* oc_cloud_get_cis </td>
+          <td>(</td>
+          <td class="paramtype">const oc_cloud_context_t *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the URL of the OCF Cloud. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>cloud context (cannot be NULL) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>cloud interface server URL</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><code>cis</code> property in the cloud configuration resource </dd></dl>
+
+</div>
+</div>
 <a id="a83abbc37f00ba1497cecb555bb7f71b6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a83abbc37f00ba1497cecb555bb7f71b6">&#9670;&nbsp;</a></span>oc_cloud_get_context()</h2>
 
@@ -586,6 +679,33 @@ int -1 on error</dd></dl>
 </div><div class="memdoc">
 
 <p>Get cloud context for device. </p>
+
+</div>
+</div>
+<a id="aefe847bf7a33c0196e722f39ceba86e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefe847bf7a33c0196e722f39ceba86e4">&#9670;&nbsp;</a></span>oc_cloud_get_device()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t oc_cloud_get_device </td>
+          <td>(</td>
+          <td class="paramtype">const oc_cloud_context_t *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get device index from cloud context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>cloud context (cannot be NULL) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>size_t device index </dd></dl>
 
 </div>
 </div>
@@ -613,6 +733,84 @@ int -1 on error</dd></dl>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Selected identity certificate chain id. -1 means any. </dd></dl>
+
+</div>
+</div>
+<a id="a68b409e09384961557ef4aefe1783ddd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68b409e09384961557ef4aefe1783ddd">&#9670;&nbsp;</a></span>oc_cloud_get_sid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const oc_uuid_t* oc_cloud_get_sid </td>
+          <td>(</td>
+          <td class="paramtype">const oc_cloud_context_t *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the identity of the OCF Cloud. </p>
+<p>The ID is in the string form of a UUID.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>cloud context (cannot be NULL) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>identity of the OCF Cloud</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><code>sid</code> property in the cloud configuration resource </dd></dl>
+
+</div>
+</div>
+<a id="a1c2b7438c86bcf26adc9eae13924e654"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c2b7438c86bcf26adc9eae13924e654">&#9670;&nbsp;</a></span>oc_cloud_get_token_expiry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int oc_cloud_get_token_expiry </td>
+          <td>(</td>
+          <td class="paramtype">const oc_cloud_context_t *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get access token expiration (in seconds). </p>
+
+</div>
+</div>
+<a id="a21da223aaaffad216d5e610bbea0b57b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21da223aaaffad216d5e610bbea0b57b">&#9670;&nbsp;</a></span>oc_cloud_get_uid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* oc_cloud_get_uid </td>
+          <td>(</td>
+          <td class="paramtype">const oc_cloud_context_t *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the OCF Cloud User identifier. </p>
+<p>The ID is in the string form of a UUID.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>cloud context (cannot be NULL) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>identity of the OCF Cloud</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><code>uid</code> property in the cloud configuration resource </dd></dl>
 
 </div>
 </div>
@@ -1167,7 +1365,7 @@ int -1 on error </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__cloud_8h.html">oc_cloud.h</a></li>
-    <li class="footer">Generated on Thu Feb 8 2024 15:45:26 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Feb 23 2024 12:48:23 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
