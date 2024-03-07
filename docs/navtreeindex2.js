@@ -45,7 +45,7 @@ var NAVTREEINDEX2 =
 "oc__base64_8h.html#adf19a63fa0c1ca35d19f254a5b564554":[4,0,7,6],
 "oc__base64_8h.html#ae2a29fa32e9e60cd25d61cb172bf947d":[4,0,7,1],
 "oc__buffer_8h.html":[4,0,8],
-"oc__buffer_8h.html#a25c34e4e33b154eff1c96692862ec982":[4,0,8,1],
+"oc__buffer_8h.html#a2da57e0534d85784b44bd6c7219e6fc2":[4,0,8,1],
 "oc__buffer_8h.html#a35317137d7cca0dd2b87c0270072ee68":[4,0,8,3],
 "oc__buffer_8h.html#a37e19865062c4b33fced542a50cb0a7c":[4,0,8,0],
 "oc__buffer_8h.html#a426f39aecad17d8965a4c40bc4e8c115":[4,0,8,4],
