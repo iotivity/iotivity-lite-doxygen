@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['iotivity_2dlite_20api_2125',['IoTivity-Lite API',['../index.html',1,'']]]
+  ['iotivity_2dlite_20api_2127',['IoTivity-Lite API',['../index.html',1,'']]]
 ];
