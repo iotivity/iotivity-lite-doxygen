@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>IoTivity-Lite: Support for multiple cloud servers</title>
+<title>IoTivity-Lite: Support for multiple cloud server addresses</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -82,110 +82,40 @@ $(document).ready(function(){initNavTree('group__cloud__servers.html',''); initR
 
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Support for multiple cloud servers</div>  </div>
+<div class="title">Support for multiple cloud server addresses</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ga00d5094577efd76a08d9a1ced9ebc479"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloud__servers.html#ga00d5094577efd76a08d9a1ced9ebc479">OC_ENDPOINT_MAX_ENDPOINT_URI_LENGTH</a>&#160;&#160;&#160;OC_MAX_STRING_LENGTH</td></tr>
-<tr class="memdesc:ga00d5094577efd76a08d9a1ced9ebc479"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum length of the cloud server URI.  <a href="group__cloud__servers.html#ga00d5094577efd76a08d9a1ced9ebc479">More...</a><br /></td></tr>
-<tr class="separator:ga00d5094577efd76a08d9a1ced9ebc479"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:gadc43e50f8298bf6c9b873772237d7fa5"><td class="memItemLeft" align="right" valign="top"><a id="gadc43e50f8298bf6c9b873772237d7fa5"></a>
-typedef struct oc_cloud_endpoint_t&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_endpoint_t</b></td></tr>
-<tr class="separator:gadc43e50f8298bf6c9b873772237d7fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7f2767850147d7696261e995611e71b1"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloud__servers.html#ga7f2767850147d7696261e995611e71b1">oc_cloud_endpoints_iterate_fn_t</a>) (oc_cloud_endpoint_t *ce, void *data)</td></tr>
-<tr class="memdesc:ga7f2767850147d7696261e995611e71b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback invoked for each endpoint address iterated by oc_cloud_servers_iterate.  <a href="group__cloud__servers.html#ga7f2767850147d7696261e995611e71b1">More...</a><br /></td></tr>
-<tr class="separator:ga7f2767850147d7696261e995611e71b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga9d4e63e6320a68855cff369d95bb3854"><td class="memItemLeft" align="right" valign="top">oc_cloud_endpoint_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloud__servers.html#ga9d4e63e6320a68855cff369d95bb3854">oc_cloud_add_server</a> (oc_cloud_context_t *ctx, const char *uri, size_t uri_len, oc_uuid_t sid)</td></tr>
-<tr class="memdesc:ga9d4e63e6320a68855cff369d95bb3854"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate and add an endpoint address to the list of cloud servers.  <a href="group__cloud__servers.html#ga9d4e63e6320a68855cff369d95bb3854">More...</a><br /></td></tr>
-<tr class="separator:ga9d4e63e6320a68855cff369d95bb3854"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3df0e492a655492aee21c7b3e5020ad9"><td class="memItemLeft" align="right" valign="top">oc_uuid_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloud__servers.html#ga3df0e492a655492aee21c7b3e5020ad9">oc_cloud_endpoint_id</a> (const oc_cloud_endpoint_t *ce)</td></tr>
-<tr class="memdesc:ga3df0e492a655492aee21c7b3e5020ad9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ID of the cloud endpoint.  <a href="group__cloud__servers.html#ga3df0e492a655492aee21c7b3e5020ad9">More...</a><br /></td></tr>
-<tr class="separator:ga3df0e492a655492aee21c7b3e5020ad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6606b81ea97993900af3096d920665d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloud__servers.html#ga6606b81ea97993900af3096d920665d5">oc_cloud_endpoint_set_id</a> (oc_cloud_endpoint_t *ce, oc_uuid_t id)</td></tr>
-<tr class="memdesc:ga6606b81ea97993900af3096d920665d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the ID of the cloud endpoint.  <a href="group__cloud__servers.html#ga6606b81ea97993900af3096d920665d5">More...</a><br /></td></tr>
-<tr class="separator:ga6606b81ea97993900af3096d920665d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga52cadba3fd54fc8b46fe4f1d2fd69efa"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structoc__mmem.html">oc_string_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloud__servers.html#ga52cadba3fd54fc8b46fe4f1d2fd69efa">oc_cloud_endpoint_uri</a> (const oc_cloud_endpoint_t *ce)</td></tr>
-<tr class="memdesc:ga52cadba3fd54fc8b46fe4f1d2fd69efa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the address of the cloud endpoint.  <a href="group__cloud__servers.html#ga52cadba3fd54fc8b46fe4f1d2fd69efa">More...</a><br /></td></tr>
-<tr class="separator:ga52cadba3fd54fc8b46fe4f1d2fd69efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa6d0c2d165c328d345875b9d292fb20a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloud__servers.html#gaa6d0c2d165c328d345875b9d292fb20a">oc_cloud_iterate_servers</a> (const oc_cloud_context_t *ctx, <a class="el" href="group__cloud__servers.html#ga7f2767850147d7696261e995611e71b1">oc_cloud_endpoints_iterate_fn_t</a> fn, void *data)</td></tr>
-<tr class="memdesc:gaa6d0c2d165c328d345875b9d292fb20a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate over cloud servers.  <a href="group__cloud__servers.html#gaa6d0c2d165c328d345875b9d292fb20a">More...</a><br /></td></tr>
-<tr class="separator:gaa6d0c2d165c328d345875b9d292fb20a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga20f0cb3b6eb812959404647f6332e403"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloud__servers.html#ga20f0cb3b6eb812959404647f6332e403">oc_cloud_remove_server</a> (oc_cloud_context_t *ctx, const oc_cloud_endpoint_t *ce)</td></tr>
-<tr class="memdesc:ga20f0cb3b6eb812959404647f6332e403"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove an endpoint address from the list of cloud servers.  <a href="group__cloud__servers.html#ga20f0cb3b6eb812959404647f6332e403">More...</a><br /></td></tr>
-<tr class="separator:ga20f0cb3b6eb812959404647f6332e403"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae5ea2cd1f3f907e0e80d139fb390c528"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloud__servers.html#gae5ea2cd1f3f907e0e80d139fb390c528">oc_cloud_select_server</a> (oc_cloud_context_t *ctx, const oc_cloud_endpoint_t *server)</td></tr>
-<tr class="memdesc:gae5ea2cd1f3f907e0e80d139fb390c528"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select a cloud server from the list of cloud servers.  <a href="group__cloud__servers.html#gae5ea2cd1f3f907e0e80d139fb390c528">More...</a><br /></td></tr>
-<tr class="separator:gae5ea2cd1f3f907e0e80d139fb390c528"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaffc61076d32998b21fc220690f7af5e1"><td class="memItemLeft" align="right" valign="top">const oc_cloud_endpoint_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloud__servers.html#gaffc61076d32998b21fc220690f7af5e1">oc_cloud_selected_server</a> (const oc_cloud_context_t *ctx)</td></tr>
-<tr class="memdesc:gaffc61076d32998b21fc220690f7af5e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the selected cloud server.  <a href="group__cloud__servers.html#gaffc61076d32998b21fc220690f7af5e1">More...</a><br /></td></tr>
-<tr class="separator:gaffc61076d32998b21fc220690f7af5e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7385ffeb97e21a5822d5846c50c1105b"><td class="memItemLeft" align="right" valign="top">oc_endpoint_address_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloud__servers.html#ga7385ffeb97e21a5822d5846c50c1105b">oc_cloud_add_server_address</a> (oc_cloud_context_t *ctx, const char *uri, size_t uri_len, oc_uuid_t sid)</td></tr>
+<tr class="memdesc:ga7385ffeb97e21a5822d5846c50c1105b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate and add an endpoint address to the list of cloud server addresses.  <a href="group__cloud__servers.html#ga7385ffeb97e21a5822d5846c50c1105b">More...</a><br /></td></tr>
+<tr class="separator:ga7385ffeb97e21a5822d5846c50c1105b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga13a76b3cb6bb252ae6a027ea35fa4d65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloud__servers.html#ga13a76b3cb6bb252ae6a027ea35fa4d65">oc_cloud_iterate_server_addresses</a> (const oc_cloud_context_t *ctx, oc_endpoint_addresses_iterate_fn_t fn, void *data)</td></tr>
+<tr class="memdesc:ga13a76b3cb6bb252ae6a027ea35fa4d65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate over cloud server addresses.  <a href="group__cloud__servers.html#ga13a76b3cb6bb252ae6a027ea35fa4d65">More...</a><br /></td></tr>
+<tr class="separator:ga13a76b3cb6bb252ae6a027ea35fa4d65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf7ab3920f64044b8f2c22004f60ed803"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloud__servers.html#gaf7ab3920f64044b8f2c22004f60ed803">oc_cloud_remove_server_address</a> (oc_cloud_context_t *ctx, const oc_endpoint_address_t *ea)</td></tr>
+<tr class="memdesc:gaf7ab3920f64044b8f2c22004f60ed803"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove an endpoint address from the list of cloud server addresses.  <a href="group__cloud__servers.html#gaf7ab3920f64044b8f2c22004f60ed803">More...</a><br /></td></tr>
+<tr class="separator:gaf7ab3920f64044b8f2c22004f60ed803"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9281811d788db6e1d6d33342e9f63162"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloud__servers.html#ga9281811d788db6e1d6d33342e9f63162">oc_cloud_select_server_address</a> (oc_cloud_context_t *ctx, const oc_endpoint_address_t *ea)</td></tr>
+<tr class="memdesc:ga9281811d788db6e1d6d33342e9f63162"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select an address from the list of cloud server addresses.  <a href="group__cloud__servers.html#ga9281811d788db6e1d6d33342e9f63162">More...</a><br /></td></tr>
+<tr class="separator:ga9281811d788db6e1d6d33342e9f63162"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf09d3a33872a0284df4a4a1cc1191102"><td class="memItemLeft" align="right" valign="top">const oc_endpoint_address_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloud__servers.html#gaf09d3a33872a0284df4a4a1cc1191102">oc_cloud_selected_server_address</a> (const oc_cloud_context_t *ctx)</td></tr>
+<tr class="memdesc:gaf09d3a33872a0284df4a4a1cc1191102"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the selected cloud server address.  <a href="group__cloud__servers.html#gaf09d3a33872a0284df4a4a1cc1191102">More...</a><br /></td></tr>
+<tr class="separator:gaf09d3a33872a0284df4a4a1cc1191102"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ga00d5094577efd76a08d9a1ced9ebc479"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga00d5094577efd76a08d9a1ced9ebc479">&#9670;&nbsp;</a></span>OC_ENDPOINT_MAX_ENDPOINT_URI_LENGTH</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define OC_ENDPOINT_MAX_ENDPOINT_URI_LENGTH&#160;&#160;&#160;OC_MAX_STRING_LENGTH</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Maximum length of the cloud server URI. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a id="ga7f2767850147d7696261e995611e71b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7f2767850147d7696261e995611e71b1">&#9670;&nbsp;</a></span>oc_cloud_endpoints_iterate_fn_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef bool(* oc_cloud_endpoints_iterate_fn_t) (oc_cloud_endpoint_t *ce, void *data)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Callback invoked for each endpoint address iterated by oc_cloud_servers_iterate. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ce</td><td>cloud endpoint to process </td></tr>
-    <tr><td class="paramname">data</td><td>custom user data provided to oc_cloud_servers_iterate </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true to continue iteration </dd>
-<dd>
-false to stop iteration </dd></dl>
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga9d4e63e6320a68855cff369d95bb3854"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9d4e63e6320a68855cff369d95bb3854">&#9670;&nbsp;</a></span>oc_cloud_add_server()</h2>
+<a id="ga7385ffeb97e21a5822d5846c50c1105b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7385ffeb97e21a5822d5846c50c1105b">&#9670;&nbsp;</a></span>oc_cloud_add_server_address()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">oc_cloud_endpoint_t* oc_cloud_add_server </td>
+          <td class="memname">oc_endpoint_address_t* oc_cloud_add_server_address </td>
           <td>(</td>
           <td class="paramtype">oc_cloud_context_t *&#160;</td>
           <td class="paramname"><em>ctx</em>, </td>
@@ -216,7 +146,7 @@ false to stop iteration </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Allocate and add an endpoint address to the list of cloud servers. </p>
+<p>Allocate and add an endpoint address to the list of cloud server addresses. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ctx</td><td>cloud context (cannot be NULL) </td></tr>
@@ -226,90 +156,20 @@ false to stop iteration </dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>oc_cloud_endpoint_t* pointer to the allocated cloud endpoint </dd>
+<dl class="section return"><dt>Returns</dt><dd>oc_endpoint_address_t* pointer to the allocated cloud address </dd>
 <dd>
 NULL on failure </dd></dl>
 
 </div>
 </div>
-<a id="ga3df0e492a655492aee21c7b3e5020ad9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3df0e492a655492aee21c7b3e5020ad9">&#9670;&nbsp;</a></span>oc_cloud_endpoint_id()</h2>
+<a id="ga13a76b3cb6bb252ae6a027ea35fa4d65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga13a76b3cb6bb252ae6a027ea35fa4d65">&#9670;&nbsp;</a></span>oc_cloud_iterate_server_addresses()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">oc_uuid_t oc_cloud_endpoint_id </td>
-          <td>(</td>
-          <td class="paramtype">const oc_cloud_endpoint_t *&#160;</td>
-          <td class="paramname"><em>ce</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the ID of the cloud endpoint. </p>
-
-</div>
-</div>
-<a id="ga6606b81ea97993900af3096d920665d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6606b81ea97993900af3096d920665d5">&#9670;&nbsp;</a></span>oc_cloud_endpoint_set_id()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void oc_cloud_endpoint_set_id </td>
-          <td>(</td>
-          <td class="paramtype">oc_cloud_endpoint_t *&#160;</td>
-          <td class="paramname"><em>ce</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">oc_uuid_t&#160;</td>
-          <td class="paramname"><em>id</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set the ID of the cloud endpoint. </p>
-
-</div>
-</div>
-<a id="ga52cadba3fd54fc8b46fe4f1d2fd69efa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga52cadba3fd54fc8b46fe4f1d2fd69efa">&#9670;&nbsp;</a></span>oc_cloud_endpoint_uri()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="structoc__mmem.html">oc_string_t</a>* oc_cloud_endpoint_uri </td>
-          <td>(</td>
-          <td class="paramtype">const oc_cloud_endpoint_t *&#160;</td>
-          <td class="paramname"><em>ce</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the address of the cloud endpoint. </p>
-
-</div>
-</div>
-<a id="gaa6d0c2d165c328d345875b9d292fb20a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa6d0c2d165c328d345875b9d292fb20a">&#9670;&nbsp;</a></span>oc_cloud_iterate_servers()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void oc_cloud_iterate_servers </td>
+          <td class="memname">void oc_cloud_iterate_server_addresses </td>
           <td>(</td>
           <td class="paramtype">const oc_cloud_context_t *&#160;</td>
           <td class="paramname"><em>ctx</em>, </td>
@@ -317,7 +177,7 @@ NULL on failure </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__cloud__servers.html#ga7f2767850147d7696261e995611e71b1">oc_cloud_endpoints_iterate_fn_t</a>&#160;</td>
+          <td class="paramtype">oc_endpoint_addresses_iterate_fn_t&#160;</td>
           <td class="paramname"><em>fn</em>, </td>
         </tr>
         <tr>
@@ -334,27 +194,27 @@ NULL on failure </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Iterate over cloud servers. </p>
+<p>Iterate over cloud server addresses. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ctx</td><td>cloud context (cannot be NULL) </td></tr>
-    <tr><td class="paramname">fn</td><td>callback function invoked for each endpoint address (cannot be NULL) </td></tr>
+    <tr><td class="paramname">fn</td><td>callback function invoked for each cloud server address (cannot be NULL) </td></tr>
     <tr><td class="paramname">data</td><td>custom user data provided to <code>fn</code> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>The callback function <code>fn</code> must not modify the list of cloud servers. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The callback function <code>fn</code> must not modify the list of cloud server addresses. </dd></dl>
 
 </div>
 </div>
-<a id="ga20f0cb3b6eb812959404647f6332e403"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga20f0cb3b6eb812959404647f6332e403">&#9670;&nbsp;</a></span>oc_cloud_remove_server()</h2>
+<a id="gaf7ab3920f64044b8f2c22004f60ed803"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf7ab3920f64044b8f2c22004f60ed803">&#9670;&nbsp;</a></span>oc_cloud_remove_server_address()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool oc_cloud_remove_server </td>
+          <td class="memname">bool oc_cloud_remove_server_address </td>
           <td>(</td>
           <td class="paramtype">oc_cloud_context_t *&#160;</td>
           <td class="paramname"><em>ctx</em>, </td>
@@ -362,8 +222,8 @@ NULL on failure </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const oc_cloud_endpoint_t *&#160;</td>
-          <td class="paramname"><em>ce</em>&#160;</td>
+          <td class="paramtype">const oc_endpoint_address_t *&#160;</td>
+          <td class="paramname"><em>ea</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -373,32 +233,32 @@ NULL on failure </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Remove an endpoint address from the list of cloud servers. </p>
+<p>Remove an endpoint address from the list of cloud server addresses. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ctx</td><td>cloud context (cannot be NULL) </td></tr>
-    <tr><td class="paramname">ce</td><td>cloud endpoint to remove</td></tr>
+    <tr><td class="paramname">ea</td><td>endpoint address to remove</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the endpoint address was removed from the list of cloud servers </dd>
 <dd>
 false on failure</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>The servers are stored in a list. If the selected server is removed, then next server in the list will be selected. If the selected server is the last item in the list, then the first server in the list will be selected (if it exists).</dd>
+<dl class="section note"><dt>Note</dt><dd>The servers are stored in a list. If the selected server address is removed, then next server address in the list will be selected. If the selected server address is the last item in the list, then the first server address in the list will be selected (if it exists).</dd>
 <dd>
-The server is cached by the cloud, so if you remove the selected server during cloud provisioning then it might be necessary to restart the cloud manager for the change to take effect.</dd></dl>
+The server is cached by the cloud, so if you remove the selected server address during cloud provisioning then it might be necessary to restart the cloud manager for the change to take effect.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="oc__cloud_8h.html#a791f33bb01f9d829a0a9535d87da52b1" title="Restart cloud registration process with the current configuration.">oc_cloud_manager_restart</a> </dd></dl>
 
 </div>
 </div>
-<a id="gae5ea2cd1f3f907e0e80d139fb390c528"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae5ea2cd1f3f907e0e80d139fb390c528">&#9670;&nbsp;</a></span>oc_cloud_select_server()</h2>
+<a id="ga9281811d788db6e1d6d33342e9f63162"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9281811d788db6e1d6d33342e9f63162">&#9670;&nbsp;</a></span>oc_cloud_select_server_address()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool oc_cloud_select_server </td>
+          <td class="memname">bool oc_cloud_select_server_address </td>
           <td>(</td>
           <td class="paramtype">oc_cloud_context_t *&#160;</td>
           <td class="paramname"><em>ctx</em>, </td>
@@ -406,8 +266,8 @@ The server is cached by the cloud, so if you remove the selected server during c
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const oc_cloud_endpoint_t *&#160;</td>
-          <td class="paramname"><em>server</em>&#160;</td>
+          <td class="paramtype">const oc_endpoint_address_t *&#160;</td>
+          <td class="paramname"><em>ea</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -417,21 +277,21 @@ The server is cached by the cloud, so if you remove the selected server during c
       </table>
 </div><div class="memdoc">
 
-<p>Select a cloud server from the list of cloud servers. </p>
+<p>Select an address from the list of cloud server addresses. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ctx</td><td>cloud context (cannot be NULL) </td></tr>
-    <tr><td class="paramname">server</td><td>cloud server to select (cannot be NULL; must be in the list of cloud servers)</td></tr>
+    <tr><td class="paramname">ea</td><td>cloud server address to select (cannot be NULL; must be in the list of cloud servers)</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the cloud server was selected </dd>
+<dl class="section return"><dt>Returns</dt><dd>true if the address was selected </dd>
 <dd>
-false on failure to select the server, because it is not in the list of endpoints</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>The address of the selected server will be returned as the cis value and the identity of the selected server will be returned as the sid value.</dd>
+false on failure to select the address, because it is not in the list of cloud server addresses</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The uri of the selected server address will be returned as the cis value and the identity of the selected server address will be returned as the sid value.</dd>
 <dd>
-The server is cached by the cloud, so if you the selected server during cloud provisioning then it might be necessary to restart the cloud manager for the change to take effect.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__cloud__servers.html#ga20f0cb3b6eb812959404647f6332e403" title="Remove an endpoint address from the list of cloud servers.">oc_cloud_remove_server</a> </dd>
+The server is cached by the cloud, so if you change the selected server address during cloud provisioning then it might be necessary to restart the cloud manager for the change to take effect.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__cloud__servers.html#gaf7ab3920f64044b8f2c22004f60ed803" title="Remove an endpoint address from the list of cloud server addresses.">oc_cloud_remove_server_address</a> </dd>
 <dd>
 <a class="el" href="oc__cloud_8h.html#af026bf713cabec03054bc8a62747ef42" title="Get the URL of the OCF Cloud.">oc_cloud_get_server_uri</a> </dd>
 <dd>
@@ -441,14 +301,14 @@ The server is cached by the cloud, so if you the selected server during cloud pr
 
 </div>
 </div>
-<a id="gaffc61076d32998b21fc220690f7af5e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaffc61076d32998b21fc220690f7af5e1">&#9670;&nbsp;</a></span>oc_cloud_selected_server()</h2>
+<a id="gaf09d3a33872a0284df4a4a1cc1191102"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf09d3a33872a0284df4a4a1cc1191102">&#9670;&nbsp;</a></span>oc_cloud_selected_server_address()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const oc_cloud_endpoint_t* oc_cloud_selected_server </td>
+          <td class="memname">const oc_endpoint_address_t* oc_cloud_selected_server_address </td>
           <td>(</td>
           <td class="paramtype">const oc_cloud_context_t *&#160;</td>
           <td class="paramname"><em>ctx</em></td><td>)</td>
@@ -457,16 +317,16 @@ The server is cached by the cloud, so if you the selected server during cloud pr
       </table>
 </div><div class="memdoc">
 
-<p>Get the selected cloud server. </p>
+<p>Get the selected cloud server address. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ctx</td><td>cloud context (cannot be NULL) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>oc_cloud_endpoint_t* pointer to the selected cloud server </dd>
+<dl class="section return"><dt>Returns</dt><dd>oc_endpoint_address_t* pointer to the selected cloud server address </dd>
 <dd>
-NULL if no cloud server is selected </dd></dl>
+NULL if no cloud server address is selected </dd></dl>
 
 </div>
 </div>
@@ -475,7 +335,7 @@ NULL if no cloud server is selected </dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Mar 15 2024 08:31:32 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 19 2024 15:53:10 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

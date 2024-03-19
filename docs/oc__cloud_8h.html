@@ -82,7 +82,6 @@ $(document).ready(function(){initNavTree('oc__cloud_8h.html',''); initResizable(
 
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
@@ -97,14 +96,9 @@ $(document).ready(function(){initNavTree('oc__cloud_8h.html',''); initResizable(
 <code>#include &quot;<a class="el" href="oc__session__events_8h.html">oc_session_events.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__uuid_8h.html">oc_uuid.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__compiler_8h.html">util/oc_compiler.h</a>&quot;</code><br />
+<code>#include &quot;util/oc_endpoint_address.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="oc__features_8h.html">util/oc_features.h</a>&quot;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ga00d5094577efd76a08d9a1ced9ebc479"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloud__servers.html#ga00d5094577efd76a08d9a1ced9ebc479">OC_ENDPOINT_MAX_ENDPOINT_URI_LENGTH</a>&#160;&#160;&#160;OC_MAX_STRING_LENGTH</td></tr>
-<tr class="memdesc:ga00d5094577efd76a08d9a1ced9ebc479"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum length of the cloud server URI.  <a href="group__cloud__servers.html#ga00d5094577efd76a08d9a1ced9ebc479">More...</a><br /></td></tr>
-<tr class="separator:ga00d5094577efd76a08d9a1ced9ebc479"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:adaa6e94d3d339e364a392045fbc78969"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#adaa6e94d3d339e364a392045fbc78969">oc_cloud_cb_t</a>) (struct oc_cloud_context_t *ctx, <a class="el" href="oc__cloud_8h.html#a2ab39e0e37b5bf16a0b45d95bbb47dc1">oc_cloud_status_t</a> status, void *user_data)</td></tr>
@@ -113,12 +107,6 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a8c4ed194071f3d1a5d0427a038fe11f9"><td class="memItemLeft" align="right" valign="top"><a id="a8c4ed194071f3d1a5d0427a038fe11f9"></a>
 typedef struct oc_cloud_context_t&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_context_t</b></td></tr>
 <tr class="separator:a8c4ed194071f3d1a5d0427a038fe11f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadc43e50f8298bf6c9b873772237d7fa5"><td class="memItemLeft" align="right" valign="top">
-typedef struct oc_cloud_endpoint_t&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_endpoint_t</b></td></tr>
-<tr class="separator:gadc43e50f8298bf6c9b873772237d7fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7f2767850147d7696261e995611e71b1"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloud__servers.html#ga7f2767850147d7696261e995611e71b1">oc_cloud_endpoints_iterate_fn_t</a>) (oc_cloud_endpoint_t *ce, void *data)</td></tr>
-<tr class="memdesc:ga7f2767850147d7696261e995611e71b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback invoked for each endpoint address iterated by oc_cloud_servers_iterate.  <a href="group__cloud__servers.html#ga7f2767850147d7696261e995611e71b1">More...</a><br /></td></tr>
-<tr class="separator:ga7f2767850147d7696261e995611e71b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54aa20e5605a8a73e97d2a2e0d825471"><td class="memItemLeft" align="right" valign="top">typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#a54aa20e5605a8a73e97d2a2e0d825471">oc_cloud_on_keepalive_response_cb_t</a>) (bool response_received, uint64_t *next_ping, uint16_t *next_ping_timeout, void *user_data)</td></tr>
 <tr class="memdesc:a54aa20e5605a8a73e97d2a2e0d825471"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback invoked by the cloud manager when cloud change state to logged in or a keepalive response is received.  <a href="oc__cloud_8h.html#a54aa20e5605a8a73e97d2a2e0d825471">More...</a><br /></td></tr>
 <tr class="separator:a54aa20e5605a8a73e97d2a2e0d825471"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -182,9 +170,9 @@ Functions</h2></td></tr>
 <tr class="memitem:af782586d01601ce903e4aad77ffeca42"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#af782586d01601ce903e4aad77ffeca42">oc_cloud_add_resource</a> (<a class="el" href="structoc__resource__s.html">oc_resource_t</a> *resource)</td></tr>
 <tr class="memdesc:af782586d01601ce903e4aad77ffeca42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publish resource to cloud.  <a href="oc__cloud_8h.html#af782586d01601ce903e4aad77ffeca42">More...</a><br /></td></tr>
 <tr class="separator:af782586d01601ce903e4aad77ffeca42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9d4e63e6320a68855cff369d95bb3854"><td class="memItemLeft" align="right" valign="top">oc_cloud_endpoint_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloud__servers.html#ga9d4e63e6320a68855cff369d95bb3854">oc_cloud_add_server</a> (oc_cloud_context_t *ctx, const char *uri, size_t uri_len, oc_uuid_t sid)</td></tr>
-<tr class="memdesc:ga9d4e63e6320a68855cff369d95bb3854"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate and add an endpoint address to the list of cloud servers.  <a href="group__cloud__servers.html#ga9d4e63e6320a68855cff369d95bb3854">More...</a><br /></td></tr>
-<tr class="separator:ga9d4e63e6320a68855cff369d95bb3854"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7385ffeb97e21a5822d5846c50c1105b"><td class="memItemLeft" align="right" valign="top">oc_endpoint_address_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloud__servers.html#ga7385ffeb97e21a5822d5846c50c1105b">oc_cloud_add_server_address</a> (oc_cloud_context_t *ctx, const char *uri, size_t uri_len, oc_uuid_t sid)</td></tr>
+<tr class="memdesc:ga7385ffeb97e21a5822d5846c50c1105b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate and add an endpoint address to the list of cloud server addresses.  <a href="group__cloud__servers.html#ga7385ffeb97e21a5822d5846c50c1105b">More...</a><br /></td></tr>
+<tr class="separator:ga7385ffeb97e21a5822d5846c50c1105b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace56b587071901804fc58dc8426b92ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#ace56b587071901804fc58dc8426b92ae">oc_cloud_context_clear</a> (oc_cloud_context_t *ctx, bool dump_async)</td></tr>
 <tr class="memdesc:ace56b587071901804fc58dc8426b92ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove cloud context values, disconnect, and stop the cloud manager, without releasing the context.  <a href="oc__cloud_8h.html#ace56b587071901804fc58dc8426b92ae">More...</a><br /></td></tr>
 <tr class="separator:ace56b587071901804fc58dc8426b92ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -197,15 +185,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a2087d44f5b483d5f0d8ba8ff77421a50"><td class="memItemLeft" align="right" valign="top"><a id="a2087d44f5b483d5f0d8ba8ff77421a50"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_discover_resources</b> (const oc_cloud_context_t *ctx, <a class="el" href="oc__client__state_8h.html#af8f929c346d4b6934a7d16d1a37d30d2">oc_discovery_all_handler_t</a> handler, void *user_data)</td></tr>
 <tr class="separator:a2087d44f5b483d5f0d8ba8ff77421a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3df0e492a655492aee21c7b3e5020ad9"><td class="memItemLeft" align="right" valign="top">oc_uuid_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloud__servers.html#ga3df0e492a655492aee21c7b3e5020ad9">oc_cloud_endpoint_id</a> (const oc_cloud_endpoint_t *ce)</td></tr>
-<tr class="memdesc:ga3df0e492a655492aee21c7b3e5020ad9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ID of the cloud endpoint.  <a href="group__cloud__servers.html#ga3df0e492a655492aee21c7b3e5020ad9">More...</a><br /></td></tr>
-<tr class="separator:ga3df0e492a655492aee21c7b3e5020ad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6606b81ea97993900af3096d920665d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloud__servers.html#ga6606b81ea97993900af3096d920665d5">oc_cloud_endpoint_set_id</a> (oc_cloud_endpoint_t *ce, oc_uuid_t id)</td></tr>
-<tr class="memdesc:ga6606b81ea97993900af3096d920665d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the ID of the cloud endpoint.  <a href="group__cloud__servers.html#ga6606b81ea97993900af3096d920665d5">More...</a><br /></td></tr>
-<tr class="separator:ga6606b81ea97993900af3096d920665d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga52cadba3fd54fc8b46fe4f1d2fd69efa"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structoc__mmem.html">oc_string_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloud__servers.html#ga52cadba3fd54fc8b46fe4f1d2fd69efa">oc_cloud_endpoint_uri</a> (const oc_cloud_endpoint_t *ce)</td></tr>
-<tr class="memdesc:ga52cadba3fd54fc8b46fe4f1d2fd69efa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the address of the cloud endpoint.  <a href="group__cloud__servers.html#ga52cadba3fd54fc8b46fe4f1d2fd69efa">More...</a><br /></td></tr>
-<tr class="separator:ga52cadba3fd54fc8b46fe4f1d2fd69efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34d8b64efbb169aa052649e01f77081d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structoc__mmem.html">oc_string_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#a34d8b64efbb169aa052649e01f77081d">oc_cloud_get_access_token</a> (const oc_cloud_context_t *ctx)</td></tr>
 <tr class="memdesc:a34d8b64efbb169aa052649e01f77081d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the access token from cloud context.  <a href="oc__cloud_8h.html#a34d8b64efbb169aa052649e01f77081d">More...</a><br /></td></tr>
 <tr class="separator:a34d8b64efbb169aa052649e01f77081d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -251,9 +230,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_discover_reso
 <tr class="memitem:aa700109dfc3fe3fdb2ec272fd7681df1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structoc__mmem.html">oc_string_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#aa700109dfc3fe3fdb2ec272fd7681df1">oc_cloud_get_user_id</a> (const oc_cloud_context_t *ctx)</td></tr>
 <tr class="memdesc:aa700109dfc3fe3fdb2ec272fd7681df1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the OCF Cloud User identifier.  <a href="oc__cloud_8h.html#aa700109dfc3fe3fdb2ec272fd7681df1">More...</a><br /></td></tr>
 <tr class="separator:aa700109dfc3fe3fdb2ec272fd7681df1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa6d0c2d165c328d345875b9d292fb20a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloud__servers.html#gaa6d0c2d165c328d345875b9d292fb20a">oc_cloud_iterate_servers</a> (const oc_cloud_context_t *ctx, <a class="el" href="group__cloud__servers.html#ga7f2767850147d7696261e995611e71b1">oc_cloud_endpoints_iterate_fn_t</a> fn, void *data)</td></tr>
-<tr class="memdesc:gaa6d0c2d165c328d345875b9d292fb20a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate over cloud servers.  <a href="group__cloud__servers.html#gaa6d0c2d165c328d345875b9d292fb20a">More...</a><br /></td></tr>
-<tr class="separator:gaa6d0c2d165c328d345875b9d292fb20a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga13a76b3cb6bb252ae6a027ea35fa4d65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloud__servers.html#ga13a76b3cb6bb252ae6a027ea35fa4d65">oc_cloud_iterate_server_addresses</a> (const oc_cloud_context_t *ctx, oc_endpoint_addresses_iterate_fn_t fn, void *data)</td></tr>
+<tr class="memdesc:ga13a76b3cb6bb252ae6a027ea35fa4d65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate over cloud server addresses.  <a href="group__cloud__servers.html#ga13a76b3cb6bb252ae6a027ea35fa4d65">More...</a><br /></td></tr>
+<tr class="separator:ga13a76b3cb6bb252ae6a027ea35fa4d65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae88aa9c13dbd2e514b0cd342dfcfe0a7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#ae88aa9c13dbd2e514b0cd342dfcfe0a7">oc_cloud_login</a> (oc_cloud_context_t *ctx, <a class="el" href="oc__cloud_8h.html#adaa6e94d3d339e364a392045fbc78969">oc_cloud_cb_t</a> cb, void *data)</td></tr>
 <tr class="memdesc:ae88aa9c13dbd2e514b0cd342dfcfe0a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send request to sign in the device to the cloud.  <a href="oc__cloud_8h.html#ae88aa9c13dbd2e514b0cd342dfcfe0a7">More...</a><br /></td></tr>
 <tr class="separator:ae88aa9c13dbd2e514b0cd342dfcfe0a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -284,15 +263,15 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_discover_reso
 <tr class="memitem:a784e69b8cee199202ccea3ebc9449416"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#a784e69b8cee199202ccea3ebc9449416">oc_cloud_register</a> (oc_cloud_context_t *ctx, <a class="el" href="oc__cloud_8h.html#adaa6e94d3d339e364a392045fbc78969">oc_cloud_cb_t</a> cb, void *data)</td></tr>
 <tr class="memdesc:a784e69b8cee199202ccea3ebc9449416"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send request to register device to cloud.  <a href="oc__cloud_8h.html#a784e69b8cee199202ccea3ebc9449416">More...</a><br /></td></tr>
 <tr class="separator:a784e69b8cee199202ccea3ebc9449416"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga20f0cb3b6eb812959404647f6332e403"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloud__servers.html#ga20f0cb3b6eb812959404647f6332e403">oc_cloud_remove_server</a> (oc_cloud_context_t *ctx, const oc_cloud_endpoint_t *ce)</td></tr>
-<tr class="memdesc:ga20f0cb3b6eb812959404647f6332e403"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove an endpoint address from the list of cloud servers.  <a href="group__cloud__servers.html#ga20f0cb3b6eb812959404647f6332e403">More...</a><br /></td></tr>
-<tr class="separator:ga20f0cb3b6eb812959404647f6332e403"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae5ea2cd1f3f907e0e80d139fb390c528"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloud__servers.html#gae5ea2cd1f3f907e0e80d139fb390c528">oc_cloud_select_server</a> (oc_cloud_context_t *ctx, const oc_cloud_endpoint_t *server)</td></tr>
-<tr class="memdesc:gae5ea2cd1f3f907e0e80d139fb390c528"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select a cloud server from the list of cloud servers.  <a href="group__cloud__servers.html#gae5ea2cd1f3f907e0e80d139fb390c528">More...</a><br /></td></tr>
-<tr class="separator:gae5ea2cd1f3f907e0e80d139fb390c528"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaffc61076d32998b21fc220690f7af5e1"><td class="memItemLeft" align="right" valign="top">const oc_cloud_endpoint_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloud__servers.html#gaffc61076d32998b21fc220690f7af5e1">oc_cloud_selected_server</a> (const oc_cloud_context_t *ctx)</td></tr>
-<tr class="memdesc:gaffc61076d32998b21fc220690f7af5e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the selected cloud server.  <a href="group__cloud__servers.html#gaffc61076d32998b21fc220690f7af5e1">More...</a><br /></td></tr>
-<tr class="separator:gaffc61076d32998b21fc220690f7af5e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf7ab3920f64044b8f2c22004f60ed803"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloud__servers.html#gaf7ab3920f64044b8f2c22004f60ed803">oc_cloud_remove_server_address</a> (oc_cloud_context_t *ctx, const oc_endpoint_address_t *ea)</td></tr>
+<tr class="memdesc:gaf7ab3920f64044b8f2c22004f60ed803"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove an endpoint address from the list of cloud server addresses.  <a href="group__cloud__servers.html#gaf7ab3920f64044b8f2c22004f60ed803">More...</a><br /></td></tr>
+<tr class="separator:gaf7ab3920f64044b8f2c22004f60ed803"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9281811d788db6e1d6d33342e9f63162"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloud__servers.html#ga9281811d788db6e1d6d33342e9f63162">oc_cloud_select_server_address</a> (oc_cloud_context_t *ctx, const oc_endpoint_address_t *ea)</td></tr>
+<tr class="memdesc:ga9281811d788db6e1d6d33342e9f63162"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select an address from the list of cloud server addresses.  <a href="group__cloud__servers.html#ga9281811d788db6e1d6d33342e9f63162">More...</a><br /></td></tr>
+<tr class="separator:ga9281811d788db6e1d6d33342e9f63162"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf09d3a33872a0284df4a4a1cc1191102"><td class="memItemLeft" align="right" valign="top">const oc_endpoint_address_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cloud__servers.html#gaf09d3a33872a0284df4a4a1cc1191102">oc_cloud_selected_server_address</a> (const oc_cloud_context_t *ctx)</td></tr>
+<tr class="memdesc:gaf09d3a33872a0284df4a4a1cc1191102"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the selected cloud server address.  <a href="group__cloud__servers.html#gaf09d3a33872a0284df4a4a1cc1191102">More...</a><br /></td></tr>
+<tr class="separator:gaf09d3a33872a0284df4a4a1cc1191102"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1e36c7e515b2ba14145c46bbbd6c6f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#aa1e36c7e515b2ba14145c46bbbd6c6f5">oc_cloud_set_identity_cert_chain</a> (oc_cloud_context_t *ctx, int selected_identity_cred_id)</td></tr>
 <tr class="memdesc:aa1e36c7e515b2ba14145c46bbbd6c6f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set identity certificate chain to establish TLS connection.  <a href="oc__cloud_8h.html#aa1e36c7e515b2ba14145c46bbbd6c6f5">More...</a><br /></td></tr>
 <tr class="separator:aa1e36c7e515b2ba14145c46bbbd6c6f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -834,7 +813,7 @@ int -1 on error</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>oc_endpoint_t* pointer to the active cloud server </dd>
 <dd>
 NULL if no cloud server is selected, or if the cloud manager has not been started</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__cloud__servers.html#gae5ea2cd1f3f907e0e80d139fb390c528" title="Select a cloud server from the list of cloud servers.">oc_cloud_select_server</a> </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__cloud__servers.html#ga9281811d788db6e1d6d33342e9f63162" title="Select an address from the list of cloud server addresses.">oc_cloud_select_server_address</a> </dd>
 <dd>
 <a class="el" href="oc__cloud_8h.html#af026bf713cabec03054bc8a62747ef42" title="Get the URL of the OCF Cloud.">oc_cloud_get_server_uri</a> </dd></dl>
 
@@ -1616,7 +1595,7 @@ int -1 on error </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__cloud_8h.html">oc_cloud.h</a></li>
-    <li class="footer">Generated on Fri Mar 15 2024 08:31:32 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 19 2024 15:53:10 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

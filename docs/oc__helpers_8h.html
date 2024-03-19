@@ -194,8 +194,8 @@ Macros</h2></td></tr>
 <tr class="memitem:a21388fe7ccd9c6b20eea12b9faa3a7d0"><td class="memItemLeft" align="right" valign="top"><a id="a21388fe7ccd9c6b20eea12b9faa3a7d0"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_string_array_set_item</b>(ocstringarray,  str,  index)&#160;&#160;&#160;  (_oc_copy_string_to_array(&amp;(ocstringarray), str, index))</td></tr>
 <tr class="separator:a21388fe7ccd9c6b20eea12b9faa3a7d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7871cb2503f01b029bf4af91ab45e226"><td class="memItemLeft" align="right" valign="top"><a id="a7871cb2503f01b029bf4af91ab45e226"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>oc_string_len</b>(ocstring)&#160;&#160;&#160;((ocstring).size != 0 ? (ocstring).size - 1 : 0)</td></tr>
+<tr class="memitem:a7871cb2503f01b029bf4af91ab45e226"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a7871cb2503f01b029bf4af91ab45e226">oc_string_len</a>(ocstring)&#160;&#160;&#160;((ocstring).size != 0 ? (ocstring).size - 1 : 0)</td></tr>
+<tr class="memdesc:a7871cb2503f01b029bf4af91ab45e226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the length of the C-string stored by ocstring.  <a href="oc__helpers_8h.html#a7871cb2503f01b029bf4af91ab45e226">More...</a><br /></td></tr>
 <tr class="separator:a7871cb2503f01b029bf4af91ab45e226"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abff1ce03e1ce4a97d4789c7bfb802ca7"><td class="memItemLeft" align="right" valign="top"><a id="abff1ce03e1ce4a97d4789c7bfb802ca7"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>STRING_ARRAY_ITEM_MAX_LEN</b>&#160;&#160;&#160;(128)</td></tr>
@@ -269,6 +269,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_oc_string_array_add_
 <tr class="memitem:aea75f7f79c71b0460062d4ab931fa980"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#aea75f7f79c71b0460062d4ab931fa980">oc_set_string</a> (<a class="el" href="structoc__mmem.html">oc_string_t</a> *dst, const char *str, size_t str_len)</td></tr>
 <tr class="memdesc:aea75f7f79c71b0460062d4ab931fa980"><td class="mdescLeft">&#160;</td><td class="mdescRight">reset ocstring contents  <a href="oc__helpers_8h.html#aea75f7f79c71b0460062d4ab931fa980">More...</a><br /></td></tr>
 <tr class="separator:aea75f7f79c71b0460062d4ab931fa980"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a965939e3dc8b5b402b939ef2235d6d91"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__helpers_8h.html#a965939e3dc8b5b402b939ef2235d6d91">oc_string_len_unsafe</a> (<a class="el" href="structoc__mmem.html">oc_string_t</a> str)</td></tr>
+<tr class="memdesc:a965939e3dc8b5b402b939ef2235d6d91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the length of the non-NULL C-string.  <a href="oc__helpers_8h.html#a965939e3dc8b5b402b939ef2235d6d91">More...</a><br /></td></tr>
+<tr class="separator:a965939e3dc8b5b402b939ef2235d6d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="aa5ab461e92a3e8f7ea5c8bec61a00776"></a>
@@ -574,6 +577,26 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>_oc_string_array_add_
 </div><div class="memdoc">
 
 <p>cast oc_string to string </p>
+
+</div>
+</div>
+<a id="a7871cb2503f01b029bf4af91ab45e226"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7871cb2503f01b029bf4af91ab45e226">&#9670;&nbsp;</a></span>oc_string_len</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define oc_string_len</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ocstring</td><td>)</td>
+          <td>&#160;&#160;&#160;((ocstring).size != 0 ? (ocstring).size - 1 : 0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the length of the C-string stored by ocstring. </p>
 
 </div>
 </div>
@@ -1074,13 +1097,34 @@ int -1 on failure </dd></dl>
 
 </div>
 </div>
+<a id="a965939e3dc8b5b402b939ef2235d6d91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a965939e3dc8b5b402b939ef2235d6d91">&#9670;&nbsp;</a></span>oc_string_len_unsafe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t oc_string_len_unsafe </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structoc__mmem.html">oc_string_t</a>&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the length of the non-NULL C-string. </p>
+<dl class="section warning"><dt>Warning</dt><dd>This is an unsafe version of oc_string_len, use only if you are sure that the C-string stored by ocstring is not NULL </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__helpers_8h.html">oc_helpers.h</a></li>
-    <li class="footer">Generated on Fri Mar 15 2024 08:31:32 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 19 2024 15:53:10 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
