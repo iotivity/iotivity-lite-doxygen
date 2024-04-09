@@ -339,6 +339,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a0e91deab9b5585f5b2b6591cb31466ce"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a0e91deab9b5585f5b2b6591cb31466ce">oc_rep_get_bool_array</a> (const oc_rep_t *rep, const char *key, bool **value, size_t *size)</td></tr>
 <tr class="memdesc:a0e91deab9b5585f5b2b6591cb31466ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read an boolean array value from an <code>oc_rep_t</code>  <a href="oc__rep_8h.html#a0e91deab9b5585f5b2b6591cb31466ce">More...</a><br /></td></tr>
 <tr class="separator:a0e91deab9b5585f5b2b6591cb31466ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab025af5ade54b40e86d088d87bbb0211"><td class="memItemLeft" align="right" valign="top">const oc_rep_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#ab025af5ade54b40e86d088d87bbb0211">oc_rep_get_by_type_and_key</a> (const oc_rep_t *rep, oc_rep_value_type_t type, const char *key, size_t key_len)</td></tr>
+<tr class="memdesc:ab025af5ade54b40e86d088d87bbb0211"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the value of a property by type and key.  <a href="oc__rep_8h.html#ab025af5ade54b40e86d088d87bbb0211">More...</a><br /></td></tr>
+<tr class="separator:ab025af5ade54b40e86d088d87bbb0211"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ed7a90192ace86fd6ecae3f367c81a7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__rep_8h.html#a1ed7a90192ace86fd6ecae3f367c81a7">oc_rep_get_byte_string</a> (const oc_rep_t *rep, const char *key, char **value, size_t *size)</td></tr>
 <tr class="memdesc:a1ed7a90192ace86fd6ecae3f367c81a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a byte string value from an <code>oc_rep_t</code>  <a href="oc__rep_8h.html#a1ed7a90192ace86fd6ecae3f367c81a7">More...</a><br /></td></tr>
 <tr class="separator:a1ed7a90192ace86fd6ecae3f367c81a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2865,6 +2868,60 @@ oc_rep_end_object </dd></dl>
 
 </div>
 </div>
+<a id="ab025af5ade54b40e86d088d87bbb0211"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab025af5ade54b40e86d088d87bbb0211">&#9670;&nbsp;</a></span>oc_rep_get_by_type_and_key()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const oc_rep_t* oc_rep_get_by_type_and_key </td>
+          <td>(</td>
+          <td class="paramtype">const oc_rep_t *&#160;</td>
+          <td class="paramname"><em>rep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">oc_rep_value_type_t&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>key_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the value of a property by type and key. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rep</td><td>oc_rep_t to read the value from </td></tr>
+    <tr><td class="paramname">type</td><td>the type of the value to read </td></tr>
+    <tr><td class="paramname">key</td><td>the key for the value </td></tr>
+    <tr><td class="paramname">key_len</td><td>the length of <code>key</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the value of the property if found </dd>
+<dd>
+NULL otherwise </dd></dl>
+
+</div>
+</div>
 <a id="a1ed7a90192ace86fd6ecae3f367c81a7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1ed7a90192ace86fd6ecae3f367c81a7">&#9670;&nbsp;</a></span>oc_rep_get_byte_string()</h2>
 
@@ -4240,7 +4297,7 @@ oc_string_array_get_item_size </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__rep_8h.html">oc_rep.h</a></li>
-    <li class="footer">Generated on Tue Mar 19 2024 15:53:10 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Apr 9 2024 00:23:22 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

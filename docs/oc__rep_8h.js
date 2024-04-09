@@ -88,6 +88,7 @@ var oc__rep_8h =
     [ "oc_rep_encoder_set_type", "oc__rep_8h.html#a927937d40a3acdaa6c5286b7a55d1b00", null ],
     [ "oc_rep_get_bool", "oc__rep_8h.html#ac2a6595bec656be3eda87e27f9ca0f0b", null ],
     [ "oc_rep_get_bool_array", "oc__rep_8h.html#a0e91deab9b5585f5b2b6591cb31466ce", null ],
+    [ "oc_rep_get_by_type_and_key", "oc__rep_8h.html#ab025af5ade54b40e86d088d87bbb0211", null ],
     [ "oc_rep_get_byte_string", "oc__rep_8h.html#a1ed7a90192ace86fd6ecae3f367c81a7", null ],
     [ "oc_rep_get_byte_string_array", "oc__rep_8h.html#a68d6334756d4a3eeae00a3a4774d6df5", null ],
     [ "oc_rep_get_cbor_errno", "oc__rep_8h.html#acd633419c3a6cbf5b8ab636242e0861f", null ],
