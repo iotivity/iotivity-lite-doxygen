@@ -65,6 +65,7 @@ var oc__cloud_8h =
     [ "oc_cloud_manager_restart", "oc__cloud_8h.html#a791f33bb01f9d829a0a9535d87da52b1", null ],
     [ "oc_cloud_manager_start", "oc__cloud_8h.html#ae6efa2f7d9da40ac77668698c0ed466a", null ],
     [ "oc_cloud_manager_stop", "oc__cloud_8h.html#a69ed7d30633c64e156ee5a2447439c9e", null ],
+    [ "oc_cloud_manager_stop_v1", "oc__cloud_8h.html#ae117ef64e24966f00094ab27453c1f55", null ],
     [ "oc_cloud_provision_conf_resource", "oc__cloud_8h.html#aae77dc49cffa61cd1553ad83da9577ae", null ],
     [ "oc_cloud_publish_resources", "oc__cloud_8h.html#a9990c301d82104116aa9e0f718b024ff", null ],
     [ "oc_cloud_refresh_token", "oc__cloud_8h.html#a653ead14921bf35de6a571cbb90393a6", null ],

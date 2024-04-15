@@ -251,6 +251,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>oc_cloud_discover_reso
 <tr class="memitem:a69ed7d30633c64e156ee5a2447439c9e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#a69ed7d30633c64e156ee5a2447439c9e">oc_cloud_manager_stop</a> (oc_cloud_context_t *ctx)</td></tr>
 <tr class="memdesc:a69ed7d30633c64e156ee5a2447439c9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop cloud registration process, remove related pending delayed callbacks and clean-up data.  <a href="oc__cloud_8h.html#a69ed7d30633c64e156ee5a2447439c9e">More...</a><br /></td></tr>
 <tr class="separator:a69ed7d30633c64e156ee5a2447439c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae117ef64e24966f00094ab27453c1f55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#ae117ef64e24966f00094ab27453c1f55">oc_cloud_manager_stop_v1</a> (oc_cloud_context_t *ctx, bool resetConfiguration)</td></tr>
+<tr class="memdesc:ae117ef64e24966f00094ab27453c1f55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop cloud registration process, remove related pending delayed callbacks and clean-up data.  <a href="oc__cloud_8h.html#ae117ef64e24966f00094ab27453c1f55">More...</a><br /></td></tr>
+<tr class="separator:ae117ef64e24966f00094ab27453c1f55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae77dc49cffa61cd1553ad83da9577ae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__cloud_8h.html#aae77dc49cffa61cd1553ad83da9577ae">oc_cloud_provision_conf_resource</a> (oc_cloud_context_t *ctx, const char *server, const char *access_token, const char *server_id, const char *auth_provider)</td></tr>
 <tr class="memdesc:aae77dc49cffa61cd1553ad83da9577ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure cloud properties.  <a href="oc__cloud_8h.html#aae77dc49cffa61cd1553ad83da9577ae">More...</a><br /></td></tr>
 <tr class="separator:aae77dc49cffa61cd1553ad83da9577ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1163,7 +1166,7 @@ false otherwise </dd></dl>
 <p>Start cloud registration process. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ctx</td><td>cloud context (cannot be NULL) </td></tr>
+    <tr><td class="paramname">ctx</td><td>cloud context </td></tr>
     <tr><td class="paramname">cb</td><td>callback function invoked on status change </td></tr>
     <tr><td class="paramname">data</td><td>user data provided to the status change function </td></tr>
   </table>
@@ -1194,13 +1197,50 @@ int -1 on error </dd></dl>
 <p>Stop cloud registration process, remove related pending delayed callbacks and clean-up data. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ctx</td><td>cloud context (cannot be NULL) </td></tr>
+    <tr><td class="paramname">ctx</td><td>cloud context </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int 0 on success </dd>
 <dd>
 int -1 on error </dd></dl>
+
+</div>
+</div>
+<a id="ae117ef64e24966f00094ab27453c1f55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae117ef64e24966f00094ab27453c1f55">&#9670;&nbsp;</a></span>oc_cloud_manager_stop_v1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oc_cloud_manager_stop_v1 </td>
+          <td>(</td>
+          <td class="paramtype">oc_cloud_context_t *&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>resetConfiguration</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stop cloud registration process, remove related pending delayed callbacks and clean-up data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ctx</td><td>cloud context (cannot be NULL) </td></tr>
+    <tr><td class="paramname">resetConfiguration</td><td>if true, reset cloud configuration to default (cloud must be reconfigured by oc_cloud_provision_conf_resource or by updating the cloud resource); if false the previous cloud configuration is kept, but the cloud is reset to OC_CPS_REGISTERED state if it was registered or to OC_CPS_READYTOREGISTER otherwise </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1595,7 +1635,7 @@ int -1 on error </dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="oc__cloud_8h.html">oc_cloud.h</a></li>
-    <li class="footer">Generated on Tue Apr 9 2024 00:23:22 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Apr 15 2024 15:45:23 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
