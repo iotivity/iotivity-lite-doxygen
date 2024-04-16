@@ -52,6 +52,7 @@ var oc__rep_8h =
     [ "oc_rep_start_root_object", "oc__rep_8h.html#a5a0a8355dd2a54e03bf9c8b65b7a8436", null ],
     [ "oc_rep_encoder_type_t", "oc__rep_8h.html#a785bd439869f00daa40cb03c602d7f21", null ],
     [ "oc_rep_t", "oc__rep_8h.html#acc9813f3e8eb5e0b62db8f13ca3ffb96", null ],
+    [ "oc_rep_value_t", "oc__rep_8h.html#a6529a1381b1b96a2cec8ebe5a9b24918", null ],
     [ "oc_rep_encoder_type_t", "oc__rep_8h.html#ac56f420fc7c93714ab4d2995adc256aa", [
       [ "OC_REP_CBOR_ENCODER", "oc__rep_8h.html#ac56f420fc7c93714ab4d2995adc256aaaceb8e78fa613d20e7256f8d3120c4ffc", null ],
       [ "OC_REP_CRC_ENCODER", "oc__rep_8h.html#ac56f420fc7c93714ab4d2995adc256aaa9bd97262abf345a20942e8f50c73e720", null ]
