@@ -111,7 +111,7 @@ union oc_endpoint_t::dev_addr&#160;</td><td class="memItemRight" valign="bottom"
 <tr class="memdesc:a0942a0902616fd2591dc585d2193e323"><td class="mdescLeft">&#160;</td><td class="mdescRight">the transport flags  <a href="structoc__endpoint__t.html#a0942a0902616fd2591dc585d2193e323">More...</a><br /></td></tr>
 <tr class="separator:a0942a0902616fd2591dc585d2193e323"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac26edbdb4bb5bab4a406ec807db4e4e4"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__endpoint__t.html#ac26edbdb4bb5bab4a406ec807db4e4e4">interface_index</a></td></tr>
-<tr class="memdesc:ac26edbdb4bb5bab4a406ec807db4e4e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">interface index (valid intefaces are &gt;0, 0 means no index or error)  <a href="structoc__endpoint__t.html#ac26edbdb4bb5bab4a406ec807db4e4e4">More...</a><br /></td></tr>
+<tr class="memdesc:ac26edbdb4bb5bab4a406ec807db4e4e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">interface index (valid interfaces are &gt;0, 0 means no index or error)  <a href="structoc__endpoint__t.html#ac26edbdb4bb5bab4a406ec807db4e4e4">More...</a><br /></td></tr>
 <tr class="separator:ac26edbdb4bb5bab4a406ec807db4e4e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab649dfd671bd7ffa4accef34548fc893"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__endpoint__t.html#ab649dfd671bd7ffa4accef34548fc893">next</a></td></tr>
 <tr class="memdesc:ab649dfd671bd7ffa4accef34548fc893"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointer to the next structure  <a href="structoc__endpoint__t.html#ab649dfd671bd7ffa4accef34548fc893">More...</a><br /></td></tr>
@@ -119,6 +119,9 @@ union oc_endpoint_t::dev_addr&#160;</td><td class="memItemRight" valign="bottom"
 <tr class="memitem:a0ad043071ccc7a261d79a759dc9c6f0c"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__endpoint__t.html#a0ad043071ccc7a261d79a759dc9c6f0c">priority</a></td></tr>
 <tr class="memdesc:a0ad043071ccc7a261d79a759dc9c6f0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">priority  <a href="structoc__endpoint__t.html#a0ad043071ccc7a261d79a759dc9c6f0c">More...</a><br /></td></tr>
 <tr class="separator:a0ad043071ccc7a261d79a759dc9c6f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a946f27f64a6c7500925f6d10c0b007aa"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__endpoint__t.html#a946f27f64a6c7500925f6d10c0b007aa">session_id</a></td></tr>
+<tr class="memdesc:a946f27f64a6c7500925f6d10c0b007aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">session id for pairing tls peer with tcp session - 0 means any  <a href="structoc__endpoint__t.html#a946f27f64a6c7500925f6d10c0b007aa">More...</a><br /></td></tr>
+<tr class="separator:a946f27f64a6c7500925f6d10c0b007aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ba8c58bf27a2a88350f0fd5795baace"><td class="memItemLeft" align="right" valign="top">ocf_version_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoc__endpoint__t.html#a1ba8c58bf27a2a88350f0fd5795baace">version</a></td></tr>
 <tr class="memdesc:a1ba8c58bf27a2a88350f0fd5795baace"><td class="mdescLeft">&#160;</td><td class="mdescRight">ocf version  <a href="structoc__endpoint__t.html#a1ba8c58bf27a2a88350f0fd5795baace">More...</a><br /></td></tr>
 <tr class="separator:a1ba8c58bf27a2a88350f0fd5795baace"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,7 +189,7 @@ union oc_endpoint_t::dev_addr&#160;</td><td class="memItemRight" valign="bottom"
       </table>
 </div><div class="memdoc">
 
-<p>interface index (valid intefaces are &gt;0, 0 means no index or error) </p>
+<p>interface index (valid interfaces are &gt;0, 0 means no index or error) </p>
 
 </div>
 </div>
@@ -222,6 +225,22 @@ union oc_endpoint_t::dev_addr&#160;</td><td class="memItemRight" valign="bottom"
 
 </div>
 </div>
+<a id="a946f27f64a6c7500925f6d10c0b007aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a946f27f64a6c7500925f6d10c0b007aa">&#9670;&nbsp;</a></span>session_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t session_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>session id for pairing tls peer with tcp session - 0 means any </p>
+
+</div>
+</div>
 <a id="a1ba8c58bf27a2a88350f0fd5795baace"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1ba8c58bf27a2a88350f0fd5795baace">&#9670;&nbsp;</a></span>version</h2>
 
@@ -247,7 +266,7 @@ union oc_endpoint_t::dev_addr&#160;</td><td class="memItemRight" valign="bottom"
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a></li>
-    <li class="footer">Generated on Fri May 31 2024 18:47:41 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 3 2024 17:08:41 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

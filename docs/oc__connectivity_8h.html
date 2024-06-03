@@ -152,7 +152,7 @@ Enumerations</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a270bc0ca0d9ab9f5c2254e38f304975b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__connectivity_8h.html#a270bc0ca0d9ab9f5c2254e38f304975b">oc_connectivity_end_session</a> (const <a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *endpoint)</td></tr>
-<tr class="memdesc:a270bc0ca0d9ab9f5c2254e38f304975b"><td class="mdescLeft">&#160;</td><td class="mdescRight">end session for the specific endpoint  <a href="oc__connectivity_8h.html#a270bc0ca0d9ab9f5c2254e38f304975b">More...</a><br /></td></tr>
+<tr class="memdesc:a270bc0ca0d9ab9f5c2254e38f304975b"><td class="mdescLeft">&#160;</td><td class="mdescRight">end TCP session for the specific endpoint.  <a href="oc__connectivity_8h.html#a270bc0ca0d9ab9f5c2254e38f304975b">More...</a><br /></td></tr>
 <tr class="separator:a270bc0ca0d9ab9f5c2254e38f304975b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d559666b450aef41dd704952e4a7e96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structoc__endpoint__t.html">oc_endpoint_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oc__connectivity_8h.html#a1d559666b450aef41dd704952e4a7e96">oc_connectivity_get_endpoints</a> (size_t device)</td></tr>
 <tr class="memdesc:a1d559666b450aef41dd704952e4a7e96"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve list of endpoints for the device  <a href="oc__connectivity_8h.html#a1d559666b450aef41dd704952e4a7e96">More...</a><br /></td></tr>
@@ -220,13 +220,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>end session for the specific endpoint </p>
+<p>end TCP session for the specific endpoint. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">endpoint</td><td>the endpoint to close the session for </td></tr>
+    <tr><td class="paramname">endpoint</td><td>the endpoint to close the session for</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000019">Deprecated:</a></b></dt><dd>replaced by oc_close_session in v2.2.5.14 </dd></dl>
 
 </div>
 </div>
@@ -459,7 +460,7 @@ OC_TCP_SOCKET_STATE_CONNECTING TCP connection is waiting to be established </dd>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_651562d8bf6cfd3e81eff5b570d7df50.html">port</a></li><li class="navelem"><a class="el" href="oc__connectivity_8h.html">oc_connectivity.h</a></li>
-    <li class="footer">Generated on Fri May 31 2024 18:47:41 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 3 2024 17:08:41 for IoTivity-Lite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
