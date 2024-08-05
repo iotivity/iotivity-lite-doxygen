@@ -9,5 +9,5 @@ var searchData=
   ['token_1751',['token',['../structoc__client__cb__t.html#a20a869a72d6ccb52d4ff3b843c06223b',1,'oc_client_cb_t']]],
   ['token_5flen_1752',['token_len',['../structoc__client__cb__t.html#aa7c87ced54c328adba1b7eee99050e76',1,'oc_client_cb_t']]],
   ['type_1753',['type',['../structoc__le__addr__t.html#a1d127017fb298b889f4ba24752d08b8e',1,'oc_le_addr_t']]],
-  ['types_1754',['types',['../structoc__ace__res__t.html#ab46330ee76a0d404bcadf5d1d6984018',1,'oc_ace_res_t::types()'],['../structoc__resource__s.html#ab46330ee76a0d404bcadf5d1d6984018',1,'oc_resource_s::types()']]]
+  ['types_1754',['types',['../structoc__resource__s.html#ab46330ee76a0d404bcadf5d1d6984018',1,'oc_resource_s']]]
 ];

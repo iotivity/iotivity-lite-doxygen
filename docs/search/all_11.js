@@ -17,5 +17,5 @@ var searchData=
   ['token_5flen_1063',['token_len',['../structoc__client__cb__t.html#aa7c87ced54c328adba1b7eee99050e76',1,'oc_client_cb_t']]],
   ['transport_5fflags_1064',['transport_flags',['../oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78',1,'transport_flags():&#160;oc_endpoint.h'],['../oc__endpoint_8h.html#a2f4bc4f1c4fd73614831a0f3f7a7e7e4',1,'transport_flags():&#160;oc_endpoint.h']]],
   ['type_1065',['type',['../structoc__le__addr__t.html#a1d127017fb298b889f4ba24752d08b8e',1,'oc_le_addr_t']]],
-  ['types_1066',['types',['../structoc__resource__s.html#ab46330ee76a0d404bcadf5d1d6984018',1,'oc_resource_s::types()'],['../structoc__ace__res__t.html#ab46330ee76a0d404bcadf5d1d6984018',1,'oc_ace_res_t::types()']]]
+  ['types_1066',['types',['../structoc__resource__s.html#ab46330ee76a0d404bcadf5d1d6984018',1,'oc_resource_s']]]
 ];

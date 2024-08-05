@@ -9,7 +9,7 @@ var searchData=
   ['init_5fplatform_5fcb_100',['init_platform_cb',['../structoc__platform__info__t.html#a5c1f98ebf57c76a495ad7e274ad97491',1,'oc_platform_info_t']]],
   ['interface_5fevent_5fhandler_5ft_101',['interface_event_handler_t',['../oc__network__events_8h.html#acf84b55c3b10e0a5a7cfff4329008b90',1,'oc_network_events.h']]],
   ['interface_5findex_102',['interface_index',['../structoc__endpoint__t.html#ac26edbdb4bb5bab4a406ec807db4e4e4',1,'oc_endpoint_t']]],
-  ['interfaces_103',['interfaces',['../structoc__ace__res__t.html#a68c97e7ff73ecf882e2b4a126a5c6faa',1,'oc_ace_res_t::interfaces()'],['../structoc__resource__s.html#a68c97e7ff73ecf882e2b4a126a5c6faa',1,'oc_resource_s::interfaces()']]],
+  ['interfaces_103',['interfaces',['../structoc__resource__s.html#a68c97e7ff73ecf882e2b4a126a5c6faa',1,'oc_resource_s']]],
   ['iotivity_2dlite_20api_104',['IoTivity-Lite API',['../index.html',1,'']]],
   ['iotivity_5flite_5fversion_105',['IOTIVITY_LITE_VERSION',['../oc__build__info_8h.html#ad94293a1209d97811fc48e3188693165',1,'oc_build_info.h']]],
   ['iotivity_5flite_5fversion_5fmajor_106',['IOTIVITY_LITE_VERSION_MAJOR',['../oc__build__info_8h.html#a976ff331837a72ad4e14084ceb45c5bb',1,'oc_build_info.h']]],
