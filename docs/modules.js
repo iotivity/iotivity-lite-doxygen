@@ -11,6 +11,7 @@ var modules =
     [ "Protothreads", "group__pt.html", "group__pt" ],
     [ "Server side", "group__doc__module__tag__server__side.html", "group__doc__module__tag__server__side" ],
     [ "Software Update", "group__swupdate.html", "group__swupdate" ],
+    [ "Support for multiple DPS endpoint addresses", "group__dps__endpoints.html", "group__dps__endpoints" ],
     [ "Support for multiple cloud server addresses", "group__cloud__servers.html", "group__cloud__servers" ],
     [ "Time synchronization", "group__time__synchronization.html", "group__time__synchronization" ]
 ];
