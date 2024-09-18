@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['linked_20list_20library_2137',['Linked list library',['../group__list.html',1,'']]],
-  ['local_20continuations_2138',['Local continuations',['../group__lc.html',1,'']]]
+  ['device_20provisioning_2231',['Device provisioning',['../group__dps.html',1,'']]]
 ];

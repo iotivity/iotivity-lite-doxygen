@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['protothread_20semaphores_2140',['Protothread semaphores',['../group__ptsem.html',1,'']]],
-  ['protothreads_2141',['Protothreads',['../group__pt.html',1,'']]]
+  ['memory_20block_20management_20functions_2234',['Memory block management functions',['../group__memb.html',1,'']]]
 ];

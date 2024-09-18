@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['tcp_5fcsm_5fstate_5ft_1884',['tcp_csm_state_t',['../oc__connectivity_8h.html#a9d56c760b9872172c0c76cba052369e5',1,'oc_connectivity.h']]],
-  ['transport_5fflags_1885',['transport_flags',['../oc__endpoint_8h.html#acbafbf0eebae1e60a53d50301fa1ab78',1,'oc_endpoint.h']]]
+  ['plgd_5fdps_5fdhcp_5fset_5fvalues_5ft_1974',['plgd_dps_dhcp_set_values_t',['../group__dps.html#ga5b75a7b291b57d90f6ad9181981d8a40',1,'plgd_dps.h']]],
+  ['plgd_5fdps_5ferror_5ft_1975',['plgd_dps_error_t',['../group__dps.html#gab97f0aebaa83f907a5b48498ec6ca10d',1,'plgd_dps.h']]],
+  ['plgd_5fdps_5fstatus_5ft_1976',['plgd_dps_status_t',['../group__dps.html#ga1dc1644fd4f9f3110aa42ac19c3f8016',1,'plgd_dps.h']]]
 ];

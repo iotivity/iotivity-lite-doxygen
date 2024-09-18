@@ -6,10 +6,10 @@ var indexSectionsWithContent =
   3: "_aeop",
   4: "_acdefghimnopqrstuvw",
   5: "imopst",
-  6: "ot",
+  6: "opt",
   7: "acdghilmnopstv",
   8: "dio",
-  9: "aclmpst",
+  9: "acdlmpst",
   10: "di"
 };
 
