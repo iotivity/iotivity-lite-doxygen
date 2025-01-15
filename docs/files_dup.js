@@ -21,6 +21,7 @@ var files_dup =
     [ "oc_connectivity.h", "oc__connectivity_8h.html", "oc__connectivity_8h" ],
     [ "oc_core_res.h", "oc__core__res_8h.html", "oc__core__res_8h" ],
     [ "oc_cred.h", "oc__cred_8h.html", "oc__cred_8h" ],
+    [ "oc_dns.h", "oc__dns_8h.html", "oc__dns_8h" ],
     [ "oc_endpoint.h", "oc__endpoint_8h.html", "oc__endpoint_8h" ],
     [ "oc_enums.h", "oc__enums_8h.html", "oc__enums_8h" ],
     [ "oc_export.h", "oc__export_8h.html", "oc__export_8h" ],
