@@ -1,5 +1,7 @@
 var NAVTREEINDEX6 =
 {
+"oc__ri_8h.html#a63f96c05b779dfc1ebcfe0722946ceaaae683cd6d281ea182358dedaacde8e3f9":[4,0,37,23,1],
+"oc__ri_8h.html#a830f565772c7fb4c14e1d8a737b8ff70":[4,0,37,34],
 "oc__ri_8h.html#a83161604a805e3a951254864d16a714f":[4,0,37,21],
 "oc__ri_8h.html#a83161604a805e3a951254864d16a714fa01abe8b1134f6dcd8a242afa0522ed20":[4,0,37,21,0],
 "oc__ri_8h.html#a83161604a805e3a951254864d16a714fa055593d7ec51c4b91b7c9c000d56b76e":[4,0,37,21,41],
@@ -247,7 +249,5 @@ var NAVTREEINDEX6 =
 "structoc__le__addr__t.html#a1d127017fb298b889f4ba24752d08b8e":[3,0,12,1],
 "structoc__le__addr__t.html#a3859a5a24fa98fcde6ab0e29800d2318":[3,0,12,0],
 "structoc__mmem.html":[3,0,13],
-"structoc__mmem.html#a854352f53b148adc24983a58a1866d66":[3,0,13,1],
-"structoc__mmem.html#add9af9569af79ec26dd741fb226b38ba":[3,0,13,0],
-"structoc__platform__info__t.html":[3,0,14]
+"structoc__mmem.html#a854352f53b148adc24983a58a1866d66":[3,0,13,1]
 };

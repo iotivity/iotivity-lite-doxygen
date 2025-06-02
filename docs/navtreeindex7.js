@@ -1,5 +1,7 @@
 var NAVTREEINDEX7 =
 {
+"structoc__mmem.html#add9af9569af79ec26dd741fb226b38ba":[3,0,13,0],
+"structoc__platform__info__t.html":[3,0,14],
 "structoc__platform__info__t.html#a36a79f70b8fc2377193e9fbdedcea6c9":[3,0,14,2],
 "structoc__platform__info__t.html#a5c1f98ebf57c76a495ad7e274ad97491":[3,0,14,1],
 "structoc__platform__info__t.html#a735984d41155bc1032e09bece8f8d66d":[3,0,14,0],
